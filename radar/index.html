@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>热点需求雷达</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./lucide.min.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-block">
+      <div class="brand-mark" aria-hidden="true"><i data-lucide="radar"></i></div>
+      <div>
+        <p class="eyebrow">PipGauge · PositionMath</p>
+        <h1>热点需求雷达</h1>
+      </div>
+    </div>
+    <div class="run-state">
+      <span class="live-dot" aria-hidden="true"></span>
+      <div>
+        <strong id="run-label">读取中</strong>
+        <span id="generated-at">正在载入台账</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="summary-band" aria-label="运行摘要">
+      <div class="metric-block">
+        <span>合格选题</span>
+        <strong id="metric-selected">—</strong>
+        <small>最多 5 条</small>
+      </div>
+      <div class="metric-block">
+        <span>观察池</span>
+        <strong id="metric-observation">—</strong>
+        <small>保留未过门槛项</small>
+      </div>
+      <div class="metric-block">
+        <span>入选均分</span>
+        <strong id="metric-average">—</strong>
+        <small>正式口径 / 100</small>
+      </div>
+      <div class="metric-block">
+        <span>质量闸门</span>
+        <strong id="metric-gate">—</strong>
+        <small>双来源 + 新鲜度</small>
+      </div>
+      <div class="metric-block">
+        <span>打法就绪</span>
+        <strong id="metric-playbook">—</strong>
+        <small>热点流量路径 / 入选</small>
+      </div>
+      <div class="metric-block">
+        <span>内容完成</span>
+        <strong id="metric-content">—</strong>
+        <small>主文 + 三个渠道版</small>
+      </div>
+      <div class="metric-block progress-block">
+        <span>试运行</span>
+        <strong id="metric-pilot">—</strong>
+        <div class="pilot-track" aria-hidden="true"><span id="pilot-fill"></span></div>
+      </div>
+    </section>
+
+    <nav class="view-tabs" aria-label="看板视图" role="tablist">
+      <button class="tab-button is-active" type="button" role="tab" aria-selected="true" data-view="today">本期选题</button>
+      <button class="tab-button" type="button" role="tab" aria-selected="false" data-view="playbooks">热点打法</button>
+      <button class="tab-button" type="button" role="tab" aria-selected="false" data-view="watchlist">观察池</button>
+      <button class="tab-button" type="button" role="tab" aria-selected="false" data-view="coverage">扫描覆盖</button>
+    </nav>
+
+    <section id="view-today" class="view-panel is-active" role="tabpanel">
+      <div class="toolbar">
+        <label class="period-control">
+          <i data-lucide="calendar-days" aria-hidden="true"></i>
+          <span>期次</span>
+          <select id="period-select" aria-label="选择扫描期次"></select>
+        </label>
+        <label class="search-control">
+          <i data-lucide="search" aria-hidden="true"></i>
+          <input id="topic-search" type="search" placeholder="搜索标题、理由或计算器" autocomplete="off">
+        </label>
+        <div class="site-filter" aria-label="站点筛选">
+          <button type="button" class="filter-button is-active" data-site="all">全部</button>
+          <button type="button" class="filter-button" data-site="PipGauge">PipGauge</button>
+          <button type="button" class="filter-button" data-site="PositionMath">PositionMath</button>
+        </div>
+        <label class="score-control">
+          <span>最低分 <strong id="score-value">72</strong></span>
+          <input id="score-filter" type="range" min="60" max="100" value="72" step="1">
+        </label>
+        <button id="refresh-button" class="icon-button" type="button" title="刷新看板数据" aria-label="刷新看板数据">
+          <i data-lucide="refresh-cw"></i>
+        </button>
+      </div>
+
+      <div class="today-layout">
+        <div>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Ranked opportunities</p>
+              <h2>本期入选</h2>
+            </div>
+            <span id="filtered-count" class="count-label">—</span>
+          </div>
+          <div id="topic-list" class="topic-list" aria-live="polite"></div>
+        </div>
+
+        <aside class="decision-panel">
+          <p class="eyebrow">Decision brief</p>
+          <h2>本期判断</h2>
+          <div class="decision-line">
+            <span>最高优先级</span>
+            <strong id="top-pick">—</strong>
+          </div>
+          <div class="decision-line">
+            <span>产品方向</span>
+            <strong>PipGauge 主、PositionMath 辅</strong>
+          </div>
+          <div class="decision-line">
+            <span>下一次扫描</span>
+            <strong>每天 22:00（北京时间）</strong>
+          </div>
+          <div class="decision-line">
+            <span>内容进度</span>
+            <strong id="content-ready">—</strong>
+          </div>
+          <div class="decision-line">
+            <span>缺口处理</span>
+            <strong>只观察，不因单次热点立项</strong>
+          </div>
+          <div class="decision-line">
+            <span>空结果原则</span>
+            <strong>没有合格选题就不补题、不硬写</strong>
+          </div>
+          <div id="document-links" class="document-links"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="view-playbooks" class="view-panel" role="tabpanel" hidden>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Traffic capture playbooks</p>
+          <h2>本期热点流量打法</h2>
+        </div>
+        <span class="policy-note">抓热点的计算需求，不复述新闻</span>
+      </div>
+      <div id="playbook-list" class="playbook-list" aria-live="polite"></div>
+    </section>
+
+    <section id="view-watchlist" class="view-panel" role="tabpanel" hidden>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Held back by evidence</p>
+          <h2>观察与淘汰</h2>
+        </div>
+        <span class="policy-note">高分也必须过硬门槛</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>状态</th>
+              <th>候选</th>
+              <th>站点</th>
+              <th>分数</th>
+              <th>未入选原因</th>
+            </tr>
+          </thead>
+          <tbody id="watchlist-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="view-coverage" class="view-panel" role="tabpanel" hidden>
+      <div class="coverage-layout">
+        <div>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Source health</p>
+              <h2>渠道覆盖</h2>
+            </div>
+          </div>
+          <div id="coverage-list" class="coverage-list"></div>
+        </div>
+        <aside class="gate-panel">
+          <p class="eyebrow">Non-negotiable</p>
+          <h2>入选门槛</h2>
+          <ol>
+            <li>至少 2 个相互独立的可靠英文来源</li>
+            <li>至少 1 个近期事件或讨论信号</li>
+            <li>明确连接现有计算器或风险计算问题</li>
+            <li>总分达到 72 分</li>
+            <li>传闻、喊单和无关泛财经直接排除</li>
+          </ol>
+          <p class="gate-footnote">允许当天 0 条。没有就不硬写；宁缺毋滥是功能，不是异常。</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>试运行 · 生成选题与热点流量打法 · 不自动发布、不互动</span>
+    <span id="footer-date">—</span>
+  </footer>
+</body>
+</html>
