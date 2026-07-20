@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-07-21",
+  "items": {
+    "HR-20260719-01": {
+      "playbook_status": "ready",
+      "execution_mode": "new",
+      "urgency": "high",
+      "publish_deadline": "2026-07-22",
+      "traffic_hook": "ECB 决议进入倒计时，交易者会集中搜索事件日 EUR/USD 波动、pip value 与仓位风险。",
+      "traffic_window": "从会前预期升温开始，到 7 月 23 日决议发布前；决议后只在出现显著波动时更新结果版。",
+      "search_intents": [
+        "ECB EURUSD pip value",
+        "EURUSD 50 pip move calculator",
+        "ECB position size calculator",
+        "EURUSD spread cost"
+      ],
+      "traffic_angle": "不猜 ECB 方向，而是回答：如果 EUR/USD 在决议附近波动 25、50 或 100 pips，同一美元风险下仓位应该缩小到多少？",
+      "calculator_bridge": "用 Pip Value 先换算每 pip 金额，再用 Position Size 固定风险，并用 Spread Cost 展示事件时段成本扩张。",
+      "example_scenario": "$10,000 账户、1% 风险；比较 20、50、100 pip 止损以及 0.1、0.5、1 lot 的结果。",
+      "distribution_order": ["站内事件快文", "Medium 图文版", "Quora 相关问题", "Reddit 纯回答", "X 数据卡"],
+      "link_placement": "先给出三档波动表和固定风险结论，再链接到对应计算器；标题和首段不放推广链接。",
+      "expiry_condition": "ECB 决议结束 48 小时且没有延续性波动或新政策信息时停止追逐。",
+      "editorial_boundary": "不预测利率决定或汇率方向，不把事件波动写成收益机会。"
+    },
+    "HR-20260719-02": {
+      "playbook_status": "ready",
+      "execution_mode": "new",
+      "urgency": "high",
+      "publish_deadline": "2026-07-20",
+      "traffic_hook": "Nasdaq 周度下跌与大型科技财报叠加，用户需要把百分比跌幅换算成指数点和真实美元风险。",
+      "traffic_window": "周度回撤报道后的 24 至 48 小时，以及大型科技财报开始前。",
+      "search_intents": [
+        "NAS100 point value calculator",
+        "Nasdaq 100 250 point move",
+        "NAS100 lot size risk",
+        "Nasdaq drawdown recovery"
+      ],
+      "traffic_angle": "把“Nasdaq 跌了 4%”翻译成不同 NAS100 CFD 合约下的点数、美元亏损、保证金占用和回本涨幅。",
+      "calculator_bridge": "NAS100 Point Value 承接点值，P&L 与 Margin 承接账户影响，Drawdown Recovery 解释亏损后的恢复门槛。",
+      "example_scenario": "以 25,000 点为示例，比较 1.4%、2.9%、4% 回撤和三档券商点值；明确合约规格必须由用户核对。",
+      "distribution_order": ["站内快文", "Medium 图文版", "X 换算表", "Quora 回答", "Reddit 纯解释"],
+      "link_placement": "先展示百分比到点数的换算，再提供 NAS100 点值工具；不在开头引导点击。",
+      "expiry_condition": "市场进入新一周且旧回撤数据不再被讨论，或新的行情幅度取代原数字时停止使用原标题。",
+      "editorial_boundary": "不预测反弹或继续下跌；反复提醒 NAS100 CFD 点值因券商而异。"
+    },
+    "HR-20260719-03": {
+      "playbook_status": "ready",
+      "execution_mode": "new",
+      "urgency": "high",
+      "publish_deadline": "2026-07-20",
+      "traffic_hook": "CME 1-Ounce Gold 进入 24/7 交易窗口，同时社区仍在混淆期货 tick 与 XAUUSD pip。",
+      "traffic_window": "产品迁移生效日前后 48 小时；若周末首次交易出现流动性讨论，可再更新一次。",
+      "search_intents": [
+        "CME 1 ounce gold futures calculator",
+        "1OZ gold futures contract value",
+        "gold futures vs XAUUSD lot",
+        "weekend gold trading spread"
+      ],
+      "traffic_angle": "借 24/7 上线解释同样的黄金价格波动，在 CME 1OZ futures 与零售 XAUUSD CFD 中为什么不是同一个盈亏数字。",
+      "calculator_bridge": "XAUUSD Pip Value、Position Size、Margin 和 Spread Cost 用于零售 CFD 情景；期货规格只引用 CME 官方数字，不强套现有工具。",
+      "example_scenario": "比较金价波动 $10、$25、$50 时三档 XAUUSD 仓位的美元影响，再单列 CME 1OZ tick 规格。",
+      "distribution_order": ["站内对比快文", "Medium 图解", "Reddit 纠错回答", "Quora 长答", "X 对比卡"],
+      "link_placement": "完成 futures 与 CFD 的规格区分后，再链接 XAUUSD 计算器，避免让工具看起来适用于期货。",
+      "expiry_condition": "上线讨论结束且没有周末流动性、点差或规格争议的新信号时停止追逐。",
+      "editorial_boundary": "不把 CME futures 与 XAUUSD CFD 混为一谈，不宣传全天交易更容易获利。"
+    },
+    "HR-20260719-04": {
+      "playbook_status": "ready",
+      "execution_mode": "new",
+      "urgency": "high",
+      "publish_deadline": "2026-07-22",
+      "traffic_hook": "Tesla 与 Alphabet 同日盘后财报，持有两只股票的用户面对的是组合跳空风险而非单票止损问题。",
+      "traffic_window": "财报日前 48 小时至盘后发布前；发布后仅在实际跳空形成新计算需求时更新。",
+      "search_intents": [
+        "Tesla earnings position size",
+        "Alphabet earnings risk calculator",
+        "stock gap loss calculator",
+        "earnings portfolio heat"
+      ],
+      "traffic_angle": "用一个 $10,000 账户回答：两只同日财报股票同时持仓时，5%、10%、15% 跳空会让组合总风险变成多少？",
+      "calculator_bridge": "Position Size 与 Portfolio Heat 承接组合暴露，Stop-Loss 和 Break-Even 解释跳空越过止损后的结果。",
+      "example_scenario": "$10,000 账户，两笔各占 0.5% 或 1% 计划风险，叠加三档隔夜跳空情景。",
+      "distribution_order": ["站内情景快文", "Medium 图文版", "X 风险表", "Quora 回答", "Reddit 纯讨论"],
+      "link_placement": "先展示组合风险表，再链接 Portfolio Heat；避免把公司名与工具链接放成广告式 CTA。",
+      "expiry_condition": "两家公司财报发布且盘后波动被市场完全消化后停止使用会前标题。",
+      "editorial_boundary": "不预测财报结果；明确止损无法保证以设定价格成交。"
+    },
+    "HR-20260720-01": {
+      "playbook_status": "ready",
+      "execution_mode": "new",
+      "urgency": "high",
+      "publish_deadline": "2026-07-21",
+      "traffic_hook": "USD/JPY 接近长期高位，日本干预风险让用户集中关心突然反转 100 至 300 pips 时的账户影响。",
+      "traffic_window": "高位与干预讨论持续期间优先在 24 小时内发布；出现官方干预后立即切换为事实复盘版本。",
+      "search_intents": [
+        "Japan intervention USDJPY",
+        "USDJPY 100 pip move",
+        "USDJPY pip value calculator",
+        "USDJPY intervention position size"
+      ],
+      "traffic_angle": "不预测日本是否干预，直接计算：USD/JPY 突然回落 100、200、300 pips 时，0.1、0.5、1 lot 分别意味着多少美元风险？",
+      "calculator_bridge": "Pip Value 计算每 pip 金额，P&L 展示剧烈反转，Position Size 比较 40 与 120 pip 止损下如何保持固定风险。",
+      "example_scenario": "$10,000 账户、1% 风险；0.1、0.5、1 lot；40、80、120 pip 止损和 100、200、300 pip 反转。",
+      "distribution_order": ["站内快文", "X 数据卡", "Medium 完整版", "Quora 相关问题", "Reddit 纯回答"],
+      "link_placement": "先给出三档仓位的损益表和固定风险结论，再链接 Pip Value 与 Position Size。",
+      "expiry_condition": "USD/JPY 明显脱离事件高位且 48 小时没有新的官方表态或讨论热度时停止追逐。",
+      "editorial_boundary": "不预测干预时间、汇率方向或盈利机会，只做风险换算。"
+    },
+    "HR-20260720-02": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-07-22",
+      "traffic_hook": "ECB 决议进一步临近，搜索意图从会议预览转向事件日前的仓位与点差检查。",
+      "traffic_window": "决议前最后 24 至 36 小时；作为 7 月 19 日 ECB 内容的事实与标题更新。",
+      "search_intents": [
+        "ECB EURUSD risk",
+        "EURUSD event day position size",
+        "EURUSD 100 pip move",
+        "ECB spread widening"
+      ],
+      "traffic_angle": "把旧稿更新成决议前检查清单：止损从 25 扩到 50 或 100 pips 时，如何缩小仓位并计入更宽点差。",
+      "calculator_bridge": "沿用 Pip Value、Position Size、Spread Cost 与 P&L，不新建同构文章。",
+      "example_scenario": "$10,000 账户、$100 固定风险；25、50、100 pip 止损以及正常与扩大点差。",
+      "distribution_order": ["更新站内旧稿", "更新 Medium 标题与开头", "X 新数据卡", "Quora 补充", "Reddit 不重复发帖"],
+      "link_placement": "保留旧稿中完成计算后的工具链接，只更新事件时间、标题和示例。",
+      "expiry_condition": "ECB 决议发布后不再使用会前检查标题；除非实际波动值得做结果复盘。",
+      "editorial_boundary": "不制造“重大行情必然发生”的暗示，不重复发布同构内容。"
+    },
+    "HR-20260720-03": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-07-21",
+      "traffic_hook": "黄金价格与 CME 24/7 上线在同一时间窗口出现，可更新首期的规格对比内容。",
+      "traffic_window": "迁移生效日及随后 24 小时；只更新 7 月 19 日黄金稿，不新写相同结构。",
+      "search_intents": [
+        "gold 24 7 trading",
+        "XAUUSD 25 dollar move",
+        "gold pip value by lot size",
+        "CME 1OZ vs XAUUSD"
+      ],
+      "traffic_angle": "用当前 `$25` 金价波动作为新钩子，更新“CME 1OZ 与 XAUUSD 不是同一个合约”的现有解释。",
+      "calculator_bridge": "沿用 XAUUSD Pip Value、Position Size、Margin 与 Spread Cost，期货部分继续只引用官方规格。",
+      "example_scenario": "金价波动 $25；比较 0.01、0.1、1 lot XAUUSD 的美元影响，并单列 CME 1OZ。",
+      "distribution_order": ["更新站内旧稿", "替换 Medium 示例图", "X 对比卡", "Quora 补充", "Reddit 仅在有新问题时回答"],
+      "link_placement": "在完成产品规格区分后继续使用原有 XAUUSD 工具链接，不新增开头 CTA。",
+      "expiry_condition": "上线日后的讨论消退且没有新的流动性或规格问题时停止更新。",
+      "editorial_boundary": "绝不把 CFD 默认规格用于 CME futures，也不宣传价格方向。"
+    },
+    "HR-20260720-04": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-07-22",
+      "traffic_hook": "Tesla 与 Alphabet 财报进入最后倒计时，适合把前一期组合风险稿更新为可执行的会前检查。",
+      "traffic_window": "7 月 22 日美股收盘前；盘后发布后改成实际跳空复盘或停止。",
+      "search_intents": [
+        "TSLA GOOGL earnings risk",
+        "earnings gap risk calculator",
+        "two stock portfolio heat",
+        "position size before earnings"
+      ],
+      "traffic_angle": "更新旧稿，突出两个仓位同时遭遇 5%、10%、15% 跳空时的组合热度，而不是分别预测公司财报。",
+      "calculator_bridge": "沿用 Position Size、Portfolio Heat、Stop-Loss 与 Break-Even，重点更新会前日期和组合示例。",
+      "example_scenario": "$10,000 账户；TSLA 与 GOOGL 各一笔仓位；三档跳空与两档计划风险。",
+      "distribution_order": ["更新站内旧稿", "更新 Medium 开头", "X 组合表", "Quora 补充", "Reddit 不重复发帖"],
+      "link_placement": "风险表后链接 Portfolio Heat；公司名称只作为事件背景，不做促销式按钮。",
+      "expiry_condition": "财报发布后不再使用会前标题；只有实际跳空形成新的计算问题时再做结果版。",
+      "editorial_boundary": "不预测业绩或股价；明确跳空可能越过止损。"
+    }
+  }
+}
