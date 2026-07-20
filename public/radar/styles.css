@@ -543,6 +543,13 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .topbar {
+    min-height: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .run-state { justify-content: flex-start; }
   h1 { font-size: 20px; }
   .brand-mark { width: 36px; height: 36px; }
   .run-state strong { font-size: 11px; }
@@ -550,11 +557,19 @@ footer {
   .view-tabs { gap: 18px; overflow-x: auto; }
   .tab-button { white-space: nowrap; }
   .toolbar { gap: 10px; }
-  .period-control { order: 1; width: calc(100% - 50px); }
+  .period-control,
+  .search-control,
+  .site-filter,
+  .score-control {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 0 100%;
+  }
+  .period-control { order: 1; }
   .search-control { order: 2; }
-  .site-filter { order: 3; width: 100%; }
+  .site-filter { order: 3; }
   .score-control { order: 4; }
-  .icon-button { order: 1; }
+  .icon-button { order: 5; }
   .topic-head { align-items: flex-start; }
   .playbook-head { display: grid; }
   .deadline-block { text-align: left; }
