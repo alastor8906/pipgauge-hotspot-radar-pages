@@ -1,5 +1,11 @@
 {
-  "data_version": 3,
+  "data_version": 4,
+  "radar_model": "v2-content-first",
+  "editorial_policy": {
+    "content_share": "80-90%",
+    "product_share": "10-20%",
+    "product_bridge_optional": true
+  },
   "generated_at": "2026-07-21T01:37:28+08:00",
   "latest_scan_date": "2026-07-20",
   "available_dates": [
@@ -9,6 +15,7 @@
   "periods": [
     {
       "scan_date": "2026-07-20",
+      "scoring_version": "v1-legacy",
       "generated_at": "2026-07-21T01:37:28+08:00",
       "pilot": {
         "day": 2,
@@ -64,6 +71,8 @@
               "USDJPY pip value calculator",
               "USDJPY intervention position size"
             ],
+            "content_mainline": "围绕日元接近长期低位，解释日本为什么会干预、干预通常通过什么机制发生，以及流动性突然反转时交易者最容易误判什么。最后再用一个 100-pip 情景把抽象风险落到数字。",
+            "body_material": "Reuters 的最新汇率背景、日本财务省与央行的干预机制、历史干预的共同特征，以及事件时段流动性变化。计算只保留一个 $10,000 账户情景作为结尾验证。",
             "traffic_angle": "不预测日本是否干预，直接计算：USD/JPY 突然回落 100、200、300 pips 时，0.1、0.5、1 lot 分别意味着多少美元风险？",
             "calculator_bridge": "Pip Value 计算每 pip 金额，P&L 展示剧烈反转，Position Size 比较 40 与 120 pip 止损下如何保持固定风险。",
             "example_scenario": "$10,000 账户、1% 风险；0.1、0.5、1 lot；40、80、120 pip 止损和 100、200、300 pip 反转。",
@@ -114,6 +123,8 @@
               "EURUSD 100 pip move",
               "ECB spread widening"
             ],
+            "content_mainline": "做一份决议前背景解读：市场在等待什么、ECB 的决定通过哪些路径影响 EUR/USD，以及为什么事件窗口里的流动性和点差可能与平时不同。末尾再给出一个固定风险检查例子。",
+            "body_material": "ECB 官方日程、Reuters 对市场预期的梳理、政策到汇率的传导路径，以及事件前后点差和成交风险。计算器只用于复核正文最后的一组仓位数字。",
             "traffic_angle": "把旧稿更新成决议前检查清单：止损从 25 扩到 50 或 100 pips 时，如何缩小仓位并计入更宽点差。",
             "calculator_bridge": "沿用 Pip Value、Position Size、Spread Cost 与 P&L，不新建同构文章。",
             "example_scenario": "$10,000 账户、$100 固定风险；25、50、100 pip 止损以及正常与扩大点差。",
@@ -164,6 +175,8 @@
               "gold pip value by lot size",
               "CME 1OZ vs XAUUSD"
             ],
+            "content_mainline": "解释黄金 24/7 交易究竟改变了什么、没有改变什么，并拆清 CME 1OZ futures 与零售 XAUUSD CFD 在合约、交易时段和流动性上的差异。数字换算只作为最后的规格示例。",
+            "body_material": "CME 的迁移说明、24/7 交易安排、期货与 CFD 的合约结构和周末流动性风险。最后只用一次 $25 金价波动说明为什么相同价格变化不等于相同盈亏。",
             "traffic_angle": "用当前 `$25` 金价波动作为新钩子，更新“CME 1OZ 与 XAUUSD 不是同一个合约”的现有解释。",
             "calculator_bridge": "沿用 XAUUSD Pip Value、Position Size、Margin 与 Spread Cost，期货部分继续只引用官方规格。",
             "example_scenario": "金价波动 $25；比较 0.01、0.1、1 lot XAUUSD 的美元影响，并单列 CME 1OZ。",
@@ -214,6 +227,8 @@
               "two stock portfolio heat",
               "position size before earnings"
             ],
+            "content_mainline": "借同一周大型科技股财报解释“事件聚集风险”：为什么两笔看似独立的仓位可能同时跳空、盘后止损为何不等于成交保证，以及应该怎样看组合而不是单票。",
+            "body_material": "两家公司财报时间、科技股相关性、盘后流动性与跳空机制、单笔风险和组合风险的区别。结尾用一组 5%–15% 跳空情景做数字说明。",
             "traffic_angle": "更新旧稿，突出两个仓位同时遭遇 5%、10%、15% 跳空时的组合热度，而不是分别预测公司财报。",
             "calculator_bridge": "沿用 Position Size、Portfolio Heat、Stop-Loss 与 Break-Even，重点更新会前日期和组合示例。",
             "example_scenario": "$10,000 账户；TSLA 与 GOOGL 各一笔仓位；三档跳空与两档计划风险。",
@@ -389,6 +404,7 @@
     },
     {
       "scan_date": "2026-07-19",
+      "scoring_version": "v1-legacy",
       "generated_at": "2026-07-21T01:37:28+08:00",
       "pilot": {
         "day": 1,
@@ -449,6 +465,8 @@
               "ECB position size calculator",
               "EURUSD spread cost"
             ],
+            "content_mainline": "从 ECB 决议的市场背景讲起，解释利率预期、措辞变化和流动性如何共同影响 EUR/USD。文章的主体是事件机制与风险认知，最后才用三档波动说明仓位为何需要调整。",
+            "body_material": "ECB 官方日程、可靠媒体的预期分歧、政策传导路径和事件时段常见执行风险。计算部分压缩为正文末尾的一张简表。",
             "traffic_angle": "不猜 ECB 方向，而是回答：如果 EUR/USD 在决议附近波动 25、50 或 100 pips，同一美元风险下仓位应该缩小到多少？",
             "calculator_bridge": "用 Pip Value 先换算每 pip 金额，再用 Position Size 固定风险，并用 Spread Cost 展示事件时段成本扩张。",
             "example_scenario": "$10,000 账户、1% 风险；比较 20、50、100 pip 止损以及 0.1、0.5、1 lot 的结果。",
@@ -504,6 +522,8 @@
               "NAS100 lot size risk",
               "Nasdaq drawdown recovery"
             ],
+            "content_mainline": "解释 Nasdaq 一周下跌 4% 背后的市场语境，并拆清百分比、指数点数和 CFD 账户损益为什么是三件不同的事。重点帮助读者正确理解新闻里的跌幅，而不是预测下一步方向。",
+            "body_material": "指数周度表现、成分股与财报背景、百分比到指数点的换算，以及不同券商 CFD 合约规格造成的差异。工具只在结尾用于核对一种合约情景。",
             "traffic_angle": "把“Nasdaq 跌了 4%”翻译成不同 NAS100 CFD 合约下的点数、美元亏损、保证金占用和回本涨幅。",
             "calculator_bridge": "NAS100 Point Value 承接点值，P&L 与 Margin 承接账户影响，Drawdown Recovery 解释亏损后的恢复门槛。",
             "example_scenario": "以 25,000 点为示例，比较 1.4%、2.9%、4% 回撤和三档券商点值；明确合约规格必须由用户核对。",
@@ -559,6 +579,8 @@
               "gold futures vs XAUUSD lot",
               "weekend gold trading spread"
             ],
+            "content_mainline": "借黄金 24/7 上线解释市场结构变化：全天可交易不等于全天流动性相同，也不代表 futures 与 XAUUSD CFD 可以用同一套规格理解。",
+            "body_material": "CME 官方产品规格、交易时段变化、周末流动性与报价来源，以及 futures 和 CFD 的核心区别。最后用一个价格变化示例辅助理解。",
             "traffic_angle": "借 24/7 上线解释同样的黄金价格波动，在 CME 1OZ futures 与零售 XAUUSD CFD 中为什么不是同一个盈亏数字。",
             "calculator_bridge": "XAUUSD Pip Value、Position Size、Margin 和 Spread Cost 用于零售 CFD 情景；期货规格只引用 CME 官方数字，不强套现有工具。",
             "example_scenario": "比较金价波动 $10、$25、$50 时三档 XAUUSD 仓位的美元影响，再单列 CME 1OZ tick 规格。",
@@ -614,6 +636,8 @@
               "stock gap loss calculator",
               "earnings portfolio heat"
             ],
+            "content_mainline": "借 Tesla 与 Alphabet 同日财报解释组合层面的事件风险：相关资产为什么会一起跳空、盘后流动性如何改变执行结果，以及单票止损为什么不能代表组合风险。",
+            "body_material": "财报日程、盘后交易机制、相关性和共同因子、跳空越过止损的可能性。结尾再用一个 $10,000 账户展示组合暴露。",
             "traffic_angle": "用一个 $10,000 账户回答：两只同日财报股票同时持仓时，5%、10%、15% 跳空会让组合总风险变成多少？",
             "calculator_bridge": "Position Size 与 Portfolio Heat 承接组合暴露，Stop-Loss 和 Break-Even 解释跳空越过止损后的结果。",
             "example_scenario": "$10,000 账户，两笔各占 0.5% 或 1% 计划风险，叠加三档隔夜跳空情景。",
@@ -811,6 +835,7 @@
     }
   ],
   "scan_date": "2026-07-20",
+  "scoring_version": "v1-legacy",
   "pilot": {
     "day": 2,
     "total_days": 7,
