@@ -1,11 +1,6 @@
 import assert from "node:assert/strict";
-import { access, readFile, readdir } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
-
-const developmentPreviewMeta =
-  /<meta(?=[^>]*\bname=["']codex-preview["'])(?=[^>]*\bcontent=["']development["'])[^>]*>/i;
-const templateRoot = new URL("../", import.meta.url);
-const previewRoot = new URL("../app/_sites-preview/", import.meta.url);
 
 async function render() {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
@@ -28,64 +23,46 @@ async function render() {
   );
 }
 
-test("server-renders the starter loading skeleton", async () => {
+test("server-renders the hotspot content radar", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, developmentPreviewMeta);
-  assert.match(html, /<title>Your site is taking shape<\/title>/i);
-  assert.match(html, /Building your site/);
-  assert.match(html, /Your site is taking shape/);
-  assert.match(
-    html,
-    /Your first version will appear here automatically when it’s ready\./,
-  );
-  assert.doesNotMatch(html, /Codex/);
-  assert.match(html, /react-loading-skeleton/);
-  assert.match(html, /role="status"/);
+  assert.match(html, /<title>热点内容雷达 \| PipGauge · PositionMath<\/title>/i);
+  assert.match(html, /产品承接控制在 10%–20%/);
+  assert.match(html, /src="\/radar\/index\.html"/);
+  assert.match(html, /title="PipGauge 与 PositionMath 热点内容雷达"/);
+  assert.doesNotMatch(html, /Your site is taking shape|Building your site/);
 });
 
-test("keeps the loading skeleton scoped and disposable", async () => {
-  const [preview, css, page, layout, packageJson, files] = await Promise.all([
-    readFile(new URL("SkeletonPreview.tsx", previewRoot), "utf8"),
-    readFile(new URL("preview.css", previewRoot), "utf8"),
+test("keeps content value primary and product placement optional", async () => {
+  const [page, dashboard, app, rules, dataText] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
-    readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
-    readFile(new URL("../package.json", import.meta.url), "utf8"),
-    readdir(previewRoot),
+    readFile(new URL("../public/radar/index.html", import.meta.url), "utf8"),
+    readFile(new URL("../public/radar/app.js", import.meta.url), "utf8"),
+    readFile(new URL("../public/雷达规则.md", import.meta.url), "utf8"),
+    readFile(new URL("../public/radar/data.json", import.meta.url), "utf8"),
   ]);
 
-  assert.deepEqual(files.sort(), ["SkeletonPreview.tsx", "preview.css"]);
-  assert.match(preview, /from "react-loading-skeleton"/);
-  assert.match(preview, /baseColor="#eceae7"/);
-  assert.match(preview, /highlightColor="#f9f8f6"/);
-  assert.match(preview, /duration=\{2\.8\}/);
-  assert.match(preview, /sites-skeleton-search-placeholder/);
-  assert.match(packageJson, /"react-loading-skeleton": "3\.5\.0"/);
+  assert.match(page, /热点内容雷达/);
+  assert.match(dashboard, /80%–90% 热点解释与有用信息/);
+  assert.match(dashboard, /10%–20%，可用现有工具、记录新工具线索或不挂工具/);
+  assert.match(app, /\["内容价值", "content_value", 25\]/);
+  assert.match(app, /productBridgeLabels/);
+  assert.match(app, /内容主线 · 正文 80%–90%/);
+  assert.match(app, /产品承接 · 全文 10%–20% · 可选/);
+  assert.match(rules, /工具是否贴合不参与选题评分，也不是入选门槛/);
+  assert.match(rules, /`none`：内容本身成立，不挂工具/);
 
-  const shellIndex = preview.indexOf('className="sites-skeleton-shell"');
-  const statusIndex = preview.indexOf('className="sites-skeleton-status"');
-  assert.ok(shellIndex >= 0 && statusIndex > shellIndex);
-  assert.match(css, /position:\s*fixed/);
-  assert.match(css, /inset:\s*0/);
-  assert.match(css, /opacity:\s*0\.52/);
-  assert.match(css, /prefers-reduced-motion:\s*reduce/);
-  assert.doesNotMatch(css, /#020617|canvas|pets|progress/i);
-  assert.doesNotMatch(
-    preview,
-    /loading-spinner|status-mark|status-progress|canvas|cookie|random/i,
-  );
-
-  assert.match(page, /export const metadata:\s*Metadata/);
-  assert.match(page, /"codex-preview": "development"/);
-  assert.match(page, /<SkeletonPreview \/>/);
-  assert.match(layout, /title:\s*"Starter Project"/);
-  assert.doesNotMatch(layout, /codex-preview|_sites-preview|themeColor|\bViewport\b/);
-  assert.doesNotMatch(css, /(^|\s)(html|body)\s*\{/m);
-
-  await assert.rejects(
-    access(new URL("public/_sites-preview", templateRoot)),
+  const data = JSON.parse(dataText);
+  assert.equal(data.radar_model, "v2-content-first");
+  assert.equal(data.editorial_policy.product_bridge_optional, true);
+  assert.ok(data.periods.every((period) => period.scoring_version === "v1-legacy"));
+  assert.ok(
+    data.periods
+      .flatMap((period) => period.candidates)
+      .filter((candidate) => candidate.status === "selected")
+      .every((candidate) => candidate.traffic_playbook?.content_mainline),
   );
 });
