@@ -1,0 +1,18 @@
+{
+  "candidate_id": "HR-20260719-03",
+  "scan_date": "2026-07-19",
+  "primary_site": "PipGauge",
+  "topic": "Gold Trading Goes 24/7: Contract Size, Pip Value, and Weekend Risk",
+  "package_summary": "借 CME 新交易安排厘清 1-Ounce Gold Futures 与零售 XAUUSD CFD 的规格差异，避免把相同金价误当成相同仓位风险。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "historical_recap_required",
+  "time_status_label": "上线窗口已过；改为规格复盘后发布",
+  "documents": [
+    {"id":"facts","label":"事实与论点","file":"00-事实与论点.md","platform":"internal","kind":"editorial brief","status_label":"已整理"},
+    {"id":"medium","label":"Medium","file":"01-Medium.md","platform":"medium","kind":"long-form draft","status_label":"待人工审核"},
+    {"id":"reddit","label":"Reddit","file":"02-Reddit.md","platform":"reddit","kind":"native discussion draft","status_label":"待人工审核"},
+    {"id":"x","label":"X","file":"03-X.md","platform":"x","kind":"short thread draft","status_label":"待人工审核"},
+    {"id":"review","label":"审核清单","file":"04-人工审核.md","platform":"internal","kind":"human gate","status_label":"必须完成"}
+  ]
+}

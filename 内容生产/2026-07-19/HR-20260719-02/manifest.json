@@ -1,0 +1,18 @@
+{
+  "candidate_id": "HR-20260719-02",
+  "scan_date": "2026-07-19",
+  "primary_site": "PipGauge",
+  "topic": "Nasdaq Fell 4% in a Week: What Does That Mean for a NAS100 CFD Position?",
+  "package_summary": "把指数百分比跌幅翻译成点数、合约点值、美元损失和回本门槛，并反复强调 NAS100 CFD 规格因券商而异。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "historical_recap_required",
+  "time_status_label": "历史周度数据；发布前改为复盘或更新数字",
+  "documents": [
+    {"id":"facts","label":"事实与论点","file":"00-事实与论点.md","platform":"internal","kind":"editorial brief","status_label":"已整理"},
+    {"id":"medium","label":"Medium","file":"01-Medium.md","platform":"medium","kind":"long-form draft","status_label":"待人工审核"},
+    {"id":"reddit","label":"Reddit","file":"02-Reddit.md","platform":"reddit","kind":"native discussion draft","status_label":"待人工审核"},
+    {"id":"x","label":"X","file":"03-X.md","platform":"x","kind":"short thread draft","status_label":"待人工审核"},
+    {"id":"review","label":"审核清单","file":"04-人工审核.md","platform":"internal","kind":"human gate","status_label":"必须完成"}
+  ]
+}
