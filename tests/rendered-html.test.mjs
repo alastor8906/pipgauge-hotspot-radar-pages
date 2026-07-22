@@ -80,28 +80,41 @@ test("generates Medium, Reddit and X drafts and stops at human review", async ()
   ]);
   const registry = JSON.parse(registryText);
   const data = JSON.parse(dataText);
-  const latest = data.periods.find((period) => period.scan_date === data.latest_scan_date);
-  const selectedIds = latest.candidates
-    .filter((candidate) => candidate.status === "selected")
-    .map((candidate) => candidate.candidate_id)
-    .sort();
-  const latestPackages = registry.packages
-    .filter((contentPackage) => contentPackage.scan_date === data.latest_scan_date)
+  const selectedCandidates = data.periods
+    .flatMap((period) => period.candidates
+      .filter((candidate) => candidate.status === "selected")
+      .map((candidate) => ({ ...candidate, scan_date: period.scan_date })))
+    .sort((left, right) => left.candidate_id.localeCompare(right.candidate_id));
+  const allPackages = [...registry.packages]
     .sort((left, right) => left.candidate_id.localeCompare(right.candidate_id));
 
   assert.equal(registry.endpoint, "multi_platform_drafts_awaiting_human_review");
   assert.deepEqual(registry.supported_platforms, ["medium", "reddit", "x"]);
-  assert.deepEqual(latestPackages.map((contentPackage) => contentPackage.candidate_id), selectedIds);
-  assert.ok(latestPackages.every((contentPackage) => contentPackage.package_status === "review_ready"));
-  assert.ok(latestPackages.every((contentPackage) => contentPackage.review_state === "awaiting_human_review"));
-  assert.ok(latestPackages.every((contentPackage) => (
+  assert.deepEqual(
+    allPackages.map((contentPackage) => contentPackage.candidate_id),
+    selectedCandidates.map((candidate) => candidate.candidate_id),
+  );
+  assert.equal(allPackages.length, 17);
+  assert.equal(allPackages.reduce((total, contentPackage) => total + contentPackage.platforms.length, 0), 51);
+  assert.ok(allPackages.every((contentPackage) => contentPackage.package_status === "review_ready"));
+  assert.ok(allPackages.every((contentPackage) => contentPackage.review_state === "awaiting_human_review"));
+  assert.ok(allPackages.every((contentPackage) => (
     contentPackage.platforms.map((platform) => platform.id).join(",") === "medium,reddit,x"
   )));
+  for (const period of data.periods) {
+    const selectedCount = period.candidates.filter((candidate) => candidate.status === "selected").length;
+    const packageCount = allPackages.filter((contentPackage) => contentPackage.scan_date === period.scan_date).length;
+    assert.equal(packageCount, selectedCount, `${period.scan_date} content package count mismatch`);
+  }
   assert.doesNotMatch(registryText, /"id": "quora"/i);
   assert.match(dashboard, /草稿已生成，统一停止在人工审核；不会自动发布/);
   assert.match(generator, /must contain exactly Medium, Reddit and X in that order/);
 
-  for (const contentPackage of latestPackages) {
+  for (const contentPackage of allPackages) {
+    const factsDraft = await readFile(
+      new URL(`../public/内容生产/${contentPackage.scan_date}/${contentPackage.candidate_id}/00-事实与论点.md`, import.meta.url),
+      "utf8",
+    );
     const mediumDraft = await readFile(
       new URL(`../public/内容生产/${contentPackage.scan_date}/${contentPackage.candidate_id}/01-Medium.md`, import.meta.url),
       "utf8",
@@ -114,6 +127,10 @@ test("generates Medium, Reddit and X drafts and stops at human review", async ()
       new URL(`../public/内容生产/${contentPackage.scan_date}/${contentPackage.candidate_id}/03-X.md`, import.meta.url),
       "utf8",
     );
+    const reviewDraft = await readFile(
+      new URL(`../public/内容生产/${contentPackage.scan_date}/${contentPackage.candidate_id}/04-人工审核.md`, import.meta.url),
+      "utf8",
+    );
     const packageHtml = await readFile(
       new URL(`../public/内容生产/${contentPackage.scan_date}/${contentPackage.candidate_id}/index.html`, import.meta.url),
       "utf8",
@@ -121,8 +138,13 @@ test("generates Medium, Reddit and X drafts and stops at human review", async ()
     assert.match(packageHtml, /三平台草稿已生成/);
     assert.match(packageHtml, /等待人工审核/);
     assert.match(packageHtml, /不会自动发布/);
+    assert.ok(factsDraft.length > 300, `${contentPackage.candidate_id} facts file is too short`);
     assert.ok(mediumDraft.length > 1800, `${contentPackage.candidate_id} Medium draft is too short`);
     assert.ok(redditDraft.length > 500, `${contentPackage.candidate_id} Reddit draft is too short`);
     assert.match(xDraft, /1\//, `${contentPackage.candidate_id} X draft must be a numbered thread`);
+    assert.match(reviewDraft, /人工|审核/, `${contentPackage.candidate_id} review gate is missing`);
+    if (contentPackage.scan_date !== data.latest_scan_date) {
+      assert.match(reviewDraft, /时效|历史|复盘/, `${contentPackage.candidate_id} historical time gate is missing`);
+    }
   }
 });
