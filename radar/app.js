@@ -243,8 +243,16 @@ function renderPlaybooks() {
     : `<div class="empty-state">${emptyMessage}</div>`;
 }
 
-function contentPackageCard(candidate, index) {
-  const contentPackage = candidate.content_package;
+function candidateForPackage(contentPackage) {
+  for (const period of state.periods) {
+    const candidate = period.candidates.find((item) => item.candidate_id === contentPackage.candidate_id);
+    if (candidate) return candidate;
+  }
+  return contentPackage;
+}
+
+function contentPackageCard(contentPackage, index) {
+  const candidate = candidateForPackage(contentPackage);
   const platformCount = asList(contentPackage.platforms).length;
   return `
     <article class="package-card">
@@ -273,15 +281,61 @@ function contentPackageCard(candidate, index) {
     </article>`;
 }
 
+function contentPackageGroup(scanDate, packages, label) {
+  return `
+    <section class="package-period-group">
+      <header class="package-period-head">
+        <div>
+          <span>${escapeHtml(label)}</span>
+          <h3>${escapeHtml(scanDate)}</h3>
+        </div>
+        <strong>${packages.length} 个审核包 · ${packages.length * 3} 份平台草稿</strong>
+      </header>
+      <div class="package-period-list">${packages.map(contentPackageCard).join("")}</div>
+    </section>`;
+}
+
 function renderContentPackages() {
   const selected = state.data.candidates.filter((item) => item.status === "selected");
-  const packages = selected.filter((item) => item.content_package);
-  const emptyMessage = selected.length === 0
-    ? "本期没有合格选题，因此不生成任何平台草稿。"
-    : "本期只有旧版内容资料，尚未生成 Medium、Reddit、X 三平台审核包。";
-  document.querySelector("#package-list").innerHTML = packages.length
-    ? packages.map(contentPackageCard).join("")
-    : `<div class="empty-state">${emptyMessage}</div>`;
+  const selectedPackages = state.packages.filter((item) => item.scan_date === state.selectedDate);
+  const otherPackages = state.packages.filter((item) => item.scan_date !== state.selectedDate);
+  const groups = [];
+
+  if (selectedPackages.length) {
+    groups.push(contentPackageGroup(state.selectedDate, selectedPackages, "所选期次"));
+  } else {
+    const emptyMessage = selected.length === 0
+      ? "所选期次没有合格选题，因此没有生成平台草稿。"
+      : "所选期次尚未生成 Medium、Reddit、X 三平台审核包。";
+    groups.push(`
+      <section class="package-period-group is-empty">
+        <header class="package-period-head">
+          <div><span>所选期次</span><h3>${escapeHtml(state.selectedDate)}</h3></div>
+          <strong>0 个审核包</strong>
+        </header>
+        <div class="empty-state">${emptyMessage}</div>
+      </section>`);
+  }
+
+  if (otherPackages.length) {
+    const grouped = new Map();
+    for (const contentPackage of otherPackages) {
+      const packages = grouped.get(contentPackage.scan_date) || [];
+      packages.push(contentPackage);
+      grouped.set(contentPackage.scan_date, packages);
+    }
+    groups.push(`
+      <div class="package-history-title">
+        <span>ARCHIVE</span>
+        <h3>其他历史期次</h3>
+        <p>历史草稿不会因切换到新一期而消失，仍可继续审核与复用。</p>
+      </div>`);
+    for (const [scanDate, packages] of grouped) {
+      groups.push(contentPackageGroup(scanDate, packages, "历史审核包"));
+    }
+  }
+
+  document.querySelector("#package-list").innerHTML = groups.join("");
 }
 
 function scorePart(label, key, maximum, candidate) {

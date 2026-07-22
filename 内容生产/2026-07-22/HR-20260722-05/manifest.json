@@ -1,0 +1,18 @@
+{
+  "candidate_id": "HR-20260722-05",
+  "scan_date": "2026-07-22",
+  "primary_site": "PositionMath",
+  "topic": "CME Single Stock Futures Launch July 27: 100 Shares vs 10-Share Micro Exposure",
+  "package_summary": "把 CME 单股期货 100 股与 Micro 10 股 multiplier 转成三档股价下的名义敞口和 1%/5% 价格变化，不把名义价值写成保证金或最大损失。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "revalidate_or_recap",
+  "time_status_label": "发布前核验 7 月 27 日上线状态与最终合约规格",
+  "documents": [
+    {"id": "facts", "label": "事实与论点", "file": "00-事实与论点.md", "platform": "internal", "kind": "editorial brief", "status_label": "已整理"},
+    {"id": "medium", "label": "Medium", "file": "01-Medium.md", "platform": "medium", "kind": "long-form draft", "status_label": "待人工审核"},
+    {"id": "reddit", "label": "Reddit", "file": "02-Reddit.md", "platform": "reddit", "kind": "native discussion draft", "status_label": "待人工审核"},
+    {"id": "x", "label": "X", "file": "03-X.md", "platform": "x", "kind": "short thread draft", "status_label": "待人工审核"},
+    {"id": "review", "label": "审核清单", "file": "04-人工审核.md", "platform": "internal", "kind": "human gate", "status_label": "必须完成"}
+  ]
+}
