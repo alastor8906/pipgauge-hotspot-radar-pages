@@ -1,0 +1,18 @@
+{
+  "candidate_id": "HR-20260720-03",
+  "scan_date": "2026-07-20",
+  "primary_site": "PipGauge",
+  "topic": "Gold Near $4,000 as 24/7 Trading Goes Live",
+  "package_summary": "内容重点是厘清 CME 1-Ounce Gold Futures 与零售 XAUUSD CFD 的产品差异，而不是借金价标题预测方向。数字部分只演示相同 $25 价格变化为何产生完全不同的盈亏。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "revalidate_or_recap",
+  "time_status_label": "上线日已过，优先改成机制复盘",
+  "documents": [
+    {"id": "facts", "label": "事实与论点", "file": "00-事实与论点.md", "platform": "internal", "kind": "editorial brief", "status_label": "已整理"},
+    {"id": "medium", "label": "Medium", "file": "01-Medium.md", "platform": "medium", "kind": "long-form draft", "status_label": "待人工审核"},
+    {"id": "reddit", "label": "Reddit", "file": "02-Reddit.md", "platform": "reddit", "kind": "native discussion draft", "status_label": "待人工审核"},
+    {"id": "x", "label": "X", "file": "03-X.md", "platform": "x", "kind": "short thread draft", "status_label": "待人工审核"},
+    {"id": "review", "label": "审核清单", "file": "04-人工审核.md", "platform": "internal", "kind": "human gate", "status_label": "必须完成"}
+  ]
+}

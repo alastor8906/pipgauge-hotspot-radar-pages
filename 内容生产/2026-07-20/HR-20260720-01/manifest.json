@@ -1,0 +1,18 @@
+{
+  "candidate_id": "HR-20260720-01",
+  "scan_date": "2026-07-20",
+  "primary_site": "PipGauge",
+  "topic": "USD/JPY Near a 40-Year High: What a 100-Pip Move Means",
+  "package_summary": "以日元高位与干预讨论为内容入口，先解释事件机制，再用 100-pip 情景把风险换成美元。三个平台版本均已生成，但时间敏感事实必须在发布前重新核对。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "revalidate_or_recap",
+  "time_status_label": "复核后发布，或改写成复盘",
+  "documents": [
+    {"id": "facts", "label": "事实与论点", "file": "00-事实与论点.md", "platform": "internal", "kind": "editorial brief", "status_label": "已整理"},
+    {"id": "medium", "label": "Medium", "file": "01-Medium.md", "platform": "medium", "kind": "long-form draft", "status_label": "待人工审核"},
+    {"id": "reddit", "label": "Reddit", "file": "02-Reddit.md", "platform": "reddit", "kind": "native discussion draft", "status_label": "待人工审核"},
+    {"id": "x", "label": "X", "file": "03-X.md", "platform": "x", "kind": "short thread draft", "status_label": "待人工审核"},
+    {"id": "review", "label": "审核清单", "file": "04-人工审核.md", "platform": "internal", "kind": "human gate", "status_label": "必须完成"}
+  ]
+}
