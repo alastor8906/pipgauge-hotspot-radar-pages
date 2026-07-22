@@ -29,6 +29,15 @@ function renderMarkdown(markdown) {
   let paragraph = [];
   let listType = null;
 
+  const tableCells = (line) => line
+    .trim()
+    .replace(/^\|/, "")
+    .replace(/\|$/, "")
+    .split("|")
+    .map((cell) => cell.trim());
+
+  const isTableDivider = (line) => tableCells(line).every((cell) => /^:?-{3,}:?$/.test(cell));
+
   const flushParagraph = () => {
     if (!paragraph.length) return;
     output.push(`<p>${renderInline(paragraph.join(" "))}</p>`);
@@ -40,7 +49,8 @@ function renderMarkdown(markdown) {
     listType = null;
   };
 
-  for (const rawLine of lines) {
+  for (let index = 0; index < lines.length; index += 1) {
+    const rawLine = lines[index];
     const line = rawLine.trimEnd();
     if (!line.trim()) {
       flushParagraph();
@@ -79,6 +89,21 @@ function renderMarkdown(markdown) {
       flushParagraph();
       closeList();
       output.push("<hr>");
+      continue;
+    }
+    const nextLine = lines[index + 1]?.trimEnd() || "";
+    if (line.includes("|") && nextLine.includes("|") && isTableDivider(nextLine)) {
+      flushParagraph();
+      closeList();
+      const headings = tableCells(line);
+      const rows = [];
+      index += 2;
+      while (index < lines.length && lines[index].includes("|")) {
+        rows.push(tableCells(lines[index]));
+        index += 1;
+      }
+      index -= 1;
+      output.push(`<div class="table-wrap"><table><thead><tr>${headings.map((cell) => `<th>${renderInline(cell)}</th>`).join("")}</tr></thead><tbody>${rows.map((row) => `<tr>${row.map((cell) => `<td>${renderInline(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`);
       continue;
     }
     paragraph.push(line.trim());

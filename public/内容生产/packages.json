@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T14:33:28.081Z",
+  "generated_at": "2026-07-22T16:18:39.451Z",
   "endpoint": "multi_platform_drafts_awaiting_human_review",
   "supported_platforms": [
     "medium",
@@ -7,6 +7,181 @@
     "x"
   ],
   "packages": [
+    {
+      "candidate_id": "HR-20260722-01",
+      "scan_date": "2026-07-22",
+      "primary_site": "PipGauge",
+      "topic": "USD/JPY Above 163: Recheck 100–300 Pip Intervention Risk",
+      "package_summary": "以 USD/JPY 突破 163 与日本官方表态为新闻钩子，主体解释 100、200、300 pip 反向波动如何转化为美元风险；工具只在计算完成后用于复核。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "revalidate_or_recap",
+      "time_status_label": "发布前复核汇价与官方表态；干预发生后改为复盘",
+      "url": "../内容生产/2026-07-22/HR-20260722-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-22/HR-20260722-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-22/HR-20260722-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-22/HR-20260722-01/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260722-02",
+      "scan_date": "2026-07-22",
+      "primary_site": "PipGauge",
+      "topic": "ECB Decision Tomorrow: Last EUR/USD Risk Check",
+      "package_summary": "把 ECB 会前热度转成固定 $100 风险下的 EUR/USD 仓位与点差成本表，不预测利率决定或汇率方向；三个平台版本均停在人工审核。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "revalidate_or_recap",
+      "time_status_label": "决议发布前有效；发布后仅可改成实际波动复盘",
+      "url": "../内容生产/2026-07-22/HR-20260722-02/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-22/HR-20260722-02/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-22/HR-20260722-02/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-22/HR-20260722-02/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260722-03",
+      "scan_date": "2026-07-22",
+      "primary_site": "PositionMath",
+      "topic": "TSLA and GOOGL Report Tonight: Final Combined Gap-Risk Check",
+      "package_summary": "把同日双财报热度转成组合层面的 5%/10%/15% 跳空损失表，不预测业绩或股价；三个平台版本均停在人工审核。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "expired_or_recap_only",
+      "time_status_label": "会前标题已过期；发布前必须改为实际结果复盘",
+      "url": "../内容生产/2026-07-22/HR-20260722-03/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-22/HR-20260722-03/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-22/HR-20260722-03/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-22/HR-20260722-03/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260722-04",
+      "scan_date": "2026-07-22",
+      "primary_site": "PipGauge",
+      "topic": "Two Days to CME 1OZ Gold 24/7: Separate Futures Tick Math from XAUUSD",
+      "package_summary": "用 1 盎司期货的官方合约单位和 tick 解释周末黄金交易，再与常见 XAUUSD CFD 规格分栏比较；不混用两个市场的规格。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "revalidate_or_evergreen",
+      "time_status_label": "首个周末窗口已过；发布前改为复盘或常青规格说明",
+      "url": "../内容生产/2026-07-22/HR-20260722-04/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-22/HR-20260722-04/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-22/HR-20260722-04/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-22/HR-20260722-04/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260722-05",
+      "scan_date": "2026-07-22",
+      "primary_site": "PositionMath",
+      "topic": "CME Single Stock Futures Launch July 27: 100 Shares vs 10-Share Micro Exposure",
+      "package_summary": "把 CME 单股期货 100 股与 Micro 10 股 multiplier 转成三档股价下的名义敞口和 1%/5% 价格变化，不把名义价值写成保证金或最大损失。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "revalidate_or_recap",
+      "time_status_label": "发布前核验 7 月 27 日上线状态与最终合约规格",
+      "url": "../内容生产/2026-07-22/HR-20260722-05/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-22/HR-20260722-05/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-22/HR-20260722-05/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-22/HR-20260722-05/index.html#x"
+        }
+      ]
+    },
     {
       "candidate_id": "HR-20260720-01",
       "scan_date": "2026-07-20",

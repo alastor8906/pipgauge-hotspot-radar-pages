@@ -53,6 +53,8 @@ test("keeps content value primary and product placement optional", async () => {
   assert.match(app, /productBridgeLabels/);
   assert.match(app, /内容主线 · 正文 80%–90%/);
   assert.match(app, /产品承接 · 全文 10%–20% · 可选/);
+  assert.match(app, /其他历史期次/);
+  assert.match(app, /历史草稿不会因切换到新一期而消失/);
   assert.match(rules, /工具是否贴合不参与选题评分，也不是入选门槛/);
   assert.match(rules, /`none`：内容本身成立，不挂工具/);
   assert.match(rules, /Medium、Reddit、X 草稿已生成，等待人工审核/);
@@ -100,6 +102,18 @@ test("generates Medium, Reddit and X drafts and stops at human review", async ()
   assert.match(generator, /must contain exactly Medium, Reddit and X in that order/);
 
   for (const contentPackage of latestPackages) {
+    const mediumDraft = await readFile(
+      new URL(`../public/内容生产/${contentPackage.scan_date}/${contentPackage.candidate_id}/01-Medium.md`, import.meta.url),
+      "utf8",
+    );
+    const redditDraft = await readFile(
+      new URL(`../public/内容生产/${contentPackage.scan_date}/${contentPackage.candidate_id}/02-Reddit.md`, import.meta.url),
+      "utf8",
+    );
+    const xDraft = await readFile(
+      new URL(`../public/内容生产/${contentPackage.scan_date}/${contentPackage.candidate_id}/03-X.md`, import.meta.url),
+      "utf8",
+    );
     const packageHtml = await readFile(
       new URL(`../public/内容生产/${contentPackage.scan_date}/${contentPackage.candidate_id}/index.html`, import.meta.url),
       "utf8",
@@ -107,5 +121,8 @@ test("generates Medium, Reddit and X drafts and stops at human review", async ()
     assert.match(packageHtml, /三平台草稿已生成/);
     assert.match(packageHtml, /等待人工审核/);
     assert.match(packageHtml, /不会自动发布/);
+    assert.ok(mediumDraft.length > 1800, `${contentPackage.candidate_id} Medium draft is too short`);
+    assert.ok(redditDraft.length > 500, `${contentPackage.candidate_id} Reddit draft is too short`);
+    assert.match(xDraft, /1\//, `${contentPackage.candidate_id} X draft must be a numbered thread`);
   }
 });
