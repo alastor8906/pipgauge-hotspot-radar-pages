@@ -48,12 +48,14 @@ test("keeps content value primary and product placement optional", async () => {
   assert.match(page, /热点内容雷达/);
   assert.match(dashboard, /80%–90% 热点解释与有用信息/);
   assert.match(dashboard, /10%–20%，可用现有工具、记录新工具线索或不挂工具/);
+  assert.match(dashboard, /Medium · Reddit · X 内容审核包/);
   assert.match(app, /\["内容价值", "content_value", 25\]/);
   assert.match(app, /productBridgeLabels/);
   assert.match(app, /内容主线 · 正文 80%–90%/);
   assert.match(app, /产品承接 · 全文 10%–20% · 可选/);
   assert.match(rules, /工具是否贴合不参与选题评分，也不是入选门槛/);
   assert.match(rules, /`none`：内容本身成立，不挂工具/);
+  assert.match(rules, /Medium、Reddit、X 草稿已生成，等待人工审核/);
 
   const data = JSON.parse(dataText);
   assert.equal(data.radar_model, "v2-content-first");
@@ -65,4 +67,45 @@ test("keeps content value primary and product placement optional", async () => {
       .filter((candidate) => candidate.status === "selected")
       .every((candidate) => candidate.traffic_playbook?.content_mainline),
   );
+});
+
+test("generates Medium, Reddit and X drafts and stops at human review", async () => {
+  const [registryText, dataText, dashboard, generator] = await Promise.all([
+    readFile(new URL("../public/内容生产/packages.json", import.meta.url), "utf8"),
+    readFile(new URL("../public/radar/data.json", import.meta.url), "utf8"),
+    readFile(new URL("../public/radar/index.html", import.meta.url), "utf8"),
+    readFile(new URL("../scripts/build-content-packages.mjs", import.meta.url), "utf8"),
+  ]);
+  const registry = JSON.parse(registryText);
+  const data = JSON.parse(dataText);
+  const latest = data.periods.find((period) => period.scan_date === data.latest_scan_date);
+  const selectedIds = latest.candidates
+    .filter((candidate) => candidate.status === "selected")
+    .map((candidate) => candidate.candidate_id)
+    .sort();
+  const latestPackages = registry.packages
+    .filter((contentPackage) => contentPackage.scan_date === data.latest_scan_date)
+    .sort((left, right) => left.candidate_id.localeCompare(right.candidate_id));
+
+  assert.equal(registry.endpoint, "multi_platform_drafts_awaiting_human_review");
+  assert.deepEqual(registry.supported_platforms, ["medium", "reddit", "x"]);
+  assert.deepEqual(latestPackages.map((contentPackage) => contentPackage.candidate_id), selectedIds);
+  assert.ok(latestPackages.every((contentPackage) => contentPackage.package_status === "review_ready"));
+  assert.ok(latestPackages.every((contentPackage) => contentPackage.review_state === "awaiting_human_review"));
+  assert.ok(latestPackages.every((contentPackage) => (
+    contentPackage.platforms.map((platform) => platform.id).join(",") === "medium,reddit,x"
+  )));
+  assert.doesNotMatch(registryText, /"id": "quora"/i);
+  assert.match(dashboard, /草稿已生成，统一停止在人工审核；不会自动发布/);
+  assert.match(generator, /must contain exactly Medium, Reddit and X in that order/);
+
+  for (const contentPackage of latestPackages) {
+    const packageHtml = await readFile(
+      new URL(`../public/内容生产/${contentPackage.scan_date}/${contentPackage.candidate_id}/index.html`, import.meta.url),
+      "utf8",
+    );
+    assert.match(packageHtml, /三平台草稿已生成/);
+    assert.match(packageHtml, /等待人工审核/);
+    assert.match(packageHtml, /不会自动发布/);
+  }
 });

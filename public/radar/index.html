@@ -58,7 +58,7 @@
       <div class="metric-block">
         <span>内容完成</span>
         <strong id="metric-content">—</strong>
-        <small>主文 + 三个渠道版</small>
+        <small>Medium + Reddit + X</small>
       </div>
       <div class="metric-block progress-block">
         <span>试运行</span>
@@ -70,6 +70,7 @@
     <nav class="view-tabs" aria-label="看板视图" role="tablist">
       <button class="tab-button is-active" type="button" role="tab" aria-selected="true" data-view="today">本期选题</button>
       <button class="tab-button" type="button" role="tab" aria-selected="false" data-view="playbooks">内容打法</button>
+      <button class="tab-button" type="button" role="tab" aria-selected="false" data-view="packages">内容审核包</button>
       <button class="tab-button" type="button" role="tab" aria-selected="false" data-view="watchlist">观察池</button>
       <button class="tab-button" type="button" role="tab" aria-selected="false" data-view="coverage">扫描覆盖</button>
     </nav>
@@ -162,6 +163,17 @@
       <div id="playbook-list" class="playbook-list" aria-live="polite"></div>
     </section>
 
+    <section id="view-packages" class="view-panel" role="tabpanel" hidden>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Platform-ready drafts</p>
+          <h2>Medium · Reddit · X 内容审核包</h2>
+        </div>
+        <span class="policy-note">草稿已生成，统一停止在人工审核；不会自动发布</span>
+      </div>
+      <div id="package-list" class="package-list" aria-live="polite"></div>
+    </section>
+
     <section id="view-watchlist" class="view-panel" role="tabpanel" hidden>
       <div class="section-heading">
         <div>
@@ -214,7 +226,7 @@
   </main>
 
   <footer>
-    <span>试运行 · 80%–90% 内容主体 · 产品承接可选 · 不自动发布、不互动</span>
+    <span>试运行 · 80%–90% 内容主体 · 三平台草稿止于人工审核 · 不自动发布</span>
     <span id="footer-date">—</span>
   </footer>
 </body>
