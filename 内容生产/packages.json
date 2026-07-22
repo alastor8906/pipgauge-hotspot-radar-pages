@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T16:18:39.451Z",
+  "generated_at": "2026-07-22T17:29:59.367Z",
   "endpoint": "multi_platform_drafts_awaiting_human_review",
   "supported_platforms": [
     "medium",
@@ -183,6 +183,146 @@
       ]
     },
     {
+      "candidate_id": "HR-20260721-01",
+      "scan_date": "2026-07-21",
+      "primary_site": "PipGauge",
+      "topic": "USD/JPY Still Near 162: Recheck 100–300 Pip Intervention Risk",
+      "package_summary": "作为 7 月 20 日稿的热点刷新版，以 162.5 附近汇价重算 100、200、300-pip 反转情景；不预测干预，只处理账户暴露。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "historical_recap_required",
+      "time_status_label": "历史汇价已失效；发布前改为实际复盘",
+      "url": "../内容生产/2026-07-21/HR-20260721-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-21/HR-20260721-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-21/HR-20260721-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-21/HR-20260721-01/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260721-02",
+      "scan_date": "2026-07-21",
+      "primary_site": "PipGauge",
+      "topic": "ECB Decision Tomorrow: Final EUR/USD Position-Size Check",
+      "package_summary": "最后 48 小时刷新稿：用 $100 固定风险比较 25、50、100-pip 止损，并把普通与扩张点差分开计算。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "historical_recap_required",
+      "time_status_label": "决议已过；仅可改为实际波动复盘",
+      "url": "../内容生产/2026-07-21/HR-20260721-02/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-21/HR-20260721-02/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-21/HR-20260721-02/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-21/HR-20260721-02/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260721-03",
+      "scan_date": "2026-07-21",
+      "primary_site": "PipGauge",
+      "topic": "Gold Around $4,000 Before the First 24/7 Weekend Session",
+      "package_summary": "将 $4,000 金价与首个周末交易窗口作为钩子，比较 $10/$25/$50 价格变化在不同 XAUUSD 仓位和 CME 1OZ 合约中的不同含义。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "historical_recap_required",
+      "time_status_label": "价格与首个窗口均已过；改为规格复盘",
+      "url": "../内容生产/2026-07-21/HR-20260721-03/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-21/HR-20260721-03/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-21/HR-20260721-03/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-21/HR-20260721-03/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260721-04",
+      "scan_date": "2026-07-21",
+      "primary_site": "PositionMath",
+      "topic": "TSLA and GOOGL Earnings Tomorrow: Recheck Combined Gap Risk",
+      "package_summary": "财报前最后窗口刷新稿：用 $10,000 账户和两笔仓位演示 5%、10%、15% 同时跳空的组合损失，并明确止损不能保证跳空成交价。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "historical_recap_required",
+      "time_status_label": "财报已发布；必须用实际数据重写",
+      "url": "../内容生产/2026-07-21/HR-20260721-04/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-21/HR-20260721-04/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-21/HR-20260721-04/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-21/HR-20260721-04/index.html#x"
+        }
+      ]
+    },
+    {
       "candidate_id": "HR-20260720-01",
       "scan_date": "2026-07-20",
       "primary_site": "PipGauge",
@@ -319,6 +459,146 @@
           "status": "draft_ready",
           "status_label": "待人工审核",
           "url": "../内容生产/2026-07-20/HR-20260720-04/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260719-01",
+      "scan_date": "2026-07-19",
+      "primary_site": "PipGauge",
+      "topic": "ECB Meeting Risk: What a 50-Pip EUR/USD Move Means in Dollars",
+      "package_summary": "借 ECB 决议窗口解释事件风险如何改变止损、仓位和点差成本；正文先完成 50-pip 风险换算，工具只在计算完成后自然出现。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "historical_recap_required",
+      "time_status_label": "历史会前稿；发布前必须改为复盘",
+      "url": "../内容生产/2026-07-19/HR-20260719-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-19/HR-20260719-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-19/HR-20260719-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-19/HR-20260719-01/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260719-02",
+      "scan_date": "2026-07-19",
+      "primary_site": "PipGauge",
+      "topic": "Nasdaq Fell 4% in a Week: What Does That Mean for a NAS100 CFD Position?",
+      "package_summary": "把指数百分比跌幅翻译成点数、合约点值、美元损失和回本门槛，并反复强调 NAS100 CFD 规格因券商而异。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "historical_recap_required",
+      "time_status_label": "历史周度数据；发布前改为复盘或更新数字",
+      "url": "../内容生产/2026-07-19/HR-20260719-02/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-19/HR-20260719-02/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-19/HR-20260719-02/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-19/HR-20260719-02/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260719-03",
+      "scan_date": "2026-07-19",
+      "primary_site": "PipGauge",
+      "topic": "Gold Trading Goes 24/7: Contract Size, Pip Value, and Weekend Risk",
+      "package_summary": "借 CME 新交易安排厘清 1-Ounce Gold Futures 与零售 XAUUSD CFD 的规格差异，避免把相同金价误当成相同仓位风险。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "historical_recap_required",
+      "time_status_label": "上线窗口已过；改为规格复盘后发布",
+      "url": "../内容生产/2026-07-19/HR-20260719-03/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-19/HR-20260719-03/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-19/HR-20260719-03/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-19/HR-20260719-03/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260719-04",
+      "scan_date": "2026-07-19",
+      "primary_site": "PositionMath",
+      "topic": "Tesla and Alphabet Report on the Same Day: How Much Portfolio Risk Is That?",
+      "package_summary": "用两只同日财报股票说明单票止损与组合跳空风险的区别，核心是合并风险预算和 5%–15% 压力测试，而非预测公司结果。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "historical_recap_required",
+      "time_status_label": "财报窗口已过；只能结合实际数据复盘",
+      "url": "../内容生产/2026-07-19/HR-20260719-04/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-19/HR-20260719-04/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-19/HR-20260719-04/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-19/HR-20260719-04/index.html#x"
         }
       ]
     }
