@@ -1,6 +1,7 @@
 const state = {
   payload: null,
   periods: [],
+  packages: [],
   data: null,
   selectedDate: null,
   view: "today",
@@ -40,6 +41,13 @@ const coverageLabels = {
 
 const contentStatusLabels = {
   draft_ready: "草稿已完成",
+  review_ready: "三平台草稿待审核",
+};
+
+const platformLabels = {
+  medium: "Medium",
+  reddit: "Reddit",
+  x: "X",
 };
 
 const executionModeLabels = {
@@ -127,6 +135,7 @@ function candidateMatches(candidate) {
     playbook.body_material,
     playbook.product_bridge,
     playbook.calculator_bridge,
+    candidate.content_package?.package_summary,
     ...asList(playbook.search_intents),
   ].join(" ").toLowerCase();
   return (
@@ -135,6 +144,15 @@ function candidateMatches(candidate) {
     candidateScore(candidate) >= state.minimumScore &&
     (!query || haystack.includes(query))
   );
+}
+
+function platformActions(contentPackage) {
+  return asList(contentPackage?.platforms)
+    .map((platform) => `
+      <a class="platform-action" href="${escapeHtml(platform.url)}" target="_blank" rel="noopener">
+        ${escapeHtml(platform.label || platformLabels[platform.id] || platform.id)}
+      </a>`)
+    .join("");
 }
 
 function playbookCard(candidate, index) {
@@ -225,6 +243,47 @@ function renderPlaybooks() {
     : `<div class="empty-state">${emptyMessage}</div>`;
 }
 
+function contentPackageCard(candidate, index) {
+  const contentPackage = candidate.content_package;
+  const platformCount = asList(contentPackage.platforms).length;
+  return `
+    <article class="package-card">
+      <div class="package-card-head">
+        <div>
+          <div class="topic-meta">
+            <span class="site-badge${candidate.primary_site === "PositionMath" ? " is-secondary" : ""}">${escapeHtml(candidate.primary_site)}</span>
+            <span class="mapping-chip">#${index + 1}</span>
+            <span class="package-state"><i data-lucide="circle-pause" aria-hidden="true"></i>等待人工审核</span>
+          </div>
+          <h3>${escapeHtml(candidate.topic)}</h3>
+        </div>
+        <div class="package-count"><strong>${platformCount}</strong><span>平台草稿</span></div>
+      </div>
+      <p>${escapeHtml(contentPackage.package_summary)}</p>
+      <div class="package-review-grid">
+        <div><span>当前停点</span><strong>草稿完成，等待人工审核</strong></div>
+        <div><span>时效处理</span><strong>${escapeHtml(contentPackage.time_status_label || "发布前重新核验")}</strong></div>
+      </div>
+      <div class="package-actions">
+        <div class="platform-actions" aria-label="平台草稿入口">${platformActions(contentPackage)}</div>
+        <a class="review-button" href="${escapeHtml(contentPackage.url)}" target="_blank" rel="noopener">
+          打开完整审核包 <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </article>`;
+}
+
+function renderContentPackages() {
+  const selected = state.data.candidates.filter((item) => item.status === "selected");
+  const packages = selected.filter((item) => item.content_package);
+  const emptyMessage = selected.length === 0
+    ? "本期没有合格选题，因此不生成任何平台草稿。"
+    : "本期只有旧版内容资料，尚未生成 Medium、Reddit、X 三平台审核包。";
+  document.querySelector("#package-list").innerHTML = packages.length
+    ? packages.map(contentPackageCard).join("")
+    : `<div class="empty-state">${emptyMessage}</div>`;
+}
+
 function scorePart(label, key, maximum, candidate) {
   const value = Number(candidate[key] ?? 0);
   const width = Math.round((value / maximum) * 100);
@@ -245,7 +304,21 @@ function topicCard(candidate, index) {
   const score = candidateScore(candidate);
   const legacy = scoringVersion() === "v1-legacy";
   const secondaryClass = candidate.primary_site === "PositionMath" ? " is-secondary" : "";
-  const contentEntry = candidate.content_url ? `
+  const contentPackage = candidate.content_package;
+  const contentEntry = contentPackage ? `
+      <div class="content-row is-package">
+        <div class="content-row-copy">
+          <span class="content-state ${escapeHtml(candidate.content_status || "")}">
+            <i data-lucide="file-check-2" aria-hidden="true"></i>
+            ${escapeHtml(candidate.content_label || contentStatusLabels[candidate.content_status] || "内容待处理")}
+          </span>
+          <span class="content-format">${escapeHtml(candidate.content_format || "Medium · Reddit · X")}</span>
+        </div>
+        <div class="platform-actions">${platformActions(contentPackage)}</div>
+        <a class="content-button" href="${escapeHtml(contentPackage.url)}" target="_blank" rel="noopener">
+          审核内容包 <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </a>
+      </div>` : (candidate.content_url ? `
       <div class="content-row">
         <span class="content-state ${escapeHtml(candidate.content_status || "")}">
           <i data-lucide="file-check-2" aria-hidden="true"></i>
@@ -255,7 +328,7 @@ function topicCard(candidate, index) {
         <a class="content-button" href="${escapeHtml(candidate.content_url)}" target="_blank" rel="noopener">
           打开内容 <i data-lucide="arrow-up-right" aria-hidden="true"></i>
         </a>
-      </div>` : "";
+      </div>` : "");
   return `
     <article class="topic-card">
       <div class="topic-head">
@@ -373,9 +446,11 @@ function renderSummary() {
   document.querySelector("#top-pick").textContent = top ? top.topic : "本期无合格选题，不补题";
   document.querySelector("#content-ready").textContent = stats.selected === 0
     ? "无合格选题，不生成内容包"
-    : (stats.content_ready
-      ? `${stats.content_ready} 个内容包已完成，可逐篇审稿`
-      : "本期尚未建立内容包");
+    : (stats.review_ready
+      ? `${stats.review_ready} 个三平台内容包待人工审核`
+      : (stats.content_ready
+        ? `${stats.content_ready} 个旧版内容包已完成`
+        : "本期尚未建立内容包"));
 }
 
 function activateView(view) {
@@ -400,19 +475,60 @@ function render() {
   renderSummary();
   renderTopics();
   renderPlaybooks();
+  renderContentPackages();
   renderWatchlist();
   renderCoverage();
   renderDocuments();
   refreshIcons();
 }
 
+function enrichPeriod(period) {
+  const periodPackages = state.packages.filter((item) => item.scan_date === period.scan_date);
+  if (!periodPackages.length) return period;
+  const packageByCandidate = new Map(periodPackages.map((item) => [item.candidate_id, item]));
+  const candidates = period.candidates.map((candidate) => {
+    const contentPackage = packageByCandidate.get(candidate.candidate_id);
+    if (!contentPackage) return candidate;
+    return {
+      ...candidate,
+      content_status: contentPackage.package_status,
+      content_label: contentStatusLabels[contentPackage.package_status],
+      content_format: "Medium · Reddit · X",
+      content_url: contentPackage.url,
+      content_package: contentPackage,
+    };
+  });
+  const reviewReady = candidates.filter((candidate) => (
+    candidate.status === "selected"
+    && candidate.content_package?.review_state === "awaiting_human_review"
+  )).length;
+  return {
+    ...period,
+    candidates,
+    stats: {
+      ...period.stats,
+      content_ready: reviewReady,
+      review_ready: reviewReady,
+      platform_drafts: reviewReady * 3,
+    },
+  };
+}
+
 async function loadData() {
-  const response = await fetch(`./data.json?ts=${Date.now()}`, { cache: "no-store" });
+  const timestamp = Date.now();
+  const [response, packageResponse] = await Promise.all([
+    fetch(`./data.json?ts=${timestamp}`, { cache: "no-store" }),
+    fetch(`../内容生产/packages.json?ts=${timestamp}`, { cache: "no-store" }),
+  ]);
   if (!response.ok) throw new Error(`Failed to load data: ${response.status}`);
   state.payload = await response.json();
-  state.periods = Array.isArray(state.payload.periods) && state.payload.periods.length
+  state.packages = packageResponse.ok
+    ? asList((await packageResponse.json()).packages)
+    : [];
+  const periods = Array.isArray(state.payload.periods) && state.payload.periods.length
     ? state.payload.periods
     : [state.payload];
+  state.periods = periods.map(enrichPeriod);
   const preservedPeriod = state.periods.find((period) => period.scan_date === state.selectedDate);
   state.data = preservedPeriod || state.periods[0];
   state.selectedDate = state.data.scan_date;

@@ -1,0 +1,18 @@
+{
+  "candidate_id": "HR-20260720-02",
+  "scan_date": "2026-07-20",
+  "primary_site": "PipGauge",
+  "topic": "ECB Week: Recalculate EUR/USD Risk Before the Decision",
+  "package_summary": "把 ECB 事件从方向预测改写成仓位、止损与点差检查。Medium 是完整会前解释，Reddit 是无链接风险清单，X 是一组可独立阅读的数据帖。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "revalidate_or_recap",
+  "time_status_label": "决议状态必须即时复核",
+  "documents": [
+    {"id": "facts", "label": "事实与论点", "file": "00-事实与论点.md", "platform": "internal", "kind": "editorial brief", "status_label": "已整理"},
+    {"id": "medium", "label": "Medium", "file": "01-Medium.md", "platform": "medium", "kind": "long-form draft", "status_label": "待人工审核"},
+    {"id": "reddit", "label": "Reddit", "file": "02-Reddit.md", "platform": "reddit", "kind": "native discussion draft", "status_label": "待人工审核"},
+    {"id": "x", "label": "X", "file": "03-X.md", "platform": "x", "kind": "short thread draft", "status_label": "待人工审核"},
+    {"id": "review", "label": "审核清单", "file": "04-人工审核.md", "platform": "internal", "kind": "human gate", "status_label": "必须完成"}
+  ]
+}

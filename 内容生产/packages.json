@@ -1,0 +1,151 @@
+{
+  "generated_at": "2026-07-22T14:33:28.081Z",
+  "endpoint": "multi_platform_drafts_awaiting_human_review",
+  "supported_platforms": [
+    "medium",
+    "reddit",
+    "x"
+  ],
+  "packages": [
+    {
+      "candidate_id": "HR-20260720-01",
+      "scan_date": "2026-07-20",
+      "primary_site": "PipGauge",
+      "topic": "USD/JPY Near a 40-Year High: What a 100-Pip Move Means",
+      "package_summary": "以日元高位与干预讨论为内容入口，先解释事件机制，再用 100-pip 情景把风险换成美元。三个平台版本均已生成，但时间敏感事实必须在发布前重新核对。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "revalidate_or_recap",
+      "time_status_label": "复核后发布，或改写成复盘",
+      "url": "../内容生产/2026-07-20/HR-20260720-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-20/HR-20260720-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-20/HR-20260720-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-20/HR-20260720-01/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260720-02",
+      "scan_date": "2026-07-20",
+      "primary_site": "PipGauge",
+      "topic": "ECB Week: Recalculate EUR/USD Risk Before the Decision",
+      "package_summary": "把 ECB 事件从方向预测改写成仓位、止损与点差检查。Medium 是完整会前解释，Reddit 是无链接风险清单，X 是一组可独立阅读的数据帖。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "revalidate_or_recap",
+      "time_status_label": "决议状态必须即时复核",
+      "url": "../内容生产/2026-07-20/HR-20260720-02/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-20/HR-20260720-02/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-20/HR-20260720-02/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-20/HR-20260720-02/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260720-03",
+      "scan_date": "2026-07-20",
+      "primary_site": "PipGauge",
+      "topic": "Gold Near $4,000 as 24/7 Trading Goes Live",
+      "package_summary": "内容重点是厘清 CME 1-Ounce Gold Futures 与零售 XAUUSD CFD 的产品差异，而不是借金价标题预测方向。数字部分只演示相同 $25 价格变化为何产生完全不同的盈亏。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "revalidate_or_recap",
+      "time_status_label": "上线日已过，优先改成机制复盘",
+      "url": "../内容生产/2026-07-20/HR-20260720-03/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-20/HR-20260720-03/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-20/HR-20260720-03/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-20/HR-20260720-03/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260720-04",
+      "scan_date": "2026-07-20",
+      "primary_site": "PositionMath",
+      "topic": "Big Tech Earnings Week: Size the Combined TSLA and GOOGL Risk",
+      "package_summary": "不预测两家公司财报，而是解释同日事件如何形成组合层面的跳空风险。核心示例用两笔等额仓位比较 5%、10% 与 15% 同向跳空对 $10,000 账户的影响。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "revalidate_or_recap",
+      "time_status_label": "财报后只可发布实际复盘版",
+      "url": "../内容生产/2026-07-20/HR-20260720-04/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-20/HR-20260720-04/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-20/HR-20260720-04/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-20/HR-20260720-04/index.html#x"
+        }
+      ]
+    }
+  ]
+}
