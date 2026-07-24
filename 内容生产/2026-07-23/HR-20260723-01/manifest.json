@@ -1,0 +1,18 @@
+{
+  "candidate_id": "HR-20260723-01",
+  "scan_date": "2026-07-23",
+  "primary_site": "PipGauge",
+  "topic": "USD/JPY at a Fresh 40-Year High: Update 100–300 Pip Reversal Risk",
+  "package_summary": "以 7 月 23 日 USD/JPY 四十年新高与日本官方表态刷新既有稿，继续把 100、200、300 pip 反向波动换算成账户风险，不预测干预。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "revalidate_or_recap",
+  "time_status_label": "发布前复核汇价与官方表态；干预发生后改为复盘",
+  "documents": [
+    {"id": "facts", "label": "事实与论点", "file": "00-事实与论点.md", "platform": "internal", "kind": "editorial brief", "status_label": "已整理"},
+    {"id": "medium", "label": "Medium", "file": "01-Medium.md", "platform": "medium", "kind": "long-form draft", "status_label": "待人工审核"},
+    {"id": "reddit", "label": "Reddit", "file": "02-Reddit.md", "platform": "reddit", "kind": "native discussion draft", "status_label": "待人工审核"},
+    {"id": "x", "label": "X", "file": "03-X.md", "platform": "x", "kind": "short thread draft", "status_label": "待人工审核"},
+    {"id": "review", "label": "审核清单", "file": "04-人工审核.md", "platform": "internal", "kind": "human gate", "status_label": "必须完成"}
+  ]
+}

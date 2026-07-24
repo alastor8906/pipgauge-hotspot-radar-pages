@@ -1,6 +1,6 @@
 {
   "data_version": 3,
-  "generated_at": "2026-07-23T22:34:03+08:00",
+  "generated_at": "2026-07-24T21:52:18+08:00",
   "latest_scan_date": "2026-07-23",
   "available_dates": [
     "2026-07-23",
@@ -12,7 +12,8 @@
   "periods": [
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-07-23T22:34:03+08:00",
+      "generated_at": "2026-07-24T21:52:18+08:00",
+      "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
         "total_days": 7,
@@ -28,7 +29,7 @@
         "total": 11,
         "selected_average": 94.6,
         "all_selected_pass_gate": true,
-        "content_ready": 0,
+        "content_ready": 5,
         "playbook_ready": 5
       },
       "candidates": [
@@ -54,6 +55,11 @@
             "Margin"
           ],
           "reason": "Same-day Reuters pricing and official comments extend the existing intervention-risk calculation window; refresh HR-20260720-01",
+          "content_status": "review_ready",
+          "content_label": "Medium / Reddit / X 刷新稿待人工审核",
+          "content_url": "../内容生产/2026-07-23/HR-20260723-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-07-24",
           "traffic_playbook": {
             "playbook_status": "ready",
             "execution_mode": "refresh",
@@ -78,7 +84,15 @@
             ],
             "link_placement": "先给损益表与固定风险结论，再链接 Pip Value 和 Position Size。",
             "expiry_condition": "离开当前高位且 48 小时无新官方表态时停止；干预发生后停用会前措辞。",
-            "editorial_boundary": "不预测干预时点、汇率方向或获利机会。"
+            "editorial_boundary": "不预测干预时点、汇率方向或获利机会。",
+            "content_mainline": "用 7 月 23 日四十年新高更新 100/200/300 pip 反向波动的账户风险，不把官方警告写成干预信号。",
+            "body_material": [
+              "Reuters 当日汇价与官方表态",
+              "0.1/0.5/1 lot 损益表",
+              "$10,000 账户固定风险仓位"
+            ],
+            "product_bridge": "先完成 pip value 与损益计算，再可选链接 PipGauge 复核输入。",
+            "product_bridge_type": "optional"
           }
         },
         {
@@ -103,6 +117,11 @@
             "P&L"
           ],
           "reason": "The official decision and independent AP report support a post-decision refresh of HR-20260719-01",
+          "content_status": "review_ready",
+          "content_label": "ECB 决议后复盘稿待人工审核",
+          "content_url": "../内容生产/2026-07-23/HR-20260723-02/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-07-24",
           "traffic_playbook": {
             "playbook_status": "ready",
             "execution_mode": "refresh",
@@ -127,7 +146,15 @@
             ],
             "link_placement": "先展示实际波动和成本，再链接 Pip Value、P&L 与 Spread Cost。",
             "expiry_condition": "决议后 48 小时讨论降温即停止；没有可核验价格区间则不填假数字。",
-            "editorial_boundary": "不预测下一次 ECB 决定或 EUR/USD 方向。"
+            "editorial_boundary": "不预测下一次 ECB 决定或 EUR/USD 方向。",
+            "content_mainline": "ECB 维持 2.25% 且反应有限，解释重大日历事件为何不等于大幅波动，并保留固定风险的仓位计算。",
+            "body_material": [
+              "ECB 官方决定",
+              "Reuters 决议后市场反应",
+              "25/50/100 pip 固定风险表"
+            ],
+            "product_bridge": "正文完成风险公式后，可选使用 Position Size 与 Spread Cost 核算。",
+            "product_bridge_type": "optional"
           }
         },
         {
@@ -152,6 +179,11 @@
             "Break-Even"
           ],
           "reason": "Official results plus AP's quantified same-day move support an actual-gap refresh of HR-20260719-04",
+          "content_status": "review_ready",
+          "content_label": "实际收盘跌幅复盘稿待人工审核",
+          "content_url": "../内容生产/2026-07-23/HR-20260723-03/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-07-24",
           "traffic_playbook": {
             "playbook_status": "ready",
             "execution_mode": "refresh",
@@ -176,7 +208,15 @@
             ],
             "link_placement": "先给实际损失表和跳空越过止损说明，再链接 P&L 与 Portfolio Heat。",
             "expiry_condition": "实际变动数据稳定后 48 小时停止热点追逐，保留为常青财报风险复盘。",
-            "editorial_boundary": "不归因未经证实的价格方向，不预测反弹，不把盘中跌幅写成收盘跌幅。"
+            "editorial_boundary": "不归因未经证实的价格方向，不预测反弹，不把盘中跌幅写成收盘跌幅。",
+            "content_mainline": "用 AP 收盘确认的 Tesla -14.5% 与 Alphabet -7.1% 替换会前情景，计算两笔持仓的实际组合损失。",
+            "body_material": [
+              "AP 7 月 23 日收盘跌幅",
+              "$2,500 等额双仓计算",
+              "止损与隔夜成交边界"
+            ],
+            "product_bridge": "先展示逐仓美元损失及合计，再可选使用 Portfolio Heat 整理账户暴露。",
+            "product_bridge_type": "optional"
           }
         },
         {
@@ -201,6 +241,11 @@
             "Spread Cost"
           ],
           "reason": "CME's July 24 window and an independent technology-provider notice support the final pre-launch refresh of HR-20260719-03",
+          "content_status": "review_ready",
+          "content_label": "首个周末交易规格稿待人工审核",
+          "content_url": "../内容生产/2026-07-23/HR-20260723-04/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-07-24",
           "traffic_playbook": {
             "playbook_status": "ready",
             "execution_mode": "refresh",
@@ -225,7 +270,15 @@
             ],
             "link_placement": "先分清 futures 与 CFD，再在 XAUUSD 栏链接工具。",
             "expiry_condition": "首个周末后 48 小时无新规格、流动性或点差问题时停止。",
-            "editorial_boundary": "不混算两种产品，不预测金价，不把 24/7 写成无维护或无流动性风险。"
+            "editorial_boundary": "不混算两种产品，不预测金价，不把 24/7 写成无维护或无流动性风险。",
+            "content_mainline": "围绕首个 24/7 周末窗口解释 CME 1OZ tick、维护时段和 XAUUSD CFD 规格为何必须分栏。",
+            "body_material": [
+              "CME 官方周末时段",
+              "1/5/10 tick 期货示例",
+              "独立 XAUUSD CFD 情景"
+            ],
+            "product_bridge": "只有 XAUUSD CFD 栏可选链接 PipGauge，期货栏仅引用 CME 规格。",
+            "product_bridge_type": "optional"
           }
         },
         {
@@ -250,6 +303,11 @@
             "Margin"
           ],
           "reason": "CME and CFTC materials support adding the regulatory minimum margin calculation to HR-20260722-05",
+          "content_status": "review_ready",
+          "content_label": "15% 最低保证金刷新稿待人工审核",
+          "content_url": "../内容生产/2026-07-23/HR-20260723-05/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-07-26",
           "traffic_playbook": {
             "playbook_status": "ready",
             "execution_mode": "refresh",
@@ -274,7 +332,15 @@
             ],
             "link_placement": "先给 multiplier、名义价值和 15% 表，再链接 Position Size/Portfolio Heat。",
             "expiry_condition": "延期或最终规格变化立即暂停；上线 72 小时后转常青规格页。",
-            "editorial_boundary": "15% 是监管最低标准而非保证实际经纪商费率；不承诺资本效率、流动性或最大损失。"
+            "editorial_boundary": "15% 是监管最低标准而非保证实际经纪商费率；不承诺资本效率、流动性或最大损失。",
+            "content_mainline": "在 100 股/10 股 multiplier 名义敞口表上增加 15% 监管最低保证金，明确实际要求可能更高。",
+            "body_material": [
+              "CME 100/10 股规格",
+              "$50/$200/$500 名义价值",
+              "名义价值乘 15% 的最低保证金表"
+            ],
+            "product_bridge": "先完成交易所规格和最低保证金计算，再可选使用 Position Size 或 Portfolio Heat。",
+            "product_bridge_type": "optional"
           }
         },
         {
@@ -448,12 +514,14 @@
         "rules": "../雷达规则.md",
         "capability_map": "../两站计算器能力地图.md",
         "ledger": "../热点候选总表.csv",
-        "traffic_playbooks": "../热点流量打法.json"
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-07-23"
       }
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-07-23T22:34:03+08:00",
+      "generated_at": "2026-07-24T21:52:18+08:00",
+      "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
         "total_days": 7,
@@ -520,7 +588,11 @@
             ],
             "link_placement": "先给损益表与固定风险结论，再链接 Pip Value 和 Position Size；标题与首段不放工具链接。",
             "expiry_condition": "汇价离开 163 区域且 48 小时内无新官方表态或讨论时停止；发生干预后停止使用会前措辞。",
-            "editorial_boundary": "不预测干预时点、汇率方向或获利机会；不把官方表态写成已确定行动。"
+            "editorial_boundary": "不预测干预时点、汇率方向或获利机会；不把官方表态写成已确定行动。",
+            "content_mainline": "借 Reuters 当日 163.21 和日本官方表态回答用户此刻会搜的 100/200/300 pip 反向波动风险；用 0.1/0.5/1 lot 的可读美元数字刷新 HR-20260720-01，并在算出每 pip 金额后承接 Pip Value 与 Position Size。",
+            "body_material": "$10,000 账户、1% 风险；0.1/0.5/1 lot；100/200/300 pip 反向波动。",
+            "product_bridge": "Pip Value 先给出每 pip 美元金额，P&L 展示三档反向情景，Position Size 再把计划风险固定为账户的 1%。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -570,7 +642,11 @@
             ],
             "link_placement": "先展示固定风险仓位表和点差成本，再链接 Position Size 与 Spread Cost。",
             "expiry_condition": "7 月 23 日决议发布即停止会前标题；没有显著实际波动则不制作结果版。",
-            "editorial_boundary": "不预测 ECB 决定或 EUR/USD 方向，不暗示事件必然产生大行情。"
+            "editorial_boundary": "不预测 ECB 决定或 EUR/USD 方向，不暗示事件必然产生大行情。",
+            "content_mainline": "借明日 ECB 决议钩子，回答固定 $100 风险在 25/50/100 pip 止损下分别对应多大仓位；用一张三档表刷新 HR-20260719-01，并在仓位换算步骤承接现有计算器。",
+            "body_material": "$10,000 账户、$100 风险；25/50/100 pip 止损；正常 1 pip 与扩大 3 pip 点差。",
+            "product_bridge": "Pip Value 确认每 pip 金额，Position Size 固定美元风险，Spread Cost 对比正常 1 pip 与事件时段 3 pip 的成本。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -620,7 +696,11 @@
             ],
             "link_placement": "先给双仓情景表和止损滑点说明，再链接 Portfolio Heat；公司名不做广告式 CTA。",
             "expiry_condition": "7 月 22 日盘后结果发布即失效；无显著跳空则不做结果版。",
-            "editorial_boundary": "不预测业绩或股价，明确跳空可能越过止损且历史波动不保证未来结果。"
+            "editorial_boundary": "不预测业绩或股价，明确跳空可能越过止损且历史波动不保证未来结果。",
+            "content_mainline": "借今晚双财报钩子，回答 $10,000 账户同时持有两仓时 5%/10%/15% 跳空会损失多少；刷新 HR-20260719-04 的双仓表，并在合并暴露步骤承接 Portfolio Heat。",
+            "body_material": "$10,000 账户；TSLA 与 GOOGL 各一仓；5%/10%/15% 同向或反向跳空。",
+            "product_bridge": "Position Size 设定每一仓，Portfolio Heat 合并计划风险，Stop-Loss 与 Break-Even 解释跳空越过止损后的结果。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -670,7 +750,11 @@
             ],
             "link_placement": "先把 futures 与 CFD 规格分栏解释清楚，再在 XAUUSD 栏链接相应工具。",
             "expiry_condition": "7 月 24 日窗口结束后 48 小时内无新的点差、流动性或规格讨论时停止。",
-            "editorial_boundary": "不把 XAUUSD 默认规格套到 CME futures，不预测金价，不把 24/7 描述为无维护或无流动性风险。"
+            "editorial_boundary": "不把 XAUUSD 默认规格套到 CME futures，不预测金价，不把 24/7 描述为无维护或无流动性风险。",
+            "content_mainline": "借 CME 7 月 24 日和延长维护窗口钩子，回答 1/5/10 ticks 对 1OZ futures 是多少，再用独立栏展示 XAUUSD 的 $10/$25/$50 变化；刷新 HR-20260719-03，并只在 CFD 栏承接 PipGauge。",
+            "body_material": "CME 1OZ 的 1/5/10 tick 情景；另列 0.01/0.1/1 lot XAUUSD 的 $10/$25/$50 价格变化。",
+            "product_bridge": "CME futures 的 tick 与时段引用官方规格；XAUUSD Pip Value、Position Size、Margin 和 Spread Cost 仅用于零售 CFD 情景。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -719,7 +803,11 @@
             ],
             "link_placement": "先给 100 股与 10 股的三档名义敞口表，再链接 Position Size/Portfolio Heat；不在开头把股票现货计算器冒充期货规格工具。",
             "expiry_condition": "CME 延期或监管状态变化时立即暂停；上线后 72 小时没有新的合约规模、保证金或可用性讨论时转为常青规格页，不再追热点。",
-            "editorial_boundary": "不预测单股方向，不承诺资本效率或流动性，不给税务结论，不把名义敞口等同于保证金或最大损失；所有合约数字以 CME 最终规格为准。"
+            "editorial_boundary": "不预测单股方向，不承诺资本效率或流动性，不给税务结论，不把名义敞口等同于保证金或最大损失；所有合约数字以 CME 最终规格为准。",
+            "content_mainline": "借 7 月 27 日上线和 100/10 股规格钩子，回答用户此刻会搜的单份合约名义敞口：用 $50/$200/$500 三档股价展示标准合约为 $5,000/$20,000/$50,000、Micro 为 $500/$2,000/$5,000；在把 multiplier 换成可读美元后承接 Position Size 与 Portfolio Heat。",
+            "body_material": "$10,000 账户；标的股价 $50/$200/$500；对比 1 个 100 股标准合约和 1 个 10 股 Micro 合约的名义敞口，并演示 1%/5% 价格变化。",
+            "product_bridge": "先用官方 multiplier × 标的股价计算名义敞口，再用 Position Size 规划账户内单仓，用 Portfolio Heat 合并多份合约暴露；保证金与每日结算规则只引用 CME/券商实际规格。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -898,7 +986,8 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-07-23T22:34:03+08:00",
+      "generated_at": "2026-07-24T21:52:18+08:00",
+      "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
         "total_days": 7,
@@ -965,7 +1054,11 @@
             ],
             "link_placement": "先给损益表和固定风险结论，再链接 Pip Value 与 Position Size；首段不放链接。",
             "expiry_condition": "汇价显著离开 162 区域且 48 小时无新官方表态或讨论时停止。",
-            "editorial_boundary": "不预测干预时间、汇率方向或获利机会。"
+            "editorial_boundary": "不预测干预时间、汇率方向或获利机会。",
+            "content_mainline": "借 Reuters 当日 162.5 附近的新闻钩子，回答用户此刻搜索的 100、200、300 pip 反向波动风险；用 0.1、0.5、1 lot 的可读数字更新旧稿，并在算出每 pip 金额后承接 Pip Value 与 Position Size。",
+            "body_material": "$10,000 账户、1% 风险；0.1/0.5/1 lot；100/200/300 pip 反向波动。",
+            "product_bridge": "先用 Pip Value 得出每 pip 美元金额，再用 P&L 展示三档反转，最后用 Position Size 将风险固定在账户的 1%。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1015,7 +1108,11 @@
             ],
             "link_placement": "先展示固定风险仓位表，再链接 Position Size 和 Spread Cost。",
             "expiry_condition": "7 月 23 日决议发布即停止会前标题，除非转为基于实际数据的复盘。",
-            "editorial_boundary": "不预测 ECB 决定或 EUR/USD 方向，不暗示必有大行情。"
+            "editorial_boundary": "不预测 ECB 决定或 EUR/USD 方向，不暗示必有大行情。",
+            "content_mainline": "借明日 ECB 决议钩子，回答会前该怎样把 25、50、100 pip 止损换成固定 $100 风险的仓位；用一张三档表更新 HR-20260719-01，并在仓位计算步骤承接现有工具。",
+            "body_material": "$10,000 账户、$100 风险；25/50/100 pip 止损；正常 1 pip 与扩大 3 pip 点差。",
+            "product_bridge": "Pip Value 确认每 pip 金额，Position Size 固定美元风险，Spread Cost 加入事件时段成本。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1065,7 +1162,11 @@
             ],
             "link_placement": "先解释 futures 与 CFD 的规格差异，再链接 XAUUSD 工具。",
             "expiry_condition": "7 月 24 日窗口结束且 48 小时内无新的点差、流动性或规格讨论时停止。",
-            "editorial_boundary": "不把 XAUUSD 默认规格套到 CME futures，不预测金价。"
+            "editorial_boundary": "不把 XAUUSD 默认规格套到 CME futures，不预测金价。",
+            "content_mainline": "借 Reuters 的 $4,000 附近金价和 CME 7 月 24 日钩子，回答 $10/$25/$50 波动在 0.01/0.1/1 lot XAUUSD 中是多少美元；随后单列 CME tick，工具只承接 CFD 步骤。",
+            "body_material": "金价 $4,000；$10/$25/$50 变化；0.01/0.1/1 lot XAUUSD，并单列 1OZ tick。",
+            "product_bridge": "XAUUSD Pip Value、Position Size、Margin 与 Spread Cost 只用于零售 CFD；CME 期货数字引用官方规格。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1115,7 +1216,11 @@
             ],
             "link_placement": "先给双仓情景表，再链接 Portfolio Heat；公司名不做广告式 CTA。",
             "expiry_condition": "7 月 22 日盘后结果发布即停止会前标题；无显著跳空则不做结果版。",
-            "editorial_boundary": "不预测业绩或股价，明确止损不能保证按设定价成交。"
+            "editorial_boundary": "不预测业绩或股价，明确止损不能保证按设定价成交。",
+            "content_mainline": "借两家公司明日同日财报钩子，回答 $10,000 账户同时持有两仓时 5%/10%/15% 跳空会损失多少；更新 HR-20260719-04 的数字表，并在合并风险步骤承接 Portfolio Heat。",
+            "body_material": "$10,000 账户；TSLA 与 GOOGL 各一仓；5%/10%/15% 同向或反向跳空。",
+            "product_bridge": "Position Size 设定单仓，Portfolio Heat 合并暴露，Stop-Loss 与 Break-Even 解释跳空越过止损后的情景。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1293,7 +1398,8 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-07-23T22:34:03+08:00",
+      "generated_at": "2026-07-24T21:52:18+08:00",
+      "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
         "total_days": 7,
@@ -1360,7 +1466,11 @@
             ],
             "link_placement": "先给出三档仓位的损益表和固定风险结论，再链接 Pip Value 与 Position Size。",
             "expiry_condition": "USD/JPY 明显脱离事件高位且 48 小时没有新的官方表态或讨论热度时停止追逐。",
-            "editorial_boundary": "不预测干预时间、汇率方向或盈利机会，只做风险换算。"
+            "editorial_boundary": "不预测干预时间、汇率方向或盈利机会，只做风险换算。",
+            "content_mainline": "不预测日本是否干预，直接计算：USD/JPY 突然回落 100、200、300 pips 时，0.1、0.5、1 lot 分别意味着多少美元风险？",
+            "body_material": "$10,000 账户、1% 风险；0.1、0.5、1 lot；40、80、120 pip 止损和 100、200、300 pip 反转。",
+            "product_bridge": "Pip Value 计算每 pip 金额，P&L 展示剧烈反转，Position Size 比较 40 与 120 pip 止损下如何保持固定风险。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1410,7 +1520,11 @@
             ],
             "link_placement": "保留旧稿中完成计算后的工具链接，只更新事件时间、标题和示例。",
             "expiry_condition": "ECB 决议发布后不再使用会前检查标题；除非实际波动值得做结果复盘。",
-            "editorial_boundary": "不制造“重大行情必然发生”的暗示，不重复发布同构内容。"
+            "editorial_boundary": "不制造“重大行情必然发生”的暗示，不重复发布同构内容。",
+            "content_mainline": "把旧稿更新成决议前检查清单：止损从 25 扩到 50 或 100 pips 时，如何缩小仓位并计入更宽点差。",
+            "body_material": "$10,000 账户、$100 固定风险；25、50、100 pip 止损以及正常与扩大点差。",
+            "product_bridge": "沿用 Pip Value、Position Size、Spread Cost 与 P&L，不新建同构文章。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1460,7 +1574,11 @@
             ],
             "link_placement": "在完成产品规格区分后继续使用原有 XAUUSD 工具链接，不新增开头 CTA。",
             "expiry_condition": "上线日后的讨论消退且没有新的流动性或规格问题时停止更新。",
-            "editorial_boundary": "绝不把 CFD 默认规格用于 CME futures，也不宣传价格方向。"
+            "editorial_boundary": "绝不把 CFD 默认规格用于 CME futures，也不宣传价格方向。",
+            "content_mainline": "用当前 `$25` 金价波动作为新钩子，更新“CME 1OZ 与 XAUUSD 不是同一个合约”的现有解释。",
+            "body_material": "金价波动 $25；比较 0.01、0.1、1 lot XAUUSD 的美元影响，并单列 CME 1OZ。",
+            "product_bridge": "沿用 XAUUSD Pip Value、Position Size、Margin 与 Spread Cost，期货部分继续只引用官方规格。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1510,7 +1628,11 @@
             ],
             "link_placement": "风险表后链接 Portfolio Heat；公司名称只作为事件背景，不做促销式按钮。",
             "expiry_condition": "财报发布后不再使用会前标题；只有实际跳空形成新的计算问题时再做结果版。",
-            "editorial_boundary": "不预测业绩或股价；明确跳空可能越过止损。"
+            "editorial_boundary": "不预测业绩或股价；明确跳空可能越过止损。",
+            "content_mainline": "更新旧稿，突出两个仓位同时遭遇 5%、10%、15% 跳空时的组合热度，而不是分别预测公司财报。",
+            "body_material": "$10,000 账户；TSLA 与 GOOGL 各一笔仓位；三档跳空与两档计划风险。",
+            "product_bridge": "沿用 Position Size、Portfolio Heat、Stop-Loss 与 Break-Even，重点更新会前日期和组合示例。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1673,7 +1795,8 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-07-23T22:34:03+08:00",
+      "generated_at": "2026-07-24T21:52:18+08:00",
+      "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
         "total_days": 7,
@@ -1745,7 +1868,11 @@
             ],
             "link_placement": "先给出三档波动表和固定风险结论，再链接到对应计算器；标题和首段不放推广链接。",
             "expiry_condition": "ECB 决议结束 48 小时且没有延续性波动或新政策信息时停止追逐。",
-            "editorial_boundary": "不预测利率决定或汇率方向，不把事件波动写成收益机会。"
+            "editorial_boundary": "不预测利率决定或汇率方向，不把事件波动写成收益机会。",
+            "content_mainline": "不猜 ECB 方向，而是回答：如果 EUR/USD 在决议附近波动 25、50 或 100 pips，同一美元风险下仓位应该缩小到多少？",
+            "body_material": "$10,000 账户、1% 风险；比较 20、50、100 pip 止损以及 0.1、0.5、1 lot 的结果。",
+            "product_bridge": "用 Pip Value 先换算每 pip 金额，再用 Position Size 固定风险，并用 Spread Cost 展示事件时段成本扩张。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1800,7 +1927,11 @@
             ],
             "link_placement": "先展示百分比到点数的换算，再提供 NAS100 点值工具；不在开头引导点击。",
             "expiry_condition": "市场进入新一周且旧回撤数据不再被讨论，或新的行情幅度取代原数字时停止使用原标题。",
-            "editorial_boundary": "不预测反弹或继续下跌；反复提醒 NAS100 CFD 点值因券商而异。"
+            "editorial_boundary": "不预测反弹或继续下跌；反复提醒 NAS100 CFD 点值因券商而异。",
+            "content_mainline": "把“Nasdaq 跌了 4%”翻译成不同 NAS100 CFD 合约下的点数、美元亏损、保证金占用和回本涨幅。",
+            "body_material": "以 25,000 点为示例，比较 1.4%、2.9%、4% 回撤和三档券商点值；明确合约规格必须由用户核对。",
+            "product_bridge": "NAS100 Point Value 承接点值，P&L 与 Margin 承接账户影响，Drawdown Recovery 解释亏损后的恢复门槛。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1855,7 +1986,11 @@
             ],
             "link_placement": "完成 futures 与 CFD 的规格区分后，再链接 XAUUSD 计算器，避免让工具看起来适用于期货。",
             "expiry_condition": "上线讨论结束且没有周末流动性、点差或规格争议的新信号时停止追逐。",
-            "editorial_boundary": "不把 CME futures 与 XAUUSD CFD 混为一谈，不宣传全天交易更容易获利。"
+            "editorial_boundary": "不把 CME futures 与 XAUUSD CFD 混为一谈，不宣传全天交易更容易获利。",
+            "content_mainline": "借 24/7 上线解释同样的黄金价格波动，在 CME 1OZ futures 与零售 XAUUSD CFD 中为什么不是同一个盈亏数字。",
+            "body_material": "比较金价波动 $10、$25、$50 时三档 XAUUSD 仓位的美元影响，再单列 CME 1OZ tick 规格。",
+            "product_bridge": "XAUUSD Pip Value、Position Size、Margin 和 Spread Cost 用于零售 CFD 情景；期货规格只引用 CME 官方数字，不强套现有工具。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1910,7 +2045,11 @@
             ],
             "link_placement": "先展示组合风险表，再链接 Portfolio Heat；避免把公司名与工具链接放成广告式 CTA。",
             "expiry_condition": "两家公司财报发布且盘后波动被市场完全消化后停止使用会前标题。",
-            "editorial_boundary": "不预测财报结果；明确止损无法保证以设定价格成交。"
+            "editorial_boundary": "不预测财报结果；明确止损无法保证以设定价格成交。",
+            "content_mainline": "用一个 $10,000 账户回答：两只同日财报股票同时持仓时，5%、10%、15% 跳空会让组合总风险变成多少？",
+            "body_material": "$10,000 账户，两笔各占 0.5% 或 1% 计划风险，叠加三档隔夜跳空情景。",
+            "product_bridge": "Position Size 与 Portfolio Heat 承接组合暴露，Stop-Loss 和 Break-Even 解释跳空越过止损后的结果。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -2095,6 +2234,7 @@
     }
   ],
   "scan_date": "2026-07-23",
+  "scoring_version": "v1-legacy",
   "pilot": {
     "day": 5,
     "total_days": 7,
@@ -2110,7 +2250,7 @@
     "total": 11,
     "selected_average": 94.6,
     "all_selected_pass_gate": true,
-    "content_ready": 0,
+    "content_ready": 5,
     "playbook_ready": 5
   },
   "candidates": [
@@ -2136,6 +2276,11 @@
         "Margin"
       ],
       "reason": "Same-day Reuters pricing and official comments extend the existing intervention-risk calculation window; refresh HR-20260720-01",
+      "content_status": "review_ready",
+      "content_label": "Medium / Reddit / X 刷新稿待人工审核",
+      "content_url": "../内容生产/2026-07-23/HR-20260723-01/index.html",
+      "content_format": "Medium / Reddit / X",
+      "deadline": "2026-07-24",
       "traffic_playbook": {
         "playbook_status": "ready",
         "execution_mode": "refresh",
@@ -2160,7 +2305,15 @@
         ],
         "link_placement": "先给损益表与固定风险结论，再链接 Pip Value 和 Position Size。",
         "expiry_condition": "离开当前高位且 48 小时无新官方表态时停止；干预发生后停用会前措辞。",
-        "editorial_boundary": "不预测干预时点、汇率方向或获利机会。"
+        "editorial_boundary": "不预测干预时点、汇率方向或获利机会。",
+        "content_mainline": "用 7 月 23 日四十年新高更新 100/200/300 pip 反向波动的账户风险，不把官方警告写成干预信号。",
+        "body_material": [
+          "Reuters 当日汇价与官方表态",
+          "0.1/0.5/1 lot 损益表",
+          "$10,000 账户固定风险仓位"
+        ],
+        "product_bridge": "先完成 pip value 与损益计算，再可选链接 PipGauge 复核输入。",
+        "product_bridge_type": "optional"
       }
     },
     {
@@ -2185,6 +2338,11 @@
         "P&L"
       ],
       "reason": "The official decision and independent AP report support a post-decision refresh of HR-20260719-01",
+      "content_status": "review_ready",
+      "content_label": "ECB 决议后复盘稿待人工审核",
+      "content_url": "../内容生产/2026-07-23/HR-20260723-02/index.html",
+      "content_format": "Medium / Reddit / X",
+      "deadline": "2026-07-24",
       "traffic_playbook": {
         "playbook_status": "ready",
         "execution_mode": "refresh",
@@ -2209,7 +2367,15 @@
         ],
         "link_placement": "先展示实际波动和成本，再链接 Pip Value、P&L 与 Spread Cost。",
         "expiry_condition": "决议后 48 小时讨论降温即停止；没有可核验价格区间则不填假数字。",
-        "editorial_boundary": "不预测下一次 ECB 决定或 EUR/USD 方向。"
+        "editorial_boundary": "不预测下一次 ECB 决定或 EUR/USD 方向。",
+        "content_mainline": "ECB 维持 2.25% 且反应有限，解释重大日历事件为何不等于大幅波动，并保留固定风险的仓位计算。",
+        "body_material": [
+          "ECB 官方决定",
+          "Reuters 决议后市场反应",
+          "25/50/100 pip 固定风险表"
+        ],
+        "product_bridge": "正文完成风险公式后，可选使用 Position Size 与 Spread Cost 核算。",
+        "product_bridge_type": "optional"
       }
     },
     {
@@ -2234,6 +2400,11 @@
         "Break-Even"
       ],
       "reason": "Official results plus AP's quantified same-day move support an actual-gap refresh of HR-20260719-04",
+      "content_status": "review_ready",
+      "content_label": "实际收盘跌幅复盘稿待人工审核",
+      "content_url": "../内容生产/2026-07-23/HR-20260723-03/index.html",
+      "content_format": "Medium / Reddit / X",
+      "deadline": "2026-07-24",
       "traffic_playbook": {
         "playbook_status": "ready",
         "execution_mode": "refresh",
@@ -2258,7 +2429,15 @@
         ],
         "link_placement": "先给实际损失表和跳空越过止损说明，再链接 P&L 与 Portfolio Heat。",
         "expiry_condition": "实际变动数据稳定后 48 小时停止热点追逐，保留为常青财报风险复盘。",
-        "editorial_boundary": "不归因未经证实的价格方向，不预测反弹，不把盘中跌幅写成收盘跌幅。"
+        "editorial_boundary": "不归因未经证实的价格方向，不预测反弹，不把盘中跌幅写成收盘跌幅。",
+        "content_mainline": "用 AP 收盘确认的 Tesla -14.5% 与 Alphabet -7.1% 替换会前情景，计算两笔持仓的实际组合损失。",
+        "body_material": [
+          "AP 7 月 23 日收盘跌幅",
+          "$2,500 等额双仓计算",
+          "止损与隔夜成交边界"
+        ],
+        "product_bridge": "先展示逐仓美元损失及合计，再可选使用 Portfolio Heat 整理账户暴露。",
+        "product_bridge_type": "optional"
       }
     },
     {
@@ -2283,6 +2462,11 @@
         "Spread Cost"
       ],
       "reason": "CME's July 24 window and an independent technology-provider notice support the final pre-launch refresh of HR-20260719-03",
+      "content_status": "review_ready",
+      "content_label": "首个周末交易规格稿待人工审核",
+      "content_url": "../内容生产/2026-07-23/HR-20260723-04/index.html",
+      "content_format": "Medium / Reddit / X",
+      "deadline": "2026-07-24",
       "traffic_playbook": {
         "playbook_status": "ready",
         "execution_mode": "refresh",
@@ -2307,7 +2491,15 @@
         ],
         "link_placement": "先分清 futures 与 CFD，再在 XAUUSD 栏链接工具。",
         "expiry_condition": "首个周末后 48 小时无新规格、流动性或点差问题时停止。",
-        "editorial_boundary": "不混算两种产品，不预测金价，不把 24/7 写成无维护或无流动性风险。"
+        "editorial_boundary": "不混算两种产品，不预测金价，不把 24/7 写成无维护或无流动性风险。",
+        "content_mainline": "围绕首个 24/7 周末窗口解释 CME 1OZ tick、维护时段和 XAUUSD CFD 规格为何必须分栏。",
+        "body_material": [
+          "CME 官方周末时段",
+          "1/5/10 tick 期货示例",
+          "独立 XAUUSD CFD 情景"
+        ],
+        "product_bridge": "只有 XAUUSD CFD 栏可选链接 PipGauge，期货栏仅引用 CME 规格。",
+        "product_bridge_type": "optional"
       }
     },
     {
@@ -2332,6 +2524,11 @@
         "Margin"
       ],
       "reason": "CME and CFTC materials support adding the regulatory minimum margin calculation to HR-20260722-05",
+      "content_status": "review_ready",
+      "content_label": "15% 最低保证金刷新稿待人工审核",
+      "content_url": "../内容生产/2026-07-23/HR-20260723-05/index.html",
+      "content_format": "Medium / Reddit / X",
+      "deadline": "2026-07-26",
       "traffic_playbook": {
         "playbook_status": "ready",
         "execution_mode": "refresh",
@@ -2356,7 +2553,15 @@
         ],
         "link_placement": "先给 multiplier、名义价值和 15% 表，再链接 Position Size/Portfolio Heat。",
         "expiry_condition": "延期或最终规格变化立即暂停；上线 72 小时后转常青规格页。",
-        "editorial_boundary": "15% 是监管最低标准而非保证实际经纪商费率；不承诺资本效率、流动性或最大损失。"
+        "editorial_boundary": "15% 是监管最低标准而非保证实际经纪商费率；不承诺资本效率、流动性或最大损失。",
+        "content_mainline": "在 100 股/10 股 multiplier 名义敞口表上增加 15% 监管最低保证金，明确实际要求可能更高。",
+        "body_material": [
+          "CME 100/10 股规格",
+          "$50/$200/$500 名义价值",
+          "名义价值乘 15% 的最低保证金表"
+        ],
+        "product_bridge": "先完成交易所规格和最低保证金计算，再可选使用 Position Size 或 Portfolio Heat。",
+        "product_bridge_type": "optional"
       }
     },
     {
@@ -2530,6 +2735,20 @@
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
-    "traffic_playbooks": "../热点流量打法.json"
+    "traffic_playbooks": "../热点流量打法.json",
+    "content_root": "../内容生产/2026-07-23"
+  },
+  "radar_model": "v2-content-first",
+  "editorial_policy": {
+    "content_share": "80-90%",
+    "product_share": "10-20%",
+    "product_bridge_optional": true,
+    "supported_platforms": [
+      "medium",
+      "reddit",
+      "x"
+    ],
+    "pipeline_endpoint": "awaiting_human_review",
+    "auto_publish": false
   }
 }
