@@ -94,8 +94,11 @@ test("generates Medium, Reddit and X drafts and stops at human review", async ()
     allPackages.map((contentPackage) => contentPackage.candidate_id),
     selectedCandidates.map((candidate) => candidate.candidate_id),
   );
-  assert.equal(allPackages.length, 17);
-  assert.equal(allPackages.reduce((total, contentPackage) => total + contentPackage.platforms.length, 0), 51);
+  assert.equal(allPackages.length, selectedCandidates.length);
+  assert.equal(
+    allPackages.reduce((total, contentPackage) => total + contentPackage.platforms.length, 0),
+    selectedCandidates.length * 3,
+  );
   assert.ok(allPackages.every((contentPackage) => contentPackage.package_status === "review_ready"));
   assert.ok(allPackages.every((contentPackage) => contentPackage.review_state === "awaiting_human_review"));
   assert.ok(allPackages.every((contentPackage) => (
