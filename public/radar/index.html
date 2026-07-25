@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title>热点需求雷达</title>
-  <link rel="stylesheet" href="./styles.css">
+  <title>热点内容雷达</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css?v=20260722-content-packages">
   <script src="./lucide.min.js" defer></script>
-  <script src="./app.js" defer></script>
+  <script src="./app.js?v=20260722-content-packages" defer></script>
 </head>
 <body>
   <header class="topbar">
@@ -15,7 +16,7 @@
       <div class="brand-mark" aria-hidden="true"><i data-lucide="radar"></i></div>
       <div>
         <p class="eyebrow">PipGauge · PositionMath</p>
-        <h1>热点需求雷达</h1>
+        <h1>热点内容雷达</h1>
       </div>
     </div>
     <div class="run-state">
@@ -42,7 +43,7 @@
       <div class="metric-block">
         <span>入选均分</span>
         <strong id="metric-average">—</strong>
-        <small>正式口径 / 100</small>
+        <small id="score-model-label">内容优先口径 / 100</small>
       </div>
       <div class="metric-block">
         <span>质量闸门</span>
@@ -50,14 +51,14 @@
         <small>双来源 + 新鲜度</small>
       </div>
       <div class="metric-block">
-        <span>打法就绪</span>
+        <span>内容打法</span>
         <strong id="metric-playbook">—</strong>
-        <small>热点流量路径 / 入选</small>
+        <small>内容路径 / 入选</small>
       </div>
       <div class="metric-block">
         <span>内容完成</span>
         <strong id="metric-content">—</strong>
-        <small>主文 + 三个渠道版</small>
+        <small>Medium + Reddit + X</small>
       </div>
       <div class="metric-block progress-block">
         <span>试运行</span>
@@ -68,7 +69,8 @@
 
     <nav class="view-tabs" aria-label="看板视图" role="tablist">
       <button class="tab-button is-active" type="button" role="tab" aria-selected="true" data-view="today">本期选题</button>
-      <button class="tab-button" type="button" role="tab" aria-selected="false" data-view="playbooks">热点打法</button>
+      <button class="tab-button" type="button" role="tab" aria-selected="false" data-view="playbooks">内容打法</button>
+      <button class="tab-button" type="button" role="tab" aria-selected="false" data-view="packages">内容审核包</button>
       <button class="tab-button" type="button" role="tab" aria-selected="false" data-view="watchlist">观察池</button>
       <button class="tab-button" type="button" role="tab" aria-selected="false" data-view="coverage">扫描覆盖</button>
     </nav>
@@ -82,7 +84,7 @@
         </label>
         <label class="search-control">
           <i data-lucide="search" aria-hidden="true"></i>
-          <input id="topic-search" type="search" placeholder="搜索标题、理由或计算器" autocomplete="off">
+          <input id="topic-search" type="search" placeholder="搜索标题、内容方向或来源" autocomplete="off">
         </label>
         <div class="site-filter" aria-label="站点筛选">
           <button type="button" class="filter-button is-active" data-site="all">全部</button>
@@ -118,8 +120,16 @@
             <strong id="top-pick">—</strong>
           </div>
           <div class="decision-line">
-            <span>产品方向</span>
+            <span>目标站点</span>
             <strong>PipGauge 主、PositionMath 辅</strong>
+          </div>
+          <div class="decision-line">
+            <span>内容主体</span>
+            <strong>80%–90% 热点解释与有用信息</strong>
+          </div>
+          <div class="decision-line">
+            <span>产品承接</span>
+            <strong>10%–20%，可用现有工具、记录新工具线索或不挂工具</strong>
           </div>
           <div class="decision-line">
             <span>下一次扫描</span>
@@ -131,7 +141,7 @@
           </div>
           <div class="decision-line">
             <span>缺口处理</span>
-            <strong>只观察，不因单次热点立项</strong>
+            <strong>只记录线索，不因单次热点强行立项</strong>
           </div>
           <div class="decision-line">
             <span>空结果原则</span>
@@ -145,12 +155,23 @@
     <section id="view-playbooks" class="view-panel" role="tabpanel" hidden>
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Traffic capture playbooks</p>
-          <h2>本期热点流量打法</h2>
+          <p class="eyebrow">Content-first playbooks</p>
+          <h2>本期热点内容打法</h2>
         </div>
-        <span class="policy-note">抓热点的计算需求，不复述新闻</span>
+        <span class="policy-note">先借势解释热点，工具只做少量可选承接</span>
       </div>
       <div id="playbook-list" class="playbook-list" aria-live="polite"></div>
+    </section>
+
+    <section id="view-packages" class="view-panel" role="tabpanel" hidden>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Platform-ready drafts</p>
+          <h2>Medium · Reddit · X 内容审核包</h2>
+        </div>
+        <span class="policy-note">草稿已生成，统一停止在人工审核；不会自动发布</span>
+      </div>
+      <div id="package-list" class="package-list" aria-live="polite"></div>
     </section>
 
     <section id="view-watchlist" class="view-panel" role="tabpanel" hidden>
@@ -194,7 +215,7 @@
           <ol>
             <li>至少 2 个相互独立的可靠英文来源</li>
             <li>至少 1 个近期事件或讨论信号</li>
-            <li>明确连接现有计算器或风险计算问题</li>
+            <li>能独立形成对目标受众有用的内容</li>
             <li>总分达到 72 分</li>
             <li>传闻、喊单和无关泛财经直接排除</li>
           </ol>
@@ -205,7 +226,7 @@
   </main>
 
   <footer>
-    <span>本地试运行 · 生成选题与热点流量打法 · 不自动发布、不互动</span>
+    <span>试运行 · 80%–90% 内容主体 · 三平台草稿止于人工审核 · 不自动发布</span>
     <span id="footer-date">—</span>
   </footer>
 </body>

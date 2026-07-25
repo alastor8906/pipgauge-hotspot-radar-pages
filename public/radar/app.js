@@ -1,6 +1,7 @@
 const state = {
   payload: null,
   periods: [],
+  packages: [],
   data: null,
   selectedDate: null,
   view: "today",
@@ -9,13 +10,22 @@ const state = {
   query: "",
 };
 
-const scoreDimensions = [
-  ["新鲜度", "freshness", 25],
-  ["流量", "traffic_potential", 25],
-  ["贴合度", "calculator_fit", 25],
-  ["证据", "evidence_quality", 15],
-  ["可执行", "actionability", 10],
-];
+const scoreModels = {
+  "v2-content-first": [
+    ["新鲜度", "freshness", 20],
+    ["流量", "traffic_potential", 30],
+    ["内容价值", "content_value", 25],
+    ["证据", "evidence_quality", 15],
+    ["可执行", "actionability", 10],
+  ],
+  "v1-legacy": [
+    ["新鲜度", "freshness", 25],
+    ["流量", "traffic_potential", 25],
+    ["历史工具贴合", "calculator_fit", 25],
+    ["证据", "evidence_quality", 15],
+    ["可执行", "actionability", 10],
+  ],
+};
 
 const statusLabels = {
   observation: "观察",
@@ -31,6 +41,13 @@ const coverageLabels = {
 
 const contentStatusLabels = {
   draft_ready: "草稿已完成",
+  review_ready: "三平台草稿待审核",
+};
+
+const platformLabels = {
+  medium: "Medium",
+  reddit: "Reddit",
+  x: "X",
 };
 
 const executionModeLabels = {
@@ -44,6 +61,48 @@ const urgencyLabels = {
   medium: "中时效",
   low: "低时效",
 };
+
+const productBridgeLabels = {
+  existing: "现有工具",
+  proposed: "新工具线索",
+  none: "不挂工具",
+};
+
+function asList(value) {
+  return Array.isArray(value) ? value : [];
+}
+
+function scoringVersion() {
+  return state.data?.scoring_version === "v2-content-first"
+    ? "v2-content-first"
+    : "v1-legacy";
+}
+
+function activeScoreDimensions() {
+  return scoreModels[scoringVersion()];
+}
+
+function candidateScore(candidate) {
+  return Number(candidate.content_first_score ?? candidate.total_score ?? 0);
+}
+
+function productBridge(candidate, playbook) {
+  const mappings = asList(candidate.calculator_mapping);
+  const proposed = playbook.new_calculator_idea || candidate.calculator_gap;
+  const type = playbook.product_bridge_type
+    || (proposed ? "proposed" : (mappings.length ? "existing" : "none"));
+  const fallback = type === "none"
+    ? "本题不需要工具承接。正文独立完成，不为品牌露出硬塞链接。"
+    : (type === "proposed"
+      ? String(proposed)
+      : "仅在正文结论之后，用现有工具复核一个数字或情景。"
+    );
+  return {
+    type,
+    label: productBridgeLabels[type] || productBridgeLabels.none,
+    text: playbook.product_bridge || playbook.calculator_bridge || fallback,
+  };
+}
 
 function escapeHtml(value) {
   return String(value)
@@ -69,29 +128,45 @@ function candidateMatches(candidate) {
     candidate.topic,
     candidate.reason,
     candidate.primary_site,
-    ...candidate.calculator_mapping,
+    ...asList(candidate.calculator_mapping),
     playbook.traffic_hook,
+    playbook.content_mainline,
     playbook.traffic_angle,
+    playbook.body_material,
+    playbook.product_bridge,
     playbook.calculator_bridge,
-    ...(playbook.search_intents || []),
+    candidate.content_package?.package_summary,
+    ...asList(playbook.search_intents),
   ].join(" ").toLowerCase();
   return (
     candidate.status === "selected" &&
     (state.site === "all" || candidate.primary_site === state.site) &&
-    candidate.total_score >= state.minimumScore &&
+    candidateScore(candidate) >= state.minimumScore &&
     (!query || haystack.includes(query))
   );
+}
+
+function platformActions(contentPackage) {
+  return asList(contentPackage?.platforms)
+    .map((platform) => `
+      <a class="platform-action" href="${escapeHtml(platform.url)}" target="_blank" rel="noopener">
+        ${escapeHtml(platform.label || platformLabels[platform.id] || platform.id)}
+      </a>`)
+    .join("");
 }
 
 function playbookCard(candidate, index) {
   const playbook = candidate.traffic_playbook;
   if (!playbook) return "";
-  const searchIntents = (playbook.search_intents || [])
+  const searchIntents = asList(playbook.search_intents)
     .map((item) => `<span class="intent-chip">${escapeHtml(item)}</span>`)
     .join("");
-  const channels = (playbook.distribution_order || [])
+  const channels = asList(playbook.distribution_order)
     .map((item, channelIndex) => `<span><b>${channelIndex + 1}</b>${escapeHtml(item)}</span>`)
     .join("");
+  const contentMainline = playbook.content_mainline || playbook.traffic_angle;
+  const bodyMaterial = playbook.body_material || playbook.example_scenario;
+  const bridge = productBridge(candidate, playbook);
   return `
     <article class="playbook-card">
       <div class="playbook-head">
@@ -110,8 +185,8 @@ function playbookCard(candidate, index) {
       </div>
 
       <div class="playbook-lead">
-        <span>借势角度</span>
-        <strong>${escapeHtml(playbook.traffic_angle)}</strong>
+        <span>内容主线 · 正文 80%–90%</span>
+        <strong>${escapeHtml(contentMainline)}</strong>
       </div>
 
       <div class="playbook-grid">
@@ -127,19 +202,23 @@ function playbookCard(candidate, index) {
           <span>用户会搜</span>
           <div class="intent-list">${searchIntents}</div>
         </div>
-        <div class="playbook-field">
-          <span>计算器承接</span>
-          <p>${escapeHtml(playbook.calculator_bridge)}</p>
-        </div>
-        <div class="playbook-field">
-          <span>建议示例</span>
-          <p>${escapeHtml(playbook.example_scenario)}</p>
+        <div class="playbook-field is-wide">
+          <span>正文素材与情景</span>
+          <p>${escapeHtml(bodyMaterial)}</p>
         </div>
       </div>
 
       <div class="distribution-row">
         <span class="field-label">分发顺序</span>
         <div class="distribution-steps">${channels}</div>
+      </div>
+
+      <div class="product-bridge ${escapeHtml(bridge.type)}">
+        <div class="product-bridge-head">
+          <span>产品承接 · 全文 10%–20% · 可选</span>
+          <b>${escapeHtml(bridge.label)}</b>
+        </div>
+        <p>${escapeHtml(bridge.text)}</p>
       </div>
 
       <details class="playbook-details">
@@ -164,8 +243,103 @@ function renderPlaybooks() {
     : `<div class="empty-state">${emptyMessage}</div>`;
 }
 
+function candidateForPackage(contentPackage) {
+  for (const period of state.periods) {
+    const candidate = period.candidates.find((item) => item.candidate_id === contentPackage.candidate_id);
+    if (candidate) return candidate;
+  }
+  return contentPackage;
+}
+
+function contentPackageCard(contentPackage, index) {
+  const candidate = candidateForPackage(contentPackage);
+  const platformCount = asList(contentPackage.platforms).length;
+  return `
+    <article class="package-card">
+      <div class="package-card-head">
+        <div>
+          <div class="topic-meta">
+            <span class="site-badge${candidate.primary_site === "PositionMath" ? " is-secondary" : ""}">${escapeHtml(candidate.primary_site)}</span>
+            <span class="mapping-chip">#${index + 1}</span>
+            <span class="package-state"><i data-lucide="circle-pause" aria-hidden="true"></i>等待人工审核</span>
+          </div>
+          <h3>${escapeHtml(candidate.topic)}</h3>
+        </div>
+        <div class="package-count"><strong>${platformCount}</strong><span>平台草稿</span></div>
+      </div>
+      <p>${escapeHtml(contentPackage.package_summary)}</p>
+      <div class="package-review-grid">
+        <div><span>当前停点</span><strong>草稿完成，等待人工审核</strong></div>
+        <div><span>时效处理</span><strong>${escapeHtml(contentPackage.time_status_label || "发布前重新核验")}</strong></div>
+      </div>
+      <div class="package-actions">
+        <div class="platform-actions" aria-label="平台草稿入口">${platformActions(contentPackage)}</div>
+        <a class="review-button" href="${escapeHtml(contentPackage.url)}" target="_blank" rel="noopener">
+          打开完整审核包 <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </article>`;
+}
+
+function contentPackageGroup(scanDate, packages, label) {
+  return `
+    <section class="package-period-group">
+      <header class="package-period-head">
+        <div>
+          <span>${escapeHtml(label)}</span>
+          <h3>${escapeHtml(scanDate)}</h3>
+        </div>
+        <strong>${packages.length} 个审核包 · ${packages.length * 3} 份平台草稿</strong>
+      </header>
+      <div class="package-period-list">${packages.map(contentPackageCard).join("")}</div>
+    </section>`;
+}
+
+function renderContentPackages() {
+  const selected = state.data.candidates.filter((item) => item.status === "selected");
+  const selectedPackages = state.packages.filter((item) => item.scan_date === state.selectedDate);
+  const otherPackages = state.packages.filter((item) => item.scan_date !== state.selectedDate);
+  const groups = [];
+
+  if (selectedPackages.length) {
+    groups.push(contentPackageGroup(state.selectedDate, selectedPackages, "所选期次"));
+  } else {
+    const emptyMessage = selected.length === 0
+      ? "所选期次没有合格选题，因此没有生成平台草稿。"
+      : "所选期次尚未生成 Medium、Reddit、X 三平台审核包。";
+    groups.push(`
+      <section class="package-period-group is-empty">
+        <header class="package-period-head">
+          <div><span>所选期次</span><h3>${escapeHtml(state.selectedDate)}</h3></div>
+          <strong>0 个审核包</strong>
+        </header>
+        <div class="empty-state">${emptyMessage}</div>
+      </section>`);
+  }
+
+  if (otherPackages.length) {
+    const grouped = new Map();
+    for (const contentPackage of otherPackages) {
+      const packages = grouped.get(contentPackage.scan_date) || [];
+      packages.push(contentPackage);
+      grouped.set(contentPackage.scan_date, packages);
+    }
+    groups.push(`
+      <div class="package-history-title">
+        <span>ARCHIVE</span>
+        <h3>其他历史期次</h3>
+        <p>历史草稿不会因切换到新一期而消失，仍可继续审核与复用。</p>
+      </div>`);
+    for (const [scanDate, packages] of grouped) {
+      groups.push(contentPackageGroup(scanDate, packages, "历史审核包"));
+    }
+  }
+
+  document.querySelector("#package-list").innerHTML = groups.join("");
+}
+
 function scorePart(label, key, maximum, candidate) {
-  const value = candidate[key];
+  const value = Number(candidate[key] ?? 0);
   const width = Math.round((value / maximum) * 100);
   return `
     <div class="score-part">
@@ -175,11 +349,30 @@ function scorePart(label, key, maximum, candidate) {
 }
 
 function topicCard(candidate, index) {
-  const chips = candidate.calculator_mapping
+  const chips = asList(candidate.calculator_mapping)
     .map((item) => `<span class="mapping-chip">${escapeHtml(item)}</span>`)
     .join("");
+  const playbook = candidate.traffic_playbook || {};
+  const contentDirection = playbook.content_mainline || playbook.traffic_angle;
+  const bridge = productBridge(candidate, playbook);
+  const score = candidateScore(candidate);
+  const legacy = scoringVersion() === "v1-legacy";
   const secondaryClass = candidate.primary_site === "PositionMath" ? " is-secondary" : "";
-  const contentEntry = candidate.content_url ? `
+  const contentPackage = candidate.content_package;
+  const contentEntry = contentPackage ? `
+      <div class="content-row is-package">
+        <div class="content-row-copy">
+          <span class="content-state ${escapeHtml(candidate.content_status || "")}">
+            <i data-lucide="file-check-2" aria-hidden="true"></i>
+            ${escapeHtml(candidate.content_label || contentStatusLabels[candidate.content_status] || "内容待处理")}
+          </span>
+          <span class="content-format">${escapeHtml(candidate.content_format || "Medium · Reddit · X")}</span>
+        </div>
+        <div class="platform-actions">${platformActions(contentPackage)}</div>
+        <a class="content-button" href="${escapeHtml(contentPackage.url)}" target="_blank" rel="noopener">
+          审核内容包 <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </a>
+      </div>` : (candidate.content_url ? `
       <div class="content-row">
         <span class="content-state ${escapeHtml(candidate.content_status || "")}">
           <i data-lucide="file-check-2" aria-hidden="true"></i>
@@ -189,7 +382,7 @@ function topicCard(candidate, index) {
         <a class="content-button" href="${escapeHtml(candidate.content_url)}" target="_blank" rel="noopener">
           打开内容 <i data-lucide="arrow-up-right" aria-hidden="true"></i>
         </a>
-      </div>` : "";
+      </div>` : "");
   return `
     <article class="topic-card">
       <div class="topic-head">
@@ -201,16 +394,26 @@ function topicCard(candidate, index) {
           </div>
           <h3>${escapeHtml(candidate.topic)}</h3>
         </div>
-        <div class="score-box" aria-label="总分 ${candidate.total_score}">
-          <strong>${candidate.total_score}</strong>
-          <span>总分</span>
+        <div class="score-box" aria-label="${legacy ? "历史分" : "内容分"} ${score}">
+          <strong>${score}</strong>
+          <span>${legacy ? "历史分" : "内容分"}</span>
         </div>
       </div>
       <p class="topic-reason">${escapeHtml(candidate.reason)}</p>
-      <div class="mapping-list">${chips}</div>
+      ${contentDirection ? `
+      <div class="content-direction">
+        <span>建议内容方向 · 先把正文写成立</span>
+        <strong>${escapeHtml(contentDirection)}</strong>
+      </div>` : ""}
+      <div class="product-note">
+        <span class="product-note-label">可选产品承接 · ${escapeHtml(bridge.label)}</span>
+        ${bridge.type === "existing" && chips
+          ? `<div class="mapping-list">${chips}</div>`
+          : `<p>${escapeHtml(bridge.text)}</p>`}
+      </div>
       ${contentEntry}
       <div class="score-breakdown">
-        ${scoreDimensions.map(([label, key, max]) => scorePart(label, key, max, candidate)).join("")}
+        ${activeScoreDimensions().map(([label, key, max]) => scorePart(label, key, max, candidate)).join("")}
       </div>
     </article>`;
 }
@@ -233,7 +436,7 @@ function renderWatchlist() {
       <td><span class="status-badge ${candidate.status}">${statusLabels[candidate.status]}</span></td>
       <td>${escapeHtml(candidate.topic)}</td>
       <td>${escapeHtml(candidate.primary_site)}</td>
-      <td><strong>${candidate.total_score}</strong></td>
+      <td><strong>${candidateScore(candidate)}</strong></td>
       <td>${escapeHtml(candidate.reason)}</td>
     </tr>`).join("") : `<tr><td colspan="5">本期没有观察或淘汰项。</td></tr>`;
 }
@@ -257,7 +460,7 @@ function renderDocuments() {
     retrospective: "查看运行记录",
     rules: "查看雷达规则",
     ledger: "下载候选台账",
-    traffic_playbooks: "查看热点流量打法数据",
+    traffic_playbooks: "查看内容打法数据",
   };
   document.querySelector("#document-links").innerHTML = Object.entries(labels)
     .filter(([key]) => state.data.links[key])
@@ -276,6 +479,7 @@ function renderPeriodOptions() {
 
 function renderSummary() {
   const { stats, pilot, scan_date: scanDate, generated_at: generatedAt } = state.data;
+  const legacy = scoringVersion() === "v1-legacy";
   document.querySelector("#metric-selected").textContent = stats.selected;
   document.querySelector("#metric-observation").textContent = stats.observation;
   document.querySelector("#metric-average").textContent = stats.selected_average;
@@ -284,18 +488,23 @@ function renderSummary() {
     : (stats.all_selected_pass_gate ? "通过" : "需复核");
   document.querySelector("#metric-content").textContent = `${stats.content_ready}/${stats.selected}`;
   document.querySelector("#metric-playbook").textContent = `${stats.playbook_ready}/${stats.selected}`;
+  document.querySelector("#score-model-label").textContent = legacy
+    ? "历史 V1 口径 / 100"
+    : "内容优先 V2 / 100";
   document.querySelector("#metric-pilot").textContent = `第 ${pilot.day} / ${pilot.total_days} 天`;
   document.querySelector("#pilot-fill").style.width = `${Math.min(100, pilot.day / pilot.total_days * 100)}%`;
   document.querySelector("#run-label").textContent = `当前期次 ${scanDate}`;
   document.querySelector("#generated-at").textContent = `数据生成于 ${formatTimestamp(generatedAt)}`;
-  document.querySelector("#footer-date").textContent = `阈值 ${pilot.threshold} 分 · ${pilot.schedule} CST`;
+  document.querySelector("#footer-date").textContent = `阈值 ${pilot.threshold} 分 · ${legacy ? "历史 V1" : "内容优先 V2"} · ${pilot.schedule} CST`;
   const top = state.data.candidates.find((item) => item.status === "selected");
   document.querySelector("#top-pick").textContent = top ? top.topic : "本期无合格选题，不补题";
   document.querySelector("#content-ready").textContent = stats.selected === 0
     ? "无合格选题，不生成内容包"
-    : (stats.content_ready
-      ? `${stats.content_ready} 个内容包已完成，可逐篇审稿`
-      : "本期尚未建立内容包");
+    : (stats.review_ready
+      ? `${stats.review_ready} 个三平台内容包待人工审核`
+      : (stats.content_ready
+        ? `${stats.content_ready} 个旧版内容包已完成`
+        : "本期尚未建立内容包"));
 }
 
 function activateView(view) {
@@ -320,19 +529,60 @@ function render() {
   renderSummary();
   renderTopics();
   renderPlaybooks();
+  renderContentPackages();
   renderWatchlist();
   renderCoverage();
   renderDocuments();
   refreshIcons();
 }
 
+function enrichPeriod(period) {
+  const periodPackages = state.packages.filter((item) => item.scan_date === period.scan_date);
+  if (!periodPackages.length) return period;
+  const packageByCandidate = new Map(periodPackages.map((item) => [item.candidate_id, item]));
+  const candidates = period.candidates.map((candidate) => {
+    const contentPackage = packageByCandidate.get(candidate.candidate_id);
+    if (!contentPackage) return candidate;
+    return {
+      ...candidate,
+      content_status: contentPackage.package_status,
+      content_label: contentStatusLabels[contentPackage.package_status],
+      content_format: "Medium · Reddit · X",
+      content_url: contentPackage.url,
+      content_package: contentPackage,
+    };
+  });
+  const reviewReady = candidates.filter((candidate) => (
+    candidate.status === "selected"
+    && candidate.content_package?.review_state === "awaiting_human_review"
+  )).length;
+  return {
+    ...period,
+    candidates,
+    stats: {
+      ...period.stats,
+      content_ready: reviewReady,
+      review_ready: reviewReady,
+      platform_drafts: reviewReady * 3,
+    },
+  };
+}
+
 async function loadData() {
-  const response = await fetch(`./data.json?ts=${Date.now()}`, { cache: "no-store" });
+  const timestamp = Date.now();
+  const [response, packageResponse] = await Promise.all([
+    fetch(`./data.json?ts=${timestamp}`, { cache: "no-store" }),
+    fetch(`../内容生产/packages.json?ts=${timestamp}`, { cache: "no-store" }),
+  ]);
   if (!response.ok) throw new Error(`Failed to load data: ${response.status}`);
   state.payload = await response.json();
-  state.periods = Array.isArray(state.payload.periods) && state.payload.periods.length
+  state.packages = packageResponse.ok
+    ? asList((await packageResponse.json()).packages)
+    : [];
+  const periods = Array.isArray(state.payload.periods) && state.payload.periods.length
     ? state.payload.periods
     : [state.payload];
+  state.periods = periods.map(enrichPeriod);
   const preservedPeriod = state.periods.find((period) => period.scan_date === state.selectedDate);
   state.data = preservedPeriod || state.periods[0];
   state.selectedDate = state.data.scan_date;
