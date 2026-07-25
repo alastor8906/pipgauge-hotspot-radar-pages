@@ -1,8 +1,10 @@
 {
   "data_version": 3,
-  "generated_at": "2026-07-23T22:34:03+08:00",
-  "latest_scan_date": "2026-07-23",
+  "generated_at": "2026-07-25T22:12:58+08:00",
+  "latest_scan_date": "2026-07-25",
   "available_dates": [
+    "2026-07-25",
+    "2026-07-24",
     "2026-07-23",
     "2026-07-22",
     "2026-07-21",
@@ -11,8 +13,914 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-07-25",
+      "generated_at": "2026-07-25T22:12:58+08:00",
+      "scoring_version": "v1-legacy",
+      "pilot": {
+        "day": 7,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 3,
+        "observation": 6,
+        "discarded": 2,
+        "total": 11,
+        "selected_average": 95.7,
+        "all_selected_pass_gate": true,
+        "content_ready": 0,
+        "playbook_ready": 3
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-07-25",
+          "candidate_id": "HR-20260725-03",
+          "status": "selected",
+          "topic": "USD/JPY Near 164 Before BOJ: Refresh the Existing Tail-Risk Table",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 9,
+          "total_score": 99,
+          "hard_gate": true,
+          "reliable_sources": 4,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "Reuters reports 163.78 and a 163.98 weekly high while the BOJ meeting remains current; refresh HR-20260720-01 without predicting intervention",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "refresh",
+            "urgency": "critical",
+            "publish_deadline": "2026-07-28",
+            "traffic_hook": "Reuters 7 月 25 日报道 USD/JPY 约 163.78、7 月 24 日触及 163.98，叠加 7 月 30–31 日 BOJ 会议，形成‘接近 164 时一百至三百 pip 风险有多大’的即时需求。",
+            "traffic_window": "现在至 7 月 31 日决定后 24 小时；更新 HR-20260720-01，不新建干预稿。",
+            "search_intents": [
+              "USDJPY 164 pip value",
+              "BOJ July 31 USDJPY",
+              "USDJPY 100 pip loss",
+              "Japan intervention position size"
+            ],
+            "traffic_angle": "借 163.78/163.98 新闻数字和 BOJ 倒计时，用 0.1/0.5/1 lot 对 100/200/300 pip 反向波动展示美元损益，再用 $10,000 账户、1% 风险反推仓位；在每 pip 金额步骤承接工具。",
+            "calculator_bridge": "USD/JPY Pip Value → Position Size → P&L → Spread Cost；刷新既有尾部风险表。",
+            "example_scenario": "参考价 163.78；$10,000 账户、1% 风险；0.1/0.5/1 lot；100/200/300 pip 反向波动；基础与扩大点差。",
+            "distribution_order": [
+              "更新 HR-20260720-01 新闻数字",
+              "置顶 164 附近风险表",
+              "更新 Medium 开头",
+              "Quora 回答具体 pip 损益",
+              "Reddit 只回答已有问题"
+            ],
+            "link_placement": "先给 Reuters 数字、尾部损益和固定风险仓位，再链接 Pip Value、Position Size 与 Spread Cost。",
+            "expiry_condition": "7 月 31 日决定后 24 小时无可核验延续波动时停止；价格或官方事实变化立即更新。",
+            "editorial_boundary": "不声称 164 必然触发干预，不预测 BOJ 决定或 USD/JPY 方向，社区观点只作热度信号。",
+            "content_mainline": "用 163.78/163.98 的当日数字刷新既有 USD/JPY 尾部风险稿。",
+            "body_material": [
+              "BOJ 官方日程",
+              "Reuters 7 月 25 日价格数字",
+              "100/200/300 pip 损益与点差表"
+            ],
+            "product_bridge": "先完成 USD/JPY pip value、仓位和事件成本计算，再可选链接工具。",
+            "product_bridge_type": "optional"
+          }
+        },
+        {
+          "scan_date": "2026-07-25",
+          "candidate_id": "HR-20260725-01",
+          "status": "selected",
+          "topic": "FOMC July 29: Weekend Risk-Table Refresh, Not a New Article",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 24,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 8,
+          "total_score": 97,
+          "hard_gate": true,
+          "reliable_sources": 4,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "Same-day week-ahead coverage keeps the meeting in the weekend search window; refresh HR-20260724-01 rather than duplicate it",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "refresh",
+            "urgency": "critical",
+            "publish_deadline": "2026-07-27",
+            "traffic_hook": "7 月 25 日周末展望把 7 月 29 日 FOMC 推入集中搜索窗口，用户会确认决定时间、EUR/USD pip 风险与事件点差。",
+            "traffic_window": "现在至 7 月 29 日决定后 24 小时；只更新 HR-20260724-01。",
+            "search_intents": [
+              "FOMC July 29 time",
+              "FOMC EURUSD pip risk",
+              "FOMC position size calculator",
+              "spread widening FOMC"
+            ],
+            "traffic_angle": "借周末 week-ahead 与 7 月 29 日 14:00 ET 决定钩子，用 $10,000 账户、1% 风险的 25/50/100 pip 表回答仓位和成本问题；在 pip value 与固定风险仓位步骤承接工具。",
+            "calculator_bridge": "EUR/USD Pip Value → Position Size → P&L → Spread Cost；保留既有数字表，只更新倒计时和当日热度证据。",
+            "example_scenario": "$10,000 账户、1% 风险；25/50/100 pip 止损；0.1/0.5/1 lot；基础与扩大点差。",
+            "distribution_order": [
+              "更新 HR-20260724-01 标题与时间框",
+              "更新站内数字卡",
+              "Medium 同步摘要",
+              "Quora 只补充具体计算",
+              "Reddit 仅回答已有问题"
+            ],
+            "link_placement": "先给会议时间、固定风险仓位和三档损益，再在复核输入处链接工具。",
+            "expiry_condition": "7 月 29 日决定后 24 小时且无可核验后续波动时停止会前标题；事实变化立即切结果版。",
+            "editorial_boundary": "不预测利率决定、投票或美元方向；不把周报观点写成结果。",
+            "content_mainline": "用周末倒计时刷新既有 FOMC 事件风险表，不创建第二篇同构文章。",
+            "body_material": [
+              "Fed 官方时间",
+              "7 月 25 日 week-ahead 信号",
+              "$10,000 账户三档 pip 风险表"
+            ],
+            "product_bridge": "先完成 pip value、仓位、损益和点差计算，再可选链接 PipGauge 工具复核。",
+            "product_bridge_type": "optional"
+          }
+        },
+        {
+          "scan_date": "2026-07-25",
+          "candidate_id": "HR-20260725-05",
+          "status": "selected",
+          "topic": "Two Days to CME Single Stock Futures: Recheck Notional and 15% Floor",
+          "primary_site": "PositionMath",
+          "freshness": 25,
+          "traffic_potential": 21,
+          "calculator_fit": 23,
+          "evidence_quality": 15,
+          "actionability": 7,
+          "total_score": 91,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Position Size",
+            "Portfolio Heat",
+            "P&L",
+            "Margin"
+          ],
+          "reason": "The July 27 launch is two days away; refresh HR-20260722-05 with the current countdown and no duplicate article",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "refresh",
+            "urgency": "critical",
+            "publish_deadline": "2026-07-26",
+            "traffic_hook": "7 月 25 日是 CME Single Stock Futures 于 7 月 27 日上线前最后一个完整自然日，用户会集中核对 100/10 股 multiplier、名义价值和保证金。",
+            "traffic_window": "现在至上线后 72 小时；只更新 HR-20260722-05，若无实际规格或成交问题则停止连续刷新。",
+            "search_intents": [
+              "CME single stock futures July 27",
+              "micro single stock futures contract size",
+              "single stock futures margin"
+            ],
+            "traffic_angle": "借 launch-eve 钩子，用 $50/$200/$500 股价展示标准 100 股与 Micro 10 股合约的名义价值，再乘 15% 得监管最低保证金；在账户风险预算步骤承接 Position Size 与 Portfolio Heat。",
+            "calculator_bridge": "股价 × 100/10 股 multiplier → 名义价值 × 15% floor → Position Size / Portfolio Heat / P&L。",
+            "example_scenario": "$10,000 账户；$50/$200/$500 股价；标准和 Micro 各 1 份；名义价值、15% floor 与 1%/5% 价格变化。",
+            "distribution_order": [
+              "更新 HR-20260722-05 为 launch-eve",
+              "保留 multiplier 与 15% 表",
+              "Medium 精简更新",
+              "Quora 回答具体规格",
+              "Reddit 仅回答新问题"
+            ],
+            "link_placement": "先给 multiplier、名义价值和 15% 表，再链接 Position Size 与 Portfolio Heat。",
+            "expiry_condition": "延期或最终规格变化立即暂停；上线 72 小时后若无新计算问题转常青规格页。",
+            "editorial_boundary": "15% 是监管最低标准而非经纪商最终费率、保证金上限或最大亏损；不承诺流动性和资本效率。",
+            "content_mainline": "把既有单股期货稿更新为 launch-eve 版本，并明确这是最后一次无实际运行数据的倒计时刷新。",
+            "body_material": [
+              "CME 7 月 27 日上线时间",
+              "100/10 股规格",
+              "$50/$200/$500 名义价值与 15% floor"
+            ],
+            "product_bridge": "先完成交易所规格和最低保证金计算，再可选使用 Position Size 或 Portfolio Heat。",
+            "product_bridge_type": "optional"
+          }
+        },
+        {
+          "scan_date": "2026-07-25",
+          "candidate_id": "HR-20260725-02",
+          "status": "observation",
+          "topic": "Bank of England July 30: Existing GBP/USD Event-Risk Package",
+          "primary_site": "PipGauge",
+          "freshness": 23,
+          "traffic_potential": 18,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 7,
+          "total_score": 88,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "Yesterday's evidence remains valid but July 25 adds no distinct rule, number or traffic path; hold the existing HR-20260724-11 package without another playbook"
+        },
+        {
+          "scan_date": "2026-07-25",
+          "candidate_id": "HR-20260725-04",
+          "status": "observation",
+          "topic": "CME 1OZ Gold First Weekend Follow-Up",
+          "primary_site": "PipGauge",
+          "freshness": 20,
+          "traffic_potential": 16,
+          "calculator_fit": 24,
+          "evidence_quality": 15,
+          "actionability": 6,
+          "total_score": 81,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "XAUUSD Pip Value",
+            "Position Size",
+            "Margin",
+            "Spread Cost"
+          ],
+          "reason": "No verifiable first-weekend trading, liquidity, spread or outage evidence was found; stop mechanically refreshing HR-20260719-03"
+        },
+        {
+          "scan_date": "2026-07-25",
+          "candidate_id": "HR-20260725-07",
+          "status": "observation",
+          "topic": "Brent Near or Above $100",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 8,
+          "evidence_quality": 15,
+          "actionability": 7,
+          "total_score": 80,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Portfolio Heat",
+            "Margin"
+          ],
+          "reason": "Strong traffic persists but the current product set still lacks a natural oil-contract calculation bridge"
+        },
+        {
+          "scan_date": "2026-07-25",
+          "candidate_id": "HR-20260725-06",
+          "status": "observation",
+          "topic": "U.S. Q2 GDP and June PCE on July 30",
+          "primary_site": "PipGauge",
+          "freshness": 23,
+          "traffic_potential": 15,
+          "calculator_fit": 22,
+          "evidence_quality": 8,
+          "actionability": 3,
+          "total_score": 71,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Spread Cost",
+            "P&L"
+          ],
+          "reason": "Official timing and a week-ahead source are current, but the calculation intent still overlaps the stronger FOMC package"
+        },
+        {
+          "scan_date": "2026-07-25",
+          "candidate_id": "HR-20260725-09",
+          "status": "observation",
+          "topic": "Topstep Dynamic Expansion Rule Math",
+          "primary_site": "PositionMath",
+          "freshness": 13,
+          "traffic_potential": 15,
+          "calculator_fit": 25,
+          "evidence_quality": 7,
+          "actionability": 8,
+          "total_score": 68,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": false,
+          "calculator_mapping": [
+            "Daily Loss Limit",
+            "Trailing Drawdown",
+            "Prop Firm Calculator"
+          ],
+          "reason": "Still missing independent reliable verification of the rule mechanics"
+        },
+        {
+          "scan_date": "2026-07-25",
+          "candidate_id": "HR-20260725-08",
+          "status": "observation",
+          "topic": "Tesla and Alphabet Post-Earnings Continuation",
+          "primary_site": "PositionMath",
+          "freshness": 14,
+          "traffic_potential": 15,
+          "calculator_fit": 18,
+          "evidence_quality": 12,
+          "actionability": 5,
+          "total_score": 64,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L",
+            "Portfolio Heat",
+            "Break-Even"
+          ],
+          "reason": "The actual-gap calculation is already packaged and another refresh would duplicate the same intent without a new numeric hook"
+        },
+        {
+          "scan_date": "2026-07-25",
+          "candidate_id": "HR-20260725-11",
+          "status": "discarded",
+          "topic": "Community-Only Prop Firm Disputes",
+          "primary_site": "PositionMath",
+          "freshness": 19,
+          "traffic_potential": 14,
+          "calculator_fit": 20,
+          "evidence_quality": 4,
+          "actionability": 5,
+          "total_score": 62,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Consistency Rule",
+            "Daily Loss Limit"
+          ],
+          "reason": "Community claims cannot establish specific company rules"
+        },
+        {
+          "scan_date": "2026-07-25",
+          "candidate_id": "HR-20260725-10",
+          "status": "discarded",
+          "topic": "Directional Oil Gold FX and Central-Bank Predictions",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 22,
+          "calculator_fit": 5,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 59,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Directional forecasts and signal-like content are excluded"
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "note": "央行、交易所、公司 IR 与正式规则页已覆盖"
+        },
+        {
+          "channel": "可靠英文媒体",
+          "status": "complete",
+          "note": "Reuters、AP 等用于独立交叉验证"
+        },
+        {
+          "channel": "Reddit 公开讨论",
+          "status": "partial",
+          "note": "覆盖公开索引和具体帖子，仅作为热度信号"
+        },
+        {
+          "channel": "X",
+          "status": "limited",
+          "note": "登录态与动态页面会限制稳定扫描，不把缺失数据当作无热度"
+        },
+        {
+          "channel": "Quora",
+          "status": "limited",
+          "note": "尚未达到与新闻和 Reddit 相同的逐题扫描深度"
+        },
+        {
+          "channel": "BabyPips / ForexFactory",
+          "status": "limited",
+          "note": "尚未达到同等深度的逐帖扫描"
+        },
+        {
+          "channel": "Google Trends",
+          "status": "not_run",
+          "note": "公开趋势信号不稳定时不作为硬门槛依据"
+        }
+      ],
+      "links": {
+        "daily_report": "../每日报告/2026-07-25_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-07-25_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json"
+      }
+    },
+    {
+      "scan_date": "2026-07-24",
+      "generated_at": "2026-07-25T22:12:58+08:00",
+      "scoring_version": "v1-legacy",
+      "pilot": {
+        "day": 6,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 5,
+        "observation": 4,
+        "discarded": 2,
+        "total": 11,
+        "selected_average": 96.4,
+        "all_selected_pass_gate": true,
+        "content_ready": 0,
+        "playbook_ready": 5
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-07-24",
+          "candidate_id": "HR-20260724-01",
+          "status": "selected",
+          "topic": "FOMC July 29: Size 25–100 Pip Event Risk Before the Decision",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 24,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 10,
+          "total_score": 99,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "The meeting first enters the seven-day window with Fed timing, independent preview and public discussion; no historical FOMC package, so new",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "new",
+            "urgency": "critical",
+            "publish_deadline": "2026-07-27",
+            "traffic_hook": "7 月 28–29 日 FOMC 今天首次稳定进入未来 7 天窗口；Fed 官方通知和 CBS 7 月 24 日预览确认 7 月 29 日 14:00 ET 决定时间，Forex Factory 已出现公开议题。",
+            "traffic_window": "现在至 7 月 29 日决定后 24 小时；结果公布后只在有可核验实际波动时切换为复盘版。",
+            "search_intents": [
+              "FOMC July 29 EURUSD pips",
+              "FOMC position size calculator",
+              "50 pip move profit loss",
+              "FOMC spread cost"
+            ],
+            "traffic_angle": "借 7 月 29 日 14:00 ET 决定钩子，回答 EUR/USD 在 25/50/100 pip 事件波动下，$10,000 账户固定 1% 风险应使用多大仓位，以及 0.1/0.5/1 lot 的损益；在每 pip 金额和仓位步骤承接工具。",
+            "calculator_bridge": "EUR/USD Pip Value → Position Size → P&L → Spread Cost；先固定美元风险，再展示事件点差成本。",
+            "example_scenario": "$10,000 账户、1% 风险；25/50/100 pip 止损；0.1/0.5/1 lot；基础与扩大点差。",
+            "distribution_order": [
+              "站内 FOMC 事件风险快文",
+              "Medium 图表版",
+              "Quora 回答具体计算问题",
+              "Reddit 仅回答已有问题",
+              "X 数字卡待人工审核"
+            ],
+            "link_placement": "先给固定风险仓位和三档损益表，再在复核输入处链接 Pip Value、Position Size 与 Spread Cost。",
+            "expiry_condition": "7 月 29 日决定后 24 小时且无可核验延续波动时停止会前标题；事实变化立即改为结果版。",
+            "editorial_boundary": "不预测利率决定、投票或美元方向；不把市场概率写成确定结果。",
+            "content_mainline": "围绕 FOMC 决定时间，把 EUR/USD 事件风险转成 25/50/100 pip 的固定风险仓位与成本表。",
+            "body_material": [
+              "Fed 官方会议与决定时间",
+              "CBS 与公开讨论信号",
+              "$10,000 账户三档 pip 风险表"
+            ],
+            "product_bridge": "先完成 pip value、仓位和成本计算，再可选链接 PipGauge 工具复核。",
+            "product_bridge_type": "optional"
+          }
+        },
+        {
+          "scan_date": "2026-07-24",
+          "candidate_id": "HR-20260724-03",
+          "status": "selected",
+          "topic": "BOJ July 31: Refresh USD/JPY Event-Risk Math",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 24,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 9,
+          "total_score": 98,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "BOJ's July 24 schedule update and same-day Reuters preview support refreshing HR-20260720-01 rather than duplicating it",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "refresh",
+            "urgency": "high",
+            "publish_deadline": "2026-07-29",
+            "traffic_hook": "BOJ 英文日程于 7 月 24 日更新并确认 7 月 30–31 日会议和 7 月 31 日政策声明，Reuters 同日发布会议预览，USD/JPY 公开讨论仍活跃。",
+            "traffic_window": "现在至 7 月 31 日决定后 24 小时；更新 HR-20260720-01，不另建同构文章。",
+            "search_intents": [
+              "BOJ July 31 USDJPY pips",
+              "BOJ meeting position size",
+              "USDJPY 100 pip loss",
+              "yen event spread"
+            ],
+            "traffic_angle": "借 BOJ 7 月 31 日政策声明钩子，沿用 0.1/0.5/1 lot 的 100/200/300 pip 尾部风险表，并增加固定 1% 风险仓位和事件点差成本；在每 pip 金额步骤承接工具。",
+            "calculator_bridge": "USD/JPY Pip Value → Position Size → P&L → Spread Cost；沿用既有干预风险稿并更新会议时点。",
+            "example_scenario": "$10,000 账户、1% 风险；0.1/0.5/1 lot；100/200/300 pip 反向波动；基础与扩大点差。",
+            "distribution_order": [
+              "更新 HR-20260720-01 的会议钩子",
+              "增加 BOJ 时间框",
+              "更新 Medium 开头",
+              "Quora 仅补充",
+              "Reddit 只回答已有问题"
+            ],
+            "link_placement": "先给尾部损益、固定风险仓位和点差边界，再链接 Pip Value、Position Size 与 Spread Cost。",
+            "expiry_condition": "7 月 31 日决定后 24 小时无可核验延续波动时停止；官方事实变化后立即切换结果版。",
+            "editorial_boundary": "不预测 BOJ 决定、投票、干预或 USD/JPY 方向；Reuters 预期只作语境。",
+            "content_mainline": "用 BOJ 新会议日程刷新既有 USD/JPY 尾部风险稿，不复制新的干预文章。",
+            "body_material": [
+              "BOJ 7 月 24 日更新日程",
+              "Reuters 同日预览",
+              "100/200/300 pip 损益与点差表"
+            ],
+            "product_bridge": "先完成 USD/JPY pip value、仓位和事件成本计算，再可选链接工具。",
+            "product_bridge_type": "optional"
+          }
+        },
+        {
+          "scan_date": "2026-07-24",
+          "candidate_id": "HR-20260724-11",
+          "status": "selected",
+          "topic": "Bank of England July 30: Size GBP/USD Event Risk Around the MPC and MPR",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 23,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 10,
+          "total_score": 98,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "BoE timing and same-day independent Reuters signals open a distinct GBP/USD event-risk path; no historical BoE package, so new",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "new",
+            "urgency": "high",
+            "publish_deadline": "2026-07-28",
+            "traffic_hook": "BoE 已确认 7 月 30 日 12:00 London 同时发布 MPC summary/minutes 与 July Monetary Policy Report，Reuters 7 月 24 日调查和当日英镑报道已把决议推入当前讨论窗口。",
+            "traffic_window": "现在至 7 月 30 日决定后 24 小时；结果公布后只在出现可核验实际波动时切换为复盘版。",
+            "search_intents": [
+              "Bank of England July 30 GBPUSD",
+              "GBPUSD 50 pip loss",
+              "BoE position size calculator",
+              "GBPUSD spread during rate decision"
+            ],
+            "traffic_angle": "借 7 月 30 日 12:00 London 的 MPC+MPR 同时发布，回答 GBP/USD 在 25/50/100 pip 事件波动下，$10,000 账户固定 1% 风险时应使用多大仓位，以及 0.1/0.5/1 lot 的损益和点差成本；在仓位步骤承接工具。",
+            "calculator_bridge": "GBP/USD Pip Value → Position Size → P&L → Spread Cost；先固定美元风险，再展示事件时段成本扩张。",
+            "example_scenario": "$10,000 账户、1% 风险；25/50/100 pip 止损；0.1/0.5/1 lot；分别列基础点差与扩大点差。",
+            "distribution_order": [
+              "站内事件风险快文",
+              "Medium 图表版",
+              "Quora 回答具体计算问题",
+              "Reddit 仅回答已有问题",
+              "X 数字卡待人工审核"
+            ],
+            "link_placement": "先给固定风险仓位表和三档损益，再在复核输入处链接 Pip Value、Position Size 与 Spread Cost。",
+            "expiry_condition": "7 月 30 日决定后 24 小时且无可核验延续性波动时停止会前标题；事实变化立即改为结果版。",
+            "editorial_boundary": "不预测 Bank Rate、投票分布或 GBP/USD 方向；Reuters 一致预期只作流量语境，不写成结果。",
+            "content_mainline": "围绕 MPC 与 MPR 同时发布，把 GBP/USD 事件风险转成 25/50/100 pip 的固定风险仓位与成本表。",
+            "body_material": [
+              "BoE 官方发布时间",
+              "Reuters 当日预览信号",
+              "$10,000 账户三档 pip 风险表"
+            ],
+            "product_bridge": "先完成 pip value、仓位和成本计算，再可选链接 PipGauge 工具复核。",
+            "product_bridge_type": "optional"
+          }
+        },
+        {
+          "scan_date": "2026-07-24",
+          "candidate_id": "HR-20260724-02",
+          "status": "selected",
+          "topic": "CME 1OZ Gold Weekend Trading Starts Today: Separate Tick and XAUUSD Math",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 23,
+          "calculator_fit": 24,
+          "evidence_quality": 15,
+          "actionability": 9,
+          "total_score": 96,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "XAUUSD Pip Value",
+            "Position Size",
+            "Margin",
+            "Spread Cost"
+          ],
+          "reason": "The first weekend window begins today; refresh HR-20260719-03 and keep futures and CFD math separate",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "refresh",
+            "urgency": "critical",
+            "publish_deadline": "2026-07-25",
+            "traffic_hook": "CME 1-Ounce Gold 首个周末交易窗口于今天 16:30 CT 开始，用户此刻会搜索具体时段、tick value 以及它与 XAUUSD lot 的差别。",
+            "traffic_window": "现在至首个周末窗口结束后 48 小时；若 CME 延期或技术通知变化则立即暂停。",
+            "search_intents": [
+              "CME 1OZ gold starts today",
+              "1OZ gold tick value",
+              "CME 1OZ vs XAUUSD lot"
+            ],
+            "traffic_angle": "借今天 16:30 CT 启动钩子，用 CME 1OZ 的 1/5/10 ticks 演示期货数字，另栏用 XAUUSD 0.01/0.1/1 lot 对 $10/$25/$50 价格变化；刷新 HR-20260719-03，只在 CFD 步骤承接 PipGauge。",
+            "calculator_bridge": "CME tick 与时段引用官方规格；XAUUSD Pip Value、Position Size、Margin 和 Spread Cost 仅服务零售 CFD 情景。",
+            "example_scenario": "CME 1OZ 的 1/5/10 ticks；另列 0.01/0.1/1 lot XAUUSD 遭遇 $10/$25/$50 价格变化。",
+            "distribution_order": [
+              "更新 HR-20260719-03 为今日启动版",
+              "置顶时段与维护框",
+              "更新 Medium 标题",
+              "Quora 补充产品区别",
+              "Reddit 仅做事实纠错"
+            ],
+            "link_placement": "先分清 futures 与 CFD 的合约单位、tick/pip 和维护时段，再在 XAUUSD 栏链接工具。",
+            "expiry_condition": "首个周末后 48 小时无新规格、流动性或点差问题时停止热点追逐并转为常青规格页。",
+            "editorial_boundary": "不混算期货与 CFD，不预测金价，不把 24/7 写成无维护或全天同等流动性。",
+            "content_mainline": "从‘明天启动’切换为‘今天 16:30 CT 启动’，用并排数字解释 CME 1OZ tick 与 XAUUSD pip 不能互换。",
+            "body_material": [
+              "CME 官方启动时点",
+              "1/5/10 tick 期货示例",
+              "独立 XAUUSD CFD 情景"
+            ],
+            "product_bridge": "只有 XAUUSD CFD 栏可选链接 PipGauge，期货栏仅引用 CME 规格。",
+            "product_bridge_type": "optional"
+          }
+        },
+        {
+          "scan_date": "2026-07-24",
+          "candidate_id": "HR-20260724-04",
+          "status": "selected",
+          "topic": "Three Days to CME Single Stock Futures: Keep the 15% Margin Floor Visible",
+          "primary_site": "PositionMath",
+          "freshness": 25,
+          "traffic_potential": 21,
+          "calculator_fit": 23,
+          "evidence_quality": 15,
+          "actionability": 7,
+          "total_score": 91,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Position Size",
+            "Portfolio Heat",
+            "P&L",
+            "Margin"
+          ],
+          "reason": "CME and CFTC materials support the final pre-launch refresh of HR-20260722-05",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "refresh",
+            "urgency": "high",
+            "publish_deadline": "2026-07-26",
+            "traffic_hook": "CME Globex notice 仍确认单股期货于 7 月 26 日生效、交易日 7 月 27 日，当前进入最后三天的规格和保证金搜索窗口。",
+            "traffic_window": "现在至上线后 72 小时；更新 HR-20260722-05，不另建文章。",
+            "search_intents": [
+              "CME single stock futures July 27",
+              "single stock futures 15 percent margin",
+              "micro SSF notional value"
+            ],
+            "traffic_angle": "借最后三天倒计时和 15% floor，给 $50/$200/$500 股票的 100 股标准、10 股 Micro 名义价值与最低保证金表；刷新 HR-20260722-05，在账户暴露步骤承接 Position Size。",
+            "calculator_bridge": "股价 × 100/10 股 multiplier 得名义价值，再乘 15% 得监管最低保证金；Position Size 与 Portfolio Heat 规划账户暴露。",
+            "example_scenario": "$10,000 账户；$50/$200/$500 股价；标准和 Micro 各 1 份；分别列名义价值、15% floor 与 1%/5% 价格变化。",
+            "distribution_order": [
+              "更新 HR-20260722-05 倒计时",
+              "保留最低保证金列",
+              "Medium 精简更新",
+              "Quora 回答具体规格问题",
+              "Reddit 仅回答新问题"
+            ],
+            "link_placement": "先给 multiplier、名义价值和 15% 表，再链接 Position Size 与 Portfolio Heat。",
+            "expiry_condition": "延期或最终规格变化立即暂停；上线 72 小时后转常青规格页。",
+            "editorial_boundary": "15% 是监管最低标准而非保证实际经纪商费率；不承诺资本效率、流动性或最大损失。",
+            "content_mainline": "用最后三天倒计时维持 100/10 股 multiplier 与 15% floor 的数字卡，不新增同构文章。",
+            "body_material": [
+              "CME 7 月 27 日交易日",
+              "100/10 股规格",
+              "$50/$200/$500 名义价值与 15% floor"
+            ],
+            "product_bridge": "先完成交易所规格和最低保证金计算，再可选使用 Position Size 或 Portfolio Heat。",
+            "product_bridge_type": "optional"
+          }
+        },
+        {
+          "scan_date": "2026-07-24",
+          "candidate_id": "HR-20260724-05",
+          "status": "observation",
+          "topic": "Brent Near or Above $100",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 8,
+          "evidence_quality": 15,
+          "actionability": 7,
+          "total_score": 80,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Portfolio Heat",
+            "Margin"
+          ],
+          "reason": "Strong traffic but no natural oil-contract calculator bridge in the current product set"
+        },
+        {
+          "scan_date": "2026-07-24",
+          "candidate_id": "HR-20260724-06",
+          "status": "observation",
+          "topic": "U.S. Q2 GDP and June PCE on July 30",
+          "primary_site": "PipGauge",
+          "freshness": 22,
+          "traffic_potential": 14,
+          "calculator_fit": 22,
+          "evidence_quality": 7,
+          "actionability": 5,
+          "total_score": 70,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Spread Cost",
+            "P&L"
+          ],
+          "reason": "Official timing is clear but current independent discussion is weak and the intent overlaps the stronger FOMC topic"
+        },
+        {
+          "scan_date": "2026-07-24",
+          "candidate_id": "HR-20260724-07",
+          "status": "observation",
+          "topic": "Tesla and Alphabet Post-Earnings Continuation",
+          "primary_site": "PositionMath",
+          "freshness": 17,
+          "traffic_potential": 16,
+          "calculator_fit": 18,
+          "evidence_quality": 12,
+          "actionability": 6,
+          "total_score": 69,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L",
+            "Portfolio Heat",
+            "Break-Even"
+          ],
+          "reason": "Yesterday's actual-loss result is already packaged; another refresh would duplicate the same calculation"
+        },
+        {
+          "scan_date": "2026-07-24",
+          "candidate_id": "HR-20260724-08",
+          "status": "observation",
+          "topic": "Topstep Dynamic Expansion Rule Math",
+          "primary_site": "PositionMath",
+          "freshness": 14,
+          "traffic_potential": 15,
+          "calculator_fit": 25,
+          "evidence_quality": 7,
+          "actionability": 8,
+          "total_score": 69,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": false,
+          "calculator_mapping": [
+            "Daily Loss Limit",
+            "Trailing Drawdown",
+            "Prop Firm Calculator"
+          ],
+          "reason": "Still missing independent reliable verification of the rule mechanics"
+        },
+        {
+          "scan_date": "2026-07-24",
+          "candidate_id": "HR-20260724-10",
+          "status": "discarded",
+          "topic": "Community-Only Prop Firm Disputes",
+          "primary_site": "PositionMath",
+          "freshness": 20,
+          "traffic_potential": 14,
+          "calculator_fit": 20,
+          "evidence_quality": 4,
+          "actionability": 5,
+          "total_score": 63,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Consistency Rule",
+            "Daily Loss Limit"
+          ],
+          "reason": "Community claims cannot establish specific company rules"
+        },
+        {
+          "scan_date": "2026-07-24",
+          "candidate_id": "HR-20260724-09",
+          "status": "discarded",
+          "topic": "Directional Oil Gold FX and Earnings Predictions",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 22,
+          "calculator_fit": 5,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 59,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Directional forecasts and signal-like content are excluded"
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "note": "央行、交易所、公司 IR 与正式规则页已覆盖"
+        },
+        {
+          "channel": "可靠英文媒体",
+          "status": "complete",
+          "note": "Reuters、AP 等用于独立交叉验证"
+        },
+        {
+          "channel": "Reddit 公开讨论",
+          "status": "partial",
+          "note": "覆盖公开索引和具体帖子，仅作为热度信号"
+        },
+        {
+          "channel": "X",
+          "status": "limited",
+          "note": "登录态与动态页面会限制稳定扫描，不把缺失数据当作无热度"
+        },
+        {
+          "channel": "Quora",
+          "status": "limited",
+          "note": "尚未达到与新闻和 Reddit 相同的逐题扫描深度"
+        },
+        {
+          "channel": "BabyPips / ForexFactory",
+          "status": "limited",
+          "note": "尚未达到同等深度的逐帖扫描"
+        },
+        {
+          "channel": "Google Trends",
+          "status": "not_run",
+          "note": "公开趋势信号不稳定时不作为硬门槛依据"
+        }
+      ],
+      "links": {
+        "daily_report": "../每日报告/2026-07-24_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-07-24_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json"
+      }
+    },
+    {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-07-23T22:34:03+08:00",
+      "generated_at": "2026-07-25T22:12:58+08:00",
+      "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
         "total_days": 7,
@@ -28,7 +936,7 @@
         "total": 11,
         "selected_average": 94.6,
         "all_selected_pass_gate": true,
-        "content_ready": 0,
+        "content_ready": 5,
         "playbook_ready": 5
       },
       "candidates": [
@@ -54,6 +962,11 @@
             "Margin"
           ],
           "reason": "Same-day Reuters pricing and official comments extend the existing intervention-risk calculation window; refresh HR-20260720-01",
+          "content_status": "review_ready",
+          "content_label": "Medium / Reddit / X 刷新稿待人工审核",
+          "content_url": "../内容生产/2026-07-23/HR-20260723-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-07-24",
           "traffic_playbook": {
             "playbook_status": "ready",
             "execution_mode": "refresh",
@@ -78,7 +991,15 @@
             ],
             "link_placement": "先给损益表与固定风险结论，再链接 Pip Value 和 Position Size。",
             "expiry_condition": "离开当前高位且 48 小时无新官方表态时停止；干预发生后停用会前措辞。",
-            "editorial_boundary": "不预测干预时点、汇率方向或获利机会。"
+            "editorial_boundary": "不预测干预时点、汇率方向或获利机会。",
+            "content_mainline": "用 7 月 23 日四十年新高更新 100/200/300 pip 反向波动的账户风险，不把官方警告写成干预信号。",
+            "body_material": [
+              "Reuters 当日汇价与官方表态",
+              "0.1/0.5/1 lot 损益表",
+              "$10,000 账户固定风险仓位"
+            ],
+            "product_bridge": "先完成 pip value 与损益计算，再可选链接 PipGauge 复核输入。",
+            "product_bridge_type": "optional"
           }
         },
         {
@@ -103,6 +1024,11 @@
             "P&L"
           ],
           "reason": "The official decision and independent AP report support a post-decision refresh of HR-20260719-01",
+          "content_status": "review_ready",
+          "content_label": "ECB 决议后复盘稿待人工审核",
+          "content_url": "../内容生产/2026-07-23/HR-20260723-02/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-07-24",
           "traffic_playbook": {
             "playbook_status": "ready",
             "execution_mode": "refresh",
@@ -127,7 +1053,15 @@
             ],
             "link_placement": "先展示实际波动和成本，再链接 Pip Value、P&L 与 Spread Cost。",
             "expiry_condition": "决议后 48 小时讨论降温即停止；没有可核验价格区间则不填假数字。",
-            "editorial_boundary": "不预测下一次 ECB 决定或 EUR/USD 方向。"
+            "editorial_boundary": "不预测下一次 ECB 决定或 EUR/USD 方向。",
+            "content_mainline": "ECB 维持 2.25% 且反应有限，解释重大日历事件为何不等于大幅波动，并保留固定风险的仓位计算。",
+            "body_material": [
+              "ECB 官方决定",
+              "Reuters 决议后市场反应",
+              "25/50/100 pip 固定风险表"
+            ],
+            "product_bridge": "正文完成风险公式后，可选使用 Position Size 与 Spread Cost 核算。",
+            "product_bridge_type": "optional"
           }
         },
         {
@@ -152,6 +1086,11 @@
             "Break-Even"
           ],
           "reason": "Official results plus AP's quantified same-day move support an actual-gap refresh of HR-20260719-04",
+          "content_status": "review_ready",
+          "content_label": "实际收盘跌幅复盘稿待人工审核",
+          "content_url": "../内容生产/2026-07-23/HR-20260723-03/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-07-24",
           "traffic_playbook": {
             "playbook_status": "ready",
             "execution_mode": "refresh",
@@ -176,7 +1115,15 @@
             ],
             "link_placement": "先给实际损失表和跳空越过止损说明，再链接 P&L 与 Portfolio Heat。",
             "expiry_condition": "实际变动数据稳定后 48 小时停止热点追逐，保留为常青财报风险复盘。",
-            "editorial_boundary": "不归因未经证实的价格方向，不预测反弹，不把盘中跌幅写成收盘跌幅。"
+            "editorial_boundary": "不归因未经证实的价格方向，不预测反弹，不把盘中跌幅写成收盘跌幅。",
+            "content_mainline": "用 AP 收盘确认的 Tesla -14.5% 与 Alphabet -7.1% 替换会前情景，计算两笔持仓的实际组合损失。",
+            "body_material": [
+              "AP 7 月 23 日收盘跌幅",
+              "$2,500 等额双仓计算",
+              "止损与隔夜成交边界"
+            ],
+            "product_bridge": "先展示逐仓美元损失及合计，再可选使用 Portfolio Heat 整理账户暴露。",
+            "product_bridge_type": "optional"
           }
         },
         {
@@ -201,6 +1148,11 @@
             "Spread Cost"
           ],
           "reason": "CME's July 24 window and an independent technology-provider notice support the final pre-launch refresh of HR-20260719-03",
+          "content_status": "review_ready",
+          "content_label": "首个周末交易规格稿待人工审核",
+          "content_url": "../内容生产/2026-07-23/HR-20260723-04/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-07-24",
           "traffic_playbook": {
             "playbook_status": "ready",
             "execution_mode": "refresh",
@@ -225,7 +1177,15 @@
             ],
             "link_placement": "先分清 futures 与 CFD，再在 XAUUSD 栏链接工具。",
             "expiry_condition": "首个周末后 48 小时无新规格、流动性或点差问题时停止。",
-            "editorial_boundary": "不混算两种产品，不预测金价，不把 24/7 写成无维护或无流动性风险。"
+            "editorial_boundary": "不混算两种产品，不预测金价，不把 24/7 写成无维护或无流动性风险。",
+            "content_mainline": "围绕首个 24/7 周末窗口解释 CME 1OZ tick、维护时段和 XAUUSD CFD 规格为何必须分栏。",
+            "body_material": [
+              "CME 官方周末时段",
+              "1/5/10 tick 期货示例",
+              "独立 XAUUSD CFD 情景"
+            ],
+            "product_bridge": "只有 XAUUSD CFD 栏可选链接 PipGauge，期货栏仅引用 CME 规格。",
+            "product_bridge_type": "optional"
           }
         },
         {
@@ -250,6 +1210,11 @@
             "Margin"
           ],
           "reason": "CME and CFTC materials support adding the regulatory minimum margin calculation to HR-20260722-05",
+          "content_status": "review_ready",
+          "content_label": "15% 最低保证金刷新稿待人工审核",
+          "content_url": "../内容生产/2026-07-23/HR-20260723-05/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-07-26",
           "traffic_playbook": {
             "playbook_status": "ready",
             "execution_mode": "refresh",
@@ -274,7 +1239,15 @@
             ],
             "link_placement": "先给 multiplier、名义价值和 15% 表，再链接 Position Size/Portfolio Heat。",
             "expiry_condition": "延期或最终规格变化立即暂停；上线 72 小时后转常青规格页。",
-            "editorial_boundary": "15% 是监管最低标准而非保证实际经纪商费率；不承诺资本效率、流动性或最大损失。"
+            "editorial_boundary": "15% 是监管最低标准而非保证实际经纪商费率；不承诺资本效率、流动性或最大损失。",
+            "content_mainline": "在 100 股/10 股 multiplier 名义敞口表上增加 15% 监管最低保证金，明确实际要求可能更高。",
+            "body_material": [
+              "CME 100/10 股规格",
+              "$50/$200/$500 名义价值",
+              "名义价值乘 15% 的最低保证金表"
+            ],
+            "product_bridge": "先完成交易所规格和最低保证金计算，再可选使用 Position Size 或 Portfolio Heat。",
+            "product_bridge_type": "optional"
           }
         },
         {
@@ -448,12 +1421,14 @@
         "rules": "../雷达规则.md",
         "capability_map": "../两站计算器能力地图.md",
         "ledger": "../热点候选总表.csv",
-        "traffic_playbooks": "../热点流量打法.json"
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-07-23"
       }
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-07-23T22:34:03+08:00",
+      "generated_at": "2026-07-25T22:12:58+08:00",
+      "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
         "total_days": 7,
@@ -520,7 +1495,11 @@
             ],
             "link_placement": "先给损益表与固定风险结论，再链接 Pip Value 和 Position Size；标题与首段不放工具链接。",
             "expiry_condition": "汇价离开 163 区域且 48 小时内无新官方表态或讨论时停止；发生干预后停止使用会前措辞。",
-            "editorial_boundary": "不预测干预时点、汇率方向或获利机会；不把官方表态写成已确定行动。"
+            "editorial_boundary": "不预测干预时点、汇率方向或获利机会；不把官方表态写成已确定行动。",
+            "content_mainline": "借 Reuters 当日 163.21 和日本官方表态回答用户此刻会搜的 100/200/300 pip 反向波动风险；用 0.1/0.5/1 lot 的可读美元数字刷新 HR-20260720-01，并在算出每 pip 金额后承接 Pip Value 与 Position Size。",
+            "body_material": "$10,000 账户、1% 风险；0.1/0.5/1 lot；100/200/300 pip 反向波动。",
+            "product_bridge": "Pip Value 先给出每 pip 美元金额，P&L 展示三档反向情景，Position Size 再把计划风险固定为账户的 1%。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -570,7 +1549,11 @@
             ],
             "link_placement": "先展示固定风险仓位表和点差成本，再链接 Position Size 与 Spread Cost。",
             "expiry_condition": "7 月 23 日决议发布即停止会前标题；没有显著实际波动则不制作结果版。",
-            "editorial_boundary": "不预测 ECB 决定或 EUR/USD 方向，不暗示事件必然产生大行情。"
+            "editorial_boundary": "不预测 ECB 决定或 EUR/USD 方向，不暗示事件必然产生大行情。",
+            "content_mainline": "借明日 ECB 决议钩子，回答固定 $100 风险在 25/50/100 pip 止损下分别对应多大仓位；用一张三档表刷新 HR-20260719-01，并在仓位换算步骤承接现有计算器。",
+            "body_material": "$10,000 账户、$100 风险；25/50/100 pip 止损；正常 1 pip 与扩大 3 pip 点差。",
+            "product_bridge": "Pip Value 确认每 pip 金额，Position Size 固定美元风险，Spread Cost 对比正常 1 pip 与事件时段 3 pip 的成本。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -620,7 +1603,11 @@
             ],
             "link_placement": "先给双仓情景表和止损滑点说明，再链接 Portfolio Heat；公司名不做广告式 CTA。",
             "expiry_condition": "7 月 22 日盘后结果发布即失效；无显著跳空则不做结果版。",
-            "editorial_boundary": "不预测业绩或股价，明确跳空可能越过止损且历史波动不保证未来结果。"
+            "editorial_boundary": "不预测业绩或股价，明确跳空可能越过止损且历史波动不保证未来结果。",
+            "content_mainline": "借今晚双财报钩子，回答 $10,000 账户同时持有两仓时 5%/10%/15% 跳空会损失多少；刷新 HR-20260719-04 的双仓表，并在合并暴露步骤承接 Portfolio Heat。",
+            "body_material": "$10,000 账户；TSLA 与 GOOGL 各一仓；5%/10%/15% 同向或反向跳空。",
+            "product_bridge": "Position Size 设定每一仓，Portfolio Heat 合并计划风险，Stop-Loss 与 Break-Even 解释跳空越过止损后的结果。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -670,7 +1657,11 @@
             ],
             "link_placement": "先把 futures 与 CFD 规格分栏解释清楚，再在 XAUUSD 栏链接相应工具。",
             "expiry_condition": "7 月 24 日窗口结束后 48 小时内无新的点差、流动性或规格讨论时停止。",
-            "editorial_boundary": "不把 XAUUSD 默认规格套到 CME futures，不预测金价，不把 24/7 描述为无维护或无流动性风险。"
+            "editorial_boundary": "不把 XAUUSD 默认规格套到 CME futures，不预测金价，不把 24/7 描述为无维护或无流动性风险。",
+            "content_mainline": "借 CME 7 月 24 日和延长维护窗口钩子，回答 1/5/10 ticks 对 1OZ futures 是多少，再用独立栏展示 XAUUSD 的 $10/$25/$50 变化；刷新 HR-20260719-03，并只在 CFD 栏承接 PipGauge。",
+            "body_material": "CME 1OZ 的 1/5/10 tick 情景；另列 0.01/0.1/1 lot XAUUSD 的 $10/$25/$50 价格变化。",
+            "product_bridge": "CME futures 的 tick 与时段引用官方规格；XAUUSD Pip Value、Position Size、Margin 和 Spread Cost 仅用于零售 CFD 情景。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -719,7 +1710,11 @@
             ],
             "link_placement": "先给 100 股与 10 股的三档名义敞口表，再链接 Position Size/Portfolio Heat；不在开头把股票现货计算器冒充期货规格工具。",
             "expiry_condition": "CME 延期或监管状态变化时立即暂停；上线后 72 小时没有新的合约规模、保证金或可用性讨论时转为常青规格页，不再追热点。",
-            "editorial_boundary": "不预测单股方向，不承诺资本效率或流动性，不给税务结论，不把名义敞口等同于保证金或最大损失；所有合约数字以 CME 最终规格为准。"
+            "editorial_boundary": "不预测单股方向，不承诺资本效率或流动性，不给税务结论，不把名义敞口等同于保证金或最大损失；所有合约数字以 CME 最终规格为准。",
+            "content_mainline": "借 7 月 27 日上线和 100/10 股规格钩子，回答用户此刻会搜的单份合约名义敞口：用 $50/$200/$500 三档股价展示标准合约为 $5,000/$20,000/$50,000、Micro 为 $500/$2,000/$5,000；在把 multiplier 换成可读美元后承接 Position Size 与 Portfolio Heat。",
+            "body_material": "$10,000 账户；标的股价 $50/$200/$500；对比 1 个 100 股标准合约和 1 个 10 股 Micro 合约的名义敞口，并演示 1%/5% 价格变化。",
+            "product_bridge": "先用官方 multiplier × 标的股价计算名义敞口，再用 Position Size 规划账户内单仓，用 Portfolio Heat 合并多份合约暴露；保证金与每日结算规则只引用 CME/券商实际规格。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -898,7 +1893,8 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-07-23T22:34:03+08:00",
+      "generated_at": "2026-07-25T22:12:58+08:00",
+      "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
         "total_days": 7,
@@ -965,7 +1961,11 @@
             ],
             "link_placement": "先给损益表和固定风险结论，再链接 Pip Value 与 Position Size；首段不放链接。",
             "expiry_condition": "汇价显著离开 162 区域且 48 小时无新官方表态或讨论时停止。",
-            "editorial_boundary": "不预测干预时间、汇率方向或获利机会。"
+            "editorial_boundary": "不预测干预时间、汇率方向或获利机会。",
+            "content_mainline": "借 Reuters 当日 162.5 附近的新闻钩子，回答用户此刻搜索的 100、200、300 pip 反向波动风险；用 0.1、0.5、1 lot 的可读数字更新旧稿，并在算出每 pip 金额后承接 Pip Value 与 Position Size。",
+            "body_material": "$10,000 账户、1% 风险；0.1/0.5/1 lot；100/200/300 pip 反向波动。",
+            "product_bridge": "先用 Pip Value 得出每 pip 美元金额，再用 P&L 展示三档反转，最后用 Position Size 将风险固定在账户的 1%。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1015,7 +2015,11 @@
             ],
             "link_placement": "先展示固定风险仓位表，再链接 Position Size 和 Spread Cost。",
             "expiry_condition": "7 月 23 日决议发布即停止会前标题，除非转为基于实际数据的复盘。",
-            "editorial_boundary": "不预测 ECB 决定或 EUR/USD 方向，不暗示必有大行情。"
+            "editorial_boundary": "不预测 ECB 决定或 EUR/USD 方向，不暗示必有大行情。",
+            "content_mainline": "借明日 ECB 决议钩子，回答会前该怎样把 25、50、100 pip 止损换成固定 $100 风险的仓位；用一张三档表更新 HR-20260719-01，并在仓位计算步骤承接现有工具。",
+            "body_material": "$10,000 账户、$100 风险；25/50/100 pip 止损；正常 1 pip 与扩大 3 pip 点差。",
+            "product_bridge": "Pip Value 确认每 pip 金额，Position Size 固定美元风险，Spread Cost 加入事件时段成本。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1065,7 +2069,11 @@
             ],
             "link_placement": "先解释 futures 与 CFD 的规格差异，再链接 XAUUSD 工具。",
             "expiry_condition": "7 月 24 日窗口结束且 48 小时内无新的点差、流动性或规格讨论时停止。",
-            "editorial_boundary": "不把 XAUUSD 默认规格套到 CME futures，不预测金价。"
+            "editorial_boundary": "不把 XAUUSD 默认规格套到 CME futures，不预测金价。",
+            "content_mainline": "借 Reuters 的 $4,000 附近金价和 CME 7 月 24 日钩子，回答 $10/$25/$50 波动在 0.01/0.1/1 lot XAUUSD 中是多少美元；随后单列 CME tick，工具只承接 CFD 步骤。",
+            "body_material": "金价 $4,000；$10/$25/$50 变化；0.01/0.1/1 lot XAUUSD，并单列 1OZ tick。",
+            "product_bridge": "XAUUSD Pip Value、Position Size、Margin 与 Spread Cost 只用于零售 CFD；CME 期货数字引用官方规格。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1115,7 +2123,11 @@
             ],
             "link_placement": "先给双仓情景表，再链接 Portfolio Heat；公司名不做广告式 CTA。",
             "expiry_condition": "7 月 22 日盘后结果发布即停止会前标题；无显著跳空则不做结果版。",
-            "editorial_boundary": "不预测业绩或股价，明确止损不能保证按设定价成交。"
+            "editorial_boundary": "不预测业绩或股价，明确止损不能保证按设定价成交。",
+            "content_mainline": "借两家公司明日同日财报钩子，回答 $10,000 账户同时持有两仓时 5%/10%/15% 跳空会损失多少；更新 HR-20260719-04 的数字表，并在合并风险步骤承接 Portfolio Heat。",
+            "body_material": "$10,000 账户；TSLA 与 GOOGL 各一仓；5%/10%/15% 同向或反向跳空。",
+            "product_bridge": "Position Size 设定单仓，Portfolio Heat 合并暴露，Stop-Loss 与 Break-Even 解释跳空越过止损后的情景。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1293,7 +2305,8 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-07-23T22:34:03+08:00",
+      "generated_at": "2026-07-25T22:12:58+08:00",
+      "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
         "total_days": 7,
@@ -1360,7 +2373,11 @@
             ],
             "link_placement": "先给出三档仓位的损益表和固定风险结论，再链接 Pip Value 与 Position Size。",
             "expiry_condition": "USD/JPY 明显脱离事件高位且 48 小时没有新的官方表态或讨论热度时停止追逐。",
-            "editorial_boundary": "不预测干预时间、汇率方向或盈利机会，只做风险换算。"
+            "editorial_boundary": "不预测干预时间、汇率方向或盈利机会，只做风险换算。",
+            "content_mainline": "不预测日本是否干预，直接计算：USD/JPY 突然回落 100、200、300 pips 时，0.1、0.5、1 lot 分别意味着多少美元风险？",
+            "body_material": "$10,000 账户、1% 风险；0.1、0.5、1 lot；40、80、120 pip 止损和 100、200、300 pip 反转。",
+            "product_bridge": "Pip Value 计算每 pip 金额，P&L 展示剧烈反转，Position Size 比较 40 与 120 pip 止损下如何保持固定风险。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1410,7 +2427,11 @@
             ],
             "link_placement": "保留旧稿中完成计算后的工具链接，只更新事件时间、标题和示例。",
             "expiry_condition": "ECB 决议发布后不再使用会前检查标题；除非实际波动值得做结果复盘。",
-            "editorial_boundary": "不制造“重大行情必然发生”的暗示，不重复发布同构内容。"
+            "editorial_boundary": "不制造“重大行情必然发生”的暗示，不重复发布同构内容。",
+            "content_mainline": "把旧稿更新成决议前检查清单：止损从 25 扩到 50 或 100 pips 时，如何缩小仓位并计入更宽点差。",
+            "body_material": "$10,000 账户、$100 固定风险；25、50、100 pip 止损以及正常与扩大点差。",
+            "product_bridge": "沿用 Pip Value、Position Size、Spread Cost 与 P&L，不新建同构文章。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1460,7 +2481,11 @@
             ],
             "link_placement": "在完成产品规格区分后继续使用原有 XAUUSD 工具链接，不新增开头 CTA。",
             "expiry_condition": "上线日后的讨论消退且没有新的流动性或规格问题时停止更新。",
-            "editorial_boundary": "绝不把 CFD 默认规格用于 CME futures，也不宣传价格方向。"
+            "editorial_boundary": "绝不把 CFD 默认规格用于 CME futures，也不宣传价格方向。",
+            "content_mainline": "用当前 `$25` 金价波动作为新钩子，更新“CME 1OZ 与 XAUUSD 不是同一个合约”的现有解释。",
+            "body_material": "金价波动 $25；比较 0.01、0.1、1 lot XAUUSD 的美元影响，并单列 CME 1OZ。",
+            "product_bridge": "沿用 XAUUSD Pip Value、Position Size、Margin 与 Spread Cost，期货部分继续只引用官方规格。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1510,7 +2535,11 @@
             ],
             "link_placement": "风险表后链接 Portfolio Heat；公司名称只作为事件背景，不做促销式按钮。",
             "expiry_condition": "财报发布后不再使用会前标题；只有实际跳空形成新的计算问题时再做结果版。",
-            "editorial_boundary": "不预测业绩或股价；明确跳空可能越过止损。"
+            "editorial_boundary": "不预测业绩或股价；明确跳空可能越过止损。",
+            "content_mainline": "更新旧稿，突出两个仓位同时遭遇 5%、10%、15% 跳空时的组合热度，而不是分别预测公司财报。",
+            "body_material": "$10,000 账户；TSLA 与 GOOGL 各一笔仓位；三档跳空与两档计划风险。",
+            "product_bridge": "沿用 Position Size、Portfolio Heat、Stop-Loss 与 Break-Even，重点更新会前日期和组合示例。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1673,7 +2702,8 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-07-23T22:34:03+08:00",
+      "generated_at": "2026-07-25T22:12:58+08:00",
+      "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
         "total_days": 7,
@@ -1745,7 +2775,11 @@
             ],
             "link_placement": "先给出三档波动表和固定风险结论，再链接到对应计算器；标题和首段不放推广链接。",
             "expiry_condition": "ECB 决议结束 48 小时且没有延续性波动或新政策信息时停止追逐。",
-            "editorial_boundary": "不预测利率决定或汇率方向，不把事件波动写成收益机会。"
+            "editorial_boundary": "不预测利率决定或汇率方向，不把事件波动写成收益机会。",
+            "content_mainline": "不猜 ECB 方向，而是回答：如果 EUR/USD 在决议附近波动 25、50 或 100 pips，同一美元风险下仓位应该缩小到多少？",
+            "body_material": "$10,000 账户、1% 风险；比较 20、50、100 pip 止损以及 0.1、0.5、1 lot 的结果。",
+            "product_bridge": "用 Pip Value 先换算每 pip 金额，再用 Position Size 固定风险，并用 Spread Cost 展示事件时段成本扩张。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1800,7 +2834,11 @@
             ],
             "link_placement": "先展示百分比到点数的换算，再提供 NAS100 点值工具；不在开头引导点击。",
             "expiry_condition": "市场进入新一周且旧回撤数据不再被讨论，或新的行情幅度取代原数字时停止使用原标题。",
-            "editorial_boundary": "不预测反弹或继续下跌；反复提醒 NAS100 CFD 点值因券商而异。"
+            "editorial_boundary": "不预测反弹或继续下跌；反复提醒 NAS100 CFD 点值因券商而异。",
+            "content_mainline": "把“Nasdaq 跌了 4%”翻译成不同 NAS100 CFD 合约下的点数、美元亏损、保证金占用和回本涨幅。",
+            "body_material": "以 25,000 点为示例，比较 1.4%、2.9%、4% 回撤和三档券商点值；明确合约规格必须由用户核对。",
+            "product_bridge": "NAS100 Point Value 承接点值，P&L 与 Margin 承接账户影响，Drawdown Recovery 解释亏损后的恢复门槛。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1855,7 +2893,11 @@
             ],
             "link_placement": "完成 futures 与 CFD 的规格区分后，再链接 XAUUSD 计算器，避免让工具看起来适用于期货。",
             "expiry_condition": "上线讨论结束且没有周末流动性、点差或规格争议的新信号时停止追逐。",
-            "editorial_boundary": "不把 CME futures 与 XAUUSD CFD 混为一谈，不宣传全天交易更容易获利。"
+            "editorial_boundary": "不把 CME futures 与 XAUUSD CFD 混为一谈，不宣传全天交易更容易获利。",
+            "content_mainline": "借 24/7 上线解释同样的黄金价格波动，在 CME 1OZ futures 与零售 XAUUSD CFD 中为什么不是同一个盈亏数字。",
+            "body_material": "比较金价波动 $10、$25、$50 时三档 XAUUSD 仓位的美元影响，再单列 CME 1OZ tick 规格。",
+            "product_bridge": "XAUUSD Pip Value、Position Size、Margin 和 Spread Cost 用于零售 CFD 情景；期货规格只引用 CME 官方数字，不强套现有工具。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -1910,7 +2952,11 @@
             ],
             "link_placement": "先展示组合风险表，再链接 Portfolio Heat；避免把公司名与工具链接放成广告式 CTA。",
             "expiry_condition": "两家公司财报发布且盘后波动被市场完全消化后停止使用会前标题。",
-            "editorial_boundary": "不预测财报结果；明确止损无法保证以设定价格成交。"
+            "editorial_boundary": "不预测财报结果；明确止损无法保证以设定价格成交。",
+            "content_mainline": "用一个 $10,000 账户回答：两只同日财报股票同时持仓时，5%、10%、15% 跳空会让组合总风险变成多少？",
+            "body_material": "$10,000 账户，两笔各占 0.5% 或 1% 计划风险，叠加三档隔夜跳空情景。",
+            "product_bridge": "Position Size 与 Portfolio Heat 承接组合暴露，Stop-Loss 和 Break-Even 解释跳空越过止损后的结果。",
+            "product_bridge_type": "existing"
           }
         },
         {
@@ -2094,9 +3140,10 @@
       }
     }
   ],
-  "scan_date": "2026-07-23",
+  "scan_date": "2026-07-25",
+  "scoring_version": "v1-legacy",
   "pilot": {
-    "day": 5,
+    "day": 7,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -2104,175 +3151,224 @@
     "mode": "topic_traffic_playbooks_and_content_drafts"
   },
   "stats": {
-    "selected": 5,
-    "observation": 4,
+    "selected": 3,
+    "observation": 6,
     "discarded": 2,
     "total": 11,
-    "selected_average": 94.6,
+    "selected_average": 95.7,
     "all_selected_pass_gate": true,
     "content_ready": 0,
-    "playbook_ready": 5
+    "playbook_ready": 3
   },
   "candidates": [
     {
-      "scan_date": "2026-07-23",
-      "candidate_id": "HR-20260723-01",
+      "scan_date": "2026-07-25",
+      "candidate_id": "HR-20260725-03",
       "status": "selected",
-      "topic": "USD/JPY at a Fresh 40-Year High: Update 100–300 Pip Reversal Risk",
+      "topic": "USD/JPY Near 164 Before BOJ: Refresh the Existing Tail-Risk Table",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 23,
+      "traffic_potential": 25,
       "calculator_fit": 25,
       "evidence_quality": 15,
       "actionability": 9,
-      "total_score": 97,
+      "total_score": 99,
       "hard_gate": true,
-      "reliable_sources": 2,
+      "reliable_sources": 4,
       "fresh_signal": true,
       "calculator_mapping": [
         "Pip Value",
         "Position Size",
         "P&L",
-        "Margin"
+        "Spread Cost"
       ],
-      "reason": "Same-day Reuters pricing and official comments extend the existing intervention-risk calculation window; refresh HR-20260720-01",
+      "reason": "Reuters reports 163.78 and a 163.98 weekly high while the BOJ meeting remains current; refresh HR-20260720-01 without predicting intervention",
       "traffic_playbook": {
         "playbook_status": "ready",
         "execution_mode": "refresh",
         "urgency": "critical",
-        "publish_deadline": "2026-07-24",
-        "traffic_hook": "Reuters 7 月 23 日确认 USD/JPY 再创四十年高位，日本财务大臣同日继续发出可能果断行动的警告。",
-        "traffic_window": "未来 24 小时；发生官方干预则立即切换为已发生波动复盘。",
+        "publish_deadline": "2026-07-28",
+        "traffic_hook": "Reuters 7 月 25 日报道 USD/JPY 约 163.78、7 月 24 日触及 163.98，叠加 7 月 30–31 日 BOJ 会议，形成‘接近 164 时一百至三百 pip 风险有多大’的即时需求。",
+        "traffic_window": "现在至 7 月 31 日决定后 24 小时；更新 HR-20260720-01，不新建干预稿。",
         "search_intents": [
-          "USDJPY 40 year high pip risk",
-          "USDJPY 300 pip loss",
-          "yen intervention pip value"
+          "USDJPY 164 pip value",
+          "BOJ July 31 USDJPY",
+          "USDJPY 100 pip loss",
+          "Japan intervention position size"
         ],
-        "traffic_angle": "借当日新高钩子回答 100/200/300 pip 反向波动对 0.1/0.5/1 lot 的美元影响；刷新 HR-20260720-01，并在每 pip 金额步骤承接工具。",
-        "calculator_bridge": "Pip Value → P&L → Position Size，将计划风险固定为账户 1%。",
-        "example_scenario": "$10,000 账户；0.1/0.5/1 lot；100/200/300 pip 反向波动。",
+        "traffic_angle": "借 163.78/163.98 新闻数字和 BOJ 倒计时，用 0.1/0.5/1 lot 对 100/200/300 pip 反向波动展示美元损益，再用 $10,000 账户、1% 风险反推仓位；在每 pip 金额步骤承接工具。",
+        "calculator_bridge": "USD/JPY Pip Value → Position Size → P&L → Spread Cost；刷新既有尾部风险表。",
+        "example_scenario": "参考价 163.78；$10,000 账户、1% 风险；0.1/0.5/1 lot；100/200/300 pip 反向波动；基础与扩大点差。",
         "distribution_order": [
-          "更新 HR-20260720-01",
-          "替换当日数字卡",
+          "更新 HR-20260720-01 新闻数字",
+          "置顶 164 附近风险表",
           "更新 Medium 开头",
-          "Quora 仅补充",
-          "Reddit 仅回答新问题"
+          "Quora 回答具体 pip 损益",
+          "Reddit 只回答已有问题"
         ],
-        "link_placement": "先给损益表与固定风险结论，再链接 Pip Value 和 Position Size。",
-        "expiry_condition": "离开当前高位且 48 小时无新官方表态时停止；干预发生后停用会前措辞。",
-        "editorial_boundary": "不预测干预时点、汇率方向或获利机会。"
+        "link_placement": "先给 Reuters 数字、尾部损益和固定风险仓位，再链接 Pip Value、Position Size 与 Spread Cost。",
+        "expiry_condition": "7 月 31 日决定后 24 小时无可核验延续波动时停止；价格或官方事实变化立即更新。",
+        "editorial_boundary": "不声称 164 必然触发干预，不预测 BOJ 决定或 USD/JPY 方向，社区观点只作热度信号。",
+        "content_mainline": "用 163.78/163.98 的当日数字刷新既有 USD/JPY 尾部风险稿。",
+        "body_material": [
+          "BOJ 官方日程",
+          "Reuters 7 月 25 日价格数字",
+          "100/200/300 pip 损益与点差表"
+        ],
+        "product_bridge": "先完成 USD/JPY pip value、仓位和事件成本计算，再可选链接工具。",
+        "product_bridge_type": "optional"
       }
     },
     {
-      "scan_date": "2026-07-23",
-      "candidate_id": "HR-20260723-02",
+      "scan_date": "2026-07-25",
+      "candidate_id": "HR-20260725-01",
       "status": "selected",
-      "topic": "ECB Held at 2.25%: Recalculate the Actual EUR/USD Event Move",
+      "topic": "FOMC July 29: Weekend Risk-Table Refresh, Not a New Article",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 22,
+      "traffic_potential": 24,
       "calculator_fit": 25,
       "evidence_quality": 15,
-      "actionability": 9,
-      "total_score": 96,
+      "actionability": 8,
+      "total_score": 97,
       "hard_gate": true,
-      "reliable_sources": 2,
+      "reliable_sources": 4,
       "fresh_signal": true,
       "calculator_mapping": [
         "Pip Value",
         "Position Size",
-        "Spread Cost",
-        "P&L"
+        "P&L",
+        "Spread Cost"
       ],
-      "reason": "The official decision and independent AP report support a post-decision refresh of HR-20260719-01",
+      "reason": "Same-day week-ahead coverage keeps the meeting in the weekend search window; refresh HR-20260724-01 rather than duplicate it",
       "traffic_playbook": {
         "playbook_status": "ready",
         "execution_mode": "refresh",
         "urgency": "critical",
-        "publish_deadline": "2026-07-24",
-        "traffic_hook": "ECB 已于 7 月 23 日维持关键利率不变，用户会从会前仓位搜索转向实际 EUR/USD 波动和点差成本。",
-        "traffic_window": "决议后 24–48 小时；只更新 HR-20260719-01 的结果段。",
+        "publish_deadline": "2026-07-27",
+        "traffic_hook": "7 月 25 日周末展望把 7 月 29 日 FOMC 推入集中搜索窗口，用户会确认决定时间、EUR/USD pip 风险与事件点差。",
+        "traffic_window": "现在至 7 月 29 日决定后 24 小时；只更新 HR-20260724-01。",
         "search_intents": [
-          "ECB held rates EURUSD move",
-          "EURUSD move after ECB in pips",
-          "ECB spread cost"
+          "FOMC July 29 time",
+          "FOMC EURUSD pip risk",
+          "FOMC position size calculator",
+          "spread widening FOMC"
         ],
-        "traffic_angle": "借已公布的 2.25% hold，使用决议时间前后的可核验高低点计算真实 pip 区间和 0.1/0.5/1 lot 损益；在 pip 换算处承接工具。",
-        "calculator_bridge": "Pip Value 计算每 pip 金额，P&L 复盘真实区间，Spread Cost 比较事件点差。",
-        "example_scenario": "决议前后可核验高低点；0.1/0.5/1 lot；正常 1 pip 与事件 3 pip 点差。",
+        "traffic_angle": "借周末 week-ahead 与 7 月 29 日 14:00 ET 决定钩子，用 $10,000 账户、1% 风险的 25/50/100 pip 表回答仓位和成本问题；在 pip value 与固定风险仓位步骤承接工具。",
+        "calculator_bridge": "EUR/USD Pip Value → Position Size → P&L → Spread Cost；保留既有数字表，只更新倒计时和当日热度证据。",
+        "example_scenario": "$10,000 账户、1% 风险；25/50/100 pip 止损；0.1/0.5/1 lot；基础与扩大点差。",
         "distribution_order": [
-          "更新 HR-20260719-01 为结果版",
-          "替换数据表",
-          "更新 Medium 标题",
-          "Quora 补充",
-          "Reddit 不重复发帖"
+          "更新 HR-20260724-01 标题与时间框",
+          "更新站内数字卡",
+          "Medium 同步摘要",
+          "Quora 只补充具体计算",
+          "Reddit 仅回答已有问题"
         ],
-        "link_placement": "先展示实际波动和成本，再链接 Pip Value、P&L 与 Spread Cost。",
-        "expiry_condition": "决议后 48 小时讨论降温即停止；没有可核验价格区间则不填假数字。",
-        "editorial_boundary": "不预测下一次 ECB 决定或 EUR/USD 方向。"
+        "link_placement": "先给会议时间、固定风险仓位和三档损益，再在复核输入处链接工具。",
+        "expiry_condition": "7 月 29 日决定后 24 小时且无可核验后续波动时停止会前标题；事实变化立即切结果版。",
+        "editorial_boundary": "不预测利率决定、投票或美元方向；不把周报观点写成结果。",
+        "content_mainline": "用周末倒计时刷新既有 FOMC 事件风险表，不创建第二篇同构文章。",
+        "body_material": [
+          "Fed 官方时间",
+          "7 月 25 日 week-ahead 信号",
+          "$10,000 账户三档 pip 风险表"
+        ],
+        "product_bridge": "先完成 pip value、仓位、损益和点差计算，再可选链接 PipGauge 工具复核。",
+        "product_bridge_type": "optional"
       }
     },
     {
-      "scan_date": "2026-07-23",
-      "candidate_id": "HR-20260723-03",
+      "scan_date": "2026-07-25",
+      "candidate_id": "HR-20260725-05",
       "status": "selected",
-      "topic": "Tesla Down 12.6% and Alphabet Lower: Replace Gap Scenarios with Actual Loss Math",
+      "topic": "Two Days to CME Single Stock Futures: Recheck Notional and 15% Floor",
       "primary_site": "PositionMath",
       "freshness": 25,
-      "traffic_potential": 25,
-      "calculator_fit": 20,
+      "traffic_potential": 21,
+      "calculator_fit": 23,
       "evidence_quality": 15,
-      "actionability": 10,
-      "total_score": 95,
+      "actionability": 7,
+      "total_score": 91,
       "hard_gate": true,
-      "reliable_sources": 3,
+      "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
         "Position Size",
         "Portfolio Heat",
         "P&L",
-        "Break-Even"
+        "Margin"
       ],
-      "reason": "Official results plus AP's quantified same-day move support an actual-gap refresh of HR-20260719-04",
+      "reason": "The July 27 launch is two days away; refresh HR-20260722-05 with the current countdown and no duplicate article",
       "traffic_playbook": {
         "playbook_status": "ready",
         "execution_mode": "refresh",
         "urgency": "critical",
-        "publish_deadline": "2026-07-24",
-        "traffic_hook": "Tesla 与 Alphabet 已公布结果，AP 当日量化 Tesla 下跌 12.6%，会前假设可替换成实际跳空损失复盘。",
-        "traffic_window": "7 月 23 日美股时段及随后 24 小时。",
+        "publish_deadline": "2026-07-26",
+        "traffic_hook": "7 月 25 日是 CME Single Stock Futures 于 7 月 27 日上线前最后一个完整自然日，用户会集中核对 100/10 股 multiplier、名义价值和保证金。",
+        "traffic_window": "现在至上线后 72 小时；只更新 HR-20260722-05，若无实际规格或成交问题则停止连续刷新。",
         "search_intents": [
-          "Tesla 12.6 percent loss calculator",
-          "TSLA GOOGL earnings gap loss",
-          "portfolio heat after earnings"
+          "CME single stock futures July 27",
+          "micro single stock futures contract size",
+          "single stock futures margin"
         ],
-        "traffic_angle": "借实际跌幅回答 $2,000/$5,000/$10,000 Tesla 持仓损失多少，并用 Alphabet 的可核验当日变动更新双仓总损失；承接 P&L 和 Portfolio Heat。",
-        "calculator_bridge": "P&L 复盘单仓，Portfolio Heat 合并双仓，Break-Even 展示亏损后所需回升比例。",
-        "example_scenario": "$10,000 账户；Tesla 与 Alphabet 各一仓；只采用可核验实际变动，不沿用会前假设。",
+        "traffic_angle": "借 launch-eve 钩子，用 $50/$200/$500 股价展示标准 100 股与 Micro 10 股合约的名义价值，再乘 15% 得监管最低保证金；在账户风险预算步骤承接 Position Size 与 Portfolio Heat。",
+        "calculator_bridge": "股价 × 100/10 股 multiplier → 名义价值 × 15% floor → Position Size / Portfolio Heat / P&L。",
+        "example_scenario": "$10,000 账户；$50/$200/$500 股价；标准和 Micro 各 1 份；名义价值、15% floor 与 1%/5% 价格变化。",
         "distribution_order": [
-          "更新 HR-20260719-04 为结果版",
-          "替换双仓表",
-          "更新 Medium 开头",
-          "Quora 补充",
-          "Reddit 不重复发帖"
+          "更新 HR-20260722-05 为 launch-eve",
+          "保留 multiplier 与 15% 表",
+          "Medium 精简更新",
+          "Quora 回答具体规格",
+          "Reddit 仅回答新问题"
         ],
-        "link_placement": "先给实际损失表和跳空越过止损说明，再链接 P&L 与 Portfolio Heat。",
-        "expiry_condition": "实际变动数据稳定后 48 小时停止热点追逐，保留为常青财报风险复盘。",
-        "editorial_boundary": "不归因未经证实的价格方向，不预测反弹，不把盘中跌幅写成收盘跌幅。"
+        "link_placement": "先给 multiplier、名义价值和 15% 表，再链接 Position Size 与 Portfolio Heat。",
+        "expiry_condition": "延期或最终规格变化立即暂停；上线 72 小时后若无新计算问题转常青规格页。",
+        "editorial_boundary": "15% 是监管最低标准而非经纪商最终费率、保证金上限或最大亏损；不承诺流动性和资本效率。",
+        "content_mainline": "把既有单股期货稿更新为 launch-eve 版本，并明确这是最后一次无实际运行数据的倒计时刷新。",
+        "body_material": [
+          "CME 7 月 27 日上线时间",
+          "100/10 股规格",
+          "$50/$200/$500 名义价值与 15% floor"
+        ],
+        "product_bridge": "先完成交易所规格和最低保证金计算，再可选使用 Position Size 或 Portfolio Heat。",
+        "product_bridge_type": "optional"
       }
     },
     {
-      "scan_date": "2026-07-23",
-      "candidate_id": "HR-20260723-04",
-      "status": "selected",
-      "topic": "Tomorrow Is CME 1OZ Gold's First 24/7 Weekend Session",
+      "scan_date": "2026-07-25",
+      "candidate_id": "HR-20260725-02",
+      "status": "observation",
+      "topic": "Bank of England July 30: Existing GBP/USD Event-Risk Package",
       "primary_site": "PipGauge",
-      "freshness": 25,
-      "traffic_potential": 22,
+      "freshness": 23,
+      "traffic_potential": 18,
+      "calculator_fit": 25,
+      "evidence_quality": 15,
+      "actionability": 7,
+      "total_score": 88,
+      "hard_gate": true,
+      "reliable_sources": 3,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Pip Value",
+        "Position Size",
+        "P&L",
+        "Spread Cost"
+      ],
+      "reason": "Yesterday's evidence remains valid but July 25 adds no distinct rule, number or traffic path; hold the existing HR-20260724-11 package without another playbook"
+    },
+    {
+      "scan_date": "2026-07-25",
+      "candidate_id": "HR-20260725-04",
+      "status": "observation",
+      "topic": "CME 1OZ Gold First Weekend Follow-Up",
+      "primary_site": "PipGauge",
+      "freshness": 20,
+      "traffic_potential": 16,
       "calculator_fit": 24,
       "evidence_quality": 15,
-      "actionability": 8,
-      "total_score": 94,
+      "actionability": 6,
+      "total_score": 81,
       "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
@@ -2282,88 +3378,13 @@
         "Margin",
         "Spread Cost"
       ],
-      "reason": "CME's July 24 window and an independent technology-provider notice support the final pre-launch refresh of HR-20260719-03",
-      "traffic_playbook": {
-        "playbook_status": "ready",
-        "execution_mode": "refresh",
-        "urgency": "critical",
-        "publish_deadline": "2026-07-24",
-        "traffic_hook": "明天是 CME 1OZ Gold 首个 24/7 周末交易日，首次维护延长至 16:00–16:30 CT。",
-        "traffic_window": "现在至首次周末交易后的 48 小时。",
-        "search_intents": [
-          "CME 1OZ gold tomorrow",
-          "1OZ gold tick value",
-          "CME 1OZ vs XAUUSD"
-        ],
-        "traffic_angle": "借明日启动和 30 分钟维护钩子，用 1/5/10 ticks 展示 futures 数字，另栏用 $10/$25/$50 展示 XAUUSD；只在 CFD 栏承接 PipGauge。",
-        "calculator_bridge": "CME tick 引用官方规格；XAUUSD Pip Value、Position Size、Margin、Spread Cost 仅服务 CFD。",
-        "example_scenario": "CME 1OZ 的 1/5/10 tick；另列 0.01/0.1/1 lot XAUUSD 的三档价格变化。",
-        "distribution_order": [
-          "更新 HR-20260719-03",
-          "替换规格图",
-          "更新 Medium",
-          "Quora 补充区别",
-          "Reddit 仅纠错"
-        ],
-        "link_placement": "先分清 futures 与 CFD，再在 XAUUSD 栏链接工具。",
-        "expiry_condition": "首个周末后 48 小时无新规格、流动性或点差问题时停止。",
-        "editorial_boundary": "不混算两种产品，不预测金价，不把 24/7 写成无维护或无流动性风险。"
-      }
+      "reason": "No verifiable first-weekend trading, liquidity, spread or outage evidence was found; stop mechanically refreshing HR-20260719-03"
     },
     {
-      "scan_date": "2026-07-23",
-      "candidate_id": "HR-20260723-05",
-      "status": "selected",
-      "topic": "Three Days to CME Single Stock Futures: Add the 15% Minimum Margin Floor",
-      "primary_site": "PositionMath",
-      "freshness": 25,
-      "traffic_potential": 21,
-      "calculator_fit": 23,
-      "evidence_quality": 15,
-      "actionability": 7,
-      "total_score": 91,
-      "hard_gate": true,
-      "reliable_sources": 3,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Position Size",
-        "Portfolio Heat",
-        "P&L",
-        "Margin"
-      ],
-      "reason": "CME and CFTC materials support adding the regulatory minimum margin calculation to HR-20260722-05",
-      "traffic_playbook": {
-        "playbook_status": "ready",
-        "execution_mode": "refresh",
-        "urgency": "high",
-        "publish_deadline": "2026-07-26",
-        "traffic_hook": "CME 单股期货距 7 月 27 日上线三天，FAQ 明确 outright 初始与维持保证金至少为当前名义价值 15%。",
-        "traffic_window": "现在至上线后 72 小时；更新 HR-20260722-05，不另建文章。",
-        "search_intents": [
-          "CME single stock futures margin 15 percent",
-          "micro SSF margin calculator",
-          "single stock futures notional value"
-        ],
-        "traffic_angle": "借上线倒计时和 15% floor，给 $50/$200/$500 股票的 100 股标准、10 股 Micro 名义价值与最低保证金表；在风险预算步骤承接 Position Size。",
-        "calculator_bridge": "multiplier × 股价得名义价值，再乘 15% 得监管最低保证金；Position Size 与 Portfolio Heat 规划账户暴露。",
-        "example_scenario": "$10,000 账户；$50/$200/$500 股价；标准和 Micro 各 1 份；分别列名义价值与 15% floor。",
-        "distribution_order": [
-          "更新 HR-20260722-05",
-          "新增最低保证金列",
-          "Medium 精简更新",
-          "Quora 回答具体问题",
-          "Reddit 仅回答新问题"
-        ],
-        "link_placement": "先给 multiplier、名义价值和 15% 表，再链接 Position Size/Portfolio Heat。",
-        "expiry_condition": "延期或最终规格变化立即暂停；上线 72 小时后转常青规格页。",
-        "editorial_boundary": "15% 是监管最低标准而非保证实际经纪商费率；不承诺资本效率、流动性或最大损失。"
-      }
-    },
-    {
-      "scan_date": "2026-07-23",
-      "candidate_id": "HR-20260723-06",
+      "scan_date": "2026-07-25",
+      "candidate_id": "HR-20260725-07",
       "status": "observation",
-      "topic": "Brent Above $100",
+      "topic": "Brent Near or Above $100",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 25,
@@ -2378,42 +3399,43 @@
         "Portfolio Heat",
         "Margin"
       ],
-      "reason": "Strong traffic but no natural oil-contract calculator bridge in the current product set"
+      "reason": "Strong traffic persists but the current product set still lacks a natural oil-contract calculation bridge"
     },
     {
-      "scan_date": "2026-07-23",
-      "candidate_id": "HR-20260723-07",
+      "scan_date": "2026-07-25",
+      "candidate_id": "HR-20260725-06",
       "status": "observation",
-      "topic": "Intel Post-Earnings Move",
-      "primary_site": "PositionMath",
-      "freshness": 25,
-      "traffic_potential": 17,
-      "calculator_fit": 13,
-      "evidence_quality": 15,
-      "actionability": 7,
-      "total_score": 77,
+      "topic": "U.S. Q2 GDP and June PCE on July 30",
+      "primary_site": "PipGauge",
+      "freshness": 23,
+      "traffic_potential": 15,
+      "calculator_fit": 22,
+      "evidence_quality": 8,
+      "actionability": 3,
+      "total_score": 71,
       "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
+        "Pip Value",
         "Position Size",
-        "Portfolio Heat",
-        "Break-Even"
+        "Spread Cost",
+        "P&L"
       ],
-      "reason": "Duplicates the stronger TSLA and Alphabet actual-gap intent and has a weaker traffic bridge"
+      "reason": "Official timing and a week-ahead source are current, but the calculation intent still overlaps the stronger FOMC package"
     },
     {
-      "scan_date": "2026-07-23",
-      "candidate_id": "HR-20260723-09",
+      "scan_date": "2026-07-25",
+      "candidate_id": "HR-20260725-09",
       "status": "observation",
       "topic": "Topstep Dynamic Expansion Rule Math",
       "primary_site": "PositionMath",
-      "freshness": 15,
-      "traffic_potential": 16,
+      "freshness": 13,
+      "traffic_potential": 15,
       "calculator_fit": 25,
       "evidence_quality": 7,
       "actionability": 8,
-      "total_score": 71,
+      "total_score": 68,
       "hard_gate": false,
       "reliable_sources": 1,
       "fresh_signal": false,
@@ -2425,38 +3447,39 @@
       "reason": "Still missing independent reliable verification of the rule mechanics"
     },
     {
-      "scan_date": "2026-07-23",
-      "candidate_id": "HR-20260723-08",
+      "scan_date": "2026-07-25",
+      "candidate_id": "HR-20260725-08",
       "status": "observation",
-      "topic": "UK Short-Selling Reporting Thresholds",
+      "topic": "Tesla and Alphabet Post-Earnings Continuation",
       "primary_site": "PositionMath",
-      "freshness": 17,
-      "traffic_potential": 12,
-      "calculator_fit": 14,
-      "evidence_quality": 15,
-      "actionability": 9,
-      "total_score": 67,
+      "freshness": 14,
+      "traffic_potential": 15,
+      "calculator_fit": 18,
+      "evidence_quality": 12,
+      "actionability": 5,
+      "total_score": 64,
       "hard_gate": true,
-      "reliable_sources": 2,
+      "reliable_sources": 3,
       "fresh_signal": true,
       "calculator_mapping": [
-        "Position Size",
-        "Portfolio Heat"
+        "P&L",
+        "Portfolio Heat",
+        "Break-Even"
       ],
-      "reason": "Reliable rules but no distinctive current traffic path or natural existing calculator bridge"
+      "reason": "The actual-gap calculation is already packaged and another refresh would duplicate the same intent without a new numeric hook"
     },
     {
-      "scan_date": "2026-07-23",
-      "candidate_id": "HR-20260723-11",
+      "scan_date": "2026-07-25",
+      "candidate_id": "HR-20260725-11",
       "status": "discarded",
       "topic": "Community-Only Prop Firm Disputes",
       "primary_site": "PositionMath",
-      "freshness": 21,
+      "freshness": 19,
       "traffic_potential": 14,
       "calculator_fit": 20,
       "evidence_quality": 4,
       "actionability": 5,
-      "total_score": 64,
+      "total_score": 62,
       "hard_gate": false,
       "reliable_sources": 0,
       "fresh_signal": true,
@@ -2467,10 +3490,10 @@
       "reason": "Community claims cannot establish specific company rules"
     },
     {
-      "scan_date": "2026-07-23",
-      "candidate_id": "HR-20260723-10",
+      "scan_date": "2026-07-25",
+      "candidate_id": "HR-20260725-10",
       "status": "discarded",
-      "topic": "Directional Oil Gold FX and Earnings Predictions",
+      "topic": "Directional Oil Gold FX and Central-Bank Predictions",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 22,
@@ -2525,11 +3548,24 @@
     }
   ],
   "links": {
-    "daily_report": "../每日报告/2026-07-23_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-07-23_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-07-25_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-07-25_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
     "traffic_playbooks": "../热点流量打法.json"
+  },
+  "radar_model": "v2-content-first",
+  "editorial_policy": {
+    "content_share": "80-90%",
+    "product_share": "10-20%",
+    "product_bridge_optional": true,
+    "supported_platforms": [
+      "medium",
+      "reddit",
+      "x"
+    ],
+    "pipeline_endpoint": "awaiting_human_review",
+    "auto_publish": false
   }
 }
