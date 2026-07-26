@@ -1,0 +1,18 @@
+{
+  "candidate_id": "HR-20260723-03",
+  "scan_date": "2026-07-23",
+  "primary_site": "PositionMath",
+  "topic": "Tesla Fell 14.5% and Alphabet 7.1%: Actual Gap-Loss Math",
+  "package_summary": "把会前情景替换为 AP 确认的 7 月 23 日收盘跌幅，计算两笔等额仓位的实际组合损失，并说明止损无法保证隔夜成交价。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "recap_ready",
+  "time_status_label": "已使用 AP 收盘跌幅改为事实复盘；发布前复核是否发生后续修订",
+  "documents": [
+    {"id": "facts", "label": "事实与论点", "file": "00-事实与论点.md", "platform": "internal", "kind": "editorial brief", "status_label": "已整理"},
+    {"id": "medium", "label": "Medium", "file": "01-Medium.md", "platform": "medium", "kind": "long-form draft", "status_label": "待人工审核"},
+    {"id": "reddit", "label": "Reddit", "file": "02-Reddit.md", "platform": "reddit", "kind": "native discussion draft", "status_label": "待人工审核"},
+    {"id": "x", "label": "X", "file": "03-X.md", "platform": "x", "kind": "short thread draft", "status_label": "待人工审核"},
+    {"id": "review", "label": "审核清单", "file": "04-人工审核.md", "platform": "internal", "kind": "human gate", "status_label": "必须完成"}
+  ]
+}

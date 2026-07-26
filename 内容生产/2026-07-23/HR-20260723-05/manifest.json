@@ -1,0 +1,18 @@
+{
+  "candidate_id": "HR-20260723-05",
+  "scan_date": "2026-07-23",
+  "primary_site": "PositionMath",
+  "topic": "CME Single Stock Futures: Add the 15% Minimum Margin Floor",
+  "package_summary": "在 100 股与 Micro 10 股名义敞口表上增加监管 15% 最低保证金列，明确这只是下限，不代表经纪商最终要求或最大损失。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "revalidate_or_recap",
+  "time_status_label": "发布前核验 7 月 27 日上线状态与最终合约规格",
+  "documents": [
+    {"id": "facts", "label": "事实与论点", "file": "00-事实与论点.md", "platform": "internal", "kind": "editorial brief", "status_label": "已整理"},
+    {"id": "medium", "label": "Medium", "file": "01-Medium.md", "platform": "medium", "kind": "long-form draft", "status_label": "待人工审核"},
+    {"id": "reddit", "label": "Reddit", "file": "02-Reddit.md", "platform": "reddit", "kind": "native discussion draft", "status_label": "待人工审核"},
+    {"id": "x", "label": "X", "file": "03-X.md", "platform": "x", "kind": "short thread draft", "status_label": "待人工审核"},
+    {"id": "review", "label": "审核清单", "file": "04-人工审核.md", "platform": "internal", "kind": "human gate", "status_label": "必须完成"}
+  ]
+}
