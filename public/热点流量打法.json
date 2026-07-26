@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-25T22:00:00+08:00",
+  "updated_at": "2026-07-26T22:00:00+08:00",
   "items": {
     "HR-20260719-01": {
       "playbook_status": "ready",
@@ -837,6 +837,41 @@
       "content_mainline": "把既有单股期货稿更新为 launch-eve 版本，并明确这是最后一次无实际运行数据的倒计时刷新。",
       "body_material": ["CME 7 月 27 日上线时间", "100/10 股规格", "$50/$200/$500 名义价值与 15% floor"],
       "product_bridge": "先完成交易所规格和最低保证金计算，再可选使用 Position Size 或 Portfolio Heat。",
+      "product_bridge_type": "optional"
+    },
+    "HR-20260726-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "critical",
+      "publish_deadline": "2026-07-27",
+      "traffic_hook": "CME 的 Globex 通知确认单股期货于 7 月 26 日周日进入 production、交易日为 7 月 27 日；用户会从倒计时转向核对已上线合约的 multiplier、名义价值和盈亏。",
+      "traffic_window": "2026-07-26 至 2026-07-29；只更新 HR-20260722-05，不创建第二篇同构文章。",
+      "search_intents": [
+        "CME single stock futures live July 27",
+        "single stock futures contract size",
+        "single stock futures notional value",
+        "single stock futures P&L calculator"
+      ],
+      "traffic_angle": "借 Sunday production launch / Monday trade date 的新状态，回答一份标准 100 股合约在假设股价 $50/$200/$500 时对应多少名义价值，以及标的变动 1% 时合约盈亏多少；先展示可读数字，再在账户风险预算步骤承接 Position Size、Portfolio Heat 与 P&L。",
+      "calculator_bridge": "标的价格 × 官方 100 股 multiplier = 名义价值；名义价值 × 价格变动百分比 = 合约 P&L；再用 Position Size 与 Portfolio Heat 检查账户暴露。",
+      "example_scenario": "$10,000 账户；假设股价 $50/$200/$500；标准 100 股合约各 1 份；名义价值 $5,000/$20,000/$50,000；1% 变动对应 $50/$200/$500。",
+      "distribution_order": [
+        "更新 HR-20260722-05 标题与首段为已上线状态",
+        "替换标准合约数字表",
+        "Medium 同步审核快照",
+        "Reddit 仅原生回答规格问题且首轮不放链接",
+        "X 主线程独立给出完整计算"
+      ],
+      "link_placement": "先给 production/trade date、100 股规格、名义价值和 1% 盈亏表，再在风险预算复核处链接 PositionMath。",
+      "expiry_condition": "CME 延期、撤回或规格变化时立即暂停并更正；7 月 29 日后若无可核验成交量、流动性、经纪商可用性或新讨论数据，停止 launch 标题。",
+      "editorial_boundary": "不预测任何股票方向；不声称资本效率一定更高；不提供税务结论；不把 CFTC 申报等同于零售适用性；不把 Micro multiplier 泛化为所有品种，也不把交易所最低要求写成 broker margin。",
+      "content_mainline": "把既有单股期货稿从上线倒计时更新为 production launch 版本，仅使用官方明确的标准 100 股规格。",
+      "body_material": [
+        "CME Sunday production launch 与 Monday trade date",
+        "标准合约 100 股 multiplier",
+        "$50/$200/$500 名义价值与 1% 盈亏表"
+      ],
+      "product_bridge": "先完成交易所规格、名义价值和百分比盈亏计算，再可选使用 Position Size、Portfolio Heat 与 P&L。",
       "product_bridge_type": "optional"
     }
   }
