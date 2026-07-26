@@ -1,0 +1,53 @@
+{
+  "candidate_id": "HR-20260724-01",
+  "scan_date": "2026-07-24",
+  "primary_site": "PipGauge",
+  "topic": "FOMC July 29: Size 25–100 Pip Event Risk Before the Decision",
+  "package_summary": "围绕 7 月 29 日 14:00 ET FOMC 决定，把 EUR/USD 的 25/50/100 pip 情景转成固定 $100 风险仓位和点差成本，不预测决定或方向。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "revalidate_or_recap",
+  "time_status_label": "会前审核稿；决定发布后必须切换为可核验实际波动复盘",
+  "documents": [
+    {
+      "id": "facts",
+      "label": "事实与论点",
+      "file": "00-事实与论点.md",
+      "platform": "internal",
+      "kind": "editorial brief",
+      "status_label": "已整理"
+    },
+    {
+      "id": "medium",
+      "label": "Medium",
+      "file": "01-Medium.md",
+      "platform": "medium",
+      "kind": "long-form draft",
+      "status_label": "待人工审核"
+    },
+    {
+      "id": "reddit",
+      "label": "Reddit",
+      "file": "02-Reddit.md",
+      "platform": "reddit",
+      "kind": "native discussion draft",
+      "status_label": "待人工审核"
+    },
+    {
+      "id": "x",
+      "label": "X",
+      "file": "03-X.md",
+      "platform": "x",
+      "kind": "short thread draft",
+      "status_label": "待人工审核"
+    },
+    {
+      "id": "review",
+      "label": "审核清单",
+      "file": "04-人工审核.md",
+      "platform": "internal",
+      "kind": "human gate",
+      "status_label": "必须完成"
+    }
+  ]
+}

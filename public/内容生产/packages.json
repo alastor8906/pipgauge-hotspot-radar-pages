@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T13:52:38.073Z",
+  "generated_at": "2026-07-26T13:32:49.913Z",
   "endpoint": "multi_platform_drafts_awaiting_human_review",
   "supported_platforms": [
     "medium",
@@ -7,6 +7,286 @@
     "x"
   ],
   "packages": [
+    {
+      "candidate_id": "HR-20260725-01",
+      "scan_date": "2026-07-25",
+      "primary_site": "PipGauge",
+      "topic": "FOMC July 29: Weekend Risk-Table Refresh, Not a New Article",
+      "package_summary": "只刷新 7 月 24 日 FOMC 稿的周末倒计时和风险表，保留 25/50/100 pip 固定风险计算，不创建同构新文章。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "revalidate_or_recap",
+      "time_status_label": "周末倒计时刷新；决定发布后切换结果复盘",
+      "url": "../内容生产/2026-07-25/HR-20260725-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-25/HR-20260725-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-25/HR-20260725-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-25/HR-20260725-01/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260725-03",
+      "scan_date": "2026-07-25",
+      "primary_site": "PipGauge",
+      "topic": "USD/JPY Near 164 Before BOJ: Refresh the Existing Tail-Risk Table",
+      "package_summary": "用 Reuters 163.78/163.98 数字刷新既有 BOJ 风险稿，把 100/200/300 pip 反向波动换算为账户美元风险，不预测干预。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "revalidate_or_recap",
+      "time_status_label": "发布前复核 USD/JPY 最新价格与 BOJ 官方日程",
+      "url": "../内容生产/2026-07-25/HR-20260725-03/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-25/HR-20260725-03/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-25/HR-20260725-03/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-25/HR-20260725-03/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260725-05",
+      "scan_date": "2026-07-25",
+      "primary_site": "PositionMath",
+      "topic": "CME Single Stock Futures Launch Eve: Recheck Notional and 15% Floor",
+      "package_summary": "作为上线前最后一次倒计时刷新，复核 100/10 股 multiplier、三档名义敞口与 15% floor，不承诺实际保证金或流动性。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "revalidate_or_recap",
+      "time_status_label": "上线前最后审核；发布前核验实际上线状态",
+      "url": "../内容生产/2026-07-25/HR-20260725-05/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-25/HR-20260725-05/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-25/HR-20260725-05/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-25/HR-20260725-05/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260724-01",
+      "scan_date": "2026-07-24",
+      "primary_site": "PipGauge",
+      "topic": "FOMC July 29: Size 25–100 Pip Event Risk Before the Decision",
+      "package_summary": "围绕 7 月 29 日 14:00 ET FOMC 决定，把 EUR/USD 的 25/50/100 pip 情景转成固定 $100 风险仓位和点差成本，不预测决定或方向。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "revalidate_or_recap",
+      "time_status_label": "会前审核稿；决定发布后必须切换为可核验实际波动复盘",
+      "url": "../内容生产/2026-07-24/HR-20260724-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-24/HR-20260724-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-24/HR-20260724-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-24/HR-20260724-01/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260724-02",
+      "scan_date": "2026-07-24",
+      "primary_site": "PipGauge",
+      "topic": "CME 1OZ Gold Weekend Trading Starts Today: Separate Tick and XAUUSD Math",
+      "package_summary": "切换为 7 月 24 日 16:30 CT 当日启动稿，用 CME 1OZ tick 与 XAUUSD CFD 示例分栏计算，不混用产品规格。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "revalidate_or_evergreen",
+      "time_status_label": "首个周末启动稿；发布前核验 CME 实际运行状态",
+      "url": "../内容生产/2026-07-24/HR-20260724-02/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-24/HR-20260724-02/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-24/HR-20260724-02/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-24/HR-20260724-02/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260724-03",
+      "scan_date": "2026-07-24",
+      "primary_site": "PipGauge",
+      "topic": "BOJ July 31: Refresh USD/JPY Event-Risk Math",
+      "package_summary": "用 BOJ 7 月 30–31 日会议日程刷新既有 USD/JPY 稿，保留 100/200/300 pip 尾部风险和固定风险仓位，不预测政策或干预。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "revalidate_or_recap",
+      "time_status_label": "会前刷新稿；7 月 31 日决定后切换为结果复盘",
+      "url": "../内容生产/2026-07-24/HR-20260724-03/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-24/HR-20260724-03/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-24/HR-20260724-03/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-24/HR-20260724-03/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260724-04",
+      "scan_date": "2026-07-24",
+      "primary_site": "PositionMath",
+      "topic": "Three Days to CME Single Stock Futures: Keep the 15% Margin Floor Visible",
+      "package_summary": "按 7 月 27 日上线倒计时刷新 100/10 股 multiplier、名义敞口和 15% 监管最低保证金表，明确实际要求可能更高。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "revalidate_or_recap",
+      "time_status_label": "发布前核验 7 月 27 日上线与最终规格",
+      "url": "../内容生产/2026-07-24/HR-20260724-04/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-24/HR-20260724-04/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-24/HR-20260724-04/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-24/HR-20260724-04/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260724-11",
+      "scan_date": "2026-07-24",
+      "primary_site": "PipGauge",
+      "topic": "Bank of England July 30: Size GBP/USD Event Risk Around the MPC and MPR",
+      "package_summary": "围绕 7 月 30 日 12:00 London 的 MPC 与 MPR 同时发布，把 GBP/USD 25/50/100 pip 情景转成固定风险仓位与成本表。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "revalidate_or_recap",
+      "time_status_label": "会前审核稿；决定发布后必须切换为可核验实际波动复盘",
+      "url": "../内容生产/2026-07-24/HR-20260724-11/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-24/HR-20260724-11/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-24/HR-20260724-11/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-24/HR-20260724-11/index.html#x"
+        }
+      ]
+    },
     {
       "candidate_id": "HR-20260723-01",
       "scan_date": "2026-07-23",
