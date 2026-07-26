@@ -1,0 +1,53 @@
+{
+  "candidate_id": "HR-20260725-05",
+  "scan_date": "2026-07-25",
+  "primary_site": "PositionMath",
+  "topic": "CME Single Stock Futures Launch Eve: Recheck Notional and 15% Floor",
+  "package_summary": "作为上线前最后一次倒计时刷新，复核 100/10 股 multiplier、三档名义敞口与 15% floor，不承诺实际保证金或流动性。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "revalidate_or_recap",
+  "time_status_label": "上线前最后审核；发布前核验实际上线状态",
+  "documents": [
+    {
+      "id": "facts",
+      "label": "事实与论点",
+      "file": "00-事实与论点.md",
+      "platform": "internal",
+      "kind": "editorial brief",
+      "status_label": "已整理"
+    },
+    {
+      "id": "medium",
+      "label": "Medium",
+      "file": "01-Medium.md",
+      "platform": "medium",
+      "kind": "long-form draft",
+      "status_label": "待人工审核"
+    },
+    {
+      "id": "reddit",
+      "label": "Reddit",
+      "file": "02-Reddit.md",
+      "platform": "reddit",
+      "kind": "native discussion draft",
+      "status_label": "待人工审核"
+    },
+    {
+      "id": "x",
+      "label": "X",
+      "file": "03-X.md",
+      "platform": "x",
+      "kind": "short thread draft",
+      "status_label": "待人工审核"
+    },
+    {
+      "id": "review",
+      "label": "审核清单",
+      "file": "04-人工审核.md",
+      "platform": "internal",
+      "kind": "human gate",
+      "status_label": "必须完成"
+    }
+  ]
+}
