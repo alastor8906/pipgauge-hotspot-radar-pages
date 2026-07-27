@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-07-26T22:10:25+08:00",
-  "latest_scan_date": "2026-07-26",
+  "generated_at": "2026-07-27T22:04:54+08:00",
+  "latest_scan_date": "2026-07-27",
   "available_dates": [
+    "2026-07-27",
     "2026-07-26",
     "2026-07-25",
     "2026-07-24",
@@ -14,8 +15,279 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-07-27",
+      "generated_at": "2026-07-27T22:04:54+08:00",
+      "scoring_version": "v1-legacy",
+      "pilot": {
+        "day": 9,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 0,
+        "observation": 8,
+        "discarded": 1,
+        "total": 9,
+        "selected_average": 0,
+        "all_selected_pass_gate": true,
+        "content_ready": 0,
+        "playbook_ready": 0
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-07-27",
+          "candidate_id": "HR-20260727-01",
+          "status": "observation",
+          "topic": "FOMC July 28-29: Existing Event-Risk Package Still Covers the Search Intent",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 23,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 7,
+          "total_score": 95,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "Official meeting timing is current, but HR-20260724-01 and HR-20260725-01 already cover the same pre-decision risk table and no new policy fact or distinct calculation path appeared"
+        },
+        {
+          "scan_date": "2026-07-27",
+          "candidate_id": "HR-20260727-02",
+          "status": "observation",
+          "topic": "BOJ July 30-31: Existing USDJPY Tail-Risk Package Still Applies",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 22,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 7,
+          "total_score": 94,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "BOJ refreshed the official calendar on July 24, but the meeting timing and calculator path are already covered by recent USDJPY packages without a new independent numeric hook"
+        },
+        {
+          "scan_date": "2026-07-27",
+          "candidate_id": "HR-20260727-04",
+          "status": "observation",
+          "topic": "CME Single Stock Futures First Trade Date: Await Verifiable Trading Evidence",
+          "primary_site": "PositionMath",
+          "freshness": 25,
+          "traffic_potential": 22,
+          "calculator_fit": 23,
+          "evidence_quality": 15,
+          "actionability": 7,
+          "total_score": 92,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Position Size",
+            "Portfolio Heat",
+            "P&L",
+            "Margin"
+          ],
+          "reason": "HR-20260726-01 already refreshed the launch state; no reliable first-day volume, liquidity, outage or retail-broker availability evidence was available at scan time"
+        },
+        {
+          "scan_date": "2026-07-27",
+          "candidate_id": "HR-20260727-03",
+          "status": "observation",
+          "topic": "Bank of England July 30: Hold Existing GBPUSD Package",
+          "primary_site": "PipGauge",
+          "freshness": 24,
+          "traffic_potential": 18,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 7,
+          "total_score": 89,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "The official report and decision timing remains current, but HR-20260724-11 already covers the same calculation intent and no new decision or rule change exists"
+        },
+        {
+          "scan_date": "2026-07-27",
+          "candidate_id": "HR-20260727-05",
+          "status": "observation",
+          "topic": "CME 1OZ Gold First-Week Evidence Check",
+          "primary_site": "PipGauge",
+          "freshness": 18,
+          "traffic_potential": 15,
+          "calculator_fit": 24,
+          "evidence_quality": 15,
+          "actionability": 6,
+          "total_score": 78,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "XAUUSD Pip Value",
+            "Position Size",
+            "Margin",
+            "Spread Cost"
+          ],
+          "reason": "No verifiable first-week volume, spread, outage or liquidity evidence was found, so another launch refresh would be mechanical"
+        },
+        {
+          "scan_date": "2026-07-27",
+          "candidate_id": "HR-20260727-07",
+          "status": "observation",
+          "topic": "Brent Volatility and Portfolio Risk",
+          "primary_site": "PipGauge",
+          "freshness": 23,
+          "traffic_potential": 23,
+          "calculator_fit": 8,
+          "evidence_quality": 15,
+          "actionability": 6,
+          "total_score": 75,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Portfolio Heat",
+            "Margin"
+          ],
+          "reason": "Discussion interest remains plausible but the current product set still lacks a natural oil-contract specification or point-value calculator bridge"
+        },
+        {
+          "scan_date": "2026-07-27",
+          "candidate_id": "HR-20260727-06",
+          "status": "observation",
+          "topic": "U.S. Q2 GDP and June PCE on July 30",
+          "primary_site": "PipGauge",
+          "freshness": 21,
+          "traffic_potential": 15,
+          "calculator_fit": 22,
+          "evidence_quality": 8,
+          "actionability": 3,
+          "total_score": 69,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Spread Cost",
+            "P&L"
+          ],
+          "reason": "Official timing is current but search intent and calculator bridge remain overlapped by the existing FOMC event-risk package"
+        },
+        {
+          "scan_date": "2026-07-27",
+          "candidate_id": "HR-20260727-08",
+          "status": "observation",
+          "topic": "Topstep Dynamic Expansion Rule Math",
+          "primary_site": "PositionMath",
+          "freshness": 11,
+          "traffic_potential": 15,
+          "calculator_fit": 25,
+          "evidence_quality": 7,
+          "actionability": 8,
+          "total_score": 66,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": false,
+          "calculator_mapping": [
+            "Daily Loss Limit",
+            "Trailing Drawdown",
+            "Prop Firm Calculator"
+          ],
+          "reason": "A second independent reliable source still does not fully verify the rule mechanics"
+        },
+        {
+          "scan_date": "2026-07-27",
+          "candidate_id": "HR-20260727-09",
+          "status": "discarded",
+          "topic": "Directional FX Stock Commodity and Central-Bank Predictions",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 22,
+          "calculator_fit": 5,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 59,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Directional forecasts, price predictions and signal-like content are excluded"
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "note": "央行、交易所、公司 IR 与正式规则页已覆盖"
+        },
+        {
+          "channel": "可靠英文媒体",
+          "status": "complete",
+          "note": "Reuters、AP 等用于独立交叉验证"
+        },
+        {
+          "channel": "Reddit 公开讨论",
+          "status": "partial",
+          "note": "覆盖公开索引和具体帖子，仅作为热度信号"
+        },
+        {
+          "channel": "X",
+          "status": "limited",
+          "note": "登录态与动态页面会限制稳定扫描，不把缺失数据当作无热度"
+        },
+        {
+          "channel": "Quora",
+          "status": "limited",
+          "note": "尚未达到与新闻和 Reddit 相同的逐题扫描深度"
+        },
+        {
+          "channel": "BabyPips / ForexFactory",
+          "status": "limited",
+          "note": "尚未达到同等深度的逐帖扫描"
+        },
+        {
+          "channel": "Google Trends",
+          "status": "not_run",
+          "note": "公开趋势信号不稳定时不作为硬门槛依据"
+        }
+      ],
+      "links": {
+        "daily_report": "../每日报告/2026-07-27_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-07-27_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json"
+      }
+    },
+    {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-07-26T22:10:25+08:00",
+      "generated_at": "2026-07-27T22:04:54+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -327,7 +599,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-07-26T22:10:25+08:00",
+      "generated_at": "2026-07-27T22:04:54+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -761,7 +1033,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-07-26T22:10:25+08:00",
+      "generated_at": "2026-07-27T22:04:54+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -1274,7 +1546,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-07-26T22:10:25+08:00",
+      "generated_at": "2026-07-27T22:04:54+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -1782,7 +2054,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-07-26T22:10:25+08:00",
+      "generated_at": "2026-07-27T22:04:54+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -2248,7 +2520,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-07-26T22:10:25+08:00",
+      "generated_at": "2026-07-27T22:04:54+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -2660,7 +2932,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-07-26T22:10:25+08:00",
+      "generated_at": "2026-07-27T22:04:54+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -3057,7 +3329,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-07-26T22:10:25+08:00",
+      "generated_at": "2026-07-27T22:04:54+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -3495,10 +3767,10 @@
       }
     }
   ],
-  "scan_date": "2026-07-26",
+  "scan_date": "2026-07-27",
   "scoring_version": "v1-legacy",
   "pilot": {
-    "day": 8,
+    "day": 9,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -3506,30 +3778,30 @@
     "mode": "topic_traffic_playbooks_and_content_drafts"
   },
   "stats": {
-    "selected": 1,
-    "observation": 7,
+    "selected": 0,
+    "observation": 8,
     "discarded": 1,
     "total": 9,
-    "selected_average": 93.0,
+    "selected_average": 0,
     "all_selected_pass_gate": true,
-    "content_ready": 1,
-    "playbook_ready": 1
+    "content_ready": 0,
+    "playbook_ready": 0
   },
   "candidates": [
     {
-      "scan_date": "2026-07-26",
-      "candidate_id": "HR-20260726-03",
+      "scan_date": "2026-07-27",
+      "candidate_id": "HR-20260727-01",
       "status": "observation",
-      "topic": "USD/JPY Near 164 Before BOJ: Hold Existing Tail-Risk Package",
+      "topic": "FOMC July 28-29: Existing Event-Risk Package Still Covers the Search Intent",
       "primary_site": "PipGauge",
-      "freshness": 24,
-      "traffic_potential": 24,
+      "freshness": 25,
+      "traffic_potential": 23,
       "calculator_fit": 25,
       "evidence_quality": 15,
       "actionability": 7,
       "total_score": 95,
       "hard_gate": true,
-      "reliable_sources": 4,
+      "reliable_sources": 3,
       "fresh_signal": true,
       "calculator_mapping": [
         "Pip Value",
@@ -3537,16 +3809,16 @@
         "P&L",
         "Spread Cost"
       ],
-      "reason": "No later official FX file or independent reliable price number supersedes the July 25 refresh; the calculator path is unchanged"
+      "reason": "Official meeting timing is current, but HR-20260724-01 and HR-20260725-01 already cover the same pre-decision risk table and no new policy fact or distinct calculation path appeared"
     },
     {
-      "scan_date": "2026-07-26",
-      "candidate_id": "HR-20260726-02",
+      "scan_date": "2026-07-27",
+      "candidate_id": "HR-20260727-02",
       "status": "observation",
-      "topic": "FOMC July 29: Hold Existing Event-Risk Package",
+      "topic": "BOJ July 30-31: Existing USDJPY Tail-Risk Package Still Applies",
       "primary_site": "PipGauge",
-      "freshness": 24,
-      "traffic_potential": 23,
+      "freshness": 25,
+      "traffic_potential": 22,
       "calculator_fit": 25,
       "evidence_quality": 15,
       "actionability": 7,
@@ -3560,20 +3832,20 @@
         "P&L",
         "Spread Cost"
       ],
-      "reason": "July 25 already produced the same risk-table refresh and July 26 adds no new official decision, reliable price number or distinct calculation path"
+      "reason": "BOJ refreshed the official calendar on July 24, but the meeting timing and calculator path are already covered by recent USDJPY packages without a new independent numeric hook"
     },
     {
-      "scan_date": "2026-07-26",
-      "candidate_id": "HR-20260726-01",
-      "status": "selected",
-      "topic": "CME Single Stock Futures Go Live Sunday: Recheck 100-Share Notional",
+      "scan_date": "2026-07-27",
+      "candidate_id": "HR-20260727-04",
+      "status": "observation",
+      "topic": "CME Single Stock Futures First Trade Date: Await Verifiable Trading Evidence",
       "primary_site": "PositionMath",
       "freshness": 25,
       "traffic_potential": 22,
       "calculator_fit": 23,
       "evidence_quality": 15,
-      "actionability": 8,
-      "total_score": 93,
+      "actionability": 7,
+      "total_score": 92,
       "hard_gate": true,
       "reliable_sources": 3,
       "fresh_signal": true,
@@ -3583,60 +3855,20 @@
         "P&L",
         "Margin"
       ],
-      "reason": "CME confirms Sunday production launch and Monday trade date; refresh HR-20260722-05 with launch-state facts and standard 100-share math",
-      "content_status": "review_ready",
-      "content_label": "CME 单股期货上线刷新稿待人工审核",
-      "content_url": "../内容生产/2026-07-26/HR-20260726-01/index.html",
-      "content_format": "Medium / Reddit / X",
-      "deadline": "2026-07-27",
-      "traffic_playbook": {
-        "playbook_status": "ready",
-        "execution_mode": "refresh",
-        "urgency": "critical",
-        "publish_deadline": "2026-07-27",
-        "traffic_hook": "CME 的 Globex 通知确认单股期货于 7 月 26 日周日进入 production、交易日为 7 月 27 日；用户会从倒计时转向核对已上线合约的 multiplier、名义价值和盈亏。",
-        "traffic_window": "2026-07-26 至 2026-07-29；只更新 HR-20260722-05，不创建第二篇同构文章。",
-        "search_intents": [
-          "CME single stock futures live July 27",
-          "single stock futures contract size",
-          "single stock futures notional value",
-          "single stock futures P&L calculator"
-        ],
-        "traffic_angle": "借 Sunday production launch / Monday trade date 的新状态，回答一份标准 100 股合约在假设股价 $50/$200/$500 时对应多少名义价值，以及标的变动 1% 时合约盈亏多少；先展示可读数字，再在账户风险预算步骤承接 Position Size、Portfolio Heat 与 P&L。",
-        "calculator_bridge": "标的价格 × 官方 100 股 multiplier = 名义价值；名义价值 × 价格变动百分比 = 合约 P&L；再用 Position Size 与 Portfolio Heat 检查账户暴露。",
-        "example_scenario": "$10,000 账户；假设股价 $50/$200/$500；标准 100 股合约各 1 份；名义价值 $5,000/$20,000/$50,000；1% 变动对应 $50/$200/$500。",
-        "distribution_order": [
-          "更新 HR-20260722-05 标题与首段为已上线状态",
-          "替换标准合约数字表",
-          "Medium 同步审核快照",
-          "Reddit 仅原生回答规格问题且首轮不放链接",
-          "X 主线程独立给出完整计算"
-        ],
-        "link_placement": "先给 production/trade date、100 股规格、名义价值和 1% 盈亏表，再在风险预算复核处链接 PositionMath。",
-        "expiry_condition": "CME 延期、撤回或规格变化时立即暂停并更正；7 月 29 日后若无可核验成交量、流动性、经纪商可用性或新讨论数据，停止 launch 标题。",
-        "editorial_boundary": "不预测任何股票方向；不声称资本效率一定更高；不提供税务结论；不把 CFTC 申报等同于零售适用性；不把 Micro multiplier 泛化为所有品种，也不把交易所最低要求写成 broker margin。",
-        "content_mainline": "把既有单股期货稿从上线倒计时更新为 production launch 版本，仅使用官方明确的标准 100 股规格。",
-        "body_material": [
-          "CME Sunday production launch 与 Monday trade date",
-          "标准合约 100 股 multiplier",
-          "$50/$200/$500 名义价值与 1% 盈亏表"
-        ],
-        "product_bridge": "先完成交易所规格、名义价值和百分比盈亏计算，再可选使用 Position Size、Portfolio Heat 与 P&L。",
-        "product_bridge_type": "optional"
-      }
+      "reason": "HR-20260726-01 already refreshed the launch state; no reliable first-day volume, liquidity, outage or retail-broker availability evidence was available at scan time"
     },
     {
-      "scan_date": "2026-07-26",
-      "candidate_id": "HR-20260726-04",
+      "scan_date": "2026-07-27",
+      "candidate_id": "HR-20260727-03",
       "status": "observation",
-      "topic": "Bank of England July 30: Hold Existing GBP/USD Package",
+      "topic": "Bank of England July 30: Hold Existing GBPUSD Package",
       "primary_site": "PipGauge",
-      "freshness": 22,
-      "traffic_potential": 17,
+      "freshness": 24,
+      "traffic_potential": 18,
       "calculator_fit": 25,
       "evidence_quality": 15,
       "actionability": 7,
-      "total_score": 86,
+      "total_score": 89,
       "hard_gate": true,
       "reliable_sources": 3,
       "fresh_signal": true,
@@ -3646,20 +3878,20 @@
         "P&L",
         "Spread Cost"
       ],
-      "reason": "The existing July 24 package remains valid but July 26 adds no new rule, market number or distinct traffic path"
+      "reason": "The official report and decision timing remains current, but HR-20260724-11 already covers the same calculation intent and no new decision or rule change exists"
     },
     {
-      "scan_date": "2026-07-26",
-      "candidate_id": "HR-20260726-05",
+      "scan_date": "2026-07-27",
+      "candidate_id": "HR-20260727-05",
       "status": "observation",
-      "topic": "CME 1OZ Gold First-Weekend Evidence Check",
+      "topic": "CME 1OZ Gold First-Week Evidence Check",
       "primary_site": "PipGauge",
-      "freshness": 19,
+      "freshness": 18,
       "traffic_potential": 15,
       "calculator_fit": 24,
       "evidence_quality": 15,
       "actionability": 6,
-      "total_score": 79,
+      "total_score": 78,
       "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
@@ -3669,20 +3901,20 @@
         "Margin",
         "Spread Cost"
       ],
-      "reason": "No verifiable first-weekend volume, spread, outage or liquidity evidence was found, so another launch refresh would be mechanical"
+      "reason": "No verifiable first-week volume, spread, outage or liquidity evidence was found, so another launch refresh would be mechanical"
     },
     {
-      "scan_date": "2026-07-26",
-      "candidate_id": "HR-20260726-07",
+      "scan_date": "2026-07-27",
+      "candidate_id": "HR-20260727-07",
       "status": "observation",
-      "topic": "Brent Geopolitical Volatility",
+      "topic": "Brent Volatility and Portfolio Risk",
       "primary_site": "PipGauge",
-      "freshness": 24,
-      "traffic_potential": 24,
+      "freshness": 23,
+      "traffic_potential": 23,
       "calculator_fit": 8,
       "evidence_quality": 15,
       "actionability": 6,
-      "total_score": 77,
+      "total_score": 75,
       "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
@@ -3690,20 +3922,20 @@
         "Portfolio Heat",
         "Margin"
       ],
-      "reason": "Traffic is strong but the existing sites still lack a natural oil-contract specification calculator bridge"
+      "reason": "Discussion interest remains plausible but the current product set still lacks a natural oil-contract specification or point-value calculator bridge"
     },
     {
-      "scan_date": "2026-07-26",
-      "candidate_id": "HR-20260726-06",
+      "scan_date": "2026-07-27",
+      "candidate_id": "HR-20260727-06",
       "status": "observation",
       "topic": "U.S. Q2 GDP and June PCE on July 30",
       "primary_site": "PipGauge",
-      "freshness": 22,
+      "freshness": 21,
       "traffic_potential": 15,
       "calculator_fit": 22,
       "evidence_quality": 8,
       "actionability": 3,
-      "total_score": 70,
+      "total_score": 69,
       "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
@@ -3713,20 +3945,20 @@
         "Spread Cost",
         "P&L"
       ],
-      "reason": "Official timing is current but search intent and calculator bridge remain overlapped by the stronger existing FOMC package"
+      "reason": "Official timing is current but search intent and calculator bridge remain overlapped by the existing FOMC event-risk package"
     },
     {
-      "scan_date": "2026-07-26",
-      "candidate_id": "HR-20260726-08",
+      "scan_date": "2026-07-27",
+      "candidate_id": "HR-20260727-08",
       "status": "observation",
       "topic": "Topstep Dynamic Expansion Rule Math",
       "primary_site": "PositionMath",
-      "freshness": 12,
+      "freshness": 11,
       "traffic_potential": 15,
       "calculator_fit": 25,
       "evidence_quality": 7,
       "actionability": 8,
-      "total_score": 67,
+      "total_score": 66,
       "hard_gate": false,
       "reliable_sources": 1,
       "fresh_signal": false,
@@ -3738,8 +3970,8 @@
       "reason": "A second independent reliable source still does not fully verify the rule mechanics"
     },
     {
-      "scan_date": "2026-07-26",
-      "candidate_id": "HR-20260726-09",
+      "scan_date": "2026-07-27",
+      "candidate_id": "HR-20260727-09",
       "status": "discarded",
       "topic": "Directional FX Stock Commodity and Central-Bank Predictions",
       "primary_site": "PipGauge",
@@ -3796,13 +4028,12 @@
     }
   ],
   "links": {
-    "daily_report": "../每日报告/2026-07-26_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-07-26_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-07-27_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-07-27_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
-    "traffic_playbooks": "../热点流量打法.json",
-    "content_root": "../内容生产/2026-07-26"
+    "traffic_playbooks": "../热点流量打法.json"
   },
   "radar_model": "v2-content-first",
   "editorial_policy": {
