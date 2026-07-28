@@ -62,7 +62,8 @@ test("keeps content value primary and product placement optional", async () => {
   const data = JSON.parse(dataText);
   assert.equal(data.radar_model, "v2-content-first");
   assert.equal(data.editorial_policy.product_bridge_optional, true);
-  assert.ok(data.periods.every((period) => period.scoring_version === "v1-legacy"));
+  assert.ok(data.periods.every((period) => ["v1-legacy", "v2-audited"].includes(period.scoring_version)));
+  assert.equal(data.periods.find((period) => period.scan_date === data.latest_scan_date).scoring_version, "v2-audited");
   assert.ok(
     data.periods
       .flatMap((period) => period.candidates)
@@ -150,4 +151,40 @@ test("generates Medium, Reddit and X drafts and stops at human review", async ()
       assert.match(reviewDraft, /时效|历史|复盘/, `${contentPackage.candidate_id} historical time gate is missing`);
     }
   }
+});
+
+test("audits source independence, live coverage and high-score downgrades", async () => {
+  const data = JSON.parse(await readFile(new URL("../public/radar/data.json", import.meta.url), "utf8"));
+  const latest = data.periods.find((period) => period.scan_date === data.latest_scan_date);
+
+  assert.equal(latest.audit_status, "audited");
+  assert.equal(latest.scoring_version, "v2-audited");
+  assert.ok(latest.coverage.every((channel) => channel.checked_at));
+  assert.ok(latest.coverage.some((channel) => channel.status !== "complete"));
+
+  for (const candidate of latest.candidates.filter((item) => item.status !== "discarded")) {
+    assert.ok(candidate.scan_audit?.sources?.length > 0, `${candidate.candidate_id} source ledger missing`);
+    const reliablePublishers = new Set(candidate.scan_audit.sources
+      .filter((source) => source.reliable)
+      .map((source) => source.publisher.trim().toLowerCase()));
+    assert.equal(
+      reliablePublishers.size,
+      candidate.reliable_sources,
+      `${candidate.candidate_id} independent publisher count mismatch`,
+    );
+    const decision = candidate.scan_audit.decision;
+    assert.ok(decision?.novelty_gate, `${candidate.candidate_id} novelty gate missing`);
+    assert.ok(decision?.decision_gate, `${candidate.candidate_id} decision gate missing`);
+    assert.ok(decision?.reopen_trigger, `${candidate.candidate_id} reopen trigger missing`);
+    if (candidate.status === "observation" && candidate.total_score >= 72 && candidate.hard_gate) {
+      assert.equal(decision.novelty_gate, "fail");
+      if (decision.decision_gate === "duplicate") {
+        assert.ok(decision.duplicate_of.length > 0, `${candidate.candidate_id} duplicate target missing`);
+      }
+    }
+  }
+
+  const legacyPeriods = data.periods.filter((period) => period.scan_date !== data.latest_scan_date);
+  assert.ok(legacyPeriods.every((period) => period.audit_status === "legacy_unverified"));
+  assert.ok(legacyPeriods.every((period) => period.coverage.every((channel) => channel.status !== "complete")));
 });
