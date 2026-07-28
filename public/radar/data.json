@@ -1,6 +1,6 @@
 {
   "data_version": 3,
-  "generated_at": "2026-07-28T22:30:57+08:00",
+  "generated_at": "2026-07-28T22:48:00+08:00",
   "latest_scan_date": "2026-07-28",
   "available_dates": [
     "2026-07-28",
@@ -17,7 +17,7 @@
   "periods": [
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-07-28T22:30:57+08:00",
+      "generated_at": "2026-07-28T22:48:00+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -28,16 +28,126 @@
         "mode": "topic_traffic_playbooks_and_content_drafts"
       },
       "stats": {
-        "selected": 0,
-        "observation": 7,
+        "selected": 1,
+        "observation": 6,
         "discarded": 1,
         "total": 8,
-        "selected_average": 0,
+        "selected_average": 96.0,
         "all_selected_pass_gate": true,
-        "content_ready": 0,
-        "playbook_ready": 0
+        "content_ready": 1,
+        "playbook_ready": 1
       },
       "candidates": [
+        {
+          "scan_date": "2026-07-28",
+          "candidate_id": "HR-20260728-04",
+          "status": "selected",
+          "topic": "Schwab Adds Retail Access to CME Single-Stock Futures: Recheck Notional Before Margin",
+          "primary_site": "PositionMath",
+          "freshness": 25,
+          "traffic_potential": 23,
+          "calculator_fit": 24,
+          "evidence_quality": 15,
+          "actionability": 9,
+          "total_score": 96,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Position Size",
+            "Portfolio Heat",
+            "P&L",
+            "Margin",
+            "Spread Cost"
+          ],
+          "reason": "Schwab published independent retail-broker availability for futures-approved customers on July 27 and warned about potentially thinner early volume and wider spreads; refresh HR-20260722-05 with eligibility and liquidity boundaries",
+          "content_status": "review_ready",
+          "content_label": "Schwab 零售可用性刷新稿待人工审核",
+          "content_url": "../内容生产/2026-07-28/HR-20260728-04/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-07-30",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "refresh",
+            "urgency": "high",
+            "publish_deadline": "2026-07-30",
+            "traffic_hook": "Charles Schwab 7 月 27 日证实 futures-approved customers 可交易 CME 较大规格单股期货，并提醒新品种可能量薄、价差较宽。",
+            "traffic_window": "2026-07-28 至 2026-07-31；刷新 HR-20260722-05，不新建同构文章。",
+            "search_intents": [
+              "Schwab single stock futures availability",
+              "CME single stock futures broker",
+              "single stock futures notional calculator",
+              "single stock futures liquidity spread"
+            ],
+            "traffic_angle": "借 Schwab 的零售客户可用性新闻，回答一份 100 股标准合约在假设股价 $50/$200/$500 时对应的 $5,000/$20,000/$50,000 名义价值和 1% 变动的 $50/$200/$500 P&L；再分开说明账户资格、margin 与流动性。",
+            "calculator_bridge": "股价 × 100 得名义价值，名义价值 × 情景波动得 P&L；在账户总暴露复核处承接 Position Size、Portfolio Heat、P&L 与 Spread Cost。",
+            "example_scenario": "$10,000 账户；假设股价 $50/$200/$500；标准 100 股合约各 1 份；1% 变动；额外比较基础与扩大价差。",
+            "distribution_order": [
+              "更新 HR-20260722-05 标题和 broker availability 段落",
+              "更新 Medium 审核快照",
+              "Reddit 原生讨论且首轮不放链接",
+              "X 主线程独立给出完整计算"
+            ],
+            "link_placement": "先给 Schwab 资格边界、100 股规格和名义价值/P&L 表，再在暴露复核处链接 PositionMath。",
+            "expiry_condition": "7 月 31 日后若无新 broker availability、实际成交量或价差数据，转为常青 broker/specification 页；Schwab 资格或 CME 规格变化时立即更正。",
+            "editorial_boundary": "不预测个股方向；不把 Schwab 可用性泛化为所有 broker/账户/Micro 产品；不把流动性风险提示写成已观察成交数据；不把 margin 写成最大亏损。",
+            "content_mainline": "刷新既有单股期货稿，加入 Schwab 零售客户可用性和早期流动性边界。",
+            "body_material": [
+              "Schwab futures-approved customer 可用性",
+              "CME 标准合约 100 股 multiplier",
+              "$50/$200/$500 名义价值与 1% P&L",
+              "量薄/价差风险与账户资格边界"
+            ],
+            "product_bridge": "先完成规格、名义价值、P&L 和流动性边界，再可选使用 PositionMath 复核账户暴露。",
+            "product_bridge_type": "optional"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "CME Group",
+                "url": "https://www.cmegroup.com/markets/equities/single-stock-futures.html",
+                "source_type": "official",
+                "published_at": "2026-07-27",
+                "freshness_role": "launch_status",
+                "reliable": true
+              },
+              {
+                "publisher": "CFTC",
+                "url": "https://www.cftc.gov/IndustryOversight/IndustryFilings/TradingOrganizationProducts/61474",
+                "source_type": "regulator",
+                "published_at": "2026-07-24",
+                "freshness_role": "independent_specification",
+                "reliable": true
+              },
+              {
+                "publisher": "Charles Schwab",
+                "url": "https://www.schwab.com/learn/story/single-stock-futures-what-they-are-how-to-use",
+                "source_type": "broker_research",
+                "published_at": "2026-07-27",
+                "freshness_role": "broker_availability_and_liquidity_boundary",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit",
+                "url": "https://www.reddit.com/r/FuturesTrading/comments/1uzz2i9/cme_says_single_stock_futures_are_coming_july_27/",
+                "source_type": "community_heat",
+                "published_at": "2026-07-27",
+                "freshness_role": "liquidity_discussion",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass",
+              "decision_gate": "broker_availability",
+              "duplicate_of": [
+                "HR-20260722-05",
+                "HR-20260726-01"
+              ],
+              "reopen_trigger": "已触发：Schwab 公开证实 futures-approved customers 可使用较大规格合约",
+              "rationale": "新的独立 broker availability 事实和流动性边界足以刷新旧稿"
+            }
+          }
+        },
         {
           "scan_date": "2026-07-28",
           "candidate_id": "HR-20260728-01",
@@ -222,58 +332,6 @@
         },
         {
           "scan_date": "2026-07-28",
-          "candidate_id": "HR-20260728-04",
-          "status": "observation",
-          "topic": "CME Single Stock Futures Post-Launch Evidence Check",
-          "primary_site": "PositionMath",
-          "freshness": 24,
-          "traffic_potential": 21,
-          "calculator_fit": 23,
-          "evidence_quality": 14,
-          "actionability": 6,
-          "total_score": 88,
-          "hard_gate": true,
-          "reliable_sources": 2,
-          "fresh_signal": true,
-          "calculator_mapping": [
-            "Position Size",
-            "Portfolio Heat",
-            "P&L",
-            "Margin"
-          ],
-          "reason": "CME confirms the live product set but no independent reliable first-day volume, liquidity, outage or broker-availability evidence was found; HR-20260726-01 already covers launch math",
-          "scan_audit": {
-            "sources": [
-              {
-                "publisher": "CME Group",
-                "url": "https://www.cmegroup.com/markets/equities/single-stock-futures.html",
-                "source_type": "official",
-                "published_at": "2026-07-27",
-                "freshness_role": "launch_status",
-                "reliable": true
-              },
-              {
-                "publisher": "CFTC",
-                "url": "https://www.cftc.gov/IndustryOversight/IndustryFilings/TradingOrganizationProducts/61474",
-                "source_type": "regulator",
-                "published_at": "2026-07-24",
-                "freshness_role": "independent_specification",
-                "reliable": true
-              }
-            ],
-            "decision": {
-              "novelty_gate": "fail",
-              "decision_gate": "duplicate",
-              "duplicate_of": [
-                "HR-20260726-01"
-              ],
-              "reopen_trigger": "可核验首日成交量、流动性、故障或零售 broker availability",
-              "rationale": "只有上线状态，没有新运行数据"
-            }
-          }
-        },
-        {
-          "scan_date": "2026-07-28",
           "candidate_id": "HR-20260728-05",
           "status": "observation",
           "topic": "CME 1OZ Gold First-Week Evidence Check",
@@ -447,11 +505,11 @@
           "note": "已核查 Fed、BOJ、BoE、CME、CFTC、BEA 及 Topstep 公开页面"
         },
         {
-          "channel": "可靠英文媒体",
+          "channel": "可靠英文媒体与经纪商研究",
           "status": "partial",
-          "checked_at": "2026-07-28T22:00:00+08:00",
-          "source_count": 4,
-          "note": "核查 AP、CBS 与 Reuters 公开索引/转载；未得到所有主题的当日独立报道"
+          "checked_at": "2026-07-28T22:50:00+08:00",
+          "source_count": 7,
+          "note": "重扫 AP、CBS、Reuters、Axios、Kiplinger 与 Schwab；Schwab 提供了新的 broker availability 事实"
         },
         {
           "channel": "Reddit 公开讨论",
@@ -496,12 +554,13 @@
         "rules": "../雷达规则.md",
         "capability_map": "../两站计算器能力地图.md",
         "ledger": "../热点候选总表.csv",
-        "traffic_playbooks": "../热点流量打法.json"
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-07-28"
       }
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-07-28T22:30:57+08:00",
+      "generated_at": "2026-07-28T22:48:00+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -773,7 +832,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-07-28T22:30:57+08:00",
+      "generated_at": "2026-07-28T22:48:00+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -1086,7 +1145,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-07-28T22:30:57+08:00",
+      "generated_at": "2026-07-28T22:48:00+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -1521,7 +1580,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-07-28T22:30:57+08:00",
+      "generated_at": "2026-07-28T22:48:00+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -2035,7 +2094,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-07-28T22:30:57+08:00",
+      "generated_at": "2026-07-28T22:48:00+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -2544,7 +2603,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-07-28T22:30:57+08:00",
+      "generated_at": "2026-07-28T22:48:00+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -3011,7 +3070,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-07-28T22:30:57+08:00",
+      "generated_at": "2026-07-28T22:48:00+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -3424,7 +3483,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-07-28T22:30:57+08:00",
+      "generated_at": "2026-07-28T22:48:00+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -3822,7 +3881,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-07-28T22:30:57+08:00",
+      "generated_at": "2026-07-28T22:48:00+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -4272,16 +4331,126 @@
     "mode": "topic_traffic_playbooks_and_content_drafts"
   },
   "stats": {
-    "selected": 0,
-    "observation": 7,
+    "selected": 1,
+    "observation": 6,
     "discarded": 1,
     "total": 8,
-    "selected_average": 0,
+    "selected_average": 96.0,
     "all_selected_pass_gate": true,
-    "content_ready": 0,
-    "playbook_ready": 0
+    "content_ready": 1,
+    "playbook_ready": 1
   },
   "candidates": [
+    {
+      "scan_date": "2026-07-28",
+      "candidate_id": "HR-20260728-04",
+      "status": "selected",
+      "topic": "Schwab Adds Retail Access to CME Single-Stock Futures: Recheck Notional Before Margin",
+      "primary_site": "PositionMath",
+      "freshness": 25,
+      "traffic_potential": 23,
+      "calculator_fit": 24,
+      "evidence_quality": 15,
+      "actionability": 9,
+      "total_score": 96,
+      "hard_gate": true,
+      "reliable_sources": 3,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Position Size",
+        "Portfolio Heat",
+        "P&L",
+        "Margin",
+        "Spread Cost"
+      ],
+      "reason": "Schwab published independent retail-broker availability for futures-approved customers on July 27 and warned about potentially thinner early volume and wider spreads; refresh HR-20260722-05 with eligibility and liquidity boundaries",
+      "content_status": "review_ready",
+      "content_label": "Schwab 零售可用性刷新稿待人工审核",
+      "content_url": "../内容生产/2026-07-28/HR-20260728-04/index.html",
+      "content_format": "Medium / Reddit / X",
+      "deadline": "2026-07-30",
+      "traffic_playbook": {
+        "playbook_status": "ready",
+        "execution_mode": "refresh",
+        "urgency": "high",
+        "publish_deadline": "2026-07-30",
+        "traffic_hook": "Charles Schwab 7 月 27 日证实 futures-approved customers 可交易 CME 较大规格单股期货，并提醒新品种可能量薄、价差较宽。",
+        "traffic_window": "2026-07-28 至 2026-07-31；刷新 HR-20260722-05，不新建同构文章。",
+        "search_intents": [
+          "Schwab single stock futures availability",
+          "CME single stock futures broker",
+          "single stock futures notional calculator",
+          "single stock futures liquidity spread"
+        ],
+        "traffic_angle": "借 Schwab 的零售客户可用性新闻，回答一份 100 股标准合约在假设股价 $50/$200/$500 时对应的 $5,000/$20,000/$50,000 名义价值和 1% 变动的 $50/$200/$500 P&L；再分开说明账户资格、margin 与流动性。",
+        "calculator_bridge": "股价 × 100 得名义价值，名义价值 × 情景波动得 P&L；在账户总暴露复核处承接 Position Size、Portfolio Heat、P&L 与 Spread Cost。",
+        "example_scenario": "$10,000 账户；假设股价 $50/$200/$500；标准 100 股合约各 1 份；1% 变动；额外比较基础与扩大价差。",
+        "distribution_order": [
+          "更新 HR-20260722-05 标题和 broker availability 段落",
+          "更新 Medium 审核快照",
+          "Reddit 原生讨论且首轮不放链接",
+          "X 主线程独立给出完整计算"
+        ],
+        "link_placement": "先给 Schwab 资格边界、100 股规格和名义价值/P&L 表，再在暴露复核处链接 PositionMath。",
+        "expiry_condition": "7 月 31 日后若无新 broker availability、实际成交量或价差数据，转为常青 broker/specification 页；Schwab 资格或 CME 规格变化时立即更正。",
+        "editorial_boundary": "不预测个股方向；不把 Schwab 可用性泛化为所有 broker/账户/Micro 产品；不把流动性风险提示写成已观察成交数据；不把 margin 写成最大亏损。",
+        "content_mainline": "刷新既有单股期货稿，加入 Schwab 零售客户可用性和早期流动性边界。",
+        "body_material": [
+          "Schwab futures-approved customer 可用性",
+          "CME 标准合约 100 股 multiplier",
+          "$50/$200/$500 名义价值与 1% P&L",
+          "量薄/价差风险与账户资格边界"
+        ],
+        "product_bridge": "先完成规格、名义价值、P&L 和流动性边界，再可选使用 PositionMath 复核账户暴露。",
+        "product_bridge_type": "optional"
+      },
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "CME Group",
+            "url": "https://www.cmegroup.com/markets/equities/single-stock-futures.html",
+            "source_type": "official",
+            "published_at": "2026-07-27",
+            "freshness_role": "launch_status",
+            "reliable": true
+          },
+          {
+            "publisher": "CFTC",
+            "url": "https://www.cftc.gov/IndustryOversight/IndustryFilings/TradingOrganizationProducts/61474",
+            "source_type": "regulator",
+            "published_at": "2026-07-24",
+            "freshness_role": "independent_specification",
+            "reliable": true
+          },
+          {
+            "publisher": "Charles Schwab",
+            "url": "https://www.schwab.com/learn/story/single-stock-futures-what-they-are-how-to-use",
+            "source_type": "broker_research",
+            "published_at": "2026-07-27",
+            "freshness_role": "broker_availability_and_liquidity_boundary",
+            "reliable": true
+          },
+          {
+            "publisher": "Reddit",
+            "url": "https://www.reddit.com/r/FuturesTrading/comments/1uzz2i9/cme_says_single_stock_futures_are_coming_july_27/",
+            "source_type": "community_heat",
+            "published_at": "2026-07-27",
+            "freshness_role": "liquidity_discussion",
+            "reliable": false
+          }
+        ],
+        "decision": {
+          "novelty_gate": "pass",
+          "decision_gate": "broker_availability",
+          "duplicate_of": [
+            "HR-20260722-05",
+            "HR-20260726-01"
+          ],
+          "reopen_trigger": "已触发：Schwab 公开证实 futures-approved customers 可使用较大规格合约",
+          "rationale": "新的独立 broker availability 事实和流动性边界足以刷新旧稿"
+        }
+      }
+    },
     {
       "scan_date": "2026-07-28",
       "candidate_id": "HR-20260728-01",
@@ -4466,58 +4635,6 @@
     },
     {
       "scan_date": "2026-07-28",
-      "candidate_id": "HR-20260728-04",
-      "status": "observation",
-      "topic": "CME Single Stock Futures Post-Launch Evidence Check",
-      "primary_site": "PositionMath",
-      "freshness": 24,
-      "traffic_potential": 21,
-      "calculator_fit": 23,
-      "evidence_quality": 14,
-      "actionability": 6,
-      "total_score": 88,
-      "hard_gate": true,
-      "reliable_sources": 2,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Position Size",
-        "Portfolio Heat",
-        "P&L",
-        "Margin"
-      ],
-      "reason": "CME confirms the live product set but no independent reliable first-day volume, liquidity, outage or broker-availability evidence was found; HR-20260726-01 already covers launch math",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "CME Group",
-            "url": "https://www.cmegroup.com/markets/equities/single-stock-futures.html",
-            "source_type": "official",
-            "published_at": "2026-07-27",
-            "freshness_role": "launch_status",
-            "reliable": true
-          },
-          {
-            "publisher": "CFTC",
-            "url": "https://www.cftc.gov/IndustryOversight/IndustryFilings/TradingOrganizationProducts/61474",
-            "source_type": "regulator",
-            "published_at": "2026-07-24",
-            "freshness_role": "independent_specification",
-            "reliable": true
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "duplicate",
-          "duplicate_of": [
-            "HR-20260726-01"
-          ],
-          "reopen_trigger": "可核验首日成交量、流动性、故障或零售 broker availability",
-          "rationale": "只有上线状态，没有新运行数据"
-        }
-      }
-    },
-    {
-      "scan_date": "2026-07-28",
       "candidate_id": "HR-20260728-05",
       "status": "observation",
       "topic": "CME 1OZ Gold First-Week Evidence Check",
@@ -4691,11 +4808,11 @@
       "note": "已核查 Fed、BOJ、BoE、CME、CFTC、BEA 及 Topstep 公开页面"
     },
     {
-      "channel": "可靠英文媒体",
+      "channel": "可靠英文媒体与经纪商研究",
       "status": "partial",
-      "checked_at": "2026-07-28T22:00:00+08:00",
-      "source_count": 4,
-      "note": "核查 AP、CBS 与 Reuters 公开索引/转载；未得到所有主题的当日独立报道"
+      "checked_at": "2026-07-28T22:50:00+08:00",
+      "source_count": 7,
+      "note": "重扫 AP、CBS、Reuters、Axios、Kiplinger 与 Schwab；Schwab 提供了新的 broker availability 事实"
     },
     {
       "channel": "Reddit 公开讨论",
@@ -4740,7 +4857,8 @@
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
-    "traffic_playbooks": "../热点流量打法.json"
+    "traffic_playbooks": "../热点流量打法.json",
+    "content_root": "../内容生产/2026-07-28"
   },
   "radar_model": "v2-content-first",
   "editorial_policy": {
