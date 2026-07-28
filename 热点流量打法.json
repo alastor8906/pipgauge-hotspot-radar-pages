@@ -873,6 +873,41 @@
       ],
       "product_bridge": "先完成交易所规格、名义价值和百分比盈亏计算，再可选使用 Position Size、Portfolio Heat 与 P&L。",
       "product_bridge_type": "optional"
+    },
+    "HR-20260728-04": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-07-30",
+      "traffic_hook": "Charles Schwab 7 月 27 日证实 futures-approved customers 可交易 CME 较大规格单股期货，并提醒新品种可能量薄、价差较宽。",
+      "traffic_window": "2026-07-28 至 2026-07-31；刷新 HR-20260722-05，不新建同构文章。",
+      "search_intents": [
+        "Schwab single stock futures availability",
+        "CME single stock futures broker",
+        "single stock futures notional calculator",
+        "single stock futures liquidity spread"
+      ],
+      "traffic_angle": "借 Schwab 的零售客户可用性新闻，回答一份 100 股标准合约在假设股价 $50/$200/$500 时对应的 $5,000/$20,000/$50,000 名义价值和 1% 变动的 $50/$200/$500 P&L；再分开说明账户资格、margin 与流动性。",
+      "calculator_bridge": "股价 × 100 得名义价值，名义价值 × 情景波动得 P&L；在账户总暴露复核处承接 Position Size、Portfolio Heat、P&L 与 Spread Cost。",
+      "example_scenario": "$10,000 账户；假设股价 $50/$200/$500；标准 100 股合约各 1 份；1% 变动；额外比较基础与扩大价差。",
+      "distribution_order": [
+        "更新 HR-20260722-05 标题和 broker availability 段落",
+        "更新 Medium 审核快照",
+        "Reddit 原生讨论且首轮不放链接",
+        "X 主线程独立给出完整计算"
+      ],
+      "link_placement": "先给 Schwab 资格边界、100 股规格和名义价值/P&L 表，再在暴露复核处链接 PositionMath。",
+      "expiry_condition": "7 月 31 日后若无新 broker availability、实际成交量或价差数据，转为常青 broker/specification 页；Schwab 资格或 CME 规格变化时立即更正。",
+      "editorial_boundary": "不预测个股方向；不把 Schwab 可用性泛化为所有 broker/账户/Micro 产品；不把流动性风险提示写成已观察成交数据；不把 margin 写成最大亏损。",
+      "content_mainline": "刷新既有单股期货稿，加入 Schwab 零售客户可用性和早期流动性边界。",
+      "body_material": [
+        "Schwab futures-approved customer 可用性",
+        "CME 标准合约 100 股 multiplier",
+        "$50/$200/$500 名义价值与 1% P&L",
+        "量薄/价差风险与账户资格边界"
+      ],
+      "product_bridge": "先完成规格、名义价值、P&L 和流动性边界，再可选使用 PositionMath 复核账户暴露。",
+      "product_bridge_type": "optional"
     }
   }
 }

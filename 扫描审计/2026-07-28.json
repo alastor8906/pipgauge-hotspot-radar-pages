@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "scan_date": "2026-07-28",
-  "generated_at": "2026-07-28T22:00:00+08:00",
+  "generated_at": "2026-07-28T22:50:00+08:00",
   "coverage": [
     {"channel": "官方与一手来源", "status": "complete", "checked_at": "2026-07-28T22:00:00+08:00", "source_count": 9, "note": "已核查 Fed、BOJ、BoE、CME、CFTC、BEA 及 Topstep 公开页面"},
-    {"channel": "可靠英文媒体", "status": "partial", "checked_at": "2026-07-28T22:00:00+08:00", "source_count": 4, "note": "核查 AP、CBS 与 Reuters 公开索引/转载；未得到所有主题的当日独立报道"},
+    {"channel": "可靠英文媒体与经纪商研究", "status": "partial", "checked_at": "2026-07-28T22:50:00+08:00", "source_count": 7, "note": "重扫 AP、CBS、Reuters、Axios、Kiplinger 与 Schwab；Schwab 提供了新的 broker availability 事实"},
     {"channel": "Reddit 公开讨论", "status": "partial", "checked_at": "2026-07-28T22:00:00+08:00", "source_count": 4, "note": "仅覆盖公开索引与可访问帖子，只作热度信号"},
     {"channel": "X", "status": "limited", "checked_at": "2026-07-28T22:00:00+08:00", "source_count": 0, "note": "动态页和登录限制，未取得可稳定审计的信号"},
     {"channel": "Quora", "status": "limited", "checked_at": "2026-07-28T22:00:00+08:00", "source_count": 0, "note": "未达到逐题扫描深度"},
@@ -39,9 +39,11 @@
     "HR-20260728-04": {
       "sources": [
         {"publisher": "CME Group", "url": "https://www.cmegroup.com/markets/equities/single-stock-futures.html", "source_type": "official", "published_at": "2026-07-27", "freshness_role": "launch_status", "reliable": true},
-        {"publisher": "CFTC", "url": "https://www.cftc.gov/IndustryOversight/IndustryFilings/TradingOrganizationProducts/61474", "source_type": "regulator", "published_at": "2026-07-24", "freshness_role": "independent_specification", "reliable": true}
+        {"publisher": "CFTC", "url": "https://www.cftc.gov/IndustryOversight/IndustryFilings/TradingOrganizationProducts/61474", "source_type": "regulator", "published_at": "2026-07-24", "freshness_role": "independent_specification", "reliable": true},
+        {"publisher": "Charles Schwab", "url": "https://www.schwab.com/learn/story/single-stock-futures-what-they-are-how-to-use", "source_type": "broker_research", "published_at": "2026-07-27", "freshness_role": "broker_availability_and_liquidity_boundary", "reliable": true},
+        {"publisher": "Reddit", "url": "https://www.reddit.com/r/FuturesTrading/comments/1uzz2i9/cme_says_single_stock_futures_are_coming_july_27/", "source_type": "community_heat", "published_at": "2026-07-27", "freshness_role": "liquidity_discussion", "reliable": false}
       ],
-      "decision": {"novelty_gate": "fail", "decision_gate": "duplicate", "duplicate_of": ["HR-20260726-01"], "reopen_trigger": "可核验首日成交量、流动性、故障或零售 broker availability", "rationale": "只有上线状态，没有新运行数据"}
+      "decision": {"novelty_gate": "pass", "decision_gate": "broker_availability", "duplicate_of": ["HR-20260722-05", "HR-20260726-01"], "reopen_trigger": "已触发：Schwab 公开证实 futures-approved customers 可使用较大规格合约", "rationale": "新的独立 broker availability 事实和流动性边界足以刷新旧稿"}
     },
     "HR-20260728-05": {
       "sources": [
