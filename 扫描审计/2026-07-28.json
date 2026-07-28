@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "scan_date": "2026-07-28",
+  "generated_at": "2026-07-28T22:00:00+08:00",
+  "coverage": [
+    {"channel": "官方与一手来源", "status": "complete", "checked_at": "2026-07-28T22:00:00+08:00", "source_count": 9, "note": "已核查 Fed、BOJ、BoE、CME、CFTC、BEA 及 Topstep 公开页面"},
+    {"channel": "可靠英文媒体", "status": "partial", "checked_at": "2026-07-28T22:00:00+08:00", "source_count": 4, "note": "核查 AP、CBS 与 Reuters 公开索引/转载；未得到所有主题的当日独立报道"},
+    {"channel": "Reddit 公开讨论", "status": "partial", "checked_at": "2026-07-28T22:00:00+08:00", "source_count": 4, "note": "仅覆盖公开索引与可访问帖子，只作热度信号"},
+    {"channel": "X", "status": "limited", "checked_at": "2026-07-28T22:00:00+08:00", "source_count": 0, "note": "动态页和登录限制，未取得可稳定审计的信号"},
+    {"channel": "Quora", "status": "limited", "checked_at": "2026-07-28T22:00:00+08:00", "source_count": 0, "note": "未达到逐题扫描深度"},
+    {"channel": "BabyPips / ForexFactory", "status": "limited", "checked_at": "2026-07-28T22:00:00+08:00", "source_count": 0, "note": "未取得足以改变门槛判断的新证据"},
+    {"channel": "Google Trends", "status": "not_run", "checked_at": "2026-07-28T22:00:00+08:00", "source_count": 0, "note": "本期未运行，不将缺失解读为无热度"}
+  ],
+  "candidates": {
+    "HR-20260728-01": {
+      "sources": [
+        {"publisher": "Federal Reserve", "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm", "source_type": "official", "published_at": "2026-07-08", "freshness_role": "event_timing", "reliable": true},
+        {"publisher": "CBS News", "url": "https://www.cbsnews.com/news/fed-interest-rate-decision-july-meeting/", "source_type": "reliable_news", "published_at": "2026-07-25", "freshness_role": "current_attention", "reliable": true},
+        {"publisher": "Associated Press", "url": "https://apnews.com/article/27b96999040acc6b71b6452398a17daa", "source_type": "reliable_news", "published_at": "2026-07-25", "freshness_role": "independent_context", "reliable": true}
+      ],
+      "decision": {"novelty_gate": "fail", "decision_gate": "duplicate", "duplicate_of": ["HR-20260724-01", "HR-20260725-01"], "reopen_trigger": "FOMC 正式决定、实施说明或决定后可验证的新波动数字", "rationale": "会议首日没有改变既有事件风险计算路径"}
+    },
+    "HR-20260728-02": {
+      "sources": [
+        {"publisher": "Bank of Japan", "url": "https://www.boj.or.jp/en/about/calendar/index.htm", "source_type": "official", "published_at": "2026-07-24", "freshness_role": "event_timing", "reliable": true},
+        {"publisher": "Reuters", "url": "https://ae.marketscreener.com/news/boj-likely-to-keep-inflation-warning-but-expect-no-big-build-up-in-risks-say-sources-ce7f51dfd981f226", "source_type": "reliable_news", "published_at": "2026-07-25", "freshness_role": "current_attention", "reliable": true},
+        {"publisher": "Japan Ministry of Finance", "url": "https://www.mof.go.jp/english/policy/international_policy/reference/feio/index.html", "source_type": "official", "published_at": "2026-07-25", "freshness_role": "independent_context", "reliable": true}
+      ],
+      "decision": {"novelty_gate": "fail", "decision_gate": "duplicate", "duplicate_of": ["HR-20260724-03", "HR-20260725-03"], "reopen_trigger": "BOJ 正式决定、新展望数字或日本财务省可核验的干预事实", "rationale": "日程与 USDJPY 尾部风险表已被覆盖"}
+    },
+    "HR-20260728-03": {
+      "sources": [
+        {"publisher": "Bank of England", "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026", "source_type": "official", "published_at": "2026-07-24", "freshness_role": "event_timing", "reliable": true},
+        {"publisher": "Reuters", "url": "https://www.streetinsider.com/Reuters/Bank%2Bof%2BEngland%2Bto%2Bhold%2Bsteady%2Bthis%2Byear%2Bbut%2BIran%2Bwar%2Binflation%2Brisks%2Bpersist%3A%2BReuters%2Bpoll/26810803.html", "source_type": "reliable_news", "published_at": "2026-07-24", "freshness_role": "current_attention", "reliable": true},
+        {"publisher": "Associated Press", "url": "https://apnews.com/article/27b96999040acc6b71b6452398a17daa", "source_type": "reliable_news", "published_at": "2026-07-25", "freshness_role": "independent_context", "reliable": true}
+      ],
+      "decision": {"novelty_gate": "fail", "decision_gate": "duplicate", "duplicate_of": ["HR-20260724-11"], "reopen_trigger": "BoE 正式决定、投票分布或 Monetary Policy Report 新数字", "rationale": "发布前的 GBPUSD 计算意图未变"}
+    },
+    "HR-20260728-04": {
+      "sources": [
+        {"publisher": "CME Group", "url": "https://www.cmegroup.com/markets/equities/single-stock-futures.html", "source_type": "official", "published_at": "2026-07-27", "freshness_role": "launch_status", "reliable": true},
+        {"publisher": "CFTC", "url": "https://www.cftc.gov/IndustryOversight/IndustryFilings/TradingOrganizationProducts/61474", "source_type": "regulator", "published_at": "2026-07-24", "freshness_role": "independent_specification", "reliable": true}
+      ],
+      "decision": {"novelty_gate": "fail", "decision_gate": "duplicate", "duplicate_of": ["HR-20260726-01"], "reopen_trigger": "可核验首日成交量、流动性、故障或零售 broker availability", "rationale": "只有上线状态，没有新运行数据"}
+    },
+    "HR-20260728-05": {
+      "sources": [
+        {"publisher": "CME Group", "url": "https://www.cmegroup.com/markets/metals/precious/1-ounce-gold.html", "source_type": "official", "published_at": "2026-07-23", "freshness_role": "product_status", "reliable": true},
+        {"publisher": "CFTC", "url": "https://www.cftc.gov/IndustryOversight/IndustryFilings/index.htm", "source_type": "regulator", "published_at": "2026-07-23", "freshness_role": "independent_context", "reliable": true}
+      ],
+      "decision": {"novelty_gate": "fail", "decision_gate": "duplicate", "duplicate_of": ["HR-20260724-02"], "reopen_trigger": "可核验首周成交量、点差、流动性或运行异常", "rationale": "没有新的运行事实"}
+    },
+    "HR-20260728-06": {
+      "sources": [
+        {"publisher": "Bureau of Economic Analysis", "url": "https://www.bea.gov/news/schedule", "source_type": "official", "published_at": "2026-07-28", "freshness_role": "release_timing", "reliable": true},
+        {"publisher": "Federal Reserve", "url": "https://www.federalreserve.gov/newsevents/2026-july.htm", "source_type": "official", "published_at": "2026-07-28", "freshness_role": "event_overlap", "reliable": true}
+      ],
+      "decision": {"novelty_gate": "fail", "decision_gate": "duplicate", "duplicate_of": ["HR-20260724-01"], "reopen_trigger": "GDP/PCE 实际发布数字形成与 FOMC 不同的独立计算搜索意图", "rationale": "会前交易风险路径与 FOMC 包重叠"}
+    },
+    "HR-20260728-07": {
+      "sources": [
+        {"publisher": "Topstep", "url": "https://help.topstep.com/en/articles/10305426-prohibited-trading-strategies-at-topstep", "source_type": "official_company_rules", "published_at": "2026-06-10", "freshness_role": "rule_reference", "reliable": true}
+      ],
+      "decision": {"novelty_gate": "fail", "decision_gate": "evidence", "duplicate_of": [], "reopen_trigger": "第二个独立可靠发布主体完整核验一项具体新规则", "rationale": "社区与聚合页不能替代规则事实源"}
+    }
+  }
+}
