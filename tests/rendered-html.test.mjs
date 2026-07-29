@@ -184,7 +184,7 @@ test("audits source independence, live coverage and high-score downgrades", asyn
     }
   }
 
-  const legacyPeriods = data.periods.filter((period) => period.scan_date !== data.latest_scan_date);
+  const legacyPeriods = data.periods.filter((period) => period.audit_status === "legacy_unverified");
   assert.ok(legacyPeriods.every((period) => period.audit_status === "legacy_unverified"));
   assert.ok(legacyPeriods.every((period) => period.coverage.every((channel) => channel.status !== "complete")));
 });

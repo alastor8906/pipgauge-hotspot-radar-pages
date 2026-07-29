@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "scan_date": "2026-07-29",
+  "generated_at": "2026-07-29T22:00:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-07-29T22:00:00+08:00",
+      "source_count": 8,
+      "note": "Fed、BOJ、BoE、CME、CFTC、BEA、Topstep"
+    },
+    {
+      "channel": "可靠英文媒体与经纪商研究",
+      "status": "partial",
+      "checked_at": "2026-07-29T22:00:00+08:00",
+      "source_count": 5,
+      "note": "Reuters、AP、Kiplinger、Schwab"
+    },
+    {
+      "channel": "Reddit 公开讨论",
+      "status": "partial",
+      "checked_at": "2026-07-29T22:00:00+08:00",
+      "source_count": 6,
+      "note": "仅作热度信号"
+    },
+    {
+      "channel": "X",
+      "status": "limited",
+      "checked_at": "2026-07-29T22:00:00+08:00",
+      "source_count": 0,
+      "note": "未取得稳定审计信号"
+    },
+    {
+      "channel": "Quora / BabyPips / ForexFactory",
+      "status": "limited",
+      "checked_at": "2026-07-29T22:00:00+08:00",
+      "source_count": 0,
+      "note": "未取得足以改判证据"
+    },
+    {
+      "channel": "Google Trends",
+      "status": "not_run",
+      "checked_at": "2026-07-29T22:00:00+08:00",
+      "source_count": 0,
+      "note": "未运行"
+    }
+  ],
+  "candidates": {
+    "HR-20260729-01": {
+      "sources": [
+        {
+          "publisher": "Federal Reserve",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "source_type": "official",
+          "published_at": "2026-07-29",
+          "freshness_role": "decision_timing",
+          "reliable": true
+        },
+        {
+          "publisher": "Kiplinger",
+          "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+          "source_type": "reliable_news",
+          "published_at": "2026-07-24",
+          "freshness_role": "attention",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.investing.com/news/economy-news/growing-number-of-brokerages-see-july-fed-decision-as-a-close-call-4813379",
+          "source_type": "reliable_news",
+          "published_at": "2026-07-27",
+          "freshness_role": "context",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "duplicate",
+        "duplicate_of": [
+          "HR-20260724-01",
+          "HR-20260725-01"
+        ],
+        "reopen_trigger": "official decision",
+        "rationale": "No new independently verified numeric hook at scan time"
+      }
+    },
+    "HR-20260729-02": {
+      "sources": [
+        {
+          "publisher": "CME Group",
+          "url": "https://www.cmegroup.com/markets/equities/single-stock-futures.html",
+          "source_type": "official",
+          "published_at": "2026-07-29",
+          "freshness_role": "status",
+          "reliable": true
+        },
+        {
+          "publisher": "Charles Schwab",
+          "url": "https://www.schwab.com/learn/story/single-stock-futures-what-they-are-how-to-use",
+          "source_type": "broker_research",
+          "published_at": "2026-07-27",
+          "freshness_role": "boundary",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit",
+          "url": "https://www.reddit.com/r/FuturesTrading/comments/1v978wq/wow_actual_legit_looking_spreads_on_single_stock/",
+          "source_type": "community_heat",
+          "published_at": "2026-07-29",
+          "freshness_role": "discussion",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "duplicate",
+        "duplicate_of": [
+          "HR-20260728-04"
+        ],
+        "reopen_trigger": "verified market statistics",
+        "rationale": "No new independently verified numeric hook at scan time"
+      }
+    },
+    "HR-20260729-03": {
+      "sources": [
+        {
+          "publisher": "Bank of England",
+          "url": "https://www.bankofengland.co.uk/events/upcoming-events",
+          "source_type": "official",
+          "published_at": "2026-07-29",
+          "freshness_role": "timing",
+          "reliable": true
+        },
+        {
+          "publisher": "Kiplinger",
+          "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+          "source_type": "reliable_news",
+          "published_at": "2026-07-24",
+          "freshness_role": "attention",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "duplicate",
+        "duplicate_of": [
+          "HR-20260724-11"
+        ],
+        "reopen_trigger": "official decision",
+        "rationale": "No new independently verified numeric hook at scan time"
+      }
+    },
+    "HR-20260729-04": {
+      "sources": [
+        {
+          "publisher": "Bank of Japan",
+          "url": "https://www.boj.or.jp/en/about/calendar/index.htm",
+          "source_type": "official",
+          "published_at": "2026-07-29",
+          "freshness_role": "timing",
+          "reliable": true
+        },
+        {
+          "publisher": "Kiplinger",
+          "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+          "source_type": "reliable_news",
+          "published_at": "2026-07-24",
+          "freshness_role": "attention",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "duplicate",
+        "duplicate_of": [
+          "HR-20260724-03",
+          "HR-20260725-03"
+        ],
+        "reopen_trigger": "official decision",
+        "rationale": "No new independently verified numeric hook at scan time"
+      }
+    },
+    "HR-20260729-05": {
+      "sources": [
+        {
+          "publisher": "Bureau of Economic Analysis",
+          "url": "https://www.bea.gov/news/schedule",
+          "source_type": "official",
+          "published_at": "2026-07-29",
+          "freshness_role": "timing",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/a3ecd4459a091458fd9b61772d79b7da",
+          "source_type": "reliable_news",
+          "published_at": "2026-06-25",
+          "freshness_role": "context",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "duplicate",
+        "duplicate_of": [
+          "HR-20260724-01"
+        ],
+        "reopen_trigger": "actual GDP release",
+        "rationale": "No new independently verified numeric hook at scan time"
+      }
+    },
+    "HR-20260729-06": {
+      "sources": [
+        {
+          "publisher": "CME Group",
+          "url": "https://www.cmegroup.com/markets/metals/precious/1-ounce-gold.html",
+          "source_type": "official",
+          "published_at": "2026-07-29",
+          "freshness_role": "status",
+          "reliable": true
+        },
+        {
+          "publisher": "CFTC",
+          "url": "https://www.cftc.gov/IndustryOversight/IndustryFilings/index.htm",
+          "source_type": "regulator",
+          "published_at": "2026-07-29",
+          "freshness_role": "context",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "duplicate",
+        "duplicate_of": [
+          "HR-20260724-02"
+        ],
+        "reopen_trigger": "verified operating evidence",
+        "rationale": "No new independently verified numeric hook at scan time"
+      }
+    },
+    "HR-20260729-07": {
+      "sources": [
+        {
+          "publisher": "Topstep",
+          "url": "https://help.topstep.com/en/articles/10305426-prohibited-trading-strategies-at-topstep",
+          "source_type": "official_company_rules",
+          "published_at": "2026-06-10",
+          "freshness_role": "rule",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "evidence",
+        "duplicate_of": [],
+        "reopen_trigger": "second reliable publisher",
+        "rationale": "No new independently verified numeric hook at scan time"
+      }
+    }
+  }
+}
