@@ -1,0 +1,18 @@
+{
+  "candidate_id": "HR-20260728-04",
+  "scan_date": "2026-07-28",
+  "primary_site": "PositionMath",
+  "topic": "Schwab Adds Retail Access to CME Single-Stock Futures: Recheck Notional Before Margin",
+  "package_summary": "刷新 HR-20260722-05：加入 Schwab 客户可用性与上线后流动性边界，不创建第二篇同构文章。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "launch_window",
+  "time_status_label": "broker availability 窗口；7 月 31 日后需转常青",
+  "documents": [
+    {"id":"facts","label":"事实与论点","file":"00-事实与论点.md","platform":"internal","kind":"editorial brief","status_label":"已整理"},
+    {"id":"medium","label":"Medium","file":"01-Medium.md","platform":"medium","kind":"long-form draft","status_label":"待人工审核"},
+    {"id":"reddit","label":"Reddit","file":"02-Reddit.md","platform":"reddit","kind":"native discussion draft","status_label":"待人工审核"},
+    {"id":"x","label":"X","file":"03-X.md","platform":"x","kind":"short thread draft","status_label":"待人工审核"},
+    {"id":"review","label":"审核清单","file":"04-人工审核.md","platform":"internal","kind":"human gate","status_label":"必须完成"}
+  ]
+}

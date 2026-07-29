@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-07-28T22:06:40+08:00",
-  "latest_scan_date": "2026-07-28",
+  "generated_at": "2026-07-29T22:08:08+08:00",
+  "latest_scan_date": "2026-07-29",
   "available_dates": [
+    "2026-07-29",
     "2026-07-28",
     "2026-07-27",
     "2026-07-26",
@@ -16,11 +17,11 @@
   ],
   "periods": [
     {
-      "scan_date": "2026-07-28",
-      "generated_at": "2026-07-28T22:06:40+08:00",
-      "scoring_version": "v1-legacy",
+      "scan_date": "2026-07-29",
+      "generated_at": "2026-07-29T22:08:08+08:00",
+      "scoring_version": "v2-audited",
       "pilot": {
-        "day": 10,
+        "day": 11,
         "total_days": 7,
         "schedule": "22:00",
         "timezone": "Asia/Shanghai",
@@ -38,6 +39,586 @@
         "playbook_ready": 0
       },
       "candidates": [
+        {
+          "scan_date": "2026-07-29",
+          "candidate_id": "HR-20260729-01",
+          "status": "observation",
+          "topic": "FOMC July 29: Official Decision Still Pending at Scan Time",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 24,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 6,
+          "total_score": 95,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "Decision due 2:00 p.m. ET after scan; existing pre-decision packages cover this calculation path",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Federal Reserve",
+                "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+                "source_type": "official",
+                "published_at": "2026-07-29",
+                "freshness_role": "decision_timing",
+                "reliable": true
+              },
+              {
+                "publisher": "Kiplinger",
+                "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+                "source_type": "reliable_news",
+                "published_at": "2026-07-24",
+                "freshness_role": "attention",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.investing.com/news/economy-news/growing-number-of-brokerages-see-july-fed-decision-as-a-close-call-4813379",
+                "source_type": "reliable_news",
+                "published_at": "2026-07-27",
+                "freshness_role": "context",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "duplicate",
+              "duplicate_of": [
+                "HR-20260724-01",
+                "HR-20260725-01"
+              ],
+              "reopen_trigger": "official decision",
+              "rationale": "No new independently verified numeric hook at scan time"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-07-29",
+          "candidate_id": "HR-20260729-04",
+          "status": "observation",
+          "topic": "BOJ July 30-31: Await the Official Statement and Outlook",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 21,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 6,
+          "total_score": 92,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "Existing USDJPY packages cover the calculation and the official decision is unavailable",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Bank of Japan",
+                "url": "https://www.boj.or.jp/en/about/calendar/index.htm",
+                "source_type": "official",
+                "published_at": "2026-07-29",
+                "freshness_role": "timing",
+                "reliable": true
+              },
+              {
+                "publisher": "Kiplinger",
+                "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+                "source_type": "reliable_news",
+                "published_at": "2026-07-24",
+                "freshness_role": "attention",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "duplicate",
+              "duplicate_of": [
+                "HR-20260724-03",
+                "HR-20260725-03"
+              ],
+              "reopen_trigger": "official decision",
+              "rationale": "No new independently verified numeric hook at scan time"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-07-29",
+          "candidate_id": "HR-20260729-03",
+          "status": "observation",
+          "topic": "Bank of England July 30: Await the Policy Decision and Report",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 19,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 6,
+          "total_score": 90,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "Official release is tomorrow and HR-20260724-11 already covers the same event-risk math",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Bank of England",
+                "url": "https://www.bankofengland.co.uk/events/upcoming-events",
+                "source_type": "official",
+                "published_at": "2026-07-29",
+                "freshness_role": "timing",
+                "reliable": true
+              },
+              {
+                "publisher": "Kiplinger",
+                "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+                "source_type": "reliable_news",
+                "published_at": "2026-07-24",
+                "freshness_role": "attention",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "duplicate",
+              "duplicate_of": [
+                "HR-20260724-11"
+              ],
+              "reopen_trigger": "official decision",
+              "rationale": "No new independently verified numeric hook at scan time"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-07-29",
+          "candidate_id": "HR-20260729-02",
+          "status": "observation",
+          "topic": "CME Single-Stock Futures: Early Liquidity Discussion Lacks Verified Statistics",
+          "primary_site": "PositionMath",
+          "freshness": 25,
+          "traffic_potential": 22,
+          "calculator_fit": 24,
+          "evidence_quality": 10,
+          "actionability": 6,
+          "total_score": 87,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Position Size",
+            "Portfolio Heat",
+            "P&L",
+            "Margin",
+            "Spread Cost"
+          ],
+          "reason": "Fresh community discussion lacks a second reliable publisher with auditable volume or spread data; HR-20260728-04 covers the broker warning",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "CME Group",
+                "url": "https://www.cmegroup.com/markets/equities/single-stock-futures.html",
+                "source_type": "official",
+                "published_at": "2026-07-29",
+                "freshness_role": "status",
+                "reliable": true
+              },
+              {
+                "publisher": "Charles Schwab",
+                "url": "https://www.schwab.com/learn/story/single-stock-futures-what-they-are-how-to-use",
+                "source_type": "broker_research",
+                "published_at": "2026-07-27",
+                "freshness_role": "boundary",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit",
+                "url": "https://www.reddit.com/r/FuturesTrading/comments/1v978wq/wow_actual_legit_looking_spreads_on_single_stock/",
+                "source_type": "community_heat",
+                "published_at": "2026-07-29",
+                "freshness_role": "discussion",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "duplicate",
+              "duplicate_of": [
+                "HR-20260728-04"
+              ],
+              "reopen_trigger": "verified market statistics",
+              "rationale": "No new independently verified numeric hook at scan time"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-07-29",
+          "candidate_id": "HR-20260729-05",
+          "status": "observation",
+          "topic": "U.S. Q2 GDP Advance Estimate Due July 30",
+          "primary_site": "PipGauge",
+          "freshness": 24,
+          "traffic_potential": 17,
+          "calculator_fit": 22,
+          "evidence_quality": 15,
+          "actionability": 5,
+          "total_score": 83,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Spread Cost",
+            "P&L"
+          ],
+          "reason": "Before the actual number, the traffic route duplicates the existing macro-event risk package",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Bureau of Economic Analysis",
+                "url": "https://www.bea.gov/news/schedule",
+                "source_type": "official",
+                "published_at": "2026-07-29",
+                "freshness_role": "timing",
+                "reliable": true
+              },
+              {
+                "publisher": "Associated Press",
+                "url": "https://apnews.com/article/a3ecd4459a091458fd9b61772d79b7da",
+                "source_type": "reliable_news",
+                "published_at": "2026-06-25",
+                "freshness_role": "context",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "duplicate",
+              "duplicate_of": [
+                "HR-20260724-01"
+              ],
+              "reopen_trigger": "actual GDP release",
+              "rationale": "No new independently verified numeric hook at scan time"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-07-29",
+          "candidate_id": "HR-20260729-07",
+          "status": "observation",
+          "topic": "Prop-Firm Risk Discussion Without a Verified New Rule",
+          "primary_site": "PositionMath",
+          "freshness": 16,
+          "traffic_potential": 16,
+          "calculator_fit": 25,
+          "evidence_quality": 6,
+          "actionability": 5,
+          "total_score": 68,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Daily Loss Limit",
+            "Trailing Drawdown",
+            "Prop Firm Calculator"
+          ],
+          "reason": "No specific changed rule has two independent reliable sources",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Topstep",
+                "url": "https://help.topstep.com/en/articles/10305426-prohibited-trading-strategies-at-topstep",
+                "source_type": "official_company_rules",
+                "published_at": "2026-06-10",
+                "freshness_role": "rule",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "evidence",
+              "duplicate_of": [],
+              "reopen_trigger": "second reliable publisher",
+              "rationale": "No new independently verified numeric hook at scan time"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-07-29",
+          "candidate_id": "HR-20260729-06",
+          "status": "observation",
+          "topic": "CME 1OZ Gold Operating-Evidence Check",
+          "primary_site": "PipGauge",
+          "freshness": 14,
+          "traffic_potential": 13,
+          "calculator_fit": 24,
+          "evidence_quality": 10,
+          "actionability": 5,
+          "total_score": 66,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": false,
+          "calculator_mapping": [
+            "XAUUSD Pip Value",
+            "Position Size",
+            "Margin",
+            "Spread Cost"
+          ],
+          "reason": "No new reliable volume, spread, outage or liquidity evidence supports reopening",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "CME Group",
+                "url": "https://www.cmegroup.com/markets/metals/precious/1-ounce-gold.html",
+                "source_type": "official",
+                "published_at": "2026-07-29",
+                "freshness_role": "status",
+                "reliable": true
+              },
+              {
+                "publisher": "CFTC",
+                "url": "https://www.cftc.gov/IndustryOversight/IndustryFilings/index.htm",
+                "source_type": "regulator",
+                "published_at": "2026-07-29",
+                "freshness_role": "context",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "duplicate",
+              "duplicate_of": [
+                "HR-20260724-02"
+              ],
+              "reopen_trigger": "verified operating evidence",
+              "rationale": "No new independently verified numeric hook at scan time"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-07-29",
+          "candidate_id": "HR-20260729-08",
+          "status": "discarded",
+          "topic": "Directional FX Stock Commodity and Central-Bank Predictions",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 22,
+          "calculator_fit": 5,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 59,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Directional forecasts, price predictions and signal-like content are excluded"
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-07-29T22:00:00+08:00",
+          "source_count": 8,
+          "note": "Fed、BOJ、BoE、CME、CFTC、BEA、Topstep"
+        },
+        {
+          "channel": "可靠英文媒体与经纪商研究",
+          "status": "partial",
+          "checked_at": "2026-07-29T22:00:00+08:00",
+          "source_count": 5,
+          "note": "Reuters、AP、Kiplinger、Schwab"
+        },
+        {
+          "channel": "Reddit 公开讨论",
+          "status": "partial",
+          "checked_at": "2026-07-29T22:00:00+08:00",
+          "source_count": 6,
+          "note": "仅作热度信号"
+        },
+        {
+          "channel": "X",
+          "status": "limited",
+          "checked_at": "2026-07-29T22:00:00+08:00",
+          "source_count": 0,
+          "note": "未取得稳定审计信号"
+        },
+        {
+          "channel": "Quora / BabyPips / ForexFactory",
+          "status": "limited",
+          "checked_at": "2026-07-29T22:00:00+08:00",
+          "source_count": 0,
+          "note": "未取得足以改判证据"
+        },
+        {
+          "channel": "Google Trends",
+          "status": "not_run",
+          "checked_at": "2026-07-29T22:00:00+08:00",
+          "source_count": 0,
+          "note": "未运行"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-07-29_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-07-29_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json"
+      }
+    },
+    {
+      "scan_date": "2026-07-28",
+      "generated_at": "2026-07-29T22:08:08+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 10,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 1,
+        "observation": 6,
+        "discarded": 1,
+        "total": 8,
+        "selected_average": 96.0,
+        "all_selected_pass_gate": true,
+        "content_ready": 1,
+        "playbook_ready": 1
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-07-28",
+          "candidate_id": "HR-20260728-04",
+          "status": "selected",
+          "topic": "Schwab Adds Retail Access to CME Single-Stock Futures: Recheck Notional Before Margin",
+          "primary_site": "PositionMath",
+          "freshness": 25,
+          "traffic_potential": 23,
+          "calculator_fit": 24,
+          "evidence_quality": 15,
+          "actionability": 9,
+          "total_score": 96,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Position Size",
+            "Portfolio Heat",
+            "P&L",
+            "Margin",
+            "Spread Cost"
+          ],
+          "reason": "Schwab published independent retail-broker availability for futures-approved customers on July 27 and warned about potentially thinner early volume and wider spreads; refresh HR-20260722-05 with eligibility and liquidity boundaries",
+          "content_status": "review_ready",
+          "content_label": "Schwab 零售可用性刷新稿待人工审核",
+          "content_url": "../内容生产/2026-07-28/HR-20260728-04/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-07-30",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "refresh",
+            "urgency": "high",
+            "publish_deadline": "2026-07-30",
+            "traffic_hook": "Charles Schwab 7 月 27 日证实 futures-approved customers 可交易 CME 较大规格单股期货，并提醒新品种可能量薄、价差较宽。",
+            "traffic_window": "2026-07-28 至 2026-07-31；刷新 HR-20260722-05，不新建同构文章。",
+            "search_intents": [
+              "Schwab single stock futures availability",
+              "CME single stock futures broker",
+              "single stock futures notional calculator",
+              "single stock futures liquidity spread"
+            ],
+            "traffic_angle": "借 Schwab 的零售客户可用性新闻，回答一份 100 股标准合约在假设股价 $50/$200/$500 时对应的 $5,000/$20,000/$50,000 名义价值和 1% 变动的 $50/$200/$500 P&L；再分开说明账户资格、margin 与流动性。",
+            "calculator_bridge": "股价 × 100 得名义价值，名义价值 × 情景波动得 P&L；在账户总暴露复核处承接 Position Size、Portfolio Heat、P&L 与 Spread Cost。",
+            "example_scenario": "$10,000 账户；假设股价 $50/$200/$500；标准 100 股合约各 1 份；1% 变动；额外比较基础与扩大价差。",
+            "distribution_order": [
+              "更新 HR-20260722-05 标题和 broker availability 段落",
+              "更新 Medium 审核快照",
+              "Reddit 原生讨论且首轮不放链接",
+              "X 主线程独立给出完整计算"
+            ],
+            "link_placement": "先给 Schwab 资格边界、100 股规格和名义价值/P&L 表，再在暴露复核处链接 PositionMath。",
+            "expiry_condition": "7 月 31 日后若无新 broker availability、实际成交量或价差数据，转为常青 broker/specification 页；Schwab 资格或 CME 规格变化时立即更正。",
+            "editorial_boundary": "不预测个股方向；不把 Schwab 可用性泛化为所有 broker/账户/Micro 产品；不把流动性风险提示写成已观察成交数据；不把 margin 写成最大亏损。",
+            "content_mainline": "刷新既有单股期货稿，加入 Schwab 零售客户可用性和早期流动性边界。",
+            "body_material": [
+              "Schwab futures-approved customer 可用性",
+              "CME 标准合约 100 股 multiplier",
+              "$50/$200/$500 名义价值与 1% P&L",
+              "量薄/价差风险与账户资格边界"
+            ],
+            "product_bridge": "先完成规格、名义价值、P&L 和流动性边界，再可选使用 PositionMath 复核账户暴露。",
+            "product_bridge_type": "optional"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "CME Group",
+                "url": "https://www.cmegroup.com/markets/equities/single-stock-futures.html",
+                "source_type": "official",
+                "published_at": "2026-07-27",
+                "freshness_role": "launch_status",
+                "reliable": true
+              },
+              {
+                "publisher": "CFTC",
+                "url": "https://www.cftc.gov/IndustryOversight/IndustryFilings/TradingOrganizationProducts/61474",
+                "source_type": "regulator",
+                "published_at": "2026-07-24",
+                "freshness_role": "independent_specification",
+                "reliable": true
+              },
+              {
+                "publisher": "Charles Schwab",
+                "url": "https://www.schwab.com/learn/story/single-stock-futures-what-they-are-how-to-use",
+                "source_type": "broker_research",
+                "published_at": "2026-07-27",
+                "freshness_role": "broker_availability_and_liquidity_boundary",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit",
+                "url": "https://www.reddit.com/r/FuturesTrading/comments/1uzz2i9/cme_says_single_stock_futures_are_coming_july_27/",
+                "source_type": "community_heat",
+                "published_at": "2026-07-27",
+                "freshness_role": "liquidity_discussion",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass",
+              "decision_gate": "broker_availability",
+              "duplicate_of": [
+                "HR-20260722-05",
+                "HR-20260726-01"
+              ],
+              "reopen_trigger": "已触发：Schwab 公开证实 futures-approved customers 可使用较大规格合约",
+              "rationale": "新的独立 broker availability 事实和流动性边界足以刷新旧稿"
+            }
+          }
+        },
         {
           "scan_date": "2026-07-28",
           "candidate_id": "HR-20260728-01",
@@ -59,7 +640,45 @@
             "P&L",
             "Spread Cost"
           ],
-          "reason": "The meeting has begun but HR-20260724-01 and HR-20260725-01 already cover the pre-decision calculation intent; no official decision or distinct numeric hook exists yet"
+          "reason": "The meeting has begun but HR-20260724-01 and HR-20260725-01 already cover the pre-decision calculation intent; no official decision or distinct numeric hook exists yet",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Federal Reserve",
+                "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+                "source_type": "official",
+                "published_at": "2026-07-08",
+                "freshness_role": "event_timing",
+                "reliable": true
+              },
+              {
+                "publisher": "CBS News",
+                "url": "https://www.cbsnews.com/news/fed-interest-rate-decision-july-meeting/",
+                "source_type": "reliable_news",
+                "published_at": "2026-07-25",
+                "freshness_role": "current_attention",
+                "reliable": true
+              },
+              {
+                "publisher": "Associated Press",
+                "url": "https://apnews.com/article/27b96999040acc6b71b6452398a17daa",
+                "source_type": "reliable_news",
+                "published_at": "2026-07-25",
+                "freshness_role": "independent_context",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "duplicate",
+              "duplicate_of": [
+                "HR-20260724-01",
+                "HR-20260725-01"
+              ],
+              "reopen_trigger": "FOMC 正式决定、实施说明或决定后可验证的新波动数字",
+              "rationale": "会议首日没有改变既有事件风险计算路径"
+            }
+          }
         },
         {
           "scan_date": "2026-07-28",
@@ -82,7 +701,45 @@
             "P&L",
             "Spread Cost"
           ],
-          "reason": "The July 31 release timing is current, but recent USDJPY packages already cover the tail-risk math and no policy result has been published"
+          "reason": "The July 31 release timing is current, but recent USDJPY packages already cover the tail-risk math and no policy result has been published",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Bank of Japan",
+                "url": "https://www.boj.or.jp/en/about/calendar/index.htm",
+                "source_type": "official",
+                "published_at": "2026-07-24",
+                "freshness_role": "event_timing",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://ae.marketscreener.com/news/boj-likely-to-keep-inflation-warning-but-expect-no-big-build-up-in-risks-say-sources-ce7f51dfd981f226",
+                "source_type": "reliable_news",
+                "published_at": "2026-07-25",
+                "freshness_role": "current_attention",
+                "reliable": true
+              },
+              {
+                "publisher": "Japan Ministry of Finance",
+                "url": "https://www.mof.go.jp/english/policy/international_policy/reference/feio/index.html",
+                "source_type": "official",
+                "published_at": "2026-07-25",
+                "freshness_role": "independent_context",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "duplicate",
+              "duplicate_of": [
+                "HR-20260724-03",
+                "HR-20260725-03"
+              ],
+              "reopen_trigger": "BOJ 正式决定、新展望数字或日本财务省可核验的干预事实",
+              "rationale": "日程与 USDJPY 尾部风险表已被覆盖"
+            }
+          }
         },
         {
           "scan_date": "2026-07-28",
@@ -105,30 +762,44 @@
             "P&L",
             "Spread Cost"
           ],
-          "reason": "Official publication timing is current but HR-20260724-11 already covers the same GBPUSD calculation path; the policy report and decision are not yet available"
-        },
-        {
-          "scan_date": "2026-07-28",
-          "candidate_id": "HR-20260728-04",
-          "status": "observation",
-          "topic": "CME Single Stock Futures Post-Launch Evidence Check",
-          "primary_site": "PositionMath",
-          "freshness": 24,
-          "traffic_potential": 21,
-          "calculator_fit": 23,
-          "evidence_quality": 14,
-          "actionability": 6,
-          "total_score": 88,
-          "hard_gate": true,
-          "reliable_sources": 2,
-          "fresh_signal": true,
-          "calculator_mapping": [
-            "Position Size",
-            "Portfolio Heat",
-            "P&L",
-            "Margin"
-          ],
-          "reason": "CME confirms the live product set but no independent reliable first-day volume, liquidity, outage or broker-availability evidence was found; HR-20260726-01 already covers launch math"
+          "reason": "Official publication timing is current but HR-20260724-11 already covers the same GBPUSD calculation path; the policy report and decision are not yet available",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Bank of England",
+                "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+                "source_type": "official",
+                "published_at": "2026-07-24",
+                "freshness_role": "event_timing",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.streetinsider.com/Reuters/Bank%2Bof%2BEngland%2Bto%2Bhold%2Bsteady%2Bthis%2Byear%2Bbut%2BIran%2Bwar%2Binflation%2Brisks%2Bpersist%3A%2BReuters%2Bpoll/26810803.html",
+                "source_type": "reliable_news",
+                "published_at": "2026-07-24",
+                "freshness_role": "current_attention",
+                "reliable": true
+              },
+              {
+                "publisher": "Associated Press",
+                "url": "https://apnews.com/article/27b96999040acc6b71b6452398a17daa",
+                "source_type": "reliable_news",
+                "published_at": "2026-07-25",
+                "freshness_role": "independent_context",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "duplicate",
+              "duplicate_of": [
+                "HR-20260724-11"
+              ],
+              "reopen_trigger": "BoE 正式决定、投票分布或 Monetary Policy Report 新数字",
+              "rationale": "发布前的 GBPUSD 计算意图未变"
+            }
+          }
         },
         {
           "scan_date": "2026-07-28",
@@ -151,7 +822,36 @@
             "Margin",
             "Spread Cost"
           ],
-          "reason": "No verifiable new volume, spread, outage or liquidity fact supports another launch refresh"
+          "reason": "No verifiable new volume, spread, outage or liquidity fact supports another launch refresh",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "CME Group",
+                "url": "https://www.cmegroup.com/markets/metals/precious/1-ounce-gold.html",
+                "source_type": "official",
+                "published_at": "2026-07-23",
+                "freshness_role": "product_status",
+                "reliable": true
+              },
+              {
+                "publisher": "CFTC",
+                "url": "https://www.cftc.gov/IndustryOversight/IndustryFilings/index.htm",
+                "source_type": "regulator",
+                "published_at": "2026-07-23",
+                "freshness_role": "independent_context",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "duplicate",
+              "duplicate_of": [
+                "HR-20260724-02"
+              ],
+              "reopen_trigger": "可核验首周成交量、点差、流动性或运行异常",
+              "rationale": "没有新的运行事实"
+            }
+          }
         },
         {
           "scan_date": "2026-07-28",
@@ -173,7 +873,26 @@
             "Trailing Drawdown",
             "Prop Firm Calculator"
           ],
-          "reason": "Public discussion is current but community claims and aggregator summaries do not provide two independent reliable sources for a specific new rule change"
+          "reason": "Public discussion is current but community claims and aggregator summaries do not provide two independent reliable sources for a specific new rule change",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Topstep",
+                "url": "https://help.topstep.com/en/articles/10305426-prohibited-trading-strategies-at-topstep",
+                "source_type": "official_company_rules",
+                "published_at": "2026-06-10",
+                "freshness_role": "rule_reference",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "evidence",
+              "duplicate_of": [],
+              "reopen_trigger": "第二个独立可靠发布主体完整核验一项具体新规则",
+              "rationale": "社区与聚合页不能替代规则事实源"
+            }
+          }
         },
         {
           "scan_date": "2026-07-28",
@@ -196,7 +915,36 @@
             "Spread Cost",
             "P&L"
           ],
-          "reason": "Official timing is current but the traffic and calculator path remain overlapped by the existing FOMC event-risk package"
+          "reason": "Official timing is current but the traffic and calculator path remain overlapped by the existing FOMC event-risk package",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Bureau of Economic Analysis",
+                "url": "https://www.bea.gov/news/schedule",
+                "source_type": "official",
+                "published_at": "2026-07-28",
+                "freshness_role": "release_timing",
+                "reliable": true
+              },
+              {
+                "publisher": "Federal Reserve",
+                "url": "https://www.federalreserve.gov/newsevents/2026-july.htm",
+                "source_type": "official",
+                "published_at": "2026-07-28",
+                "freshness_role": "event_overlap",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "duplicate",
+              "duplicate_of": [
+                "HR-20260724-01"
+              ],
+              "reopen_trigger": "GDP/PCE 实际发布数字形成与 FOMC 不同的独立计算搜索意图",
+              "rationale": "会前交易风险路径与 FOMC 包重叠"
+            }
+          }
         },
         {
           "scan_date": "2026-07-28",
@@ -223,51 +971,67 @@
         {
           "channel": "官方与一手来源",
           "status": "complete",
-          "note": "央行、交易所、公司 IR 与正式规则页已覆盖"
+          "checked_at": "2026-07-28T22:00:00+08:00",
+          "source_count": 9,
+          "note": "已核查 Fed、BOJ、BoE、CME、CFTC、BEA 及 Topstep 公开页面"
         },
         {
-          "channel": "可靠英文媒体",
-          "status": "complete",
-          "note": "Reuters、AP 等用于独立交叉验证"
+          "channel": "可靠英文媒体与经纪商研究",
+          "status": "partial",
+          "checked_at": "2026-07-28T22:50:00+08:00",
+          "source_count": 7,
+          "note": "重扫 AP、CBS、Reuters、Axios、Kiplinger 与 Schwab；Schwab 提供了新的 broker availability 事实"
         },
         {
           "channel": "Reddit 公开讨论",
           "status": "partial",
-          "note": "覆盖公开索引和具体帖子，仅作为热度信号"
+          "checked_at": "2026-07-28T22:00:00+08:00",
+          "source_count": 4,
+          "note": "仅覆盖公开索引与可访问帖子，只作热度信号"
         },
         {
           "channel": "X",
           "status": "limited",
-          "note": "登录态与动态页面会限制稳定扫描，不把缺失数据当作无热度"
+          "checked_at": "2026-07-28T22:00:00+08:00",
+          "source_count": 0,
+          "note": "动态页和登录限制，未取得可稳定审计的信号"
         },
         {
           "channel": "Quora",
           "status": "limited",
-          "note": "尚未达到与新闻和 Reddit 相同的逐题扫描深度"
+          "checked_at": "2026-07-28T22:00:00+08:00",
+          "source_count": 0,
+          "note": "未达到逐题扫描深度"
         },
         {
           "channel": "BabyPips / ForexFactory",
           "status": "limited",
-          "note": "尚未达到同等深度的逐帖扫描"
+          "checked_at": "2026-07-28T22:00:00+08:00",
+          "source_count": 0,
+          "note": "未取得足以改变门槛判断的新证据"
         },
         {
           "channel": "Google Trends",
           "status": "not_run",
-          "note": "公开趋势信号不稳定时不作为硬门槛依据"
+          "checked_at": "2026-07-28T22:00:00+08:00",
+          "source_count": 0,
+          "note": "本期未运行，不将缺失解读为无热度"
         }
       ],
+      "audit_status": "audited",
       "links": {
         "daily_report": "../每日报告/2026-07-28_热点雷达.md",
         "raw_scan": "../原始扫描/2026-07-28_官方来源扫描.md",
         "rules": "../雷达规则.md",
         "capability_map": "../两站计算器能力地图.md",
         "ledger": "../热点候选总表.csv",
-        "traffic_playbooks": "../热点流量打法.json"
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-07-28"
       }
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-07-28T22:06:40+08:00",
+      "generated_at": "2026-07-29T22:08:08+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -493,13 +1257,13 @@
       "coverage": [
         {
           "channel": "官方与一手来源",
-          "status": "complete",
-          "note": "央行、交易所、公司 IR 与正式规则页已覆盖"
+          "status": "unknown",
+          "note": "历史期次未保存结构化扫描审计，不推定已完整覆盖"
         },
         {
           "channel": "可靠英文媒体",
-          "status": "complete",
-          "note": "Reuters、AP 等用于独立交叉验证"
+          "status": "unknown",
+          "note": "历史期次未保存结构化扫描审计，不推定 Reuters、AP 等已扫描"
         },
         {
           "channel": "Reddit 公开讨论",
@@ -527,6 +1291,7 @@
           "note": "公开趋势信号不稳定时不作为硬门槛依据"
         }
       ],
+      "audit_status": "legacy_unverified",
       "links": {
         "daily_report": "../每日报告/2026-07-27_热点雷达.md",
         "raw_scan": "../原始扫描/2026-07-27_官方来源扫描.md",
@@ -538,7 +1303,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-07-28T22:06:40+08:00",
+      "generated_at": "2026-07-29T22:08:08+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -804,13 +1569,13 @@
       "coverage": [
         {
           "channel": "官方与一手来源",
-          "status": "complete",
-          "note": "央行、交易所、公司 IR 与正式规则页已覆盖"
+          "status": "unknown",
+          "note": "历史期次未保存结构化扫描审计，不推定已完整覆盖"
         },
         {
           "channel": "可靠英文媒体",
-          "status": "complete",
-          "note": "Reuters、AP 等用于独立交叉验证"
+          "status": "unknown",
+          "note": "历史期次未保存结构化扫描审计，不推定 Reuters、AP 等已扫描"
         },
         {
           "channel": "Reddit 公开讨论",
@@ -838,6 +1603,7 @@
           "note": "公开趋势信号不稳定时不作为硬门槛依据"
         }
       ],
+      "audit_status": "legacy_unverified",
       "links": {
         "daily_report": "../每日报告/2026-07-26_热点雷达.md",
         "raw_scan": "../原始扫描/2026-07-26_官方来源扫描.md",
@@ -850,7 +1616,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-07-28T22:06:40+08:00",
+      "generated_at": "2026-07-29T22:08:08+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -1238,13 +2004,13 @@
       "coverage": [
         {
           "channel": "官方与一手来源",
-          "status": "complete",
-          "note": "央行、交易所、公司 IR 与正式规则页已覆盖"
+          "status": "unknown",
+          "note": "历史期次未保存结构化扫描审计，不推定已完整覆盖"
         },
         {
           "channel": "可靠英文媒体",
-          "status": "complete",
-          "note": "Reuters、AP 等用于独立交叉验证"
+          "status": "unknown",
+          "note": "历史期次未保存结构化扫描审计，不推定 Reuters、AP 等已扫描"
         },
         {
           "channel": "Reddit 公开讨论",
@@ -1272,6 +2038,7 @@
           "note": "公开趋势信号不稳定时不作为硬门槛依据"
         }
       ],
+      "audit_status": "legacy_unverified",
       "links": {
         "daily_report": "../每日报告/2026-07-25_热点雷达.md",
         "raw_scan": "../原始扫描/2026-07-25_官方来源扫描.md",
@@ -1284,7 +2051,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-07-28T22:06:40+08:00",
+      "generated_at": "2026-07-29T22:08:08+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -1751,13 +2518,13 @@
       "coverage": [
         {
           "channel": "官方与一手来源",
-          "status": "complete",
-          "note": "央行、交易所、公司 IR 与正式规则页已覆盖"
+          "status": "unknown",
+          "note": "历史期次未保存结构化扫描审计，不推定已完整覆盖"
         },
         {
           "channel": "可靠英文媒体",
-          "status": "complete",
-          "note": "Reuters、AP 等用于独立交叉验证"
+          "status": "unknown",
+          "note": "历史期次未保存结构化扫描审计，不推定 Reuters、AP 等已扫描"
         },
         {
           "channel": "Reddit 公开讨论",
@@ -1785,6 +2552,7 @@
           "note": "公开趋势信号不稳定时不作为硬门槛依据"
         }
       ],
+      "audit_status": "legacy_unverified",
       "links": {
         "daily_report": "../每日报告/2026-07-24_热点雷达.md",
         "raw_scan": "../原始扫描/2026-07-24_官方来源扫描.md",
@@ -1797,7 +2565,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-07-28T22:06:40+08:00",
+      "generated_at": "2026-07-29T22:08:08+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -2259,13 +3027,13 @@
       "coverage": [
         {
           "channel": "官方与一手来源",
-          "status": "complete",
-          "note": "央行、交易所、公司 IR 与正式规则页已覆盖"
+          "status": "unknown",
+          "note": "历史期次未保存结构化扫描审计，不推定已完整覆盖"
         },
         {
           "channel": "可靠英文媒体",
-          "status": "complete",
-          "note": "Reuters、AP 等用于独立交叉验证"
+          "status": "unknown",
+          "note": "历史期次未保存结构化扫描审计，不推定 Reuters、AP 等已扫描"
         },
         {
           "channel": "Reddit 公开讨论",
@@ -2293,6 +3061,7 @@
           "note": "公开趋势信号不稳定时不作为硬门槛依据"
         }
       ],
+      "audit_status": "legacy_unverified",
       "links": {
         "daily_report": "../每日报告/2026-07-23_热点雷达.md",
         "raw_scan": "../原始扫描/2026-07-23_官方来源扫描.md",
@@ -2305,7 +3074,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-07-28T22:06:40+08:00",
+      "generated_at": "2026-07-29T22:08:08+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -2726,13 +3495,13 @@
       "coverage": [
         {
           "channel": "官方与一手来源",
-          "status": "complete",
-          "note": "央行、交易所、公司 IR 与正式规则页已覆盖"
+          "status": "unknown",
+          "note": "历史期次未保存结构化扫描审计，不推定已完整覆盖"
         },
         {
           "channel": "可靠英文媒体",
-          "status": "complete",
-          "note": "Reuters、AP 等用于独立交叉验证"
+          "status": "unknown",
+          "note": "历史期次未保存结构化扫描审计，不推定 Reuters、AP 等已扫描"
         },
         {
           "channel": "Reddit 公开讨论",
@@ -2760,6 +3529,7 @@
           "note": "公开趋势信号不稳定时不作为硬门槛依据"
         }
       ],
+      "audit_status": "legacy_unverified",
       "links": {
         "daily_report": "../每日报告/2026-07-22_热点雷达.md",
         "raw_scan": "../原始扫描/2026-07-22_官方来源扫描.md",
@@ -2771,7 +3541,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-07-28T22:06:40+08:00",
+      "generated_at": "2026-07-29T22:08:08+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -3138,13 +3908,13 @@
       "coverage": [
         {
           "channel": "官方与一手来源",
-          "status": "complete",
-          "note": "央行、交易所、公司 IR 与正式规则页已覆盖"
+          "status": "unknown",
+          "note": "历史期次未保存结构化扫描审计，不推定已完整覆盖"
         },
         {
           "channel": "可靠英文媒体",
-          "status": "complete",
-          "note": "Reuters、AP 等用于独立交叉验证"
+          "status": "unknown",
+          "note": "历史期次未保存结构化扫描审计，不推定 Reuters、AP 等已扫描"
         },
         {
           "channel": "Reddit 公开讨论",
@@ -3172,6 +3942,7 @@
           "note": "公开趋势信号不稳定时不作为硬门槛依据"
         }
       ],
+      "audit_status": "legacy_unverified",
       "links": {
         "daily_report": "../每日报告/2026-07-21_热点雷达.md",
         "raw_scan": "../原始扫描/2026-07-21_官方来源扫描.md",
@@ -3183,7 +3954,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-07-28T22:06:40+08:00",
+      "generated_at": "2026-07-29T22:08:08+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -3534,13 +4305,13 @@
       "coverage": [
         {
           "channel": "官方与一手来源",
-          "status": "complete",
-          "note": "央行、交易所、公司 IR 与正式规则页已覆盖"
+          "status": "unknown",
+          "note": "历史期次未保存结构化扫描审计，不推定已完整覆盖"
         },
         {
           "channel": "可靠英文媒体",
-          "status": "complete",
-          "note": "Reuters、AP 等用于独立交叉验证"
+          "status": "unknown",
+          "note": "历史期次未保存结构化扫描审计，不推定 Reuters、AP 等已扫描"
         },
         {
           "channel": "Reddit 公开讨论",
@@ -3568,6 +4339,7 @@
           "note": "公开趋势信号不稳定时不作为硬门槛依据"
         }
       ],
+      "audit_status": "legacy_unverified",
       "links": {
         "daily_report": "../每日报告/2026-07-20_热点雷达.md",
         "raw_scan": "../原始扫描/2026-07-20_官方来源扫描.md",
@@ -3580,7 +4352,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-07-28T22:06:40+08:00",
+      "generated_at": "2026-07-29T22:08:08+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -3972,13 +4744,13 @@
       "coverage": [
         {
           "channel": "官方与一手来源",
-          "status": "complete",
-          "note": "央行、交易所、公司 IR 与正式规则页已覆盖"
+          "status": "unknown",
+          "note": "历史期次未保存结构化扫描审计，不推定已完整覆盖"
         },
         {
           "channel": "可靠英文媒体",
-          "status": "complete",
-          "note": "Reuters、AP 等用于独立交叉验证"
+          "status": "unknown",
+          "note": "历史期次未保存结构化扫描审计，不推定 Reuters、AP 等已扫描"
         },
         {
           "channel": "Reddit 公开讨论",
@@ -4006,6 +4778,7 @@
           "note": "公开趋势信号不稳定时不作为硬门槛依据"
         }
       ],
+      "audit_status": "legacy_unverified",
       "links": {
         "daily_report": "../每日报告/2026-07-19_热点雷达.md",
         "raw_scan": "../原始扫描/2026-07-19_官方来源扫描.md",
@@ -4018,10 +4791,10 @@
       }
     }
   ],
-  "scan_date": "2026-07-28",
-  "scoring_version": "v1-legacy",
+  "scan_date": "2026-07-29",
+  "scoring_version": "v2-audited",
   "pilot": {
-    "day": 10,
+    "day": 11,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -4040,17 +4813,17 @@
   },
   "candidates": [
     {
-      "scan_date": "2026-07-28",
-      "candidate_id": "HR-20260728-01",
+      "scan_date": "2026-07-29",
+      "candidate_id": "HR-20260729-01",
       "status": "observation",
-      "topic": "FOMC July 28-29 Meeting Day One: Await the Official Decision",
+      "topic": "FOMC July 29: Official Decision Still Pending at Scan Time",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 23,
+      "traffic_potential": 24,
       "calculator_fit": 25,
       "evidence_quality": 15,
       "actionability": 6,
-      "total_score": 94,
+      "total_score": 95,
       "hard_gate": true,
       "reliable_sources": 3,
       "fresh_signal": true,
@@ -4060,22 +4833,60 @@
         "P&L",
         "Spread Cost"
       ],
-      "reason": "The meeting has begun but HR-20260724-01 and HR-20260725-01 already cover the pre-decision calculation intent; no official decision or distinct numeric hook exists yet"
+      "reason": "Decision due 2:00 p.m. ET after scan; existing pre-decision packages cover this calculation path",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "Federal Reserve",
+            "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+            "source_type": "official",
+            "published_at": "2026-07-29",
+            "freshness_role": "decision_timing",
+            "reliable": true
+          },
+          {
+            "publisher": "Kiplinger",
+            "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+            "source_type": "reliable_news",
+            "published_at": "2026-07-24",
+            "freshness_role": "attention",
+            "reliable": true
+          },
+          {
+            "publisher": "Reuters",
+            "url": "https://www.investing.com/news/economy-news/growing-number-of-brokerages-see-july-fed-decision-as-a-close-call-4813379",
+            "source_type": "reliable_news",
+            "published_at": "2026-07-27",
+            "freshness_role": "context",
+            "reliable": true
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "duplicate",
+          "duplicate_of": [
+            "HR-20260724-01",
+            "HR-20260725-01"
+          ],
+          "reopen_trigger": "official decision",
+          "rationale": "No new independently verified numeric hook at scan time"
+        }
+      }
     },
     {
-      "scan_date": "2026-07-28",
-      "candidate_id": "HR-20260728-02",
+      "scan_date": "2026-07-29",
+      "candidate_id": "HR-20260729-04",
       "status": "observation",
       "topic": "BOJ July 30-31: Await the Official Statement and Outlook",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 22,
+      "traffic_potential": 21,
       "calculator_fit": 25,
       "evidence_quality": 15,
       "actionability": 6,
-      "total_score": 93,
+      "total_score": 92,
       "hard_gate": true,
-      "reliable_sources": 3,
+      "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
         "Pip Value",
@@ -4083,22 +4894,52 @@
         "P&L",
         "Spread Cost"
       ],
-      "reason": "The July 31 release timing is current, but recent USDJPY packages already cover the tail-risk math and no policy result has been published"
+      "reason": "Existing USDJPY packages cover the calculation and the official decision is unavailable",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "Bank of Japan",
+            "url": "https://www.boj.or.jp/en/about/calendar/index.htm",
+            "source_type": "official",
+            "published_at": "2026-07-29",
+            "freshness_role": "timing",
+            "reliable": true
+          },
+          {
+            "publisher": "Kiplinger",
+            "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+            "source_type": "reliable_news",
+            "published_at": "2026-07-24",
+            "freshness_role": "attention",
+            "reliable": true
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "duplicate",
+          "duplicate_of": [
+            "HR-20260724-03",
+            "HR-20260725-03"
+          ],
+          "reopen_trigger": "official decision",
+          "rationale": "No new independently verified numeric hook at scan time"
+        }
+      }
     },
     {
-      "scan_date": "2026-07-28",
-      "candidate_id": "HR-20260728-03",
+      "scan_date": "2026-07-29",
+      "candidate_id": "HR-20260729-03",
       "status": "observation",
-      "topic": "Bank of England July 30: Await Policy Report Numbers",
+      "topic": "Bank of England July 30: Await the Policy Decision and Report",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 18,
+      "traffic_potential": 19,
       "calculator_fit": 25,
       "evidence_quality": 15,
       "actionability": 6,
-      "total_score": 89,
+      "total_score": 90,
       "hard_gate": true,
-      "reliable_sources": 3,
+      "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
         "Pip Value",
@@ -4106,20 +4947,49 @@
         "P&L",
         "Spread Cost"
       ],
-      "reason": "Official publication timing is current but HR-20260724-11 already covers the same GBPUSD calculation path; the policy report and decision are not yet available"
+      "reason": "Official release is tomorrow and HR-20260724-11 already covers the same event-risk math",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "Bank of England",
+            "url": "https://www.bankofengland.co.uk/events/upcoming-events",
+            "source_type": "official",
+            "published_at": "2026-07-29",
+            "freshness_role": "timing",
+            "reliable": true
+          },
+          {
+            "publisher": "Kiplinger",
+            "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+            "source_type": "reliable_news",
+            "published_at": "2026-07-24",
+            "freshness_role": "attention",
+            "reliable": true
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "duplicate",
+          "duplicate_of": [
+            "HR-20260724-11"
+          ],
+          "reopen_trigger": "official decision",
+          "rationale": "No new independently verified numeric hook at scan time"
+        }
+      }
     },
     {
-      "scan_date": "2026-07-28",
-      "candidate_id": "HR-20260728-04",
+      "scan_date": "2026-07-29",
+      "candidate_id": "HR-20260729-02",
       "status": "observation",
-      "topic": "CME Single Stock Futures Post-Launch Evidence Check",
+      "topic": "CME Single-Stock Futures: Early Liquidity Discussion Lacks Verified Statistics",
       "primary_site": "PositionMath",
-      "freshness": 24,
-      "traffic_potential": 21,
-      "calculator_fit": 23,
-      "evidence_quality": 14,
+      "freshness": 25,
+      "traffic_potential": 22,
+      "calculator_fit": 24,
+      "evidence_quality": 10,
       "actionability": 6,
-      "total_score": 88,
+      "total_score": 87,
       "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
@@ -4127,67 +4997,60 @@
         "Position Size",
         "Portfolio Heat",
         "P&L",
-        "Margin"
-      ],
-      "reason": "CME confirms the live product set but no independent reliable first-day volume, liquidity, outage or broker-availability evidence was found; HR-20260726-01 already covers launch math"
-    },
-    {
-      "scan_date": "2026-07-28",
-      "candidate_id": "HR-20260728-05",
-      "status": "observation",
-      "topic": "CME 1OZ Gold First-Week Evidence Check",
-      "primary_site": "PipGauge",
-      "freshness": 16,
-      "traffic_potential": 14,
-      "calculator_fit": 24,
-      "evidence_quality": 14,
-      "actionability": 5,
-      "total_score": 73,
-      "hard_gate": true,
-      "reliable_sources": 2,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "XAUUSD Pip Value",
-        "Position Size",
         "Margin",
         "Spread Cost"
       ],
-      "reason": "No verifiable new volume, spread, outage or liquidity fact supports another launch refresh"
+      "reason": "Fresh community discussion lacks a second reliable publisher with auditable volume or spread data; HR-20260728-04 covers the broker warning",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "CME Group",
+            "url": "https://www.cmegroup.com/markets/equities/single-stock-futures.html",
+            "source_type": "official",
+            "published_at": "2026-07-29",
+            "freshness_role": "status",
+            "reliable": true
+          },
+          {
+            "publisher": "Charles Schwab",
+            "url": "https://www.schwab.com/learn/story/single-stock-futures-what-they-are-how-to-use",
+            "source_type": "broker_research",
+            "published_at": "2026-07-27",
+            "freshness_role": "boundary",
+            "reliable": true
+          },
+          {
+            "publisher": "Reddit",
+            "url": "https://www.reddit.com/r/FuturesTrading/comments/1v978wq/wow_actual_legit_looking_spreads_on_single_stock/",
+            "source_type": "community_heat",
+            "published_at": "2026-07-29",
+            "freshness_role": "discussion",
+            "reliable": false
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "duplicate",
+          "duplicate_of": [
+            "HR-20260728-04"
+          ],
+          "reopen_trigger": "verified market statistics",
+          "rationale": "No new independently verified numeric hook at scan time"
+        }
+      }
     },
     {
-      "scan_date": "2026-07-28",
-      "candidate_id": "HR-20260728-07",
+      "scan_date": "2026-07-29",
+      "candidate_id": "HR-20260729-05",
       "status": "observation",
-      "topic": "Prop-Firm Risk and Payout Rule Discussion",
-      "primary_site": "PositionMath",
-      "freshness": 17,
-      "traffic_potential": 17,
-      "calculator_fit": 25,
-      "evidence_quality": 6,
-      "actionability": 5,
-      "total_score": 70,
-      "hard_gate": false,
-      "reliable_sources": 1,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Daily Loss Limit",
-        "Trailing Drawdown",
-        "Prop Firm Calculator"
-      ],
-      "reason": "Public discussion is current but community claims and aggregator summaries do not provide two independent reliable sources for a specific new rule change"
-    },
-    {
-      "scan_date": "2026-07-28",
-      "candidate_id": "HR-20260728-06",
-      "status": "observation",
-      "topic": "U.S. Q2 GDP and June PCE Event Risk",
+      "topic": "U.S. Q2 GDP Advance Estimate Due July 30",
       "primary_site": "PipGauge",
-      "freshness": 21,
-      "traffic_potential": 15,
+      "freshness": 24,
+      "traffic_potential": 17,
       "calculator_fit": 22,
-      "evidence_quality": 8,
-      "actionability": 3,
-      "total_score": 69,
+      "evidence_quality": 15,
+      "actionability": 5,
+      "total_score": 83,
       "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
@@ -4197,11 +5060,133 @@
         "Spread Cost",
         "P&L"
       ],
-      "reason": "Official timing is current but the traffic and calculator path remain overlapped by the existing FOMC event-risk package"
+      "reason": "Before the actual number, the traffic route duplicates the existing macro-event risk package",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "Bureau of Economic Analysis",
+            "url": "https://www.bea.gov/news/schedule",
+            "source_type": "official",
+            "published_at": "2026-07-29",
+            "freshness_role": "timing",
+            "reliable": true
+          },
+          {
+            "publisher": "Associated Press",
+            "url": "https://apnews.com/article/a3ecd4459a091458fd9b61772d79b7da",
+            "source_type": "reliable_news",
+            "published_at": "2026-06-25",
+            "freshness_role": "context",
+            "reliable": true
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "duplicate",
+          "duplicate_of": [
+            "HR-20260724-01"
+          ],
+          "reopen_trigger": "actual GDP release",
+          "rationale": "No new independently verified numeric hook at scan time"
+        }
+      }
     },
     {
-      "scan_date": "2026-07-28",
-      "candidate_id": "HR-20260728-08",
+      "scan_date": "2026-07-29",
+      "candidate_id": "HR-20260729-07",
+      "status": "observation",
+      "topic": "Prop-Firm Risk Discussion Without a Verified New Rule",
+      "primary_site": "PositionMath",
+      "freshness": 16,
+      "traffic_potential": 16,
+      "calculator_fit": 25,
+      "evidence_quality": 6,
+      "actionability": 5,
+      "total_score": 68,
+      "hard_gate": false,
+      "reliable_sources": 1,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Daily Loss Limit",
+        "Trailing Drawdown",
+        "Prop Firm Calculator"
+      ],
+      "reason": "No specific changed rule has two independent reliable sources",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "Topstep",
+            "url": "https://help.topstep.com/en/articles/10305426-prohibited-trading-strategies-at-topstep",
+            "source_type": "official_company_rules",
+            "published_at": "2026-06-10",
+            "freshness_role": "rule",
+            "reliable": true
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "evidence",
+          "duplicate_of": [],
+          "reopen_trigger": "second reliable publisher",
+          "rationale": "No new independently verified numeric hook at scan time"
+        }
+      }
+    },
+    {
+      "scan_date": "2026-07-29",
+      "candidate_id": "HR-20260729-06",
+      "status": "observation",
+      "topic": "CME 1OZ Gold Operating-Evidence Check",
+      "primary_site": "PipGauge",
+      "freshness": 14,
+      "traffic_potential": 13,
+      "calculator_fit": 24,
+      "evidence_quality": 10,
+      "actionability": 5,
+      "total_score": 66,
+      "hard_gate": true,
+      "reliable_sources": 2,
+      "fresh_signal": false,
+      "calculator_mapping": [
+        "XAUUSD Pip Value",
+        "Position Size",
+        "Margin",
+        "Spread Cost"
+      ],
+      "reason": "No new reliable volume, spread, outage or liquidity evidence supports reopening",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "CME Group",
+            "url": "https://www.cmegroup.com/markets/metals/precious/1-ounce-gold.html",
+            "source_type": "official",
+            "published_at": "2026-07-29",
+            "freshness_role": "status",
+            "reliable": true
+          },
+          {
+            "publisher": "CFTC",
+            "url": "https://www.cftc.gov/IndustryOversight/IndustryFilings/index.htm",
+            "source_type": "regulator",
+            "published_at": "2026-07-29",
+            "freshness_role": "context",
+            "reliable": true
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "duplicate",
+          "duplicate_of": [
+            "HR-20260724-02"
+          ],
+          "reopen_trigger": "verified operating evidence",
+          "rationale": "No new independently verified numeric hook at scan time"
+        }
+      }
+    },
+    {
+      "scan_date": "2026-07-29",
+      "candidate_id": "HR-20260729-08",
       "status": "discarded",
       "topic": "Directional FX Stock Commodity and Central-Bank Predictions",
       "primary_site": "PipGauge",
@@ -4224,42 +5209,50 @@
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "note": "央行、交易所、公司 IR 与正式规则页已覆盖"
+      "checked_at": "2026-07-29T22:00:00+08:00",
+      "source_count": 8,
+      "note": "Fed、BOJ、BoE、CME、CFTC、BEA、Topstep"
     },
     {
-      "channel": "可靠英文媒体",
-      "status": "complete",
-      "note": "Reuters、AP 等用于独立交叉验证"
+      "channel": "可靠英文媒体与经纪商研究",
+      "status": "partial",
+      "checked_at": "2026-07-29T22:00:00+08:00",
+      "source_count": 5,
+      "note": "Reuters、AP、Kiplinger、Schwab"
     },
     {
       "channel": "Reddit 公开讨论",
       "status": "partial",
-      "note": "覆盖公开索引和具体帖子，仅作为热度信号"
+      "checked_at": "2026-07-29T22:00:00+08:00",
+      "source_count": 6,
+      "note": "仅作热度信号"
     },
     {
       "channel": "X",
       "status": "limited",
-      "note": "登录态与动态页面会限制稳定扫描，不把缺失数据当作无热度"
+      "checked_at": "2026-07-29T22:00:00+08:00",
+      "source_count": 0,
+      "note": "未取得稳定审计信号"
     },
     {
-      "channel": "Quora",
+      "channel": "Quora / BabyPips / ForexFactory",
       "status": "limited",
-      "note": "尚未达到与新闻和 Reddit 相同的逐题扫描深度"
-    },
-    {
-      "channel": "BabyPips / ForexFactory",
-      "status": "limited",
-      "note": "尚未达到同等深度的逐帖扫描"
+      "checked_at": "2026-07-29T22:00:00+08:00",
+      "source_count": 0,
+      "note": "未取得足以改判证据"
     },
     {
       "channel": "Google Trends",
       "status": "not_run",
-      "note": "公开趋势信号不稳定时不作为硬门槛依据"
+      "checked_at": "2026-07-29T22:00:00+08:00",
+      "source_count": 0,
+      "note": "未运行"
     }
   ],
+  "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-07-28_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-07-28_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-07-29_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-07-29_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
