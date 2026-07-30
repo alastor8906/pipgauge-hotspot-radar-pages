@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "scan_date": "2026-07-30",
+  "generated_at": "2026-07-30T19:40:00+08:00",
+  "coverage": [
+    {"channel":"官方与一手来源","status":"partial","checked_at":"2026-07-30T19:40:00+08:00","source_count":2,"note":"本次即时刷新核查 BoE 7 月与 6 月正式决议；不是完整每日扫描"},
+    {"channel":"可靠英文媒体","status":"partial","checked_at":"2026-07-30T19:40:00+08:00","source_count":1,"note":"Reuters 会前调查用于预期背景，不用于确认正式结果"},
+    {"channel":"Reddit 公开讨论","status":"partial","checked_at":"2026-07-30T19:40:00+08:00","source_count":1,"note":"仅作决议后热度信号"},
+    {"channel":"X / Quora / BabyPips / ForexFactory","status":"not_run","checked_at":"2026-07-30T19:40:00+08:00","source_count":0,"note":"即时内容刷新未运行完整渠道扫描"}
+  ],
+  "candidates": {
+    "HR-20260730-01": {
+      "sources": [
+        {"publisher":"Bank of England","url":"https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026","source_type":"official","published_at":"2026-07-30","freshness_role":"official_result_and_vote","reliable":true},
+        {"publisher":"Bank of England","url":"https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026","source_type":"official","published_at":"2026-06-18","freshness_role":"vote_comparison","reliable":true},
+        {"publisher":"Reuters","url":"https://www.investing.com/news/economy-news/bank-of-england-to-hold-steady-this-year-but-iran-war-inflation-risks-persist-reuters-poll-4811541","source_type":"reliable_news","published_at":"2026-07-24","freshness_role":"predecision_expectation_context","reliable":true},
+        {"publisher":"Reddit","url":"https://www.reddit.com/r/ukpolitics/comments/1vaqifr/bank_of_england_holds_uk_interest_rates/","source_type":"community_heat","published_at":"2026-07-30","freshness_role":"postdecision_discussion","reliable":false}
+      ],
+      "decision": {
+        "novelty_gate": "pass",
+        "decision_gate": "official_result_refresh",
+        "duplicate_of": ["HR-20260724-11"],
+        "reopen_trigger": "已触发：BoE 正式发布 3.75%、6–3 与三名委员主张 4%",
+        "rationale": "正式结果与扩大后的投票分歧提供了新的可核验数字和决议后搜索钩子"
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-29T22:00:00+08:00",
+  "updated_at": "2026-07-30T19:40:00+08:00",
   "items": {
     "HR-20260719-01": {
       "playbook_status": "ready",
@@ -1045,6 +1045,42 @@
       ],
       "product_bridge": "先完成规格、名义价值、P&L 和流动性边界，再可选使用 PositionMath 复核账户暴露。",
       "product_bridge_type": "optional"
+    },
+    "HR-20260730-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "critical",
+      "publish_deadline": "2026-07-31",
+      "traffic_hook": "BoE 7 月 30 日维持 Bank Rate 3.75%，但投票由 6 月的 7–2 变为 6–3，三名委员主张立即加息至 4%。",
+      "traffic_window": "决议发布后 24 至 36 小时；刷新 HR-20260724-11，不创建第二篇同构文章。",
+      "search_intents": [
+        "BoE 6-3 vote GBPUSD",
+        "Bank of England 3.75 percent July 2026",
+        "GBPUSD 50 pip move calculator",
+        "GBPUSD position size after BoE"
+      ],
+      "traffic_angle": "借 3.75%、6–3 和三名委员主张 4% 的正式数字，回答 GBP/USD 发生 25/50/100 pip 情景波动时 1 lot 对应多少美元，以及固定 $100 风险下仓位为何应降至 0.40/0.20/0.10 lot；先完成可读计算，再承接 PipGauge。",
+      "calculator_bridge": "先用 Pip Value 核对标准 GBP/USD 约 $10/pip，再用 Position Size 按 $100 风险反推 25/50/100 pip 对应仓位，最后以 Spread Cost 加入事件点差。",
+      "example_scenario": "$10,000 USD 账户、1% 即 $100 风险；25/50/100 pip；0.40/0.20/0.10 lot；比较 1 pip 与 5 pip spread。",
+      "distribution_order": [
+        "更新 HR-20260724-11 的标题、首段与事实表",
+        "Medium 决议后完整复盘",
+        "X 独立数字线程",
+        "Reddit 原生风险讨论且首轮不放链接"
+      ],
+      "link_placement": "先给正式投票、P&L 与固定风险仓位表，再在复核 pip value 和 position size 的步骤链接 PipGauge。",
+      "expiry_condition": "7 月 31 日后若无延续讨论或可核验新波动数字，转为常青央行事件风险复盘；官方更正投票或数字时立即暂停并修正。",
+      "editorial_boundary": "不预测 GBP/USD；不把 6–3 写成未来加息承诺；不把压力情景写成实际波幅；不泛化 broker 合约规格或保证止损成交。",
+      "content_mainline": "把 BoE 会前稿刷新为 3.75%、6–3 与三名委员主张 4% 的结果复盘，并保留固定风险计算主线。",
+      "body_material": [
+        "BoE 3.75% 与 6–3 正式结果",
+        "6 月 7–2 对照",
+        "25/50/100 pip 的 1 lot P&L",
+        "$100 固定风险的 0.40/0.20/0.10 lot",
+        "1 pip 与 5 pip spread 成本"
+      ],
+      "product_bridge": "完成正式事实和手算后，再使用 PipGauge 核对 pip value、position size 与 spread cost。",
+      "product_bridge_type": "existing"
     }
   }
 }
