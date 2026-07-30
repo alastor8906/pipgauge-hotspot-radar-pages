@@ -61,42 +61,57 @@
 </ul></div>
     </article><article id="medium" class="document-panel">
       <header><span>long-form draft</span><strong>待人工审核</strong></header>
-      <div class="markdown-body"><h1>BoE Held at 3.75%, but the 6–3 Vote Changes the Risk Conversation</h1>
-<p>The Bank of England kept Bank Rate at 3.75% on July 30. The more useful new number is the vote: six members supported the hold, while three preferred an immediate 25-basis-point increase to 4%.</p>
+      <div class="markdown-body"><h1>BoE Held at 3.75%, but the 6–3 Vote Changes the GBP/USD Risk Conversation</h1>
+<h2>The rate stayed unchanged, but a wider policy split gives traders a fresh reason to check position size, pip value and event spreads.</h2>
+<p>The Bank of England kept Bank Rate at 3.75% on July 30. That part was widely expected.</p>
+<p>The more useful new number is the vote. Six Monetary Policy Committee members supported keeping the rate unchanged, while three preferred an immediate 25-basis-point increase to 4%.</p>
 <p>In June, the vote to hold had been 7–2. The policy rate did not change, but the split widened by one member.</p>
-<p>That distinction matters without implying a direction for GBP/USD. A central-bank headline and a trading position are different inputs: the vote describes policy disagreement; lot size determines what a market move does to the account.</p>
-<h2>Translate pips into dollars first</h2>
-<p>For a USD-denominated account, a standard 100,000-unit GBP/USD lot is approximately $10 per pip. Broker specifications and account currencies can change that value, so it should be verified before use.</p>
-<p>At that common specification, a one-lot position would change by approximately:</p>
+<p>That does not tell us whether GBP/USD should rise or fall. It tells us that an unchanged headline can still contain new information—and that the account result remains controlled by pip value, lot size, spread and execution.</p>
+<blockquote>Suggested image: upload <code>05-X配图-nobrand.png</code> here.</blockquote>
+<h2>First translate the move into dollars</h2>
+<p>For a USD-denominated account, one standard 100,000-unit GBP/USD lot is commonly worth approximately $10 per pip. Broker specifications and account currencies can change that value, so it must be verified before sizing a real position.</p>
+<p>Using that common specification:</p>
 <div class="table-wrap"><table><thead><tr><th>GBP/USD move</th><th>Approximate P&amp;L at 1.00 lot</th></tr></thead><tbody><tr><td>25 pips</td><td>$250</td></tr><tr><td>50 pips</td><td>$500</td></tr><tr><td>100 pips</td><td>$1,000</td></tr></tbody></table></div>
-<p>The sign depends on the position direction. These are stress scenarios, not a forecast of what sterling should do after the decision.</p>
-<h2>Keep the dollar risk fixed</h2>
+<p>The sign depends on the position direction. These are stress scenarios, not a forecast of the actual post-decision move.</p>
+<p>The same central-bank announcement can therefore produce very different account outcomes. At 0.10 lot, a 50-pip adverse move is approximately $50 before costs. At 1.00 lot, it is approximately $500.</p>
+<p>The headline is identical. The exposure is not.</p>
+<h2>Work backward from a fixed risk limit</h2>
 <p>Assume a $10,000 account with a maximum planned loss of 1%, or $100.</p>
 <p>The basic relationship is:</p>
 <p><code>lot size = dollar risk ÷ (stop distance × pip value per standard lot)</code></p>
-<p>Using $10 per pip gives:</p>
-<div class="table-wrap"><table><thead><tr><th>Stop distance</th><th>Dollar-risk budget</th><th>Approximate position size</th></tr></thead><tbody><tr><td>25 pips</td><td>$100</td><td>0.40 lot</td></tr><tr><td>50 pips</td><td>$100</td><td>0.20 lot</td></tr><tr><td>100 pips</td><td>$100</td><td>0.10 lot</td></tr></tbody></table></div>
-<p>If the distance needed for an event-risk trade doubles, the position has to halve to preserve the same planned loss. Keeping the original lot size while widening the stop quietly increases account risk.</p>
+<p>Using an estimated $10 per pip gives:</p>
+<div class="table-wrap"><table><thead><tr><th>Stop distance</th><th>Risk limit</th><th>Approximate position size</th></tr></thead><tbody><tr><td>25 pips</td><td>$100</td><td>0.40 lot</td></tr><tr><td>50 pips</td><td>$100</td><td>0.20 lot</td></tr><tr><td>100 pips</td><td>$100</td><td>0.10 lot</td></tr></tbody></table></div>
+<p>If the required risk distance doubles, the position must halve to preserve the same planned loss.</p>
+<p>This is the practical discipline around policy events. Widening a stop while keeping the original lot size does not create more room for the trade at no cost—it quietly increases the amount of money at risk.</p>
 <h2>Event spreads belong in the calculation</h2>
-<p>The table is a clean baseline. Around policy releases, spreads may widen and stops may fill beyond the intended price.</p>
-<p>At the three position sizes above, a one-pip spread costs roughly $4, $2 and $1. A five-pip spread costs about $20, $10 and $5. Those amounts do not predict volatility, but they show why the quoted spread should be checked separately from the stop distance.</p>
-<p>The sequence is:</p>
+<p>The table above is a clean baseline. It does not guarantee the final loss.</p>
+<p>Around monetary-policy releases, spreads may widen and a stop may fill beyond its intended price. At the three position sizes above, a one-pip spread costs approximately $4, $2 and $1. A five-pip spread costs approximately $20, $10 and $5.</p>
+<p>Those amounts do not predict volatility. They simply show why spread cost should be separated from stop distance rather than ignored.</p>
+<p>A sensible calculation sequence is:</p>
 <ol>
-<li>Verify the broker&#039;s GBP/USD contract and pip value.</li>
-<li>Choose a dollar-risk ceiling.</li>
-<li>Select a defensible stop or stress distance.</li>
+<li>Verify the broker’s GBP/USD contract size and pip value.</li>
+<li>Choose a maximum dollar-risk limit.</li>
+<li>Select a stop or stress distance.</li>
 <li>Reduce the lot size as that distance grows.</li>
-<li>Add the observed spread and allow for slippage.</li>
+<li>Add the live spread and allow for possible slippage.</li>
 </ol>
-<p>PipGauge&#039;s <a href="https://pipgauge.com/pip-value-calculator/" target="_blank" rel="noopener">pip value calculator</a> can verify the first input, while its <a href="https://pipgauge.com/position-size-calculator/" target="_blank" rel="noopener">position size calculator</a> can work backward from the dollar-risk limit. The arithmetic comes first because a calculator cannot decide whether the policy event is tradable.</p>
-<p>The Bank&#039;s 6–3 vote is evidence of a more divided committee, not evidence that GBP/USD must rise or fall. The controllable number remains the amount at risk if the market moves against the position.</p>
+<p>After completing the arithmetic, PipGauge’s <a href="https://pipgauge.com/pip-value-calculator/" target="_blank" rel="noopener">pip value calculator</a> can verify the first input, while the <a href="https://pipgauge.com/position-size-calculator/" target="_blank" rel="noopener">position size calculator</a> can work backward from the dollar-risk limit.</p>
+<p>A calculator cannot decide whether the policy event is tradable. It can make the exposure visible before the decision becomes an account loss.</p>
+<h2>What the 6–3 vote does—and does not—mean</h2>
+<p>The July vote shows a more divided committee than in June. Three members judged that a 25-basis-point increase was already appropriate, while the majority preferred to maintain the current rate and observe more evidence.</p>
+<p>That is useful policy information. It is not a promise of a future rate increase, and it is not a GBP/USD direction signal.</p>
+<p>The controllable question remains smaller and more practical:</p>
+<blockquote>If GBP/USD moves against the position by 25, 50 or 100 pips, how much will the account lose?</blockquote>
+<p>Once that number is known, the position can be accepted, reduced or avoided without pretending to know the market’s next direction.</p>
 <h2>Sources</h2>
 <ul>
 <li><a href="https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026" target="_blank" rel="noopener">Bank of England: July 2026 Monetary Policy Summary and Minutes</a></li>
 <li><a href="https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026" target="_blank" rel="noopener">Bank of England: June 2026 Monetary Policy Summary and Minutes</a></li>
 <li><a href="https://www.investing.com/news/economy-news/bank-of-england-to-hold-steady-this-year-but-iran-war-inflation-risks-persist-reuters-poll-4811541" target="_blank" rel="noopener">Reuters poll before the July decision</a></li>
 </ul>
-<p><em>Educational scenario only. Not financial advice.</em></p></div>
+<p><em>Educational example only. Not financial advice. Verify the current broker specification, spread and execution conditions before using any calculation.</em></p>
+<h2>Medium tags</h2>
+<p><code>Bank of England</code> · <code>GBPUSD</code> · <code>Forex Trading</code> · <code>Risk Management</code> · <code>Position Sizing</code></p></div>
     </article><article id="reddit" class="document-panel">
       <header><span>native discussion draft</span><strong>待人工审核</strong></header>
       <div class="markdown-body"><h1>Reddit 草稿</h1>
