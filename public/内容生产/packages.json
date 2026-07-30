@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T14:09:04.331Z",
+  "generated_at": "2026-07-30T11:41:18.695Z",
   "endpoint": "multi_platform_drafts_awaiting_human_review",
   "supported_platforms": [
     "medium",
@@ -7,6 +7,41 @@
     "x"
   ],
   "packages": [
+    {
+      "candidate_id": "HR-20260730-01",
+      "scan_date": "2026-07-30",
+      "primary_site": "PipGauge",
+      "topic": "BoE Holds at 3.75% in a 6–3 Vote: Recalculate GBP/USD Event Risk",
+      "package_summary": "刷新 HR-20260724-11：用正式的 3.75%、6–3 与三名委员主张 4% 替换会前时态，不创建第二篇同构文章。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "decision_recap_window",
+      "time_status_label": "决议后首日窗口；建议 7 月 31 日前审核，之后转常青复盘",
+      "url": "../内容生产/2026-07-30/HR-20260730-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-30/HR-20260730-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-30/HR-20260730-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-30/HR-20260730-01/index.html#x"
+        }
+      ]
+    },
     {
       "candidate_id": "HR-20260728-04",
       "scan_date": "2026-07-28",
