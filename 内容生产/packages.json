@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T12:42:35.418Z",
+  "generated_at": "2026-07-30T14:11:13.121Z",
   "endpoint": "multi_platform_drafts_awaiting_human_review",
   "supported_platforms": [
     "medium",
@@ -39,6 +39,41 @@
           "status": "draft_ready",
           "status_label": "待人工审核",
           "url": "../内容生产/2026-07-30/HR-20260730-01/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260730-02",
+      "scan_date": "2026-07-30",
+      "primary_site": "PipGauge",
+      "topic": "Fed Holds 3.50%–3.75% in a 9–3 Vote: Recalculate EUR/USD Event Risk",
+      "package_summary": "刷新 HR-20260724-01，并取代会前快照 HR-20260725-01：用正式的 3.50%–3.75%、9–3 与三名委员主张加息 25bp 替换会前时态。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "decision_recap_window",
+      "time_status_label": "决议后 24–36 小时窗口；建议 7 月 31 日前审核",
+      "url": "../内容生产/2026-07-30/HR-20260730-02/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-30/HR-20260730-02/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-30/HR-20260730-02/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-30/HR-20260730-02/index.html#x"
         }
       ]
     },

@@ -1,0 +1,149 @@
+{
+  "HR-20260719-01": {
+    "content_status": "draft_ready",
+    "content_label": "主文与渠道短版已完成",
+    "content_url": "../内容生产/2026-07-19/HR-20260719-01.html",
+    "content_format": "Medium / X / Quora / Reddit",
+    "deadline": "2026-07-21"
+  },
+  "HR-20260719-02": {
+    "content_status": "draft_ready",
+    "content_label": "主文与渠道短版已完成",
+    "content_url": "../内容生产/2026-07-19/HR-20260719-02.html",
+    "content_format": "Medium / X / Quora / Reddit",
+    "deadline": "2026-07-20"
+  },
+  "HR-20260719-03": {
+    "content_status": "draft_ready",
+    "content_label": "主文与渠道短版已完成",
+    "content_url": "../内容生产/2026-07-19/HR-20260719-03.html",
+    "content_format": "Medium / X / Quora / Reddit",
+    "deadline": "2026-07-23"
+  },
+  "HR-20260719-04": {
+    "content_status": "draft_ready",
+    "content_label": "主文与渠道短版已完成",
+    "content_url": "../内容生产/2026-07-19/HR-20260719-04.html",
+    "content_format": "Medium / X / Quora / Reddit",
+    "deadline": "2026-07-22"
+  },
+  "HR-20260723-01": {
+    "content_status": "review_ready",
+    "content_label": "Medium / Reddit / X 刷新稿待人工审核",
+    "content_url": "../内容生产/2026-07-23/HR-20260723-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-07-24"
+  },
+  "HR-20260723-02": {
+    "content_status": "review_ready",
+    "content_label": "ECB 决议后复盘稿待人工审核",
+    "content_url": "../内容生产/2026-07-23/HR-20260723-02/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-07-24"
+  },
+  "HR-20260723-03": {
+    "content_status": "review_ready",
+    "content_label": "实际收盘跌幅复盘稿待人工审核",
+    "content_url": "../内容生产/2026-07-23/HR-20260723-03/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-07-24"
+  },
+  "HR-20260723-04": {
+    "content_status": "review_ready",
+    "content_label": "首个周末交易规格稿待人工审核",
+    "content_url": "../内容生产/2026-07-23/HR-20260723-04/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-07-24"
+  },
+  "HR-20260723-05": {
+    "content_status": "review_ready",
+    "content_label": "15% 最低保证金刷新稿待人工审核",
+    "content_url": "../内容生产/2026-07-23/HR-20260723-05/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-07-26"
+  },
+  "HR-20260724-01": {
+    "content_status": "review_ready",
+    "content_label": "FOMC 审核包待人工审核",
+    "content_url": "../内容生产/2026-07-24/HR-20260724-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-07-27"
+  },
+  "HR-20260724-02": {
+    "content_status": "review_ready",
+    "content_label": "CME 1OZ 审核包待人工审核",
+    "content_url": "../内容生产/2026-07-24/HR-20260724-02/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-07-25"
+  },
+  "HR-20260724-03": {
+    "content_status": "review_ready",
+    "content_label": "BOJ/USDJPY 审核包待人工审核",
+    "content_url": "../内容生产/2026-07-24/HR-20260724-03/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-07-29"
+  },
+  "HR-20260724-04": {
+    "content_status": "review_ready",
+    "content_label": "单股期货审核包待人工审核",
+    "content_url": "../内容生产/2026-07-24/HR-20260724-04/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-07-26"
+  },
+  "HR-20260724-11": {
+    "content_status": "review_ready",
+    "content_label": "BoE 审核包待人工审核",
+    "content_url": "../内容生产/2026-07-24/HR-20260724-11/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-07-28"
+  },
+  "HR-20260725-01": {
+    "content_status": "review_ready",
+    "content_label": "FOMC 刷新稿待人工审核",
+    "content_url": "../内容生产/2026-07-25/HR-20260725-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-07-27"
+  },
+  "HR-20260725-03": {
+    "content_status": "review_ready",
+    "content_label": "USDJPY 刷新稿待人工审核",
+    "content_url": "../内容生产/2026-07-25/HR-20260725-03/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-07-28"
+  },
+  "HR-20260725-05": {
+    "content_status": "review_ready",
+    "content_label": "单股期货上线前刷新稿待人工审核",
+    "content_url": "../内容生产/2026-07-25/HR-20260725-05/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-07-26"
+  },
+  "HR-20260726-01": {
+    "content_status": "review_ready",
+    "content_label": "CME 单股期货上线刷新稿待人工审核",
+    "content_url": "../内容生产/2026-07-26/HR-20260726-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-07-27"
+  },
+  "HR-20260728-04": {
+    "content_status": "review_ready",
+    "content_label": "Schwab 零售可用性刷新稿待人工审核",
+    "content_url": "../内容生产/2026-07-28/HR-20260728-04/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-07-30"
+  },
+  "HR-20260730-01": {
+    "content_status": "review_ready",
+    "content_label": "BoE 6–3 决议后刷新稿待人工审核",
+    "content_url": "../内容生产/2026-07-30/HR-20260730-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-07-31"
+  },
+  "HR-20260730-02": {
+    "content_status": "review_ready",
+    "content_label": "FOMC 9–3 决议后刷新稿待人工审核",
+    "content_url": "../内容生产/2026-07-30/HR-20260730-02/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-07-31"
+  }
+}
