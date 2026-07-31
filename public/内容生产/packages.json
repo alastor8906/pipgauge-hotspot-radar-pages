@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T14:09:21.423Z",
+  "generated_at": "2026-07-31T14:11:18.599Z",
   "endpoint": "multi_platform_drafts_awaiting_human_review",
   "supported_platforms": [
     "medium",
@@ -8,11 +8,46 @@
   ],
   "packages": [
     {
+      "candidate_id": "HR-20260731-01",
+      "scan_date": "2026-07-31",
+      "primary_site": "PipGauge",
+      "topic": "BOJ Holds at 1.0% in an 8–1 Vote: Recalculate USD/JPY Event Risk",
+      "package_summary": "刷新 HR-20260720-01 / HR-20260725-03：用 BOJ 正式的 1.0%、8–1 和 1.25% 反对提案替换会前时态，不创建第二篇同构文章。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "decision_recap_window",
+      "time_status_label": "决议后 24–36 小时窗口；建议 8 月 1 日前审核",
+      "url": "../内容生产/2026-07-31/HR-20260731-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-31/HR-20260731-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-31/HR-20260731-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-07-31/HR-20260731-01/index.html#x"
+        }
+      ]
+    },
+    {
       "candidate_id": "HR-20260730-01",
       "scan_date": "2026-07-30",
       "primary_site": "PipGauge",
       "topic": "BoE Holds at 3.75% in a 6–3 Vote: Recalculate GBP/USD Event Risk",
-      "package_summary": "刷新 HR-20260724-11：用正式的 3.75%、6–3 与三名委员主张 4% 替换会前时态，不创建第二篇同构文章。",
+      "package_summary": "刷新 HR-20260724-11：以 3.75%、7–2→6–3 为新闻钩子，用固定 $100 风险下的三档仓位解释风险关系，并以真实计算器截图核验 50-pip 场景。",
       "package_status": "review_ready",
       "review_state": "awaiting_human_review",
       "time_status": "decision_recap_window",

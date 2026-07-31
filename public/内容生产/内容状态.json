@@ -145,5 +145,12 @@
     "content_url": "../内容生产/2026-07-30/HR-20260730-02/index.html",
     "content_format": "Medium / Reddit / X",
     "deadline": "2026-07-31"
+  },
+  "HR-20260731-01": {
+    "content_status": "review_ready",
+    "content_label": "BOJ 8–1 决议后刷新稿待人工审核",
+    "content_url": "../内容生产/2026-07-31/HR-20260731-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-08-01"
   }
 }

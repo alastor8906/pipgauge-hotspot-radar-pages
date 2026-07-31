@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-30T22:00:00+08:00",
+  "updated_at": "2026-07-31T22:00:00+08:00",
   "items": {
     "HR-20260719-01": {
       "playbook_status": "ready",
@@ -1113,6 +1113,42 @@
         "三名委员主张加息 25bp",
         "25/50/100 pip 的固定风险仓位",
         "1 pip 与 3 pip spread 成本"
+      ],
+      "product_bridge": "完成正式事实和手算后，再使用 PipGauge 核对 pip value、position size 与 spread cost。",
+      "product_bridge_type": "existing"
+    },
+    "HR-20260731-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "critical",
+      "publish_deadline": "2026-08-01",
+      "traffic_hook": "BOJ 7 月 31 日正式维持约 1.0%，表决 8–1；唯一反对者主张 1.25%，提案被否决。",
+      "traffic_window": "决议发布后 24 至 36 小时；刷新 HR-20260720-01，并以当期快照取代 HR-20260725-03 的会前版本，不创建第二篇同构文章。",
+      "search_intents": [
+        "BOJ 8-1 vote July 2026 USDJPY",
+        "Bank of Japan 1 percent July 2026",
+        "USDJPY 100 pip move calculator",
+        "USDJPY position size after BOJ"
+      ],
+      "traffic_angle": "借 BOJ 正式的 1.0%、8–1 和被否决的 1.25% 提案，回答 USD/JPY 在 160.00 历史参考价下 1 lot 每 pip 约 $6.25，50/100/300 pip 对应约 $312.50/$625/$1,875；固定 $100 风险的理论仓位约为 0.32/0.16/0.05 lot。先给可读数字，再承接 PipGauge，不预测方向。",
+      "calculator_bridge": "先用 Pip Value 复核 USD/JPY 在 160.00 时标准手约 $6.25/pip，再用 Position Size 按 $100 风险反推 50/100/300 pip 仓位，最后用 Spread Cost 检查事件期执行成本。",
+      "example_scenario": "$10,000 USD 账户、1% 即 $100 风险；USD/JPY 160.00 历史参考；50/100/300 pip；0.32/0.16/0.05 lot；额外提醒点差与滑点。",
+      "distribution_order": [
+        "更新 HR-20260720-01 标题、首段、时态与事实表",
+        "Medium 决议后完整复盘",
+        "X 独立数字线程",
+        "Reddit 原生风险讨论且首轮不放链接"
+      ],
+      "link_placement": "先给 BOJ 正式结果、pip value、P&L 与固定风险仓位表，再在复核 pip value、position size 和 spread cost 的步骤链接 PipGauge。",
+      "expiry_condition": "8 月 1 日后若无延续讨论或 Japan MOF 新的正式数据，转为常青央行事件风险复盘；BOJ 更正数字或 MOF 发布正式干预数据时立即暂停并更新。",
+      "editorial_boundary": "不预测 USD/JPY、下一次加息或干预时点；不把 1.25% 反对提案写成委员会指引；不把 Reuters 市场来源报道写成 MOF 正式确认；不保证止损成交。",
+      "content_mainline": "把 USD/JPY 会前/干预风险稿刷新为 BOJ 1.0%、8–1 与 1.25% 反对提案的结果复盘。",
+      "body_material": [
+        "BOJ 1.0% 与 8–1 正式结果",
+        "唯一反对者的 1.25% 提案",
+        "160.00 历史参考下约 $6.25/pip",
+        "50/100/300 pip 的固定风险仓位",
+        "官方确认与市场来源报道的边界"
       ],
       "product_bridge": "完成正式事实和手算后，再使用 PipGauge 核对 pip value、position size 与 spread cost。",
       "product_bridge_type": "existing"

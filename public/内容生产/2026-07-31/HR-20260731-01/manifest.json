@@ -1,0 +1,18 @@
+{
+  "candidate_id": "HR-20260731-01",
+  "scan_date": "2026-07-31",
+  "primary_site": "PipGauge",
+  "topic": "BOJ Holds at 1.0% in an 8–1 Vote: Recalculate USD/JPY Event Risk",
+  "package_summary": "刷新 HR-20260720-01 / HR-20260725-03：用 BOJ 正式的 1.0%、8–1 和 1.25% 反对提案替换会前时态，不创建第二篇同构文章。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "decision_recap_window",
+  "time_status_label": "决议后 24–36 小时窗口；建议 8 月 1 日前审核",
+  "documents": [
+    {"id":"facts","label":"事实与论点","file":"00-事实与论点.md","platform":"internal","kind":"editorial brief","status_label":"已整理"},
+    {"id":"medium","label":"Medium","file":"01-Medium.md","platform":"medium","kind":"long-form draft","status_label":"待人工审核"},
+    {"id":"reddit","label":"Reddit","file":"02-Reddit.md","platform":"reddit","kind":"native discussion draft","status_label":"待人工审核"},
+    {"id":"x","label":"X","file":"03-X.md","platform":"x","kind":"short thread draft","status_label":"待人工审核"},
+    {"id":"review","label":"审核清单","file":"04-人工审核.md","platform":"internal","kind":"human gate","status_label":"必须完成"}
+  ]
+}
