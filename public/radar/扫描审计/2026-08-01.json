@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "scan_date": "2026-08-01",
+  "generated_at": "2026-08-01T22:00:00+08:00",
+  "coverage": [
+    {"channel":"官方与一手来源","status":"complete","checked_at":"2026-08-01T22:00:00+08:00","source_count":6,"note":"核查 BLS、Federal Reserve、BOJ、Japan MOF、CME 与 Financial Commission"},
+    {"channel":"可靠英文媒体","status":"complete","checked_at":"2026-08-01T22:00:00+08:00","source_count":2,"note":"复查可靠英文新闻索引用于独立交叉验证与新鲜度判断"},
+    {"channel":"Reddit / ForexFactory","status":"complete","checked_at":"2026-08-01T22:00:00+08:00","source_count":6,"note":"仅作公开热度、讨论内容与事件时点信号"},
+    {"channel":"X / Quora / BabyPips","status":"checked_no_material_signal","checked_at":"2026-08-01T22:00:00+08:00","source_count":0,"note":"未发现可验证且能改变入选结论的新增信号"}
+  ],
+  "candidates": {
+    "HR-20260801-01": {
+      "sources": [
+        {"publisher":"U.S. Bureau of Labor Statistics","url":"https://www.bls.gov/news.release/empsit.nr0.htm","source_type":"official","published_at":"2026-07-02","freshness_role":"official_upcoming_release_schedule","reliable":true},
+        {"publisher":"ForexFactory","url":"https://www.forexfactory.com/calendar","source_type":"community_calendar","published_at":"2026-08-01","freshness_role":"event_interest_check","reliable":false}
+      ],
+      "decision":{"novelty_gate":"fail","decision_gate":"insufficient_independent_reliable_sources_and_duplicate_path","duplicate_of":["HR-20260731-03","HR-20260724-01"],"reopen_trigger":"8 月 7 日正式结果或两个可靠主体确认异常 FX 波幅/执行成本","rationale":"结果未出且会前风险计算路径同构"}
+    },
+    "HR-20260801-02": {
+      "sources": [
+        {"publisher":"Bank of Japan","url":"https://www.boj.or.jp/en/about/calendar/index.htm","source_type":"official_schedule","published_at":"2026-07-24","freshness_role":"full_outlook_release_timing","reliable":true},
+        {"publisher":"Reuters","url":"https://www.reuters.com/world/asia-pacific/boj-keep-rates-steady-deliver-hawkish-signal-price-pressures-mount-2026-07-30/","source_type":"reliable_news","published_at":"2026-07-31","freshness_role":"independent_result_confirmation","reliable":true}
+      ],
+      "decision":{"novelty_gate":"fail","decision_gate":"duplicate_without_new_fact","duplicate_of":["HR-20260731-01"],"reopen_trigger":"8 月 3 日完整展望文本出现会改变计算示例的新增可核验数字","rationale":"决议结果已在前一期完成刷新"}
+    },
+    "HR-20260801-03": {
+      "sources": [
+        {"publisher":"Japan Ministry of Finance","url":"https://www.mof.go.jp/english/policy/international_policy/reference/feio/monthly/index.html","source_type":"official","published_at":"2026-07-31","freshness_role":"official_confirmation_schedule_check","reliable":true},
+        {"publisher":"Reuters","url":"https://www.reuters.com/world/live-bank-japan-set-hold-rates-tokyo-intervenes-boost-yen-2026-07-31/","source_type":"reliable_news","published_at":"2026-07-31","freshness_role":"market_source_report_and_price_move","reliable":true},
+        {"publisher":"Reddit","url":"https://www.reddit.com/r/japannews/comments/1vav2vl/japanese_yen_surges_on_suspected_intervention/","source_type":"community_heat","published_at":"2026-07-31","freshness_role":"same_day_discussion","reliable":false}
+      ],
+      "decision":{"novelty_gate":"fail","decision_gate":"official_confirmation_pending","duplicate_of":["HR-20260731-02","HR-20260720-01"],"reopen_trigger":"Japan MOF 发布覆盖 7 月 30 日后的正式干预金额与日期","rationale":"市场报道不能替代财务省正式确认，且风险计算已被覆盖"}
+    },
+    "HR-20260801-04": {
+      "sources": [
+        {"publisher":"CME Group","url":"https://www.cmegroup.com/markets/equities/single-stock-futures.html","source_type":"official","published_at":"2026-07-27","freshness_role":"product_specification_check","reliable":true},
+        {"publisher":"Charles Schwab","url":"https://www.schwab.com/learn/story/what-are-single-stock-futures","source_type":"official_broker","published_at":"2026-07-27","freshness_role":"broker_availability_check","reliable":true}
+      ],
+      "decision":{"novelty_gate":"fail","decision_gate":"no_new_operating_evidence","duplicate_of":["HR-20260728-04"],"reopen_trigger":"新的可核验成交量、点差或经纪商可用性","rationale":"没有新证据支持重复刷新"}
+    },
+    "HR-20260801-05": {
+      "sources": [
+        {"publisher":"Financial Commission","url":"https://financialcommission.org/2026/07/22/financial-commission-launches-the-first-self-regulatory-framework-for-prop-firms/","source_type":"official_framework","published_at":"2026-07-22","freshness_role":"framework_launch_check","reliable":true},
+        {"publisher":"Reddit","url":"https://www.reddit.com/r/PropFirmTester/","source_type":"community_heat","published_at":"2026-08-01","freshness_role":"generic_rule_discussion_check","reliable":false}
+      ],
+      "decision":{"novelty_gate":"fail","decision_gate":"stale_and_no_calculation_rule_change","duplicate_of":["HR-20260731-05"],"reopen_trigger":"认证名单或具体可计算账户规则由两个可靠主体确认","rationale":"发布超 72 小时且自律框架不能自然转成当前账户计算问题"}
+    }
+  }
+}
