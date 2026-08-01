@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "scan_date": "2026-07-30",
+  "generated_at": "2026-07-30T22:00:00+08:00",
+  "coverage": [
+    {"channel":"官方与一手来源","status":"complete","checked_at":"2026-07-30T22:00:00+08:00","source_count":6,"note":"核查 Federal Reserve、BoE、BEA、BOJ 与交易所/经纪商线索"},
+    {"channel":"可靠英文媒体","status":"complete","checked_at":"2026-07-30T22:00:00+08:00","source_count":4,"note":"AP 与可靠新闻用于独立交叉验证"},
+    {"channel":"Reddit / ForexFactory","status":"complete","checked_at":"2026-07-30T22:00:00+08:00","source_count":6,"note":"仅作公开热度与事件时点信号"},
+    {"channel":"X / Quora / BabyPips","status":"checked_no_material_signal","checked_at":"2026-07-30T22:00:00+08:00","source_count":0,"note":"未发现可验证且能改变入选结论的新增信号"}
+  ],
+  "candidates": {
+    "HR-20260730-01": {
+      "sources": [
+        {"publisher":"Bank of England","url":"https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026","source_type":"official","published_at":"2026-07-30","freshness_role":"official_result_and_vote","reliable":true},
+        {"publisher":"Associated Press","url":"https://apnews.com/article/britain-economy-interest-rates-4c1858032eb701ae776d286db674d994","source_type":"reliable_news","published_at":"2026-07-30","freshness_role":"independent_confirmation","reliable":true},
+        {"publisher":"Reddit","url":"https://www.reddit.com/r/ukpolitics/comments/1vaqifr/bank_of_england_holds_uk_interest_rates/","source_type":"community_heat","published_at":"2026-07-30","freshness_role":"postdecision_discussion","reliable":false}
+      ],
+      "decision":{"novelty_gate":"pass","decision_gate":"official_result_refresh","duplicate_of":["HR-20260724-11"],"reopen_trigger":"已触发：BoE 3.75%、6–3","rationale":"正式结果与扩大后的投票分歧形成新鲜数字钩子"}
+    },
+    "HR-20260730-02": {
+      "sources": [
+        {"publisher":"Federal Reserve","url":"https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm","source_type":"official","published_at":"2026-07-29","freshness_role":"official_result_and_vote","reliable":true},
+        {"publisher":"Associated Press","url":"https://apnews.com/article/ad10c177cb8d96f9e3ed122e12352a74","source_type":"reliable_news","published_at":"2026-07-29","freshness_role":"independent_confirmation","reliable":true},
+        {"publisher":"Reddit","url":"https://www.reddit.com/r/Economics/comments/1va5rdj/fed_holds_interest_rates_steady_in_split_decision/","source_type":"community_heat","published_at":"2026-07-29","freshness_role":"postdecision_discussion","reliable":false},
+        {"publisher":"ForexFactory","url":"https://www.forexfactory.com/calendar?day=jul29.2026&event=146518","source_type":"community_calendar","published_at":"2026-07-29","freshness_role":"event_interest","reliable":false}
+      ],
+      "decision":{"novelty_gate":"pass","decision_gate":"official_result_refresh","duplicate_of":["HR-20260724-01","HR-20260725-01"],"reopen_trigger":"已触发：正式 3.50%–3.75%、9–3 与三名委员主张 +25bp","rationale":"正式结果提供新的可核验数字和决议后搜索钩子"}
+    },
+    "HR-20260730-03": {
+      "sources": [
+        {"publisher":"Bureau of Economic Analysis","url":"https://www.bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026","source_type":"official","published_at":"2026-07-30","freshness_role":"official_result","reliable":true},
+        {"publisher":"Associated Press","url":"https://apnews.com/article/caf3b24d92688568f9c4f95725c87e55","source_type":"reliable_news","published_at":"2026-07-30","freshness_role":"independent_confirmation","reliable":true},
+        {"publisher":"Reddit","url":"https://www.reddit.com/r/neoliberal/comments/1vau0tq/us_real_gdp_increased_at_a_15_seasonallyadjusted/","source_type":"community_heat","published_at":"2026-07-30","freshness_role":"same_day_discussion","reliable":false}
+      ],
+      "decision":{"novelty_gate":"fail","decision_gate":"duplicate_calculation_path","duplicate_of":["HR-20260724-01"],"reopen_trigger":"可核验 FX 波幅、点差或独立长尾查询增长","rationale":"GDP 事实新鲜但计算与流量路径同构"}
+    },
+    "HR-20260730-04": {
+      "sources": [
+        {"publisher":"Bank of Japan","url":"https://www.boj.or.jp/en/mopo/mpmsche_minu/","source_type":"official","published_at":"2026-07-24","freshness_role":"official_meeting_schedule","reliable":true},
+        {"publisher":"Associated Press","url":"https://apnews.com/article/ad10c177cb8d96f9e3ed122e12352a74","source_type":"reliable_news","published_at":"2026-07-29","freshness_role":"central_bank_week_context","reliable":true}
+      ],
+      "decision":{"novelty_gate":"fail","decision_gate":"official_result_pending","duplicate_of":["HR-20260724-03","HR-20260725-03"],"reopen_trigger":"BOJ 发布正式声明与展望","rationale":"会前预测不替代正式结果"}
+    },
+    "HR-20260730-05": {
+      "sources": [
+        {"publisher":"CME Group","url":"https://www.cmegroup.com/markets/equities/single-stock-futures.html","source_type":"official","published_at":"2026-07-27","freshness_role":"product_specification_check","reliable":true},
+        {"publisher":"Charles Schwab","url":"https://www.schwab.com/learn/story/what-are-single-stock-futures","source_type":"official_broker","published_at":"2026-07-27","freshness_role":"broker_availability_check","reliable":true}
+      ],
+      "decision":{"novelty_gate":"fail","decision_gate":"no_new_operating_evidence","duplicate_of":["HR-20260728-04"],"reopen_trigger":"新的可核验成交量、点差或经纪商可用性","rationale":"没有新证据支持重复刷新"}
+    },
+    "HR-20260730-06": {
+      "sources": [
+        {"publisher":"Topstep","url":"https://help.topstep.com/en/","source_type":"official_help_center","published_at":"2026-07-30","freshness_role":"rule_change_check","reliable":true},
+        {"publisher":"Reddit","url":"https://www.reddit.com/r/TopStepX/","source_type":"community_heat","published_at":"2026-07-30","freshness_role":"public_discussion_check","reliable":false}
+      ],
+      "decision":{"novelty_gate":"fail","decision_gate":"insufficient_independent_reliable_sources","duplicate_of":[],"reopen_trigger":"两个独立可靠主体确认同一具体规则变化","rationale":"社区讨论不能替代规则事实核验"}
+    }
+  }
+}
