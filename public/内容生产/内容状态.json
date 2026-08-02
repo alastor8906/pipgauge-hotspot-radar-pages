@@ -152,5 +152,12 @@
     "content_url": "../内容生产/2026-07-31/HR-20260731-01/index.html",
     "content_format": "Medium / Reddit / X",
     "deadline": "2026-08-01"
+  },
+  "HR-20260802-01": {
+    "content_status": "review_ready",
+    "content_label": "美日联合干预结果刷新稿待人工审核",
+    "content_url": "../内容生产/2026-08-02/HR-20260802-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-08-03"
   }
 }

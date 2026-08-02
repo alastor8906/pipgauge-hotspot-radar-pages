@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-31T22:00:00+08:00",
+  "updated_at": "2026-08-02T22:00:00+08:00",
   "items": {
     "HR-20260719-01": {
       "playbook_status": "ready",
@@ -1151,6 +1151,42 @@
         "官方确认与市场来源报道的边界"
       ],
       "product_bridge": "完成正式事实和手算后，再使用 PipGauge 核对 pip value、position size 与 spread cost。",
+      "product_bridge_type": "existing"
+    },
+    "HR-20260802-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "critical",
+      "publish_deadline": "2026-08-03",
+      "traffic_hook": "8 月 1–2 日可靠报道显示美国财政部与日本协同行动支持日元，把话题从‘疑似日本干预’推进为罕见的美日联合行动；英文社区正在集中追问联合干预、carry trade 与 USD/JPY 波动的账户影响。",
+      "traffic_window": "报道发布后 24–48 小时；更新 HR-20260720-01，不创建第二篇同构文章。Japan MOF 在 8 月 28 日发布覆盖 7 月 30 日后的月度正式数据时，可再做一次事实数字刷新。",
+      "search_intents": [
+        "US Japan yen intervention 2026",
+        "USDJPY 300 pip move",
+        "yen intervention pip value",
+        "USDJPY position size calculator"
+      ],
+      "traffic_angle": "借美日联合行动这一新闻钩子，承接用户此刻搜索的‘100/200/300 pip 到底是多少钱’：以报道窗口的 USD/JPY 157.40 为历史参考，展示 1 lot 约 $6.35/pip、三档 lot 的损益，以及固定 $100 风险对应约 0.15/0.07/0.05 lot；先给可读数字，再在 pip value、position size 和 spread cost 步骤承接 PipGauge，不预测方向。",
+      "calculator_bridge": "Pip Value 复核 USD/JPY 在 157.40 时标准手约 $6.35/pip，P&L 展示 100/200/300 pip，Position Size 按 $100 预算反推仓位，Spread Cost 加上干预时段执行成本边界。",
+      "example_scenario": "$10,000 USD 账户、1% 即 $100 风险；USD/JPY 157.40 历史参考；0.1/0.5/1 lot；100/200/300 pip；理论仓位 0.15/0.07/0.05 lot。",
+      "distribution_order": [
+        "更新 HR-20260720-01 的标题、首段、时态、来源与数字表",
+        "Medium 结果复盘",
+        "X 独立数字线程",
+        "Reddit 原生风险讨论且首轮不放链接"
+      ],
+      "link_placement": "先给联合行动事实、pip value、P&L 与固定风险表；之后在复核输入的步骤链接 PipGauge。Reddit 首轮不放链接。",
+      "expiry_condition": "48 小时内讨论显著降温且无官方补充时转为常青复盘；U.S. Treasury、New York Fed、Japan MOF 更正事实或 8 月 28 日发布正式金额时立即暂停并更新。",
+      "editorial_boundary": "不预测 USD/JPY、联合行动持续性或下一次干预；不把媒体金额估算写成 Japan MOF 最终统计；157.40 只作历史参考；不保证止损成交。",
+      "content_mainline": "将既有 USD/JPY 干预风险稿刷新为美日联合行动结果复盘，并用 157.40 历史参考重算尾部风险。",
+      "body_material": [
+        "Financial Times 与 Reuters 的联合行动报道",
+        "Japan MOF 正式统计发布边界",
+        "157.40 下约 $6.35/pip",
+        "100/200/300 pip 的三档 lot 损益",
+        "$100 固定风险的 0.15/0.07/0.05 lot"
+      ],
+      "product_bridge": "完成可靠事实和手算后，再使用 PipGauge 核对 pip value、P&L、position size 与 spread cost。",
       "product_bridge_type": "existing"
     }
   }
