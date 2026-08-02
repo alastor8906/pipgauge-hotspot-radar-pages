@@ -1,4 +1,15 @@
 {
+  "../../../Users/alastor/Downloads/热点雷达试运行/site-app/node_modules/vinext/dist/shims/layout-segment-context.js": {
+    "file": "assets/layout-segment-context-iATK1V-x.js",
+    "name": "layout-segment-context",
+    "src": "../../../Users/alastor/Downloads/热点雷达试运行/site-app/node_modules/vinext/dist/shims/layout-segment-context.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-XU8gKkFC.js"
+    ]
+  },
   "_framework-XU8gKkFC.js": {
     "file": "assets/framework-XU8gKkFC.js",
     "name": "framework",
@@ -10,19 +21,8 @@
     "file": "assets/rolldown-runtime-S-ySWqyJ.js",
     "name": "rolldown-runtime"
   },
-  "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "assets/layout-segment-context-BRmgGGHe.js",
-    "name": "layout-segment-context",
-    "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_rolldown-runtime-S-ySWqyJ.js",
-      "virtual:vinext-app-browser-entry",
-      "_framework-XU8gKkFC.js"
-    ]
-  },
   "virtual:vinext-app-browser-entry": {
-    "file": "assets/index-CtVXNBql.js",
+    "file": "assets/index-DQ6seppm.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
@@ -31,8 +31,8 @@
       "_framework-XU8gKkFC.js"
     ],
     "dynamicImports": [
-      "node_modules/vinext/dist/shims/layout-segment-context.js",
-      "virtual:vinext-app-browser-entry"
+      "virtual:vinext-app-browser-entry",
+      "../../../Users/alastor/Downloads/热点雷达试运行/site-app/node_modules/vinext/dist/shims/layout-segment-context.js"
     ]
   }
 }
