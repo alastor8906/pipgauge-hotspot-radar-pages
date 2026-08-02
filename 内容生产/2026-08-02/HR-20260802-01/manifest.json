@@ -1,0 +1,18 @@
+{
+  "candidate_id": "HR-20260802-01",
+  "scan_date": "2026-08-02",
+  "primary_site": "PipGauge",
+  "topic": "U.S.–Japan Yen Intervention: Recalculate a 100, 200 or 300-Pip USD/JPY Move",
+  "package_summary": "刷新 HR-20260720-01：把会前和疑似干预时态替换为美日联合行动结果复盘，更新事实、标题和 157.40 参考数字，不创建同构新文章。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "breaking_recap_window",
+  "time_status_label": "联合行动报道后 24–48 小时；发布前复核官方更正",
+  "documents": [
+    {"id":"facts","label":"事实与论点","file":"00-事实与论点.md","platform":"internal","kind":"editorial brief","status_label":"已整理"},
+    {"id":"medium","label":"Medium","file":"01-Medium.md","platform":"medium","kind":"long-form draft","status_label":"待人工审核"},
+    {"id":"reddit","label":"Reddit","file":"02-Reddit.md","platform":"reddit","kind":"native discussion draft","status_label":"待人工审核"},
+    {"id":"x","label":"X","file":"03-X.md","platform":"x","kind":"short thread draft","status_label":"待人工审核"},
+    {"id":"review","label":"审核清单","file":"04-人工审核.md","platform":"internal","kind":"human gate","status_label":"必须完成"}
+  ]
+}
