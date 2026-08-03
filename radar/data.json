@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-08-02T22:05:53+08:00",
-  "latest_scan_date": "2026-08-02",
+  "generated_at": "2026-08-03T22:04:22+08:00",
+  "latest_scan_date": "2026-08-03",
   "available_dates": [
+    "2026-08-03",
     "2026-08-02",
     "2026-08-01",
     "2026-07-31",
@@ -21,8 +22,329 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-08-03",
+      "generated_at": "2026-08-03T22:04:22+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 16,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 0,
+        "observation": 4,
+        "discarded": 1,
+        "total": 5,
+        "selected_average": 0,
+        "all_selected_pass_gate": true,
+        "content_ready": 0,
+        "playbook_ready": 0
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-08-03",
+          "candidate_id": "HR-20260803-04",
+          "status": "observation",
+          "topic": "U.S.-Japan Yen Intervention Follow-up Without New Facts",
+          "primary_site": "PipGauge",
+          "freshness": 22,
+          "traffic_potential": 22,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 6,
+          "total_score": 90,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "P&L",
+            "Position Size",
+            "Spread Cost"
+          ],
+          "reason": "The coordinated-intervention topic was refreshed on August 2 and no new official amount correction or mechanism supports another refresh",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Financial Times",
+                "url": "https://www.ft.com/content/0f9b2fe7-bde4-4f5f-b49e-93ccb5da9ea8",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-01",
+                "freshness_role": "coordinated_intervention_report",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.reuters.com/world/asia-pacific/us-treasury-undertakes-intervention-yen-market-ft-reports-2026-08-01/",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-01",
+                "freshness_role": "independent_cross_confirmation",
+                "reliable": true
+              },
+              {
+                "publisher": "Japan Ministry of Finance",
+                "url": "https://www.mof.go.jp/policy/international_policy/reference/feio/index.html",
+                "source_type": "official_statistics_schedule",
+                "published_at": "2026-08-03",
+                "freshness_role": "official_amount_release_boundary_recheck",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit wallstreetbets",
+                "url": "https://www.reddit.com/r/wallstreetbets/comments/1vd5wjy/japan_to_announce_tokyo_washington_took_joint/",
+                "source_type": "community_heat",
+                "published_at": "2026-08-02",
+                "freshness_role": "continuing_discussion_signal",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "duplicate_without_new_fact",
+              "duplicate_of": [
+                "HR-20260802-01",
+                "HR-20260720-01"
+              ],
+              "reopen_trigger": "Japan MOF publishes the official amount or either government corrects the reported coordination",
+              "rationale": "Yesterday's refresh already captures the mechanism and calculation path; no new fact supports another package"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-03",
+          "candidate_id": "HR-20260803-01",
+          "status": "observation",
+          "topic": "BOJ July Full Outlook Was Already Published on July 31",
+          "primary_site": "PipGauge",
+          "freshness": 22,
+          "traffic_potential": 16,
+          "calculator_fit": 24,
+          "evidence_quality": 15,
+          "actionability": 6,
+          "total_score": 83,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "The official schedule confirms the full outlook was released July 31; there is no August 3 event or new calculation path beyond HR-20260731-01",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Bank of Japan",
+                "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
+                "source_type": "official_schedule",
+                "published_at": "2026-08-03",
+                "freshness_role": "confirms_july_full_text_release_date_and_corrects_prior_assumption",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.reuters.com/world/asia-pacific/boj-keep-rates-steady-deliver-hawkish-signal-price-pressures-mount-2026-07-30/",
+                "source_type": "reliable_news",
+                "published_at": "2026-07-31",
+                "freshness_role": "independent_decision_context",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "duplicate_and_no_august_3_event",
+              "duplicate_of": [
+                "HR-20260731-01",
+                "HR-20260802-03"
+              ],
+              "reopen_trigger": "BOJ releases a new summary opinion correction or number that changes the calculation example",
+              "rationale": "Official schedule shows the full text was already released July 31; no new August 3 fact exists"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-03",
+          "candidate_id": "HR-20260803-02",
+          "status": "observation",
+          "topic": "U.S. July Employment Situation Due August 7",
+          "primary_site": "PipGauge",
+          "freshness": 24,
+          "traffic_potential": 19,
+          "calculator_fit": 22,
+          "evidence_quality": 8,
+          "actionability": 6,
+          "total_score": 79,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Spread Cost",
+            "P&L"
+          ],
+          "reason": "The result remains pending and the pre-event calculation path duplicates existing macro-event packages",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/schedule/2026/08_sched.htm",
+                "source_type": "official_schedule",
+                "published_at": "2026-08-03",
+                "freshness_role": "official_upcoming_release_timing",
+                "reliable": true
+              },
+              {
+                "publisher": "ForexFactory",
+                "url": "https://www.forexfactory.com/calendar",
+                "source_type": "community_calendar",
+                "published_at": "2026-08-03",
+                "freshness_role": "event_interest_check",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "insufficient_independent_reliable_sources_and_duplicate_path",
+              "duplicate_of": [
+                "HR-20260802-02",
+                "HR-20260724-01"
+              ],
+              "reopen_trigger": "August 7 official result or two reliable publishers confirm unusual FX volatility or execution cost",
+              "rationale": "Result is pending and the pre-event risk path is already covered"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-03",
+          "candidate_id": "HR-20260803-03",
+          "status": "observation",
+          "topic": "CME and Prop-Firm Checks Without a New Calculable Rule",
+          "primary_site": "PositionMath",
+          "freshness": 18,
+          "traffic_potential": 15,
+          "calculator_fit": 20,
+          "evidence_quality": 12,
+          "actionability": 5,
+          "total_score": 70,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Position Size",
+            "Portfolio Heat",
+            "Daily Loss Limit",
+            "Trailing Drawdown"
+          ],
+          "reason": "Recent official pages contain no retail-facing account rule change with a distinct calculator-led traffic path",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "CME Group",
+                "url": "https://www.cmegroup.com/notices/clearing/2026/07/26-246.html",
+                "source_type": "official_clearing_notice",
+                "published_at": "2026-07-27",
+                "freshness_role": "recent_parameter_change_recheck",
+                "reliable": true
+              },
+              {
+                "publisher": "Financial Commission",
+                "url": "https://financialcommission.org/2026/07/22/financial-commission-launches-the-first-self-regulatory-framework-for-prop-firms/",
+                "source_type": "official_framework",
+                "published_at": "2026-07-22",
+                "freshness_role": "prop_firm_framework_recheck",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit Daytrading",
+                "url": "https://www.reddit.com/r/Daytrading/comments/1r29otx/prop_firms_for_2026_forex_gold/",
+                "source_type": "community_heat",
+                "published_at": "2026-08-03",
+                "freshness_role": "same_day_generic_prop_firm_demand",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "no_specific_retail_calculation_rule_change",
+              "duplicate_of": [
+                "HR-20260802-04",
+                "HR-20260801-04",
+                "HR-20260801-05"
+              ],
+              "reopen_trigger": "Two reliable publishers confirm a new retail margin drawdown daily-loss or payout rule",
+              "rationale": "Recent pages do not yield a distinct retail-facing calculator question"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-03",
+          "candidate_id": "HR-20260803-05",
+          "status": "discarded",
+          "topic": "Directional FX Stock Commodity Crypto and Central-Bank Predictions",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 23,
+          "calculator_fit": 5,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 60,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Directional forecasts price predictions and signal-like content are excluded"
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-08-03T22:03:10+08:00",
+          "source_count": 5,
+          "note": "核查 BOJ、BLS、Japan MOF、CME 与 Financial Commission"
+        },
+        {
+          "channel": "可靠英文媒体",
+          "status": "complete",
+          "checked_at": "2026-08-03T22:03:10+08:00",
+          "source_count": 2,
+          "note": "复查 Reuters 与 Financial Times 当期报道及索引"
+        },
+        {
+          "channel": "Reddit / ForexFactory",
+          "status": "complete",
+          "checked_at": "2026-08-03T22:03:10+08:00",
+          "source_count": 6,
+          "note": "仅作公开热度、问题措辞与事件时点信号"
+        },
+        {
+          "channel": "X / Quora / BabyPips",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-08-03T22:03:10+08:00",
+          "source_count": 0,
+          "note": "未发现可验证且能改变入选结论的新增信号"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-08-03_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-08-03_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json"
+      }
+    },
+    {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-08-02T22:05:53+08:00",
+      "generated_at": "2026-08-03T22:04:22+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -383,7 +705,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-08-02T22:05:53+08:00",
+      "generated_at": "2026-08-03T22:04:22+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -736,7 +1058,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-08-02T22:05:53+08:00",
+      "generated_at": "2026-08-03T22:04:22+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -1180,7 +1502,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-08-02T22:05:53+08:00",
+      "generated_at": "2026-08-03T22:04:22+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -1689,7 +2011,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-08-02T22:05:53+08:00",
+      "generated_at": "2026-08-03T22:04:22+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -2159,7 +2481,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-08-02T22:05:53+08:00",
+      "generated_at": "2026-08-03T22:04:22+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -2702,7 +3024,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-08-02T22:05:53+08:00",
+      "generated_at": "2026-08-03T22:04:22+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -2974,7 +3296,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-08-02T22:05:53+08:00",
+      "generated_at": "2026-08-03T22:04:22+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -3287,7 +3609,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-08-02T22:05:53+08:00",
+      "generated_at": "2026-08-03T22:04:22+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -3722,7 +4044,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-08-02T22:05:53+08:00",
+      "generated_at": "2026-08-03T22:04:22+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -4236,7 +4558,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-08-02T22:05:53+08:00",
+      "generated_at": "2026-08-03T22:04:22+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -4745,7 +5067,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-08-02T22:05:53+08:00",
+      "generated_at": "2026-08-03T22:04:22+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -5212,7 +5534,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-08-02T22:05:53+08:00",
+      "generated_at": "2026-08-03T22:04:22+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -5625,7 +5947,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-08-02T22:05:53+08:00",
+      "generated_at": "2026-08-03T22:04:22+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -6023,7 +6345,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-08-02T22:05:53+08:00",
+      "generated_at": "2026-08-03T22:04:22+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -6462,10 +6784,10 @@
       }
     }
   ],
-  "scan_date": "2026-08-02",
+  "scan_date": "2026-08-03",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 15,
+    "day": 16,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -6473,28 +6795,28 @@
     "mode": "topic_traffic_playbooks_and_content_drafts"
   },
   "stats": {
-    "selected": 1,
-    "observation": 3,
+    "selected": 0,
+    "observation": 4,
     "discarded": 1,
     "total": 5,
-    "selected_average": 97.0,
+    "selected_average": 0,
     "all_selected_pass_gate": true,
-    "content_ready": 1,
-    "playbook_ready": 1
+    "content_ready": 0,
+    "playbook_ready": 0
   },
   "candidates": [
     {
-      "scan_date": "2026-08-02",
-      "candidate_id": "HR-20260802-01",
-      "status": "selected",
-      "topic": "U.S.-Japan Yen Intervention Recalculate a 100 200 or 300-Pip USDJPY Move",
+      "scan_date": "2026-08-03",
+      "candidate_id": "HR-20260803-04",
+      "status": "observation",
+      "topic": "U.S.-Japan Yen Intervention Follow-up Without New Facts",
       "primary_site": "PipGauge",
-      "freshness": 25,
-      "traffic_potential": 25,
+      "freshness": 22,
+      "traffic_potential": 22,
       "calculator_fit": 25,
-      "evidence_quality": 14,
-      "actionability": 8,
-      "total_score": 97,
+      "evidence_quality": 15,
+      "actionability": 6,
+      "total_score": 90,
       "hard_gate": true,
       "reliable_sources": 3,
       "fresh_signal": true,
@@ -6504,48 +6826,7 @@
         "Position Size",
         "Spread Cost"
       ],
-      "reason": "New reporting of coordinated U.S.-Japan action creates a fresh result-recap hook and a natural USDJPY risk-calculation path; refresh the existing intervention article",
-      "content_status": "review_ready",
-      "content_label": "美日联合干预结果刷新稿待人工审核",
-      "content_url": "../内容生产/2026-08-02/HR-20260802-01/index.html",
-      "content_format": "Medium / Reddit / X",
-      "deadline": "2026-08-03",
-      "traffic_playbook": {
-        "playbook_status": "ready",
-        "execution_mode": "refresh",
-        "urgency": "critical",
-        "publish_deadline": "2026-08-03",
-        "traffic_hook": "8 月 1–2 日可靠报道显示美国财政部与日本协同行动支持日元，把话题从‘疑似日本干预’推进为罕见的美日联合行动；英文社区正在集中追问联合干预、carry trade 与 USD/JPY 波动的账户影响。",
-        "traffic_window": "报道发布后 24–48 小时；更新 HR-20260720-01，不创建第二篇同构文章。Japan MOF 在 8 月 28 日发布覆盖 7 月 30 日后的月度正式数据时，可再做一次事实数字刷新。",
-        "search_intents": [
-          "US Japan yen intervention 2026",
-          "USDJPY 300 pip move",
-          "yen intervention pip value",
-          "USDJPY position size calculator"
-        ],
-        "traffic_angle": "借美日联合行动这一新闻钩子，承接用户此刻搜索的‘100/200/300 pip 到底是多少钱’：以报道窗口的 USD/JPY 157.40 为历史参考，展示 1 lot 约 $6.35/pip、三档 lot 的损益，以及固定 $100 风险对应约 0.15/0.07/0.05 lot；先给可读数字，再在 pip value、position size 和 spread cost 步骤承接 PipGauge，不预测方向。",
-        "calculator_bridge": "Pip Value 复核 USD/JPY 在 157.40 时标准手约 $6.35/pip，P&L 展示 100/200/300 pip，Position Size 按 $100 预算反推仓位，Spread Cost 加上干预时段执行成本边界。",
-        "example_scenario": "$10,000 USD 账户、1% 即 $100 风险；USD/JPY 157.40 历史参考；0.1/0.5/1 lot；100/200/300 pip；理论仓位 0.15/0.07/0.05 lot。",
-        "distribution_order": [
-          "更新 HR-20260720-01 的标题、首段、时态、来源与数字表",
-          "Medium 结果复盘",
-          "X 独立数字线程",
-          "Reddit 原生风险讨论且首轮不放链接"
-        ],
-        "link_placement": "先给联合行动事实、pip value、P&L 与固定风险表；之后在复核输入的步骤链接 PipGauge。Reddit 首轮不放链接。",
-        "expiry_condition": "48 小时内讨论显著降温且无官方补充时转为常青复盘；U.S. Treasury、New York Fed、Japan MOF 更正事实或 8 月 28 日发布正式金额时立即暂停并更新。",
-        "editorial_boundary": "不预测 USD/JPY、联合行动持续性或下一次干预；不把媒体金额估算写成 Japan MOF 最终统计；157.40 只作历史参考；不保证止损成交。",
-        "content_mainline": "将既有 USD/JPY 干预风险稿刷新为美日联合行动结果复盘，并用 157.40 历史参考重算尾部风险。",
-        "body_material": [
-          "Financial Times 与 Reuters 的联合行动报道",
-          "Japan MOF 正式统计发布边界",
-          "157.40 下约 $6.35/pip",
-          "100/200/300 pip 的三档 lot 损益",
-          "$100 固定风险的 0.15/0.07/0.05 lot"
-        ],
-        "product_bridge": "完成可靠事实和手算后，再使用 PipGauge 核对 pip value、P&L、position size 与 spread cost。",
-        "product_bridge_type": "existing"
-      },
+      "reason": "The coordinated-intervention topic was refreshed on August 2 and no new official amount correction or mechanism supports another refresh",
       "scan_audit": {
         "sources": [
           {
@@ -6553,7 +6834,7 @@
             "url": "https://www.ft.com/content/0f9b2fe7-bde4-4f5f-b49e-93ccb5da9ea8",
             "source_type": "reliable_news",
             "published_at": "2026-08-01",
-            "freshness_role": "independent_report_of_us_treasury_execution",
+            "freshness_role": "coordinated_intervention_report",
             "reliable": true
           },
           {
@@ -6561,15 +6842,15 @@
             "url": "https://www.reuters.com/world/asia-pacific/us-treasury-undertakes-intervention-yen-market-ft-reports-2026-08-01/",
             "source_type": "reliable_news",
             "published_at": "2026-08-01",
-            "freshness_role": "cross_confirmation_and_us_treasury_context",
+            "freshness_role": "independent_cross_confirmation",
             "reliable": true
           },
           {
             "publisher": "Japan Ministry of Finance",
             "url": "https://www.mof.go.jp/policy/international_policy/reference/feio/index.html",
             "source_type": "official_statistics_schedule",
-            "published_at": "2026-08-02",
-            "freshness_role": "official_data_boundary_and_release_schedule",
+            "published_at": "2026-08-03",
+            "freshness_role": "official_amount_release_boundary_recheck",
             "reliable": true
           },
           {
@@ -6577,42 +6858,34 @@
             "url": "https://www.reddit.com/r/wallstreetbets/comments/1vd5wjy/japan_to_announce_tokyo_washington_took_joint/",
             "source_type": "community_heat",
             "published_at": "2026-08-02",
-            "freshness_role": "same_day_high_volume_discussion",
-            "reliable": false
-          },
-          {
-            "publisher": "Reddit JapanFinance",
-            "url": "https://www.reddit.com/r/JapanFinance/comments/1vceabv/us_treasury_undertakes_historic_intervention_in/",
-            "source_type": "community_heat",
-            "published_at": "2026-08-01",
-            "freshness_role": "calculation_question_signal",
+            "freshness_role": "continuing_discussion_signal",
             "reliable": false
           }
         ],
         "decision": {
-          "novelty_gate": "pass",
-          "decision_gate": "selected_refresh_with_new_confirmed_mechanism",
+          "novelty_gate": "fail",
+          "decision_gate": "duplicate_without_new_fact",
           "duplicate_of": [
-            "HR-20260720-01",
-            "HR-20260725-03"
+            "HR-20260802-01",
+            "HR-20260720-01"
           ],
-          "reopen_trigger": "Japan MOF publishes the official intervention amount or either government corrects the reported coordination",
-          "rationale": "联合行动是足以改变旧稿时态和风险示例的新增事实；双来源、新鲜度、自然计算桥接与明确窗口均通过"
+          "reopen_trigger": "Japan MOF publishes the official amount or either government corrects the reported coordination",
+          "rationale": "Yesterday's refresh already captures the mechanism and calculation path; no new fact supports another package"
         }
       }
     },
     {
-      "scan_date": "2026-08-02",
-      "candidate_id": "HR-20260802-03",
+      "scan_date": "2026-08-03",
+      "candidate_id": "HR-20260803-01",
       "status": "observation",
-      "topic": "BOJ Full Outlook Text Due August 3",
+      "topic": "BOJ July Full Outlook Was Already Published on July 31",
       "primary_site": "PipGauge",
-      "freshness": 24,
-      "traffic_potential": 17,
+      "freshness": 22,
+      "traffic_potential": 16,
       "calculator_fit": 24,
       "evidence_quality": 15,
       "actionability": 6,
-      "total_score": 86,
+      "total_score": 83,
       "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
@@ -6622,15 +6895,15 @@
         "P&L",
         "Spread Cost"
       ],
-      "reason": "The full text is not yet published and the July 31 decision package already covers the current facts",
+      "reason": "The official schedule confirms the full outlook was released July 31; there is no August 3 event or new calculation path beyond HR-20260731-01",
       "scan_audit": {
         "sources": [
           {
             "publisher": "Bank of Japan",
             "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
             "source_type": "official_schedule",
-            "published_at": "2026-08-02",
-            "freshness_role": "full_outlook_release_timing",
+            "published_at": "2026-08-03",
+            "freshness_role": "confirms_july_full_text_release_date_and_corrects_prior_assumption",
             "reliable": true
           },
           {
@@ -6638,34 +6911,34 @@
             "url": "https://www.reuters.com/world/asia-pacific/boj-keep-rates-steady-deliver-hawkish-signal-price-pressures-mount-2026-07-30/",
             "source_type": "reliable_news",
             "published_at": "2026-07-31",
-            "freshness_role": "independent_result_context",
+            "freshness_role": "independent_decision_context",
             "reliable": true
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "duplicate_without_new_full_text",
+          "decision_gate": "duplicate_and_no_august_3_event",
           "duplicate_of": [
             "HR-20260731-01",
-            "HR-20260801-02"
+            "HR-20260802-03"
           ],
-          "reopen_trigger": "8 月 3 日完整展望文本出现改变计算示例的新增可核验数字",
-          "rationale": "正式正文尚未发布，连续刷新没有新增事实"
+          "reopen_trigger": "BOJ releases a new summary opinion correction or number that changes the calculation example",
+          "rationale": "Official schedule shows the full text was already released July 31; no new August 3 fact exists"
         }
       }
     },
     {
-      "scan_date": "2026-08-02",
-      "candidate_id": "HR-20260802-02",
+      "scan_date": "2026-08-03",
+      "candidate_id": "HR-20260803-02",
       "status": "observation",
       "topic": "U.S. July Employment Situation Due August 7",
       "primary_site": "PipGauge",
       "freshness": 24,
-      "traffic_potential": 18,
+      "traffic_potential": 19,
       "calculator_fit": 22,
       "evidence_quality": 8,
       "actionability": 6,
-      "total_score": 78,
+      "total_score": 79,
       "hard_gate": false,
       "reliable_sources": 1,
       "fresh_signal": true,
@@ -6675,14 +6948,14 @@
         "Spread Cost",
         "P&L"
       ],
-      "reason": "The result is pending and the pre-event calculation path duplicates existing macro-event packages",
+      "reason": "The result remains pending and the pre-event calculation path duplicates existing macro-event packages",
       "scan_audit": {
         "sources": [
           {
             "publisher": "U.S. Bureau of Labor Statistics",
             "url": "https://www.bls.gov/schedule/2026/08_sched.htm",
             "source_type": "official_schedule",
-            "published_at": "2026-08-02",
+            "published_at": "2026-08-03",
             "freshness_role": "official_upcoming_release_timing",
             "reliable": true
           },
@@ -6690,7 +6963,7 @@
             "publisher": "ForexFactory",
             "url": "https://www.forexfactory.com/calendar",
             "source_type": "community_calendar",
-            "published_at": "2026-08-02",
+            "published_at": "2026-08-03",
             "freshness_role": "event_interest_check",
             "reliable": false
           }
@@ -6699,78 +6972,88 @@
           "novelty_gate": "fail",
           "decision_gate": "insufficient_independent_reliable_sources_and_duplicate_path",
           "duplicate_of": [
-            "HR-20260801-01",
+            "HR-20260802-02",
             "HR-20260724-01"
           ],
-          "reopen_trigger": "8 月 7 日正式结果或两个可靠主体确认异常 FX 波幅/执行成本",
-          "rationale": "结果未出且会前风险计算路径同构"
+          "reopen_trigger": "August 7 official result or two reliable publishers confirm unusual FX volatility or execution cost",
+          "rationale": "Result is pending and the pre-event risk path is already covered"
         }
       }
     },
     {
-      "scan_date": "2026-08-02",
-      "candidate_id": "HR-20260802-04",
+      "scan_date": "2026-08-03",
+      "candidate_id": "HR-20260803-03",
       "status": "observation",
-      "topic": "Prop-Firm and CME Futures Discussion Without a Rule Change",
+      "topic": "CME and Prop-Firm Checks Without a New Calculable Rule",
       "primary_site": "PositionMath",
-      "freshness": 20,
-      "traffic_potential": 17,
-      "calculator_fit": 19,
-      "evidence_quality": 8,
+      "freshness": 18,
+      "traffic_potential": 15,
+      "calculator_fit": 20,
+      "evidence_quality": 12,
       "actionability": 5,
-      "total_score": 69,
+      "total_score": 70,
       "hard_gate": false,
-      "reliable_sources": 1,
+      "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
+        "Position Size",
+        "Portfolio Heat",
         "Daily Loss Limit",
-        "Trailing Drawdown",
-        "Position Size"
+        "Trailing Drawdown"
       ],
-      "reason": "Same-day community demand is generic and no second reliable publisher confirms a specific calculable rule change",
+      "reason": "Recent official pages contain no retail-facing account rule change with a distinct calculator-led traffic path",
       "scan_audit": {
         "sources": [
           {
             "publisher": "CME Group",
-            "url": "https://www.cmegroup.com/markets/equities/single-stock-futures.html",
-            "source_type": "official_product_page",
+            "url": "https://www.cmegroup.com/notices/clearing/2026/07/26-246.html",
+            "source_type": "official_clearing_notice",
             "published_at": "2026-07-27",
-            "freshness_role": "product_specification_recheck",
+            "freshness_role": "recent_parameter_change_recheck",
             "reliable": true
           },
           {
-            "publisher": "Reddit proptrading",
-            "url": "https://www.reddit.com/r/proptrading/comments/1vda11i/best_prop_firm_for_trading_es_futures_in_2026/",
+            "publisher": "Financial Commission",
+            "url": "https://financialcommission.org/2026/07/22/financial-commission-launches-the-first-self-regulatory-framework-for-prop-firms/",
+            "source_type": "official_framework",
+            "published_at": "2026-07-22",
+            "freshness_role": "prop_firm_framework_recheck",
+            "reliable": true
+          },
+          {
+            "publisher": "Reddit Daytrading",
+            "url": "https://www.reddit.com/r/Daytrading/comments/1r29otx/prop_firms_for_2026_forex_gold/",
             "source_type": "community_heat",
-            "published_at": "2026-08-02",
-            "freshness_role": "same_day_generic_demand_signal",
+            "published_at": "2026-08-03",
+            "freshness_role": "same_day_generic_prop_firm_demand",
             "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "no_specific_calculable_rule_change",
+          "decision_gate": "no_specific_retail_calculation_rule_change",
           "duplicate_of": [
+            "HR-20260802-04",
             "HR-20260801-04",
             "HR-20260801-05"
           ],
-          "reopen_trigger": "两个可靠主体确认新的账户限制、保证金、drawdown 或可用性规则",
-          "rationale": "公开讨论是泛推荐需求，不足以形成可核验的计算题"
+          "reopen_trigger": "Two reliable publishers confirm a new retail margin drawdown daily-loss or payout rule",
+          "rationale": "Recent pages do not yield a distinct retail-facing calculator question"
         }
       }
     },
     {
-      "scan_date": "2026-08-02",
-      "candidate_id": "HR-20260802-05",
+      "scan_date": "2026-08-03",
+      "candidate_id": "HR-20260803-05",
       "status": "discarded",
-      "topic": "Directional USDJPY FX Stock Commodity and Crypto Predictions",
+      "topic": "Directional FX Stock Commodity Crypto and Central-Bank Predictions",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 24,
+      "traffic_potential": 23,
       "calculator_fit": 5,
       "evidence_quality": 5,
       "actionability": 2,
-      "total_score": 61,
+      "total_score": 60,
       "hard_gate": false,
       "reliable_sources": 0,
       "fresh_signal": true,
@@ -6784,41 +7067,40 @@
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-08-02T22:00:00+08:00",
-      "source_count": 6,
-      "note": "核查 Japan MOF、U.S. Treasury、BOJ、BLS、CME 与 Financial Commission"
+      "checked_at": "2026-08-03T22:03:10+08:00",
+      "source_count": 5,
+      "note": "核查 BOJ、BLS、Japan MOF、CME 与 Financial Commission"
     },
     {
       "channel": "可靠英文媒体",
       "status": "complete",
-      "checked_at": "2026-08-02T22:00:00+08:00",
-      "source_count": 3,
-      "note": "核查 Financial Times、Reuters 与 Axios 的当期报道或索引"
+      "checked_at": "2026-08-03T22:03:10+08:00",
+      "source_count": 2,
+      "note": "复查 Reuters 与 Financial Times 当期报道及索引"
     },
     {
       "channel": "Reddit / ForexFactory",
       "status": "complete",
-      "checked_at": "2026-08-02T22:00:00+08:00",
-      "source_count": 8,
+      "checked_at": "2026-08-03T22:03:10+08:00",
+      "source_count": 6,
       "note": "仅作公开热度、问题措辞与事件时点信号"
     },
     {
       "channel": "X / Quora / BabyPips",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-08-02T22:00:00+08:00",
+      "checked_at": "2026-08-03T22:03:10+08:00",
       "source_count": 0,
       "note": "未发现可验证且能改变入选结论的新增信号"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-08-02_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-08-02_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-08-03_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-08-03_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
-    "traffic_playbooks": "../热点流量打法.json",
-    "content_root": "../内容生产/2026-08-02"
+    "traffic_playbooks": "../热点流量打法.json"
   },
   "radar_model": "v2-content-first",
   "editorial_policy": {
