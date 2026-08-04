@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "scan_date": "2026-08-04",
+  "generated_at": "2026-08-04T22:03:19+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-08-04T22:03:19+08:00",
+      "source_count": 8,
+      "note": "核查 BLS、Federal Reserve、RBA、BOJ、Japan MOF、CME、Financial Commission 与 Census"
+    },
+    {
+      "channel": "可靠英文媒体",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-08-04T22:03:19+08:00",
+      "source_count": 1,
+      "note": "检索 Reuters 当期报道，未发现能建立新计算路径的第二可靠事实源"
+    },
+    {
+      "channel": "Reddit / ForexFactory",
+      "status": "complete",
+      "checked_at": "2026-08-04T22:03:19+08:00",
+      "source_count": 5,
+      "note": "仅作 JOLTS、NFP、FX 与 prop-firm 的公开热度和问题措辞信号"
+    },
+    {
+      "channel": "X / Quora / BabyPips",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-08-04T22:03:19+08:00",
+      "source_count": 0,
+      "note": "未发现可验证且能改变入选结论的新增信号"
+    }
+  ],
+  "candidates": {
+    "HR-20260804-01": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/schedule/news_release/jolts.htm",
+          "source_type": "official_schedule",
+          "published_at": "2026-08-04",
+          "freshness_role": "official_release_timing",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit Forex",
+          "url": "https://www.reddit.com/r/Forex/comments/1velybt/eurusd_finally_did_something_after_all_this_time/",
+          "source_type": "community_heat",
+          "published_at": "2026-08-04",
+          "freshness_role": "same_day_jolts_and_nfp_interest",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "official_result_not_yet_verifiable_and_duplicate_macro_path",
+        "duplicate_of": ["HR-20260803-02", "HR-20260724-01"],
+        "reopen_trigger": "BLS publishes the June result and an independent reliable publisher confirms a distinct FX execution or calculation angle",
+        "rationale": "The release is scheduled but the official current edition still shows May; unverified numbers cannot support a result package"
+      }
+    },
+    "HR-20260804-02": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/schedule/2026/08_sched.htm",
+          "source_type": "official_schedule",
+          "published_at": "2026-08-04",
+          "freshness_role": "official_upcoming_employment_release_timing",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit EconReports",
+          "url": "https://www.reddit.com/r/EconReports/comments/1vf84g7/us_economic_calendar_august_4th_2026/",
+          "source_type": "community_heat",
+          "published_at": "2026-08-04",
+          "freshness_role": "same_day_labor_data_interest",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "insufficient_independent_reliable_sources_and_duplicate_path",
+        "duplicate_of": ["HR-20260803-02", "HR-20260724-01"],
+        "reopen_trigger": "August 7 official result or two reliable publishers confirm unusual FX volatility or execution cost",
+        "rationale": "The result is pending and the pre-event risk path is already covered"
+      }
+    },
+    "HR-20260804-03": {
+      "sources": [
+        {
+          "publisher": "Financial Times",
+          "url": "https://www.ft.com/content/0f9b2fe7-bde4-4f5f-b49e-93ccb5da9ea8",
+          "source_type": "reliable_news",
+          "published_at": "2026-08-01",
+          "freshness_role": "coordinated_intervention_report_tail_window",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/us-treasury-undertakes-intervention-yen-market-ft-reports-2026-08-01/",
+          "source_type": "reliable_news",
+          "published_at": "2026-08-01",
+          "freshness_role": "independent_cross_confirmation",
+          "reliable": true
+        },
+        {
+          "publisher": "Japan Ministry of Finance",
+          "url": "https://www.mof.go.jp/policy/international_policy/reference/feio/index.html",
+          "source_type": "official_statistics_schedule",
+          "published_at": "2026-08-04",
+          "freshness_role": "official_amount_release_boundary_recheck",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "duplicate_without_new_fact",
+        "duplicate_of": ["HR-20260802-01", "HR-20260720-01"],
+        "reopen_trigger": "Japan MOF publishes the official amount or either government corrects the reported coordination",
+        "rationale": "The August 2 refresh already captures the mechanism and calculation path; no new fact supports another package"
+      }
+    },
+    "HR-20260804-04": {
+      "sources": [
+        {
+          "publisher": "CME Group",
+          "url": "https://www.cmegroup.com/notices.html",
+          "source_type": "official_notice_index",
+          "published_at": "2026-08-04",
+          "freshness_role": "current_margin_and_clearing_notice_recheck",
+          "reliable": true
+        },
+        {
+          "publisher": "Financial Commission",
+          "url": "https://financialcommission.org/2026/07/22/financial-commission-launches-the-first-self-regulatory-framework-for-prop-firms/",
+          "source_type": "official_framework",
+          "published_at": "2026-07-22",
+          "freshness_role": "prop_firm_framework_recheck",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit FuturesTrading",
+          "url": "https://www.reddit.com/r/FuturesTrading/comments/1vckcsw/rfuturestradings_monthly_questions_thread_august/",
+          "source_type": "community_heat",
+          "published_at": "2026-08-04",
+          "freshness_role": "generic_margin_and_contract_questions",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "no_specific_retail_calculation_rule_change",
+        "duplicate_of": ["HR-20260803-03", "HR-20260802-04"],
+        "reopen_trigger": "Two reliable publishers confirm a new retail margin drawdown daily-loss or payout rule",
+        "rationale": "Current notices and discussion do not yield a distinct retail-facing calculator question"
+      }
+    }
+  }
+}
