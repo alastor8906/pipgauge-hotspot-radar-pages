@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-08-05T22:03:15+08:00",
-  "latest_scan_date": "2026-08-05",
+  "generated_at": "2026-08-06T22:04:37+08:00",
+  "latest_scan_date": "2026-08-06",
   "available_dates": [
+    "2026-08-06",
     "2026-08-05",
     "2026-08-04",
     "2026-08-03",
@@ -24,8 +25,353 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-08-06",
+      "generated_at": "2026-08-06T22:04:37+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 19,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 0,
+        "observation": 5,
+        "discarded": 1,
+        "total": 6,
+        "selected_average": 0,
+        "all_selected_pass_gate": true,
+        "content_ready": 0,
+        "playbook_ready": 0
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-08-06",
+          "candidate_id": "HR-20260806-04",
+          "status": "observation",
+          "topic": "LucidDaily Makes DLL and Evaluation Drawdown Configurable",
+          "primary_site": "PositionMath",
+          "freshness": 25,
+          "traffic_potential": 16,
+          "calculator_fit": 25,
+          "evidence_quality": 7,
+          "actionability": 8,
+          "total_score": 81,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Daily Loss Limit",
+            "Trailing Drawdown",
+            "Prop Firm Calculator"
+          ],
+          "reason": "The same-day rule has a strong calculator bridge but only one reliable publishing body confirms it",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Lucid Trading",
+                "url": "https://support.lucidtrading.com/en/articles/16033858-luciddaily-customization",
+                "source_type": "official_help_center",
+                "published_at": "2026-08-06",
+                "freshness_role": "same_day_rule_customization",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit DamnPropFirms",
+                "url": "https://www.reddit.com/r/DamnPropFirms/comments/1vgryx2/lucid_trading_just_made_the_daily_loss_limit_dll/",
+                "source_type": "community_heat",
+                "published_at": "2026-08-06",
+                "freshness_role": "same_day_rule_discussion",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass",
+              "decision_gate": "insufficient_independent_reliable_sources",
+              "duplicate_of": [],
+              "reopen_trigger": "A second independent reliable publisher confirms rollout scope and price or account-rule differences",
+              "rationale": "The calculator bridge is strong but only one reliable publisher confirms the rule"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-06",
+          "candidate_id": "HR-20260806-01",
+          "status": "observation",
+          "topic": "U.S. July Employment Situation Due August 7",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 19,
+          "calculator_fit": 22,
+          "evidence_quality": 8,
+          "actionability": 6,
+          "total_score": 80,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Spread Cost",
+            "P&L"
+          ],
+          "reason": "The result remains pending and the pre-event calculation path duplicates existing macro-event packages",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/schedule/2026/08_sched_list.htm",
+                "source_type": "official_schedule",
+                "published_at": "2026-08-06",
+                "freshness_role": "upcoming_employment_release_timing",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit FuturesTrading",
+                "url": "https://www.reddit.com/r/FuturesTrading/comments/1vgjvqg/for_people_who_struggle_with_risk_control/",
+                "source_type": "community_heat",
+                "published_at": "2026-08-05",
+                "freshness_role": "generic_position_sizing_interest",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "insufficient_independent_reliable_sources_and_duplicate_path",
+              "duplicate_of": [
+                "HR-20260805-02",
+                "HR-20260724-01"
+              ],
+              "reopen_trigger": "August 7 official result plus independent reliable reporting of unusual FX execution costs or a distinct calculator question",
+              "rationale": "The result is pending and the pre-event risk path is already covered"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-06",
+          "candidate_id": "HR-20260806-02",
+          "status": "observation",
+          "topic": "U.S. June JOLTS Result Still Fresh but No Distinct Traffic Path",
+          "primary_site": "PipGauge",
+          "freshness": 22,
+          "traffic_potential": 15,
+          "calculator_fit": 22,
+          "evidence_quality": 15,
+          "actionability": 5,
+          "total_score": 79,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Spread Cost",
+            "P&L"
+          ],
+          "reason": "The verified little-changed result has weak trading heat and duplicates existing macro-event calculation paths",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/news.release/jolts.nr0.htm",
+                "source_type": "official_release",
+                "published_at": "2026-08-04",
+                "freshness_role": "official_june_result",
+                "reliable": true
+              },
+              {
+                "publisher": "Associated Press",
+                "url": "https://apnews.com/article/c43fe56386d17f0c3253535aa38802e6",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-04",
+                "freshness_role": "independent_result_confirmation",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "duplicate_without_distinct_traffic_path",
+              "duplicate_of": [
+                "HR-20260805-01",
+                "HR-20260724-01"
+              ],
+              "reopen_trigger": "A reliable market report documents unusual FX execution costs or a distinct calculator question tied to the release",
+              "rationale": "The verified result was little changed and does not create a non-duplicate calculator-led traffic path"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-06",
+          "candidate_id": "HR-20260806-03",
+          "status": "observation",
+          "topic": "U.S.-Japan Yen Intervention Follow-up Still Lacks New Official Facts",
+          "primary_site": "PipGauge",
+          "freshness": 15,
+          "traffic_potential": 17,
+          "calculator_fit": 25,
+          "evidence_quality": 14,
+          "actionability": 5,
+          "total_score": 76,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": false,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Spread Cost",
+            "P&L"
+          ],
+          "reason": "The August 2 refresh already covers the action and no official amount correction or new mechanism supports another refresh",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Japan Ministry of Finance",
+                "url": "https://www.mof.go.jp/english/policy/international_policy/reference/feio/index.html",
+                "source_type": "official_statistics_schedule",
+                "published_at": "2026-08-06",
+                "freshness_role": "official_amount_boundary_recheck",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.reuters.com/world/asia-pacific/us-treasury-undertakes-intervention-yen-market-ft-reports-2026-08-01/",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-01",
+                "freshness_role": "prior_event_confirmation",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "duplicate_without_new_fact",
+              "duplicate_of": [
+                "HR-20260802-01",
+                "HR-20260720-01"
+              ],
+              "reopen_trigger": "Japan MOF publishes the official amount or either government corrects the reported coordination",
+              "rationale": "The August 2 refresh captures the mechanism and no new fact supports another package"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-06",
+          "candidate_id": "HR-20260806-05",
+          "status": "observation",
+          "topic": "CME and Other Prop-Firm Checks Without a New Retail Rule",
+          "primary_site": "PositionMath",
+          "freshness": 17,
+          "traffic_potential": 15,
+          "calculator_fit": 20,
+          "evidence_quality": 12,
+          "actionability": 5,
+          "total_score": 69,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Position Size",
+            "Portfolio Heat",
+            "Daily Loss Limit",
+            "Trailing Drawdown"
+          ],
+          "reason": "Current notices and community questions do not identify another specific calculable retail rule change",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "CME Group",
+                "url": "https://www.cmegroup.com/notices.html",
+                "source_type": "official_notice_index",
+                "published_at": "2026-08-06",
+                "freshness_role": "current_notice_recheck",
+                "reliable": true
+              },
+              {
+                "publisher": "Financial Commission",
+                "url": "https://financialcommission.org/2026/07/22/financial-commission-launches-the-first-self-regulatory-framework-for-prop-firms/",
+                "source_type": "official_framework",
+                "published_at": "2026-07-22",
+                "freshness_role": "prop_firm_framework_recheck",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "no_specific_retail_calculation_rule_change",
+              "duplicate_of": [
+                "HR-20260805-04",
+                "HR-20260804-04"
+              ],
+              "reopen_trigger": "Two reliable publishers confirm a new retail margin drawdown daily-loss or payout rule",
+              "rationale": "Current notices and discussion do not yield a distinct retail-facing calculator question"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-06",
+          "candidate_id": "HR-20260806-06",
+          "status": "discarded",
+          "topic": "Directional FX Stock Commodity Crypto and Central-Bank Predictions",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 23,
+          "calculator_fit": 5,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 60,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Directional forecasts price predictions and signal-like content are excluded"
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-08-06T22:01:00+08:00",
+          "source_count": 9,
+          "note": "核查 BLS、Federal Reserve、Bank of England、Japan MOF、CME、CFTC、FCA、Financial Commission 与交易所入口"
+        },
+        {
+          "channel": "可靠英文媒体",
+          "status": "complete",
+          "checked_at": "2026-08-06T22:01:00+08:00",
+          "source_count": 3,
+          "note": "核查 AP、Reuters 与其他可靠英文报道；未发现能形成新计算路径的事实增量"
+        },
+        {
+          "channel": "Reddit / ForexFactory",
+          "status": "complete",
+          "checked_at": "2026-08-06T22:01:00+08:00",
+          "source_count": 6,
+          "note": "仅作 NFP、FX、仓位控制与 prop-firm 的公开热度和问题措辞信号"
+        },
+        {
+          "channel": "X / Quora / BabyPips",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-08-06T22:01:00+08:00",
+          "source_count": 0,
+          "note": "未发现可验证且能改变入选结论的新增信号"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-08-06_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-08-06_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json"
+      }
+    },
+    {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-08-05T22:03:15+08:00",
+      "generated_at": "2026-08-06T22:04:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -353,7 +699,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-08-05T22:03:15+08:00",
+      "generated_at": "2026-08-06T22:04:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -665,7 +1011,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-08-05T22:03:15+08:00",
+      "generated_at": "2026-08-06T22:04:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -986,7 +1332,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-08-05T22:03:15+08:00",
+      "generated_at": "2026-08-06T22:04:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -1347,7 +1693,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-08-05T22:03:15+08:00",
+      "generated_at": "2026-08-06T22:04:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -1700,7 +2046,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-08-05T22:03:15+08:00",
+      "generated_at": "2026-08-06T22:04:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -2144,7 +2490,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-08-05T22:03:15+08:00",
+      "generated_at": "2026-08-06T22:04:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -2653,7 +2999,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-08-05T22:03:15+08:00",
+      "generated_at": "2026-08-06T22:04:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -3123,7 +3469,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-08-05T22:03:15+08:00",
+      "generated_at": "2026-08-06T22:04:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -3666,7 +4012,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-08-05T22:03:15+08:00",
+      "generated_at": "2026-08-06T22:04:37+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -3938,7 +4284,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-08-05T22:03:15+08:00",
+      "generated_at": "2026-08-06T22:04:37+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -4251,7 +4597,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-08-05T22:03:15+08:00",
+      "generated_at": "2026-08-06T22:04:37+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -4686,7 +5032,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-08-05T22:03:15+08:00",
+      "generated_at": "2026-08-06T22:04:37+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -5200,7 +5546,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-08-05T22:03:15+08:00",
+      "generated_at": "2026-08-06T22:04:37+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -5709,7 +6055,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-08-05T22:03:15+08:00",
+      "generated_at": "2026-08-06T22:04:37+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -6176,7 +6522,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-08-05T22:03:15+08:00",
+      "generated_at": "2026-08-06T22:04:37+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -6589,7 +6935,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-08-05T22:03:15+08:00",
+      "generated_at": "2026-08-06T22:04:37+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -6987,7 +7333,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-08-05T22:03:15+08:00",
+      "generated_at": "2026-08-06T22:04:37+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -7426,10 +7772,10 @@
       }
     }
   ],
-  "scan_date": "2026-08-05",
+  "scan_date": "2026-08-06",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 18,
+    "day": 19,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -7438,9 +7784,9 @@
   },
   "stats": {
     "selected": 0,
-    "observation": 4,
+    "observation": 5,
     "discarded": 1,
-    "total": 5,
+    "total": 6,
     "selected_average": 0,
     "all_selected_pass_gate": true,
     "content_ready": 0,
@@ -7448,19 +7794,68 @@
   },
   "candidates": [
     {
-      "scan_date": "2026-08-05",
-      "candidate_id": "HR-20260805-01",
+      "scan_date": "2026-08-06",
+      "candidate_id": "HR-20260806-04",
       "status": "observation",
-      "topic": "U.S. June JOLTS Result Verified but No Distinct Calculator Traffic Path",
+      "topic": "LucidDaily Makes DLL and Evaluation Drawdown Configurable",
+      "primary_site": "PositionMath",
+      "freshness": 25,
+      "traffic_potential": 16,
+      "calculator_fit": 25,
+      "evidence_quality": 7,
+      "actionability": 8,
+      "total_score": 81,
+      "hard_gate": false,
+      "reliable_sources": 1,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Daily Loss Limit",
+        "Trailing Drawdown",
+        "Prop Firm Calculator"
+      ],
+      "reason": "The same-day rule has a strong calculator bridge but only one reliable publishing body confirms it",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "Lucid Trading",
+            "url": "https://support.lucidtrading.com/en/articles/16033858-luciddaily-customization",
+            "source_type": "official_help_center",
+            "published_at": "2026-08-06",
+            "freshness_role": "same_day_rule_customization",
+            "reliable": true
+          },
+          {
+            "publisher": "Reddit DamnPropFirms",
+            "url": "https://www.reddit.com/r/DamnPropFirms/comments/1vgryx2/lucid_trading_just_made_the_daily_loss_limit_dll/",
+            "source_type": "community_heat",
+            "published_at": "2026-08-06",
+            "freshness_role": "same_day_rule_discussion",
+            "reliable": false
+          }
+        ],
+        "decision": {
+          "novelty_gate": "pass",
+          "decision_gate": "insufficient_independent_reliable_sources",
+          "duplicate_of": [],
+          "reopen_trigger": "A second independent reliable publisher confirms rollout scope and price or account-rule differences",
+          "rationale": "The calculator bridge is strong but only one reliable publisher confirms the rule"
+        }
+      }
+    },
+    {
+      "scan_date": "2026-08-06",
+      "candidate_id": "HR-20260806-01",
+      "status": "observation",
+      "topic": "U.S. July Employment Situation Due August 7",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 17,
+      "traffic_potential": 19,
       "calculator_fit": 22,
-      "evidence_quality": 15,
-      "actionability": 5,
-      "total_score": 84,
-      "hard_gate": true,
-      "reliable_sources": 3,
+      "evidence_quality": 8,
+      "actionability": 6,
+      "total_score": 80,
+      "hard_gate": false,
+      "reliable_sources": 1,
       "fresh_signal": true,
       "calculator_mapping": [
         "Pip Value",
@@ -7468,7 +7863,60 @@
         "Spread Cost",
         "P&L"
       ],
-      "reason": "BLS AP and Axios verify the result but little-changed data weak trading heat and a duplicate macro-event path block selection",
+      "reason": "The result remains pending and the pre-event calculation path duplicates existing macro-event packages",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "U.S. Bureau of Labor Statistics",
+            "url": "https://www.bls.gov/schedule/2026/08_sched_list.htm",
+            "source_type": "official_schedule",
+            "published_at": "2026-08-06",
+            "freshness_role": "upcoming_employment_release_timing",
+            "reliable": true
+          },
+          {
+            "publisher": "Reddit FuturesTrading",
+            "url": "https://www.reddit.com/r/FuturesTrading/comments/1vgjvqg/for_people_who_struggle_with_risk_control/",
+            "source_type": "community_heat",
+            "published_at": "2026-08-05",
+            "freshness_role": "generic_position_sizing_interest",
+            "reliable": false
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "insufficient_independent_reliable_sources_and_duplicate_path",
+          "duplicate_of": [
+            "HR-20260805-02",
+            "HR-20260724-01"
+          ],
+          "reopen_trigger": "August 7 official result plus independent reliable reporting of unusual FX execution costs or a distinct calculator question",
+          "rationale": "The result is pending and the pre-event risk path is already covered"
+        }
+      }
+    },
+    {
+      "scan_date": "2026-08-06",
+      "candidate_id": "HR-20260806-02",
+      "status": "observation",
+      "topic": "U.S. June JOLTS Result Still Fresh but No Distinct Traffic Path",
+      "primary_site": "PipGauge",
+      "freshness": 22,
+      "traffic_potential": 15,
+      "calculator_fit": 22,
+      "evidence_quality": 15,
+      "actionability": 5,
+      "total_score": 79,
+      "hard_gate": true,
+      "reliable_sources": 2,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Pip Value",
+        "Position Size",
+        "Spread Cost",
+        "P&L"
+      ],
+      "reason": "The verified little-changed result has weak trading heat and duplicates existing macro-event calculation paths",
       "scan_audit": {
         "sources": [
           {
@@ -7486,66 +7934,50 @@
             "published_at": "2026-08-04",
             "freshness_role": "independent_result_confirmation",
             "reliable": true
-          },
-          {
-            "publisher": "Axios",
-            "url": "https://www.axios.com/2026/08/04/jobs-hiring-ai-june",
-            "source_type": "reliable_news",
-            "published_at": "2026-08-04",
-            "freshness_role": "independent_result_and_context",
-            "reliable": true
-          },
-          {
-            "publisher": "Reddit Forex",
-            "url": "https://www.reddit.com/r/Forex/comments/1velybt/eurusd_finally_did_something_after_all_this_time/",
-            "source_type": "community_heat",
-            "published_at": "2026-08-04",
-            "freshness_role": "jolts_and_nfp_trader_interest",
-            "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
           "decision_gate": "duplicate_without_distinct_traffic_path",
           "duplicate_of": [
-            "HR-20260804-01",
+            "HR-20260805-01",
             "HR-20260724-01"
           ],
           "reopen_trigger": "A reliable market report documents unusual FX execution costs or a distinct calculator question tied to the release",
-          "rationale": "The result is verified but little changed and does not create a non-duplicate calculator-led traffic path"
+          "rationale": "The verified result was little changed and does not create a non-duplicate calculator-led traffic path"
         }
       }
     },
     {
-      "scan_date": "2026-08-05",
-      "candidate_id": "HR-20260805-03",
+      "scan_date": "2026-08-06",
+      "candidate_id": "HR-20260806-03",
       "status": "observation",
       "topic": "U.S.-Japan Yen Intervention Follow-up Still Lacks New Official Facts",
       "primary_site": "PipGauge",
-      "freshness": 18,
-      "traffic_potential": 18,
+      "freshness": 15,
+      "traffic_potential": 17,
       "calculator_fit": 25,
-      "evidence_quality": 15,
+      "evidence_quality": 14,
       "actionability": 5,
-      "total_score": 81,
+      "total_score": 76,
       "hard_gate": true,
-      "reliable_sources": 3,
-      "fresh_signal": true,
+      "reliable_sources": 2,
+      "fresh_signal": false,
       "calculator_mapping": [
         "Pip Value",
-        "P&L",
         "Position Size",
-        "Spread Cost"
+        "Spread Cost",
+        "P&L"
       ],
       "reason": "The August 2 refresh already covers the action and no official amount correction or new mechanism supports another refresh",
       "scan_audit": {
         "sources": [
           {
-            "publisher": "Financial Times",
-            "url": "https://www.ft.com/content/0f9b2fe7-bde4-4f5f-b49e-93ccb5da9ea8",
-            "source_type": "reliable_news",
-            "published_at": "2026-08-01",
-            "freshness_role": "intervention_report_tail_window",
+            "publisher": "Japan Ministry of Finance",
+            "url": "https://www.mof.go.jp/english/policy/international_policy/reference/feio/index.html",
+            "source_type": "official_statistics_schedule",
+            "published_at": "2026-08-06",
+            "freshness_role": "official_amount_boundary_recheck",
             "reliable": true
           },
           {
@@ -7553,15 +7985,7 @@
             "url": "https://www.reuters.com/world/asia-pacific/us-treasury-undertakes-intervention-yen-market-ft-reports-2026-08-01/",
             "source_type": "reliable_news",
             "published_at": "2026-08-01",
-            "freshness_role": "independent_cross_confirmation",
-            "reliable": true
-          },
-          {
-            "publisher": "Japan Ministry of Finance",
-            "url": "https://www.mof.go.jp/english/policy/international_policy/reference/feio/index.html",
-            "source_type": "official_statistics_schedule",
-            "published_at": "2026-08-05",
-            "freshness_role": "official_amount_boundary_recheck",
+            "freshness_role": "prior_event_confirmation",
             "reliable": true
           }
         ],
@@ -7578,63 +8002,10 @@
       }
     },
     {
-      "scan_date": "2026-08-05",
-      "candidate_id": "HR-20260805-02",
+      "scan_date": "2026-08-06",
+      "candidate_id": "HR-20260806-05",
       "status": "observation",
-      "topic": "U.S. July Employment Situation Due August 7",
-      "primary_site": "PipGauge",
-      "freshness": 24,
-      "traffic_potential": 19,
-      "calculator_fit": 22,
-      "evidence_quality": 8,
-      "actionability": 6,
-      "total_score": 79,
-      "hard_gate": false,
-      "reliable_sources": 1,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Pip Value",
-        "Position Size",
-        "Spread Cost",
-        "P&L"
-      ],
-      "reason": "The result remains pending and the pre-event calculation path duplicates existing macro-event packages",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "U.S. Bureau of Labor Statistics",
-            "url": "https://www.bls.gov/schedule/2026/08_sched.htm",
-            "source_type": "official_schedule",
-            "published_at": "2026-08-05",
-            "freshness_role": "upcoming_employment_release_timing",
-            "reliable": true
-          },
-          {
-            "publisher": "Reddit Forex",
-            "url": "https://www.reddit.com/r/Forex/comments/1velybt/eurusd_finally_did_something_after_all_this_time/",
-            "source_type": "community_heat",
-            "published_at": "2026-08-05",
-            "freshness_role": "nfp_interest",
-            "reliable": false
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "insufficient_independent_reliable_sources_and_duplicate_path",
-          "duplicate_of": [
-            "HR-20260804-02",
-            "HR-20260724-01"
-          ],
-          "reopen_trigger": "August 7 official result plus independent reliable reporting of a distinct FX execution or calculation angle",
-          "rationale": "The result is pending and the pre-event risk path is already covered"
-        }
-      }
-    },
-    {
-      "scan_date": "2026-08-05",
-      "candidate_id": "HR-20260805-04",
-      "status": "observation",
-      "topic": "CME and Prop-Firm Checks Without a New Retail Rule",
+      "topic": "CME and Other Prop-Firm Checks Without a New Retail Rule",
       "primary_site": "PositionMath",
       "freshness": 17,
       "traffic_potential": 15,
@@ -7651,14 +8022,14 @@
         "Daily Loss Limit",
         "Trailing Drawdown"
       ],
-      "reason": "Current notices and community questions do not identify a specific calculable retail rule change",
+      "reason": "Current notices and community questions do not identify another specific calculable retail rule change",
       "scan_audit": {
         "sources": [
           {
             "publisher": "CME Group",
             "url": "https://www.cmegroup.com/notices.html",
             "source_type": "official_notice_index",
-            "published_at": "2026-08-05",
+            "published_at": "2026-08-06",
             "freshness_role": "current_notice_recheck",
             "reliable": true
           },
@@ -7669,22 +8040,14 @@
             "published_at": "2026-07-22",
             "freshness_role": "prop_firm_framework_recheck",
             "reliable": true
-          },
-          {
-            "publisher": "Reddit PropFirm",
-            "url": "https://www.reddit.com/r/propfirm/comments/1u23ev3/funding_pips_permanently_banned_me_for_violating/",
-            "source_type": "community_heat",
-            "published_at": "2026-08-05",
-            "freshness_role": "generic_rule_dispute",
-            "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
           "decision_gate": "no_specific_retail_calculation_rule_change",
           "duplicate_of": [
-            "HR-20260804-04",
-            "HR-20260803-03"
+            "HR-20260805-04",
+            "HR-20260804-04"
           ],
           "reopen_trigger": "Two reliable publishers confirm a new retail margin drawdown daily-loss or payout rule",
           "rationale": "Current notices and discussion do not yield a distinct retail-facing calculator question"
@@ -7692,8 +8055,8 @@
       }
     },
     {
-      "scan_date": "2026-08-05",
-      "candidate_id": "HR-20260805-05",
+      "scan_date": "2026-08-06",
+      "candidate_id": "HR-20260806-06",
       "status": "discarded",
       "topic": "Directional FX Stock Commodity Crypto and Central-Bank Predictions",
       "primary_site": "PipGauge",
@@ -7716,36 +8079,36 @@
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-08-05T22:02:00+08:00",
+      "checked_at": "2026-08-06T22:01:00+08:00",
       "source_count": 9,
       "note": "核查 BLS、Federal Reserve、Bank of England、Japan MOF、CME、CFTC、FCA、Financial Commission 与交易所入口"
     },
     {
       "channel": "可靠英文媒体",
       "status": "complete",
-      "checked_at": "2026-08-05T22:02:00+08:00",
+      "checked_at": "2026-08-06T22:01:00+08:00",
       "source_count": 3,
-      "note": "核查 AP、Axios 与 Reuters 当期报道；JOLTS 有独立确认但无新增计算路径"
+      "note": "核查 AP、Reuters 与其他可靠英文报道；未发现能形成新计算路径的事实增量"
     },
     {
       "channel": "Reddit / ForexFactory",
       "status": "complete",
-      "checked_at": "2026-08-05T22:02:00+08:00",
+      "checked_at": "2026-08-06T22:01:00+08:00",
       "source_count": 6,
-      "note": "仅作 JOLTS、NFP、FX 与 prop-firm 的公开热度和问题措辞信号"
+      "note": "仅作 NFP、FX、仓位控制与 prop-firm 的公开热度和问题措辞信号"
     },
     {
       "channel": "X / Quora / BabyPips",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-08-05T22:02:00+08:00",
+      "checked_at": "2026-08-06T22:01:00+08:00",
       "source_count": 0,
       "note": "未发现可验证且能改变入选结论的新增信号"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-08-05_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-08-05_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-08-06_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-08-06_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
