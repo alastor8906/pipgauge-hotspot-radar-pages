@@ -1,6 +1,6 @@
 {
   "data_version": 3,
-  "generated_at": "2026-08-10T12:17:33+08:00",
+  "generated_at": "2026-08-10T22:04:18+08:00",
   "latest_scan_date": "2026-08-10",
   "available_dates": [
     "2026-08-10",
@@ -30,7 +30,7 @@
   "periods": [
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -374,30 +374,30 @@
         {
           "channel": "官方与一手来源",
           "status": "complete",
-          "checked_at": "2026-08-10T12:30:00+08:00",
+          "checked_at": "2026-08-10T22:05:00+08:00",
           "source_count": 10,
-          "note": "核查 BLS 就业、CPI/PPI、监管、prop-firm 与 broker 入口"
+          "note": "晚间复核 BLS 就业、CPI/PPI、监管、prop-firm 与 broker 入口；无结构性新增"
         },
         {
           "channel": "可靠英文媒体",
           "status": "complete",
-          "checked_at": "2026-08-10T12:30:00+08:00",
+          "checked_at": "2026-08-10T22:05:00+08:00",
           "source_count": 3,
-          "note": "AP 与 Axios 交叉确认就业结果和当前市场背景"
+          "note": "AP 与 Axios 继续交叉确认就业结果和当前市场背景"
         },
         {
           "channel": "Reddit / ForexFactory",
           "status": "complete",
-          "checked_at": "2026-08-10T12:30:00+08:00",
+          "checked_at": "2026-08-10T22:05:00+08:00",
           "source_count": 8,
-          "note": "公开讨论只用于确认就业、CPI 与风险计算需求"
+          "note": "晚间公开讨论仍只确认就业、CPI 与风险计算需求"
         },
         {
           "channel": "X / Quora / BabyPips",
           "status": "checked_no_material_signal",
-          "checked_at": "2026-08-10T12:30:00+08:00",
+          "checked_at": "2026-08-10T22:05:00+08:00",
           "source_count": 1,
-          "note": "没有改变正式结论的新增可验证信号"
+          "note": "晚间没有改变正式结论的新增可验证信号"
         }
       ],
       "audit_status": "audited",
@@ -413,7 +413,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -754,7 +754,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -1129,7 +1129,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -1517,7 +1517,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -1862,7 +1862,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -2190,7 +2190,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -2502,7 +2502,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -2823,7 +2823,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -3184,7 +3184,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -3537,7 +3537,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -3981,7 +3981,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -4490,7 +4490,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -4960,7 +4960,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -5503,7 +5503,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -5775,7 +5775,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -6088,7 +6088,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -6523,7 +6523,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -7037,7 +7037,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -7546,7 +7546,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -8013,7 +8013,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -8426,7 +8426,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -8824,7 +8824,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-08-10T12:17:33+08:00",
+      "generated_at": "2026-08-10T22:04:18+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -9607,30 +9607,30 @@
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-08-10T12:30:00+08:00",
+      "checked_at": "2026-08-10T22:05:00+08:00",
       "source_count": 10,
-      "note": "核查 BLS 就业、CPI/PPI、监管、prop-firm 与 broker 入口"
+      "note": "晚间复核 BLS 就业、CPI/PPI、监管、prop-firm 与 broker 入口；无结构性新增"
     },
     {
       "channel": "可靠英文媒体",
       "status": "complete",
-      "checked_at": "2026-08-10T12:30:00+08:00",
+      "checked_at": "2026-08-10T22:05:00+08:00",
       "source_count": 3,
-      "note": "AP 与 Axios 交叉确认就业结果和当前市场背景"
+      "note": "AP 与 Axios 继续交叉确认就业结果和当前市场背景"
     },
     {
       "channel": "Reddit / ForexFactory",
       "status": "complete",
-      "checked_at": "2026-08-10T12:30:00+08:00",
+      "checked_at": "2026-08-10T22:05:00+08:00",
       "source_count": 8,
-      "note": "公开讨论只用于确认就业、CPI 与风险计算需求"
+      "note": "晚间公开讨论仍只确认就业、CPI 与风险计算需求"
     },
     {
       "channel": "X / Quora / BabyPips",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-08-10T12:30:00+08:00",
+      "checked_at": "2026-08-10T22:05:00+08:00",
       "source_count": 1,
-      "note": "没有改变正式结论的新增可验证信号"
+      "note": "晚间没有改变正式结论的新增可验证信号"
     }
   ],
   "audit_status": "audited",
