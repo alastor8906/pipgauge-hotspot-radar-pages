@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-09T22:03:00+08:00",
+  "updated_at": "2026-08-10T12:30:00+08:00",
   "items": {
+    "HR-20260810-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-08-11T23:00:00-04:00",
+      "traffic_hook": "The July jobs report showed payrolls down 23,000, unemployment at 4.1%, and May-June revisions totaling minus 103,000, creating a short explanation window before CPI.",
+      "traffic_window": "Refresh immediately and retire the independent jobs-report framing when July CPI publishes on August 12 at 08:30 ET.",
+      "search_intents": ["July 2026 jobs report -23000","why unemployment fell when payrolls fell","NFP -23K forex risk","103000 payroll revisions"],
+      "traffic_angle": "Lead with the verified -23K, 4.1% and -103K result puzzle, then answer how a $50 risk budget changes lot size across 25, 50 and 100 pip stops; PipGauge verifies the arithmetic after the explanation.",
+      "calculator_bridge": "Pip Value and Position Size verify the fixed-risk table; Spread Cost is an explicitly hypothetical stress test, not reported market execution data.",
+      "example_scenario": "$10,000 USD account, 0.5% or $50 maximum planned loss, EUR/USD at approximately $10 per pip per standard lot; compare 25/50/100 pip stops and clearly labeled hypothetical costs.",
+      "distribution_order": ["refresh existing site article HR-20260730-02","Medium review draft","Reddit native no-link discussion","X standalone thread"],
+      "link_placement": "Finish the risk table and caveats before one calculator link; Reddit first version contains no link and X main thread stands alone.",
+      "expiry_condition": "July CPI publishes on August 12 or a new official employment revision materially changes the figures.",
+      "editorial_boundary": "Do not predict the dollar, Fed policy or market direction; distinguish payrolls from the unemployment rate and label all spread/slippage values as hypothetical.",
+      "refresh_target": "HR-20260730-02",
+      "refresh_signals": {"fact_delta": true, "search_delta": true, "example_delta": true, "window_delta": true},
+      "content_mainline": "Explain how payrolls can fall while unemployment also falls, then recalculate fixed dollar risk without turning the result into a trade call.",
+      "body_material": "BLS -23K payrolls, 4.1% unemployment, -103K revisions, and a $50-risk 25/50/100-pip table.",
+      "product_bridge": "Use PipGauge only after the independent explanation to verify pip value, position size and hypothetical spread cost.",
+      "product_bridge_type": "existing"
+    },
     "HR-20260719-01": {
       "playbook_status": "ready",
       "execution_mode": "new",
