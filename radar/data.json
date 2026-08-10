@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-08-09T22:05:16+08:00",
-  "latest_scan_date": "2026-08-09",
+  "generated_at": "2026-08-10T12:17:33+08:00",
+  "latest_scan_date": "2026-08-10",
   "available_dates": [
+    "2026-08-10",
     "2026-08-09",
     "2026-08-08",
     "2026-08-07",
@@ -28,8 +29,391 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-08-10",
+      "generated_at": "2026-08-10T12:17:33+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 23,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 1,
+        "observation": 3,
+        "discarded": 2,
+        "total": 6,
+        "selected_average": 96.0,
+        "all_selected_pass_gate": true,
+        "content_ready": 1,
+        "playbook_ready": 1
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-08-10",
+          "candidate_id": "HR-20260810-01",
+          "status": "selected",
+          "topic": "U.S. Payrolls Fell 23000 Recalculate Dollar Risk Around the July Jobs Surprise",
+          "primary_site": "PipGauge",
+          "freshness": 23,
+          "traffic_potential": 25,
+          "calculator_fit": 24,
+          "evidence_quality": 15,
+          "actionability": 9,
+          "total_score": 96,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Spread Cost",
+            "P&L"
+          ],
+          "reason": "BLS AP and Axios verify the result; all four refresh signals justify updating HR-20260730-02 without requiring measured execution data",
+          "content_status": "review_ready",
+          "content_label": "NFP 结果风险表刷新稿待人工审核",
+          "content_url": "../内容生产/2026-08-10/HR-20260810-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-08-11",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "refresh",
+            "urgency": "high",
+            "publish_deadline": "2026-08-11T23:00:00-04:00",
+            "traffic_hook": "The July jobs report showed payrolls down 23,000, unemployment at 4.1%, and May-June revisions totaling minus 103,000, creating a short explanation window before CPI.",
+            "traffic_window": "Refresh immediately and retire the independent jobs-report framing when July CPI publishes on August 12 at 08:30 ET.",
+            "search_intents": [
+              "July 2026 jobs report -23000",
+              "why unemployment fell when payrolls fell",
+              "NFP -23K forex risk",
+              "103000 payroll revisions"
+            ],
+            "traffic_angle": "Lead with the verified -23K, 4.1% and -103K result puzzle, then answer how a $50 risk budget changes lot size across 25, 50 and 100 pip stops; PipGauge verifies the arithmetic after the explanation.",
+            "calculator_bridge": "Pip Value and Position Size verify the fixed-risk table; Spread Cost is an explicitly hypothetical stress test, not reported market execution data.",
+            "example_scenario": "$10,000 USD account, 0.5% or $50 maximum planned loss, EUR/USD at approximately $10 per pip per standard lot; compare 25/50/100 pip stops and clearly labeled hypothetical costs.",
+            "distribution_order": [
+              "refresh existing site article HR-20260730-02",
+              "Medium review draft",
+              "Reddit native no-link discussion",
+              "X standalone thread"
+            ],
+            "link_placement": "Finish the risk table and caveats before one calculator link; Reddit first version contains no link and X main thread stands alone.",
+            "expiry_condition": "July CPI publishes on August 12 or a new official employment revision materially changes the figures.",
+            "editorial_boundary": "Do not predict the dollar, Fed policy or market direction; distinguish payrolls from the unemployment rate and label all spread/slippage values as hypothetical.",
+            "refresh_target": "HR-20260730-02",
+            "refresh_signals": {
+              "fact_delta": true,
+              "search_delta": true,
+              "example_delta": true,
+              "window_delta": true
+            },
+            "content_mainline": "Explain how payrolls can fall while unemployment also falls, then recalculate fixed dollar risk without turning the result into a trade call.",
+            "body_material": "BLS -23K payrolls, 4.1% unemployment, -103K revisions, and a $50-risk 25/50/100-pip table.",
+            "product_bridge": "Use PipGauge only after the independent explanation to verify pip value, position size and hypothetical spread cost.",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+                "source_type": "official_release",
+                "published_at": "2026-08-07",
+                "freshness_role": "official_july_result_and_revisions",
+                "reliable": true
+              },
+              {
+                "publisher": "Associated Press",
+                "url": "https://apnews.com/article/9636095906bbb689a1f612bce9a07343",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-07",
+                "freshness_role": "independent_result_and_market_context",
+                "reliable": true
+              },
+              {
+                "publisher": "Axios",
+                "url": "https://www.axios.com/2026/08/07/bls-jobs-report-rates-july",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-07",
+                "freshness_role": "independent_result_and_revision_context",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass",
+              "decision_gate": "selected_refresh_four_signals",
+              "duplicate_of": [
+                "HR-20260730-02"
+              ],
+              "refresh_target": "HR-20260730-02",
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": true,
+                "window_delta": true
+              },
+              "reopen_trigger": "Triggered by the official -23K result, 4.1% unemployment, -103K revisions and post-result search window",
+              "rationale": "All four refresh signals justify updating the existing dollar macro-risk article; measured execution data is not required because the claim is not about actual trading costs"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-10",
+          "candidate_id": "HR-20260810-02",
+          "status": "observation",
+          "topic": "July CPI on August 12 Has Only a New Window Before the Result",
+          "primary_site": "PipGauge",
+          "freshness": 20,
+          "traffic_potential": 22,
+          "calculator_fit": 21,
+          "evidence_quality": 15,
+          "actionability": 6,
+          "total_score": 84,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L"
+          ],
+          "reason": "The forecast is not an actual result; only window_delta is true",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/cpi/home.htm",
+                "source_type": "official_schedule",
+                "published_at": "2026-08-10",
+                "freshness_role": "august_12_release_window",
+                "reliable": true
+              },
+              {
+                "publisher": "Associated Press",
+                "url": "https://apnews.com/article/1cf6047f812b3e1f151781f5722d97b7",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-07",
+                "freshness_role": "current_week_attention",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "only_one_refresh_signal",
+              "duplicate_of": [
+                "HR-20260730-02"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "BLS publishes July CPI and a reliable independent source confirms the result",
+              "rationale": "The forecast is not an actual result; only the release window has changed"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-10",
+          "candidate_id": "HR-20260810-03",
+          "status": "observation",
+          "topic": "July PPI on August 13 Needs a Distinct Result Before Refresh",
+          "primary_site": "PipGauge",
+          "freshness": 19,
+          "traffic_potential": 18,
+          "calculator_fit": 20,
+          "evidence_quality": 15,
+          "actionability": 5,
+          "total_score": 77,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L"
+          ],
+          "reason": "Only window_delta is true and the current path overlaps CPI",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/ppi/",
+                "source_type": "official_schedule",
+                "published_at": "2026-08-10",
+                "freshness_role": "august_13_release_window",
+                "reliable": true
+              },
+              {
+                "publisher": "Associated Press",
+                "url": "https://apnews.com/article/1cf6047f812b3e1f151781f5722d97b7",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-07",
+                "freshness_role": "current_week_attention",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "only_one_refresh_signal",
+              "duplicate_of": [
+                "HR-20260810-02"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "BLS publishes July PPI and the result creates a distinct CPI/PPI comparison question",
+              "rationale": "Only the release window has changed"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-10",
+          "candidate_id": "HR-20260810-04",
+          "status": "observation",
+          "topic": "FundedNext FNL002 Needs a Stable Dated Official Rule Page",
+          "primary_site": "PositionMath",
+          "freshness": 18,
+          "traffic_potential": 20,
+          "calculator_fit": 24,
+          "evidence_quality": 7,
+          "actionability": 7,
+          "total_score": 76,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Daily Loss Limit",
+            "Trailing Drawdown",
+            "Prop Firm Calculator"
+          ],
+          "reason": "Four deltas cannot override the missing stable dated/versioned official fact page",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "FundedNext",
+                "url": "https://www.reddit.com/r/fundednext/comments/1vf6o9x/fnl002_12_mll_3day_payout_2step_cfds_25k/",
+                "source_type": "official_social_release",
+                "published_at": "2026-08-04",
+                "freshness_role": "recent_product_claims",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit fundednext",
+                "url": "https://www.reddit.com/r/fundednext/comments/1vf6o9x/fnl002_12_mll_3day_payout_2step_cfds_25k/",
+                "source_type": "community_heat",
+                "published_at": "2026-08-04",
+                "freshness_role": "product_interest",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass",
+              "decision_gate": "official_fact_page_not_dated_or_versioned",
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": true,
+                "window_delta": true
+              },
+              "reopen_trigger": "A stable dated/versioned official FNL:002 rules page becomes public",
+              "rationale": "Refresh signals cannot override the missing stable official fact source"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-10",
+          "candidate_id": "HR-20260810-05",
+          "status": "discarded",
+          "topic": "Directional CPI NFP Dollar Gold Stock and Crypto Predictions",
+          "primary_site": "PipGauge",
+          "freshness": 20,
+          "traffic_potential": 27,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 57,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Directional forecasts and signal-like content are excluded"
+        },
+        {
+          "scan_date": "2026-08-10",
+          "candidate_id": "HR-20260810-06",
+          "status": "discarded",
+          "topic": "Evergreen Leverage and Position Size Questions Without a Current Trigger",
+          "primary_site": "PipGauge",
+          "freshness": 5,
+          "traffic_potential": 12,
+          "calculator_fit": 20,
+          "evidence_quality": 8,
+          "actionability": 4,
+          "total_score": 49,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": false,
+          "calculator_mapping": [
+            "Position Size",
+            "Margin"
+          ],
+          "reason": "Useful evergreen demand but no current event or rule trigger"
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-08-10T12:30:00+08:00",
+          "source_count": 10,
+          "note": "核查 BLS 就业、CPI/PPI、监管、prop-firm 与 broker 入口"
+        },
+        {
+          "channel": "可靠英文媒体",
+          "status": "complete",
+          "checked_at": "2026-08-10T12:30:00+08:00",
+          "source_count": 3,
+          "note": "AP 与 Axios 交叉确认就业结果和当前市场背景"
+        },
+        {
+          "channel": "Reddit / ForexFactory",
+          "status": "complete",
+          "checked_at": "2026-08-10T12:30:00+08:00",
+          "source_count": 8,
+          "note": "公开讨论只用于确认就业、CPI 与风险计算需求"
+        },
+        {
+          "channel": "X / Quora / BabyPips",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-08-10T12:30:00+08:00",
+          "source_count": 1,
+          "note": "没有改变正式结论的新增可验证信号"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-08-10_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-08-10_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-08-10"
+      }
+    },
+    {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -370,7 +754,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -745,7 +1129,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -1133,7 +1517,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -1478,7 +1862,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -1806,7 +2190,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -2118,7 +2502,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -2439,7 +2823,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -2800,7 +3184,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -3153,7 +3537,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -3597,7 +3981,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -4106,7 +4490,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -4576,7 +4960,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -5119,7 +5503,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -5391,7 +5775,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -5704,7 +6088,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -6139,7 +6523,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -6653,7 +7037,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -7162,7 +7546,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -7629,7 +8013,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -8042,7 +8426,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -8440,7 +8824,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-08-09T22:05:16+08:00",
+      "generated_at": "2026-08-10T12:17:33+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -8879,10 +9263,10 @@
       }
     }
   ],
-  "scan_date": "2026-08-09",
+  "scan_date": "2026-08-10",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 22,
+    "day": 23,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -8890,28 +9274,28 @@
     "mode": "topic_traffic_playbooks_and_content_drafts"
   },
   "stats": {
-    "selected": 0,
-    "observation": 5,
-    "discarded": 1,
+    "selected": 1,
+    "observation": 3,
+    "discarded": 2,
     "total": 6,
-    "selected_average": 0,
+    "selected_average": 96.0,
     "all_selected_pass_gate": true,
-    "content_ready": 0,
-    "playbook_ready": 0
+    "content_ready": 1,
+    "playbook_ready": 1
   },
   "candidates": [
     {
-      "scan_date": "2026-08-09",
-      "candidate_id": "HR-20260809-02",
-      "status": "observation",
-      "topic": "U.S. July Payroll Shock Still Has No Measured FX Execution Cost",
+      "scan_date": "2026-08-10",
+      "candidate_id": "HR-20260810-01",
+      "status": "selected",
+      "topic": "U.S. Payrolls Fell 23000 Recalculate Dollar Risk Around the July Jobs Surprise",
       "primary_site": "PipGauge",
-      "freshness": 21,
-      "traffic_potential": 21,
+      "freshness": 23,
+      "traffic_potential": 25,
       "calculator_fit": 24,
       "evidence_quality": 15,
-      "actionability": 7,
-      "total_score": 88,
+      "actionability": 9,
+      "total_score": 96,
       "hard_gate": true,
       "reliable_sources": 3,
       "fresh_signal": true,
@@ -8921,7 +9305,49 @@
         "Spread Cost",
         "P&L"
       ],
-      "reason": "Facts remain strong but no new measured execution data breaks the macro-event package duplication",
+      "reason": "BLS AP and Axios verify the result; all four refresh signals justify updating HR-20260730-02 without requiring measured execution data",
+      "content_status": "review_ready",
+      "content_label": "NFP 结果风险表刷新稿待人工审核",
+      "content_url": "../内容生产/2026-08-10/HR-20260810-01/index.html",
+      "content_format": "Medium / Reddit / X",
+      "deadline": "2026-08-11",
+      "traffic_playbook": {
+        "playbook_status": "ready",
+        "execution_mode": "refresh",
+        "urgency": "high",
+        "publish_deadline": "2026-08-11T23:00:00-04:00",
+        "traffic_hook": "The July jobs report showed payrolls down 23,000, unemployment at 4.1%, and May-June revisions totaling minus 103,000, creating a short explanation window before CPI.",
+        "traffic_window": "Refresh immediately and retire the independent jobs-report framing when July CPI publishes on August 12 at 08:30 ET.",
+        "search_intents": [
+          "July 2026 jobs report -23000",
+          "why unemployment fell when payrolls fell",
+          "NFP -23K forex risk",
+          "103000 payroll revisions"
+        ],
+        "traffic_angle": "Lead with the verified -23K, 4.1% and -103K result puzzle, then answer how a $50 risk budget changes lot size across 25, 50 and 100 pip stops; PipGauge verifies the arithmetic after the explanation.",
+        "calculator_bridge": "Pip Value and Position Size verify the fixed-risk table; Spread Cost is an explicitly hypothetical stress test, not reported market execution data.",
+        "example_scenario": "$10,000 USD account, 0.5% or $50 maximum planned loss, EUR/USD at approximately $10 per pip per standard lot; compare 25/50/100 pip stops and clearly labeled hypothetical costs.",
+        "distribution_order": [
+          "refresh existing site article HR-20260730-02",
+          "Medium review draft",
+          "Reddit native no-link discussion",
+          "X standalone thread"
+        ],
+        "link_placement": "Finish the risk table and caveats before one calculator link; Reddit first version contains no link and X main thread stands alone.",
+        "expiry_condition": "July CPI publishes on August 12 or a new official employment revision materially changes the figures.",
+        "editorial_boundary": "Do not predict the dollar, Fed policy or market direction; distinguish payrolls from the unemployment rate and label all spread/slippage values as hypothetical.",
+        "refresh_target": "HR-20260730-02",
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "content_mainline": "Explain how payrolls can fall while unemployment also falls, then recalculate fixed dollar risk without turning the result into a trade call.",
+        "body_material": "BLS -23K payrolls, 4.1% unemployment, -103K revisions, and a $50-risk 25/50/100-pip table.",
+        "product_bridge": "Use PipGauge only after the independent explanation to verify pip value, position size and hypothetical spread cost.",
+        "product_bridge_type": "existing"
+      },
       "scan_audit": {
         "sources": [
           {
@@ -8929,7 +9355,7 @@
             "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
             "source_type": "official_release",
             "published_at": "2026-08-07",
-            "freshness_role": "recent_july_employment_result",
+            "freshness_role": "official_july_result_and_revisions",
             "reliable": true
           },
           {
@@ -8937,7 +9363,7 @@
             "url": "https://apnews.com/article/9636095906bbb689a1f612bce9a07343",
             "source_type": "reliable_news",
             "published_at": "2026-08-07",
-            "freshness_role": "independent_result_and_market_reaction",
+            "freshness_role": "independent_result_and_market_context",
             "reliable": true
           },
           {
@@ -8945,33 +9371,39 @@
             "url": "https://www.axios.com/2026/08/07/bls-jobs-report-rates-july",
             "source_type": "reliable_news",
             "published_at": "2026-08-07",
-            "freshness_role": "independent_result_and_revision_confirmation",
+            "freshness_role": "independent_result_and_revision_context",
             "reliable": true
           }
         ],
         "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "duplicate_without_measured_execution_cost",
+          "novelty_gate": "pass",
+          "decision_gate": "selected_refresh_four_signals",
           "duplicate_of": [
-            "HR-20260808-02",
-            "HR-20260724-01"
+            "HR-20260730-02"
           ],
-          "reopen_trigger": "A reliable publisher documents actual August 7 FX spread or slippage data or a distinct calculator question",
-          "rationale": "Strong facts remain insufficient to separate this from existing macro-event risk packages"
+          "refresh_target": "HR-20260730-02",
+          "refresh_signals": {
+            "fact_delta": true,
+            "search_delta": true,
+            "example_delta": true,
+            "window_delta": true
+          },
+          "reopen_trigger": "Triggered by the official -23K result, 4.1% unemployment, -103K revisions and post-result search window",
+          "rationale": "All four refresh signals justify updating the existing dollar macro-risk article; measured execution data is not required because the claim is not about actual trading costs"
         }
       }
     },
     {
-      "scan_date": "2026-08-09",
-      "candidate_id": "HR-20260809-03",
+      "scan_date": "2026-08-10",
+      "candidate_id": "HR-20260810-02",
       "status": "observation",
-      "topic": "U.S. CPI and PPI Are Upcoming but the Pre-Event Calculator Path Is Duplicate",
+      "topic": "July CPI on August 12 Has Only a New Window Before the Result",
       "primary_site": "PipGauge",
-      "freshness": 24,
-      "traffic_potential": 18,
-      "calculator_fit": 22,
+      "freshness": 20,
+      "traffic_potential": 22,
+      "calculator_fit": 21,
       "evidence_quality": 15,
-      "actionability": 5,
+      "actionability": 6,
       "total_score": 84,
       "hard_gate": true,
       "reliable_sources": 2,
@@ -8979,53 +9411,114 @@
       "calculator_mapping": [
         "Pip Value",
         "Position Size",
-        "Spread Cost",
         "P&L"
       ],
-      "reason": "Official calendars verify the releases but the generic pre-event risk path is already covered",
+      "reason": "The forecast is not an actual result; only window_delta is true",
       "scan_audit": {
         "sources": [
           {
             "publisher": "U.S. Bureau of Labor Statistics",
             "url": "https://www.bls.gov/cpi/home.htm",
             "source_type": "official_schedule",
-            "published_at": "2026-08-09",
-            "freshness_role": "upcoming_august_12_cpi_release",
+            "published_at": "2026-08-10",
+            "freshness_role": "august_12_release_window",
             "reliable": true
           },
           {
-            "publisher": "Federal Reserve Bank of New York",
-            "url": "https://www.newyorkfed.org/research/calendars/i-aug26.html",
-            "source_type": "official_calendar",
-            "published_at": "2026-08-09",
-            "freshness_role": "independent_upcoming_data_calendar",
+            "publisher": "Associated Press",
+            "url": "https://apnews.com/article/1cf6047f812b3e1f151781f5722d97b7",
+            "source_type": "reliable_news",
+            "published_at": "2026-08-07",
+            "freshness_role": "current_week_attention",
             "reliable": true
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "duplicate_pre_event_macro_path",
+          "decision_gate": "only_one_refresh_signal",
           "duplicate_of": [
-            "HR-20260808-03",
-            "HR-20260724-01"
+            "HR-20260730-02"
           ],
-          "reopen_trigger": "The result produces a verifiable non-duplicate calculation need or measured execution-cost evidence",
-          "rationale": "Upcoming timing is verified but generic pre-event sizing and spread scenarios are already covered"
+          "refresh_signals": {
+            "fact_delta": false,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": true
+          },
+          "reopen_trigger": "BLS publishes July CPI and a reliable independent source confirms the result",
+          "rationale": "The forecast is not an actual result; only the release window has changed"
         }
       }
     },
     {
-      "scan_date": "2026-08-09",
-      "candidate_id": "HR-20260809-01",
+      "scan_date": "2026-08-10",
+      "candidate_id": "HR-20260810-03",
       "status": "observation",
-      "topic": "FundedNext FNL002 Still Lacks an Independent Reliable Rule Verification",
+      "topic": "July PPI on August 13 Needs a Distinct Result Before Refresh",
+      "primary_site": "PipGauge",
+      "freshness": 19,
+      "traffic_potential": 18,
+      "calculator_fit": 20,
+      "evidence_quality": 15,
+      "actionability": 5,
+      "total_score": 77,
+      "hard_gate": true,
+      "reliable_sources": 2,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Pip Value",
+        "Position Size",
+        "P&L"
+      ],
+      "reason": "Only window_delta is true and the current path overlaps CPI",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "U.S. Bureau of Labor Statistics",
+            "url": "https://www.bls.gov/ppi/",
+            "source_type": "official_schedule",
+            "published_at": "2026-08-10",
+            "freshness_role": "august_13_release_window",
+            "reliable": true
+          },
+          {
+            "publisher": "Associated Press",
+            "url": "https://apnews.com/article/1cf6047f812b3e1f151781f5722d97b7",
+            "source_type": "reliable_news",
+            "published_at": "2026-08-07",
+            "freshness_role": "current_week_attention",
+            "reliable": true
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "only_one_refresh_signal",
+          "duplicate_of": [
+            "HR-20260810-02"
+          ],
+          "refresh_signals": {
+            "fact_delta": false,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": true
+          },
+          "reopen_trigger": "BLS publishes July PPI and the result creates a distinct CPI/PPI comparison question",
+          "rationale": "Only the release window has changed"
+        }
+      }
+    },
+    {
+      "scan_date": "2026-08-10",
+      "candidate_id": "HR-20260810-04",
+      "status": "observation",
+      "topic": "FundedNext FNL002 Needs a Stable Dated Official Rule Page",
       "primary_site": "PositionMath",
-      "freshness": 20,
-      "traffic_potential": 19,
-      "calculator_fit": 25,
+      "freshness": 18,
+      "traffic_potential": 20,
+      "calculator_fit": 24,
       "evidence_quality": 7,
-      "actionability": 8,
-      "total_score": 79,
+      "actionability": 7,
+      "total_score": 76,
       "hard_gate": false,
       "reliable_sources": 1,
       "fresh_signal": true,
@@ -9034,7 +9527,7 @@
         "Trailing Drawdown",
         "Prop Firm Calculator"
       ],
-      "reason": "Clear drawdown and fee math remains tied to one reliable publishing body",
+      "reason": "Four deltas cannot override the missing stable dated/versioned official fact page",
       "scan_audit": {
         "sources": [
           {
@@ -9042,180 +9535,113 @@
             "url": "https://www.reddit.com/r/fundednext/comments/1vf6o9x/fnl002_12_mll_3day_payout_2step_cfds_25k/",
             "source_type": "official_social_release",
             "published_at": "2026-08-04",
-            "freshness_role": "recent_numeric_rules_and_launch_heat",
+            "freshness_role": "recent_product_claims",
             "reliable": true
           },
           {
-            "publisher": "Reddit propfirm",
-            "url": "https://www.reddit.com/r/propfirm/comments/1vhulvj/12_payouts_in_3_months_all_from_5k_accounts/",
+            "publisher": "Reddit fundednext",
+            "url": "https://www.reddit.com/r/fundednext/comments/1vf6o9x/fnl002_12_mll_3day_payout_2step_cfds_25k/",
             "source_type": "community_heat",
-            "published_at": "2026-08-07",
-            "freshness_role": "recent_fee_and_drawdown_calculation_discussion",
+            "published_at": "2026-08-04",
+            "freshness_role": "product_interest",
             "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "pass",
-          "decision_gate": "independent_reliable_source_fail",
-          "reopen_trigger": "An independent reliable industry publisher verifies FNL:002 complete rules, effective date and payout conditions",
-          "rationale": "The calculator bridge is distinct but all verified product numbers trace to FundedNext"
+          "decision_gate": "official_fact_page_not_dated_or_versioned",
+          "refresh_signals": {
+            "fact_delta": true,
+            "search_delta": true,
+            "example_delta": true,
+            "window_delta": true
+          },
+          "reopen_trigger": "A stable dated/versioned official FNL:002 rules page becomes public",
+          "rationale": "Refresh signals cannot override the missing stable official fact source"
         }
       }
     },
     {
-      "scan_date": "2026-08-09",
-      "candidate_id": "HR-20260809-04",
-      "status": "observation",
-      "topic": "LucidDaily Has No New Dated Rule Change or Independent Verification",
-      "primary_site": "PositionMath",
-      "freshness": 10,
-      "traffic_potential": 13,
-      "calculator_fit": 25,
-      "evidence_quality": 7,
-      "actionability": 5,
-      "total_score": 60,
-      "hard_gate": false,
-      "reliable_sources": 1,
-      "fresh_signal": false,
-      "calculator_mapping": [
-        "Daily Loss Limit",
-        "Trailing Drawdown",
-        "Prop Firm Calculator"
-      ],
-      "reason": "No dated changelog or second reliable publishing body confirms a new numeric rule",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "Lucid Trading",
-            "url": "https://support.lucidtrading.com/en/collections/19692910-luciddaily",
-            "source_type": "official_help_center",
-            "published_at": "2026-08-09",
-            "freshness_role": "current_rule_index_recheck_without_new_changelog",
-            "reliable": true
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "no_recent_official_change",
-          "duplicate_of": [
-            "HR-20260808-04"
-          ],
-          "reopen_trigger": "Lucid publishes a dated changelog and an independent reliable source verifies a new numeric rule or configuration",
-          "rationale": "No new dated change was found"
-        }
-      }
-    },
-    {
-      "scan_date": "2026-08-09",
-      "candidate_id": "HR-20260809-06",
+      "scan_date": "2026-08-10",
+      "candidate_id": "HR-20260810-05",
       "status": "discarded",
-      "topic": "Directional FX Stock Commodity Crypto and Central-Bank Predictions",
+      "topic": "Directional CPI NFP Dollar Gold Stock and Crypto Predictions",
       "primary_site": "PipGauge",
-      "freshness": 25,
-      "traffic_potential": 23,
-      "calculator_fit": 5,
+      "freshness": 20,
+      "traffic_potential": 27,
+      "calculator_fit": 3,
       "evidence_quality": 5,
       "actionability": 2,
-      "total_score": 60,
+      "total_score": 57,
       "hard_gate": false,
       "reliable_sources": 0,
       "fresh_signal": true,
       "calculator_mapping": [
         "P&L"
       ],
-      "reason": "Directional forecasts price predictions and signal-like content are excluded"
+      "reason": "Directional forecasts and signal-like content are excluded"
     },
     {
-      "scan_date": "2026-08-09",
-      "candidate_id": "HR-20260809-05",
-      "status": "observation",
-      "topic": "Regulator Exchange Intervention and Prop Framework Checks Yield No New Rule",
+      "scan_date": "2026-08-10",
+      "candidate_id": "HR-20260810-06",
+      "status": "discarded",
+      "topic": "Evergreen Leverage and Position Size Questions Without a Current Trigger",
       "primary_site": "PipGauge",
-      "freshness": 9,
+      "freshness": 5,
       "traffic_potential": 12,
-      "calculator_fit": 22,
-      "evidence_quality": 12,
+      "calculator_fit": 20,
+      "evidence_quality": 8,
       "actionability": 4,
-      "total_score": 59,
+      "total_score": 49,
       "hard_gate": false,
-      "reliable_sources": 2,
+      "reliable_sources": 1,
       "fresh_signal": false,
       "calculator_mapping": [
-        "Pip Value",
         "Position Size",
-        "Margin",
-        "Daily Loss Limit"
+        "Margin"
       ],
-      "reason": "No new official amount correction certification decision or calculable retail rule was found",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "Japan Ministry of Finance",
-            "url": "https://www.mof.go.jp/english/policy/international_policy/reference/feio/index.html",
-            "source_type": "official_statistics_schedule",
-            "published_at": "2026-08-09",
-            "freshness_role": "official_amount_boundary_recheck",
-            "reliable": true
-          },
-          {
-            "publisher": "Financial Commission",
-            "url": "https://financialcommission.org/2026/07/22/financial-commission-launches-the-first-self-regulatory-framework-for-prop-firms/",
-            "source_type": "official_framework",
-            "published_at": "2026-07-22",
-            "freshness_role": "certification_decision_recheck",
-            "reliable": true
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "no_new_official_fact_or_retail_rule",
-          "duplicate_of": [
-            "HR-20260808-05"
-          ],
-          "reopen_trigger": "A regulator, exchange or framework publishes a specific new calculable retail rule or formal decision",
-          "rationale": "No new amount correction, certification decision or numeric retail rule was found"
-        }
-      }
+      "reason": "Useful evergreen demand but no current event or rule trigger"
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-08-09T22:03:00+08:00",
-      "source_count": 12,
-      "note": "复查 BLS、New York Fed、Japan MOF、CME、CFTC、FCA、Financial Commission、FundedNext 与 Lucid Trading 官方入口"
+      "checked_at": "2026-08-10T12:30:00+08:00",
+      "source_count": 10,
+      "note": "核查 BLS 就业、CPI/PPI、监管、prop-firm 与 broker 入口"
     },
     {
       "channel": "可靠英文媒体",
       "status": "complete",
-      "checked_at": "2026-08-09T22:03:00+08:00",
+      "checked_at": "2026-08-10T12:30:00+08:00",
       "source_count": 3,
-      "note": "AP 与 Axios 继续交叉确认就业结果；未发现 FNL:002 的第二独立可靠规则核验或新增 NFP 实测 FX 执行成本"
+      "note": "AP 与 Axios 交叉确认就业结果和当前市场背景"
     },
     {
       "channel": "Reddit / ForexFactory",
       "status": "complete",
-      "checked_at": "2026-08-09T22:03:00+08:00",
-      "source_count": 9,
-      "note": "FNL:002、NFP 与 prop-risk 讨论有公开信号，社区内容仅作热度证据"
+      "checked_at": "2026-08-10T12:30:00+08:00",
+      "source_count": 8,
+      "note": "公开讨论只用于确认就业、CPI 与风险计算需求"
     },
     {
       "channel": "X / Quora / BabyPips",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-08-09T22:03:00+08:00",
-      "source_count": 0,
-      "note": "未发现能改变本期入选结论的可验证新增信号"
+      "checked_at": "2026-08-10T12:30:00+08:00",
+      "source_count": 1,
+      "note": "没有改变正式结论的新增可验证信号"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-08-09_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-08-09_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-08-10_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-08-10_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
-    "traffic_playbooks": "../热点流量打法.json"
+    "traffic_playbooks": "../热点流量打法.json",
+    "content_root": "../内容生产/2026-08-10"
   },
   "radar_model": "v2-content-first",
   "editorial_policy": {
@@ -9228,6 +9654,17 @@
       "x"
     ],
     "pipeline_endpoint": "awaiting_human_review",
-    "auto_publish": false
+    "auto_publish": false,
+    "source_policy": "official_fact_plus_independent_impact_for_product_rules",
+    "duplicate_path_is_not_automatic_rejection": true,
+    "refresh_signals": [
+      "fact_delta",
+      "search_delta",
+      "example_delta",
+      "window_delta"
+    ],
+    "minimum_refresh_signals": 2,
+    "measured_execution_data_only_for_execution_cost_claims": true,
+    "slow_watch_recheck_days": 3
   }
 }

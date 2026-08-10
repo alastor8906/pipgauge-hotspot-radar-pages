@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T14:05:54.253Z",
+  "generated_at": "2026-08-10T04:18:04.764Z",
   "endpoint": "multi_platform_drafts_awaiting_human_review",
   "supported_platforms": [
     "medium",
@@ -7,6 +7,41 @@
     "x"
   ],
   "packages": [
+    {
+      "candidate_id": "HR-20260810-01",
+      "scan_date": "2026-08-10",
+      "primary_site": "PipGauge",
+      "topic": "U.S. Payrolls Fell 23,000: Recalculate Dollar Risk Around the July Jobs Surprise",
+      "package_summary": "当期审核快照：用 -23K、4.1% 与 -103K revisions 刷新旧美元宏观风险稿，不创建第二篇同构文章。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "result_window",
+      "time_status_label": "就业结果后至 8 月 12 日 CPI 前的短窗口",
+      "url": "../内容生产/2026-08-10/HR-20260810-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-10/HR-20260810-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-10/HR-20260810-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-10/HR-20260810-01/index.html#x"
+        }
+      ]
+    },
     {
       "candidate_id": "HR-20260802-01",
       "scan_date": "2026-08-02",
