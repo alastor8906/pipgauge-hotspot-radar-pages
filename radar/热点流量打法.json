@@ -1,7 +1,23 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-10T22:05:00+08:00",
+  "updated_at": "2026-08-11T22:00:00+08:00",
   "items": {
+    "HR-20260811-01": {
+      "playbook_status": "ready", "execution_mode": "new", "urgency": "critical", "publish_deadline": "2026-08-12T08:30:00-04:00",
+      "traffic_hook": "RBA on August 11 unanimously held the cash rate at 4.35%, while independent FX coverage described an immediate AUD/USD move of less than 0.1% and attention shifted to next-day U.S. CPI.",
+      "traffic_window": "Publish after the August 11 decision and before the August 12 U.S. CPI release; after CPI, replace all up-next language and reassess the headline.",
+      "search_intents": ["RBA rate decision AUDUSD risk", "AUDUSD position size calculator", "how many lots AUDUSD 20 pip stop", "RBA hold 4.35 AUDUSD volatility"],
+      "traffic_angle": "Use the 4.35% unanimous hold and reported sub-0.1% immediate AUD/USD reaction as the hook. Answer how a fixed $50 risk budget with a 20/35/50-pip stop implies about 0.25/0.14/0.10 lot. Show the arithmetic first, then verify with PipGauge; never predict direction.",
+      "calculator_bridge": "Use Pip Value to verify approximately $10 per pip for one standard lot of AUD/USD in a USD account, then Position Size to solve each lot size for a fixed $50 risk budget.",
+      "example_scenario": "$10,000 USD account; 0.5% or $50 risk; 20/35/50-pip stops imply about 0.25/0.14/0.10 lot before costs.",
+      "distribution_order": ["Time-sensitive site article", "Medium explanation", "X self-contained number thread", "Reddit native discussion without a first-round link"],
+      "link_placement": "Give the RBA facts and three worked calculations first; link PipGauge only at verification. No link in the first Reddit post.",
+      "expiry_condition": "Pause at the August 12 U.S. CPI release or if RBA corrects its materials; after CPI remove stale next-event wording.",
+      "editorial_boundary": "Do not forecast AUD/USD, imply a hold determines direction, generalize the initial sub-0.1% move, or claim the calculator predicts volatility or fills.",
+      "content_mainline": "Turn the RBA 4.35% unanimous hold and muted immediate AUD/USD response into a fixed-dollar-risk sizing lesson before the next event window.",
+      "body_material": ["RBA 4.35% unanimous hold", "official inflation wording", "independent sub-0.1% immediate reaction", "$50 risk across 20/35/50-pip stops", "next-day CPI time gate"],
+      "product_bridge": "After explanation and hand calculation, use PipGauge to verify AUD/USD pip value and position size.", "product_bridge_type": "existing"
+    },
     "HR-20260810-01": {
       "playbook_status": "ready",
       "execution_mode": "refresh",
@@ -1209,6 +1225,28 @@
         "$100 固定风险的 0.15/0.07/0.05 lot"
       ],
       "product_bridge": "完成可靠事实和手算后，再使用 PipGauge 核对 pip value、P&L、position size 与 spread cost。",
+      "product_bridge_type": "existing"
+    },
+    "HR-20260817-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-08-19T14:00:00-04:00",
+      "traffic_hook": "Federal Reserve 已排定 8 月 19 日 14:00 ET 公布 7 月 28–29 日 FOMC minutes；AP 的本周预览将其列为本周主要政策细节来源，公开讨论已转向 minutes。",
+      "traffic_window": "8 月 17 日至 8 月 19 日正式文本公布前；公布时立即以官方文本刷新同一稿，预告时态最多保留到发布后 60 分钟。",
+      "search_intents": ["FOMC minutes August 19 2026", "FOMC minutes EURUSD risk", "EURUSD position size 50 pip stop", "FOMC minutes trading risk calculator"],
+      "traffic_angle": "借 8 月 19 日 minutes 发布这一新闻钩子，回答用户此刻会搜的‘50 pip EUR/USD 风险是多少、固定 $100 风险应下多大仓位’；用 $10,000 USD 账户、$100、25/50/100 pip 得出约 0.40/0.20/0.10 lot，先展示可读数字，在复核步骤承接现有工具。",
+      "calculator_bridge": "EUR/USD Pip Value → Position Size → P&L → 单列 Spread Cost 压力测试；工具用于核对输入，不解释或预测 minutes。",
+      "example_scenario": "$10,000 USD 账户、1% 即 $100；25/50/100 pip stop；约 0.40/0.20/0.10 lot；0.20 lot 的 50-pip 情景另加 2-pip 假设成本约 $4。",
+      "distribution_order": ["刷新 HR-20260730-02 的标题、首段、时间框、来源与示例说明", "站内风险检查页", "Medium 完整解释", "X 可独立阅读的数字线程", "Reddit 原生讨论且首轮不放链接"],
+      "link_placement": "先给发布时间、三档固定风险仓位和成本边界；在读者需要复核 pair、账户币种与 lot 输入时，才链接 Pip Value、Position Size 和 Spread Cost。",
+      "expiry_condition": "8 月 19 日 14:00 ET 正式文本发布后立即停止使用 ‘due / before the release’ 标题；官方日程或 minutes 文本更正时暂停，并先更新同一稿。",
+      "editorial_boundary": "不预测 minutes 语气、利率路径、EUR/USD 方向或实际波幅；不把三人 dissent 写成未来政策承诺；2 pip 仅为假设压力测试，不是实测点差或滑点。",
+      "refresh_target": "HR-20260730-02",
+      "refresh_updates": ["标题从 7 月决议结果改为 8 月 19 日 minutes 风险检查", "首段改为未来时态与官方发布时间", "替换来源为 Fed 8 月日历、FOMC 日历、AP 本周预览", "保留固定风险数学，删除任何过期的决议后窗口表述"],
+      "content_mainline": "用 FOMC minutes 发布窗口刷新现有 EUR/USD 风险稿，而不是新建同构的 Fed 事件文。",
+      "body_material": ["Fed 8 月 19 日 14:00 ET 官方时间", "AP 对 7 月持稳与三位 dissent 的独立背景", "$100 固定风险下 25/50/100 pip 的 0.40/0.20/0.10 lot", "费用和滑点的假设压力测试边界"],
+      "product_bridge": "先完成官方事实和手算，再使用 PipGauge 核对 pip value、position size、P&L 与 spread-cost 输入。",
       "product_bridge_type": "existing"
     }
   }

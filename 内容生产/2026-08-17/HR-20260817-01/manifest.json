@@ -1,0 +1,20 @@
+{
+  "candidate_id": "HR-20260817-01",
+  "scan_date": "2026-08-17",
+  "primary_site": "PipGauge",
+  "topic": "FOMC Minutes Due August 19: Refresh EUR/USD Risk Before the Release",
+  "execution_mode": "refresh",
+  "refresh_target": "HR-20260730-02",
+  "package_summary": "当期审核快照：将 7 月 30 日 FOMC 决议复盘稿刷新为 8 月 19 日会议纪要发布前的固定风险检查；不新建同构文章。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "pre_release_window",
+  "time_status_label": "8 月 17 日至 8 月 19 日 14:00 ET；纪要发布后须立即用正式文本重核",
+  "documents": [
+    {"id":"facts","label":"事实与论点","file":"00-事实与论点.md","platform":"internal","kind":"editorial brief","status_label":"已整理"},
+    {"id":"medium","label":"Medium","file":"01-Medium.md","platform":"medium","kind":"long-form draft","status_label":"待人工审核"},
+    {"id":"reddit","label":"Reddit","file":"02-Reddit.md","platform":"reddit","kind":"native discussion draft","status_label":"待人工审核"},
+    {"id":"x","label":"X","file":"03-X.md","platform":"x","kind":"short thread draft","status_label":"待人工审核"},
+    {"id":"review","label":"审核清单","file":"04-人工审核.md","platform":"internal","kind":"human gate","status_label":"必须完成"}
+  ]
+}
