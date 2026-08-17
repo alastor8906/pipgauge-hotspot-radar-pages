@@ -1,8 +1,10 @@
 {
   "data_version": 3,
-  "generated_at": "2026-08-10T22:04:18+08:00",
-  "latest_scan_date": "2026-08-10",
+  "generated_at": "2026-08-17T22:08:37+08:00",
+  "latest_scan_date": "2026-08-17",
   "available_dates": [
+    "2026-08-17",
+    "2026-08-11",
     "2026-08-10",
     "2026-08-09",
     "2026-08-08",
@@ -29,8 +31,708 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-08-17",
+      "generated_at": "2026-08-17T22:08:37+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 25,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 1,
+        "observation": 3,
+        "discarded": 1,
+        "total": 5,
+        "selected_average": 98.0,
+        "all_selected_pass_gate": true,
+        "content_ready": 1,
+        "playbook_ready": 1
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-08-17",
+          "candidate_id": "HR-20260817-01",
+          "status": "selected",
+          "topic": "FOMC Minutes Due August 19 Refresh EURUSD Risk Before the Release",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 24,
+          "calculator_fit": 24,
+          "evidence_quality": 15,
+          "actionability": 10,
+          "total_score": 98,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "Fed official calendar AP week-ahead coverage and current public discussion support refreshing HR-20260730-02 with a non-directional pre-minutes fixed-risk check",
+          "content_status": "review_ready",
+          "content_label": "FOMC minutes EUR/USD 刷新稿待人工审核",
+          "content_url": "../内容生产/2026-08-17/HR-20260817-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-08-19T14:00:00-04:00",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "refresh",
+            "urgency": "high",
+            "publish_deadline": "2026-08-19T14:00:00-04:00",
+            "traffic_hook": "Federal Reserve 已排定 8 月 19 日 14:00 ET 公布 7 月 28–29 日 FOMC minutes；AP 的本周预览将其列为本周主要政策细节来源，公开讨论已转向 minutes。",
+            "traffic_window": "8 月 17 日至 8 月 19 日正式文本公布前；公布时立即以官方文本刷新同一稿，预告时态最多保留到发布后 60 分钟。",
+            "search_intents": [
+              "FOMC minutes August 19 2026",
+              "FOMC minutes EURUSD risk",
+              "EURUSD position size 50 pip stop",
+              "FOMC minutes trading risk calculator"
+            ],
+            "traffic_angle": "借 8 月 19 日 minutes 发布这一新闻钩子，回答用户此刻会搜的‘50 pip EUR/USD 风险是多少、固定 $100 风险应下多大仓位’；用 $10,000 USD 账户、$100、25/50/100 pip 得出约 0.40/0.20/0.10 lot，先展示可读数字，在复核步骤承接现有工具。",
+            "calculator_bridge": "EUR/USD Pip Value → Position Size → P&L → 单列 Spread Cost 压力测试；工具用于核对输入，不解释或预测 minutes。",
+            "example_scenario": "$10,000 USD 账户、1% 即 $100；25/50/100 pip stop；约 0.40/0.20/0.10 lot；0.20 lot 的 50-pip 情景另加 2-pip 假设成本约 $4。",
+            "distribution_order": [
+              "刷新 HR-20260730-02 的标题、首段、时间框、来源与示例说明",
+              "站内风险检查页",
+              "Medium 完整解释",
+              "X 可独立阅读的数字线程",
+              "Reddit 原生讨论且首轮不放链接"
+            ],
+            "link_placement": "先给发布时间、三档固定风险仓位和成本边界；在读者需要复核 pair、账户币种与 lot 输入时，才链接 Pip Value、Position Size 和 Spread Cost。",
+            "expiry_condition": "8 月 19 日 14:00 ET 正式文本发布后立即停止使用 ‘due / before the release’ 标题；官方日程或 minutes 文本更正时暂停，并先更新同一稿。",
+            "editorial_boundary": "不预测 minutes 语气、利率路径、EUR/USD 方向或实际波幅；不把三人 dissent 写成未来政策承诺；2 pip 仅为假设压力测试，不是实测点差或滑点。",
+            "refresh_target": "HR-20260730-02",
+            "refresh_updates": [
+              "标题从 7 月决议结果改为 8 月 19 日 minutes 风险检查",
+              "首段改为未来时态与官方发布时间",
+              "替换来源为 Fed 8 月日历、FOMC 日历、AP 本周预览",
+              "保留固定风险数学，删除任何过期的决议后窗口表述"
+            ],
+            "content_mainline": "用 FOMC minutes 发布窗口刷新现有 EUR/USD 风险稿，而不是新建同构的 Fed 事件文。",
+            "body_material": [
+              "Fed 8 月 19 日 14:00 ET 官方时间",
+              "AP 对 7 月持稳与三位 dissent 的独立背景",
+              "$100 固定风险下 25/50/100 pip 的 0.40/0.20/0.10 lot",
+              "费用和滑点的假设压力测试边界"
+            ],
+            "product_bridge": "先完成官方事实和手算，再使用 PipGauge 核对 pip value、position size、P&L 与 spread-cost 输入。",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Federal Reserve Board",
+                "url": "https://www.federalreserve.gov/newsevents/2026-august.htm",
+                "source_type": "official_calendar",
+                "published_at": "2025-06-24",
+                "freshness_role": "officially_scheduled_August_19_2026_1400_ET_minutes_release",
+                "reliable": true
+              },
+              {
+                "publisher": "Associated Press",
+                "url": "https://apnews.com/article/wall-street-home-depot-target-fed-7dd75609981e7e96b40aa82523b0ea57",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-13",
+                "freshness_role": "independent_current_week_confirmation_and_context",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit r/Daytrading",
+                "url": "https://www.reddit.com/r/Daytrading/comments/1vqoqal/fomc_minutes/",
+                "source_type": "community_heat",
+                "published_at": "2026-08-17",
+                "freshness_role": "same_day_public_minutes_discussion",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass",
+              "decision_gate": "selected_refresh_existing_fomc_risk_article",
+              "duplicate_of": [
+                "HR-20260730-02"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Official minutes publication or an official schedule correction",
+              "rationale": "Two independent reliable publishers, current discussion and a two-day official document window support a non-directional fixed-risk refresh; no unpublished minutes content is claimed."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-17",
+          "candidate_id": "HR-20260817-02",
+          "status": "observation",
+          "topic": "Canada July CPI Rose 3.0 Percent but Lacks an Independent Fact Confirmation",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 20,
+          "calculator_fit": 22,
+          "evidence_quality": 8,
+          "actionability": 6,
+          "total_score": 81,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L"
+          ],
+          "reason": "Statistics Canada and public discussion confirm a fresh result but no second independent reliable English fact source was available at scan time",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Statistics Canada",
+                "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260817/dq260817a-eng.htm",
+                "source_type": "official_release",
+                "published_at": "2026-08-17",
+                "freshness_role": "official_July_CPI_result_3_0_percent_yoy",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit r/PersonalFinanceCanada",
+                "url": "https://www.reddit.com/r/PersonalFinanceCanada/comments/1vqr0sq/july_cpi/",
+                "source_type": "community_heat",
+                "published_at": "2026-08-17",
+                "freshness_role": "same_day_public_discussion",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "not_evaluated_hard_gate_fail",
+              "decision_gate": "observation_missing_second_independent_reliable_fact_source",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": true,
+                "window_delta": true
+              },
+              "reopen_trigger": "A second independent reliable English report confirms the Statistics Canada result and a distinct USD/CAD calculation query is visible",
+              "rationale": "Fresh result and heat are real, but community discussion cannot satisfy the second reliable-source rule."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-17",
+          "candidate_id": "HR-20260817-03",
+          "status": "observation",
+          "topic": "UK July CPI PPI Due August 19 Has Only a Calendar Window",
+          "primary_site": "PipGauge",
+          "freshness": 23,
+          "traffic_potential": 17,
+          "calculator_fit": 21,
+          "evidence_quality": 10,
+          "actionability": 5,
+          "total_score": 76,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L"
+          ],
+          "reason": "ONS confirms the release window but the result and a differentiated GBPUSD calculation-demand signal are not yet available",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Office for National Statistics",
+                "url": "https://www.ons.gov.uk/releases/consumerpriceinflationukjune2026",
+                "source_type": "official_schedule",
+                "published_at": "2026-07-22",
+                "freshness_role": "confirmed_August_19_2026_CPI_release_window",
+                "reliable": true
+              },
+              {
+                "publisher": "Forex Factory",
+                "url": "https://www.forexfactory.com/calendar?month=aug.2026",
+                "source_type": "community_calendar_heat",
+                "published_at": "2026-08-17",
+                "freshness_role": "public_calendar_cross_check",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "not_evaluated_hard_gate_fail",
+              "decision_gate": "observation_pre_release_window_without_distinct_traffic_path",
+              "duplicate_of": [
+                "HR-20260730-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "ONS publishes the result and an independent source plus a distinct GBPUSD calculation-demand signal appear",
+              "rationale": "A calendar date alone is only one refresh signal and does not justify another GBPUSD event-risk package."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-17",
+          "candidate_id": "HR-20260817-04",
+          "status": "observation",
+          "topic": "Walmart FY2027 Q2 Due August 20 Has Generic Rather Than Distinct PositionMath Demand",
+          "primary_site": "PositionMath",
+          "freshness": 24,
+          "traffic_potential": 18,
+          "calculator_fit": 14,
+          "evidence_quality": 14,
+          "actionability": 0,
+          "total_score": 70,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Position Size",
+            "P&L",
+            "Portfolio Heat"
+          ],
+          "reason": "Walmart and AP confirm the event and public discussion exists but the calculation bridge remains generic relative to existing earnings-risk content",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Walmart Inc.",
+                "url": "https://corporate.walmart.com/news/events/",
+                "source_type": "official_earnings_schedule",
+                "published_at": "2026-08-16",
+                "freshness_role": "official_August_20_2026_FY2027_Q2_time",
+                "reliable": true
+              },
+              {
+                "publisher": "Associated Press",
+                "url": "https://apnews.com/article/wall-street-home-depot-target-fed-7dd75609981e7e96b40aa82523b0ea57",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-13",
+                "freshness_role": "independent_current_week_retail_earnings_context",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit r/wallstreetbets",
+                "url": "https://www.reddit.com/r/wallstreetbets/comments/1vocawt/weekly_earnings_thread_817_821/",
+                "source_type": "community_heat",
+                "published_at": "2026-08-14",
+                "freshness_role": "current_public_earnings_discussion",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "not_evaluated_score_below_threshold",
+              "decision_gate": "observation_generic_stock_earnings_calculation_path",
+              "duplicate_of": [
+                "HR-20260722-03"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A verifiable result, an actual gap or a public question with a specific portfolio/position calculation appears",
+              "rationale": "The event and interest are verified, but a generic 5-to-10 percent earnings gap table would duplicate existing stock-risk material without a stronger calculation-intent path."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-17",
+          "candidate_id": "HR-20260817-05",
+          "status": "discarded",
+          "topic": "Directional FOMC CPI Walmart and FX Forecasts",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 24,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 59,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Price targets directional calls and signal-like content are excluded"
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-08-17T22:00:00+08:00",
+          "source_count": 6,
+          "note": "覆盖 Federal Reserve、Statistics Canada、ONS、Walmart 官方日历与既有产品/规则触发复查。"
+        },
+        {
+          "channel": "可靠英文媒体",
+          "status": "complete",
+          "checked_at": "2026-08-17T22:00:00+08:00",
+          "source_count": 2,
+          "note": "AP 本周预览交叉核对 FOMC minutes 与零售财报窗口；未把预测观点作事实。"
+        },
+        {
+          "channel": "Reddit / ForexFactory",
+          "status": "complete",
+          "checked_at": "2026-08-17T22:00:00+08:00",
+          "source_count": 5,
+          "note": "公开讨论和经济日历仅作为热度或时间信号，不替代事实核验。"
+        },
+        {
+          "channel": "X / Quora / BabyPips",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-08-17T22:00:00+08:00",
+          "source_count": 0,
+          "note": "公开结果没有提供改变候选决策的可核验新信号；未登录或进行账号操作。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-08-17_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-08-17_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-08-17"
+      }
+    },
+    {
+      "scan_date": "2026-08-11",
+      "generated_at": "2026-08-17T22:08:37+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 24,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 1,
+        "observation": 2,
+        "discarded": 2,
+        "total": 5,
+        "selected_average": 93.0,
+        "all_selected_pass_gate": true,
+        "content_ready": 1,
+        "playbook_ready": 1
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-08-11",
+          "candidate_id": "HR-20260811-01",
+          "status": "selected",
+          "topic": "RBA Held at 4.35 Percent Recalculate AUDUSD Risk After a Low Volatility Decision",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 21,
+          "calculator_fit": 24,
+          "evidence_quality": 14,
+          "actionability": 9,
+          "total_score": 93,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L"
+          ],
+          "reason": "RBA official decision FOREX.com impact coverage and public discussion support a new non-directional AUDUSD risk calculation topic",
+          "content_status": "review_ready",
+          "content_label": "RBA 4.35% AUD/USD 风险稿待人工审核",
+          "content_url": "../内容生产/2026-08-11/HR-20260811-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-08-12",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "new",
+            "urgency": "critical",
+            "publish_deadline": "2026-08-12T08:30:00-04:00",
+            "traffic_hook": "RBA on August 11 unanimously held the cash rate at 4.35%, while independent FX coverage described an immediate AUD/USD move of less than 0.1% and attention shifted to next-day U.S. CPI.",
+            "traffic_window": "Publish after the August 11 decision and before the August 12 U.S. CPI release; after CPI, replace all up-next language and reassess the headline.",
+            "search_intents": [
+              "RBA rate decision AUDUSD risk",
+              "AUDUSD position size calculator",
+              "how many lots AUDUSD 20 pip stop",
+              "RBA hold 4.35 AUDUSD volatility"
+            ],
+            "traffic_angle": "Use the 4.35% unanimous hold and reported sub-0.1% immediate AUD/USD reaction as the hook. Answer how a fixed $50 risk budget with a 20/35/50-pip stop implies about 0.25/0.14/0.10 lot. Show the arithmetic first, then verify with PipGauge; never predict direction.",
+            "calculator_bridge": "Use Pip Value to verify approximately $10 per pip for one standard lot of AUD/USD in a USD account, then Position Size to solve each lot size for a fixed $50 risk budget.",
+            "example_scenario": "$10,000 USD account; 0.5% or $50 risk; 20/35/50-pip stops imply about 0.25/0.14/0.10 lot before costs.",
+            "distribution_order": [
+              "Time-sensitive site article",
+              "Medium explanation",
+              "X self-contained number thread",
+              "Reddit native discussion without a first-round link"
+            ],
+            "link_placement": "Give the RBA facts and three worked calculations first; link PipGauge only at verification. No link in the first Reddit post.",
+            "expiry_condition": "Pause at the August 12 U.S. CPI release or if RBA corrects its materials; after CPI remove stale next-event wording.",
+            "editorial_boundary": "Do not forecast AUD/USD, imply a hold determines direction, generalize the initial sub-0.1% move, or claim the calculator predicts volatility or fills.",
+            "content_mainline": "Turn the RBA 4.35% unanimous hold and muted immediate AUD/USD response into a fixed-dollar-risk sizing lesson before the next event window.",
+            "body_material": [
+              "RBA 4.35% unanimous hold",
+              "official inflation wording",
+              "independent sub-0.1% immediate reaction",
+              "$50 risk across 20/35/50-pip stops",
+              "next-day CPI time gate"
+            ],
+            "product_bridge": "After explanation and hand calculation, use PipGauge to verify AUD/USD pip value and position size.",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Reserve Bank of Australia",
+                "url": "https://www.rba.gov.au/media-releases/2026/mr-26-19.html",
+                "source_type": "official_release",
+                "published_at": "2026-08-11",
+                "freshness_role": "official_rate_decision_and_vote",
+                "reliable": true
+              },
+              {
+                "publisher": "FOREX.com",
+                "url": "https://www.forex.com/en-us/news-and-analysis/australian-dollar-outlook-aud-usd-wobbles-on-rba-hold-us-cpi-up-next/",
+                "source_type": "independent_market_analysis",
+                "published_at": "2026-08-11",
+                "freshness_role": "independent_confirmation_and_immediate_fx_impact",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit r/australia",
+                "url": "https://www.reddit.com/r/australia/comments/1vl7e1m/rba_interest_rates_decision_on_hold_at_435/",
+                "source_type": "community_heat",
+                "published_at": "2026-08-11",
+                "freshness_role": "same_day_public_discussion",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass",
+              "decision_gate": "selected_new_distinct_rba_demand",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": true,
+                "window_delta": true
+              },
+              "reopen_trigger": "Official 4.35% unanimous decision and same-day AUDUSD risk searches",
+              "rationale": "Two reliable publishers plus public discussion support a distinct non-directional calculation topic"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-11",
+          "candidate_id": "HR-20260811-02",
+          "status": "observation",
+          "topic": "US July CPI Result Is Due August 12 but Still Has Only a Window Delta",
+          "primary_site": "PipGauge",
+          "freshness": 22,
+          "traffic_potential": 20,
+          "calculator_fit": 21,
+          "evidence_quality": 15,
+          "actionability": 5,
+          "total_score": 83,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L"
+          ],
+          "reason": "The result is not published and only window_delta differs from the existing macro risk topic",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+                "source_type": "official_schedule",
+                "published_at": "2026-08-11",
+                "freshness_role": "august_12_release_window",
+                "reliable": true
+              },
+              {
+                "publisher": "Associated Press",
+                "url": "https://apnews.com/article/1cf6047f812b3e1f151781f5722d97b7",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-07",
+                "freshness_role": "current_week_attention",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "only_one_refresh_signal",
+              "duplicate_of": [
+                "HR-20260730-02"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "BLS publishes July CPI and an independent source confirms it",
+              "rationale": "Only the release window changed"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-11",
+          "candidate_id": "HR-20260811-03",
+          "status": "observation",
+          "topic": "US July PPI Is Due August 13 and Still Lacks a Distinct Result",
+          "primary_site": "PipGauge",
+          "freshness": 20,
+          "traffic_potential": 17,
+          "calculator_fit": 20,
+          "evidence_quality": 15,
+          "actionability": 5,
+          "total_score": 77,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L"
+          ],
+          "reason": "Only window_delta is true and the pre-event path remains duplicate",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/schedule/news_release/ppi.htm",
+                "source_type": "official_schedule",
+                "published_at": "2026-08-11",
+                "freshness_role": "august_13_release_window",
+                "reliable": true
+              },
+              {
+                "publisher": "Associated Press",
+                "url": "https://apnews.com/article/1cf6047f812b3e1f151781f5722d97b7",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-07",
+                "freshness_role": "current_week_attention",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "only_one_refresh_signal",
+              "duplicate_of": [
+                "HR-20260811-02"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "BLS publishes July PPI and creates a distinct calculation question",
+              "rationale": "Only the release window changed"
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-11",
+          "candidate_id": "HR-20260811-04",
+          "status": "discarded",
+          "topic": "US July Retail Sales Calendar Preview Without Strong Calculation Demand",
+          "primary_site": "PipGauge",
+          "freshness": 18,
+          "traffic_potential": 12,
+          "calculator_fit": 18,
+          "evidence_quality": 8,
+          "actionability": 4,
+          "total_score": 60,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Position Size",
+            "P&L"
+          ],
+          "reason": "Calendar timing alone lacks official result evidence and strong public calculation demand"
+        },
+        {
+          "scan_date": "2026-08-11",
+          "candidate_id": "HR-20260811-05",
+          "status": "discarded",
+          "topic": "Directional RBA CPI Dollar Gold Stock and Crypto Forecasts",
+          "primary_site": "PipGauge",
+          "freshness": 23,
+          "traffic_potential": 24,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 57,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Directional forecasts price predictions and signal-like content are excluded"
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-08-11T22:00:00+08:00",
+          "source_count": 8,
+          "note": "覆盖 RBA 决议与 SMP、BLS CPI/PPI 日程、交易所与慢变规则触发检查"
+        },
+        {
+          "channel": "可靠英文媒体",
+          "status": "complete",
+          "checked_at": "2026-08-11T22:00:00+08:00",
+          "source_count": 2,
+          "note": "FOREX.com 核验 RBA 即时 FX 影响，AP 核验本周美国数据窗口"
+        },
+        {
+          "channel": "Reddit / ForexFactory",
+          "status": "complete",
+          "checked_at": "2026-08-11T22:00:00+08:00",
+          "source_count": 6,
+          "note": "两条当日澳大利亚讨论支持热度；社区不用于核验官方数字"
+        },
+        {
+          "channel": "X / Quora / BabyPips",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-08-11T22:00:00+08:00",
+          "source_count": 1,
+          "note": "公开结果未提供改变决策的新增可靠信号"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-08-11_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-08-11_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-08-11"
+      }
+    },
+    {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -413,7 +1115,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -754,7 +1456,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -1129,7 +1831,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -1517,7 +2219,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -1862,7 +2564,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -2190,7 +2892,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -2502,7 +3204,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -2823,7 +3525,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -3184,7 +3886,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -3537,7 +4239,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -3981,7 +4683,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -4490,7 +5192,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -4960,7 +5662,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -5503,7 +6205,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -5775,7 +6477,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -6088,7 +6790,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -6523,7 +7225,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -7037,7 +7739,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -7546,7 +8248,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -8013,7 +8715,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -8426,7 +9128,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -8824,7 +9526,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-08-10T22:04:18+08:00",
+      "generated_at": "2026-08-17T22:08:37+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -9263,10 +9965,10 @@
       }
     }
   ],
-  "scan_date": "2026-08-10",
+  "scan_date": "2026-08-17",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 23,
+    "day": 25,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -9276,372 +9978,365 @@
   "stats": {
     "selected": 1,
     "observation": 3,
-    "discarded": 2,
-    "total": 6,
-    "selected_average": 96.0,
+    "discarded": 1,
+    "total": 5,
+    "selected_average": 98.0,
     "all_selected_pass_gate": true,
     "content_ready": 1,
     "playbook_ready": 1
   },
   "candidates": [
     {
-      "scan_date": "2026-08-10",
-      "candidate_id": "HR-20260810-01",
+      "scan_date": "2026-08-17",
+      "candidate_id": "HR-20260817-01",
       "status": "selected",
-      "topic": "U.S. Payrolls Fell 23000 Recalculate Dollar Risk Around the July Jobs Surprise",
+      "topic": "FOMC Minutes Due August 19 Refresh EURUSD Risk Before the Release",
       "primary_site": "PipGauge",
-      "freshness": 23,
-      "traffic_potential": 25,
+      "freshness": 25,
+      "traffic_potential": 24,
       "calculator_fit": 24,
       "evidence_quality": 15,
-      "actionability": 9,
-      "total_score": 96,
+      "actionability": 10,
+      "total_score": 98,
       "hard_gate": true,
-      "reliable_sources": 3,
+      "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
         "Pip Value",
         "Position Size",
-        "Spread Cost",
-        "P&L"
+        "P&L",
+        "Spread Cost"
       ],
-      "reason": "BLS AP and Axios verify the result; all four refresh signals justify updating HR-20260730-02 without requiring measured execution data",
+      "reason": "Fed official calendar AP week-ahead coverage and current public discussion support refreshing HR-20260730-02 with a non-directional pre-minutes fixed-risk check",
       "content_status": "review_ready",
-      "content_label": "NFP 结果风险表刷新稿待人工审核",
-      "content_url": "../内容生产/2026-08-10/HR-20260810-01/index.html",
+      "content_label": "FOMC minutes EUR/USD 刷新稿待人工审核",
+      "content_url": "../内容生产/2026-08-17/HR-20260817-01/index.html",
       "content_format": "Medium / Reddit / X",
-      "deadline": "2026-08-11",
+      "deadline": "2026-08-19T14:00:00-04:00",
       "traffic_playbook": {
         "playbook_status": "ready",
         "execution_mode": "refresh",
         "urgency": "high",
-        "publish_deadline": "2026-08-11T23:00:00-04:00",
-        "traffic_hook": "The July jobs report showed payrolls down 23,000, unemployment at 4.1%, and May-June revisions totaling minus 103,000, creating a short explanation window before CPI.",
-        "traffic_window": "Refresh immediately and retire the independent jobs-report framing when July CPI publishes on August 12 at 08:30 ET.",
+        "publish_deadline": "2026-08-19T14:00:00-04:00",
+        "traffic_hook": "Federal Reserve 已排定 8 月 19 日 14:00 ET 公布 7 月 28–29 日 FOMC minutes；AP 的本周预览将其列为本周主要政策细节来源，公开讨论已转向 minutes。",
+        "traffic_window": "8 月 17 日至 8 月 19 日正式文本公布前；公布时立即以官方文本刷新同一稿，预告时态最多保留到发布后 60 分钟。",
         "search_intents": [
-          "July 2026 jobs report -23000",
-          "why unemployment fell when payrolls fell",
-          "NFP -23K forex risk",
-          "103000 payroll revisions"
+          "FOMC minutes August 19 2026",
+          "FOMC minutes EURUSD risk",
+          "EURUSD position size 50 pip stop",
+          "FOMC minutes trading risk calculator"
         ],
-        "traffic_angle": "Lead with the verified -23K, 4.1% and -103K result puzzle, then answer how a $50 risk budget changes lot size across 25, 50 and 100 pip stops; PipGauge verifies the arithmetic after the explanation.",
-        "calculator_bridge": "Pip Value and Position Size verify the fixed-risk table; Spread Cost is an explicitly hypothetical stress test, not reported market execution data.",
-        "example_scenario": "$10,000 USD account, 0.5% or $50 maximum planned loss, EUR/USD at approximately $10 per pip per standard lot; compare 25/50/100 pip stops and clearly labeled hypothetical costs.",
+        "traffic_angle": "借 8 月 19 日 minutes 发布这一新闻钩子，回答用户此刻会搜的‘50 pip EUR/USD 风险是多少、固定 $100 风险应下多大仓位’；用 $10,000 USD 账户、$100、25/50/100 pip 得出约 0.40/0.20/0.10 lot，先展示可读数字，在复核步骤承接现有工具。",
+        "calculator_bridge": "EUR/USD Pip Value → Position Size → P&L → 单列 Spread Cost 压力测试；工具用于核对输入，不解释或预测 minutes。",
+        "example_scenario": "$10,000 USD 账户、1% 即 $100；25/50/100 pip stop；约 0.40/0.20/0.10 lot；0.20 lot 的 50-pip 情景另加 2-pip 假设成本约 $4。",
         "distribution_order": [
-          "refresh existing site article HR-20260730-02",
-          "Medium review draft",
-          "Reddit native no-link discussion",
-          "X standalone thread"
+          "刷新 HR-20260730-02 的标题、首段、时间框、来源与示例说明",
+          "站内风险检查页",
+          "Medium 完整解释",
+          "X 可独立阅读的数字线程",
+          "Reddit 原生讨论且首轮不放链接"
         ],
-        "link_placement": "Finish the risk table and caveats before one calculator link; Reddit first version contains no link and X main thread stands alone.",
-        "expiry_condition": "July CPI publishes on August 12 or a new official employment revision materially changes the figures.",
-        "editorial_boundary": "Do not predict the dollar, Fed policy or market direction; distinguish payrolls from the unemployment rate and label all spread/slippage values as hypothetical.",
+        "link_placement": "先给发布时间、三档固定风险仓位和成本边界；在读者需要复核 pair、账户币种与 lot 输入时，才链接 Pip Value、Position Size 和 Spread Cost。",
+        "expiry_condition": "8 月 19 日 14:00 ET 正式文本发布后立即停止使用 ‘due / before the release’ 标题；官方日程或 minutes 文本更正时暂停，并先更新同一稿。",
+        "editorial_boundary": "不预测 minutes 语气、利率路径、EUR/USD 方向或实际波幅；不把三人 dissent 写成未来政策承诺；2 pip 仅为假设压力测试，不是实测点差或滑点。",
         "refresh_target": "HR-20260730-02",
-        "refresh_signals": {
-          "fact_delta": true,
-          "search_delta": true,
-          "example_delta": true,
-          "window_delta": true
-        },
-        "content_mainline": "Explain how payrolls can fall while unemployment also falls, then recalculate fixed dollar risk without turning the result into a trade call.",
-        "body_material": "BLS -23K payrolls, 4.1% unemployment, -103K revisions, and a $50-risk 25/50/100-pip table.",
-        "product_bridge": "Use PipGauge only after the independent explanation to verify pip value, position size and hypothetical spread cost.",
+        "refresh_updates": [
+          "标题从 7 月决议结果改为 8 月 19 日 minutes 风险检查",
+          "首段改为未来时态与官方发布时间",
+          "替换来源为 Fed 8 月日历、FOMC 日历、AP 本周预览",
+          "保留固定风险数学，删除任何过期的决议后窗口表述"
+        ],
+        "content_mainline": "用 FOMC minutes 发布窗口刷新现有 EUR/USD 风险稿，而不是新建同构的 Fed 事件文。",
+        "body_material": [
+          "Fed 8 月 19 日 14:00 ET 官方时间",
+          "AP 对 7 月持稳与三位 dissent 的独立背景",
+          "$100 固定风险下 25/50/100 pip 的 0.40/0.20/0.10 lot",
+          "费用和滑点的假设压力测试边界"
+        ],
+        "product_bridge": "先完成官方事实和手算，再使用 PipGauge 核对 pip value、position size、P&L 与 spread-cost 输入。",
         "product_bridge_type": "existing"
       },
       "scan_audit": {
         "sources": [
           {
-            "publisher": "U.S. Bureau of Labor Statistics",
-            "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
-            "source_type": "official_release",
-            "published_at": "2026-08-07",
-            "freshness_role": "official_july_result_and_revisions",
+            "publisher": "Federal Reserve Board",
+            "url": "https://www.federalreserve.gov/newsevents/2026-august.htm",
+            "source_type": "official_calendar",
+            "published_at": "2025-06-24",
+            "freshness_role": "officially_scheduled_August_19_2026_1400_ET_minutes_release",
             "reliable": true
           },
           {
             "publisher": "Associated Press",
-            "url": "https://apnews.com/article/9636095906bbb689a1f612bce9a07343",
+            "url": "https://apnews.com/article/wall-street-home-depot-target-fed-7dd75609981e7e96b40aa82523b0ea57",
             "source_type": "reliable_news",
-            "published_at": "2026-08-07",
-            "freshness_role": "independent_result_and_market_context",
+            "published_at": "2026-08-13",
+            "freshness_role": "independent_current_week_confirmation_and_context",
             "reliable": true
           },
           {
-            "publisher": "Axios",
-            "url": "https://www.axios.com/2026/08/07/bls-jobs-report-rates-july",
-            "source_type": "reliable_news",
-            "published_at": "2026-08-07",
-            "freshness_role": "independent_result_and_revision_context",
-            "reliable": true
-          }
-        ],
-        "decision": {
-          "novelty_gate": "pass",
-          "decision_gate": "selected_refresh_four_signals",
-          "duplicate_of": [
-            "HR-20260730-02"
-          ],
-          "refresh_target": "HR-20260730-02",
-          "refresh_signals": {
-            "fact_delta": true,
-            "search_delta": true,
-            "example_delta": true,
-            "window_delta": true
-          },
-          "reopen_trigger": "Triggered by the official -23K result, 4.1% unemployment, -103K revisions and post-result search window",
-          "rationale": "All four refresh signals justify updating the existing dollar macro-risk article; measured execution data is not required because the claim is not about actual trading costs"
-        }
-      }
-    },
-    {
-      "scan_date": "2026-08-10",
-      "candidate_id": "HR-20260810-02",
-      "status": "observation",
-      "topic": "July CPI on August 12 Has Only a New Window Before the Result",
-      "primary_site": "PipGauge",
-      "freshness": 20,
-      "traffic_potential": 22,
-      "calculator_fit": 21,
-      "evidence_quality": 15,
-      "actionability": 6,
-      "total_score": 84,
-      "hard_gate": true,
-      "reliable_sources": 2,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Pip Value",
-        "Position Size",
-        "P&L"
-      ],
-      "reason": "The forecast is not an actual result; only window_delta is true",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "U.S. Bureau of Labor Statistics",
-            "url": "https://www.bls.gov/cpi/home.htm",
-            "source_type": "official_schedule",
-            "published_at": "2026-08-10",
-            "freshness_role": "august_12_release_window",
-            "reliable": true
-          },
-          {
-            "publisher": "Associated Press",
-            "url": "https://apnews.com/article/1cf6047f812b3e1f151781f5722d97b7",
-            "source_type": "reliable_news",
-            "published_at": "2026-08-07",
-            "freshness_role": "current_week_attention",
-            "reliable": true
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "only_one_refresh_signal",
-          "duplicate_of": [
-            "HR-20260730-02"
-          ],
-          "refresh_signals": {
-            "fact_delta": false,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": true
-          },
-          "reopen_trigger": "BLS publishes July CPI and a reliable independent source confirms the result",
-          "rationale": "The forecast is not an actual result; only the release window has changed"
-        }
-      }
-    },
-    {
-      "scan_date": "2026-08-10",
-      "candidate_id": "HR-20260810-03",
-      "status": "observation",
-      "topic": "July PPI on August 13 Needs a Distinct Result Before Refresh",
-      "primary_site": "PipGauge",
-      "freshness": 19,
-      "traffic_potential": 18,
-      "calculator_fit": 20,
-      "evidence_quality": 15,
-      "actionability": 5,
-      "total_score": 77,
-      "hard_gate": true,
-      "reliable_sources": 2,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Pip Value",
-        "Position Size",
-        "P&L"
-      ],
-      "reason": "Only window_delta is true and the current path overlaps CPI",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "U.S. Bureau of Labor Statistics",
-            "url": "https://www.bls.gov/ppi/",
-            "source_type": "official_schedule",
-            "published_at": "2026-08-10",
-            "freshness_role": "august_13_release_window",
-            "reliable": true
-          },
-          {
-            "publisher": "Associated Press",
-            "url": "https://apnews.com/article/1cf6047f812b3e1f151781f5722d97b7",
-            "source_type": "reliable_news",
-            "published_at": "2026-08-07",
-            "freshness_role": "current_week_attention",
-            "reliable": true
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "only_one_refresh_signal",
-          "duplicate_of": [
-            "HR-20260810-02"
-          ],
-          "refresh_signals": {
-            "fact_delta": false,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": true
-          },
-          "reopen_trigger": "BLS publishes July PPI and the result creates a distinct CPI/PPI comparison question",
-          "rationale": "Only the release window has changed"
-        }
-      }
-    },
-    {
-      "scan_date": "2026-08-10",
-      "candidate_id": "HR-20260810-04",
-      "status": "observation",
-      "topic": "FundedNext FNL002 Needs a Stable Dated Official Rule Page",
-      "primary_site": "PositionMath",
-      "freshness": 18,
-      "traffic_potential": 20,
-      "calculator_fit": 24,
-      "evidence_quality": 7,
-      "actionability": 7,
-      "total_score": 76,
-      "hard_gate": false,
-      "reliable_sources": 1,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Daily Loss Limit",
-        "Trailing Drawdown",
-        "Prop Firm Calculator"
-      ],
-      "reason": "Four deltas cannot override the missing stable dated/versioned official fact page",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "FundedNext",
-            "url": "https://www.reddit.com/r/fundednext/comments/1vf6o9x/fnl002_12_mll_3day_payout_2step_cfds_25k/",
-            "source_type": "official_social_release",
-            "published_at": "2026-08-04",
-            "freshness_role": "recent_product_claims",
-            "reliable": true
-          },
-          {
-            "publisher": "Reddit fundednext",
-            "url": "https://www.reddit.com/r/fundednext/comments/1vf6o9x/fnl002_12_mll_3day_payout_2step_cfds_25k/",
+            "publisher": "Reddit r/Daytrading",
+            "url": "https://www.reddit.com/r/Daytrading/comments/1vqoqal/fomc_minutes/",
             "source_type": "community_heat",
-            "published_at": "2026-08-04",
-            "freshness_role": "product_interest",
+            "published_at": "2026-08-17",
+            "freshness_role": "same_day_public_minutes_discussion",
             "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "pass",
-          "decision_gate": "official_fact_page_not_dated_or_versioned",
+          "decision_gate": "selected_refresh_existing_fomc_risk_article",
+          "duplicate_of": [
+            "HR-20260730-02"
+          ],
+          "refresh_signals": {
+            "fact_delta": true,
+            "search_delta": true,
+            "example_delta": false,
+            "window_delta": true
+          },
+          "reopen_trigger": "Official minutes publication or an official schedule correction",
+          "rationale": "Two independent reliable publishers, current discussion and a two-day official document window support a non-directional fixed-risk refresh; no unpublished minutes content is claimed."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-08-17",
+      "candidate_id": "HR-20260817-02",
+      "status": "observation",
+      "topic": "Canada July CPI Rose 3.0 Percent but Lacks an Independent Fact Confirmation",
+      "primary_site": "PipGauge",
+      "freshness": 25,
+      "traffic_potential": 20,
+      "calculator_fit": 22,
+      "evidence_quality": 8,
+      "actionability": 6,
+      "total_score": 81,
+      "hard_gate": false,
+      "reliable_sources": 1,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Pip Value",
+        "Position Size",
+        "P&L"
+      ],
+      "reason": "Statistics Canada and public discussion confirm a fresh result but no second independent reliable English fact source was available at scan time",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "Statistics Canada",
+            "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260817/dq260817a-eng.htm",
+            "source_type": "official_release",
+            "published_at": "2026-08-17",
+            "freshness_role": "official_July_CPI_result_3_0_percent_yoy",
+            "reliable": true
+          },
+          {
+            "publisher": "Reddit r/PersonalFinanceCanada",
+            "url": "https://www.reddit.com/r/PersonalFinanceCanada/comments/1vqr0sq/july_cpi/",
+            "source_type": "community_heat",
+            "published_at": "2026-08-17",
+            "freshness_role": "same_day_public_discussion",
+            "reliable": false
+          }
+        ],
+        "decision": {
+          "novelty_gate": "not_evaluated_hard_gate_fail",
+          "decision_gate": "observation_missing_second_independent_reliable_fact_source",
+          "duplicate_of": [],
           "refresh_signals": {
             "fact_delta": true,
             "search_delta": true,
             "example_delta": true,
             "window_delta": true
           },
-          "reopen_trigger": "A stable dated/versioned official FNL:002 rules page becomes public",
-          "rationale": "Refresh signals cannot override the missing stable official fact source"
+          "reopen_trigger": "A second independent reliable English report confirms the Statistics Canada result and a distinct USD/CAD calculation query is visible",
+          "rationale": "Fresh result and heat are real, but community discussion cannot satisfy the second reliable-source rule."
         }
       }
     },
     {
-      "scan_date": "2026-08-10",
-      "candidate_id": "HR-20260810-05",
-      "status": "discarded",
-      "topic": "Directional CPI NFP Dollar Gold Stock and Crypto Predictions",
+      "scan_date": "2026-08-17",
+      "candidate_id": "HR-20260817-03",
+      "status": "observation",
+      "topic": "UK July CPI PPI Due August 19 Has Only a Calendar Window",
       "primary_site": "PipGauge",
-      "freshness": 20,
-      "traffic_potential": 27,
+      "freshness": 23,
+      "traffic_potential": 17,
+      "calculator_fit": 21,
+      "evidence_quality": 10,
+      "actionability": 5,
+      "total_score": 76,
+      "hard_gate": false,
+      "reliable_sources": 1,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Pip Value",
+        "Position Size",
+        "P&L"
+      ],
+      "reason": "ONS confirms the release window but the result and a differentiated GBPUSD calculation-demand signal are not yet available",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "Office for National Statistics",
+            "url": "https://www.ons.gov.uk/releases/consumerpriceinflationukjune2026",
+            "source_type": "official_schedule",
+            "published_at": "2026-07-22",
+            "freshness_role": "confirmed_August_19_2026_CPI_release_window",
+            "reliable": true
+          },
+          {
+            "publisher": "Forex Factory",
+            "url": "https://www.forexfactory.com/calendar?month=aug.2026",
+            "source_type": "community_calendar_heat",
+            "published_at": "2026-08-17",
+            "freshness_role": "public_calendar_cross_check",
+            "reliable": false
+          }
+        ],
+        "decision": {
+          "novelty_gate": "not_evaluated_hard_gate_fail",
+          "decision_gate": "observation_pre_release_window_without_distinct_traffic_path",
+          "duplicate_of": [
+            "HR-20260730-01"
+          ],
+          "refresh_signals": {
+            "fact_delta": false,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": true
+          },
+          "reopen_trigger": "ONS publishes the result and an independent source plus a distinct GBPUSD calculation-demand signal appear",
+          "rationale": "A calendar date alone is only one refresh signal and does not justify another GBPUSD event-risk package."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-08-17",
+      "candidate_id": "HR-20260817-04",
+      "status": "observation",
+      "topic": "Walmart FY2027 Q2 Due August 20 Has Generic Rather Than Distinct PositionMath Demand",
+      "primary_site": "PositionMath",
+      "freshness": 24,
+      "traffic_potential": 18,
+      "calculator_fit": 14,
+      "evidence_quality": 14,
+      "actionability": 0,
+      "total_score": 70,
+      "hard_gate": true,
+      "reliable_sources": 2,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Position Size",
+        "P&L",
+        "Portfolio Heat"
+      ],
+      "reason": "Walmart and AP confirm the event and public discussion exists but the calculation bridge remains generic relative to existing earnings-risk content",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "Walmart Inc.",
+            "url": "https://corporate.walmart.com/news/events/",
+            "source_type": "official_earnings_schedule",
+            "published_at": "2026-08-16",
+            "freshness_role": "official_August_20_2026_FY2027_Q2_time",
+            "reliable": true
+          },
+          {
+            "publisher": "Associated Press",
+            "url": "https://apnews.com/article/wall-street-home-depot-target-fed-7dd75609981e7e96b40aa82523b0ea57",
+            "source_type": "reliable_news",
+            "published_at": "2026-08-13",
+            "freshness_role": "independent_current_week_retail_earnings_context",
+            "reliable": true
+          },
+          {
+            "publisher": "Reddit r/wallstreetbets",
+            "url": "https://www.reddit.com/r/wallstreetbets/comments/1vocawt/weekly_earnings_thread_817_821/",
+            "source_type": "community_heat",
+            "published_at": "2026-08-14",
+            "freshness_role": "current_public_earnings_discussion",
+            "reliable": false
+          }
+        ],
+        "decision": {
+          "novelty_gate": "not_evaluated_score_below_threshold",
+          "decision_gate": "observation_generic_stock_earnings_calculation_path",
+          "duplicate_of": [
+            "HR-20260722-03"
+          ],
+          "refresh_signals": {
+            "fact_delta": true,
+            "search_delta": true,
+            "example_delta": false,
+            "window_delta": true
+          },
+          "reopen_trigger": "A verifiable result, an actual gap or a public question with a specific portfolio/position calculation appears",
+          "rationale": "The event and interest are verified, but a generic 5-to-10 percent earnings gap table would duplicate existing stock-risk material without a stronger calculation-intent path."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-08-17",
+      "candidate_id": "HR-20260817-05",
+      "status": "discarded",
+      "topic": "Directional FOMC CPI Walmart and FX Forecasts",
+      "primary_site": "PipGauge",
+      "freshness": 25,
+      "traffic_potential": 24,
       "calculator_fit": 3,
       "evidence_quality": 5,
       "actionability": 2,
-      "total_score": 57,
+      "total_score": 59,
       "hard_gate": false,
       "reliable_sources": 0,
       "fresh_signal": true,
       "calculator_mapping": [
         "P&L"
       ],
-      "reason": "Directional forecasts and signal-like content are excluded"
-    },
-    {
-      "scan_date": "2026-08-10",
-      "candidate_id": "HR-20260810-06",
-      "status": "discarded",
-      "topic": "Evergreen Leverage and Position Size Questions Without a Current Trigger",
-      "primary_site": "PipGauge",
-      "freshness": 5,
-      "traffic_potential": 12,
-      "calculator_fit": 20,
-      "evidence_quality": 8,
-      "actionability": 4,
-      "total_score": 49,
-      "hard_gate": false,
-      "reliable_sources": 1,
-      "fresh_signal": false,
-      "calculator_mapping": [
-        "Position Size",
-        "Margin"
-      ],
-      "reason": "Useful evergreen demand but no current event or rule trigger"
+      "reason": "Price targets directional calls and signal-like content are excluded"
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-08-10T22:05:00+08:00",
-      "source_count": 10,
-      "note": "晚间复核 BLS 就业、CPI/PPI、监管、prop-firm 与 broker 入口；无结构性新增"
+      "checked_at": "2026-08-17T22:00:00+08:00",
+      "source_count": 6,
+      "note": "覆盖 Federal Reserve、Statistics Canada、ONS、Walmart 官方日历与既有产品/规则触发复查。"
     },
     {
       "channel": "可靠英文媒体",
       "status": "complete",
-      "checked_at": "2026-08-10T22:05:00+08:00",
-      "source_count": 3,
-      "note": "AP 与 Axios 继续交叉确认就业结果和当前市场背景"
+      "checked_at": "2026-08-17T22:00:00+08:00",
+      "source_count": 2,
+      "note": "AP 本周预览交叉核对 FOMC minutes 与零售财报窗口；未把预测观点作事实。"
     },
     {
       "channel": "Reddit / ForexFactory",
       "status": "complete",
-      "checked_at": "2026-08-10T22:05:00+08:00",
-      "source_count": 8,
-      "note": "晚间公开讨论仍只确认就业、CPI 与风险计算需求"
+      "checked_at": "2026-08-17T22:00:00+08:00",
+      "source_count": 5,
+      "note": "公开讨论和经济日历仅作为热度或时间信号，不替代事实核验。"
     },
     {
       "channel": "X / Quora / BabyPips",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-08-10T22:05:00+08:00",
-      "source_count": 1,
-      "note": "晚间没有改变正式结论的新增可验证信号"
+      "checked_at": "2026-08-17T22:00:00+08:00",
+      "source_count": 0,
+      "note": "公开结果没有提供改变候选决策的可核验新信号；未登录或进行账号操作。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-08-10_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-08-10_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-08-17_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-08-17_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
     "traffic_playbooks": "../热点流量打法.json",
-    "content_root": "../内容生产/2026-08-10"
+    "content_root": "../内容生产/2026-08-17"
   },
   "radar_model": "v2-content-first",
   "editorial_policy": {
