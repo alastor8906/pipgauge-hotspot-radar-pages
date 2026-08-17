@@ -1,4 +1,14 @@
 {
+  "HR-20260817-01": {
+    "content_status": "review_ready",
+    "content_label": "FOMC minutes EUR/USD 刷新稿待人工审核",
+    "content_url": "../内容生产/2026-08-17/HR-20260817-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-08-19T14:00:00-04:00"
+  },
+  "HR-20260811-01": {
+    "content_status": "review_ready", "content_label": "RBA 4.35% AUD/USD 风险稿待人工审核", "content_url": "../内容生产/2026-08-11/HR-20260811-01/index.html", "content_format": "Medium / Reddit / X", "deadline": "2026-08-12"
+  },
   "HR-20260810-01": {
     "content_status": "review_ready",
     "content_label": "NFP 结果风险表刷新稿待人工审核",
