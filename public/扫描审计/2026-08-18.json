@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "scan_date": "2026-08-18",
+  "generated_at": "2026-08-18T22:00:00+08:00",
+  "coverage": [
+    {"channel":"官方与一手来源","status":"complete","checked_at":"2026-08-18T22:00:00+08:00","source_count":6,"note":"覆盖 Federal Reserve、BLS、ONS、Statistics Canada、Walmart 官方日程和当天正式统计发布。"},
+    {"channel":"可靠英文媒体 / 独立经济日历","status":"complete","checked_at":"2026-08-18T22:00:00+08:00","source_count":3,"note":"覆盖 AP、Scotiabank 经济日历和 Myfxbook；日历或热度源不会替代当天结果的第二独立事实来源。"},
+    {"channel":"Reddit / ForexFactory","status":"complete","checked_at":"2026-08-18T22:00:00+08:00","source_count":5,"note":"公开讨论仅用于热度与查询对象，不替代事实核验；加拿大 CPI 和 FOMC 讨论没有改变硬门槛。"},
+    {"channel":"X / Quora / BabyPips","status":"checked_no_material_signal","checked_at":"2026-08-18T22:00:00+08:00","source_count":0,"note":"公开结果没有发现可核验、会改变计算路径的材料；未登录或进行账号操作。"}
+  ],
+  "candidates": {
+    "HR-20260818-01": {
+      "sources": [
+        {"publisher":"Federal Reserve Board","url":"https://www.federalreserve.gov/newsevents/2026-august.htm","source_type":"official_calendar","published_at":"2026-08-18","freshness_role":"official_August_19_2026_1400_ET_minutes_release_inside_24_hours","reliable":true},
+        {"publisher":"Associated Press","url":"https://apnews.com/article/wall-street-home-depot-target-fed-7dd75609981e7e96b40aa82523b0ea57","source_type":"reliable_news","published_at":"2026-08-13","freshness_role":"independent_current_week_minutes_context","reliable":true},
+        {"publisher":"Myfxbook","url":"https://www.myfxbook.com/forex-economic-calendar/united-states/fomc-minutes","source_type":"public_calendar_heat","published_at":"2026-08-18","freshness_role":"current_countdown_and_public_EURUSD_event_interest","reliable":false},
+        {"publisher":"Reddit r/Forexstrategy","url":"https://www.reddit.com/r/Forexstrategy/comments/1vrnk7l/fomc_minutes_ahead_what_could_they_mean_for_the/","source_type":"community_heat","published_at":"2026-08-18","freshness_role":"same_day_public_minutes_discussion_not_used_for_direction_or_facts","reliable":false}
+      ],
+      "decision": {"novelty_gate":"fail","decision_gate":"observation_insufficient_new_refresh_signals","duplicate_of":["HR-20260817-01","HR-20260730-02"],"refresh_signals":{"fact_delta":false,"search_delta":false,"example_delta":false,"window_delta":true},"reopen_trigger":"Federal Reserve publishes the minutes or corrects its release schedule; then refresh the same FOMC article with verified text","rationale":"The current release window is real, but yesterday's selected refresh already owns the same hook, search intent and fixed-risk example. A shorter wait is only one signal and cannot justify a second snapshot."}
+    },
+    "HR-20260818-02": {
+      "sources": [
+        {"publisher":"Office for National Statistics","url":"https://www.ons.gov.uk/releases/uklabourmarketaugust2026","source_type":"official_release","published_at":"2026-08-18","freshness_role":"same_day_UK_labour_market_release","reliable":true},
+        {"publisher":"Scotiabank Economics","url":"https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.calendar-of-economic-release-dates.calendar-of-economic-release-dates--august-2026-.html","source_type":"independent_calendar","published_at":"2026-08-18","freshness_role":"independent_date_cross_check_only_not_result_verification","reliable":false}
+      ],
+      "decision": {"novelty_gate":"not_evaluated_hard_gate_fail","decision_gate":"observation_missing_second_independent_reliable_result_and_distinct_traffic_path","duplicate_of":["HR-20260730-01"],"refresh_signals":{"fact_delta":true,"search_delta":false,"example_delta":false,"window_delta":false},"reopen_trigger":"An independent reliable English report confirms the specific result and a non-generic GBPUSD calculation query becomes visible","rationale":"The dated official release is fresh, but no independently verified result-plus-calculation route passed the gate."}
+    },
+    "HR-20260818-03": {
+      "sources": [
+        {"publisher":"U.S. Bureau of Labor Statistics","url":"https://www.bls.gov/news.release/ximpim.nr0.htm","source_type":"official_release","published_at":"2026-08-18","freshness_role":"same_day_July_import_minus_0_4_export_minus_1_3_result","reliable":true},
+        {"publisher":"Reddit r/EducatedInvesting","url":"https://www.reddit.com/r/EducatedInvesting/comments/1vpv5ap/week_ahead_setup_aug_1721_canada_cpi_ukjapan/","source_type":"community_calendar_heat","published_at":"2026-08-16","freshness_role":"public_calendar_context_not_fact_verification","reliable":false}
+      ],
+      "decision": {"novelty_gate":"not_evaluated_hard_gate_fail","decision_gate":"observation_missing_second_independent_reliable_result_and_natural_calculation_bridge","duplicate_of":[],"refresh_signals":{"fact_delta":true,"search_delta":false,"example_delta":false,"window_delta":false},"reopen_trigger":"A second independent report and a specific retail FX, index-CFD, or risk-budget question tied to the result appear","rationale":"An import-price change alone does not make a useful retail position-size article."}
+    },
+    "HR-20260818-04": {
+      "sources": [
+        {"publisher":"Statistics Canada","url":"https://www150.statcan.gc.ca/n1/daily-quotidien/260817/dq260817a-eng.htm","source_type":"official_release","published_at":"2026-08-17","freshness_role":"July_CPI_3_0_percent_yoy_inside_72_hours","reliable":true},
+        {"publisher":"Reddit r/CanadianInvestor","url":"https://www.reddit.com/r/CanadianInvestor/comments/1vqw0j7/inflation_rate_rose_to_3_in_july_as_gas_prices/","source_type":"community_heat","published_at":"2026-08-18","freshness_role":"current_public_discussion_not_fact_verification","reliable":false}
+      ],
+      "decision": {"novelty_gate":"not_evaluated_hard_gate_fail","decision_gate":"observation_missing_second_independent_reliable_fact_source","duplicate_of":[],"refresh_signals":{"fact_delta":true,"search_delta":true,"example_delta":true,"window_delta":false},"reopen_trigger":"A second independent reliable English report confirms the Statistics Canada result and a distinct USD/CAD calculation query is visible","rationale":"Heat does not turn a single official source into independent fact confirmation."}
+    },
+    "HR-20260818-05": {
+      "sources": [
+        {"publisher":"Walmart Inc.","url":"https://corporate.walmart.com/news/events/","source_type":"official_earnings_schedule","published_at":"2026-08-16","freshness_role":"official_August_20_2026_FY2027_Q2_time","reliable":true},
+        {"publisher":"Associated Press","url":"https://apnews.com/article/wall-street-home-depot-target-fed-7dd75609981e7e96b40aa82523b0ea57","source_type":"reliable_news","published_at":"2026-08-13","freshness_role":"independent_current_week_retail_earnings_context","reliable":true},
+        {"publisher":"Reddit r/wallstreetbets","url":"https://www.reddit.com/r/wallstreetbets/comments/1vocawt/weekly_earnings_thread_817_821/","source_type":"community_heat","published_at":"2026-08-14","freshness_role":"public_earnings_discussion","reliable":false}
+      ],
+      "decision": {"novelty_gate":"fail","decision_gate":"observation_generic_duplicate_earnings_calculation_path","duplicate_of":["HR-20260722-03","HR-20260817-04"],"refresh_signals":{"fact_delta":false,"search_delta":false,"example_delta":false,"window_delta":true},"reopen_trigger":"Verified results, a documented gap, or a specific public portfolio-risk calculation question appears","rationale":"The event window has merely shortened; generic percentage-gap sizing would duplicate existing PositionMath earnings content."}
+    }
+  }
+}
