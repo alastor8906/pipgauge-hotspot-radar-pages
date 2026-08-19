@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "scan_date": "2026-08-03",
+  "generated_at": "2026-08-03T22:03:10+08:00",
+  "coverage": [
+    {"channel":"官方与一手来源","status":"complete","checked_at":"2026-08-03T22:03:10+08:00","source_count":5,"note":"核查 BOJ、BLS、Japan MOF、CME 与 Financial Commission"},
+    {"channel":"可靠英文媒体","status":"complete","checked_at":"2026-08-03T22:03:10+08:00","source_count":2,"note":"复查 Reuters 与 Financial Times 当期报道及索引"},
+    {"channel":"Reddit / ForexFactory","status":"complete","checked_at":"2026-08-03T22:03:10+08:00","source_count":6,"note":"仅作公开热度、问题措辞与事件时点信号"},
+    {"channel":"X / Quora / BabyPips","status":"checked_no_material_signal","checked_at":"2026-08-03T22:03:10+08:00","source_count":0,"note":"未发现可验证且能改变入选结论的新增信号"}
+  ],
+  "candidates": {
+    "HR-20260803-01": {
+      "sources": [
+        {"publisher":"Bank of Japan","url":"https://www.boj.or.jp/en/mopo/mpmsche_minu/","source_type":"official_schedule","published_at":"2026-08-03","freshness_role":"confirms_july_full_text_release_date_and_corrects_prior_assumption","reliable":true},
+        {"publisher":"Reuters","url":"https://www.reuters.com/world/asia-pacific/boj-keep-rates-steady-deliver-hawkish-signal-price-pressures-mount-2026-07-30/","source_type":"reliable_news","published_at":"2026-07-31","freshness_role":"independent_decision_context","reliable":true}
+      ],
+      "decision":{"novelty_gate":"fail","decision_gate":"duplicate_and_no_august_3_event","duplicate_of":["HR-20260731-01","HR-20260802-03"],"reopen_trigger":"BOJ releases a new summary opinion correction or number that changes the calculation example","rationale":"Official schedule shows the full text was already released July 31; no new August 3 fact exists"}
+    },
+    "HR-20260803-02": {
+      "sources": [
+        {"publisher":"U.S. Bureau of Labor Statistics","url":"https://www.bls.gov/schedule/2026/08_sched.htm","source_type":"official_schedule","published_at":"2026-08-03","freshness_role":"official_upcoming_release_timing","reliable":true},
+        {"publisher":"ForexFactory","url":"https://www.forexfactory.com/calendar","source_type":"community_calendar","published_at":"2026-08-03","freshness_role":"event_interest_check","reliable":false}
+      ],
+      "decision":{"novelty_gate":"fail","decision_gate":"insufficient_independent_reliable_sources_and_duplicate_path","duplicate_of":["HR-20260802-02","HR-20260724-01"],"reopen_trigger":"August 7 official result or two reliable publishers confirm unusual FX volatility or execution cost","rationale":"Result is pending and the pre-event risk path is already covered"}
+    },
+    "HR-20260803-03": {
+      "sources": [
+        {"publisher":"CME Group","url":"https://www.cmegroup.com/notices/clearing/2026/07/26-246.html","source_type":"official_clearing_notice","published_at":"2026-07-27","freshness_role":"recent_parameter_change_recheck","reliable":true},
+        {"publisher":"Financial Commission","url":"https://financialcommission.org/2026/07/22/financial-commission-launches-the-first-self-regulatory-framework-for-prop-firms/","source_type":"official_framework","published_at":"2026-07-22","freshness_role":"prop_firm_framework_recheck","reliable":true},
+        {"publisher":"Reddit Daytrading","url":"https://www.reddit.com/r/Daytrading/comments/1r29otx/prop_firms_for_2026_forex_gold/","source_type":"community_heat","published_at":"2026-08-03","freshness_role":"same_day_generic_prop_firm_demand","reliable":false}
+      ],
+      "decision":{"novelty_gate":"fail","decision_gate":"no_specific_retail_calculation_rule_change","duplicate_of":["HR-20260802-04","HR-20260801-04","HR-20260801-05"],"reopen_trigger":"Two reliable publishers confirm a new retail margin drawdown daily-loss or payout rule","rationale":"Recent pages do not yield a distinct retail-facing calculator question"}
+    },
+    "HR-20260803-04": {
+      "sources": [
+        {"publisher":"Financial Times","url":"https://www.ft.com/content/0f9b2fe7-bde4-4f5f-b49e-93ccb5da9ea8","source_type":"reliable_news","published_at":"2026-08-01","freshness_role":"coordinated_intervention_report","reliable":true},
+        {"publisher":"Reuters","url":"https://www.reuters.com/world/asia-pacific/us-treasury-undertakes-intervention-yen-market-ft-reports-2026-08-01/","source_type":"reliable_news","published_at":"2026-08-01","freshness_role":"independent_cross_confirmation","reliable":true},
+        {"publisher":"Japan Ministry of Finance","url":"https://www.mof.go.jp/policy/international_policy/reference/feio/index.html","source_type":"official_statistics_schedule","published_at":"2026-08-03","freshness_role":"official_amount_release_boundary_recheck","reliable":true},
+        {"publisher":"Reddit wallstreetbets","url":"https://www.reddit.com/r/wallstreetbets/comments/1vd5wjy/japan_to_announce_tokyo_washington_took_joint/","source_type":"community_heat","published_at":"2026-08-02","freshness_role":"continuing_discussion_signal","reliable":false}
+      ],
+      "decision":{"novelty_gate":"fail","decision_gate":"duplicate_without_new_fact","duplicate_of":["HR-20260802-01","HR-20260720-01"],"reopen_trigger":"Japan MOF publishes the official amount or either government corrects the reported coordination","rationale":"Yesterday's refresh already captures the mechanism and calculation path; no new fact supports another package"}
+    }
+  }
+}

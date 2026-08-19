@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "scan_date": "2026-08-07",
+  "generated_at": "2026-08-07T22:03:00+08:00",
+  "coverage": [
+    {"channel":"官方与一手来源","status":"complete","checked_at":"2026-08-07T22:03:00+08:00","source_count":10,"note":"核查 BLS、Federal Reserve、Japan MOF、CME、CFTC、FCA、Financial Commission、Lucid Trading 与 prop-firm 官方入口"},
+    {"channel":"可靠英文媒体","status":"complete","checked_at":"2026-08-07T22:03:00+08:00","source_count":3,"note":"AP 与 Axios 交叉确认就业结果和市场反应；未发现本次可核验的 FX 实测执行成本"},
+    {"channel":"Reddit / ForexFactory","status":"complete","checked_at":"2026-08-07T22:03:00+08:00","source_count":8,"note":"当日 NFP 讨论热度强，且出现 volatility、slippage、spreads 问题措辞；仅作热度信号"},
+    {"channel":"X / Quora / BabyPips","status":"checked_no_material_signal","checked_at":"2026-08-07T22:03:00+08:00","source_count":1,"note":"未发现可验证且能改变入选结论的新增信号"}
+  ],
+  "candidates": {
+    "HR-20260807-01": {
+      "sources": [
+        {"publisher":"U.S. Bureau of Labor Statistics","url":"https://www.bls.gov/news.release/empsit.nr0.htm","source_type":"official_release","published_at":"2026-08-07","freshness_role":"same_day_july_employment_result","reliable":true},
+        {"publisher":"Associated Press","url":"https://apnews.com/article/9636095906bbb689a1f612bce9a07343","source_type":"reliable_news","published_at":"2026-08-07","freshness_role":"independent_result_and_market_reaction","reliable":true},
+        {"publisher":"Axios","url":"https://www.axios.com/2026/08/07/july-jobs-report-employment-losses","source_type":"reliable_news","published_at":"2026-08-07","freshness_role":"independent_result_and_revision_confirmation","reliable":true},
+        {"publisher":"Reddit Forexstrategy","url":"https://www.reddit.com/r/Forexstrategy/comments/1vhy8oe/why_im_skipping_nfp_today/","source_type":"community_heat","published_at":"2026-08-07","freshness_role":"same_day_execution_risk_discussion","reliable":false},
+        {"publisher":"Reddit wallstreetbets","url":"https://www.reddit.com/r/wallstreetbets/comments/1vhzlad/breaking_us_payrolls_unexpectedly_fall_23000/","source_type":"community_heat","published_at":"2026-08-07","freshness_role":"same_day_discussion_volume","reliable":false}
+      ],
+      "decision":{"novelty_gate":"fail","decision_gate":"duplicate_without_measured_execution_cost_or_distinct_calculation","duplicate_of":["HR-20260806-01","HR-20260724-01","HR-20260719-01"],"reopen_trigger":"A reliable publisher documents actual August 7 FX spread or slippage data or a distinct calculator question beyond generic event-risk sizing","rationale":"The result and heat are strong, but the calculator path remains a duplicate macro-event risk template"}
+    },
+    "HR-20260807-02": {
+      "sources": [
+        {"publisher":"U.S. Bureau of Labor Statistics","url":"https://www.bls.gov/news.release/jolts.nr0.htm","source_type":"official_release","published_at":"2026-08-04","freshness_role":"recent_june_result","reliable":true},
+        {"publisher":"Associated Press","url":"https://apnews.com/article/c43fe56386d17f0c3253535aa38802e6","source_type":"reliable_news","published_at":"2026-08-04","freshness_role":"independent_result_confirmation","reliable":true}
+      ],
+      "decision":{"novelty_gate":"fail","decision_gate":"superseded_and_duplicate","duplicate_of":["HR-20260806-02","HR-20260807-01"],"reopen_trigger":"A new official revision or reliable report identifies a distinct trading-cost calculation","rationale":"The little-changed JOLTS result is superseded by the jobs report and lacks its own traffic window"}
+    },
+    "HR-20260807-03": {
+      "sources": [
+        {"publisher":"Japan Ministry of Finance","url":"https://www.mof.go.jp/english/policy/international_policy/reference/feio/index.html","source_type":"official_statistics_schedule","published_at":"2026-08-07","freshness_role":"official_amount_boundary_recheck","reliable":true},
+        {"publisher":"Reuters","url":"https://www.reuters.com/world/asia-pacific/us-treasury-undertakes-intervention-yen-market-ft-reports-2026-08-01/","source_type":"reliable_news","published_at":"2026-08-01","freshness_role":"prior_event_confirmation","reliable":true}
+      ],
+      "decision":{"novelty_gate":"fail","decision_gate":"duplicate_without_new_fact","duplicate_of":["HR-20260802-01","HR-20260806-03"],"reopen_trigger":"Japan MOF publishes the official amount or either government corrects the reported coordination","rationale":"No new official amount or correction supports another refresh"}
+    },
+    "HR-20260807-04": {
+      "sources": [
+        {"publisher":"Lucid Trading","url":"https://support.lucidtrading.com/en/articles/16033858-luciddaily-customization","source_type":"official_help_center","published_at":"2026-08-06","freshness_role":"recent_rule_customization","reliable":true},
+        {"publisher":"PropFirmsDrama","url":"https://propfirmsdrama.com/2026/07/27/lucid-daily-plan-rules-eval-funded-live/","source_type":"affiliate_industry_page","published_at":"2026-07-27","freshness_role":"earlier_public_availability_evidence","reliable":false},
+        {"publisher":"El Trader Financiado","url":"https://www.eltraderfinanciado.com/pt/noticias/lucid-trading/lucid-trading-lanca-luciddaily","source_type":"affiliate_industry_page","published_at":"2026-07-27","freshness_role":"earlier_public_availability_evidence","reliable":false},
+        {"publisher":"Reddit LucidProp","url":"https://www.reddit.com/r/LucidProp/comments/1v7ywhr/lucid_daily_payout_plans_launched_pricing/","source_type":"community_heat","published_at":"2026-07-27","freshness_role":"earlier_public_discussion","reliable":false}
+      ],
+      "decision":{"novelty_gate":"fail","decision_gate":"stale_feature_misread_as_same_day_change","duplicate_of":["HR-20260806-04"],"reopen_trigger":"Lucid publishes a dated changelog or a reliable industry source confirms a genuinely new configuration or numeric rule change","rationale":"Independent pages and community discussion show the four configurations were already public on July 27, so an August 6 help-center update is not a fresh launch"}
+    },
+    "HR-20260807-05": {
+      "sources": [
+        {"publisher":"CME Group","url":"https://www.cmegroup.com/notices.html","source_type":"official_notice_index","published_at":"2026-08-07","freshness_role":"current_notice_recheck","reliable":true},
+        {"publisher":"Financial Commission","url":"https://financialcommission.org/2026/07/22/financial-commission-launches-the-first-self-regulatory-framework-for-prop-firms/","source_type":"official_framework","published_at":"2026-07-22","freshness_role":"prop_firm_framework_recheck","reliable":true}
+      ],
+      "decision":{"novelty_gate":"fail","decision_gate":"no_specific_retail_calculation_rule_change","duplicate_of":["HR-20260806-05","HR-20260805-04"],"reopen_trigger":"Two reliable publishers confirm a new retail margin drawdown daily-loss or payout rule","rationale":"No new retail-facing calculator question was found"}
+    }
+  }
+}
