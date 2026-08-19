@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T14:09:28.335Z",
+  "generated_at": "2026-08-19T14:11:52.204Z",
   "endpoint": "multi_platform_drafts_awaiting_human_review",
   "supported_platforms": [
     "medium",
@@ -7,6 +7,41 @@
     "x"
   ],
   "packages": [
+    {
+      "candidate_id": "HR-20260819-01",
+      "scan_date": "2026-08-19",
+      "primary_site": "PipGauge",
+      "topic": "Australia July Employment Due August 20: Refresh AUD/USD Risk Before the Release",
+      "package_summary": "当期审核快照：以 8 月 20 日澳洲就业发布窗口刷新已过期的 RBA/AUD/USD 稿；不创建第二篇同构文章。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "pre_release_window",
+      "time_status_label": "8 月 20 日 11:30 AEST 前；ABS 发布实际结果后必须立即停用会前时态并重核",
+      "url": "../内容生产/2026-08-19/HR-20260819-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-19/HR-20260819-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-19/HR-20260819-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-19/HR-20260819-01/index.html#x"
+        }
+      ]
+    },
     {
       "candidate_id": "HR-20260817-01",
       "scan_date": "2026-08-17",
