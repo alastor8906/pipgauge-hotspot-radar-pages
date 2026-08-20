@@ -1,4 +1,18 @@
 {
+  "HR-20260820-01": {
+    "content_status": "review_ready",
+    "content_label": "FOMC 纪要结果版 EUR/USD 刷新稿待人工审核",
+    "content_url": "../内容生产/2026-08-20/HR-20260820-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-08-20T18:00:00-04:00"
+  },
+  "HR-20260820-02": {
+    "content_status": "review_ready",
+    "content_label": "澳洲就业结果版 AUD/USD 刷新稿待人工审核",
+    "content_url": "../内容生产/2026-08-20/HR-20260820-02/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-08-21T11:30:00+10:00"
+  },
   "HR-20260819-01": {
     "content_status": "review_ready",
     "content_label": "澳洲就业 AUD/USD 刷新稿待人工审核",

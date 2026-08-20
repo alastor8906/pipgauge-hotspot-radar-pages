@@ -1,0 +1,20 @@
+{
+  "candidate_id": "HR-20260820-01",
+  "scan_date": "2026-08-20",
+  "primary_site": "PipGauge",
+  "topic": "FOMC Minutes Released: Refresh EURUSD Fixed-Risk Check With the 9-3 Vote Context",
+  "execution_mode": "refresh",
+  "refresh_target": "HR-20260730-02",
+  "package_summary": "当期审核快照：以已发布的 7 月 FOMC 纪要和 9–3 投票事实更新既有 EUR/USD 风险稿；不新建同构文章。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "post_release_result_window",
+  "time_status_label": "仅在 8 月 20 日 ET 结果窗口使用；新美国数据、Fed 更正或 9 月 FOMC 前必须更新或停用。",
+  "documents": [
+    {"id":"facts","label":"事实与论点","file":"00-事实与论点.md","platform":"internal","kind":"editorial brief","status_label":"已整理"},
+    {"id":"medium","label":"Medium","file":"01-Medium.md","platform":"medium","kind":"long-form draft","status_label":"待人工审核"},
+    {"id":"reddit","label":"Reddit","file":"02-Reddit.md","platform":"reddit","kind":"native discussion draft","status_label":"待人工审核"},
+    {"id":"x","label":"X","file":"03-X.md","platform":"x","kind":"short thread draft","status_label":"待人工审核"},
+    {"id":"review","label":"审核清单","file":"04-人工审核.md","platform":"internal","kind":"human gate","status_label":"必须完成"}
+  ]
+}
