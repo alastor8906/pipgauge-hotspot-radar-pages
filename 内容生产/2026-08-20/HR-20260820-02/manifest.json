@@ -1,0 +1,20 @@
+{
+  "candidate_id": "HR-20260820-02",
+  "scan_date": "2026-08-20",
+  "primary_site": "PipGauge",
+  "topic": "Australia July Jobs Miss: Refresh AUDUSD Fixed-Risk Check With Actual -15.8K and 4.5%",
+  "execution_mode": "refresh",
+  "refresh_target": "HR-20260811-01",
+  "package_summary": "当期审核快照：以已公布的澳洲 7 月就业实际值更新既有 AUD/USD 风险稿；不新建第二篇 RBA/AUD 同构文章。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "post_release_result_window",
+  "time_status_label": "仅在 8 月 21 日 11:30 AEST 前使用结果窗口；ABS 更正或新事件出现时必须立即改写或停用。",
+  "documents": [
+    {"id":"facts","label":"事实与论点","file":"00-事实与论点.md","platform":"internal","kind":"editorial brief","status_label":"已整理"},
+    {"id":"medium","label":"Medium","file":"01-Medium.md","platform":"medium","kind":"long-form draft","status_label":"待人工审核"},
+    {"id":"reddit","label":"Reddit","file":"02-Reddit.md","platform":"reddit","kind":"native discussion draft","status_label":"待人工审核"},
+    {"id":"x","label":"X","file":"03-X.md","platform":"x","kind":"short thread draft","status_label":"待人工审核"},
+    {"id":"review","label":"审核清单","file":"04-人工审核.md","platform":"internal","kind":"human gate","status_label":"必须完成"}
+  ]
+}
