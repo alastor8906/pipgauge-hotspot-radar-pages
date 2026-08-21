@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-08-20T22:11:04+08:00",
-  "latest_scan_date": "2026-08-20",
+  "generated_at": "2026-08-21T22:06:52+08:00",
+  "latest_scan_date": "2026-08-21",
   "available_dates": [
+    "2026-08-21",
     "2026-08-20",
     "2026-08-19",
     "2026-08-18",
@@ -34,8 +35,240 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-08-21",
+      "generated_at": "2026-08-21T22:06:52+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 29,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 0,
+        "observation": 2,
+        "discarded": 2,
+        "total": 4,
+        "selected_average": 0,
+        "all_selected_pass_gate": true,
+        "content_ready": 0,
+        "playbook_ready": 0
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-08-21",
+          "candidate_id": "HR-20260821-01",
+          "status": "observation",
+          "topic": "Japan July CPI Base Release Is Cross-Verified but Has No Natural USDJPY Calculation Query",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 20,
+          "calculator_fit": 16,
+          "evidence_quality": 15,
+          "actionability": 4,
+          "total_score": 80,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L"
+          ],
+          "reason": "Statistics Bureau and Reuters confirm the July CPI result and the first 2025-base monthly release; current public discussion is macro/directional rather than a specific USDJPY sizing, pip-value or fixed-risk query, so no calculator bridge or playbook is justified",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Statistics Bureau of Japan",
+                "url": "https://www.stat.go.jp/english/data/cpi/1581-z.htm",
+                "source_type": "official_release_and_statistical_table",
+                "published_at": "2026-08-21",
+                "freshness_role": "official_July_2026_CPI_monthly_report_on_new_2025_base_released_today",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://ae.marketscreener.com/news/japan-s-core-inflation-accelerates-in-july-bolsters-case-for-rate-hike-ce7859d3de81f622",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-21",
+                "freshness_role": "independent_same_day_confirmation_of_July_core_CPI_1_8_percent_year_on_year",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit r/MarketFluxHub",
+                "url": "https://www.reddit.com/r/MarketFluxHub/comments/1vu0q8f/japan_core_cpi_rises_18_in_july_for_second/",
+                "source_type": "community_heat",
+                "published_at": "2026-08-21",
+                "freshness_role": "same_day_CPI_and_BOJ_discussion_not_used_for_facts_and_not_a_specific_position_sizing_query",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "not_evaluated_hard_gate_fail",
+              "decision_gate": "observation_no_natural_retail_calculation_traffic_path",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A public, current English USDJPY pip-value, fixed-risk or position-size query tied to the released CPI/base-series facts, plus a defensible numerical example that does not make a direction call.",
+              "rationale": "The actual July release and 2025-base transition are verified by independent reliable publishers, but generic CPI and BOJ-direction discussion does not establish a calculator journey. No playbook or content package may be created merely because USDJPY is related to Japan."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-21",
+          "candidate_id": "HR-20260821-02",
+          "status": "observation",
+          "topic": "UK July Retail Sales Result Has Two Fact Sources but No Distinct GBPUSD Calculation Demand",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 18,
+          "calculator_fit": 16,
+          "evidence_quality": 15,
+          "actionability": 4,
+          "total_score": 78,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L"
+          ],
+          "reason": "ONS and Reuters confirm July retail-sales volumes fell 0.5 percent month on month and rose 1.6 percent year on year; no current public GBPUSD risk-calculation query or non-generic calculator journey was verified",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Office for National Statistics",
+                "url": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/july2026",
+                "source_type": "official_release",
+                "published_at": "2026-08-21",
+                "freshness_role": "official_July_2026_retail_sales_result_0_5_percent_monthly_fall_and_1_6_percent_annual_rise_released_today",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://live.euronext.com/en/financial-news/british-retail-sales-slip-july-after-world-cup-boost",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-21",
+                "freshness_role": "independent_same_day_confirmation_of_July_retail_sales_result_and_expectations_context",
+                "reliable": true
+              },
+              {
+                "publisher": "Forex Factory",
+                "url": "https://www.forexfactory.com/calendar?month=aug.2026",
+                "source_type": "public_calendar_heat",
+                "published_at": "2026-08-21",
+                "freshness_role": "public_calendar_visibility_not_an_independent_fact_or_specific_GBPUSD_calculation_query",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "not_evaluated_hard_gate_fail",
+              "decision_gate": "observation_no_distinct_GBPUSD_calculation_demand",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A source-backed English GBPUSD fixed-risk, pip-value or position-size query whose user wording and numbers are specifically tied to the released retail-sales result, not a generic macro-event wrapper.",
+              "rationale": "ONS and Reuters satisfy the independent fact check, but event visibility is not evidence that a reader needs a calculator. No natural bridge, specific query, or non-generic worked number was verified."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-21",
+          "candidate_id": "HR-20260821-03",
+          "status": "discarded",
+          "topic": "Topstep July Live Funded Rules Are Not a Current Rule-Change Traffic Event",
+          "primary_site": "PositionMath",
+          "freshness": 8,
+          "traffic_potential": 13,
+          "calculator_fit": 25,
+          "evidence_quality": 14,
+          "actionability": 4,
+          "total_score": 64,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": false,
+          "calculator_mapping": [
+            "Daily Loss Limit",
+            "Trailing Drawdown",
+            "Prop Firm Calculator"
+          ],
+          "reason": "Topstep's official rules page is dated July 1 and the scan found no current independent impact signal or newly dated rule change; do not manufacture a prop-firm traffic window"
+        },
+        {
+          "scan_date": "2026-08-21",
+          "candidate_id": "HR-20260821-04",
+          "status": "discarded",
+          "topic": "Directional Japan CPI UK Retail Sales USDJPY GBPUSD and Prop Firm Forecasts",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 24,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 59,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Price targets directional calls signals and unverified rule-change claims are excluded"
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-08-21T22:00:00+08:00",
+          "source_count": 3,
+          "note": "覆盖 Statistics Bureau of Japan 的 CPI 月报/基期说明、ONS 7 月零售销售正式结果，以及 Topstep 有日期的规则页；只把可回溯的日期和数字作为事实候选。"
+        },
+        {
+          "channel": "可靠英文媒体 / 独立经济日历",
+          "status": "complete",
+          "checked_at": "2026-08-21T22:00:00+08:00",
+          "source_count": 3,
+          "note": "覆盖 Reuters 对日本 CPI 与英国零售销售的独立报道，以及 Forex Factory 公开日历；日历仅作可见度和时间交叉，不能代替事实或需求证据。"
+        },
+        {
+          "channel": "Reddit / ForexFactory",
+          "status": "complete",
+          "checked_at": "2026-08-21T22:00:00+08:00",
+          "source_count": 3,
+          "note": "检查日本 CPI 的当日公开讨论、英国宏观日历以及 prop-firm 公开讨论；仅用来识别讨论对象，绝不用于确认统计、政策或规则事实。"
+        },
+        {
+          "channel": "X / Quora / BabyPips",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-08-21T22:00:00+08:00",
+          "source_count": 0,
+          "note": "公开索引未发现能把当期日本 CPI 或英国零售销售转化为具体 PipGauge/PositionMath 计算旅程的可核验材料；未登录或操作账号。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-08-21_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-08-21_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json"
+      }
+    },
+    {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -480,7 +713,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -855,7 +1088,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -1247,7 +1480,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -1623,7 +1856,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -1947,7 +2180,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -2330,7 +2563,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -2671,7 +2904,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -3046,7 +3279,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -3434,7 +3667,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -3779,7 +4012,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -4107,7 +4340,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -4419,7 +4652,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -4740,7 +4973,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -5101,7 +5334,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -5454,7 +5687,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -5898,7 +6131,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -6407,7 +6640,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -6877,7 +7110,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -7420,7 +7653,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -7692,7 +7925,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -8005,7 +8238,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -8440,7 +8673,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -8954,7 +9187,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -9463,7 +9696,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -9930,7 +10163,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -10343,7 +10576,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -10741,7 +10974,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-08-20T22:11:04+08:00",
+      "generated_at": "2026-08-21T22:06:52+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -11180,10 +11413,10 @@
       }
     }
   ],
-  "scan_date": "2026-08-20",
+  "scan_date": "2026-08-21",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 28,
+    "day": 29,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -11191,381 +11424,169 @@
     "mode": "topic_traffic_playbooks_and_content_drafts"
   },
   "stats": {
-    "selected": 2,
+    "selected": 0,
     "observation": 2,
-    "discarded": 1,
-    "total": 5,
-    "selected_average": 96.5,
+    "discarded": 2,
+    "total": 4,
+    "selected_average": 0,
     "all_selected_pass_gate": true,
-    "content_ready": 2,
-    "playbook_ready": 2
+    "content_ready": 0,
+    "playbook_ready": 0
   },
   "candidates": [
     {
-      "scan_date": "2026-08-20",
-      "candidate_id": "HR-20260820-01",
-      "status": "selected",
-      "topic": "FOMC Minutes Released: Refresh EURUSD Fixed-Risk Check With the 9-3 Vote Context",
+      "scan_date": "2026-08-21",
+      "candidate_id": "HR-20260821-01",
+      "status": "observation",
+      "topic": "Japan July CPI Base Release Is Cross-Verified but Has No Natural USDJPY Calculation Query",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 23,
-      "calculator_fit": 25,
+      "traffic_potential": 20,
+      "calculator_fit": 16,
       "evidence_quality": 15,
-      "actionability": 9,
-      "total_score": 97,
-      "hard_gate": true,
-      "reliable_sources": 3,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Pip Value",
-        "Position Size",
-        "P&L",
-        "Spread Cost"
-      ],
-      "reason": "Federal Reserve minutes and AP/Reuters independently confirm the July meeting's 9-3 hold and the published inflation-risk discussion; current public FOMC discussion supports a result-window refresh of HR-20260730-02 without a direction call",
-      "content_status": "review_ready",
-      "content_label": "FOMC 纪要结果版 EUR/USD 刷新稿待人工审核",
-      "content_url": "../内容生产/2026-08-20/HR-20260820-01/index.html",
-      "content_format": "Medium / Reddit / X",
-      "deadline": "2026-08-20T18:00:00-04:00",
-      "traffic_playbook": {
-        "playbook_status": "ready",
-        "execution_mode": "refresh",
-        "urgency": "high",
-        "publish_deadline": "2026-08-20T18:00:00-04:00",
-        "traffic_hook": "The July 28-29 FOMC minutes are now public, documenting the 9-3 decision to hold the target range and the conditional inflation discussion that readers were waiting to inspect.",
-        "traffic_window": "Publish the factual recap during the August 20 ET result window. Replace the headline and first paragraph after the next decisive U.S. data or before the September 15-16 FOMC meeting; do not retain a stale 'just released' frame.",
-        "search_intents": [
-          "FOMC minutes August 19 2026",
-          "FOMC 9-3 vote EURUSD risk",
-          "EURUSD position size calculator 50 pip stop",
-          "how many lots EURUSD 100 dollar risk"
-        ],
-        "traffic_angle": "Borrow the newly published 9-3 vote and the minutes' conditional inflation language as a document-reading hook, then answer the immediate non-directional question: how does a USD 100 loss budget change when an EUR/USD stop is 25, 50 or 100 pips? Show 0.40/0.20/0.10 lot before costs, then hand off to PipGauge.",
-        "calculator_bridge": "After distinguishing the minutes from a price forecast, use Pip Value to verify the approximate USD 10 per pip per standard lot for EUR/USD in a USD account and Position Size to verify the three fixed-risk sizes. P&L and Spread Cost are optional hypothetical stress checks only.",
-        "example_scenario": "USD 10,000 account; 1% or USD 100 maximum planned price loss; EUR/USD at approximately USD 10 per pip per standard lot: 25/50/100-pip stops imply 0.40/0.20/0.10 lot before commission, spread and slippage.",
-        "distribution_order": [
-          "refresh existing EUR/USD site article HR-20260730-02",
-          "Medium factual-risk update",
-          "X self-contained fixed-risk thread",
-          "Reddit native discussion without a first-round link"
-        ],
-        "link_placement": "Lead with the dated minutes facts and the three worked sizes. Put one PipGauge verification link after the formula and caveats; do not include a first-post Reddit link, and keep the X thread readable without any link.",
-        "expiry_condition": "Stop using the result-window title when newer U.S. data or the September FOMC decision supersedes the minutes, if the Fed corrects the document, or after August 21 ET without a continuing source-backed query signal.",
-        "editorial_boundary": "Do not predict EUR/USD, the next rate decision, yields or the market reaction. Describe 'many', 'several' and the 9-3 vote exactly as sourced; do not translate them into a trading signal or claim an observed spread or fill.",
-        "refresh_target": "HR-20260730-02",
-        "refresh_signals": {
-          "fact_delta": true,
-          "search_delta": true,
-          "example_delta": true,
-          "window_delta": true
-        },
-        "refresh_updates": [
-          "replace the prior decision-day / pre-minutes title with a published-minutes result frame",
-          "replace future tense with the official July 28-29 minutes and AP/Reuters facts",
-          "replace the 25/50/100-pip table's lead-in with the 9-3-vote document context",
-          "remove all stale countdown language"
-        ],
-        "content_mainline": "Use the public FOMC document as a factual hook for fixed-loss EUR/USD sizing, not as a rate or currency forecast.",
-        "body_material": [
-          "Federal Reserve July 28-29 minutes",
-          "9-3 hold at 3.50%-3.75%",
-          "conditional inflation wording",
-          "USD 100 risk across 25/50/100 pips",
-          "time-expiry gate"
-        ],
-        "product_bridge": "PipGauge verifies pip value and position size only after the official facts and hand calculation; it does not interpret the minutes or predict a move.",
-        "product_bridge_type": "existing"
-      },
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "Federal Reserve Board",
-            "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm",
-            "source_type": "official_minutes",
-            "published_at": "2026-08-19",
-            "freshness_role": "official_July_28_29_minutes_released_with_9_3_vote_and_policy_text_inside_24_hours",
-            "reliable": true
-          },
-          {
-            "publisher": "Associated Press",
-            "url": "https://apnews.com/article/0030d04832b89b564b743b34ab2cd8de",
-            "source_type": "reliable_news",
-            "published_at": "2026-08-19",
-            "freshness_role": "independent_same_day_confirmation_of_published_minutes_and_9_3_hold",
-            "reliable": true
-          },
-          {
-            "publisher": "Reuters",
-            "url": "https://currently.att.yahoo.com/att/fed-policymakers-inflation-concerns-increased-180421968.html",
-            "source_type": "reliable_news",
-            "published_at": "2026-08-19",
-            "freshness_role": "independent_same_day_confirmation_of_minutes_inflation_language",
-            "reliable": true
-          },
-          {
-            "publisher": "Reddit r/Forexstrategy",
-            "url": "https://www.reddit.com/r/Forexstrategy/comments/1vsksj0/fed_minutes_at_2pm_et_do_you_trade_the_hawkish/",
-            "source_type": "community_heat",
-            "published_at": "2026-08-19",
-            "freshness_role": "public_current_minutes_and_9_3_vote_discussion_not_used_for_facts",
-            "reliable": false
-          }
-        ],
-        "decision": {
-          "novelty_gate": "pass_refresh",
-          "decision_gate": "selected_refresh",
-          "duplicate_of": [
-            "HR-20260730-02",
-            "HR-20260817-01"
-          ],
-          "refresh_signals": {
-            "fact_delta": true,
-            "search_delta": true,
-            "example_delta": true,
-            "window_delta": true
-          },
-          "reopen_trigger": "A newer U.S. data release, a Fed correction, or the September FOMC decision must be checked before any further update.",
-          "rationale": "The official text replaces an anticipated event; the public query object is now released minutes and 9-3 vote context; the factual USD 100/25-50-100-pip table is a distinct result-window example; and the 24-hour result window is explicit. The existing FOMC article is refreshed rather than duplicated."
-        }
-      }
-    },
-    {
-      "scan_date": "2026-08-20",
-      "candidate_id": "HR-20260820-02",
-      "status": "selected",
-      "topic": "Australia July Jobs Miss: Refresh AUDUSD Fixed-Risk Check With Actual -15.8K and 4.5%",
-      "primary_site": "PipGauge",
-      "freshness": 25,
-      "traffic_potential": 22,
-      "calculator_fit": 25,
-      "evidence_quality": 15,
-      "actionability": 9,
-      "total_score": 96,
-      "hard_gate": true,
+      "actionability": 4,
+      "total_score": 80,
+      "hard_gate": false,
       "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
         "Pip Value",
         "Position Size",
-        "P&L",
-        "Spread Cost"
+        "P&L"
       ],
-      "reason": "ABS and Reuters independently confirm July employment fell 15,800 and unemployment rose to 4.5%; same-day public discussion supports refreshing HR-20260811-01 with actual-versus-consensus facts and fixed-risk sizing",
-      "content_status": "review_ready",
-      "content_label": "澳洲就业结果版 AUD/USD 刷新稿待人工审核",
-      "content_url": "../内容生产/2026-08-20/HR-20260820-02/index.html",
-      "content_format": "Medium / Reddit / X",
-      "deadline": "2026-08-21T11:30:00+10:00",
-      "traffic_playbook": {
-        "playbook_status": "ready",
-        "execution_mode": "refresh",
-        "urgency": "high",
-        "publish_deadline": "2026-08-21T11:30:00+10:00",
-        "traffic_hook": "Australia's July labour-force result is now public: employment fell 15,800 and the unemployment rate rose to 4.5%, replacing the August 19 pre-release calendar conversation with actual figures.",
-        "traffic_window": "Publish only as a dated August 20 result recap through the next Australian-session cycle. Retire the headline after August 21 11:30 AEST, if ABS revises/corrects the release, or when a newer Australian labour or RBA event supplies a verified new hook.",
-        "search_intents": [
-          "Australia jobs report August 20 2026 AUDUSD",
-          "Australia employment -15.8K AUDUSD risk",
-          "AUDUSD position size calculator 50 pip stop",
-          "how many lots AUDUSD 100 dollar risk"
-        ],
-        "traffic_angle": "Use the actual -15.8K employment change, 4.5% unemployment rate, 80.3K revised June gain and 15K consensus as the news hook. Answer how a USD 100 fixed loss budget translates to 0.40/0.20/0.13 lot at 25/50/75 pips; facts and arithmetic come before PipGauge, with no market-direction conclusion.",
-        "calculator_bridge": "After clearly separating actual data from a forecast, use Pip Value to test the approximate USD 10 per pip per standard lot for AUD/USD in a USD account and Position Size to check the three risk sizes. Any spread, commission or slippage amount remains explicitly hypothetical.",
-        "example_scenario": "USD 10,000 account; 1% or USD 100 maximum planned price loss; AUD/USD at approximately USD 10 per pip per standard lot: 25/50/75-pip stops imply 0.40/0.20/about 0.13 lot before costs.",
-        "distribution_order": [
-          "refresh existing AUD/USD site article HR-20260811-01",
-          "Medium result-window explanation",
-          "X self-contained risk-number thread",
-          "Reddit native discussion without a first-round link"
-        ],
-        "link_placement": "Present ABS/Reuters facts and worked-size table first. Link PipGauge only at the input-verification step; the first Reddit post contains no link and the X main thread must stand alone.",
-        "expiry_condition": "Stop the August 20 result copy after the first 24-hour window, on any ABS correction, or when a later data release displaces the query. A new update must pass the fact, traffic and refresh gates again.",
-        "editorial_boundary": "Do not predict AUD/USD or infer a guaranteed RBA action from one report. Do not call the 15K forecast an actual result, equate a planned stop with a fill, or turn hypothetical execution costs into market observations.",
-        "refresh_target": "HR-20260811-01",
-        "refresh_signals": {
-          "fact_delta": true,
-          "search_delta": true,
-          "example_delta": true,
-          "window_delta": true
-        },
-        "refresh_updates": [
-          "replace the expired RBA-hold narrative and all pre-release tense",
-          "replace consensus-first framing with ABS result and Reuters cross-check",
-          "replace $50/20-35-50-pip demonstration with $100/25-50-75-pip fixed-risk table",
-          "replace the deadline with the one-day post-release window"
-        ],
-        "content_mainline": "Convert the actual Australian jobs surprise into a dated fixed-loss AUD/USD sizing check, never a forecast.",
-        "body_material": [
-          "ABS -15,800 employment change",
-          "4.5% unemployment rate",
-          "80,300 revised June gain and 15,000 forecast context",
-          "USD 100 at 25/50/75 pips",
-          "ABS-correction and one-day expiry gate"
-        ],
-        "product_bridge": "PipGauge checks AUD/USD pip value and position size after the facts and calculation; it does not read the labour report or forecast price direction.",
-        "product_bridge_type": "existing"
-      },
+      "reason": "Statistics Bureau and Reuters confirm the July CPI result and the first 2025-base monthly release; current public discussion is macro/directional rather than a specific USDJPY sizing, pip-value or fixed-risk query, so no calculator bridge or playbook is justified",
       "scan_audit": {
         "sources": [
           {
-            "publisher": "Australian Bureau of Statistics",
-            "url": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/jul-2026",
-            "source_type": "official_release",
-            "published_at": "2026-08-20",
-            "freshness_role": "official_July_2026_labour_force_actual_minus_15800_and_4_5_percent_inside_24_hours",
+            "publisher": "Statistics Bureau of Japan",
+            "url": "https://www.stat.go.jp/english/data/cpi/1581-z.htm",
+            "source_type": "official_release_and_statistical_table",
+            "published_at": "2026-08-21",
+            "freshness_role": "official_July_2026_CPI_monthly_report_on_new_2025_base_released_today",
             "reliable": true
           },
           {
             "publisher": "Reuters",
-            "url": "https://theduke.fm/2026/08/19/australia-jobless-rate-hits-near-five-year-high-of-4-5-in-july/",
+            "url": "https://ae.marketscreener.com/news/japan-s-core-inflation-accelerates-in-july-bolsters-case-for-rate-hike-ce7859d3de81f622",
             "source_type": "reliable_news",
-            "published_at": "2026-08-20",
-            "freshness_role": "independent_confirmation_of_actual_result_revised_June_and_consensus_context",
+            "published_at": "2026-08-21",
+            "freshness_role": "independent_same_day_confirmation_of_July_core_CPI_1_8_percent_year_on_year",
             "reliable": true
           },
           {
-            "publisher": "Reddit r/australia",
-            "url": "https://www.reddit.com/r/australia/comments/1vt6me6/unemployment_rate_rises_to_45_in_july/",
+            "publisher": "Reddit r/MarketFluxHub",
+            "url": "https://www.reddit.com/r/MarketFluxHub/comments/1vu0q8f/japan_core_cpi_rises_18_in_july_for_second/",
             "source_type": "community_heat",
-            "published_at": "2026-08-20",
-            "freshness_role": "same_day_public_result_discussion_not_used_for_facts",
-            "reliable": false
-          }
-        ],
-        "decision": {
-          "novelty_gate": "pass_refresh",
-          "decision_gate": "selected_refresh",
-          "duplicate_of": [
-            "HR-20260811-01",
-            "HR-20260819-01"
-          ],
-          "refresh_signals": {
-            "fact_delta": true,
-            "search_delta": true,
-            "example_delta": true,
-            "window_delta": true
-          },
-          "reopen_trigger": "ABS correction, a verified newer Australian labour/RBA event, or a source-backed new query can reopen the existing AUD/USD article; otherwise retire the result frame after its 24-hour window.",
-          "rationale": "ABS actual results and Reuters independent confirmation replace the prior schedule and consensus; search language changes to jobs result; the example moves to USD 100 and 25/50/75 pips; and the one-day post-release traffic window is dated. This refreshes the RBA/AUD article without a second same-structure page."
-        }
-      }
-    },
-    {
-      "scan_date": "2026-08-20",
-      "candidate_id": "HR-20260820-04",
-      "status": "observation",
-      "topic": "China LPR Hold Is a Dated Fact but Lacks a Natural PipGauge Traffic Bridge",
-      "primary_site": "PipGauge",
-      "freshness": 25,
-      "traffic_potential": 14,
-      "calculator_fit": 16,
-      "evidence_quality": 14,
-      "actionability": 4,
-      "total_score": 73,
-      "hard_gate": false,
-      "reliable_sources": 1,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Pip Value",
-        "Position Size",
-        "P&L"
-      ],
-      "reason": "PBOC-rate reporting and public calendars establish an unchanged 1-year and 5-year LPR, but no concrete English retail USDCNH sizing query or non-generic calculator path was found",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "People's Bank of China",
-            "url": "http://www.pbc.gov.cn/en/3688110/3688172/4157443/index.html",
-            "source_type": "official_rate_page",
-            "published_at": "2026-08-20",
-            "freshness_role": "same_day_LPR_setting_context",
-            "reliable": true
-          },
-          {
-            "publisher": "Forex Factory",
-            "url": "https://www.forexfactory.com/calendar?month=aug.2026",
-            "source_type": "public_calendar_heat",
-            "published_at": "2026-08-20",
-            "freshness_role": "public_calendar_cross_check_of_unchanged_1y_and_5y_LPR_not_independent_reliable_fact",
-            "reliable": false
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_no_specific_retail_traffic_path",
-          "duplicate_of": [],
-          "refresh_signals": {
-            "fact_delta": true,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": true
-          },
-          "reopen_trigger": "A source-backed English USDCNH sizing or risk query with a dated event window and a natural PipGauge calculation bridge.",
-          "rationale": "The dated rate fact has two sources, but generic policy commentary does not justify inventing a calculator need or a traffic playbook."
-        }
-      }
-    },
-    {
-      "scan_date": "2026-08-20",
-      "candidate_id": "HR-20260820-03",
-      "status": "observation",
-      "topic": "Japan July Trade Deficit Has No Verified Retail USDJPY Calculation Demand",
-      "primary_site": "PipGauge",
-      "freshness": 25,
-      "traffic_potential": 13,
-      "calculator_fit": 17,
-      "evidence_quality": 13,
-      "actionability": 4,
-      "total_score": 72,
-      "hard_gate": false,
-      "reliable_sources": 1,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Pip Value",
-        "Position Size",
-        "P&L"
-      ],
-      "reason": "Japan's official trade result is fresh and the calendar shows a deficit, but no second independent reliable English fact report or specific USDJPY risk-calculation search path was verified",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "Japan Ministry of Finance",
-            "url": "https://www.mof.go.jp/english/policy/customs_tariff/trade/index.html",
-            "source_type": "official_release",
-            "published_at": "2026-08-20",
-            "freshness_role": "same_day_July_trade_balance_result",
-            "reliable": true
-          },
-          {
-            "publisher": "Forex Factory",
-            "url": "https://www.forexfactory.com/calendar?month=aug.2026",
-            "source_type": "public_calendar_heat",
-            "published_at": "2026-08-20",
-            "freshness_role": "same_day_calendar_visibility_not_independent_reliable_fact",
+            "published_at": "2026-08-21",
+            "freshness_role": "same_day_CPI_and_BOJ_discussion_not_used_for_facts_and_not_a_specific_position_sizing_query",
             "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "not_evaluated_hard_gate_fail",
-          "decision_gate": "observation_missing_independent_fact_and_specific_traffic_path",
+          "decision_gate": "observation_no_natural_retail_calculation_traffic_path",
           "duplicate_of": [],
           "refresh_signals": {
             "fact_delta": true,
             "search_delta": false,
             "example_delta": false,
-            "window_delta": false
+            "window_delta": true
           },
-          "reopen_trigger": "Independent reliable English confirmation plus a specific public USD/JPY pip-value, position-size or fixed-risk query distinct from generic trade commentary.",
-          "rationale": "A fresh official trade result is not sufficient by itself and does not create an evidenced retail calculation journey."
+          "reopen_trigger": "A public, current English USDJPY pip-value, fixed-risk or position-size query tied to the released CPI/base-series facts, plus a defensible numerical example that does not make a direction call.",
+          "rationale": "The actual July release and 2025-base transition are verified by independent reliable publishers, but generic CPI and BOJ-direction discussion does not establish a calculator journey. No playbook or content package may be created merely because USDJPY is related to Japan."
         }
       }
     },
     {
-      "scan_date": "2026-08-20",
-      "candidate_id": "HR-20260820-05",
+      "scan_date": "2026-08-21",
+      "candidate_id": "HR-20260821-02",
+      "status": "observation",
+      "topic": "UK July Retail Sales Result Has Two Fact Sources but No Distinct GBPUSD Calculation Demand",
+      "primary_site": "PipGauge",
+      "freshness": 25,
+      "traffic_potential": 18,
+      "calculator_fit": 16,
+      "evidence_quality": 15,
+      "actionability": 4,
+      "total_score": 78,
+      "hard_gate": false,
+      "reliable_sources": 2,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Pip Value",
+        "Position Size",
+        "P&L"
+      ],
+      "reason": "ONS and Reuters confirm July retail-sales volumes fell 0.5 percent month on month and rose 1.6 percent year on year; no current public GBPUSD risk-calculation query or non-generic calculator journey was verified",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "Office for National Statistics",
+            "url": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/july2026",
+            "source_type": "official_release",
+            "published_at": "2026-08-21",
+            "freshness_role": "official_July_2026_retail_sales_result_0_5_percent_monthly_fall_and_1_6_percent_annual_rise_released_today",
+            "reliable": true
+          },
+          {
+            "publisher": "Reuters",
+            "url": "https://live.euronext.com/en/financial-news/british-retail-sales-slip-july-after-world-cup-boost",
+            "source_type": "reliable_news",
+            "published_at": "2026-08-21",
+            "freshness_role": "independent_same_day_confirmation_of_July_retail_sales_result_and_expectations_context",
+            "reliable": true
+          },
+          {
+            "publisher": "Forex Factory",
+            "url": "https://www.forexfactory.com/calendar?month=aug.2026",
+            "source_type": "public_calendar_heat",
+            "published_at": "2026-08-21",
+            "freshness_role": "public_calendar_visibility_not_an_independent_fact_or_specific_GBPUSD_calculation_query",
+            "reliable": false
+          }
+        ],
+        "decision": {
+          "novelty_gate": "not_evaluated_hard_gate_fail",
+          "decision_gate": "observation_no_distinct_GBPUSD_calculation_demand",
+          "duplicate_of": [],
+          "refresh_signals": {
+            "fact_delta": true,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": true
+          },
+          "reopen_trigger": "A source-backed English GBPUSD fixed-risk, pip-value or position-size query whose user wording and numbers are specifically tied to the released retail-sales result, not a generic macro-event wrapper.",
+          "rationale": "ONS and Reuters satisfy the independent fact check, but event visibility is not evidence that a reader needs a calculator. No natural bridge, specific query, or non-generic worked number was verified."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-08-21",
+      "candidate_id": "HR-20260821-03",
       "status": "discarded",
-      "topic": "Directional AUDUSD FOMC USDCNH and Philly Fed Forecasts",
+      "topic": "Topstep July Live Funded Rules Are Not a Current Rule-Change Traffic Event",
+      "primary_site": "PositionMath",
+      "freshness": 8,
+      "traffic_potential": 13,
+      "calculator_fit": 25,
+      "evidence_quality": 14,
+      "actionability": 4,
+      "total_score": 64,
+      "hard_gate": false,
+      "reliable_sources": 1,
+      "fresh_signal": false,
+      "calculator_mapping": [
+        "Daily Loss Limit",
+        "Trailing Drawdown",
+        "Prop Firm Calculator"
+      ],
+      "reason": "Topstep's official rules page is dated July 1 and the scan found no current independent impact signal or newly dated rule change; do not manufacture a prop-firm traffic window"
+    },
+    {
+      "scan_date": "2026-08-21",
+      "candidate_id": "HR-20260821-04",
+      "status": "discarded",
+      "topic": "Directional Japan CPI UK Retail Sales USDJPY GBPUSD and Prop Firm Forecasts",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 24,
@@ -11579,48 +11600,47 @@
       "calculator_mapping": [
         "P&L"
       ],
-      "reason": "Price targets direction calls signals political framing and generic market commentary are excluded"
+      "reason": "Price targets directional calls signals and unverified rule-change claims are excluded"
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-08-20T22:00:00+08:00",
-      "source_count": 4,
-      "note": "覆盖 Federal Reserve 已发布纪要、ABS July Labour Force、Japan Ministry of Finance 与 PBOC 公开页面；只把带日期和可回溯数字的材料写入事实候选。"
+      "checked_at": "2026-08-21T22:00:00+08:00",
+      "source_count": 3,
+      "note": "覆盖 Statistics Bureau of Japan 的 CPI 月报/基期说明、ONS 7 月零售销售正式结果，以及 Topstep 有日期的规则页；只把可回溯的日期和数字作为事实候选。"
     },
     {
       "channel": "可靠英文媒体 / 独立经济日历",
       "status": "complete",
-      "checked_at": "2026-08-20T22:00:00+08:00",
-      "source_count": 4,
-      "note": "覆盖 AP、Reuters 和 Forex Factory 日历。日历只用于时间、预期或社区可见度交叉，不替代官方结果。"
+      "checked_at": "2026-08-21T22:00:00+08:00",
+      "source_count": 3,
+      "note": "覆盖 Reuters 对日本 CPI 与英国零售销售的独立报道，以及 Forex Factory 公开日历；日历仅作可见度和时间交叉，不能代替事实或需求证据。"
     },
     {
       "channel": "Reddit / ForexFactory",
       "status": "complete",
-      "checked_at": "2026-08-20T22:00:00+08:00",
-      "source_count": 5,
-      "note": "检查 FOMC 和澳洲就业当日公开讨论及日历；它们只证明讨论/查询信号，绝不作为统计或政策事实源。"
+      "checked_at": "2026-08-21T22:00:00+08:00",
+      "source_count": 3,
+      "note": "检查日本 CPI 的当日公开讨论、英国宏观日历以及 prop-firm 公开讨论；仅用来识别讨论对象，绝不用于确认统计、政策或规则事实。"
     },
     {
       "channel": "X / Quora / BabyPips",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-08-20T22:00:00+08:00",
+      "checked_at": "2026-08-21T22:00:00+08:00",
       "source_count": 0,
-      "note": "未发现可公开核验、在本期改变计算器承接或刷新结论的材料；未登录或操作账号。"
+      "note": "公开索引未发现能把当期日本 CPI 或英国零售销售转化为具体 PipGauge/PositionMath 计算旅程的可核验材料；未登录或操作账号。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-08-20_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-08-20_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-08-21_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-08-21_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
-    "traffic_playbooks": "../热点流量打法.json",
-    "content_root": "../内容生产/2026-08-20"
+    "traffic_playbooks": "../热点流量打法.json"
   },
   "radar_model": "v2-content-first",
   "editorial_policy": {

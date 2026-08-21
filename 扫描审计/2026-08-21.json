@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "scan_date": "2026-08-21",
+  "generated_at": "2026-08-21T22:00:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-08-21T22:00:00+08:00",
+      "source_count": 3,
+      "note": "覆盖 Statistics Bureau of Japan 的 CPI 月报/基期说明、ONS 7 月零售销售正式结果，以及 Topstep 有日期的规则页；只把可回溯的日期和数字作为事实候选。"
+    },
+    {
+      "channel": "可靠英文媒体 / 独立经济日历",
+      "status": "complete",
+      "checked_at": "2026-08-21T22:00:00+08:00",
+      "source_count": 3,
+      "note": "覆盖 Reuters 对日本 CPI 与英国零售销售的独立报道，以及 Forex Factory 公开日历；日历仅作可见度和时间交叉，不能代替事实或需求证据。"
+    },
+    {
+      "channel": "Reddit / ForexFactory",
+      "status": "complete",
+      "checked_at": "2026-08-21T22:00:00+08:00",
+      "source_count": 3,
+      "note": "检查日本 CPI 的当日公开讨论、英国宏观日历以及 prop-firm 公开讨论；仅用来识别讨论对象，绝不用于确认统计、政策或规则事实。"
+    },
+    {
+      "channel": "X / Quora / BabyPips",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-08-21T22:00:00+08:00",
+      "source_count": 0,
+      "note": "公开索引未发现能把当期日本 CPI 或英国零售销售转化为具体 PipGauge/PositionMath 计算旅程的可核验材料；未登录或操作账号。"
+    }
+  ],
+  "candidates": {
+    "HR-20260821-01": {
+      "sources": [
+        {
+          "publisher": "Statistics Bureau of Japan",
+          "url": "https://www.stat.go.jp/english/data/cpi/1581-z.htm",
+          "source_type": "official_release_and_statistical_table",
+          "published_at": "2026-08-21",
+          "freshness_role": "official_July_2026_CPI_monthly_report_on_new_2025_base_released_today",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://ae.marketscreener.com/news/japan-s-core-inflation-accelerates-in-july-bolsters-case-for-rate-hike-ce7859d3de81f622",
+          "source_type": "reliable_news",
+          "published_at": "2026-08-21",
+          "freshness_role": "independent_same_day_confirmation_of_July_core_CPI_1_8_percent_year_on_year",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/MarketFluxHub",
+          "url": "https://www.reddit.com/r/MarketFluxHub/comments/1vu0q8f/japan_core_cpi_rises_18_in_july_for_second/",
+          "source_type": "community_heat",
+          "published_at": "2026-08-21",
+          "freshness_role": "same_day_CPI_and_BOJ_discussion_not_used_for_facts_and_not_a_specific_position_sizing_query",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "not_evaluated_hard_gate_fail",
+        "decision_gate": "observation_no_natural_retail_calculation_traffic_path",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "A public, current English USDJPY pip-value, fixed-risk or position-size query tied to the released CPI/base-series facts, plus a defensible numerical example that does not make a direction call.",
+        "rationale": "The actual July release and 2025-base transition are verified by independent reliable publishers, but generic CPI and BOJ-direction discussion does not establish a calculator journey. No playbook or content package may be created merely because USDJPY is related to Japan."
+      }
+    },
+    "HR-20260821-02": {
+      "sources": [
+        {
+          "publisher": "Office for National Statistics",
+          "url": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/july2026",
+          "source_type": "official_release",
+          "published_at": "2026-08-21",
+          "freshness_role": "official_July_2026_retail_sales_result_0_5_percent_monthly_fall_and_1_6_percent_annual_rise_released_today",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://live.euronext.com/en/financial-news/british-retail-sales-slip-july-after-world-cup-boost",
+          "source_type": "reliable_news",
+          "published_at": "2026-08-21",
+          "freshness_role": "independent_same_day_confirmation_of_July_retail_sales_result_and_expectations_context",
+          "reliable": true
+        },
+        {
+          "publisher": "Forex Factory",
+          "url": "https://www.forexfactory.com/calendar?month=aug.2026",
+          "source_type": "public_calendar_heat",
+          "published_at": "2026-08-21",
+          "freshness_role": "public_calendar_visibility_not_an_independent_fact_or_specific_GBPUSD_calculation_query",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "not_evaluated_hard_gate_fail",
+        "decision_gate": "observation_no_distinct_GBPUSD_calculation_demand",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "A source-backed English GBPUSD fixed-risk, pip-value or position-size query whose user wording and numbers are specifically tied to the released retail-sales result, not a generic macro-event wrapper.",
+        "rationale": "ONS and Reuters satisfy the independent fact check, but event visibility is not evidence that a reader needs a calculator. No natural bridge, specific query, or non-generic worked number was verified."
+      }
+    }
+  }
+}
