@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T14:08:57.495Z",
+  "generated_at": "2026-08-23T14:08:09.164Z",
   "endpoint": "multi_platform_drafts_awaiting_human_review",
   "supported_platforms": [
     "medium",
@@ -7,6 +7,76 @@
     "x"
   ],
   "packages": [
+    {
+      "candidate_id": "HR-20260823-01",
+      "scan_date": "2026-08-23",
+      "primary_site": "PipGauge",
+      "topic": "Jackson Hole August 27–29: Refresh EUR/USD Fixed-Risk Sizing Before Warsh's Keynote",
+      "package_summary": "当期审核快照：以已核验的 Jackson Hole 日期和 8 月 28 日 Warsh keynote 刷新既有 EUR/USD 固定风险稿；不新建同构 Fed 文章。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "pre_keynote_window",
+      "time_status_label": "仅在 8 月 28 日 10:00 ET keynote 开始前使用；演讲开始、日程更正或更新的美国事件出现时必须改写或停用。",
+      "url": "../内容生产/2026-08-23/HR-20260823-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-23/HR-20260823-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-23/HR-20260823-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-23/HR-20260823-01/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20260823-02",
+      "scan_date": "2026-08-23",
+      "primary_site": "PositionMath",
+      "topic": "NVIDIA Earnings August 26: How Much of a 5–15% Overnight Gap Can a Portfolio Absorb?",
+      "package_summary": "当期审核快照：以 NVIDIA 已确认的 8 月 26 日财报窗口，计算持仓的隔夜跳空暴露；不预测业绩或价格方向。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "pre_earnings_window",
+      "time_status_label": "仅在 8 月 26 日盘后业绩材料发布前使用；结果发布、日程变更或 8 月 27 日反应窗口到来时必须改写或停用。",
+      "url": "../内容生产/2026-08-23/HR-20260823-02/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-23/HR-20260823-02/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-23/HR-20260823-02/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-23/HR-20260823-02/index.html#x"
+        }
+      ]
+    },
     {
       "candidate_id": "HR-20260820-01",
       "scan_date": "2026-08-20",

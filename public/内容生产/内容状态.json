@@ -1,4 +1,18 @@
 {
+  "HR-20260823-01": {
+    "content_status": "review_ready",
+    "content_label": "Jackson Hole / EURUSD 刷新审核包待人工审核",
+    "content_url": "../内容生产/2026-08-23/HR-20260823-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-08-28T10:00:00-04:00"
+  },
+  "HR-20260823-02": {
+    "content_status": "review_ready",
+    "content_label": "NVIDIA 财报前隔夜跳空风险审核包待人工审核",
+    "content_url": "../内容生产/2026-08-23/HR-20260823-02/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-08-26T16:00:00-04:00"
+  },
   "HR-20260820-01": {
     "content_status": "review_ready",
     "content_label": "FOMC 纪要结果版 EUR/USD 刷新稿待人工审核",

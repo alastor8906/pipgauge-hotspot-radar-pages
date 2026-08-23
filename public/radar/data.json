@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-08-21T22:06:52+08:00",
-  "latest_scan_date": "2026-08-21",
+  "generated_at": "2026-08-23T22:07:41+08:00",
+  "latest_scan_date": "2026-08-23",
   "available_dates": [
+    "2026-08-23",
     "2026-08-21",
     "2026-08-20",
     "2026-08-19",
@@ -35,8 +36,421 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-08-23",
+      "generated_at": "2026-08-23T22:07:41+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 30,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 2,
+        "observation": 2,
+        "discarded": 1,
+        "total": 5,
+        "selected_average": 96.5,
+        "all_selected_pass_gate": true,
+        "content_ready": 2,
+        "playbook_ready": 2
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-08-23",
+          "candidate_id": "HR-20260823-01",
+          "status": "selected",
+          "topic": "Jackson Hole August 27-29: Refresh EURUSD Fixed-Risk Sizing Before Warsh's Keynote",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 24,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 9,
+          "total_score": 98,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "Kansas City Fed and Federal Reserve confirm the dated symposium and August 28 10:00 ET keynote; Reuters independently identifies it as the next policy-communication catalyst and current public discussion provides a short, non-directional EURUSD risk-sizing path; refresh HR-20260730-02",
+          "content_status": "review_ready",
+          "content_label": "Jackson Hole / EURUSD 刷新审核包待人工审核",
+          "content_url": "../内容生产/2026-08-23/HR-20260823-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-08-28T10:00:00-04:00",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "refresh",
+            "urgency": "high",
+            "publish_deadline": "2026-08-28T10:00:00-04:00",
+            "traffic_hook": "The Kansas City Fed's Jackson Hole symposium starts August 27 and the Federal Reserve calendar lists Kevin Warsh's August 28, 10:00 ET keynote, giving readers a dated policy-communication event to track rather than a generic Fed explainer.",
+            "traffic_window": "Publish the refresh from August 23 through the August 28 keynote. Replace the pre-keynote wording immediately after remarks begin or if the official schedule changes; do not reuse a 'before the speech' headline after that point.",
+            "search_intents": [
+              "Jackson Hole 2026 Warsh speech",
+              "Jackson Hole August 28 2026 EURUSD risk",
+              "EURUSD position size calculator 50 pip stop",
+              "how many lots EURUSD 100 dollar risk"
+            ],
+            "traffic_angle": "Borrow the verified Jackson Hole dates and Warsh's exact keynote time, then answer the calculation users can make before any remarks: with a fixed USD 100 planned loss, how does EUR/USD size change at 25, 50 and 100 pips? The news hook is the event clock; the answer is a non-directional risk table, not a policy prediction.",
+            "calculator_bridge": "After naming the event facts and hand-calculating the table, use PipGauge Pip Value to check the approximately USD 10 per pip per standard lot assumption for EUR/USD in a USD account, then Position Size to verify the three sizes. P&L and Spread Cost may only be framed as hypothetical stress checks.",
+            "example_scenario": "USD 10,000 account; 1% or USD 100 maximum planned price loss; EUR/USD at approximately USD 10 per pip per standard lot: 25/50/100-pip stops imply 0.40/0.20/0.10 lot before commission, spread and slippage.",
+            "distribution_order": [
+              "refresh existing EUR/USD site article HR-20260730-02",
+              "Medium dated event-risk update",
+              "X self-contained fixed-risk thread",
+              "Reddit native discussion without a first-round link"
+            ],
+            "link_placement": "Lead with the Jackson Hole dates, keynote time and the three worked sizes. Place one PipGauge verification link after the formula and caveats; the first Reddit post has no link, and the X thread must stand alone.",
+            "expiry_condition": "Stop the pre-keynote frame when the August 28 speech begins, if the Federal Reserve or Kansas City Fed corrects timing, or if a newer U.S. policy/data event supplants the query. A post-speech update needs new verified facts and a fresh gate.",
+            "editorial_boundary": "Do not predict Warsh's message, Fed policy, EUR/USD, yields or a market move. Do not call a planned stop a guaranteed fill or present hypothetical costs as live execution data.",
+            "refresh_target": "HR-20260730-02",
+            "refresh_signals": {
+              "fact_delta": true,
+              "search_delta": true,
+              "example_delta": true,
+              "window_delta": true
+            },
+            "refresh_updates": [
+              "replace the expired July FOMC/minutes headline with the verified August 27-29 Jackson Hole and August 28 keynote frame",
+              "replace all released-minutes language with current event timing and sources",
+              "make the USD 100 25/50/100-pip fixed-risk table the immediate pre-keynote answer",
+              "remove stale 9-3 vote and result-window language"
+            ],
+            "content_mainline": "Use the verified Jackson Hole clock to refresh an existing EUR/USD fixed-loss sizing article; explain the event and the risk table without making a policy or currency forecast.",
+            "body_material": [
+              "Kansas City Fed August 27-29 event dates",
+              "Federal Reserve August 28 10:00 ET keynote listing",
+              "Reuters independent catalyst context",
+              "USD 100 at 25/50/100 pips",
+              "speech-start expiry gate"
+            ],
+            "product_bridge": "PipGauge verifies EUR/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret the keynote or predict a move.",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Federal Reserve Bank of Kansas City",
+                "url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/",
+                "source_type": "official_event_page",
+                "published_at": "2026-08-20",
+                "freshness_role": "official_confirmation_of_August_27_to_29_2026_symposium_and_theme",
+                "reliable": true
+              },
+              {
+                "publisher": "Federal Reserve Board",
+                "url": "https://www.federalreserve.gov/newsevents/2026-august.htm",
+                "source_type": "official_calendar",
+                "published_at": "2026-08-20",
+                "freshness_role": "official_calendar_lists_Warsh_August_28_1000_ET_keynote",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://wtaq.com/2026/08/21/nvidia-earnings-jackson-hole-to-test-pillars-of-stock-rally/",
+                "source_type": "reliable_news_reprint",
+                "published_at": "2026-08-21",
+                "freshness_role": "independent_current_impact_context_identifies_August_27_to_29_as_next_policy_communication_catalyst",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit r/HollowPointTrading",
+                "url": "https://www.reddit.com/r/HollowPointTrading/comments/1vvxhwc/the_jackson_hole_playbook_what_actually_moves_and/",
+                "source_type": "community_heat",
+                "published_at": "2026-08-23",
+                "freshness_role": "current_public_discussion_of_dates_keynote_and_pre_FOMC_event_risk_not_used_for_facts",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass_refresh",
+              "decision_gate": "selected_refresh",
+              "duplicate_of": [
+                "HR-20260730-02"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": true,
+                "window_delta": true
+              },
+              "reopen_trigger": "Replace or stop the frame after the August 28 keynote, any official schedule correction, or a later U.S. policy/data event; a later refresh requires new dated facts and current query evidence.",
+              "rationale": "The new symposium/keynote facts, distinct Jackson-Hole search wording, fixed-loss EURUSD table lead-in and exact August 28 window provide four refresh deltas. The playbook leads with the event, then answers fixed-risk math without inferring currency direction."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-23",
+          "candidate_id": "HR-20260823-02",
+          "status": "selected",
+          "topic": "NVIDIA Earnings August 26: How Much of a 5-15% Overnight Gap Can a Portfolio Absorb?",
+          "primary_site": "PositionMath",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 22,
+          "evidence_quality": 14,
+          "actionability": 9,
+          "total_score": 95,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Position Size",
+            "Portfolio Heat",
+            "P&L",
+            "Stop Loss/Take Profit"
+          ],
+          "reason": "NVIDIA officially scheduled Q2 FY27 results for August 26 and Kiplinger independently lists the event in its current earnings calendar; public Reddit discussion is active around holding through earnings, producing a distinct stock-gap risk calculation path rather than a forecast",
+          "content_status": "review_ready",
+          "content_label": "NVIDIA 财报前隔夜跳空风险审核包待人工审核",
+          "content_url": "../内容生产/2026-08-23/HR-20260823-02/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-08-26T16:00:00-04:00",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "new",
+            "urgency": "high",
+            "publish_deadline": "2026-08-26T16:00:00-04:00",
+            "traffic_hook": "NVIDIA's verified August 26 after-market Q2 FY27 release creates a short, company-specific question: how much overnight-gap exposure is already embedded in an NVDA share position before results appear?",
+            "traffic_window": "Publish from August 23 until the August 26 after-market release. Retire all pre-release wording as soon as NVIDIA publishes its materials; any post-result recap needs verified actual results rather than an estimated or directional headline.",
+            "search_intents": [
+              "Nvidia earnings August 26 2026",
+              "hold NVDA through earnings risk",
+              "NVDA position size calculator",
+              "stock gap loss calculator",
+              "earnings portfolio heat"
+            ],
+            "traffic_angle": "Use the confirmed earnings date and public hold-through-earnings debate to calculate exposure, not to guess results. At a clearly labeled USD 218 teaching anchor, show what 8 shares would lose or gain under a hypothetical 5%, 10% or 15% overnight gap, then separate that from a USD 100 planned intraday stop-risk size.",
+            "calculator_bridge": "After the gap table, use Position Size to check shares for a USD 100 loss budget and a USD 12 stop distance, Portfolio Heat to place that share exposure in the whole account, and P&L to test hypothetical gaps. Stop Loss/Take Profit explains why an overnight gap may bypass a stop.",
+            "example_scenario": "USD 10,000 account; 8 NVDA shares at a clearly labeled USD 218 teaching anchor: 5%/10%/15% gap equals approximately USD 87.20/USD 174.40/USD 261.60. Separately, USD 100 planned loss with a USD 12 stop implies 8 shares before fees; a gap can exceed it.",
+            "distribution_order": [
+              "new PositionMath site risk note",
+              "Medium fact-and-math draft",
+              "X standalone gap-risk thread",
+              "Reddit native discussion without a first-round link"
+            ],
+            "link_placement": "Put NVIDIA's date, the gap table and the stop-versus-gap caveat before one PositionMath verification link. Do not put any link in the first Reddit post; the X thread must be complete without it.",
+            "expiry_condition": "Stop the pre-release frame when NVIDIA releases results, if the company changes the schedule, or once the August 27 reaction displaces the pre-release question. Do not turn later price movement into a retrospective forecast claim.",
+            "editorial_boundary": "Do not predict NVIDIA earnings, price direction, volatility, a buy/sell decision or an options strategy. The USD 218 and 5%/10%/15% figures are teaching assumptions, not live prices, forecasts or expected moves; an overnight gap can skip a stop.",
+            "content_mainline": "Turn a verified NVIDIA earnings date and current hold-through-earnings discussion into a transparent share-exposure calculation, not an earnings or price call.",
+            "body_material": [
+              "NVIDIA August 26 Q2 FY27 after-market schedule",
+              "Kiplinger current-week calendar confirmation",
+              "current public hold-through-earnings discussion",
+              "8 shares at USD 218 under 5/10/15 percent gaps",
+              "pre-release expiry gate"
+            ],
+            "product_bridge": "PositionMath checks share size, portfolio concentration and hypothetical P&L after the arithmetic; it cannot forecast NVIDIA's report or an overnight fill.",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "NVIDIA",
+                "url": "https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-second-quarter-financial-results-6927195",
+                "source_type": "official_company_announcement",
+                "published_at": "2026-07-29",
+                "freshness_role": "official_August_26_2026_Q2_FY27_results_and_5pm_ET_call_schedule",
+                "reliable": true
+              },
+              {
+                "publisher": "Kiplinger",
+                "url": "https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks",
+                "source_type": "independent_earnings_calendar",
+                "published_at": "2026-08-21",
+                "freshness_role": "current_week_independent_listing_of_Wednesday_August_26_NVIDIA_earnings",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit r/NvidiaStock",
+                "url": "https://www.reddit.com/r/NvidiaStock/comments/1vpweut/nvda_into_earnings_im_waiting_for_this_pullback/",
+                "source_type": "community_heat",
+                "published_at": "2026-08-16",
+                "freshness_role": "current_public_discussion_of_holding_exposure_through_earnings_not_used_for_facts_or_direction",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass_new_distinct_instrument_and_window",
+              "decision_gate": "selected_new",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": true,
+                "window_delta": true
+              },
+              "reopen_trigger": "Stop the pre-release frame once NVIDIA publishes results, changes its schedule, or the August 27 post-market reaction has displaced the pre-release query; any recap must use verified actual data and pass its own gate.",
+              "rationale": "This is a new NVIDIA-specific earnings window, current hold-through-earnings discussion, readable 5/10/15 percent gap scenario and a direct PositionMath stock-risk journey. It is not a generic duplication of the historical TSLA/GOOGL cluster."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-23",
+          "candidate_id": "HR-20260823-03",
+          "status": "observation",
+          "topic": "US August Flash PMI Beat Has No Verified Retail FX Calculation Query",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 20,
+          "calculator_fit": 18,
+          "evidence_quality": 12,
+          "actionability": 4,
+          "total_score": 79,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L"
+          ],
+          "reason": "Reuters confirms the fresh 56.8 services and 56.0 composite readings, but scanned discussion is about economic direction rather than a concrete EURUSD or USD risk-sizing question; no traffic playbook is justified",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Reuters",
+                "url": "https://www.investing.com/news/economic-indicators/us-service-sector-fuels-acceleration-in-business-activity-sp-global-says-4871819",
+                "source_type": "reliable_news_reprint",
+                "published_at": "2026-08-21",
+                "freshness_role": "same_day_US_flash_services_56_8_and_composite_56_0_result",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "not_evaluated_hard_gate_fail",
+              "decision_gate": "observation_no_natural_retail_calculation_traffic_path",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A current, public English query tying the released PMI figures to a concrete EURUSD or USD pip-value, fixed-risk or position-size calculation without a direction claim.",
+              "rationale": "Fresh macro data does not by itself create calculator demand. The available discussion is directional/economic interpretation rather than a discoverable risk-calculation journey."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-23",
+          "candidate_id": "HR-20260823-04",
+          "status": "observation",
+          "topic": "UK August Flash PMI Surprise Has No Distinct GBPUSD Calculator Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 18,
+          "calculator_fit": 17,
+          "evidence_quality": 12,
+          "actionability": 4,
+          "total_score": 76,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L"
+          ],
+          "reason": "Reuters confirms the fresh services PMI surprise, but no specific current English GBPUSD pip-value, fixed-risk or position-size query was verified; calendar visibility is not a calculator demand signal",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Reuters",
+                "url": "https://www.investing.com/news/economic-indicators/uk-service-sector-perks-up-in-august-adding-to-resilience-signs-4871062",
+                "source_type": "reliable_news_reprint",
+                "published_at": "2026-08-21",
+                "freshness_role": "same_day_UK_flash_services_52_8_result_and_51_8_expectation_context",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "not_evaluated_hard_gate_fail",
+              "decision_gate": "observation_no_distinct_GBPUSD_calculation_demand",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A current, public English GBPUSD fixed-risk, pip-value or position-size request tied to the released PMI facts and a non-generic worked number.",
+              "rationale": "The result is fresh but lacked a second fact source and, more importantly, a clear traffic path and natural calculator bridge. No playbook or package is permitted."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-23",
+          "candidate_id": "HR-20260823-05",
+          "status": "discarded",
+          "topic": "Directional NVDA Jackson Hole and FX Forecast Calls",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 24,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 59,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Price targets, calls to buy or sell, policy-direction claims and generic market commentary are excluded under the no-signals rule"
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-08-23T22:00:00+08:00",
+          "source_count": 3,
+          "note": "覆盖 Kansas City Fed 的 Jackson Hole 日期、Federal Reserve 8 月日历/Warsh keynote，以及 NVIDIA 8 月 26 日业绩公告；只把可回溯的日期和人物作为事实。"
+        },
+        {
+          "channel": "可靠英文媒体 / 独立日历",
+          "status": "complete",
+          "checked_at": "2026-08-23T22:00:00+08:00",
+          "source_count": 4,
+          "note": "覆盖 Reuters 对 Jackson Hole 的独立影响报道、Kiplinger 当周财报日历，以及 Reuters 对美英 Flash PMI 的新鲜报道。"
+        },
+        {
+          "channel": "Reddit / ForexFactory",
+          "status": "complete",
+          "checked_at": "2026-08-23T22:00:00+08:00",
+          "source_count": 4,
+          "note": "覆盖 NVDA 是否跨财报持仓、Jackson Hole 日期/主旨演讲讨论和公开宏观日历；仅作为热度和用语信号，绝不确认事实或市场方向。"
+        },
+        {
+          "channel": "X / Quora / BabyPips",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-08-23T22:00:00+08:00",
+          "source_count": 0,
+          "note": "公开索引未发现能补充独立事实或把 Flash PMI 转化为具体 PipGauge 计算旅程的新鲜、可核验材料；未登录或操作账号。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-08-23_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-08-23_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-08-23"
+      }
+    },
+    {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -268,7 +682,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -713,7 +1127,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -1088,7 +1502,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -1480,7 +1894,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -1856,7 +2270,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -2180,7 +2594,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -2563,7 +2977,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -2904,7 +3318,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -3279,7 +3693,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -3667,7 +4081,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -4012,7 +4426,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -4340,7 +4754,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -4652,7 +5066,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -4973,7 +5387,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -5334,7 +5748,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -5687,7 +6101,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -6131,7 +6545,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -6640,7 +7054,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -7110,7 +7524,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -7653,7 +8067,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -7925,7 +8339,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -8238,7 +8652,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -8673,7 +9087,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -9187,7 +9601,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -9696,7 +10110,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -10163,7 +10577,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -10576,7 +10990,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -10974,7 +11388,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-08-21T22:06:52+08:00",
+      "generated_at": "2026-08-23T22:07:41+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -11413,10 +11827,10 @@
       }
     }
   ],
-  "scan_date": "2026-08-21",
+  "scan_date": "2026-08-23",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 29,
+    "day": 30,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -11424,62 +11838,280 @@
     "mode": "topic_traffic_playbooks_and_content_drafts"
   },
   "stats": {
-    "selected": 0,
+    "selected": 2,
     "observation": 2,
-    "discarded": 2,
-    "total": 4,
-    "selected_average": 0,
+    "discarded": 1,
+    "total": 5,
+    "selected_average": 96.5,
     "all_selected_pass_gate": true,
-    "content_ready": 0,
-    "playbook_ready": 0
+    "content_ready": 2,
+    "playbook_ready": 2
   },
   "candidates": [
     {
-      "scan_date": "2026-08-21",
-      "candidate_id": "HR-20260821-01",
+      "scan_date": "2026-08-23",
+      "candidate_id": "HR-20260823-01",
+      "status": "selected",
+      "topic": "Jackson Hole August 27-29: Refresh EURUSD Fixed-Risk Sizing Before Warsh's Keynote",
+      "primary_site": "PipGauge",
+      "freshness": 25,
+      "traffic_potential": 24,
+      "calculator_fit": 25,
+      "evidence_quality": 15,
+      "actionability": 9,
+      "total_score": 98,
+      "hard_gate": true,
+      "reliable_sources": 3,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Pip Value",
+        "Position Size",
+        "P&L",
+        "Spread Cost"
+      ],
+      "reason": "Kansas City Fed and Federal Reserve confirm the dated symposium and August 28 10:00 ET keynote; Reuters independently identifies it as the next policy-communication catalyst and current public discussion provides a short, non-directional EURUSD risk-sizing path; refresh HR-20260730-02",
+      "content_status": "review_ready",
+      "content_label": "Jackson Hole / EURUSD 刷新审核包待人工审核",
+      "content_url": "../内容生产/2026-08-23/HR-20260823-01/index.html",
+      "content_format": "Medium / Reddit / X",
+      "deadline": "2026-08-28T10:00:00-04:00",
+      "traffic_playbook": {
+        "playbook_status": "ready",
+        "execution_mode": "refresh",
+        "urgency": "high",
+        "publish_deadline": "2026-08-28T10:00:00-04:00",
+        "traffic_hook": "The Kansas City Fed's Jackson Hole symposium starts August 27 and the Federal Reserve calendar lists Kevin Warsh's August 28, 10:00 ET keynote, giving readers a dated policy-communication event to track rather than a generic Fed explainer.",
+        "traffic_window": "Publish the refresh from August 23 through the August 28 keynote. Replace the pre-keynote wording immediately after remarks begin or if the official schedule changes; do not reuse a 'before the speech' headline after that point.",
+        "search_intents": [
+          "Jackson Hole 2026 Warsh speech",
+          "Jackson Hole August 28 2026 EURUSD risk",
+          "EURUSD position size calculator 50 pip stop",
+          "how many lots EURUSD 100 dollar risk"
+        ],
+        "traffic_angle": "Borrow the verified Jackson Hole dates and Warsh's exact keynote time, then answer the calculation users can make before any remarks: with a fixed USD 100 planned loss, how does EUR/USD size change at 25, 50 and 100 pips? The news hook is the event clock; the answer is a non-directional risk table, not a policy prediction.",
+        "calculator_bridge": "After naming the event facts and hand-calculating the table, use PipGauge Pip Value to check the approximately USD 10 per pip per standard lot assumption for EUR/USD in a USD account, then Position Size to verify the three sizes. P&L and Spread Cost may only be framed as hypothetical stress checks.",
+        "example_scenario": "USD 10,000 account; 1% or USD 100 maximum planned price loss; EUR/USD at approximately USD 10 per pip per standard lot: 25/50/100-pip stops imply 0.40/0.20/0.10 lot before commission, spread and slippage.",
+        "distribution_order": [
+          "refresh existing EUR/USD site article HR-20260730-02",
+          "Medium dated event-risk update",
+          "X self-contained fixed-risk thread",
+          "Reddit native discussion without a first-round link"
+        ],
+        "link_placement": "Lead with the Jackson Hole dates, keynote time and the three worked sizes. Place one PipGauge verification link after the formula and caveats; the first Reddit post has no link, and the X thread must stand alone.",
+        "expiry_condition": "Stop the pre-keynote frame when the August 28 speech begins, if the Federal Reserve or Kansas City Fed corrects timing, or if a newer U.S. policy/data event supplants the query. A post-speech update needs new verified facts and a fresh gate.",
+        "editorial_boundary": "Do not predict Warsh's message, Fed policy, EUR/USD, yields or a market move. Do not call a planned stop a guaranteed fill or present hypothetical costs as live execution data.",
+        "refresh_target": "HR-20260730-02",
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "refresh_updates": [
+          "replace the expired July FOMC/minutes headline with the verified August 27-29 Jackson Hole and August 28 keynote frame",
+          "replace all released-minutes language with current event timing and sources",
+          "make the USD 100 25/50/100-pip fixed-risk table the immediate pre-keynote answer",
+          "remove stale 9-3 vote and result-window language"
+        ],
+        "content_mainline": "Use the verified Jackson Hole clock to refresh an existing EUR/USD fixed-loss sizing article; explain the event and the risk table without making a policy or currency forecast.",
+        "body_material": [
+          "Kansas City Fed August 27-29 event dates",
+          "Federal Reserve August 28 10:00 ET keynote listing",
+          "Reuters independent catalyst context",
+          "USD 100 at 25/50/100 pips",
+          "speech-start expiry gate"
+        ],
+        "product_bridge": "PipGauge verifies EUR/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret the keynote or predict a move.",
+        "product_bridge_type": "existing"
+      },
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "Federal Reserve Bank of Kansas City",
+            "url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/",
+            "source_type": "official_event_page",
+            "published_at": "2026-08-20",
+            "freshness_role": "official_confirmation_of_August_27_to_29_2026_symposium_and_theme",
+            "reliable": true
+          },
+          {
+            "publisher": "Federal Reserve Board",
+            "url": "https://www.federalreserve.gov/newsevents/2026-august.htm",
+            "source_type": "official_calendar",
+            "published_at": "2026-08-20",
+            "freshness_role": "official_calendar_lists_Warsh_August_28_1000_ET_keynote",
+            "reliable": true
+          },
+          {
+            "publisher": "Reuters",
+            "url": "https://wtaq.com/2026/08/21/nvidia-earnings-jackson-hole-to-test-pillars-of-stock-rally/",
+            "source_type": "reliable_news_reprint",
+            "published_at": "2026-08-21",
+            "freshness_role": "independent_current_impact_context_identifies_August_27_to_29_as_next_policy_communication_catalyst",
+            "reliable": true
+          },
+          {
+            "publisher": "Reddit r/HollowPointTrading",
+            "url": "https://www.reddit.com/r/HollowPointTrading/comments/1vvxhwc/the_jackson_hole_playbook_what_actually_moves_and/",
+            "source_type": "community_heat",
+            "published_at": "2026-08-23",
+            "freshness_role": "current_public_discussion_of_dates_keynote_and_pre_FOMC_event_risk_not_used_for_facts",
+            "reliable": false
+          }
+        ],
+        "decision": {
+          "novelty_gate": "pass_refresh",
+          "decision_gate": "selected_refresh",
+          "duplicate_of": [
+            "HR-20260730-02"
+          ],
+          "refresh_signals": {
+            "fact_delta": true,
+            "search_delta": true,
+            "example_delta": true,
+            "window_delta": true
+          },
+          "reopen_trigger": "Replace or stop the frame after the August 28 keynote, any official schedule correction, or a later U.S. policy/data event; a later refresh requires new dated facts and current query evidence.",
+          "rationale": "The new symposium/keynote facts, distinct Jackson-Hole search wording, fixed-loss EURUSD table lead-in and exact August 28 window provide four refresh deltas. The playbook leads with the event, then answers fixed-risk math without inferring currency direction."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-08-23",
+      "candidate_id": "HR-20260823-02",
+      "status": "selected",
+      "topic": "NVIDIA Earnings August 26: How Much of a 5-15% Overnight Gap Can a Portfolio Absorb?",
+      "primary_site": "PositionMath",
+      "freshness": 25,
+      "traffic_potential": 25,
+      "calculator_fit": 22,
+      "evidence_quality": 14,
+      "actionability": 9,
+      "total_score": 95,
+      "hard_gate": true,
+      "reliable_sources": 2,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Position Size",
+        "Portfolio Heat",
+        "P&L",
+        "Stop Loss/Take Profit"
+      ],
+      "reason": "NVIDIA officially scheduled Q2 FY27 results for August 26 and Kiplinger independently lists the event in its current earnings calendar; public Reddit discussion is active around holding through earnings, producing a distinct stock-gap risk calculation path rather than a forecast",
+      "content_status": "review_ready",
+      "content_label": "NVIDIA 财报前隔夜跳空风险审核包待人工审核",
+      "content_url": "../内容生产/2026-08-23/HR-20260823-02/index.html",
+      "content_format": "Medium / Reddit / X",
+      "deadline": "2026-08-26T16:00:00-04:00",
+      "traffic_playbook": {
+        "playbook_status": "ready",
+        "execution_mode": "new",
+        "urgency": "high",
+        "publish_deadline": "2026-08-26T16:00:00-04:00",
+        "traffic_hook": "NVIDIA's verified August 26 after-market Q2 FY27 release creates a short, company-specific question: how much overnight-gap exposure is already embedded in an NVDA share position before results appear?",
+        "traffic_window": "Publish from August 23 until the August 26 after-market release. Retire all pre-release wording as soon as NVIDIA publishes its materials; any post-result recap needs verified actual results rather than an estimated or directional headline.",
+        "search_intents": [
+          "Nvidia earnings August 26 2026",
+          "hold NVDA through earnings risk",
+          "NVDA position size calculator",
+          "stock gap loss calculator",
+          "earnings portfolio heat"
+        ],
+        "traffic_angle": "Use the confirmed earnings date and public hold-through-earnings debate to calculate exposure, not to guess results. At a clearly labeled USD 218 teaching anchor, show what 8 shares would lose or gain under a hypothetical 5%, 10% or 15% overnight gap, then separate that from a USD 100 planned intraday stop-risk size.",
+        "calculator_bridge": "After the gap table, use Position Size to check shares for a USD 100 loss budget and a USD 12 stop distance, Portfolio Heat to place that share exposure in the whole account, and P&L to test hypothetical gaps. Stop Loss/Take Profit explains why an overnight gap may bypass a stop.",
+        "example_scenario": "USD 10,000 account; 8 NVDA shares at a clearly labeled USD 218 teaching anchor: 5%/10%/15% gap equals approximately USD 87.20/USD 174.40/USD 261.60. Separately, USD 100 planned loss with a USD 12 stop implies 8 shares before fees; a gap can exceed it.",
+        "distribution_order": [
+          "new PositionMath site risk note",
+          "Medium fact-and-math draft",
+          "X standalone gap-risk thread",
+          "Reddit native discussion without a first-round link"
+        ],
+        "link_placement": "Put NVIDIA's date, the gap table and the stop-versus-gap caveat before one PositionMath verification link. Do not put any link in the first Reddit post; the X thread must be complete without it.",
+        "expiry_condition": "Stop the pre-release frame when NVIDIA releases results, if the company changes the schedule, or once the August 27 reaction displaces the pre-release question. Do not turn later price movement into a retrospective forecast claim.",
+        "editorial_boundary": "Do not predict NVIDIA earnings, price direction, volatility, a buy/sell decision or an options strategy. The USD 218 and 5%/10%/15% figures are teaching assumptions, not live prices, forecasts or expected moves; an overnight gap can skip a stop.",
+        "content_mainline": "Turn a verified NVIDIA earnings date and current hold-through-earnings discussion into a transparent share-exposure calculation, not an earnings or price call.",
+        "body_material": [
+          "NVIDIA August 26 Q2 FY27 after-market schedule",
+          "Kiplinger current-week calendar confirmation",
+          "current public hold-through-earnings discussion",
+          "8 shares at USD 218 under 5/10/15 percent gaps",
+          "pre-release expiry gate"
+        ],
+        "product_bridge": "PositionMath checks share size, portfolio concentration and hypothetical P&L after the arithmetic; it cannot forecast NVIDIA's report or an overnight fill.",
+        "product_bridge_type": "existing"
+      },
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "NVIDIA",
+            "url": "https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-second-quarter-financial-results-6927195",
+            "source_type": "official_company_announcement",
+            "published_at": "2026-07-29",
+            "freshness_role": "official_August_26_2026_Q2_FY27_results_and_5pm_ET_call_schedule",
+            "reliable": true
+          },
+          {
+            "publisher": "Kiplinger",
+            "url": "https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks",
+            "source_type": "independent_earnings_calendar",
+            "published_at": "2026-08-21",
+            "freshness_role": "current_week_independent_listing_of_Wednesday_August_26_NVIDIA_earnings",
+            "reliable": true
+          },
+          {
+            "publisher": "Reddit r/NvidiaStock",
+            "url": "https://www.reddit.com/r/NvidiaStock/comments/1vpweut/nvda_into_earnings_im_waiting_for_this_pullback/",
+            "source_type": "community_heat",
+            "published_at": "2026-08-16",
+            "freshness_role": "current_public_discussion_of_holding_exposure_through_earnings_not_used_for_facts_or_direction",
+            "reliable": false
+          }
+        ],
+        "decision": {
+          "novelty_gate": "pass_new_distinct_instrument_and_window",
+          "decision_gate": "selected_new",
+          "duplicate_of": [],
+          "refresh_signals": {
+            "fact_delta": true,
+            "search_delta": true,
+            "example_delta": true,
+            "window_delta": true
+          },
+          "reopen_trigger": "Stop the pre-release frame once NVIDIA publishes results, changes its schedule, or the August 27 post-market reaction has displaced the pre-release query; any recap must use verified actual data and pass its own gate.",
+          "rationale": "This is a new NVIDIA-specific earnings window, current hold-through-earnings discussion, readable 5/10/15 percent gap scenario and a direct PositionMath stock-risk journey. It is not a generic duplication of the historical TSLA/GOOGL cluster."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-08-23",
+      "candidate_id": "HR-20260823-03",
       "status": "observation",
-      "topic": "Japan July CPI Base Release Is Cross-Verified but Has No Natural USDJPY Calculation Query",
+      "topic": "US August Flash PMI Beat Has No Verified Retail FX Calculation Query",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 20,
-      "calculator_fit": 16,
-      "evidence_quality": 15,
+      "calculator_fit": 18,
+      "evidence_quality": 12,
       "actionability": 4,
-      "total_score": 80,
+      "total_score": 79,
       "hard_gate": false,
-      "reliable_sources": 2,
+      "reliable_sources": 1,
       "fresh_signal": true,
       "calculator_mapping": [
         "Pip Value",
         "Position Size",
         "P&L"
       ],
-      "reason": "Statistics Bureau and Reuters confirm the July CPI result and the first 2025-base monthly release; current public discussion is macro/directional rather than a specific USDJPY sizing, pip-value or fixed-risk query, so no calculator bridge or playbook is justified",
+      "reason": "Reuters confirms the fresh 56.8 services and 56.0 composite readings, but scanned discussion is about economic direction rather than a concrete EURUSD or USD risk-sizing question; no traffic playbook is justified",
       "scan_audit": {
         "sources": [
           {
-            "publisher": "Statistics Bureau of Japan",
-            "url": "https://www.stat.go.jp/english/data/cpi/1581-z.htm",
-            "source_type": "official_release_and_statistical_table",
-            "published_at": "2026-08-21",
-            "freshness_role": "official_July_2026_CPI_monthly_report_on_new_2025_base_released_today",
-            "reliable": true
-          },
-          {
             "publisher": "Reuters",
-            "url": "https://ae.marketscreener.com/news/japan-s-core-inflation-accelerates-in-july-bolsters-case-for-rate-hike-ce7859d3de81f622",
-            "source_type": "reliable_news",
+            "url": "https://www.investing.com/news/economic-indicators/us-service-sector-fuels-acceleration-in-business-activity-sp-global-says-4871819",
+            "source_type": "reliable_news_reprint",
             "published_at": "2026-08-21",
-            "freshness_role": "independent_same_day_confirmation_of_July_core_CPI_1_8_percent_year_on_year",
+            "freshness_role": "same_day_US_flash_services_56_8_and_composite_56_0_result",
             "reliable": true
-          },
-          {
-            "publisher": "Reddit r/MarketFluxHub",
-            "url": "https://www.reddit.com/r/MarketFluxHub/comments/1vu0q8f/japan_core_cpi_rises_18_in_july_for_second/",
-            "source_type": "community_heat",
-            "published_at": "2026-08-21",
-            "freshness_role": "same_day_CPI_and_BOJ_discussion_not_used_for_facts_and_not_a_specific_position_sizing_query",
-            "reliable": false
           }
         ],
         "decision": {
@@ -11492,57 +12124,41 @@
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "A public, current English USDJPY pip-value, fixed-risk or position-size query tied to the released CPI/base-series facts, plus a defensible numerical example that does not make a direction call.",
-          "rationale": "The actual July release and 2025-base transition are verified by independent reliable publishers, but generic CPI and BOJ-direction discussion does not establish a calculator journey. No playbook or content package may be created merely because USDJPY is related to Japan."
+          "reopen_trigger": "A current, public English query tying the released PMI figures to a concrete EURUSD or USD pip-value, fixed-risk or position-size calculation without a direction claim.",
+          "rationale": "Fresh macro data does not by itself create calculator demand. The available discussion is directional/economic interpretation rather than a discoverable risk-calculation journey."
         }
       }
     },
     {
-      "scan_date": "2026-08-21",
-      "candidate_id": "HR-20260821-02",
+      "scan_date": "2026-08-23",
+      "candidate_id": "HR-20260823-04",
       "status": "observation",
-      "topic": "UK July Retail Sales Result Has Two Fact Sources but No Distinct GBPUSD Calculation Demand",
+      "topic": "UK August Flash PMI Surprise Has No Distinct GBPUSD Calculator Journey",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 18,
-      "calculator_fit": 16,
-      "evidence_quality": 15,
+      "calculator_fit": 17,
+      "evidence_quality": 12,
       "actionability": 4,
-      "total_score": 78,
+      "total_score": 76,
       "hard_gate": false,
-      "reliable_sources": 2,
+      "reliable_sources": 1,
       "fresh_signal": true,
       "calculator_mapping": [
         "Pip Value",
         "Position Size",
         "P&L"
       ],
-      "reason": "ONS and Reuters confirm July retail-sales volumes fell 0.5 percent month on month and rose 1.6 percent year on year; no current public GBPUSD risk-calculation query or non-generic calculator journey was verified",
+      "reason": "Reuters confirms the fresh services PMI surprise, but no specific current English GBPUSD pip-value, fixed-risk or position-size query was verified; calendar visibility is not a calculator demand signal",
       "scan_audit": {
         "sources": [
           {
-            "publisher": "Office for National Statistics",
-            "url": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/july2026",
-            "source_type": "official_release",
-            "published_at": "2026-08-21",
-            "freshness_role": "official_July_2026_retail_sales_result_0_5_percent_monthly_fall_and_1_6_percent_annual_rise_released_today",
-            "reliable": true
-          },
-          {
             "publisher": "Reuters",
-            "url": "https://live.euronext.com/en/financial-news/british-retail-sales-slip-july-after-world-cup-boost",
-            "source_type": "reliable_news",
+            "url": "https://www.investing.com/news/economic-indicators/uk-service-sector-perks-up-in-august-adding-to-resilience-signs-4871062",
+            "source_type": "reliable_news_reprint",
             "published_at": "2026-08-21",
-            "freshness_role": "independent_same_day_confirmation_of_July_retail_sales_result_and_expectations_context",
+            "freshness_role": "same_day_UK_flash_services_52_8_result_and_51_8_expectation_context",
             "reliable": true
-          },
-          {
-            "publisher": "Forex Factory",
-            "url": "https://www.forexfactory.com/calendar?month=aug.2026",
-            "source_type": "public_calendar_heat",
-            "published_at": "2026-08-21",
-            "freshness_role": "public_calendar_visibility_not_an_independent_fact_or_specific_GBPUSD_calculation_query",
-            "reliable": false
           }
         ],
         "decision": {
@@ -11555,38 +12171,16 @@
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "A source-backed English GBPUSD fixed-risk, pip-value or position-size query whose user wording and numbers are specifically tied to the released retail-sales result, not a generic macro-event wrapper.",
-          "rationale": "ONS and Reuters satisfy the independent fact check, but event visibility is not evidence that a reader needs a calculator. No natural bridge, specific query, or non-generic worked number was verified."
+          "reopen_trigger": "A current, public English GBPUSD fixed-risk, pip-value or position-size request tied to the released PMI facts and a non-generic worked number.",
+          "rationale": "The result is fresh but lacked a second fact source and, more importantly, a clear traffic path and natural calculator bridge. No playbook or package is permitted."
         }
       }
     },
     {
-      "scan_date": "2026-08-21",
-      "candidate_id": "HR-20260821-03",
+      "scan_date": "2026-08-23",
+      "candidate_id": "HR-20260823-05",
       "status": "discarded",
-      "topic": "Topstep July Live Funded Rules Are Not a Current Rule-Change Traffic Event",
-      "primary_site": "PositionMath",
-      "freshness": 8,
-      "traffic_potential": 13,
-      "calculator_fit": 25,
-      "evidence_quality": 14,
-      "actionability": 4,
-      "total_score": 64,
-      "hard_gate": false,
-      "reliable_sources": 1,
-      "fresh_signal": false,
-      "calculator_mapping": [
-        "Daily Loss Limit",
-        "Trailing Drawdown",
-        "Prop Firm Calculator"
-      ],
-      "reason": "Topstep's official rules page is dated July 1 and the scan found no current independent impact signal or newly dated rule change; do not manufacture a prop-firm traffic window"
-    },
-    {
-      "scan_date": "2026-08-21",
-      "candidate_id": "HR-20260821-04",
-      "status": "discarded",
-      "topic": "Directional Japan CPI UK Retail Sales USDJPY GBPUSD and Prop Firm Forecasts",
+      "topic": "Directional NVDA Jackson Hole and FX Forecast Calls",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 24,
@@ -11600,47 +12194,48 @@
       "calculator_mapping": [
         "P&L"
       ],
-      "reason": "Price targets directional calls signals and unverified rule-change claims are excluded"
+      "reason": "Price targets, calls to buy or sell, policy-direction claims and generic market commentary are excluded under the no-signals rule"
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-08-21T22:00:00+08:00",
+      "checked_at": "2026-08-23T22:00:00+08:00",
       "source_count": 3,
-      "note": "覆盖 Statistics Bureau of Japan 的 CPI 月报/基期说明、ONS 7 月零售销售正式结果，以及 Topstep 有日期的规则页；只把可回溯的日期和数字作为事实候选。"
+      "note": "覆盖 Kansas City Fed 的 Jackson Hole 日期、Federal Reserve 8 月日历/Warsh keynote，以及 NVIDIA 8 月 26 日业绩公告；只把可回溯的日期和人物作为事实。"
     },
     {
-      "channel": "可靠英文媒体 / 独立经济日历",
+      "channel": "可靠英文媒体 / 独立日历",
       "status": "complete",
-      "checked_at": "2026-08-21T22:00:00+08:00",
-      "source_count": 3,
-      "note": "覆盖 Reuters 对日本 CPI 与英国零售销售的独立报道，以及 Forex Factory 公开日历；日历仅作可见度和时间交叉，不能代替事实或需求证据。"
+      "checked_at": "2026-08-23T22:00:00+08:00",
+      "source_count": 4,
+      "note": "覆盖 Reuters 对 Jackson Hole 的独立影响报道、Kiplinger 当周财报日历，以及 Reuters 对美英 Flash PMI 的新鲜报道。"
     },
     {
       "channel": "Reddit / ForexFactory",
       "status": "complete",
-      "checked_at": "2026-08-21T22:00:00+08:00",
-      "source_count": 3,
-      "note": "检查日本 CPI 的当日公开讨论、英国宏观日历以及 prop-firm 公开讨论；仅用来识别讨论对象，绝不用于确认统计、政策或规则事实。"
+      "checked_at": "2026-08-23T22:00:00+08:00",
+      "source_count": 4,
+      "note": "覆盖 NVDA 是否跨财报持仓、Jackson Hole 日期/主旨演讲讨论和公开宏观日历；仅作为热度和用语信号，绝不确认事实或市场方向。"
     },
     {
       "channel": "X / Quora / BabyPips",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-08-21T22:00:00+08:00",
+      "checked_at": "2026-08-23T22:00:00+08:00",
       "source_count": 0,
-      "note": "公开索引未发现能把当期日本 CPI 或英国零售销售转化为具体 PipGauge/PositionMath 计算旅程的可核验材料；未登录或操作账号。"
+      "note": "公开索引未发现能补充独立事实或把 Flash PMI 转化为具体 PipGauge 计算旅程的新鲜、可核验材料；未登录或操作账号。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-08-21_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-08-21_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-08-23_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-08-23_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
-    "traffic_playbooks": "../热点流量打法.json"
+    "traffic_playbooks": "../热点流量打法.json",
+    "content_root": "../内容生产/2026-08-23"
   },
   "radar_model": "v2-content-first",
   "editorial_policy": {
