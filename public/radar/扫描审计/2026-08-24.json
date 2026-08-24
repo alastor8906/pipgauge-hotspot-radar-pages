@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "scan_date": "2026-08-24",
+  "generated_at": "2026-08-24T22:00:00+08:00",
+  "coverage": [
+    {"channel":"官方与一手来源","status":"complete","checked_at":"2026-08-24T22:00:00+08:00","source_count":5,"note":"核验 Kansas City Fed 的 Jackson Hole 日期、Federal Reserve 的 Warsh keynote 时间、NVIDIA 的业绩时点、BEA 的 GDP/PCE 发布和 BOJ 讲话日程。"},
+    {"channel":"可靠英文媒体 / 独立日历","status":"complete","checked_at":"2026-08-24T22:00:00+08:00","source_count":3,"note":"核验 Reuters 8 月 24 日 Jackson Hole 影响报道、AP 8 月 24 日 NVIDIA 业绩周背景，以及 Kiplinger 的本周经济日历；只将其作为独立影响或时点交叉验证。"},
+    {"channel":"Reddit / ForexFactory","status":"complete","checked_at":"2026-08-24T22:00:00+08:00","source_count":4,"note":"核验 NVDA earnings-week 公开讨论、Jackson Hole 公开讨论和 ForexFactory 公共日历；社区材料只用于热度与当前措辞，不确认事实或方向。"},
+    {"channel":"X / Quora / BabyPips","status":"checked_no_material_signal","checked_at":"2026-08-24T22:00:00+08:00","source_count":0,"note":"公开索引未出现能把 GDP/PCE 或 BOJ 日程转化成具体、非方向性 PipGauge 计算旅程的可验证新材料；未登录或操作账号。"}
+  ],
+  "candidates": {
+    "HR-20260824-01": {
+      "sources": [
+        {"publisher":"Federal Reserve Bank of Kansas City","url":"https://www.kansascityfed.org/research/jackson-hole-economic-symposium/","source_type":"official_event_page","published_at":"2026-08-20","freshness_role":"official_confirmation_of_August_27_to_29_2026_symposium","reliable":true},
+        {"publisher":"Federal Reserve Board","url":"https://www.federalreserve.gov/newsevents/2026-august.htm","source_type":"official_calendar","published_at":"2026-08-20","freshness_role":"official_calendar_lists_Warsh_August_28_1000_ET_keynote","reliable":true},
+        {"publisher":"Reuters","url":"https://www.investing.com/news/economy-news/bond-market-anxiety-raises-stakes-for-warshs-debut-jackson-hole-speech-4872977","source_type":"reliable_news_reprint","published_at":"2026-08-24","freshness_role":"same_day_independent_context_for_Warsh_debut_and_current_event_attention","reliable":true},
+        {"publisher":"Reddit r/HollowPointTrading","url":"https://www.reddit.com/r/HollowPointTrading/comments/1vvxhwc/the_jackson_hole_playbook_what_actually_moves_and/","source_type":"community_heat","published_at":"2026-08-23","freshness_role":"public_Jackson_Hole_and_keynote_discussion_not_used_for_facts_or_direction","reliable":false}
+      ],
+      "decision": {"novelty_gate":"pass_refresh","decision_gate":"selected_refresh","duplicate_of":["HR-20260823-01"],"refresh_signals":{"fact_delta":true,"search_delta":true,"example_delta":false,"window_delta":true},"reopen_trigger":"Retire the pre-keynote frame when remarks begin on August 28, if either official calendar changes, or when verified post-speech facts displace the question.","rationale":"A dated Reuters impact report is new fact context, current queries narrow to Friday’s debut/keynote, and the window is now within four days. The pre-existing fixed USD 100 risk table remains the natural answer, so this is a refresh rather than a new same-structure article."}
+    },
+    "HR-20260824-02": {
+      "sources": [
+        {"publisher":"NVIDIA","url":"https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-second-quarter-financial-results-6927407","source_type":"official_company_announcement","published_at":"2026-07-29","freshness_role":"official_August_26_2026_Q2_FY27_results_and_approximately_120_PM_PT_materials","reliable":true},
+        {"publisher":"Associated Press","url":"https://apnews.com/article/8ab800029c559c5e751058ac1a8ef932","source_type":"reliable_news","published_at":"2026-08-24","freshness_role":"same_day_independent_market_context_identifies_Wednesday_NVIDIA_report_as_major_week_event","reliable":true},
+        {"publisher":"Kiplinger","url":"https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks","source_type":"independent_earnings_calendar","published_at":"2026-08-21","freshness_role":"current_week_independent_listing_of_Wednesday_August_26_NVIDIA_earnings","reliable":true},
+        {"publisher":"Reddit r/NVDA_Stock","url":"https://www.reddit.com/r/NVDA_Stock/comments/1vws6e9/daily_thread_and_discussion_20260824_monday/","source_type":"community_heat","published_at":"2026-08-24","freshness_role":"same_day_public_earnings_week_discussion_not_used_for_facts_or_direction","reliable":false}
+      ],
+      "decision": {"novelty_gate":"pass_refresh","decision_gate":"selected_refresh","duplicate_of":["HR-20260823-02"],"refresh_signals":{"fact_delta":true,"search_delta":true,"example_delta":false,"window_delta":true},"reopen_trigger":"Stop the pre-release copy immediately once NVIDIA publishes results, changes its schedule, or a verified post-result move has displaced the pre-release question.","rationale":"AP adds same-day independent impact context, the query has narrowed to a Wednesday/final-check question, and the deadline is one full trading day away. The existing article’s labelled gap arithmetic remains appropriate, so only a dated refresh is permitted."}
+    },
+    "HR-20260824-03": {
+      "sources": [
+        {"publisher":"U.S. Bureau of Economic Analysis","url":"https://www.bea.gov/news/schedule/full","source_type":"official_release_schedule","published_at":"2026-08-20","freshness_role":"official_August_26_0830_ET_GDP_second_estimate_and_personal_income_release_time","reliable":true},
+        {"publisher":"Kiplinger","url":"https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar","source_type":"independent_economic_calendar","published_at":"2026-08-22","freshness_role":"current_week_independent_calendar_context","reliable":true},
+        {"publisher":"Forex Factory","url":"https://www.forexfactory.com/calendar?range=aug24.2026-sep2.2026","source_type":"community_calendar_heat","published_at":"2026-08-23","freshness_role":"public_calendar_visibility_only_not_used_to_confirm_BEA_facts","reliable":false}
+      ],
+      "decision": {"novelty_gate":"fail","decision_gate":"observation_no_verified_retail_calculation_query","duplicate_of":[],"refresh_signals":{"fact_delta":true,"search_delta":false,"example_delta":false,"window_delta":true},"reopen_trigger":"A current public English query that ties the release to a specific, non-directional EURUSD/USD pip-value, fixed-risk or position-size calculation with a readable current example.","rationale":"The factual event is dated and independently confirmed, but calendar awareness is not proof of a calculator-demand path. Current public results were macro interpretation and direction-first, so no playbook or package is allowed."}
+    },
+    "HR-20260824-04": {
+      "sources": [
+        {"publisher":"Bank of Japan","url":"https://www.boj.or.jp/en/about/calendar/","source_type":"official_release_schedule","published_at":"2026-08-21","freshness_role":"official_August_27_1030_speech_schedule","reliable":true}
+      ],
+      "decision": {"novelty_gate":"not_evaluated_hard_gate_fail","decision_gate":"observation_missing_independent_impact_and_calculation_demand","duplicate_of":[],"refresh_signals":{"fact_delta":true,"search_delta":false,"example_delta":false,"window_delta":true},"reopen_trigger":"A second independent reliable impact source and a current public USDJPY pip-value, position-size or fixed-risk question tied to the verified event without a directional claim.","rationale":"A single official schedule is enough to watch an event but not enough to establish an eligible content opportunity. No natural calculation traffic was verified."}
+  }
+}
+}
