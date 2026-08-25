@@ -1,0 +1,38 @@
+{
+  "schema_version": 2,
+  "scan_date": "2026-08-25",
+  "generated_at": "2026-08-25T22:00:00+08:00",
+  "coverage": [
+    {"channel":"官方与一手来源","status":"complete","checked_at":"2026-08-25T22:00:00+08:00","source_count":4,"note":"核验 NVIDIA Q2 FY27 报告与电话会时间、BEA GDP/PCE 发布时间，以及 Kansas City Fed/Federal Reserve Jackson Hole 日程。"},
+    {"channel":"可靠英文媒体 / 独立日历","status":"complete","checked_at":"2026-08-25T22:00:00+08:00","source_count":4,"note":"核验 Reuters 8 月 25 日 NVIDIA 当前报道、AP 本周宏观预览、Kiplinger 日历及 Reuters 8 月 24 日 Jackson Hole 背景。"},
+    {"channel":"Reddit / ForexFactory","status":"complete","checked_at":"2026-08-25T22:00:00+08:00","source_count":3,"note":"核验 NVIDIA 8 月 25 日及 8 月 24 日公开讨论和 ForexFactory 公共日历；社区材料只用于热度与当前措辞，不确认事实或方向。"},
+    {"channel":"X / Quora / BabyPips","status":"checked_no_material_signal","checked_at":"2026-08-25T22:00:00+08:00","source_count":0,"note":"公开索引未出现能把 GDP/PCE 或 Jackson Hole 转化为新的、具体且非方向性 PipGauge 计算旅程的可验证材料；未登录或操作账号。"}
+  ],
+  "candidates": {
+    "HR-20260825-01": {
+      "sources": [
+        {"publisher":"NVIDIA","url":"https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Second-Quarter-Financial-Results/default.aspx","source_type":"official_company_announcement","published_at":"2026-07-29","freshness_role":"official_August_26_2026_Q2_FY27_results_materials_at_approximately_1320_PT_and_1400_PT_call","reliable":true},
+        {"publisher":"Reuters","url":"https://www.investing.com/news/stock-market-news/nvidia-faces-growth-test-as-rubin-debut-meets-ai-financing-scrutiny-4874842","source_type":"reliable_news_reprint","published_at":"2026-08-25","freshness_role":"same_day_independent_context_confirms_Wednesday_results_are_a_current_market_event","reliable":true},
+        {"publisher":"Reddit r/NVDA_Stock","url":"https://www.reddit.com/r/NVDA_Stock/comments/1vxp5w4/daily_thread_and_discussion_20260825_tuesday/","source_type":"community_heat","published_at":"2026-08-25","freshness_role":"same_day_public_hold_through_earnings_and_overnight_discussion_not_used_for_facts_or_direction","reliable":false}
+      ],
+      "decision": {"novelty_gate":"pass_refresh","decision_gate":"selected_refresh","duplicate_of":["HR-20260824-02"],"refresh_signals":{"fact_delta":true,"search_delta":true,"example_delta":false,"window_delta":true},"reopen_trigger":"Retire every pre-release line as soon as NVIDIA publishes materials, changes its schedule, or verified post-result facts create a different calculation question.","rationale":"Reuters supplies new same-day independent context, the public query has narrowed to tomorrow/overnight holding risk, and one regular close remains before the release. The labelled gap arithmetic is still the natural answer, so this is a refresh rather than a new same-structure article."}
+    },
+    "HR-20260825-02": {
+      "sources": [
+        {"publisher":"U.S. Bureau of Economic Analysis","url":"https://www.bea.gov/news/schedule/full","source_type":"official_release_schedule","published_at":"2026-08-23","freshness_role":"official_August_26_0830_ET_GDP_second_estimate_and_personal_income_and_outlays_time","reliable":true},
+        {"publisher":"Associated Press","url":"https://apnews.com/article/f036e0c2aa019cc924ad148a1a497dbd","source_type":"reliable_news","published_at":"2026-08-20","freshness_role":"independent_current_week_context_for_PCE_and_consumer_confidence_calendar","reliable":true},
+        {"publisher":"Forex Factory","url":"https://www.forexfactory.com/calendar?range=aug24.2026-sep7.2026","source_type":"community_calendar_heat","published_at":"2026-08-21","freshness_role":"public_calendar_visibility_only_not_used_to_confirm_BEA_facts","reliable":false}
+      ],
+      "decision": {"novelty_gate":"fail","decision_gate":"observation_no_verified_retail_calculation_query","duplicate_of":["HR-20260824-03"],"refresh_signals":{"fact_delta":false,"search_delta":false,"example_delta":false,"window_delta":false},"reopen_trigger":"A current public English query tied to the release that asks a specific non-directional EURUSD/USD pip-value, fixed-risk or position-size calculation with a readable example.","rationale":"The dated releases remain independently confirmed, but the current material is macro interpretation and direction-first. No natural calculator bridge is verified, and the prior observation already owns this calendar cluster."}
+    },
+    "HR-20260825-03": {
+      "sources": [
+        {"publisher":"Federal Reserve Bank of Kansas City","url":"https://www.kansascityfed.org/research/jackson-hole-economic-symposium/","source_type":"official_event_page","published_at":"2026-08-20","freshness_role":"official_confirmation_of_August_27_to_29_2026_symposium","reliable":true},
+        {"publisher":"Federal Reserve Board","url":"https://www.federalreserve.gov/newsevents/2026-august.htm","source_type":"official_calendar","published_at":"2026-08-20","freshness_role":"official_calendar_lists_Warsh_August_28_1000_ET_keynote","reliable":true},
+        {"publisher":"Reuters","url":"https://finance.yahoo.com/economy/policy/articles/bond-market-anxiety-raises-stakes-100241607.html","source_type":"reliable_news_reprint","published_at":"2026-08-24","freshness_role":"recent_independent_context_not_a_new_August_25_delta","reliable":true},
+        {"publisher":"Reddit r/MortgageBrokerRates","url":"https://www.reddit.com/r/MortgageBrokerRates/comments/1vx4ttx/mortgage_market_week_ahead_august_2428_2026/","source_type":"community_heat","published_at":"2026-08-25","freshness_role":"public_event_attention_only_not_used_for_facts_or_direction","reliable":false}
+      ],
+      "decision": {"novelty_gate":"fail","decision_gate":"observation_duplicate_countdown","duplicate_of":["HR-20260824-01"],"refresh_signals":{"fact_delta":false,"search_delta":false,"example_delta":false,"window_delta":false},"reopen_trigger":"An official schedule change, the start of the keynote followed by independently verifiable facts, or a distinct current non-directional risk-calculation query not already answered by the existing USD 100 EURUSD table.","rationale":"The date and current attention remain genuine, but the August 24 refresh already contains the same Friday countdown, search journey and fixed-risk table. A single calendar-day decrement is not a refresh signal and must not create a repeated package."}
+    }
+  }
+}
