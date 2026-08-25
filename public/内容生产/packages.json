@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T14:09:18.858Z",
+  "generated_at": "2026-08-25T14:07:17.022Z",
   "endpoint": "multi_platform_drafts_awaiting_human_review",
   "supported_platforms": [
     "medium",
@@ -7,6 +7,41 @@
     "x"
   ],
   "packages": [
+    {
+      "candidate_id": "HR-20260825-01",
+      "scan_date": "2026-08-25",
+      "primary_site": "PositionMath",
+      "topic": "NVIDIA Reports Tomorrow: Refresh the Overnight-Gap Risk Check Before Results",
+      "package_summary": "当期审核快照：用 NVIDIA 官方盘后时点、Reuters 8 月 25 日独立当天背景和“明天是否持仓过夜”的公开讨论，刷新既有 NVDA 隔夜跳空风险稿；不新建同构财报文。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "last_regular_close_before_results",
+      "time_status_label": "仅在 NVIDIA 于 8 月 26 日盘后公布材料前使用；结果发布、官方时间更正或经核验的盘后事实出现时必须立即改写或停用。",
+      "url": "../内容生产/2026-08-25/HR-20260825-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-25/HR-20260825-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-25/HR-20260825-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-25/HR-20260825-01/index.html#x"
+        }
+      ]
+    },
     {
       "candidate_id": "HR-20260824-01",
       "scan_date": "2026-08-24",
