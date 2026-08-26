@@ -232,5 +232,12 @@
     "content_url": "../内容生产/2026-08-25/HR-20260825-01/index.html",
     "content_format": "Medium / Reddit / X",
     "deadline": "2026-08-26T16:00:00-04:00"
+  },
+  "HR-20260826-01": {
+    "content_status": "review_ready",
+    "content_label": "NVIDIA 今日业绩隔夜跳空刷新审核包待人工审核",
+    "content_url": "../内容生产/2026-08-26/HR-20260826-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-08-26T16:00:00-04:00"
   }
 }

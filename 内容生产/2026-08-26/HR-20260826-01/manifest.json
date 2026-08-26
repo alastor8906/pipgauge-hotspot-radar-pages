@@ -1,0 +1,20 @@
+{
+  "candidate_id": "HR-20260826-01",
+  "scan_date": "2026-08-26",
+  "primary_site": "PositionMath",
+  "topic": "NVIDIA Reports Today: Refresh the Last-Regular-Session Overnight-Gap Check",
+  "execution_mode": "refresh",
+  "refresh_target": "HR-20260824-02",
+  "package_summary": "当期审核快照：用 NVIDIA 官方盘后时点、Reuters 8 月 26 日独立当天背景和当天公开财报讨论，刷新既有 NVDA 隔夜跳空风险稿；不新建同构财报文。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "final_regular_session_before_results",
+  "time_status_label": "仅在 NVIDIA 于 8 月 26 日盘后公布材料前使用；结果发布、官方时间更正或经核验的盘后事实出现时必须立即改写或停用。",
+  "documents": [
+    {"id":"facts","label":"事实与论点","file":"00-事实与论点.md","platform":"internal","kind":"editorial brief","status_label":"已整理"},
+    {"id":"medium","label":"Medium","file":"01-Medium.md","platform":"medium","kind":"long-form draft","status_label":"待人工审核"},
+    {"id":"reddit","label":"Reddit","file":"02-Reddit.md","platform":"reddit","kind":"native discussion draft","status_label":"待人工审核"},
+    {"id":"x","label":"X","file":"03-X.md","platform":"x","kind":"short thread draft","status_label":"待人工审核"},
+    {"id":"review","label":"审核清单","file":"04-人工审核.md","platform":"internal","kind":"human gate","status_label":"必须完成"}
+  ]
+}

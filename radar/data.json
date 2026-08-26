@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-08-25T22:05:59+08:00",
-  "latest_scan_date": "2026-08-25",
+  "generated_at": "2026-08-26T22:05:52+08:00",
+  "latest_scan_date": "2026-08-26",
   "available_dates": [
+    "2026-08-26",
     "2026-08-25",
     "2026-08-24",
     "2026-08-23",
@@ -38,8 +39,353 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-08-26",
+      "generated_at": "2026-08-26T22:05:52+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 33,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 1,
+        "observation": 2,
+        "discarded": 1,
+        "total": 4,
+        "selected_average": 97.0,
+        "all_selected_pass_gate": true,
+        "content_ready": 1,
+        "playbook_ready": 1
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-08-26",
+          "candidate_id": "HR-20260826-01",
+          "status": "selected",
+          "topic": "NVIDIA Reports Today: Refresh the Last-Regular-Session Overnight-Gap Check",
+          "primary_site": "PositionMath",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 22,
+          "evidence_quality": 15,
+          "actionability": 10,
+          "total_score": 97,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Position Size",
+            "Portfolio Heat",
+            "P&L",
+            "Stop Loss/Take Profit"
+          ],
+          "reason": "NVIDIA's official August 26 after-market schedule, Reuters' same-day independent report and a current public earnings thread create a final regular-session exposure-check query; refresh HR-20260824-02 rather than create another NVIDIA earnings article",
+          "content_status": "review_ready",
+          "content_label": "NVIDIA 今日业绩隔夜跳空刷新审核包待人工审核",
+          "content_url": "../内容生产/2026-08-26/HR-20260826-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-08-26T16:00:00-04:00",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "refresh",
+            "urgency": "critical",
+            "publish_deadline": "2026-08-26T16:00:00-04:00",
+            "traffic_hook": "NVIDIA's official after-market results clock, Reuters' August 26 same-day report, and the current earnings thread make the final regular session a live exposure-check query rather than an earnings prediction.",
+            "traffic_window": "Refresh during the August 26 regular session and no later than 4:00 p.m. ET, before NVIDIA publishes results materials at approximately 1:20 p.m. PT. The window closes immediately once materials are public; any pre-release title or tense must be retired.",
+            "search_intents": [
+              "Nvidia earnings tonight overnight gap risk",
+              "hold NVDA through earnings risk",
+              "NVDA position size calculator",
+              "stock gap loss calculator",
+              "earnings portfolio heat"
+            ],
+            "traffic_angle": "Borrow the verified earnings-today clock—not a view on the report—to answer the query readers have now: for eight shares in a USD 10,000 account at a clearly labelled USD 218 teaching anchor, what are the absolute dollar exposures of 5%, 10% and 15% hypothetical overnight gaps? Then separate that from a USD 100 planned-loss divided by a USD 12 stop-distance calculation. Neither table predicts results or direction.",
+            "calculator_bridge": "After the arithmetic, PositionMath Position Size checks USD 100 / USD 12 and rounding; Portfolio Heat locates the eight-share exposure in the account; P&L tests the labelled hypothetical amounts. Stop Loss/Take Profit carries the explicit warning that an overnight gap can bypass a stop.",
+            "example_scenario": "USD 10,000 account; eight NVDA shares at a clearly labelled USD 218 teaching anchor. A 5%/10%/15% absolute gap is approximately USD 87.20/USD 174.40/USD 261.60. Separately, USD 100 planned loss divided by a USD 12 stop distance gives eight shares after rounding down; an overnight gap can exceed that planned loss.",
+            "distribution_order": [
+              "refresh existing site article HR-20260824-02",
+              "Medium earnings-today fact-and-math update",
+              "X self-contained stop-versus-gap thread",
+              "Reddit native process discussion without a first-round link"
+            ],
+            "link_placement": "Show NVIDIA's official time, the gap table and the stop-versus-gap distinction first. Put one PositionMath verification link after the explanation; Reddit gets no initial link and the X thread must stand alone.",
+            "expiry_condition": "Expire all pre-release language once NVIDIA publishes results, changes its schedule, or verified post-result facts replace the question. Do not turn a hypothetical gap into an actual recap without new factual sources.",
+            "editorial_boundary": "Do not predict revenue, earnings, options-implied moves or NVDA's direction. USD 218 is a teaching anchor, not a live quote or valuation; a stop is not a guarantee and none of the scenarios is a probability forecast.",
+            "refresh_target": "HR-20260824-02",
+            "refresh_signals": {
+              "fact_delta": true,
+              "search_delta": true,
+              "example_delta": false,
+              "window_delta": true
+            },
+            "refresh_updates": [
+              "change the headline and all time language from tomorrow-before-results to today/final-regular-session",
+              "replace Reuters August 25 context with the August 26 same-day report while retaining NVIDIA's official clock",
+              "retain the labelled USD 218 5/10/15% teaching table without presenting it as a live quote",
+              "set every review gate to immediate expiry when results materials publish"
+            ],
+            "content_mainline": "Refresh the existing NVIDIA gap-risk package for earnings day; use the news clock to surface exposure arithmetic, not an earnings call.",
+            "body_material": [
+              "NVIDIA official August 26 after-market materials time",
+              "Reuters August 26 independent current-event context",
+              "USD 218 teaching anchor",
+              "eight shares with 5/10/15% absolute gaps",
+              "result-publication expiry gate"
+            ],
+            "product_bridge": "PositionMath verifies share-size, portfolio-heat and hypothetical P&L inputs after the risk explanation; it does not forecast NVIDIA or overnight execution.",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "NVIDIA",
+                "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Second-Quarter-Financial-Results/default.aspx",
+                "source_type": "official_company_announcement",
+                "published_at": "2026-07-29",
+                "freshness_role": "official_August_26_2026_Q2_FY27_results_materials_at_approximately_1320_PT_and_1400_PT_call",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.investing.com/news/economy-news/us-stock-futures-subdued-in-runup-to-nvidia-results-inflation-print-4876659",
+                "source_type": "reliable_news_reprint",
+                "published_at": "2026-08-26",
+                "freshness_role": "same_day_independent_report_confirms_NVIDIA_results_after_markets_are_current_focus",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit r/NVDA_Stock",
+                "url": "https://www.reddit.com/r/NVDA_Stock/comments/1vym8g7/q22027_earnings_thread_and_discussion_20260826/",
+                "source_type": "community_heat",
+                "published_at": "2026-08-26",
+                "freshness_role": "same_day_public_earnings_tonight_discussion_not_used_for_facts_or_direction",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass_refresh",
+              "decision_gate": "selected_refresh",
+              "duplicate_of": [
+                "HR-20260824-02"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Retire every pre-release line as soon as NVIDIA publishes materials, changes its schedule, or verified post-result facts create a different calculation question.",
+              "rationale": "Reuters supplies new same-day independent context, the public query has changed to earnings-today, and the final regular session is a discrete expiry window. The labelled gap arithmetic remains the natural answer, so this is a refresh rather than a new same-structure article."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-26",
+          "candidate_id": "HR-20260826-03",
+          "status": "observation",
+          "topic": "Jackson Hole Friday Keynote Still Has No New Refresh Delta Beyond the Existing Countdown",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 23,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 6,
+          "total_score": 94,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "Official dates, an independent calendar and public event attention remain verifiable, but the August 24 refresh already owns the same Friday-keynote clock, EURUSD fixed-risk query and teaching table; the calendar decrement alone is not a second refresh signal",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Federal Reserve Bank of Kansas City",
+                "url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/",
+                "source_type": "official_event_page",
+                "published_at": "2026-08-20",
+                "freshness_role": "official_confirmation_of_August_27_to_29_2026_symposium",
+                "reliable": true
+              },
+              {
+                "publisher": "Federal Reserve Board",
+                "url": "https://www.federalreserve.gov/newsevents/2026-august.htm",
+                "source_type": "official_calendar",
+                "published_at": "2026-08-20",
+                "freshness_role": "official_calendar_lists_Warsh_August_28_1000_ET_keynote",
+                "reliable": true
+              },
+              {
+                "publisher": "Kiplinger",
+                "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+                "source_type": "reliable_calendar_context",
+                "published_at": "2026-08-22",
+                "freshness_role": "current_week_independent_context_not_a_new_August_26_delta",
+                "reliable": true
+              },
+              {
+                "publisher": "Forex Factory",
+                "url": "https://www.forexfactory.com/calendar/129-us-fed-chairman-warsh-speaks",
+                "source_type": "community_heat",
+                "published_at": "2026-08-26",
+                "freshness_role": "public_event_attention_only_not_used_for_facts_or_direction",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_duplicate_countdown",
+              "duplicate_of": [
+                "HR-20260824-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": false
+              },
+              "reopen_trigger": "An official schedule change, the start of the keynote followed by independently verifiable facts, or a distinct current non-directional risk-calculation query not already answered by the existing USD 100 EURUSD table.",
+              "rationale": "The event is within the window and current attention is genuine, but the August 24 refresh already owns the same Friday countdown, query and table. A calendar-day decrement alone is not a refresh signal and must not create a repeated package."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-26",
+          "candidate_id": "HR-20260826-02",
+          "status": "observation",
+          "topic": "July PCE and Q2 GDP Results Are Fresh but Still Lack a Verified Retail FX Calculation Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 20,
+          "calculator_fit": 18,
+          "evidence_quality": 15,
+          "actionability": 5,
+          "total_score": 83,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L"
+          ],
+          "reason": "BEA and Reuters independently establish the same-day release/results, but public English material remains macro interpretation and direction-first rather than a specific EURUSD/USD fixed-risk, pip-value or position-size request; no playbook is justified",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Economic Analysis",
+                "url": "https://www.bea.gov/news/schedule/full",
+                "source_type": "official_release_schedule",
+                "published_at": "2026-08-23",
+                "freshness_role": "official_August_26_0830_ET_GDP_second_estimate_and_personal_income_and_outlays_time",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.investing.com/news/economy-news/us-stock-futures-subdued-in-runup-to-nvidia-results-inflation-print-4876659",
+                "source_type": "reliable_news_reprint",
+                "published_at": "2026-08-26",
+                "freshness_role": "same_day_report_of_3_7_percent_PCE_3_3_percent_core_PCE_and_1_5_percent_Q2_GDP",
+                "reliable": true
+              },
+              {
+                "publisher": "Forex Factory",
+                "url": "https://www.forexfactory.com/calendar?day=aug26.2026",
+                "source_type": "community_calendar_heat",
+                "published_at": "2026-08-26",
+                "freshness_role": "public_calendar_visibility_only_not_used_to_confirm_BEA_facts",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_no_verified_retail_calculation_query",
+              "duplicate_of": [
+                "HR-20260824-03"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A current public English query tied to this released result that asks a specific non-directional EURUSD/USD pip-value, fixed-risk or position-size calculation with a readable example.",
+              "rationale": "Fresh results and independent facts are real, but public material is macro interpretation or direction-first. No natural retail calculation bridge was verified, so the hard calculator-fit gate fails and no playbook is justified."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-26",
+          "candidate_id": "HR-20260826-04",
+          "status": "discarded",
+          "topic": "Directional NVIDIA PCE Jackson Hole and FX Forecast Posts",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 60,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Price targets, earnings or policy direction calls, options-flow narratives, political framing and generic market forecasts are excluded; no article or traffic playbook is created"
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-08-26T22:00:00+08:00",
+          "source_count": 4,
+          "note": "核验 NVIDIA Q2 FY27 盘后材料与电话会时间、BEA GDP/PCE 时点，以及 Kansas City Fed/Federal Reserve Jackson Hole 日程。"
+        },
+        {
+          "channel": "可靠英文媒体 / 独立日历",
+          "status": "complete",
+          "checked_at": "2026-08-26T22:00:00+08:00",
+          "source_count": 3,
+          "note": "核验 Reuters 8 月 26 日 NVIDIA 与宏观结果报道、Axios 的 NVIDIA 当日预览和 Kiplinger 的当前周 Jackson Hole 日历。"
+        },
+        {
+          "channel": "Reddit / ForexFactory",
+          "status": "complete",
+          "checked_at": "2026-08-26T22:00:00+08:00",
+          "source_count": 3,
+          "note": "核验 NVIDIA 8 月 26 日公开财报讨论、ForexFactory 公开日历及公开索引；社区材料只用于热度与当前措辞，不确认事实或方向。"
+        },
+        {
+          "channel": "X / Quora / BabyPips",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-08-26T22:00:00+08:00",
+          "source_count": 0,
+          "note": "公开索引未出现能把 PCE/GDP 或 Jackson Hole 转化为新的、具体且非方向性 PipGauge 计算旅程的可验证材料；未登录或操作账号。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-08-26_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-08-26_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-08-26"
+      }
+    },
+    {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -384,7 +730,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -836,7 +1182,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -1249,7 +1595,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -1481,7 +1827,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -1926,7 +2272,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -2301,7 +2647,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -2693,7 +3039,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -3069,7 +3415,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -3393,7 +3739,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -3776,7 +4122,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -4117,7 +4463,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -4492,7 +4838,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -4880,7 +5226,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -5225,7 +5571,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -5553,7 +5899,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -5865,7 +6211,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -6186,7 +6532,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -6547,7 +6893,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -6900,7 +7246,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -7344,7 +7690,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -7853,7 +8199,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -8323,7 +8669,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -8866,7 +9212,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -9138,7 +9484,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -9451,7 +9797,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -9886,7 +10232,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -10400,7 +10746,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -10909,7 +11255,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -11376,7 +11722,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -11789,7 +12135,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -12187,7 +12533,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-08-25T22:05:59+08:00",
+      "generated_at": "2026-08-26T22:05:52+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -12626,10 +12972,10 @@
       }
     }
   ],
-  "scan_date": "2026-08-25",
+  "scan_date": "2026-08-26",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 32,
+    "day": 33,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -12648,10 +12994,10 @@
   },
   "candidates": [
     {
-      "scan_date": "2026-08-25",
-      "candidate_id": "HR-20260825-01",
+      "scan_date": "2026-08-26",
+      "candidate_id": "HR-20260826-01",
       "status": "selected",
-      "topic": "NVIDIA Reports Tomorrow: Refresh the Overnight-Gap Risk Check Before Results",
+      "topic": "NVIDIA Reports Today: Refresh the Last-Regular-Session Overnight-Gap Check",
       "primary_site": "PositionMath",
       "freshness": 25,
       "traffic_potential": 25,
@@ -12668,10 +13014,10 @@
         "P&L",
         "Stop Loss/Take Profit"
       ],
-      "reason": "NVIDIA's official August 26 results clock, Reuters' August 25 independent current-event report, and same-day public hold-through-earnings discussion create three refresh signals for the final pre-release window; refresh HR-20260824-02 rather than create another NVDA article",
+      "reason": "NVIDIA's official August 26 after-market schedule, Reuters' same-day independent report and a current public earnings thread create a final regular-session exposure-check query; refresh HR-20260824-02 rather than create another NVIDIA earnings article",
       "content_status": "review_ready",
-      "content_label": "NVIDIA 明日业绩隔夜跳空刷新审核包待人工审核",
-      "content_url": "../内容生产/2026-08-25/HR-20260825-01/index.html",
+      "content_label": "NVIDIA 今日业绩隔夜跳空刷新审核包待人工审核",
+      "content_url": "../内容生产/2026-08-26/HR-20260826-01/index.html",
       "content_format": "Medium / Reddit / X",
       "deadline": "2026-08-26T16:00:00-04:00",
       "traffic_playbook": {
@@ -12679,22 +13025,22 @@
         "execution_mode": "refresh",
         "urgency": "critical",
         "publish_deadline": "2026-08-26T16:00:00-04:00",
-        "traffic_hook": "NVIDIA's official Wednesday after-market reporting clock, Reuters' August 25 current-event report, and same-day public hold-through-earnings discussion make the last regular close a time-sensitive exposure-check query rather than an earnings prediction.",
-        "traffic_window": "Publish or update on August 25 and no later than the August 26 regular close, before NVIDIA publishes results materials. The window closes immediately once materials are public; pre-release wording must not survive the release.",
+        "traffic_hook": "NVIDIA's official after-market results clock, Reuters' August 26 same-day report, and the current earnings thread make the final regular session a live exposure-check query rather than an earnings prediction.",
+        "traffic_window": "Refresh during the August 26 regular session and no later than 4:00 p.m. ET, before NVIDIA publishes results materials at approximately 1:20 p.m. PT. The window closes immediately once materials are public; any pre-release title or tense must be retired.",
         "search_intents": [
-          "Nvidia reports tomorrow overnight gap risk",
+          "Nvidia earnings tonight overnight gap risk",
           "hold NVDA through earnings risk",
           "NVDA position size calculator",
           "stock gap loss calculator",
           "earnings portfolio heat"
         ],
-        "traffic_angle": "Borrow the verified tomorrow-after-close news hook and answer the question users are discussing now: for eight shares in a USD 10,000 account at a clearly labelled USD 218 teaching anchor, what are the absolute dollar exposures of 5%, 10% and 15% hypothetical overnight gaps? Then separate that table from a USD 100 planned-loss divided by a USD 12 stop-distance calculation. Neither table predicts results or direction.",
-        "calculator_bridge": "After the arithmetic, PositionMath Position Size checks USD 100 / USD 12 and rounding; Portfolio Heat places the eight-share exposure in the account; P&L tests the labelled hypothetical amounts. Stop Loss/Take Profit carries the explicit warning that an overnight gap can bypass a stop.",
+        "traffic_angle": "Borrow the verified earnings-today clock—not a view on the report—to answer the query readers have now: for eight shares in a USD 10,000 account at a clearly labelled USD 218 teaching anchor, what are the absolute dollar exposures of 5%, 10% and 15% hypothetical overnight gaps? Then separate that from a USD 100 planned-loss divided by a USD 12 stop-distance calculation. Neither table predicts results or direction.",
+        "calculator_bridge": "After the arithmetic, PositionMath Position Size checks USD 100 / USD 12 and rounding; Portfolio Heat locates the eight-share exposure in the account; P&L tests the labelled hypothetical amounts. Stop Loss/Take Profit carries the explicit warning that an overnight gap can bypass a stop.",
         "example_scenario": "USD 10,000 account; eight NVDA shares at a clearly labelled USD 218 teaching anchor. A 5%/10%/15% absolute gap is approximately USD 87.20/USD 174.40/USD 261.60. Separately, USD 100 planned loss divided by a USD 12 stop distance gives eight shares after rounding down; an overnight gap can exceed that planned loss.",
         "distribution_order": [
           "refresh existing site article HR-20260824-02",
-          "Medium tomorrow-before-results fact-and-math update",
-          "X standalone stop-versus-gap thread",
+          "Medium earnings-today fact-and-math update",
+          "X self-contained stop-versus-gap thread",
           "Reddit native process discussion without a first-round link"
         ],
         "link_placement": "Show NVIDIA's official time, the gap table and the stop-versus-gap distinction first. Put one PositionMath verification link after the explanation; Reddit gets no initial link and the X thread must stand alone.",
@@ -12708,15 +13054,15 @@
           "window_delta": true
         },
         "refresh_updates": [
-          "change the headline and all time language from Wednesday/final-full-trading-day to tomorrow/before-results",
-          "replace AP August 24 context with Reuters August 25 current-event context while retaining NVIDIA's official clock",
+          "change the headline and all time language from tomorrow-before-results to today/final-regular-session",
+          "replace Reuters August 25 context with the August 26 same-day report while retaining NVIDIA's official clock",
           "retain the labelled USD 218 5/10/15% teaching table without presenting it as a live quote",
           "set every review gate to immediate expiry when results materials publish"
         ],
-        "content_mainline": "Refresh the existing NVIDIA gap-risk package for the last regular close before results; use the news clock to surface exposure arithmetic, not an earnings call.",
+        "content_mainline": "Refresh the existing NVIDIA gap-risk package for earnings day; use the news clock to surface exposure arithmetic, not an earnings call.",
         "body_material": [
           "NVIDIA official August 26 after-market materials time",
-          "Reuters August 25 independent current-event context",
+          "Reuters August 26 independent current-event context",
           "USD 218 teaching anchor",
           "eight shares with 5/10/15% absolute gaps",
           "result-publication expiry gate"
@@ -12736,18 +13082,18 @@
           },
           {
             "publisher": "Reuters",
-            "url": "https://www.investing.com/news/stock-market-news/nvidia-faces-growth-test-as-rubin-debut-meets-ai-financing-scrutiny-4874842",
+            "url": "https://www.investing.com/news/economy-news/us-stock-futures-subdued-in-runup-to-nvidia-results-inflation-print-4876659",
             "source_type": "reliable_news_reprint",
-            "published_at": "2026-08-25",
-            "freshness_role": "same_day_independent_context_confirms_Wednesday_results_are_a_current_market_event",
+            "published_at": "2026-08-26",
+            "freshness_role": "same_day_independent_report_confirms_NVIDIA_results_after_markets_are_current_focus",
             "reliable": true
           },
           {
             "publisher": "Reddit r/NVDA_Stock",
-            "url": "https://www.reddit.com/r/NVDA_Stock/comments/1vxp5w4/daily_thread_and_discussion_20260825_tuesday/",
+            "url": "https://www.reddit.com/r/NVDA_Stock/comments/1vym8g7/q22027_earnings_thread_and_discussion_20260826/",
             "source_type": "community_heat",
-            "published_at": "2026-08-25",
-            "freshness_role": "same_day_public_hold_through_earnings_and_overnight_discussion_not_used_for_facts_or_direction",
+            "published_at": "2026-08-26",
+            "freshness_role": "same_day_public_earnings_tonight_discussion_not_used_for_facts_or_direction",
             "reliable": false
           }
         ],
@@ -12764,15 +13110,15 @@
             "window_delta": true
           },
           "reopen_trigger": "Retire every pre-release line as soon as NVIDIA publishes materials, changes its schedule, or verified post-result facts create a different calculation question.",
-          "rationale": "Reuters supplies new same-day independent context, the public query has narrowed to tomorrow/overnight holding risk, and one regular close remains before the release. The labelled gap arithmetic is still the natural answer, so this is a refresh rather than a new same-structure article."
+          "rationale": "Reuters supplies new same-day independent context, the public query has changed to earnings-today, and the final regular session is a discrete expiry window. The labelled gap arithmetic remains the natural answer, so this is a refresh rather than a new same-structure article."
         }
       }
     },
     {
-      "scan_date": "2026-08-25",
-      "candidate_id": "HR-20260825-03",
+      "scan_date": "2026-08-26",
+      "candidate_id": "HR-20260826-03",
       "status": "observation",
-      "topic": "Jackson Hole Friday Keynote Has No New Refresh Delta Beyond the Existing Countdown",
+      "topic": "Jackson Hole Friday Keynote Still Has No New Refresh Delta Beyond the Existing Countdown",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 23,
@@ -12789,7 +13135,7 @@
         "P&L",
         "Spread Cost"
       ],
-      "reason": "Official dates and Reuters remain verifiable, but the August 24 refresh already owns the same Friday-keynote clock, EURUSD fixed-risk query, and teaching table; August 25 adds no second qualified refresh signal",
+      "reason": "Official dates, an independent calendar and public event attention remain verifiable, but the August 24 refresh already owns the same Friday-keynote clock, EURUSD fixed-risk query and teaching table; the calendar decrement alone is not a second refresh signal",
       "scan_audit": {
         "sources": [
           {
@@ -12809,18 +13155,18 @@
             "reliable": true
           },
           {
-            "publisher": "Reuters",
-            "url": "https://finance.yahoo.com/economy/policy/articles/bond-market-anxiety-raises-stakes-100241607.html",
-            "source_type": "reliable_news_reprint",
-            "published_at": "2026-08-24",
-            "freshness_role": "recent_independent_context_not_a_new_August_25_delta",
+            "publisher": "Kiplinger",
+            "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+            "source_type": "reliable_calendar_context",
+            "published_at": "2026-08-22",
+            "freshness_role": "current_week_independent_context_not_a_new_August_26_delta",
             "reliable": true
           },
           {
-            "publisher": "Reddit r/MortgageBrokerRates",
-            "url": "https://www.reddit.com/r/MortgageBrokerRates/comments/1vx4ttx/mortgage_market_week_ahead_august_2428_2026/",
+            "publisher": "Forex Factory",
+            "url": "https://www.forexfactory.com/calendar/129-us-fed-chairman-warsh-speaks",
             "source_type": "community_heat",
-            "published_at": "2026-08-25",
+            "published_at": "2026-08-26",
             "freshness_role": "public_event_attention_only_not_used_for_facts_or_direction",
             "reliable": false
           }
@@ -12838,22 +13184,22 @@
             "window_delta": false
           },
           "reopen_trigger": "An official schedule change, the start of the keynote followed by independently verifiable facts, or a distinct current non-directional risk-calculation query not already answered by the existing USD 100 EURUSD table.",
-          "rationale": "The date and current attention remain genuine, but the August 24 refresh already contains the same Friday countdown, search journey and fixed-risk table. A single calendar-day decrement is not a refresh signal and must not create a repeated package."
+          "rationale": "The event is within the window and current attention is genuine, but the August 24 refresh already owns the same Friday countdown, query and table. A calendar-day decrement alone is not a refresh signal and must not create a repeated package."
         }
       }
     },
     {
-      "scan_date": "2026-08-25",
-      "candidate_id": "HR-20260825-02",
+      "scan_date": "2026-08-26",
+      "candidate_id": "HR-20260826-02",
       "status": "observation",
-      "topic": "GDP and July PCE Arrive Wednesday but Still Lack a Verified Retail FX Calculation Journey",
+      "topic": "July PCE and Q2 GDP Results Are Fresh but Still Lack a Verified Retail FX Calculation Journey",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 21,
+      "traffic_potential": 20,
       "calculator_fit": 18,
       "evidence_quality": 15,
       "actionability": 5,
-      "total_score": 84,
+      "total_score": 83,
       "hard_gate": false,
       "reliable_sources": 2,
       "fresh_signal": true,
@@ -12862,7 +13208,7 @@
         "Position Size",
         "P&L"
       ],
-      "reason": "BEA and AP/Kiplinger independently confirm the August 26 release cluster, but public English material remains macro interpretation and direction-first rather than a specific EURUSD/USD fixed-risk, pip-value, or position-size request; no playbook is justified",
+      "reason": "BEA and Reuters independently establish the same-day release/results, but public English material remains macro interpretation and direction-first rather than a specific EURUSD/USD fixed-risk, pip-value or position-size request; no playbook is justified",
       "scan_audit": {
         "sources": [
           {
@@ -12874,18 +13220,18 @@
             "reliable": true
           },
           {
-            "publisher": "Associated Press",
-            "url": "https://apnews.com/article/f036e0c2aa019cc924ad148a1a497dbd",
-            "source_type": "reliable_news",
-            "published_at": "2026-08-20",
-            "freshness_role": "independent_current_week_context_for_PCE_and_consumer_confidence_calendar",
+            "publisher": "Reuters",
+            "url": "https://www.investing.com/news/economy-news/us-stock-futures-subdued-in-runup-to-nvidia-results-inflation-print-4876659",
+            "source_type": "reliable_news_reprint",
+            "published_at": "2026-08-26",
+            "freshness_role": "same_day_report_of_3_7_percent_PCE_3_3_percent_core_PCE_and_1_5_percent_Q2_GDP",
             "reliable": true
           },
           {
             "publisher": "Forex Factory",
-            "url": "https://www.forexfactory.com/calendar?range=aug24.2026-sep7.2026",
+            "url": "https://www.forexfactory.com/calendar?day=aug26.2026",
             "source_type": "community_calendar_heat",
-            "published_at": "2026-08-21",
+            "published_at": "2026-08-26",
             "freshness_role": "public_calendar_visibility_only_not_used_to_confirm_BEA_facts",
             "reliable": false
           }
@@ -12897,21 +13243,21 @@
             "HR-20260824-03"
           ],
           "refresh_signals": {
-            "fact_delta": false,
+            "fact_delta": true,
             "search_delta": false,
             "example_delta": false,
-            "window_delta": false
+            "window_delta": true
           },
-          "reopen_trigger": "A current public English query tied to the release that asks a specific non-directional EURUSD/USD pip-value, fixed-risk or position-size calculation with a readable example.",
-          "rationale": "The dated releases remain independently confirmed, but the current material is macro interpretation and direction-first. No natural calculator bridge is verified, and the prior observation already owns this calendar cluster."
+          "reopen_trigger": "A current public English query tied to this released result that asks a specific non-directional EURUSD/USD pip-value, fixed-risk or position-size calculation with a readable example.",
+          "rationale": "Fresh results and independent facts are real, but public material is macro interpretation or direction-first. No natural retail calculation bridge was verified, so the hard calculator-fit gate fails and no playbook is justified."
         }
       }
     },
     {
-      "scan_date": "2026-08-25",
-      "candidate_id": "HR-20260825-04",
+      "scan_date": "2026-08-26",
+      "candidate_id": "HR-20260826-04",
       "status": "discarded",
-      "topic": "Directional NVIDIA Jackson Hole and FX Forecast Posts",
+      "topic": "Directional NVIDIA PCE Jackson Hole and FX Forecast Posts",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 25,
@@ -12925,48 +13271,48 @@
       "calculator_mapping": [
         "P&L"
       ],
-      "reason": "Price targets, buy-or-sell calls, options-flow narratives, political framing and generic market forecasts are excluded; no article or traffic playbook is created"
+      "reason": "Price targets, earnings or policy direction calls, options-flow narratives, political framing and generic market forecasts are excluded; no article or traffic playbook is created"
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-08-25T22:00:00+08:00",
+      "checked_at": "2026-08-26T22:00:00+08:00",
       "source_count": 4,
-      "note": "核验 NVIDIA Q2 FY27 报告与电话会时间、BEA GDP/PCE 发布时间，以及 Kansas City Fed/Federal Reserve Jackson Hole 日程。"
+      "note": "核验 NVIDIA Q2 FY27 盘后材料与电话会时间、BEA GDP/PCE 时点，以及 Kansas City Fed/Federal Reserve Jackson Hole 日程。"
     },
     {
       "channel": "可靠英文媒体 / 独立日历",
       "status": "complete",
-      "checked_at": "2026-08-25T22:00:00+08:00",
-      "source_count": 4,
-      "note": "核验 Reuters 8 月 25 日 NVIDIA 当前报道、AP 本周宏观预览、Kiplinger 日历及 Reuters 8 月 24 日 Jackson Hole 背景。"
+      "checked_at": "2026-08-26T22:00:00+08:00",
+      "source_count": 3,
+      "note": "核验 Reuters 8 月 26 日 NVIDIA 与宏观结果报道、Axios 的 NVIDIA 当日预览和 Kiplinger 的当前周 Jackson Hole 日历。"
     },
     {
       "channel": "Reddit / ForexFactory",
       "status": "complete",
-      "checked_at": "2026-08-25T22:00:00+08:00",
+      "checked_at": "2026-08-26T22:00:00+08:00",
       "source_count": 3,
-      "note": "核验 NVIDIA 8 月 25 日及 8 月 24 日公开讨论和 ForexFactory 公共日历；社区材料只用于热度与当前措辞，不确认事实或方向。"
+      "note": "核验 NVIDIA 8 月 26 日公开财报讨论、ForexFactory 公开日历及公开索引；社区材料只用于热度与当前措辞，不确认事实或方向。"
     },
     {
       "channel": "X / Quora / BabyPips",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-08-25T22:00:00+08:00",
+      "checked_at": "2026-08-26T22:00:00+08:00",
       "source_count": 0,
-      "note": "公开索引未出现能把 GDP/PCE 或 Jackson Hole 转化为新的、具体且非方向性 PipGauge 计算旅程的可验证材料；未登录或操作账号。"
+      "note": "公开索引未出现能把 PCE/GDP 或 Jackson Hole 转化为新的、具体且非方向性 PipGauge 计算旅程的可验证材料；未登录或操作账号。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-08-25_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-08-25_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-08-26_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-08-26_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
     "traffic_playbooks": "../热点流量打法.json",
-    "content_root": "../内容生产/2026-08-25"
+    "content_root": "../内容生产/2026-08-26"
   },
   "radar_model": "v2-content-first",
   "editorial_policy": {
