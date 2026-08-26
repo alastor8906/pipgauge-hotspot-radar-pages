@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-24T22:00:00+08:00",
+  "updated_at": "2026-08-26T22:00:00+08:00",
   "items": {
     "HR-20260824-01": {
       "playbook_status": "ready",
@@ -1449,6 +1449,51 @@
       "body_material": [
         "NVIDIA official August 26 after-market materials time",
         "Reuters August 25 independent current-event context",
+        "USD 218 teaching anchor",
+        "eight shares with 5/10/15% absolute gaps",
+        "result-publication expiry gate"
+      ],
+      "product_bridge": "PositionMath verifies share-size, portfolio-heat and hypothetical P&L inputs after the risk explanation; it does not forecast NVIDIA or overnight execution.",
+      "product_bridge_type": "existing"
+    },
+    "HR-20260826-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "critical",
+      "publish_deadline": "2026-08-26T16:00:00-04:00",
+      "traffic_hook": "NVIDIA's official after-market results clock, Reuters' August 26 same-day report, and the current earnings thread make the final regular session a live exposure-check query rather than an earnings prediction.",
+      "traffic_window": "Refresh during the August 26 regular session and no later than 4:00 p.m. ET, before NVIDIA publishes results materials at approximately 1:20 p.m. PT. The window closes immediately once materials are public; any pre-release title or tense must be retired.",
+      "search_intents": [
+        "Nvidia earnings tonight overnight gap risk",
+        "hold NVDA through earnings risk",
+        "NVDA position size calculator",
+        "stock gap loss calculator",
+        "earnings portfolio heat"
+      ],
+      "traffic_angle": "Borrow the verified earnings-today clock—not a view on the report—to answer the query readers have now: for eight shares in a USD 10,000 account at a clearly labelled USD 218 teaching anchor, what are the absolute dollar exposures of 5%, 10% and 15% hypothetical overnight gaps? Then separate that from a USD 100 planned-loss divided by a USD 12 stop-distance calculation. Neither table predicts results or direction.",
+      "calculator_bridge": "After the arithmetic, PositionMath Position Size checks USD 100 / USD 12 and rounding; Portfolio Heat locates the eight-share exposure in the account; P&L tests the labelled hypothetical amounts. Stop Loss/Take Profit carries the explicit warning that an overnight gap can bypass a stop.",
+      "example_scenario": "USD 10,000 account; eight NVDA shares at a clearly labelled USD 218 teaching anchor. A 5%/10%/15% absolute gap is approximately USD 87.20/USD 174.40/USD 261.60. Separately, USD 100 planned loss divided by a USD 12 stop distance gives eight shares after rounding down; an overnight gap can exceed that planned loss.",
+      "distribution_order": [
+        "refresh existing site article HR-20260824-02",
+        "Medium earnings-today fact-and-math update",
+        "X self-contained stop-versus-gap thread",
+        "Reddit native process discussion without a first-round link"
+      ],
+      "link_placement": "Show NVIDIA's official time, the gap table and the stop-versus-gap distinction first. Put one PositionMath verification link after the explanation; Reddit gets no initial link and the X thread must stand alone.",
+      "expiry_condition": "Expire all pre-release language once NVIDIA publishes results, changes its schedule, or verified post-result facts replace the question. Do not turn a hypothetical gap into an actual recap without new factual sources.",
+      "editorial_boundary": "Do not predict revenue, earnings, options-implied moves or NVDA's direction. USD 218 is a teaching anchor, not a live quote or valuation; a stop is not a guarantee and none of the scenarios is a probability forecast.",
+      "refresh_target": "HR-20260824-02",
+      "refresh_signals": {"fact_delta": true, "search_delta": true, "example_delta": false, "window_delta": true},
+      "refresh_updates": [
+        "change the headline and all time language from tomorrow-before-results to today/final-regular-session",
+        "replace Reuters August 25 context with the August 26 same-day report while retaining NVIDIA's official clock",
+        "retain the labelled USD 218 5/10/15% teaching table without presenting it as a live quote",
+        "set every review gate to immediate expiry when results materials publish"
+      ],
+      "content_mainline": "Refresh the existing NVIDIA gap-risk package for earnings day; use the news clock to surface exposure arithmetic, not an earnings call.",
+      "body_material": [
+        "NVIDIA official August 26 after-market materials time",
+        "Reuters August 26 independent current-event context",
         "USD 218 teaching anchor",
         "eight shares with 5/10/15% absolute gaps",
         "result-publication expiry gate"
