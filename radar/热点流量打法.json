@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-26T22:00:00+08:00",
+  "updated_at": "2026-08-27T22:00:00+08:00",
   "items": {
     "HR-20260824-01": {
       "playbook_status": "ready",
@@ -1499,6 +1499,52 @@
         "result-publication expiry gate"
       ],
       "product_bridge": "PositionMath verifies share-size, portfolio-heat and hypothetical P&L inputs after the risk explanation; it does not forecast NVIDIA or overnight execution.",
+      "product_bridge_type": "existing"
+    },
+    "HR-20260827-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-08-27T16:00:00-04:00",
+      "traffic_hook": "NVIDIA's official Q2 FY27 result is now public; AP independently reports the released numbers and Axios reports the stock up more than 7% on Thursday morning. That creates a post-results exposure-check window, not a forecast window.",
+      "traffic_window": "Refresh during the August 27 regular session, after results are public and before the discussion moves to a later catalyst. Replace this result-day frame after the close, on an official correction, or when a later verified event changes the calculation question.",
+      "search_intents": ["Nvidia earnings results 7% move position exposure", "NVDA P&L calculator after earnings", "NVDA position size calculator", "stock portfolio heat after earnings"],
+      "traffic_angle": "Borrow the official released-results hook and Axios's reported more-than-7% morning reaction to answer a non-directional question: at a clearly labelled USD 218 teaching anchor, what does a 7% absolute move mean for eight shares in a USD 10,000 account? Keep 5% and 10% as symmetric stress checks, not a next-price forecast.",
+      "calculator_bridge": "After showing the USD 122.08 7% arithmetic, use PositionMath P&L to verify the labelled move, Portfolio Heat to place eight shares in the USD 10,000 account, and Position Size to separate an ordinary planned stop calculation. The tools do not interpret the earnings or predict the next move.",
+      "example_scenario": "USD 10,000 account; eight NVDA shares at a clearly labelled USD 218 teaching anchor. A reported approximately 7% absolute move maps to about USD 122.08; symmetric 5% and 10% stress checks map to USD 87.20 and USD 174.40. Separately, USD 100 planned loss divided by a USD 12 stop distance rounds down to eight shares; a stop does not guarantee an exit after a gap.",
+      "distribution_order": ["refresh existing site article HR-20260824-02", "Medium dated post-results exposure update", "X self-contained result-day exposure thread", "Reddit native process discussion without a first-round link"],
+      "link_placement": "Give the released facts, 7% arithmetic and stop-versus-gap distinction first. Put a single PositionMath verification link after the calculation; do not put a link in the first Reddit post, and make the X thread independently readable.",
+      "expiry_condition": "Stop using the result-day/7% frame after the August 27 regular session, an official correction, or a later verified fact that changes the risk question. Do not turn the reported 7% into a prediction, probability or performance claim.",
+      "editorial_boundary": "Do not predict NVIDIA's next price, revenue, valuation, options-implied move or market direction. USD 218 is a teaching anchor and the 7% is a reported approximate historical reaction used only for arithmetic. A stop is not a guaranteed gap exit.",
+      "refresh_target": "HR-20260824-02",
+      "refresh_signals": {"fact_delta": true, "search_delta": true, "example_delta": true, "window_delta": true},
+      "refresh_updates": ["replace all expired pre-release/earnings-tonight wording with released-results language", "replace the forecast-like 5/10/15-only table with an explicitly reported approximate 7% row plus symmetric stress checks", "replace prior source panel with NVIDIA's result release, AP and Axios", "replace the release-time expiry with the August 27 result-day close/official-correction gate"],
+      "content_mainline": "Refresh the existing NVIDIA gap-risk article into a released-results exposure check; calculate a reported reaction and account concentration without forecasting the next price.",
+      "body_material": ["NVIDIA Q2 FY27 USD 96.2bn revenue and EPS release", "AP independent results context", "Axios reported more-than-7% Thursday-morning reaction", "eight shares at USD 218 under 7% / 5% / 10% absolute moves", "result-day expiry gate"],
+      "product_bridge": "PositionMath verifies P&L, share size and portfolio heat after the fact-led arithmetic; it does not forecast NVIDIA or guarantee an exit.",
+      "product_bridge_type": "existing"
+    },
+    "HR-20260827-02": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-08-28T10:30:00+09:00",
+      "traffic_hook": "The BOJ's August 27 HIMINO speech is now public, and Reuters reports both the policy-language context and USD/JPY near 159.29 after the speech. The usable hook is the dated speech plus a transparent FX conversion input—not a September-rate or yen prediction.",
+      "traffic_window": "Refresh from the August 27 speech through the August 28 press-conference/material window. End the frame on a BOJ correction, new official decision, or when the 159.29 example is no longer tied to current post-speech discussion.",
+      "search_intents": ["Himino speech USDJPY risk", "USDJPY 100 pip move dollar value", "USDJPY pip value calculator", "how many lots USDJPY 100 dollar risk"],
+      "traffic_angle": "Borrow the speech-after-the-fact hook and answer what a reader can calculate without taking a directional view: for a USD account at USD/JPY 159.29, what is one USD/JPY pip worth per standard lot, and how does a fixed USD 100 planned loss scale across 50, 100 and 200 pips?",
+      "calculator_bridge": "Show the conversion first: JPY 1,000 per standard-lot pip divided by 159.29 is about USD 6.28 per pip. Then PipGauge Pip Value verifies that input and Position Size checks the 50/100/200-pip lot sizes. P&L and Spread Cost are optional hypothetical stress checks, not live execution claims.",
+      "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; USD/JPY 159.29 reference from Reuters. One standard-lot pip is about USD 6.28, so a 50/100/200-pip planned stop maps to about 0.31/0.15/0.07 lot after rounding down and before spread, commission and slippage.",
+      "distribution_order": ["refresh existing site article HR-20260802-01", "Medium dated BOJ speech risk-size update", "X self-contained pip-value thread", "Reddit native process discussion without a first-round link"],
+      "link_placement": "Lead with the official speech fact, the 159.29 conversion and three fixed-risk sizes. Put one PipGauge verification link after the formula and caveats; Reddit receives no first-round link, and X must be complete without one.",
+      "expiry_condition": "Stop when the August 28 BOJ materials/press-conference window changes the factual hook, a BOJ correction appears, or a later policy decision creates a different question. A next refresh must pass a separate four-signal check.",
+      "editorial_boundary": "Do not predict a September BOJ action, USD/JPY direction, intervention, yields or profitability. 159.29 is a reported reference for conversion, not a target. A planned stop is not a guaranteed fill and costs remain labelled assumptions.",
+      "refresh_target": "HR-20260802-01",
+      "refresh_signals": {"fact_delta": true, "search_delta": true, "example_delta": true, "window_delta": true},
+      "refresh_updates": ["replace July intervention framing with the August 27 BOJ speech fact", "replace the old 163-164 area teaching context with Reuters' 159.29 post-speech reference", "replace 100/200/300-pip tail-risk emphasis with a USD 100 fixed-risk 50/100/200-pip size table", "replace legacy expiry with the August 28 material/correction gate"],
+      "content_mainline": "Refresh the existing USD/JPY event-risk article into a post-speech fixed-risk sizing check; it converts the reported reference rate into pip value without forecasting policy or price.",
+      "body_material": ["BOJ August 27 HIMINO speech listing", "Reuters independent speech context", "Reuters USDJPY 159.29 reference", "USD 100 fixed risk at 50/100/200 pips", "post-speech expiry gate"],
+      "product_bridge": "PipGauge verifies the pair, account-currency pip value and fixed-risk position size after the official facts and manual arithmetic; it does not interpret policy or predict USD/JPY.",
       "product_bridge_type": "existing"
     }
   }
