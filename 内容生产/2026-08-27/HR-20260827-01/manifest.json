@@ -1,0 +1,20 @@
+{
+  "candidate_id": "HR-20260827-01",
+  "scan_date": "2026-08-27",
+  "primary_site": "PositionMath",
+  "topic": "NVIDIA Q2 Results Are Out: Refresh the Position-Exposure Check With the Reported 7% Move",
+  "execution_mode": "refresh",
+  "refresh_target": "HR-20260824-02",
+  "package_summary": "当期审核快照：用 NVIDIA Q2 FY27 官方结果、AP 独立结果报道与 Axios 报道的逾 7% 当日反应，刷新既有 NVDA 持仓暴露稿；不新建同构财报文。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "post_results_same_day_window",
+  "time_status_label": "仅在 2026 年 8 月 27 日结果后当日语境中使用；常规交易结束、官方更正或新的经核验事件改变计算问题时必须改写或停用。",
+  "documents": [
+    {"id":"facts","label":"事实与论点","file":"00-事实与论点.md","platform":"internal","kind":"editorial brief","status_label":"已整理"},
+    {"id":"medium","label":"Medium","file":"01-Medium.md","platform":"medium","kind":"long-form draft","status_label":"待人工审核"},
+    {"id":"reddit","label":"Reddit","file":"02-Reddit.md","platform":"reddit","kind":"native discussion draft","status_label":"待人工审核"},
+    {"id":"x","label":"X","file":"03-X.md","platform":"x","kind":"short thread draft","status_label":"待人工审核"},
+    {"id":"review","label":"审核清单","file":"04-人工审核.md","platform":"internal","kind":"human gate","status_label":"必须完成"}
+  ]
+}

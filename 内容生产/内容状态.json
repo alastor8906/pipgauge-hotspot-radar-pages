@@ -239,5 +239,19 @@
     "content_url": "../内容生产/2026-08-26/HR-20260826-01/index.html",
     "content_format": "Medium / Reddit / X",
     "deadline": "2026-08-26T16:00:00-04:00"
+  },
+  "HR-20260827-01": {
+    "content_status": "review_ready",
+    "content_label": "NVIDIA 业绩结果后持仓暴露刷新审核包待人工审核",
+    "content_url": "../内容生产/2026-08-27/HR-20260827-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-08-27T16:00:00-04:00"
+  },
+  "HR-20260827-02": {
+    "content_status": "review_ready",
+    "content_label": "BOJ 副行长讲话后 USDJPY 固定风险刷新审核包待人工审核",
+    "content_url": "../内容生产/2026-08-27/HR-20260827-02/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-08-28T10:30:00+09:00"
   }
 }
