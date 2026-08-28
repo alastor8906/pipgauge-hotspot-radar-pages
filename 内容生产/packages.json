@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T14:11:44.212Z",
+  "generated_at": "2026-08-28T14:07:59.599Z",
   "endpoint": "multi_platform_drafts_awaiting_human_review",
   "supported_platforms": [
     "medium",
@@ -7,6 +7,41 @@
     "x"
   ],
   "packages": [
+    {
+      "candidate_id": "HR-20260828-01",
+      "scan_date": "2026-08-28",
+      "primary_site": "PipGauge",
+      "topic": "Tokyo Core CPI Beats Forecast: Refresh USDJPY Fixed-Risk Sizing at 159.30",
+      "package_summary": "当期审核快照：以东京核心 CPI 1.8% 实际、1.7% 预期和 159.30 教学换算输入刷新既有 USD/JPY 固定风险稿；不预测 BOJ 政策或汇率方向。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "same_day_post_release_window",
+      "time_status_label": "仅在 2026 年 8 月 28 日 CPI 结果后的当期窗口使用；统计局修订、BOJ 正式决定或新的经核验 USD/JPY 事实出现时必须改写或停用。",
+      "url": "../内容生产/2026-08-28/HR-20260828-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-28/HR-20260828-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-28/HR-20260828-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-28/HR-20260828-01/index.html#x"
+        }
+      ]
+    },
     {
       "candidate_id": "HR-20260827-01",
       "scan_date": "2026-08-27",

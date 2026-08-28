@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-08-27T22:11:41+08:00",
-  "latest_scan_date": "2026-08-27",
+  "generated_at": "2026-08-28T22:06:19+08:00",
+  "latest_scan_date": "2026-08-28",
   "available_dates": [
+    "2026-08-28",
     "2026-08-27",
     "2026-08-26",
     "2026-08-25",
@@ -40,8 +41,418 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-08-28",
+      "generated_at": "2026-08-28T22:06:19+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 35,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 1,
+        "observation": 3,
+        "discarded": 1,
+        "total": 5,
+        "selected_average": 96.0,
+        "all_selected_pass_gate": true,
+        "content_ready": 1,
+        "playbook_ready": 1
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-08-28",
+          "candidate_id": "HR-20260828-01",
+          "status": "selected",
+          "topic": "Tokyo Core CPI Beats Forecast: Refresh USDJPY Fixed-Risk Sizing at 159.30",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 22,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 9,
+          "total_score": 96,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "Japan Statistics Bureau's August 28 Tokyo CPI release and Reuters independently confirm 1.8% core CPI versus 1.7% consensus; ForexFactory and current public FX discussion show a dated USDJPY event query. Four refresh signals support updating HR-20260827-02 without predicting BOJ policy or USDJPY direction",
+          "content_status": "review_ready",
+          "content_label": "东京核心 CPI 结果后 USDJPY 固定风险刷新审核包待人工审核",
+          "content_url": "../内容生产/2026-08-28/HR-20260828-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-08-28T23:59:00+09:00",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "refresh",
+            "urgency": "high",
+            "publish_deadline": "2026-08-28T23:59:00+09:00",
+            "traffic_hook": "Japan's Statistics Bureau released Tokyo's August CPI on August 28, and Reuters reports core CPI at 1.8% versus 1.7% consensus. The live hook is the released result and the immediate USDJPY risk-check query—not a BOJ or yen forecast.",
+            "traffic_window": "Refresh during the August 28 post-release window only. Replace the Tokyo-CPI framing after the same-day window, an official data correction, a BOJ decision, or a different verified USDJPY fact. Do not recycle it as a generic inflation explainer.",
+            "search_intents": [
+              "Tokyo CPI actual USDJPY risk",
+              "Tokyo core CPI 1.8 USDJPY pip value",
+              "USDJPY pip value calculator",
+              "how many lots USDJPY 100 dollar risk"
+            ],
+            "traffic_angle": "Borrow the 1.8% actual versus 1.7% consensus news hook to answer the calculation readers can make now: using a clearly labelled 159.30 teaching conversion input, what is one USDJPY pip worth in a USD account and how does a fixed USD 100 planned loss scale across 50, 100 and 200 pips? The result supplies the timely title and fact card; the table supplies the non-directional answer.",
+            "calculator_bridge": "After the fact card and manual formula, PipGauge Pip Value checks JPY 1,000 divided by 159.30 (about USD 6.28 per standard-lot pip), and Position Size checks the three rounded-down lot sizes. P&L and Spread Cost are only optional, labelled hypothetical stress checks—not assertions about CPI-release execution.",
+            "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; USDJPY 159.30 labelled as a teaching conversion input. One standard-lot pip is about USD 6.28, so 50/100/200-pip planned stops map to about 0.31/0.15/0.07 lot after rounding down and before spread, commission and slippage.",
+            "distribution_order": [
+              "refresh existing site article HR-20260827-02",
+              "Medium dated Tokyo-CPI fixed-risk update",
+              "X self-contained pip-value thread",
+              "Reddit native process discussion without a first-round link"
+            ],
+            "link_placement": "Lead with the released 1.8% / 1.7% fact card, formula and three sizes. Put one PipGauge verification link after the explanation and caveats; do not put a link in the initial Reddit post, and make the X thread understandable without one.",
+            "expiry_condition": "Stop this Tokyo-CPI/159.30 frame after August 28, on a Statistics Bureau correction, a BOJ decision, or another verified fact that changes the calculation question. A later update must pass a separate freshness and novelty gate.",
+            "editorial_boundary": "Do not predict BOJ policy, USDJPY direction, intervention, yields or profitability. 159.30 is a teaching conversion input, not a quote or target. A planned stop is not a guaranteed fill and costs remain labelled assumptions.",
+            "refresh_target": "HR-20260827-02",
+            "refresh_signals": {
+              "fact_delta": true,
+              "search_delta": true,
+              "example_delta": true,
+              "window_delta": true
+            },
+            "refresh_updates": [
+              "replace the August 27 deputy-governor speech hook with the August 28 released Tokyo CPI fact",
+              "replace 159.29 with the explicitly labelled 159.30 teaching conversion input",
+              "replace the fact card and headline with 1.8% actual, 1.7% consensus and revised 1.7% previous",
+              "replace the speech-material expiry with the August 28 data-correction / BOJ-decision gate"
+            ],
+            "content_mainline": "Refresh the existing USDJPY event-risk article into a post-Tokyo-CPI fixed-risk calculation; use a released statistic to surface pip-value arithmetic without forecasting policy or price.",
+            "body_material": [
+              "Japan Statistics Bureau August 28 Tokyo CPI result",
+              "Reuters 1.8% versus 1.7% consensus report",
+              "ForexFactory current-result heat signal",
+              "USD 100 fixed risk at 50/100/200 pips",
+              "same-day expiry gate"
+            ],
+            "product_bridge": "PipGauge verifies the pair, account-currency pip value and fixed-risk size after the official facts and manual arithmetic; it does not interpret Tokyo CPI or predict USDJPY.",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Japan Statistics Bureau",
+                "url": "https://www.stat.go.jp/data/cpi/1.html?guid=ON",
+                "source_type": "official_statistics_release",
+                "published_at": "2026-08-28",
+                "freshness_role": "official_Tokyo_August_CPI_preliminary_release",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.marketscreener.com/news/tokyo-core-inflation-accelerates-in-august-nears-boj-target-ce7858dfd981ff21",
+                "source_type": "reliable_news_reprint",
+                "published_at": "2026-08-28",
+                "freshness_role": "independent_report_of_1_8_core_CPI_versus_1_7_consensus_and_revised_1_7_previous",
+                "reliable": true
+              },
+              {
+                "publisher": "ForexFactory",
+                "url": "https://www.forexfactory.com/calendar?day=aug28.2026&event=148675",
+                "source_type": "public_calendar_heat",
+                "published_at": "2026-08-28",
+                "freshness_role": "current_public_actual_1_8_calendar_and_search_wording_not_used_for_fact_adjudication",
+                "reliable": false
+              },
+              {
+                "publisher": "Reddit r/Forexstrategy",
+                "url": "https://www.reddit.com/r/Forexstrategy/comments/1w09c8l/usdjpy_forecast_will_inflation_data_be_enough_to/",
+                "source_type": "community_heat",
+                "published_at": "2026-08-28",
+                "freshness_role": "public_Tokyo_CPI_USDJPY_discussion_signal_not_used_for_facts_or_direction",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass_refresh",
+              "decision_gate": "selected_refresh",
+              "duplicate_of": [
+                "HR-20260827-02"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": true,
+                "window_delta": true
+              },
+              "reopen_trigger": "Stop the Tokyo-CPI/159.30 frame after the August 28 same-day window, an official statistics correction, a materially different verified USDJPY fact, or a BOJ decision. A further refresh needs a new calculation question and fresh evidence.",
+              "rationale": "The dated official result and Reuters create a new fact; the traffic query changes from a deputy-governor speech to the released CPI actual; 1.8 versus 1.7 replaces the factual headline and event card; and the post-release window is distinct. The only permitted output is a refresh of the existing USDJPY fixed-risk article, without policy or price prediction."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-28",
+          "candidate_id": "HR-20260828-02",
+          "status": "observation",
+          "topic": "Jackson Hole Keynote Day Has No Second Refresh Delta Beyond the Existing Countdown",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 6,
+          "total_score": 96,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "Kansas City Fed Reuters and AP confirm the Aug 28 keynote is current, but the existing package already owns the same pre-keynote EURUSD fixed-risk query table and expiry. Until verified remarks create a different fact and calculation question, the clock alone fails novelty",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Federal Reserve Bank of Kansas City",
+                "url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/2026/",
+                "source_type": "official_event_agenda",
+                "published_at": "2026-08-28",
+                "freshness_role": "official_current_August_28_keynote_agenda",
+                "reliable": true
+              },
+              {
+                "publisher": "AP",
+                "url": "https://apnews.com/article/federal-reserve-warsh-interest-trump-inflation-ab896df808df3a5a3fa8b943ac5f3867",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-28",
+                "freshness_role": "independent_current_attention_context",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.marketscreener.com/news/dollar-flat-near-one-week-high-as-investors-await-warsh-s-jackson-hole-debut-ce7858dfd88df022",
+                "source_type": "reliable_news_reprint",
+                "published_at": "2026-08-28",
+                "freshness_role": "independent_current_event_context",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_duplicate_countdown",
+              "duplicate_of": [
+                "HR-20260824-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Official remarks or a transcript that creates a verifiable new non-directional calculation question distinct from the existing EURUSD fixed-risk table.",
+              "rationale": "The official clock and attention are real but already owned by the current Jackson Hole package. Before a new verified fact arrives, advancing the clock is only one refresh signal and no duplicate playbook or package is permitted."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-28",
+          "candidate_id": "HR-20260828-03",
+          "status": "observation",
+          "topic": "NVIDIA Result-Day Exposure Topic Has No New Non-Directional Calculation Delta",
+          "primary_site": "PositionMath",
+          "freshness": 24,
+          "traffic_potential": 20,
+          "calculator_fit": 22,
+          "evidence_quality": 15,
+          "actionability": 5,
+          "total_score": 86,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Position Size",
+            "Portfolio Heat",
+            "P&L",
+            "Stop Loss/Take Profit"
+          ],
+          "reason": "NVIDIA AP and Axios remain verifiable inside 72 hours, but HR-20260827-01 already covers the released result and reported 7% move. No new official fact, current distinct query or non-duplicative readable example was found",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "NVIDIA",
+                "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx",
+                "source_type": "official_company_results",
+                "published_at": "2026-08-26",
+                "freshness_role": "official_results_still_inside_72_hours",
+                "reliable": true
+              },
+              {
+                "publisher": "AP",
+                "url": "https://apnews.com/article/nvidia-artificial-intelligence-earnings-dc8d556e709b50915cca9217a60b1991",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-26",
+                "freshness_role": "independent_results_confirmation",
+                "reliable": true
+              },
+              {
+                "publisher": "Axios",
+                "url": "https://www.axios.com/2026/08/27/nvidia-ai-earnings-stock",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-27",
+                "freshness_role": "reported_7_percent_result_day_move_already_used_by_prior_refresh",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_duplicate_result_window",
+              "duplicate_of": [
+                "HR-20260827-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A new official correction, another verified company fact, or a current non-directional exposure query that needs materially different numbers from the 7-percent result-day table.",
+              "rationale": "The existing result-day package already uses the official result and reported 7-percent move. The remaining freshness window cannot become a second same-structure article without a second qualified refresh signal."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-28",
+          "candidate_id": "HR-20260828-04",
+          "status": "observation",
+          "topic": "July PCE Result Remains a Macro Discussion Rather Than a Retail Calculation Journey",
+          "primary_site": "PipGauge",
+          "freshness": 23,
+          "traffic_potential": 18,
+          "calculator_fit": 18,
+          "evidence_quality": 15,
+          "actionability": 4,
+          "total_score": 78,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L"
+          ],
+          "reason": "BEA and Reuters confirm the published PCE result, but the current public material remains macro or directional. No concrete non-directional retail pip-value fixed-risk or position-size query and no natural calculator bridge were verified",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Economic Analysis",
+                "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026",
+                "source_type": "official_statistics_release",
+                "published_at": "2026-08-26",
+                "freshness_role": "official_July_PCE_result",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.investing.com/news/economy-news/dollar-near-eightday-high-as-us-data-lifts-fed-hike-bets-4878113",
+                "source_type": "reliable_news_reprint",
+                "published_at": "2026-08-27",
+                "freshness_role": "independent_current_PCE_context",
+                "reliable": true
+              },
+              {
+                "publisher": "BabyPips",
+                "url": "https://www.babypips.com/analysis/headline-sticky-core-pce-steady-gdp-fed-tightening-2026-08-27",
+                "source_type": "public_discussion_analysis",
+                "published_at": "2026-08-27",
+                "freshness_role": "current_macro_discussion_not_used_for_direction_or_facts",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_no_verified_retail_calculation_query",
+              "duplicate_of": [
+                "HR-20260827-04"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": false
+              },
+              "reopen_trigger": "A current public English question tied to the released PCE number that explicitly requests a non-directional EURUSD/USD pip-value, fixed-risk, or position-size calculation with readable inputs.",
+              "rationale": "Facts and discussion are present but the public journey remains macro interpretation and direction-first. The calculator-fit hard gate fails, so no traffic playbook or content package is allowed."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-28",
+          "candidate_id": "HR-20260828-05",
+          "status": "discarded",
+          "topic": "Directional USDJPY Tokyo CPI Jackson Hole and NVIDIA Forecast Calls",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 60,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Price targets, central-bank or stock direction calls, options speculation, political framing and generic market forecasts are excluded; no playbook or content package is created"
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-08-28T22:00:00+08:00",
+          "source_count": 4,
+          "note": "核验日本统计局东京 CPI 结果、Kansas City Fed Jackson Hole 日程、NVIDIA Q2 FY27 结果及 BEA PCE 发布。"
+        },
+        {
+          "channel": "可靠英文媒体 / 独立日历",
+          "status": "complete",
+          "checked_at": "2026-08-28T22:00:00+08:00",
+          "source_count": 6,
+          "note": "核验 Reuters 东京 CPI 与 FX/PCE 语境、AP Jackson Hole、Axios/NVIDIA 结果后语境，以及 ForexFactory 当期公开日历。"
+        },
+        {
+          "channel": "Reddit / ForexFactory",
+          "status": "complete",
+          "checked_at": "2026-08-28T22:00:00+08:00",
+          "source_count": 3,
+          "note": "核验 ForexFactory Tokyo Core CPI 实际值日历和公开 USDJPY/Jackson Hole 讨论索引；社区材料只用于热度与措辞，不确认事实或方向。"
+        },
+        {
+          "channel": "X / Quora / BabyPips",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-08-28T22:00:00+08:00",
+          "source_count": 1,
+          "note": "X、Quora 与 BabyPips 的可见索引未出现新的、具体且非方向性计算需求；不登录或操作账号，且不把缺失视作无热度。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-08-28_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-08-28_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-08-28"
+      }
+    },
+    {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -513,7 +924,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -858,7 +1269,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -1203,7 +1614,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -1655,7 +2066,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -2068,7 +2479,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -2300,7 +2711,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -2745,7 +3156,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -3120,7 +3531,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -3512,7 +3923,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -3888,7 +4299,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -4212,7 +4623,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -4595,7 +5006,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -4936,7 +5347,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -5311,7 +5722,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -5699,7 +6110,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -6044,7 +6455,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -6372,7 +6783,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -6684,7 +7095,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -7005,7 +7416,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -7366,7 +7777,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -7719,7 +8130,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -8163,7 +8574,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -8672,7 +9083,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -9142,7 +9553,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -9685,7 +10096,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -9957,7 +10368,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -10270,7 +10681,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -10705,7 +11116,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -11219,7 +11630,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -11728,7 +12139,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -12195,7 +12606,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -12608,7 +13019,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -13006,7 +13417,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-08-27T22:11:41+08:00",
+      "generated_at": "2026-08-28T22:06:19+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -13445,10 +13856,10 @@
       }
     }
   ],
-  "scan_date": "2026-08-27",
+  "scan_date": "2026-08-28",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 34,
+    "day": 35,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -13456,156 +13867,28 @@
     "mode": "topic_traffic_playbooks_and_content_drafts"
   },
   "stats": {
-    "selected": 2,
-    "observation": 2,
+    "selected": 1,
+    "observation": 3,
     "discarded": 1,
     "total": 5,
     "selected_average": 96.0,
     "all_selected_pass_gate": true,
-    "content_ready": 2,
-    "playbook_ready": 2
+    "content_ready": 1,
+    "playbook_ready": 1
   },
   "candidates": [
     {
-      "scan_date": "2026-08-27",
-      "candidate_id": "HR-20260827-01",
+      "scan_date": "2026-08-28",
+      "candidate_id": "HR-20260828-01",
       "status": "selected",
-      "topic": "NVIDIA Q2 Results Are Out: Refresh the Position-Exposure Check With the Reported 7% Move",
-      "primary_site": "PositionMath",
-      "freshness": 25,
-      "traffic_potential": 25,
-      "calculator_fit": 22,
-      "evidence_quality": 15,
-      "actionability": 10,
-      "total_score": 97,
-      "hard_gate": true,
-      "reliable_sources": 3,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Position Size",
-        "Portfolio Heat",
-        "P&L",
-        "Stop Loss/Take Profit"
-      ],
-      "reason": "NVIDIA's official Q2 FY27 release, AP's independent results report, Axios's August 27 reported 7% morning move and current public earnings discussion create a post-results exposure-check query; refresh HR-20260824-02 without predicting the next move",
-      "content_status": "review_ready",
-      "content_label": "NVIDIA 业绩结果后持仓暴露刷新审核包待人工审核",
-      "content_url": "../内容生产/2026-08-27/HR-20260827-01/index.html",
-      "content_format": "Medium / Reddit / X",
-      "deadline": "2026-08-27T16:00:00-04:00",
-      "traffic_playbook": {
-        "playbook_status": "ready",
-        "execution_mode": "refresh",
-        "urgency": "high",
-        "publish_deadline": "2026-08-27T16:00:00-04:00",
-        "traffic_hook": "NVIDIA's official Q2 FY27 result is now public; AP independently reports the released numbers and Axios reports the stock up more than 7% on Thursday morning. That creates a post-results exposure-check window, not a forecast window.",
-        "traffic_window": "Refresh during the August 27 regular session, after results are public and before the discussion moves to a later catalyst. Replace this result-day frame after the close, on an official correction, or when a later verified event changes the calculation question.",
-        "search_intents": [
-          "Nvidia earnings results 7% move position exposure",
-          "NVDA P&L calculator after earnings",
-          "NVDA position size calculator",
-          "stock portfolio heat after earnings"
-        ],
-        "traffic_angle": "Borrow the official released-results hook and Axios's reported more-than-7% morning reaction to answer a non-directional question: at a clearly labelled USD 218 teaching anchor, what does a 7% absolute move mean for eight shares in a USD 10,000 account? Keep 5% and 10% as symmetric stress checks, not a next-price forecast.",
-        "calculator_bridge": "After showing the USD 122.08 7% arithmetic, use PositionMath P&L to verify the labelled move, Portfolio Heat to place eight shares in the USD 10,000 account, and Position Size to separate an ordinary planned stop calculation. The tools do not interpret the earnings or predict the next move.",
-        "example_scenario": "USD 10,000 account; eight NVDA shares at a clearly labelled USD 218 teaching anchor. A reported approximately 7% absolute move maps to about USD 122.08; symmetric 5% and 10% stress checks map to USD 87.20 and USD 174.40. Separately, USD 100 planned loss divided by a USD 12 stop distance rounds down to eight shares; a stop does not guarantee an exit after a gap.",
-        "distribution_order": [
-          "refresh existing site article HR-20260824-02",
-          "Medium dated post-results exposure update",
-          "X self-contained result-day exposure thread",
-          "Reddit native process discussion without a first-round link"
-        ],
-        "link_placement": "Give the released facts, 7% arithmetic and stop-versus-gap distinction first. Put a single PositionMath verification link after the calculation; do not put a link in the first Reddit post, and make the X thread independently readable.",
-        "expiry_condition": "Stop using the result-day/7% frame after the August 27 regular session, an official correction, or a later verified fact that changes the risk question. Do not turn the reported 7% into a prediction, probability or performance claim.",
-        "editorial_boundary": "Do not predict NVIDIA's next price, revenue, valuation, options-implied move or market direction. USD 218 is a teaching anchor and the 7% is a reported approximate historical reaction used only for arithmetic. A stop is not a guaranteed gap exit.",
-        "refresh_target": "HR-20260824-02",
-        "refresh_signals": {
-          "fact_delta": true,
-          "search_delta": true,
-          "example_delta": true,
-          "window_delta": true
-        },
-        "refresh_updates": [
-          "replace all expired pre-release/earnings-tonight wording with released-results language",
-          "replace the forecast-like 5/10/15-only table with an explicitly reported approximate 7% row plus symmetric stress checks",
-          "replace prior source panel with NVIDIA's result release, AP and Axios",
-          "replace the release-time expiry with the August 27 result-day close/official-correction gate"
-        ],
-        "content_mainline": "Refresh the existing NVIDIA gap-risk article into a released-results exposure check; calculate a reported reaction and account concentration without forecasting the next price.",
-        "body_material": [
-          "NVIDIA Q2 FY27 USD 96.2bn revenue and EPS release",
-          "AP independent results context",
-          "Axios reported more-than-7% Thursday-morning reaction",
-          "eight shares at USD 218 under 7% / 5% / 10% absolute moves",
-          "result-day expiry gate"
-        ],
-        "product_bridge": "PositionMath verifies P&L, share size and portfolio heat after the fact-led arithmetic; it does not forecast NVIDIA or guarantee an exit.",
-        "product_bridge_type": "existing"
-      },
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "NVIDIA",
-            "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx",
-            "source_type": "official_company_results",
-            "published_at": "2026-08-26",
-            "freshness_role": "official_Q2_FY27_results_with_96_2bn_revenue_and_2_46_GAAP_EPS",
-            "reliable": true
-          },
-          {
-            "publisher": "AP",
-            "url": "https://apnews.com/article/nvidia-artificial-intelligence-earnings-dc8d556e709b50915cca9217a60b1991",
-            "source_type": "reliable_news",
-            "published_at": "2026-08-26",
-            "freshness_role": "independent_results_confirmation_and_current_context",
-            "reliable": true
-          },
-          {
-            "publisher": "Axios",
-            "url": "https://www.axios.com/2026/08/27/nvidia-ai-earnings-stock",
-            "source_type": "reliable_news",
-            "published_at": "2026-08-27",
-            "freshness_role": "same_day_reported_more_than_7_percent_morning_move_used_only_as_readable_exposure_example",
-            "reliable": true
-          },
-          {
-            "publisher": "Reddit r/stocks",
-            "url": "https://www.reddit.com/r/stocks/comments/1vz8pnh/nvidia_announces_financial_results_for_second/",
-            "source_type": "community_heat",
-            "published_at": "2026-08-27",
-            "freshness_role": "current_public_post_result_discussion_not_used_for_facts_or_direction",
-            "reliable": false
-          }
-        ],
-        "decision": {
-          "novelty_gate": "pass_refresh",
-          "decision_gate": "selected_refresh",
-          "duplicate_of": [
-            "HR-20260824-02"
-          ],
-          "refresh_signals": {
-            "fact_delta": true,
-            "search_delta": true,
-            "example_delta": true,
-            "window_delta": true
-          },
-          "reopen_trigger": "Stop this result-day exposure framing after the August 27 regular session, on an official correction, or when a later verified fact creates a distinct non-directional calculation question.",
-          "rationale": "The official result is a new formal fact, public wording has changed from pre-release holding to post-result exposure, and Axios provides a reported same-day percentage move for a clearly labelled arithmetic example. This is a refresh of the existing gap-risk article, not a forecast or a second earnings article."
-        }
-      }
-    },
-    {
-      "scan_date": "2026-08-27",
-      "candidate_id": "HR-20260827-02",
-      "status": "selected",
-      "topic": "BOJ Deputy Governor Speaks: Refresh USDJPY Fixed-Risk Size at 159.29",
+      "topic": "Tokyo Core CPI Beats Forecast: Refresh USDJPY Fixed-Risk Sizing at 159.30",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 21,
+      "traffic_potential": 22,
       "calculator_fit": 25,
       "evidence_quality": 15,
       "actionability": 9,
-      "total_score": 95,
+      "total_score": 96,
       "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
@@ -13615,38 +13898,38 @@
         "P&L",
         "Spread Cost"
       ],
-      "reason": "The BOJ's August 27 speech, Reuters' independent report and the current 159.29 USDJPY reference create a dated post-speech risk-sizing path; refresh the existing USDJPY event-risk article without forecasting a September decision or currency direction",
+      "reason": "Japan Statistics Bureau's August 28 Tokyo CPI release and Reuters independently confirm 1.8% core CPI versus 1.7% consensus; ForexFactory and current public FX discussion show a dated USDJPY event query. Four refresh signals support updating HR-20260827-02 without predicting BOJ policy or USDJPY direction",
       "content_status": "review_ready",
-      "content_label": "BOJ 副行长讲话后 USDJPY 固定风险刷新审核包待人工审核",
-      "content_url": "../内容生产/2026-08-27/HR-20260827-02/index.html",
+      "content_label": "东京核心 CPI 结果后 USDJPY 固定风险刷新审核包待人工审核",
+      "content_url": "../内容生产/2026-08-28/HR-20260828-01/index.html",
       "content_format": "Medium / Reddit / X",
-      "deadline": "2026-08-28T10:30:00+09:00",
+      "deadline": "2026-08-28T23:59:00+09:00",
       "traffic_playbook": {
         "playbook_status": "ready",
         "execution_mode": "refresh",
         "urgency": "high",
-        "publish_deadline": "2026-08-28T10:30:00+09:00",
-        "traffic_hook": "The BOJ's August 27 HIMINO speech is now public, and Reuters reports both the policy-language context and USD/JPY near 159.29 after the speech. The usable hook is the dated speech plus a transparent FX conversion input—not a September-rate or yen prediction.",
-        "traffic_window": "Refresh from the August 27 speech through the August 28 press-conference/material window. End the frame on a BOJ correction, new official decision, or when the 159.29 example is no longer tied to current post-speech discussion.",
+        "publish_deadline": "2026-08-28T23:59:00+09:00",
+        "traffic_hook": "Japan's Statistics Bureau released Tokyo's August CPI on August 28, and Reuters reports core CPI at 1.8% versus 1.7% consensus. The live hook is the released result and the immediate USDJPY risk-check query—not a BOJ or yen forecast.",
+        "traffic_window": "Refresh during the August 28 post-release window only. Replace the Tokyo-CPI framing after the same-day window, an official data correction, a BOJ decision, or a different verified USDJPY fact. Do not recycle it as a generic inflation explainer.",
         "search_intents": [
-          "Himino speech USDJPY risk",
-          "USDJPY 100 pip move dollar value",
+          "Tokyo CPI actual USDJPY risk",
+          "Tokyo core CPI 1.8 USDJPY pip value",
           "USDJPY pip value calculator",
           "how many lots USDJPY 100 dollar risk"
         ],
-        "traffic_angle": "Borrow the speech-after-the-fact hook and answer what a reader can calculate without taking a directional view: for a USD account at USD/JPY 159.29, what is one USD/JPY pip worth per standard lot, and how does a fixed USD 100 planned loss scale across 50, 100 and 200 pips?",
-        "calculator_bridge": "Show the conversion first: JPY 1,000 per standard-lot pip divided by 159.29 is about USD 6.28 per pip. Then PipGauge Pip Value verifies that input and Position Size checks the 50/100/200-pip lot sizes. P&L and Spread Cost are optional hypothetical stress checks, not live execution claims.",
-        "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; USD/JPY 159.29 reference from Reuters. One standard-lot pip is about USD 6.28, so a 50/100/200-pip planned stop maps to about 0.31/0.15/0.07 lot after rounding down and before spread, commission and slippage.",
+        "traffic_angle": "Borrow the 1.8% actual versus 1.7% consensus news hook to answer the calculation readers can make now: using a clearly labelled 159.30 teaching conversion input, what is one USDJPY pip worth in a USD account and how does a fixed USD 100 planned loss scale across 50, 100 and 200 pips? The result supplies the timely title and fact card; the table supplies the non-directional answer.",
+        "calculator_bridge": "After the fact card and manual formula, PipGauge Pip Value checks JPY 1,000 divided by 159.30 (about USD 6.28 per standard-lot pip), and Position Size checks the three rounded-down lot sizes. P&L and Spread Cost are only optional, labelled hypothetical stress checks—not assertions about CPI-release execution.",
+        "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; USDJPY 159.30 labelled as a teaching conversion input. One standard-lot pip is about USD 6.28, so 50/100/200-pip planned stops map to about 0.31/0.15/0.07 lot after rounding down and before spread, commission and slippage.",
         "distribution_order": [
-          "refresh existing site article HR-20260802-01",
-          "Medium dated BOJ speech risk-size update",
+          "refresh existing site article HR-20260827-02",
+          "Medium dated Tokyo-CPI fixed-risk update",
           "X self-contained pip-value thread",
           "Reddit native process discussion without a first-round link"
         ],
-        "link_placement": "Lead with the official speech fact, the 159.29 conversion and three fixed-risk sizes. Put one PipGauge verification link after the formula and caveats; Reddit receives no first-round link, and X must be complete without one.",
-        "expiry_condition": "Stop when the August 28 BOJ materials/press-conference window changes the factual hook, a BOJ correction appears, or a later policy decision creates a different question. A next refresh must pass a separate four-signal check.",
-        "editorial_boundary": "Do not predict a September BOJ action, USD/JPY direction, intervention, yields or profitability. 159.29 is a reported reference for conversion, not a target. A planned stop is not a guaranteed fill and costs remain labelled assumptions.",
-        "refresh_target": "HR-20260802-01",
+        "link_placement": "Lead with the released 1.8% / 1.7% fact card, formula and three sizes. Put one PipGauge verification link after the explanation and caveats; do not put a link in the initial Reddit post, and make the X thread understandable without one.",
+        "expiry_condition": "Stop this Tokyo-CPI/159.30 frame after August 28, on a Statistics Bureau correction, a BOJ decision, or another verified fact that changes the calculation question. A later update must pass a separate freshness and novelty gate.",
+        "editorial_boundary": "Do not predict BOJ policy, USDJPY direction, intervention, yields or profitability. 159.30 is a teaching conversion input, not a quote or target. A planned stop is not a guaranteed fill and costs remain labelled assumptions.",
+        "refresh_target": "HR-20260827-02",
         "refresh_signals": {
           "fact_delta": true,
           "search_delta": true,
@@ -13654,54 +13937,54 @@
           "window_delta": true
         },
         "refresh_updates": [
-          "replace July intervention framing with the August 27 BOJ speech fact",
-          "replace the old 163-164 area teaching context with Reuters' 159.29 post-speech reference",
-          "replace 100/200/300-pip tail-risk emphasis with a USD 100 fixed-risk 50/100/200-pip size table",
-          "replace legacy expiry with the August 28 material/correction gate"
+          "replace the August 27 deputy-governor speech hook with the August 28 released Tokyo CPI fact",
+          "replace 159.29 with the explicitly labelled 159.30 teaching conversion input",
+          "replace the fact card and headline with 1.8% actual, 1.7% consensus and revised 1.7% previous",
+          "replace the speech-material expiry with the August 28 data-correction / BOJ-decision gate"
         ],
-        "content_mainline": "Refresh the existing USD/JPY event-risk article into a post-speech fixed-risk sizing check; it converts the reported reference rate into pip value without forecasting policy or price.",
+        "content_mainline": "Refresh the existing USDJPY event-risk article into a post-Tokyo-CPI fixed-risk calculation; use a released statistic to surface pip-value arithmetic without forecasting policy or price.",
         "body_material": [
-          "BOJ August 27 HIMINO speech listing",
-          "Reuters independent speech context",
-          "Reuters USDJPY 159.29 reference",
+          "Japan Statistics Bureau August 28 Tokyo CPI result",
+          "Reuters 1.8% versus 1.7% consensus report",
+          "ForexFactory current-result heat signal",
           "USD 100 fixed risk at 50/100/200 pips",
-          "post-speech expiry gate"
+          "same-day expiry gate"
         ],
-        "product_bridge": "PipGauge verifies the pair, account-currency pip value and fixed-risk position size after the official facts and manual arithmetic; it does not interpret policy or predict USD/JPY.",
+        "product_bridge": "PipGauge verifies the pair, account-currency pip value and fixed-risk size after the official facts and manual arithmetic; it does not interpret Tokyo CPI or predict USDJPY.",
         "product_bridge_type": "existing"
       },
       "scan_audit": {
         "sources": [
           {
-            "publisher": "Bank of Japan",
-            "url": "https://www.boj.or.jp/en/about/press",
-            "source_type": "official_central_bank_speech_index",
-            "published_at": "2026-08-27",
-            "freshness_role": "official_listing_of_HIMINO_Ryozo_August_27_Saitama_speech",
+            "publisher": "Japan Statistics Bureau",
+            "url": "https://www.stat.go.jp/data/cpi/1.html?guid=ON",
+            "source_type": "official_statistics_release",
+            "published_at": "2026-08-28",
+            "freshness_role": "official_Tokyo_August_CPI_preliminary_release",
             "reliable": true
           },
           {
             "publisher": "Reuters",
-            "url": "https://www.marketscreener.com/news/boj-deputy-governor-himino-calls-for-timely-rate-hike-ce7858ded98af220",
+            "url": "https://www.marketscreener.com/news/tokyo-core-inflation-accelerates-in-august-nears-boj-target-ce7858dfd981ff21",
             "source_type": "reliable_news_reprint",
-            "published_at": "2026-08-27",
-            "freshness_role": "independent_same_day_report_of_speech_and_no_explicit_next_meeting_signal",
+            "published_at": "2026-08-28",
+            "freshness_role": "independent_report_of_1_8_core_CPI_versus_1_7_consensus_and_revised_1_7_previous",
             "reliable": true
           },
           {
-            "publisher": "Reuters",
-            "url": "https://ca.investing.com/news/economy-news/dollar-steady-before-jackson-hole-yen-little-changed-after-bojs-himino-speech-4818615",
-            "source_type": "reliable_news_reprint",
-            "published_at": "2026-08-27",
-            "freshness_role": "same_day_USDJPY_159_29_reference_for_pip_value_example_not_a_forecast",
-            "reliable": true
+            "publisher": "ForexFactory",
+            "url": "https://www.forexfactory.com/calendar?day=aug28.2026&event=148675",
+            "source_type": "public_calendar_heat",
+            "published_at": "2026-08-28",
+            "freshness_role": "current_public_actual_1_8_calendar_and_search_wording_not_used_for_fact_adjudication",
+            "reliable": false
           },
           {
-            "publisher": "Reddit r/wallstreetbetsHUZZAH",
-            "url": "https://www.reddit.com/r/wallstreetbetsHUZZAH/comments/1vz80tg/what_are_your_moves_tomorrow_august_27_2026/",
+            "publisher": "Reddit r/Forexstrategy",
+            "url": "https://www.reddit.com/r/Forexstrategy/comments/1w09c8l/usdjpy_forecast_will_inflation_data_be_enough_to/",
             "source_type": "community_heat",
-            "published_at": "2026-08-27",
-            "freshness_role": "public_same_day_news_reference_not_used_for_facts_or_direction",
+            "published_at": "2026-08-28",
+            "freshness_role": "public_Tokyo_CPI_USDJPY_discussion_signal_not_used_for_facts_or_direction",
             "reliable": false
           }
         ],
@@ -13709,7 +13992,7 @@
           "novelty_gate": "pass_refresh",
           "decision_gate": "selected_refresh",
           "duplicate_of": [
-            "HR-20260802-01"
+            "HR-20260827-02"
           ],
           "refresh_signals": {
             "fact_delta": true,
@@ -13717,23 +14000,23 @@
             "example_delta": true,
             "window_delta": true
           },
-          "reopen_trigger": "Stop after the August 28 press-conference/material window, a BOJ correction, or a new official policy decision; a later refresh must use a different verified fact and query.",
-          "rationale": "A dated official speech and independent same-day reports replace the prior intervention hook. The reported 159.29 reference creates a new transparent pip-value input, while the query changes to fixed-risk sizing after a speech rather than guessing the next policy decision."
+          "reopen_trigger": "Stop the Tokyo-CPI/159.30 frame after the August 28 same-day window, an official statistics correction, a materially different verified USDJPY fact, or a BOJ decision. A further refresh needs a new calculation question and fresh evidence.",
+          "rationale": "The dated official result and Reuters create a new fact; the traffic query changes from a deputy-governor speech to the released CPI actual; 1.8 versus 1.7 replaces the factual headline and event card; and the post-release window is distinct. The only permitted output is a refresh of the existing USDJPY fixed-risk article, without policy or price prediction."
         }
       }
     },
     {
-      "scan_date": "2026-08-27",
-      "candidate_id": "HR-20260827-03",
+      "scan_date": "2026-08-28",
+      "candidate_id": "HR-20260828-02",
       "status": "observation",
-      "topic": "Jackson Hole Opens but the Friday-Keynote EURUSD Package Has No Second Refresh Delta",
+      "topic": "Jackson Hole Keynote Day Has No Second Refresh Delta Beyond the Existing Countdown",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 23,
+      "traffic_potential": 25,
       "calculator_fit": 25,
       "evidence_quality": 15,
       "actionability": 6,
-      "total_score": 94,
+      "total_score": 96,
       "hard_gate": true,
       "reliable_sources": 3,
       "fresh_signal": true,
@@ -13743,31 +14026,31 @@
         "P&L",
         "Spread Cost"
       ],
-      "reason": "Official dates and fresh Reuters context are valid, but the August 24 package already owns the same Friday-keynote query and USD100 table; the event opening changes only the clock and no new distinct calculation demand was verified",
+      "reason": "Kansas City Fed Reuters and AP confirm the Aug 28 keynote is current, but the existing package already owns the same pre-keynote EURUSD fixed-risk query table and expiry. Until verified remarks create a different fact and calculation question, the clock alone fails novelty",
       "scan_audit": {
         "sources": [
           {
             "publisher": "Federal Reserve Bank of Kansas City",
-            "url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/",
-            "source_type": "official_event_page",
-            "published_at": "2026-08-27",
-            "freshness_role": "official_August_27_to_29_symposium_dates",
+            "url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/2026/",
+            "source_type": "official_event_agenda",
+            "published_at": "2026-08-28",
+            "freshness_role": "official_current_August_28_keynote_agenda",
+            "reliable": true
+          },
+          {
+            "publisher": "AP",
+            "url": "https://apnews.com/article/federal-reserve-warsh-interest-trump-inflation-ab896df808df3a5a3fa8b943ac5f3867",
+            "source_type": "reliable_news",
+            "published_at": "2026-08-28",
+            "freshness_role": "independent_current_attention_context",
             "reliable": true
           },
           {
             "publisher": "Reuters",
-            "url": "https://www.investing.com/news/economy-news/feds-warsh-faces-challenge-whether-inflation-is-a-problem-or-not-4878912",
+            "url": "https://www.marketscreener.com/news/dollar-flat-near-one-week-high-as-investors-await-warsh-s-jackson-hole-debut-ce7858dfd88df022",
             "source_type": "reliable_news_reprint",
-            "published_at": "2026-08-27",
-            "freshness_role": "same_day_current_event_context_before_Friday_speech",
-            "reliable": true
-          },
-          {
-            "publisher": "Axios",
-            "url": "https://www.axios.com/2026/08/27/jackson-hole-federal-reserve",
-            "source_type": "reliable_news",
-            "published_at": "2026-08-27",
-            "freshness_role": "same_day_public_attention_context_not_a_new_calculation_query",
+            "published_at": "2026-08-28",
+            "freshness_role": "independent_current_event_context",
             "reliable": true
           }
         ],
@@ -13783,23 +14066,89 @@
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "Verified official remarks, an official schedule correction, or a distinct current non-directional EURUSD calculation query that the existing USD 100 table does not already answer.",
-          "rationale": "The event now being under way is a clock change only. The August 24 refresh already owns the same Friday keynote, fixed-risk table, search framing and expiry, so no new playbook or package is permitted."
+          "reopen_trigger": "Official remarks or a transcript that creates a verifiable new non-directional calculation question distinct from the existing EURUSD fixed-risk table.",
+          "rationale": "The official clock and attention are real but already owned by the current Jackson Hole package. Before a new verified fact arrives, advancing the clock is only one refresh signal and no duplicate playbook or package is permitted."
         }
       }
     },
     {
-      "scan_date": "2026-08-27",
-      "candidate_id": "HR-20260827-04",
+      "scan_date": "2026-08-28",
+      "candidate_id": "HR-20260828-03",
       "status": "observation",
-      "topic": "July PCE and Q2 GDP Remain Direction-First Discussion Rather Than a Retail Calculation Journey",
-      "primary_site": "PipGauge",
+      "topic": "NVIDIA Result-Day Exposure Topic Has No New Non-Directional Calculation Delta",
+      "primary_site": "PositionMath",
       "freshness": 24,
+      "traffic_potential": 20,
+      "calculator_fit": 22,
+      "evidence_quality": 15,
+      "actionability": 5,
+      "total_score": 86,
+      "hard_gate": true,
+      "reliable_sources": 3,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Position Size",
+        "Portfolio Heat",
+        "P&L",
+        "Stop Loss/Take Profit"
+      ],
+      "reason": "NVIDIA AP and Axios remain verifiable inside 72 hours, but HR-20260827-01 already covers the released result and reported 7% move. No new official fact, current distinct query or non-duplicative readable example was found",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "NVIDIA",
+            "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx",
+            "source_type": "official_company_results",
+            "published_at": "2026-08-26",
+            "freshness_role": "official_results_still_inside_72_hours",
+            "reliable": true
+          },
+          {
+            "publisher": "AP",
+            "url": "https://apnews.com/article/nvidia-artificial-intelligence-earnings-dc8d556e709b50915cca9217a60b1991",
+            "source_type": "reliable_news",
+            "published_at": "2026-08-26",
+            "freshness_role": "independent_results_confirmation",
+            "reliable": true
+          },
+          {
+            "publisher": "Axios",
+            "url": "https://www.axios.com/2026/08/27/nvidia-ai-earnings-stock",
+            "source_type": "reliable_news",
+            "published_at": "2026-08-27",
+            "freshness_role": "reported_7_percent_result_day_move_already_used_by_prior_refresh",
+            "reliable": true
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "observation_duplicate_result_window",
+          "duplicate_of": [
+            "HR-20260827-01"
+          ],
+          "refresh_signals": {
+            "fact_delta": false,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": true
+          },
+          "reopen_trigger": "A new official correction, another verified company fact, or a current non-directional exposure query that needs materially different numbers from the 7-percent result-day table.",
+          "rationale": "The existing result-day package already uses the official result and reported 7-percent move. The remaining freshness window cannot become a second same-structure article without a second qualified refresh signal."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-08-28",
+      "candidate_id": "HR-20260828-04",
+      "status": "observation",
+      "topic": "July PCE Result Remains a Macro Discussion Rather Than a Retail Calculation Journey",
+      "primary_site": "PipGauge",
+      "freshness": 23,
       "traffic_potential": 18,
       "calculator_fit": 18,
       "evidence_quality": 15,
       "actionability": 4,
-      "total_score": 79,
+      "total_score": 78,
       "hard_gate": false,
       "reliable_sources": 2,
       "fresh_signal": true,
@@ -13808,15 +14157,23 @@
         "Position Size",
         "P&L"
       ],
-      "reason": "BEA results and current BabyPips analysis are fresh and cross-verified, but the discoverable public material remains macro or directional; no concrete non-directional pip-value fixed-risk or position-size query was verified",
+      "reason": "BEA and Reuters confirm the published PCE result, but the current public material remains macro or directional. No concrete non-directional retail pip-value fixed-risk or position-size query and no natural calculator bridge were verified",
       "scan_audit": {
         "sources": [
           {
             "publisher": "U.S. Bureau of Economic Analysis",
-            "url": "https://www.bea.gov/news/schedule/full",
-            "source_type": "official_release_schedule",
+            "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026",
+            "source_type": "official_statistics_release",
             "published_at": "2026-08-26",
-            "freshness_role": "official_PCE_and_Q2_GDP_release_window_previously_verified",
+            "freshness_role": "official_July_PCE_result",
+            "reliable": true
+          },
+          {
+            "publisher": "Reuters",
+            "url": "https://www.investing.com/news/economy-news/dollar-near-eightday-high-as-us-data-lifts-fed-hike-bets-4878113",
+            "source_type": "reliable_news_reprint",
+            "published_at": "2026-08-27",
+            "freshness_role": "independent_current_PCE_context",
             "reliable": true
           },
           {
@@ -13824,23 +14181,15 @@
             "url": "https://www.babypips.com/analysis/headline-sticky-core-pce-steady-gdp-fed-tightening-2026-08-27",
             "source_type": "public_discussion_analysis",
             "published_at": "2026-08-27",
-            "freshness_role": "same_day_discussion_context_not_used_for_direction_or_facts_beyond_cited_releases",
+            "freshness_role": "current_macro_discussion_not_used_for_direction_or_facts",
             "reliable": false
-          },
-          {
-            "publisher": "Reuters",
-            "url": "https://www.investing.com/news/economy-news/us-stock-futures-subdued-in-runup-to-nvidia-results-inflation-print-4876659",
-            "source_type": "reliable_news_reprint",
-            "published_at": "2026-08-26",
-            "freshness_role": "independent_result_context_previously_verified",
-            "reliable": true
           }
         ],
         "decision": {
           "novelty_gate": "fail",
           "decision_gate": "observation_no_verified_retail_calculation_query",
           "duplicate_of": [
-            "HR-20260826-02"
+            "HR-20260827-04"
           ],
           "refresh_signals": {
             "fact_delta": false,
@@ -13848,16 +14197,16 @@
             "example_delta": false,
             "window_delta": false
           },
-          "reopen_trigger": "A current public English question tied to the released figures that asks a concrete non-directional EURUSD/USD pip-value, fixed-risk or position-size calculation with readable parameters.",
-          "rationale": "Discussion exists, but it is macro interpretation and direction-first. No natural calculator bridge or traffic path was verified, so the hard calculator-fit gate fails and no playbook is allowed."
+          "reopen_trigger": "A current public English question tied to the released PCE number that explicitly requests a non-directional EURUSD/USD pip-value, fixed-risk, or position-size calculation with readable inputs.",
+          "rationale": "Facts and discussion are present but the public journey remains macro interpretation and direction-first. The calculator-fit hard gate fails, so no traffic playbook or content package is allowed."
         }
       }
     },
     {
-      "scan_date": "2026-08-27",
-      "candidate_id": "HR-20260827-05",
+      "scan_date": "2026-08-28",
+      "candidate_id": "HR-20260828-05",
       "status": "discarded",
-      "topic": "Directional NVIDIA USDJPY and Jackson Hole Forecast Calls",
+      "topic": "Directional USDJPY Tokyo CPI Jackson Hole and NVIDIA Forecast Calls",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 25,
@@ -13871,48 +14220,48 @@
       "calculator_mapping": [
         "P&L"
       ],
-      "reason": "Price targets, earnings calls, policy predictions, political framing and generic market forecasts are excluded; no article, playbook or content package is created"
+      "reason": "Price targets, central-bank or stock direction calls, options speculation, political framing and generic market forecasts are excluded; no playbook or content package is created"
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-08-27T22:00:00+08:00",
+      "checked_at": "2026-08-28T22:00:00+08:00",
       "source_count": 4,
-      "note": "核验 NVIDIA Q2 FY27 结果、BOJ 8 月 27 日讲话与发布日程，以及 Kansas City Fed Jackson Hole 页面。"
+      "note": "核验日本统计局东京 CPI 结果、Kansas City Fed Jackson Hole 日程、NVIDIA Q2 FY27 结果及 BEA PCE 发布。"
     },
     {
       "channel": "可靠英文媒体 / 独立日历",
       "status": "complete",
-      "checked_at": "2026-08-27T22:00:00+08:00",
-      "source_count": 5,
-      "note": "核验 AP 的 NVIDIA 结果报道、Axios 的 8 月 27 日结果后市场背景、Reuters 的 BOJ 与 USDJPY 当日报道、Reuters/Axios 的 Jackson Hole 当前语境。"
+      "checked_at": "2026-08-28T22:00:00+08:00",
+      "source_count": 6,
+      "note": "核验 Reuters 东京 CPI 与 FX/PCE 语境、AP Jackson Hole、Axios/NVIDIA 结果后语境，以及 ForexFactory 当期公开日历。"
     },
     {
       "channel": "Reddit / ForexFactory",
       "status": "complete",
-      "checked_at": "2026-08-27T22:00:00+08:00",
+      "checked_at": "2026-08-28T22:00:00+08:00",
       "source_count": 3,
-      "note": "核验 NVIDIA 结果公开讨论、当日市场线程与 ForexFactory 公开日历/索引；社区材料只用于热度与措辞，不确认事实或方向。"
+      "note": "核验 ForexFactory Tokyo Core CPI 实际值日历和公开 USDJPY/Jackson Hole 讨论索引；社区材料只用于热度与措辞，不确认事实或方向。"
     },
     {
       "channel": "X / Quora / BabyPips",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-08-27T22:00:00+08:00",
+      "checked_at": "2026-08-28T22:00:00+08:00",
       "source_count": 1,
-      "note": "BabyPips 当日 PCE/GDP 分析证明宏观关注仍在，但可见材料为方向或解释优先；X、Quora 公开索引未出现新的、具体且非方向性计算需求。未登录或操作账号。"
+      "note": "X、Quora 与 BabyPips 的可见索引未出现新的、具体且非方向性计算需求；不登录或操作账号，且不把缺失视作无热度。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-08-27_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-08-27_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-08-28_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-08-28_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
     "traffic_playbooks": "../热点流量打法.json",
-    "content_root": "../内容生产/2026-08-27"
+    "content_root": "../内容生产/2026-08-28"
   },
   "radar_model": "v2-content-first",
   "editorial_policy": {
