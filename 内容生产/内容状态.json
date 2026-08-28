@@ -253,5 +253,12 @@
     "content_url": "../内容生产/2026-08-27/HR-20260827-02/index.html",
     "content_format": "Medium / Reddit / X",
     "deadline": "2026-08-28T10:30:00+09:00"
+  },
+  "HR-20260828-01": {
+    "content_status": "review_ready",
+    "content_label": "东京核心 CPI 结果后 USDJPY 固定风险刷新审核包待人工审核",
+    "content_url": "../内容生产/2026-08-28/HR-20260828-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-08-28T23:59:00+09:00"
   }
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-27T22:00:00+08:00",
+  "updated_at": "2026-08-28T22:00:00+08:00",
   "items": {
     "HR-20260824-01": {
       "playbook_status": "ready",
@@ -1545,6 +1545,29 @@
       "content_mainline": "Refresh the existing USD/JPY event-risk article into a post-speech fixed-risk sizing check; it converts the reported reference rate into pip value without forecasting policy or price.",
       "body_material": ["BOJ August 27 HIMINO speech listing", "Reuters independent speech context", "Reuters USDJPY 159.29 reference", "USD 100 fixed risk at 50/100/200 pips", "post-speech expiry gate"],
       "product_bridge": "PipGauge verifies the pair, account-currency pip value and fixed-risk position size after the official facts and manual arithmetic; it does not interpret policy or predict USD/JPY.",
+      "product_bridge_type": "existing"
+    },
+    "HR-20260828-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-08-28T23:59:00+09:00",
+      "traffic_hook": "Japan's Statistics Bureau released Tokyo's August CPI on August 28, and Reuters reports core CPI at 1.8% versus 1.7% consensus. The live hook is the released result and the immediate USDJPY risk-check query—not a BOJ or yen forecast.",
+      "traffic_window": "Refresh during the August 28 post-release window only. Replace the Tokyo-CPI framing after the same-day window, an official data correction, a BOJ decision, or a different verified USDJPY fact. Do not recycle it as a generic inflation explainer.",
+      "search_intents": ["Tokyo CPI actual USDJPY risk", "Tokyo core CPI 1.8 USDJPY pip value", "USDJPY pip value calculator", "how many lots USDJPY 100 dollar risk"],
+      "traffic_angle": "Borrow the 1.8% actual versus 1.7% consensus news hook to answer the calculation readers can make now: using a clearly labelled 159.30 teaching conversion input, what is one USDJPY pip worth in a USD account and how does a fixed USD 100 planned loss scale across 50, 100 and 200 pips? The result supplies the timely title and fact card; the table supplies the non-directional answer.",
+      "calculator_bridge": "After the fact card and manual formula, PipGauge Pip Value checks JPY 1,000 divided by 159.30 (about USD 6.28 per standard-lot pip), and Position Size checks the three rounded-down lot sizes. P&L and Spread Cost are only optional, labelled hypothetical stress checks—not assertions about CPI-release execution.",
+      "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; USDJPY 159.30 labelled as a teaching conversion input. One standard-lot pip is about USD 6.28, so 50/100/200-pip planned stops map to about 0.31/0.15/0.07 lot after rounding down and before spread, commission and slippage.",
+      "distribution_order": ["refresh existing site article HR-20260827-02", "Medium dated Tokyo-CPI fixed-risk update", "X self-contained pip-value thread", "Reddit native process discussion without a first-round link"],
+      "link_placement": "Lead with the released 1.8% / 1.7% fact card, formula and three sizes. Put one PipGauge verification link after the explanation and caveats; do not put a link in the initial Reddit post, and make the X thread understandable without one.",
+      "expiry_condition": "Stop this Tokyo-CPI/159.30 frame after August 28, on a Statistics Bureau correction, a BOJ decision, or another verified fact that changes the calculation question. A later update must pass a separate freshness and novelty gate.",
+      "editorial_boundary": "Do not predict BOJ policy, USDJPY direction, intervention, yields or profitability. 159.30 is a teaching conversion input, not a quote or target. A planned stop is not a guaranteed fill and costs remain labelled assumptions.",
+      "refresh_target": "HR-20260827-02",
+      "refresh_signals": {"fact_delta": true, "search_delta": true, "example_delta": true, "window_delta": true},
+      "refresh_updates": ["replace the August 27 deputy-governor speech hook with the August 28 released Tokyo CPI fact", "replace 159.29 with the explicitly labelled 159.30 teaching conversion input", "replace the fact card and headline with 1.8% actual, 1.7% consensus and revised 1.7% previous", "replace the speech-material expiry with the August 28 data-correction / BOJ-decision gate"],
+      "content_mainline": "Refresh the existing USDJPY event-risk article into a post-Tokyo-CPI fixed-risk calculation; use a released statistic to surface pip-value arithmetic without forecasting policy or price.",
+      "body_material": ["Japan Statistics Bureau August 28 Tokyo CPI result", "Reuters 1.8% versus 1.7% consensus report", "ForexFactory current-result heat signal", "USD 100 fixed risk at 50/100/200 pips", "same-day expiry gate"],
+      "product_bridge": "PipGauge verifies the pair, account-currency pip value and fixed-risk size after the official facts and manual arithmetic; it does not interpret Tokyo CPI or predict USDJPY.",
       "product_bridge_type": "existing"
     }
   }
