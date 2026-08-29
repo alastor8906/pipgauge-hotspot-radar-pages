@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T14:07:59.599Z",
+  "generated_at": "2026-08-29T14:09:02.706Z",
   "endpoint": "multi_platform_drafts_awaiting_human_review",
   "supported_platforms": [
     "medium",
@@ -7,6 +7,41 @@
     "x"
   ],
   "packages": [
+    {
+      "candidate_id": "HR-20260829-01",
+      "scan_date": "2026-08-29",
+      "primary_site": "PipGauge",
+      "topic": "Jackson Hole Remarks Are Out: Refresh EUR/USD Fixed-Risk Sizing After the Speech",
+      "package_summary": "当期审核快照：用 8 月 28 日 Jackson Hole 主旨演讲的已发布事实，刷新既有 EUR/USD 固定美元风险稿；保留 25/50/100-pip 教学表，不预测美联储、利率或 EUR/USD 方向。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "post_speech_follow_up_window",
+      "time_status_label": "仅在 2026 年 8 月 28 日演讲后的短期复核窗口使用；官方文字更正、后续正式政策决定或新的可核验计算问题出现时必须改写或停用。",
+      "url": "../内容生产/2026-08-29/HR-20260829-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-29/HR-20260829-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-29/HR-20260829-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-29/HR-20260829-01/index.html#x"
+        }
+      ]
+    },
     {
       "candidate_id": "HR-20260828-01",
       "scan_date": "2026-08-28",
