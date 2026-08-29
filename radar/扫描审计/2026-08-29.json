@@ -1,0 +1,43 @@
+{
+  "scan_date": "2026-08-29",
+  "generated_at": "2026-08-29T22:00:00+08:00",
+  "coverage": [
+    {"channel":"官方与一手来源","status":"complete","checked_at":"2026-08-29T22:00:00+08:00","source_count":4,"note":"核验 Kansas City Fed 2026 Jackson Hole 日程、BEA July PCE、BLS September 4 Employment Situation 时钟及 Topstep 动态 Live 风险规则页。"},
+    {"channel":"可靠英文媒体","status":"complete","checked_at":"2026-08-29T22:00:00+08:00","source_count":3,"note":"核验 AP 与 Reuters 对 8 月 28 日 Jackson Hole 演讲的独立报道，以及 Reuters 的 PCE/FX 语境。"},
+    {"channel":"Reddit / ForexFactory","status":"complete","checked_at":"2026-08-29T22:00:00+08:00","source_count":2,"note":"核验公开 EUR/USD/Warsh 讨论及 prop-firm drawdown 讨论；只作为热度与措辞，绝不确认事实或方向。"},
+    {"channel":"X / Quora / BabyPips","status":"checked_no_material_signal","checked_at":"2026-08-29T22:00:00+08:00","source_count":1,"note":"可见索引未发现新的、具体且非方向性计算问题；不登录、不操作账号，也不将缺失当作无热度。"}
+  ],
+  "candidates": {
+    "HR-20260829-01": {
+      "sources": [
+        {"publisher":"Federal Reserve Bank of Kansas City","url":"https://www.kansascityfed.org/research/jackson-hole-economic-symposium/2026/","source_type":"official_event_record","published_at":"2026-08-28","freshness_role":"official_record_of_completed_August_28_Jackson_Hole_keynote","reliable":true},
+        {"publisher":"AP","url":"https://apnews.com/article/federal-reserve-warsh-interest-trump-inflation-ab896df808df3a5a3fa8b943ac5f3867","source_type":"reliable_news","published_at":"2026-08-28","freshness_role":"independent_report_of_completed_keynote_and_no_imminent_rate_hike_implication","reliable":true},
+        {"publisher":"Reuters","url":"https://www.marketscreener.com/news/will-warsh-s-jackson-hole-speech-be-a-course-correction-or-detour-ce7858dfdb8bf62c","source_type":"reliable_news_reprint","published_at":"2026-08-28","freshness_role":"independent_report_of_keynote_and_two_percent_inflation_target_context","reliable":true},
+        {"publisher":"Reddit r/Forex","url":"https://www.reddit.com/r/Forex/comments/1vxfpdk/thoughts_on_eurusd/","source_type":"community_heat","published_at":"2026-08-28","freshness_role":"public_EURUSD_and_Warsh_discussion_wording_not_used_for_fact_or_direction","reliable":false}
+      ],
+      "decision": {"novelty_gate":"pass_refresh","decision_gate":"selected_refresh","duplicate_of":["HR-20260824-01"],"refresh_signals":{"fact_delta":true,"search_delta":true,"example_delta":false,"window_delta":true},"reopen_trigger":"Stop the post-speech frame after 24–48 hours, an official correction, a formal policy decision, or a new verified calculation question. Any later update requires a new qualified refresh gate.","rationale":"The completed keynote is a new verifiable fact relative to the pre-speech package; the public wording has shifted to after-speech EURUSD risk; and the short post-event window is distinct. The only permitted output is a refresh of the existing EURUSD fixed-risk article, with no policy, rate or price prediction."}
+    },
+    "HR-20260829-02": {
+      "sources": [
+        {"publisher":"U.S. Bureau of Economic Analysis","url":"https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026","source_type":"official_statistics_release","published_at":"2026-08-26","freshness_role":"official_July_PCE_result_inside_recent_window","reliable":true},
+        {"publisher":"Reuters","url":"https://www.investing.com/news/economy-news/dollar-near-eightday-high-as-us-data-lifts-fed-hike-bets-4878113","source_type":"reliable_news_reprint","published_at":"2026-08-27","freshness_role":"independent_current_PCE_context","reliable":true},
+        {"publisher":"BabyPips","url":"https://www.babypips.com/analysis/headline-sticky-core-pce-steady-gdp-fed-tightening-2026-08-27","source_type":"public_discussion_analysis","published_at":"2026-08-27","freshness_role":"current_macro_discussion_not_used_for_fact_or_direction","reliable":false}
+      ],
+      "decision": {"novelty_gate":"fail","decision_gate":"observation_no_verified_retail_calculation_query","duplicate_of":["HR-20260828-04"],"refresh_signals":{"fact_delta":false,"search_delta":false,"example_delta":false,"window_delta":false},"reopen_trigger":"A public English question tied to the published PCE number that explicitly asks for a non-directional pip-value, fixed-risk or position-size calculation with readable inputs.","rationale":"Facts remain cross-verified, but the discoverable journey is macro interpretation and direction-first rather than calculator use. The calculator bridge hard gate fails, so no playbook or content package is created."}
+    },
+    "HR-20260829-03": {
+      "sources": [
+        {"publisher":"U.S. Bureau of Labor Statistics","url":"https://www.bls.gov/schedule/news_release/empsit.htm","source_type":"official_release_schedule","published_at":"2026-08-29","freshness_role":"official_September_4_2026_Employment_Situation_clock","reliable":true},
+        {"publisher":"ForexFactory","url":"https://www.forexfactory.com/calendar","source_type":"public_calendar_heat","published_at":"2026-08-29","freshness_role":"public_calendar_discovery_only_not_used_to_confirm_release_time","reliable":false}
+      ],
+      "decision": {"novelty_gate":"fail","decision_gate":"observation_only_window_delta_and_missing_second_reliable_source","duplicate_of":["HR-20260810-01"],"refresh_signals":{"fact_delta":false,"search_delta":false,"example_delta":false,"window_delta":true},"reopen_trigger":"Published employment data with a second independent reliable report and a verified public non-directional risk-calculation query that differs materially from the prior payroll package.","rationale":"The official schedule is inside seven days but a calendar advance alone is not a qualifying refresh, and the second reliable source plus distinct retail calculation path are absent."}
+    },
+    "HR-20260829-04": {
+      "sources": [
+        {"publisher":"Topstep","url":"https://help.topstep.com/en/articles/11748475-dynamic-live-risk-expansion","source_type":"official_product_rule","published_at":"2026-07-17","freshness_role":"dated_rule_page_but_outside_72_hours_and_without_new_version","reliable":true},
+        {"publisher":"Reddit r/propfirm","url":"https://www.reddit.com/r/propfirm/comments/1w0mhf1/best_prop_firms_according_to_reddit/","source_type":"community_heat","published_at":"2026-08-28","freshness_role":"ongoing_drawdown_rule_discussion_not_used_to_confirm_a_rule_change","reliable":false}
+      ],
+      "decision": {"novelty_gate":"fail","decision_gate":"observation_no_new_dated_rule_change","duplicate_of":["HR-20260820-04"],"refresh_signals":{"fact_delta":false,"search_delta":false,"example_delta":false,"window_delta":false},"reopen_trigger":"A dated Topstep rule, help-centre version, product changelog or independently verifiable current impact signal that changes the numeric calculation.","rationale":"Existing dynamic-risk math is useful but not a current event. Ongoing discussion cannot substitute for a new dated official rule and independent impact signal."}
+    }
+  }
+}

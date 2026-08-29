@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-28T22:00:00+08:00",
+  "updated_at": "2026-08-29T22:00:00+08:00",
   "items": {
     "HR-20260824-01": {
       "playbook_status": "ready",
@@ -1568,6 +1568,29 @@
       "content_mainline": "Refresh the existing USDJPY event-risk article into a post-Tokyo-CPI fixed-risk calculation; use a released statistic to surface pip-value arithmetic without forecasting policy or price.",
       "body_material": ["Japan Statistics Bureau August 28 Tokyo CPI result", "Reuters 1.8% versus 1.7% consensus report", "ForexFactory current-result heat signal", "USD 100 fixed risk at 50/100/200 pips", "same-day expiry gate"],
       "product_bridge": "PipGauge verifies the pair, account-currency pip value and fixed-risk size after the official facts and manual arithmetic; it does not interpret Tokyo CPI or predict USDJPY.",
+      "product_bridge_type": "existing"
+    },
+    "HR-20260829-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-08-30T23:59:00-04:00",
+      "traffic_hook": "The August 28 Jackson Hole keynote is now a completed, cross-reported event: the Kansas City Fed supplies the official event record while AP and Reuters independently report the remarks. That replaces the expired countdown with a short post-speech EUR/USD risk-check query.",
+      "traffic_window": "Refresh from the completed August 28 keynote through the next 24–48 hours, while readers search the speech alongside EUR/USD. Retire all post-speech framing after the window, an official correction, or a later formal policy event; do not recycle it as an evergreen Fed prediction post.",
+      "search_intents": ["after Warsh Jackson Hole EURUSD risk", "Jackson Hole remarks EURUSD position size", "EURUSD position size calculator 50 pip stop", "how many lots EURUSD 100 dollar risk", "EURUSD pip value calculator"],
+      "traffic_angle": "Borrow the verified fact that the keynote is out—not an interpretation of its policy meaning—to answer the calculation a reader can use immediately: with a USD 100 planned loss and an explicitly labelled USD 10-per-pip teaching assumption, how does EUR/USD size change at 25, 50 and 100 pips? The 0.40/0.20/0.10-lot table is the answer; it predicts neither policy nor price direction.",
+      "calculator_bridge": "After the dated facts and the fixed-risk formula, link PipGauge Pip Value to verify the account/pair pip value and Position Size to verify 25/50/100-pip inputs. P&L and Spread Cost can test separately labelled hypothetical costs; the calculators do not interpret the speech or forecast EUR/USD.",
+      "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; EUR/USD in a USD account at an approximate USD 10 per pip per standard lot teaching assumption. A 25/50/100-pip planned stop maps to about 0.40/0.20/0.10 lot before spread, commission, slippage, or gaps.",
+      "distribution_order": ["refresh existing site article HR-20260824-01", "Medium dated post-speech fixed-risk update", "X self-contained fixed-risk thread", "Reddit native process discussion without a first-round link"],
+      "link_placement": "Lead with the fact that the speech is complete, then the formula and three readable sizes. Place one PipGauge verification link after the caveats; do not put a link in the initial Reddit post, and keep the X thread independently readable.",
+      "expiry_condition": "Stop this post-speech frame after the 24–48-hour window, on an official text correction, or when a subsequent formal policy decision or verified new calculation question changes what people need. Any later refresh must pass freshness, double-source, novelty and calculator-bridge gates again.",
+      "editorial_boundary": "Do not predict Warsh's policy, any rate decision, yields, EUR/USD or a market move. Do not call a planned stop a guaranteed fill, do not convert the USD 10 teaching assumption into a live quote, and do not present hypothetical costs as Jackson Hole execution data.",
+      "refresh_target": "HR-20260824-01",
+      "refresh_signals": {"fact_delta": true, "search_delta": true, "example_delta": false, "window_delta": true},
+      "refresh_updates": ["replace all pre-keynote/countdown headline and time language with an already-published-speech frame", "replace the pre-event source panel with the August 28 AP and Reuters fact reports plus the official symposium record", "retain the USD 100 at 25/50/100-pip table but relabel it as a post-speech fixed-risk check", "replace the speech-start expiry with a 24–48-hour post-speech, correction, or formal-policy-event expiry gate"],
+      "content_mainline": "Refresh the existing Jackson Hole/EURUSD fixed-loss article with verifiable post-speech facts and an unchanged non-directional sizing table; do not create another Fed or EUR/USD article.",
+      "body_material": ["Kansas City Fed 2026 symposium record", "AP and Reuters August 28 independent reports", "USD 100 at 25/50/100 pips", "post-speech 24–48-hour expiry", "no-policy/no-price-prediction boundary"],
+      "product_bridge": "PipGauge verifies EUR/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret the speech or forecast a currency move.",
       "product_bridge_type": "existing"
     }
   }

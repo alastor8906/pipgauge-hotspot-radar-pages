@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-08-28T22:06:19+08:00",
-  "latest_scan_date": "2026-08-28",
+  "generated_at": "2026-08-29T22:07:16+08:00",
+  "latest_scan_date": "2026-08-29",
   "available_dates": [
+    "2026-08-29",
     "2026-08-28",
     "2026-08-27",
     "2026-08-26",
@@ -41,8 +42,401 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-08-29",
+      "generated_at": "2026-08-29T22:07:16+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 36,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 1,
+        "observation": 3,
+        "discarded": 1,
+        "total": 5,
+        "selected_average": 96.0,
+        "all_selected_pass_gate": true,
+        "content_ready": 1,
+        "playbook_ready": 1
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-08-29",
+          "candidate_id": "HR-20260829-01",
+          "status": "selected",
+          "topic": "Jackson Hole Remarks Are Out: Refresh EURUSD Fixed-Risk Sizing After the Speech",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 23,
+          "calculator_fit": 24,
+          "evidence_quality": 15,
+          "actionability": 9,
+          "total_score": 96,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "The completed August 28 keynote is independently reported by AP and Reuters with an official event record; it creates a short post-speech refresh window for existing non-directional EURUSD fixed-risk math",
+          "content_status": "review_ready",
+          "content_label": "Jackson Hole 演讲后 EURUSD 固定风险刷新审核包待人工审核",
+          "content_url": "../内容生产/2026-08-29/HR-20260829-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-08-30T23:59:00-04:00",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "refresh",
+            "urgency": "high",
+            "publish_deadline": "2026-08-30T23:59:00-04:00",
+            "traffic_hook": "The August 28 Jackson Hole keynote is now a completed, cross-reported event: the Kansas City Fed supplies the official event record while AP and Reuters independently report the remarks. That replaces the expired countdown with a short post-speech EUR/USD risk-check query.",
+            "traffic_window": "Refresh from the completed August 28 keynote through the next 24–48 hours, while readers search the speech alongside EUR/USD. Retire all post-speech framing after the window, an official correction, or a later formal policy event; do not recycle it as an evergreen Fed prediction post.",
+            "search_intents": [
+              "after Warsh Jackson Hole EURUSD risk",
+              "Jackson Hole remarks EURUSD position size",
+              "EURUSD position size calculator 50 pip stop",
+              "how many lots EURUSD 100 dollar risk",
+              "EURUSD pip value calculator"
+            ],
+            "traffic_angle": "Borrow the verified fact that the keynote is out—not an interpretation of its policy meaning—to answer the calculation a reader can use immediately: with a USD 100 planned loss and an explicitly labelled USD 10-per-pip teaching assumption, how does EUR/USD size change at 25, 50 and 100 pips? The 0.40/0.20/0.10-lot table is the answer; it predicts neither policy nor price direction.",
+            "calculator_bridge": "After the dated facts and the fixed-risk formula, link PipGauge Pip Value to verify the account/pair pip value and Position Size to verify 25/50/100-pip inputs. P&L and Spread Cost can test separately labelled hypothetical costs; the calculators do not interpret the speech or forecast EUR/USD.",
+            "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; EUR/USD in a USD account at an approximate USD 10 per pip per standard lot teaching assumption. A 25/50/100-pip planned stop maps to about 0.40/0.20/0.10 lot before spread, commission, slippage, or gaps.",
+            "distribution_order": [
+              "refresh existing site article HR-20260824-01",
+              "Medium dated post-speech fixed-risk update",
+              "X self-contained fixed-risk thread",
+              "Reddit native process discussion without a first-round link"
+            ],
+            "link_placement": "Lead with the fact that the speech is complete, then the formula and three readable sizes. Place one PipGauge verification link after the caveats; do not put a link in the initial Reddit post, and keep the X thread independently readable.",
+            "expiry_condition": "Stop this post-speech frame after the 24–48-hour window, on an official text correction, or when a subsequent formal policy decision or verified new calculation question changes what people need. Any later refresh must pass freshness, double-source, novelty and calculator-bridge gates again.",
+            "editorial_boundary": "Do not predict Warsh's policy, any rate decision, yields, EUR/USD or a market move. Do not call a planned stop a guaranteed fill, do not convert the USD 10 teaching assumption into a live quote, and do not present hypothetical costs as Jackson Hole execution data.",
+            "refresh_target": "HR-20260824-01",
+            "refresh_signals": {
+              "fact_delta": true,
+              "search_delta": true,
+              "example_delta": false,
+              "window_delta": true
+            },
+            "refresh_updates": [
+              "replace all pre-keynote/countdown headline and time language with an already-published-speech frame",
+              "replace the pre-event source panel with the August 28 AP and Reuters fact reports plus the official symposium record",
+              "retain the USD 100 at 25/50/100-pip table but relabel it as a post-speech fixed-risk check",
+              "replace the speech-start expiry with a 24–48-hour post-speech, correction, or formal-policy-event expiry gate"
+            ],
+            "content_mainline": "Refresh the existing Jackson Hole/EURUSD fixed-loss article with verifiable post-speech facts and an unchanged non-directional sizing table; do not create another Fed or EUR/USD article.",
+            "body_material": [
+              "Kansas City Fed 2026 symposium record",
+              "AP and Reuters August 28 independent reports",
+              "USD 100 at 25/50/100 pips",
+              "post-speech 24–48-hour expiry",
+              "no-policy/no-price-prediction boundary"
+            ],
+            "product_bridge": "PipGauge verifies EUR/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret the speech or forecast a currency move.",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Federal Reserve Bank of Kansas City",
+                "url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/2026/",
+                "source_type": "official_event_record",
+                "published_at": "2026-08-28",
+                "freshness_role": "official_record_of_completed_August_28_Jackson_Hole_keynote",
+                "reliable": true
+              },
+              {
+                "publisher": "AP",
+                "url": "https://apnews.com/article/federal-reserve-warsh-interest-trump-inflation-ab896df808df3a5a3fa8b943ac5f3867",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-28",
+                "freshness_role": "independent_report_of_completed_keynote_and_no_imminent_rate_hike_implication",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.marketscreener.com/news/will-warsh-s-jackson-hole-speech-be-a-course-correction-or-detour-ce7858dfdb8bf62c",
+                "source_type": "reliable_news_reprint",
+                "published_at": "2026-08-28",
+                "freshness_role": "independent_report_of_keynote_and_two_percent_inflation_target_context",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit r/Forex",
+                "url": "https://www.reddit.com/r/Forex/comments/1vxfpdk/thoughts_on_eurusd/",
+                "source_type": "community_heat",
+                "published_at": "2026-08-28",
+                "freshness_role": "public_EURUSD_and_Warsh_discussion_wording_not_used_for_fact_or_direction",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass_refresh",
+              "decision_gate": "selected_refresh",
+              "duplicate_of": [
+                "HR-20260824-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Stop the post-speech frame after 24–48 hours, an official correction, a formal policy decision, or a new verified calculation question. Any later update requires a new qualified refresh gate.",
+              "rationale": "The completed keynote is a new verifiable fact relative to the pre-speech package; the public wording has shifted to after-speech EURUSD risk; and the short post-event window is distinct. The only permitted output is a refresh of the existing EURUSD fixed-risk article, with no policy, rate or price prediction."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-29",
+          "candidate_id": "HR-20260829-02",
+          "status": "observation",
+          "topic": "July PCE Result Still Lacks a Verified Retail Fixed-Risk Query",
+          "primary_site": "PipGauge",
+          "freshness": 23,
+          "traffic_potential": 20,
+          "calculator_fit": 16,
+          "evidence_quality": 15,
+          "actionability": 4,
+          "total_score": 78,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L"
+          ],
+          "reason": "BEA and Reuters remain current, but the visible public journey is macro interpretation and direction-first rather than a concrete retail pip-value or position-size question",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Economic Analysis",
+                "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026",
+                "source_type": "official_statistics_release",
+                "published_at": "2026-08-26",
+                "freshness_role": "official_July_PCE_result_inside_recent_window",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.investing.com/news/economy-news/dollar-near-eightday-high-as-us-data-lifts-fed-hike-bets-4878113",
+                "source_type": "reliable_news_reprint",
+                "published_at": "2026-08-27",
+                "freshness_role": "independent_current_PCE_context",
+                "reliable": true
+              },
+              {
+                "publisher": "BabyPips",
+                "url": "https://www.babypips.com/analysis/headline-sticky-core-pce-steady-gdp-fed-tightening-2026-08-27",
+                "source_type": "public_discussion_analysis",
+                "published_at": "2026-08-27",
+                "freshness_role": "current_macro_discussion_not_used_for_fact_or_direction",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_no_verified_retail_calculation_query",
+              "duplicate_of": [
+                "HR-20260828-04"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": false
+              },
+              "reopen_trigger": "A public English question tied to the published PCE number that explicitly asks for a non-directional pip-value, fixed-risk or position-size calculation with readable inputs.",
+              "rationale": "Facts remain cross-verified, but the discoverable journey is macro interpretation and direction-first rather than calculator use. The calculator bridge hard gate fails, so no playbook or content package is created."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-29",
+          "candidate_id": "HR-20260829-03",
+          "status": "observation",
+          "topic": "August Employment Situation Is Inside Seven Days but Has Only a Calendar Delta",
+          "primary_site": "PipGauge",
+          "freshness": 22,
+          "traffic_potential": 20,
+          "calculator_fit": 21,
+          "evidence_quality": 8,
+          "actionability": 5,
+          "total_score": 76,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Spread Cost"
+          ],
+          "reason": "BLS verifies the September 4 release time, but no second independent reliable current fact source or distinct non-directional calculation query was verified; the prior payroll-risk package already owns generic sizing",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+                "source_type": "official_release_schedule",
+                "published_at": "2026-08-29",
+                "freshness_role": "official_September_4_2026_Employment_Situation_clock",
+                "reliable": true
+              },
+              {
+                "publisher": "ForexFactory",
+                "url": "https://www.forexfactory.com/calendar",
+                "source_type": "public_calendar_heat",
+                "published_at": "2026-08-29",
+                "freshness_role": "public_calendar_discovery_only_not_used_to_confirm_release_time",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_only_window_delta_and_missing_second_reliable_source",
+              "duplicate_of": [
+                "HR-20260810-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Published employment data with a second independent reliable report and a verified public non-directional risk-calculation query that differs materially from the prior payroll package.",
+              "rationale": "The official schedule is inside seven days but a calendar advance alone is not a qualifying refresh, and the second reliable source plus distinct retail calculation path are absent."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-29",
+          "candidate_id": "HR-20260829-04",
+          "status": "observation",
+          "topic": "Topstep Dynamic Live Risk Expansion Has No New Dated Rule Change",
+          "primary_site": "PositionMath",
+          "freshness": 8,
+          "traffic_potential": 16,
+          "calculator_fit": 25,
+          "evidence_quality": 14,
+          "actionability": 5,
+          "total_score": 68,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": false,
+          "calculator_mapping": [
+            "Daily Loss Limit",
+            "Trailing Drawdown",
+            "Prop Firm Calculator"
+          ],
+          "reason": "The official July rules remain accessible and public discussion continues, but no new dated version, formal changelog, or fresh rule-specific traffic event justifies a daily re-run",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Topstep",
+                "url": "https://help.topstep.com/en/articles/11748475-dynamic-live-risk-expansion",
+                "source_type": "official_product_rule",
+                "published_at": "2026-07-17",
+                "freshness_role": "dated_rule_page_but_outside_72_hours_and_without_new_version",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit r/propfirm",
+                "url": "https://www.reddit.com/r/propfirm/comments/1w0mhf1/best_prop_firms_according_to_reddit/",
+                "source_type": "community_heat",
+                "published_at": "2026-08-28",
+                "freshness_role": "ongoing_drawdown_rule_discussion_not_used_to_confirm_a_rule_change",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_no_new_dated_rule_change",
+              "duplicate_of": [
+                "HR-20260820-04"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": false
+              },
+              "reopen_trigger": "A dated Topstep rule, help-centre version, product changelog or independently verifiable current impact signal that changes the numeric calculation.",
+              "rationale": "Existing dynamic-risk math is useful but not a current event. Ongoing discussion cannot substitute for a new dated official rule and independent impact signal."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-29",
+          "candidate_id": "HR-20260829-05",
+          "status": "discarded",
+          "topic": "Directional Jackson Hole EURUSD PCE Payrolls and Prop-Firm Forecast Posts",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 24,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 59,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Price forecasts signals political framing unverified claims and generic market commentary are excluded"
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-08-29T22:00:00+08:00",
+          "source_count": 4,
+          "note": "核验 Kansas City Fed 2026 Jackson Hole 日程、BEA July PCE、BLS September 4 Employment Situation 时钟及 Topstep 动态 Live 风险规则页。"
+        },
+        {
+          "channel": "可靠英文媒体",
+          "status": "complete",
+          "checked_at": "2026-08-29T22:00:00+08:00",
+          "source_count": 3,
+          "note": "核验 AP 与 Reuters 对 8 月 28 日 Jackson Hole 演讲的独立报道，以及 Reuters 的 PCE/FX 语境。"
+        },
+        {
+          "channel": "Reddit / ForexFactory",
+          "status": "complete",
+          "checked_at": "2026-08-29T22:00:00+08:00",
+          "source_count": 2,
+          "note": "核验公开 EUR/USD/Warsh 讨论及 prop-firm drawdown 讨论；只作为热度与措辞，绝不确认事实或方向。"
+        },
+        {
+          "channel": "X / Quora / BabyPips",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-08-29T22:00:00+08:00",
+          "source_count": 1,
+          "note": "可见索引未发现新的、具体且非方向性计算问题；不登录、不操作账号，也不将缺失当作无热度。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-08-29_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-08-29_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-08-29"
+      }
+    },
+    {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -452,7 +846,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -924,7 +1318,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -1269,7 +1663,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -1614,7 +2008,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -2066,7 +2460,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -2479,7 +2873,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -2711,7 +3105,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -3156,7 +3550,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -3531,7 +3925,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -3923,7 +4317,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -4299,7 +4693,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -4623,7 +5017,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -5006,7 +5400,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -5347,7 +5741,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -5722,7 +6116,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -6110,7 +6504,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -6455,7 +6849,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -6783,7 +7177,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -7095,7 +7489,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -7416,7 +7810,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -7777,7 +8171,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -8130,7 +8524,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -8574,7 +8968,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -9083,7 +9477,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -9553,7 +9947,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -10096,7 +10490,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -10368,7 +10762,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -10681,7 +11075,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -11116,7 +11510,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -11630,7 +12024,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -12139,7 +12533,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -12606,7 +13000,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -13019,7 +13413,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -13417,7 +13811,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-08-28T22:06:19+08:00",
+      "generated_at": "2026-08-29T22:07:16+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -13856,10 +14250,10 @@
       }
     }
   ],
-  "scan_date": "2026-08-28",
+  "scan_date": "2026-08-29",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 35,
+    "day": 36,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -13878,144 +14272,16 @@
   },
   "candidates": [
     {
-      "scan_date": "2026-08-28",
-      "candidate_id": "HR-20260828-01",
+      "scan_date": "2026-08-29",
+      "candidate_id": "HR-20260829-01",
       "status": "selected",
-      "topic": "Tokyo Core CPI Beats Forecast: Refresh USDJPY Fixed-Risk Sizing at 159.30",
+      "topic": "Jackson Hole Remarks Are Out: Refresh EURUSD Fixed-Risk Sizing After the Speech",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 22,
-      "calculator_fit": 25,
+      "traffic_potential": 23,
+      "calculator_fit": 24,
       "evidence_quality": 15,
       "actionability": 9,
-      "total_score": 96,
-      "hard_gate": true,
-      "reliable_sources": 2,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Pip Value",
-        "Position Size",
-        "P&L",
-        "Spread Cost"
-      ],
-      "reason": "Japan Statistics Bureau's August 28 Tokyo CPI release and Reuters independently confirm 1.8% core CPI versus 1.7% consensus; ForexFactory and current public FX discussion show a dated USDJPY event query. Four refresh signals support updating HR-20260827-02 without predicting BOJ policy or USDJPY direction",
-      "content_status": "review_ready",
-      "content_label": "东京核心 CPI 结果后 USDJPY 固定风险刷新审核包待人工审核",
-      "content_url": "../内容生产/2026-08-28/HR-20260828-01/index.html",
-      "content_format": "Medium / Reddit / X",
-      "deadline": "2026-08-28T23:59:00+09:00",
-      "traffic_playbook": {
-        "playbook_status": "ready",
-        "execution_mode": "refresh",
-        "urgency": "high",
-        "publish_deadline": "2026-08-28T23:59:00+09:00",
-        "traffic_hook": "Japan's Statistics Bureau released Tokyo's August CPI on August 28, and Reuters reports core CPI at 1.8% versus 1.7% consensus. The live hook is the released result and the immediate USDJPY risk-check query—not a BOJ or yen forecast.",
-        "traffic_window": "Refresh during the August 28 post-release window only. Replace the Tokyo-CPI framing after the same-day window, an official data correction, a BOJ decision, or a different verified USDJPY fact. Do not recycle it as a generic inflation explainer.",
-        "search_intents": [
-          "Tokyo CPI actual USDJPY risk",
-          "Tokyo core CPI 1.8 USDJPY pip value",
-          "USDJPY pip value calculator",
-          "how many lots USDJPY 100 dollar risk"
-        ],
-        "traffic_angle": "Borrow the 1.8% actual versus 1.7% consensus news hook to answer the calculation readers can make now: using a clearly labelled 159.30 teaching conversion input, what is one USDJPY pip worth in a USD account and how does a fixed USD 100 planned loss scale across 50, 100 and 200 pips? The result supplies the timely title and fact card; the table supplies the non-directional answer.",
-        "calculator_bridge": "After the fact card and manual formula, PipGauge Pip Value checks JPY 1,000 divided by 159.30 (about USD 6.28 per standard-lot pip), and Position Size checks the three rounded-down lot sizes. P&L and Spread Cost are only optional, labelled hypothetical stress checks—not assertions about CPI-release execution.",
-        "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; USDJPY 159.30 labelled as a teaching conversion input. One standard-lot pip is about USD 6.28, so 50/100/200-pip planned stops map to about 0.31/0.15/0.07 lot after rounding down and before spread, commission and slippage.",
-        "distribution_order": [
-          "refresh existing site article HR-20260827-02",
-          "Medium dated Tokyo-CPI fixed-risk update",
-          "X self-contained pip-value thread",
-          "Reddit native process discussion without a first-round link"
-        ],
-        "link_placement": "Lead with the released 1.8% / 1.7% fact card, formula and three sizes. Put one PipGauge verification link after the explanation and caveats; do not put a link in the initial Reddit post, and make the X thread understandable without one.",
-        "expiry_condition": "Stop this Tokyo-CPI/159.30 frame after August 28, on a Statistics Bureau correction, a BOJ decision, or another verified fact that changes the calculation question. A later update must pass a separate freshness and novelty gate.",
-        "editorial_boundary": "Do not predict BOJ policy, USDJPY direction, intervention, yields or profitability. 159.30 is a teaching conversion input, not a quote or target. A planned stop is not a guaranteed fill and costs remain labelled assumptions.",
-        "refresh_target": "HR-20260827-02",
-        "refresh_signals": {
-          "fact_delta": true,
-          "search_delta": true,
-          "example_delta": true,
-          "window_delta": true
-        },
-        "refresh_updates": [
-          "replace the August 27 deputy-governor speech hook with the August 28 released Tokyo CPI fact",
-          "replace 159.29 with the explicitly labelled 159.30 teaching conversion input",
-          "replace the fact card and headline with 1.8% actual, 1.7% consensus and revised 1.7% previous",
-          "replace the speech-material expiry with the August 28 data-correction / BOJ-decision gate"
-        ],
-        "content_mainline": "Refresh the existing USDJPY event-risk article into a post-Tokyo-CPI fixed-risk calculation; use a released statistic to surface pip-value arithmetic without forecasting policy or price.",
-        "body_material": [
-          "Japan Statistics Bureau August 28 Tokyo CPI result",
-          "Reuters 1.8% versus 1.7% consensus report",
-          "ForexFactory current-result heat signal",
-          "USD 100 fixed risk at 50/100/200 pips",
-          "same-day expiry gate"
-        ],
-        "product_bridge": "PipGauge verifies the pair, account-currency pip value and fixed-risk size after the official facts and manual arithmetic; it does not interpret Tokyo CPI or predict USDJPY.",
-        "product_bridge_type": "existing"
-      },
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "Japan Statistics Bureau",
-            "url": "https://www.stat.go.jp/data/cpi/1.html?guid=ON",
-            "source_type": "official_statistics_release",
-            "published_at": "2026-08-28",
-            "freshness_role": "official_Tokyo_August_CPI_preliminary_release",
-            "reliable": true
-          },
-          {
-            "publisher": "Reuters",
-            "url": "https://www.marketscreener.com/news/tokyo-core-inflation-accelerates-in-august-nears-boj-target-ce7858dfd981ff21",
-            "source_type": "reliable_news_reprint",
-            "published_at": "2026-08-28",
-            "freshness_role": "independent_report_of_1_8_core_CPI_versus_1_7_consensus_and_revised_1_7_previous",
-            "reliable": true
-          },
-          {
-            "publisher": "ForexFactory",
-            "url": "https://www.forexfactory.com/calendar?day=aug28.2026&event=148675",
-            "source_type": "public_calendar_heat",
-            "published_at": "2026-08-28",
-            "freshness_role": "current_public_actual_1_8_calendar_and_search_wording_not_used_for_fact_adjudication",
-            "reliable": false
-          },
-          {
-            "publisher": "Reddit r/Forexstrategy",
-            "url": "https://www.reddit.com/r/Forexstrategy/comments/1w09c8l/usdjpy_forecast_will_inflation_data_be_enough_to/",
-            "source_type": "community_heat",
-            "published_at": "2026-08-28",
-            "freshness_role": "public_Tokyo_CPI_USDJPY_discussion_signal_not_used_for_facts_or_direction",
-            "reliable": false
-          }
-        ],
-        "decision": {
-          "novelty_gate": "pass_refresh",
-          "decision_gate": "selected_refresh",
-          "duplicate_of": [
-            "HR-20260827-02"
-          ],
-          "refresh_signals": {
-            "fact_delta": true,
-            "search_delta": true,
-            "example_delta": true,
-            "window_delta": true
-          },
-          "reopen_trigger": "Stop the Tokyo-CPI/159.30 frame after the August 28 same-day window, an official statistics correction, a materially different verified USDJPY fact, or a BOJ decision. A further refresh needs a new calculation question and fresh evidence.",
-          "rationale": "The dated official result and Reuters create a new fact; the traffic query changes from a deputy-governor speech to the released CPI actual; 1.8 versus 1.7 replaces the factual headline and event card; and the post-release window is distinct. The only permitted output is a refresh of the existing USDJPY fixed-risk article, without policy or price prediction."
-        }
-      }
-    },
-    {
-      "scan_date": "2026-08-28",
-      "candidate_id": "HR-20260828-02",
-      "status": "observation",
-      "topic": "Jackson Hole Keynote Day Has No Second Refresh Delta Beyond the Existing Countdown",
-      "primary_site": "PipGauge",
-      "freshness": 25,
-      "traffic_potential": 25,
-      "calculator_fit": 25,
-      "evidence_quality": 15,
-      "actionability": 6,
       "total_score": 96,
       "hard_gate": true,
       "reliable_sources": 3,
@@ -14026,15 +14292,70 @@
         "P&L",
         "Spread Cost"
       ],
-      "reason": "Kansas City Fed Reuters and AP confirm the Aug 28 keynote is current, but the existing package already owns the same pre-keynote EURUSD fixed-risk query table and expiry. Until verified remarks create a different fact and calculation question, the clock alone fails novelty",
+      "reason": "The completed August 28 keynote is independently reported by AP and Reuters with an official event record; it creates a short post-speech refresh window for existing non-directional EURUSD fixed-risk math",
+      "content_status": "review_ready",
+      "content_label": "Jackson Hole 演讲后 EURUSD 固定风险刷新审核包待人工审核",
+      "content_url": "../内容生产/2026-08-29/HR-20260829-01/index.html",
+      "content_format": "Medium / Reddit / X",
+      "deadline": "2026-08-30T23:59:00-04:00",
+      "traffic_playbook": {
+        "playbook_status": "ready",
+        "execution_mode": "refresh",
+        "urgency": "high",
+        "publish_deadline": "2026-08-30T23:59:00-04:00",
+        "traffic_hook": "The August 28 Jackson Hole keynote is now a completed, cross-reported event: the Kansas City Fed supplies the official event record while AP and Reuters independently report the remarks. That replaces the expired countdown with a short post-speech EUR/USD risk-check query.",
+        "traffic_window": "Refresh from the completed August 28 keynote through the next 24–48 hours, while readers search the speech alongside EUR/USD. Retire all post-speech framing after the window, an official correction, or a later formal policy event; do not recycle it as an evergreen Fed prediction post.",
+        "search_intents": [
+          "after Warsh Jackson Hole EURUSD risk",
+          "Jackson Hole remarks EURUSD position size",
+          "EURUSD position size calculator 50 pip stop",
+          "how many lots EURUSD 100 dollar risk",
+          "EURUSD pip value calculator"
+        ],
+        "traffic_angle": "Borrow the verified fact that the keynote is out—not an interpretation of its policy meaning—to answer the calculation a reader can use immediately: with a USD 100 planned loss and an explicitly labelled USD 10-per-pip teaching assumption, how does EUR/USD size change at 25, 50 and 100 pips? The 0.40/0.20/0.10-lot table is the answer; it predicts neither policy nor price direction.",
+        "calculator_bridge": "After the dated facts and the fixed-risk formula, link PipGauge Pip Value to verify the account/pair pip value and Position Size to verify 25/50/100-pip inputs. P&L and Spread Cost can test separately labelled hypothetical costs; the calculators do not interpret the speech or forecast EUR/USD.",
+        "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; EUR/USD in a USD account at an approximate USD 10 per pip per standard lot teaching assumption. A 25/50/100-pip planned stop maps to about 0.40/0.20/0.10 lot before spread, commission, slippage, or gaps.",
+        "distribution_order": [
+          "refresh existing site article HR-20260824-01",
+          "Medium dated post-speech fixed-risk update",
+          "X self-contained fixed-risk thread",
+          "Reddit native process discussion without a first-round link"
+        ],
+        "link_placement": "Lead with the fact that the speech is complete, then the formula and three readable sizes. Place one PipGauge verification link after the caveats; do not put a link in the initial Reddit post, and keep the X thread independently readable.",
+        "expiry_condition": "Stop this post-speech frame after the 24–48-hour window, on an official text correction, or when a subsequent formal policy decision or verified new calculation question changes what people need. Any later refresh must pass freshness, double-source, novelty and calculator-bridge gates again.",
+        "editorial_boundary": "Do not predict Warsh's policy, any rate decision, yields, EUR/USD or a market move. Do not call a planned stop a guaranteed fill, do not convert the USD 10 teaching assumption into a live quote, and do not present hypothetical costs as Jackson Hole execution data.",
+        "refresh_target": "HR-20260824-01",
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "refresh_updates": [
+          "replace all pre-keynote/countdown headline and time language with an already-published-speech frame",
+          "replace the pre-event source panel with the August 28 AP and Reuters fact reports plus the official symposium record",
+          "retain the USD 100 at 25/50/100-pip table but relabel it as a post-speech fixed-risk check",
+          "replace the speech-start expiry with a 24–48-hour post-speech, correction, or formal-policy-event expiry gate"
+        ],
+        "content_mainline": "Refresh the existing Jackson Hole/EURUSD fixed-loss article with verifiable post-speech facts and an unchanged non-directional sizing table; do not create another Fed or EUR/USD article.",
+        "body_material": [
+          "Kansas City Fed 2026 symposium record",
+          "AP and Reuters August 28 independent reports",
+          "USD 100 at 25/50/100 pips",
+          "post-speech 24–48-hour expiry",
+          "no-policy/no-price-prediction boundary"
+        ],
+        "product_bridge": "PipGauge verifies EUR/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret the speech or forecast a currency move.",
+        "product_bridge_type": "existing"
+      },
       "scan_audit": {
         "sources": [
           {
             "publisher": "Federal Reserve Bank of Kansas City",
             "url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/2026/",
-            "source_type": "official_event_agenda",
+            "source_type": "official_event_record",
             "published_at": "2026-08-28",
-            "freshness_role": "official_current_August_28_keynote_agenda",
+            "freshness_role": "official_record_of_completed_August_28_Jackson_Hole_keynote",
             "reliable": true
           },
           {
@@ -14042,110 +14363,52 @@
             "url": "https://apnews.com/article/federal-reserve-warsh-interest-trump-inflation-ab896df808df3a5a3fa8b943ac5f3867",
             "source_type": "reliable_news",
             "published_at": "2026-08-28",
-            "freshness_role": "independent_current_attention_context",
+            "freshness_role": "independent_report_of_completed_keynote_and_no_imminent_rate_hike_implication",
             "reliable": true
           },
           {
             "publisher": "Reuters",
-            "url": "https://www.marketscreener.com/news/dollar-flat-near-one-week-high-as-investors-await-warsh-s-jackson-hole-debut-ce7858dfd88df022",
+            "url": "https://www.marketscreener.com/news/will-warsh-s-jackson-hole-speech-be-a-course-correction-or-detour-ce7858dfdb8bf62c",
             "source_type": "reliable_news_reprint",
             "published_at": "2026-08-28",
-            "freshness_role": "independent_current_event_context",
+            "freshness_role": "independent_report_of_keynote_and_two_percent_inflation_target_context",
             "reliable": true
+          },
+          {
+            "publisher": "Reddit r/Forex",
+            "url": "https://www.reddit.com/r/Forex/comments/1vxfpdk/thoughts_on_eurusd/",
+            "source_type": "community_heat",
+            "published_at": "2026-08-28",
+            "freshness_role": "public_EURUSD_and_Warsh_discussion_wording_not_used_for_fact_or_direction",
+            "reliable": false
           }
         ],
         "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_duplicate_countdown",
+          "novelty_gate": "pass_refresh",
+          "decision_gate": "selected_refresh",
           "duplicate_of": [
             "HR-20260824-01"
           ],
           "refresh_signals": {
-            "fact_delta": false,
-            "search_delta": false,
+            "fact_delta": true,
+            "search_delta": true,
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "Official remarks or a transcript that creates a verifiable new non-directional calculation question distinct from the existing EURUSD fixed-risk table.",
-          "rationale": "The official clock and attention are real but already owned by the current Jackson Hole package. Before a new verified fact arrives, advancing the clock is only one refresh signal and no duplicate playbook or package is permitted."
+          "reopen_trigger": "Stop the post-speech frame after 24–48 hours, an official correction, a formal policy decision, or a new verified calculation question. Any later update requires a new qualified refresh gate.",
+          "rationale": "The completed keynote is a new verifiable fact relative to the pre-speech package; the public wording has shifted to after-speech EURUSD risk; and the short post-event window is distinct. The only permitted output is a refresh of the existing EURUSD fixed-risk article, with no policy, rate or price prediction."
         }
       }
     },
     {
-      "scan_date": "2026-08-28",
-      "candidate_id": "HR-20260828-03",
+      "scan_date": "2026-08-29",
+      "candidate_id": "HR-20260829-02",
       "status": "observation",
-      "topic": "NVIDIA Result-Day Exposure Topic Has No New Non-Directional Calculation Delta",
-      "primary_site": "PositionMath",
-      "freshness": 24,
-      "traffic_potential": 20,
-      "calculator_fit": 22,
-      "evidence_quality": 15,
-      "actionability": 5,
-      "total_score": 86,
-      "hard_gate": true,
-      "reliable_sources": 3,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Position Size",
-        "Portfolio Heat",
-        "P&L",
-        "Stop Loss/Take Profit"
-      ],
-      "reason": "NVIDIA AP and Axios remain verifiable inside 72 hours, but HR-20260827-01 already covers the released result and reported 7% move. No new official fact, current distinct query or non-duplicative readable example was found",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "NVIDIA",
-            "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx",
-            "source_type": "official_company_results",
-            "published_at": "2026-08-26",
-            "freshness_role": "official_results_still_inside_72_hours",
-            "reliable": true
-          },
-          {
-            "publisher": "AP",
-            "url": "https://apnews.com/article/nvidia-artificial-intelligence-earnings-dc8d556e709b50915cca9217a60b1991",
-            "source_type": "reliable_news",
-            "published_at": "2026-08-26",
-            "freshness_role": "independent_results_confirmation",
-            "reliable": true
-          },
-          {
-            "publisher": "Axios",
-            "url": "https://www.axios.com/2026/08/27/nvidia-ai-earnings-stock",
-            "source_type": "reliable_news",
-            "published_at": "2026-08-27",
-            "freshness_role": "reported_7_percent_result_day_move_already_used_by_prior_refresh",
-            "reliable": true
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_duplicate_result_window",
-          "duplicate_of": [
-            "HR-20260827-01"
-          ],
-          "refresh_signals": {
-            "fact_delta": false,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": true
-          },
-          "reopen_trigger": "A new official correction, another verified company fact, or a current non-directional exposure query that needs materially different numbers from the 7-percent result-day table.",
-          "rationale": "The existing result-day package already uses the official result and reported 7-percent move. The remaining freshness window cannot become a second same-structure article without a second qualified refresh signal."
-        }
-      }
-    },
-    {
-      "scan_date": "2026-08-28",
-      "candidate_id": "HR-20260828-04",
-      "status": "observation",
-      "topic": "July PCE Result Remains a Macro Discussion Rather Than a Retail Calculation Journey",
+      "topic": "July PCE Result Still Lacks a Verified Retail Fixed-Risk Query",
       "primary_site": "PipGauge",
       "freshness": 23,
-      "traffic_potential": 18,
-      "calculator_fit": 18,
+      "traffic_potential": 20,
+      "calculator_fit": 16,
       "evidence_quality": 15,
       "actionability": 4,
       "total_score": 78,
@@ -14157,7 +14420,7 @@
         "Position Size",
         "P&L"
       ],
-      "reason": "BEA and Reuters confirm the published PCE result, but the current public material remains macro or directional. No concrete non-directional retail pip-value fixed-risk or position-size query and no natural calculator bridge were verified",
+      "reason": "BEA and Reuters remain current, but the visible public journey is macro interpretation and direction-first rather than a concrete retail pip-value or position-size question",
       "scan_audit": {
         "sources": [
           {
@@ -14165,7 +14428,7 @@
             "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026",
             "source_type": "official_statistics_release",
             "published_at": "2026-08-26",
-            "freshness_role": "official_July_PCE_result",
+            "freshness_role": "official_July_PCE_result_inside_recent_window",
             "reliable": true
           },
           {
@@ -14181,7 +14444,7 @@
             "url": "https://www.babypips.com/analysis/headline-sticky-core-pce-steady-gdp-fed-tightening-2026-08-27",
             "source_type": "public_discussion_analysis",
             "published_at": "2026-08-27",
-            "freshness_role": "current_macro_discussion_not_used_for_direction_or_facts",
+            "freshness_role": "current_macro_discussion_not_used_for_fact_or_direction",
             "reliable": false
           }
         ],
@@ -14189,7 +14452,7 @@
           "novelty_gate": "fail",
           "decision_gate": "observation_no_verified_retail_calculation_query",
           "duplicate_of": [
-            "HR-20260827-04"
+            "HR-20260828-04"
           ],
           "refresh_signals": {
             "fact_delta": false,
@@ -14197,71 +14460,185 @@
             "example_delta": false,
             "window_delta": false
           },
-          "reopen_trigger": "A current public English question tied to the released PCE number that explicitly requests a non-directional EURUSD/USD pip-value, fixed-risk, or position-size calculation with readable inputs.",
-          "rationale": "Facts and discussion are present but the public journey remains macro interpretation and direction-first. The calculator-fit hard gate fails, so no traffic playbook or content package is allowed."
+          "reopen_trigger": "A public English question tied to the published PCE number that explicitly asks for a non-directional pip-value, fixed-risk or position-size calculation with readable inputs.",
+          "rationale": "Facts remain cross-verified, but the discoverable journey is macro interpretation and direction-first rather than calculator use. The calculator bridge hard gate fails, so no playbook or content package is created."
         }
       }
     },
     {
-      "scan_date": "2026-08-28",
-      "candidate_id": "HR-20260828-05",
+      "scan_date": "2026-08-29",
+      "candidate_id": "HR-20260829-03",
+      "status": "observation",
+      "topic": "August Employment Situation Is Inside Seven Days but Has Only a Calendar Delta",
+      "primary_site": "PipGauge",
+      "freshness": 22,
+      "traffic_potential": 20,
+      "calculator_fit": 21,
+      "evidence_quality": 8,
+      "actionability": 5,
+      "total_score": 76,
+      "hard_gate": false,
+      "reliable_sources": 1,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Pip Value",
+        "Position Size",
+        "Spread Cost"
+      ],
+      "reason": "BLS verifies the September 4 release time, but no second independent reliable current fact source or distinct non-directional calculation query was verified; the prior payroll-risk package already owns generic sizing",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "U.S. Bureau of Labor Statistics",
+            "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+            "source_type": "official_release_schedule",
+            "published_at": "2026-08-29",
+            "freshness_role": "official_September_4_2026_Employment_Situation_clock",
+            "reliable": true
+          },
+          {
+            "publisher": "ForexFactory",
+            "url": "https://www.forexfactory.com/calendar",
+            "source_type": "public_calendar_heat",
+            "published_at": "2026-08-29",
+            "freshness_role": "public_calendar_discovery_only_not_used_to_confirm_release_time",
+            "reliable": false
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "observation_only_window_delta_and_missing_second_reliable_source",
+          "duplicate_of": [
+            "HR-20260810-01"
+          ],
+          "refresh_signals": {
+            "fact_delta": false,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": true
+          },
+          "reopen_trigger": "Published employment data with a second independent reliable report and a verified public non-directional risk-calculation query that differs materially from the prior payroll package.",
+          "rationale": "The official schedule is inside seven days but a calendar advance alone is not a qualifying refresh, and the second reliable source plus distinct retail calculation path are absent."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-08-29",
+      "candidate_id": "HR-20260829-04",
+      "status": "observation",
+      "topic": "Topstep Dynamic Live Risk Expansion Has No New Dated Rule Change",
+      "primary_site": "PositionMath",
+      "freshness": 8,
+      "traffic_potential": 16,
+      "calculator_fit": 25,
+      "evidence_quality": 14,
+      "actionability": 5,
+      "total_score": 68,
+      "hard_gate": false,
+      "reliable_sources": 1,
+      "fresh_signal": false,
+      "calculator_mapping": [
+        "Daily Loss Limit",
+        "Trailing Drawdown",
+        "Prop Firm Calculator"
+      ],
+      "reason": "The official July rules remain accessible and public discussion continues, but no new dated version, formal changelog, or fresh rule-specific traffic event justifies a daily re-run",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "Topstep",
+            "url": "https://help.topstep.com/en/articles/11748475-dynamic-live-risk-expansion",
+            "source_type": "official_product_rule",
+            "published_at": "2026-07-17",
+            "freshness_role": "dated_rule_page_but_outside_72_hours_and_without_new_version",
+            "reliable": true
+          },
+          {
+            "publisher": "Reddit r/propfirm",
+            "url": "https://www.reddit.com/r/propfirm/comments/1w0mhf1/best_prop_firms_according_to_reddit/",
+            "source_type": "community_heat",
+            "published_at": "2026-08-28",
+            "freshness_role": "ongoing_drawdown_rule_discussion_not_used_to_confirm_a_rule_change",
+            "reliable": false
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "observation_no_new_dated_rule_change",
+          "duplicate_of": [
+            "HR-20260820-04"
+          ],
+          "refresh_signals": {
+            "fact_delta": false,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": false
+          },
+          "reopen_trigger": "A dated Topstep rule, help-centre version, product changelog or independently verifiable current impact signal that changes the numeric calculation.",
+          "rationale": "Existing dynamic-risk math is useful but not a current event. Ongoing discussion cannot substitute for a new dated official rule and independent impact signal."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-08-29",
+      "candidate_id": "HR-20260829-05",
       "status": "discarded",
-      "topic": "Directional USDJPY Tokyo CPI Jackson Hole and NVIDIA Forecast Calls",
+      "topic": "Directional Jackson Hole EURUSD PCE Payrolls and Prop-Firm Forecast Posts",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 25,
+      "traffic_potential": 24,
       "calculator_fit": 3,
       "evidence_quality": 5,
       "actionability": 2,
-      "total_score": 60,
+      "total_score": 59,
       "hard_gate": false,
       "reliable_sources": 0,
       "fresh_signal": true,
       "calculator_mapping": [
         "P&L"
       ],
-      "reason": "Price targets, central-bank or stock direction calls, options speculation, political framing and generic market forecasts are excluded; no playbook or content package is created"
+      "reason": "Price forecasts signals political framing unverified claims and generic market commentary are excluded"
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-08-28T22:00:00+08:00",
+      "checked_at": "2026-08-29T22:00:00+08:00",
       "source_count": 4,
-      "note": "核验日本统计局东京 CPI 结果、Kansas City Fed Jackson Hole 日程、NVIDIA Q2 FY27 结果及 BEA PCE 发布。"
+      "note": "核验 Kansas City Fed 2026 Jackson Hole 日程、BEA July PCE、BLS September 4 Employment Situation 时钟及 Topstep 动态 Live 风险规则页。"
     },
     {
-      "channel": "可靠英文媒体 / 独立日历",
+      "channel": "可靠英文媒体",
       "status": "complete",
-      "checked_at": "2026-08-28T22:00:00+08:00",
-      "source_count": 6,
-      "note": "核验 Reuters 东京 CPI 与 FX/PCE 语境、AP Jackson Hole、Axios/NVIDIA 结果后语境，以及 ForexFactory 当期公开日历。"
+      "checked_at": "2026-08-29T22:00:00+08:00",
+      "source_count": 3,
+      "note": "核验 AP 与 Reuters 对 8 月 28 日 Jackson Hole 演讲的独立报道，以及 Reuters 的 PCE/FX 语境。"
     },
     {
       "channel": "Reddit / ForexFactory",
       "status": "complete",
-      "checked_at": "2026-08-28T22:00:00+08:00",
-      "source_count": 3,
-      "note": "核验 ForexFactory Tokyo Core CPI 实际值日历和公开 USDJPY/Jackson Hole 讨论索引；社区材料只用于热度与措辞，不确认事实或方向。"
+      "checked_at": "2026-08-29T22:00:00+08:00",
+      "source_count": 2,
+      "note": "核验公开 EUR/USD/Warsh 讨论及 prop-firm drawdown 讨论；只作为热度与措辞，绝不确认事实或方向。"
     },
     {
       "channel": "X / Quora / BabyPips",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-08-28T22:00:00+08:00",
+      "checked_at": "2026-08-29T22:00:00+08:00",
       "source_count": 1,
-      "note": "X、Quora 与 BabyPips 的可见索引未出现新的、具体且非方向性计算需求；不登录或操作账号，且不把缺失视作无热度。"
+      "note": "可见索引未发现新的、具体且非方向性计算问题；不登录、不操作账号，也不将缺失当作无热度。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-08-28_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-08-28_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-08-29_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-08-29_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
     "traffic_playbooks": "../热点流量打法.json",
-    "content_root": "../内容生产/2026-08-28"
+    "content_root": "../内容生产/2026-08-29"
   },
   "radar_model": "v2-content-first",
   "editorial_policy": {
