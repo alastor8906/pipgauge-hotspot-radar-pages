@@ -1,0 +1,167 @@
+{
+  "scan_date": "2026-08-30",
+  "generated_at": "2026-08-30T22:02:11+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-08-30T22:02:11+08:00",
+      "source_count": 4,
+      "note": "核验 Broadcom FY2026 Q3 发布时点、BLS 9 月 Employment Situation 日程、Kansas City Fed Jackson Hole 记录和 RBA／Topstep 慢变项的重开状态。"
+    },
+    {
+      "channel": "可靠英文媒体",
+      "status": "complete",
+      "checked_at": "2026-08-30T22:02:11+08:00",
+      "source_count": 3,
+      "note": "核验 Reuters 对 Broadcom 与就业报告本周焦点的当期报道，以及 AP 对本周就业报告的独立报道。"
+    },
+    {
+      "channel": "Reddit / ForexFactory",
+      "status": "complete",
+      "checked_at": "2026-08-30T22:02:11+08:00",
+      "source_count": 2,
+      "note": "核验公开 AVGO 周度业绩讨论及 9 月 4 日 NFP 日历；仅作热度与措辞，不确认事实、报价或方向。"
+    },
+    {
+      "channel": "X / Quora / BabyPips",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-08-30T22:02:11+08:00",
+      "source_count": 1,
+      "note": "公开索引没有提供新的、具体且非方向性的计算问题；不登录或操作账号，也不将缺失当作无热度。"
+    }
+  ],
+  "candidates": {
+    "HR-20260830-01": {
+      "sources": [
+        {
+          "publisher": "Broadcom",
+          "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announce-third-quarter-fiscal-year-2026-financial",
+          "source_type": "official_earnings_schedule",
+          "published_at": "2026-08-03",
+          "freshness_role": "official_September_2_2026_after_market_results_and_1700_ET_call_time_inside_upcoming_seven_day_window",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.investing.com/news/economy-news/jobs-report-broadcom-results-pose-next-hurdles-for-stock-market-rally-4882045",
+          "source_type": "reliable_news_reprint",
+          "published_at": "2026-08-28",
+          "freshness_role": "current_independent_reporting_that_Broadcom_results_are_a_market_focus_this_week",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/wallstreetbets",
+          "url": "https://www.reddit.com/r/wallstreetbets/comments/1w0upg4/weekly_earnings_thread_831_94/",
+          "source_type": "community_heat",
+          "published_at": "2026-08-28",
+          "freshness_role": "current_public_AVGO_earnings_and_position_discussion_wording_not_used_for_fact_or_direction",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass_new",
+        "decision_gate": "selected_new",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "reopen_trigger": "Replace this pre-results package only when Broadcom publishes the results, corrects the release details, or a subsequent independently verified event creates a different non-directional calculation question.",
+        "rationale": "Broadcom's confirmed September 2 earnings are a distinct company, date, search object and exposure example from the prior NVIDIA packages. Official timing plus current Reuters coverage pass the two-reliable-source gate; current public earnings discussion supports traffic wording. The content may calculate transparent hypothetical share exposure only and must not state a direction, expected move or trading action."
+      }
+    },
+    "HR-20260830-02": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/schedule/2026/09_sched_list.htm",
+          "source_type": "official_release_schedule",
+          "published_at": "2026-08-30",
+          "freshness_role": "official_September_4_2026_Employment_Situation_clock",
+          "reliable": true
+        },
+        {
+          "publisher": "AP",
+          "url": "https://apnews.com/article/f49df397e86954626d93d7f15f400b55",
+          "source_type": "reliable_news",
+          "published_at": "2026-08-26",
+          "freshness_role": "independent_current_week_ahead_employment_report_context",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.investing.com/news/economy-news/jobs-report-broadcom-results-pose-next-hurdles-for-stock-market-rally-4882045",
+          "source_type": "reliable_news_reprint",
+          "published_at": "2026-08-28",
+          "freshness_role": "independent_current_week_ahead_employment_report_context",
+          "reliable": true
+        },
+        {
+          "publisher": "ForexFactory",
+          "url": "https://www.forexfactory.com/calendar?day=sep4.2026&event=146911",
+          "source_type": "public_calendar_heat",
+          "published_at": "2026-08-30",
+          "freshness_role": "current_public_calendar_discovery_only_not_used_to_confirm_release_time_or_forecast",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_no_distinct_verified_retail_calculation_journey",
+        "duplicate_of": ["HR-20260810-01"],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "Published August employment data or a public English question that explicitly asks for a non-directional pip-value, fixed-risk or position-size calculation with inputs materially different from HR-20260810-01.",
+        "rationale": "The release date and reliable context are now strong, but the current public journey remains macro interpretation, forecasts and calendar checking. The scan does not manufacture a new retail calculation intent from the date alone, so the calculator-bridge hard gate fails and no playbook is created."
+      }
+    },
+    "HR-20260830-03": {
+      "sources": [
+        {
+          "publisher": "Federal Reserve Bank of Kansas City",
+          "url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/2026/",
+          "source_type": "official_event_record",
+          "published_at": "2026-08-28",
+          "freshness_role": "official_record_of_completed_August_28_keynote",
+          "reliable": true
+        },
+        {
+          "publisher": "AP",
+          "url": "https://apnews.com/article/federal-reserve-warsh-interest-trump-inflation-ab896df808df3a5a3fa8b943ac5f3867",
+          "source_type": "reliable_news",
+          "published_at": "2026-08-28",
+          "freshness_role": "independent_report_of_completed_keynote",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.marketscreener.com/news/will-warsh-s-jackson-hole-speech-be-a-course-correction-or-detour-ce7858dfdb8bf62c",
+          "source_type": "reliable_news_reprint",
+          "published_at": "2026-08-28",
+          "freshness_role": "independent_report_of_completed_keynote",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_duplicate_without_second_refresh_delta",
+        "duplicate_of": ["HR-20260829-01"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "A later official policy decision, correction, materially different current query, or new verifiable number that changes both the title and the calculation example.",
+        "rationale": "The sources are still valid, but the prior day's post-speech refresh already owns the same completed-event wording, fixed-risk table and expiry. Passing time does not create a second refresh signal."
+      }
+    }
+  }
+}

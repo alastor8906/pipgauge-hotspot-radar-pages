@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Broadcom Reports Wednesday: Size a Non-Directional AVGO Gap-Risk Check · 内容审核包</title>
+  <link rel="stylesheet" href="../../package.css">
+</head>
+<body>
+  <header class="package-header">
+    <a href="../../../radar/">返回热点雷达</a>
+    <span>HR-20260830-01</span>
+  </header>
+  <main class="package-shell">
+    <section class="package-hero">
+      <div class="package-kicker"><span>PositionMath</span><span>2026-08-30</span></div>
+      <h1>Broadcom Reports Wednesday: Size a Non-Directional AVGO Gap-Risk Check</h1>
+      <p>当期审核快照：利用 Broadcom 已确认的 9 月 2 日盘后业绩时点，演示 USD 10,000 账户中 AVGO 的非方向性名义暴露与假设跳空算术；不预测业绩、股价、波动幅度或交易方向。</p>
+      <div class="state-grid">
+        <div><span>流水线状态</span><strong>三平台草稿已生成</strong></div>
+        <div><span>当前停点</span><strong>等待人工审核</strong></div>
+        <div><span>时效处理</span><strong>仅在 Broadcom 2026 年 9 月 2 日盘后公布业绩前使用；公布、官方更正或新可核验事实出现后必须重写或停用。</strong></div>
+      </div>
+    </section>
+
+    <section class="platform-strip" aria-label="平台草稿快速入口"><button type="button" class="platform-tab" data-target="medium">Medium<span>草稿完成</span></button><button type="button" class="platform-tab" data-target="reddit">Reddit<span>草稿完成</span></button><button type="button" class="platform-tab" data-target="x">X<span>草稿完成</span></button></section>
+
+    <section class="review-layout">
+      <aside>
+        <p>审核顺序</p>
+        <nav class="doc-tabs"><button type="button" class="doc-tab is-active" data-target="facts">事实与论点</button><button type="button" class="doc-tab" data-target="medium">Medium</button><button type="button" class="doc-tab" data-target="reddit">Reddit</button><button type="button" class="doc-tab" data-target="x">X</button><button type="button" class="doc-tab" data-target="review">审核清单</button></nav>
+        <div class="stop-note"><strong>不会自动发布</strong><span>审核通过后，才由人决定是否复制到平台。</span></div>
+      </aside>
+      <div class="documents"><article id="facts" class="document-panel is-active">
+      <header><span>editorial brief</span><strong>已整理</strong></header>
+      <div class="markdown-body"><h1>事实与论点底稿</h1>
+<h2>可核验事实</h2>
+<ul>
+<li><a href="https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announce-third-quarter-fiscal-year-2026-financial" target="_blank" rel="noopener">Broadcom 的投资者关系公告</a> 于 2026 年 8 月 3 日宣布：公司计划在 <strong>2026 年 9 月 2 日周三收盘后</strong>公布 FY2026 第三财季财务结果，并在 <strong>14:00 PT／17:00 ET</strong> 举行电话会。该公告是发布时间与时点的唯一一手依据。</li>
+<li><a href="https://www.investing.com/news/economy-news/jobs-report-broadcom-results-pose-next-hurdles-for-stock-market-rally-4882045" target="_blank" rel="noopener">Reuters 当期报道</a>（8 月 28 日）将 Broadcom 周三业绩列为本周市场关注之一。它只用于独立确认时效和关注度；不把报道中的市场叙事或任何利率解释转换为 AVGO 方向判断。</li>
+<li><a href="https://www.reddit.com/r/wallstreetbets/comments/1w0upg4/weekly_earnings_thread_831_94/" target="_blank" rel="noopener">公开 r/wallstreetbets 周度业绩讨论</a> 在 8 月 28–30 日出现 AVGO earnings、持仓和期权方向争论。该材料只证明公开讨论措辞和流量入口；不确认业绩事实、不采纳 calls/puts，也不作为任何市场预测依据。</li>
+</ul>
+<h2>新颖性与执行判断</h2>
+<p>这是 <code>new</code>，不是对 NVIDIA 内容的同构复制。Broadcom 是不同公司、不同已确认发布日期、不同搜索对象和不同账户暴露示例；同样使用 Position Size / P&amp;L / Portfolio Heat 不构成重复。</p>
+<ul>
+<li><code>fact_delta=true</code>：Broadcom 已确认的 9 月 2 日业绩／电话会。</li>
+<li><code>search_delta=true</code>：当前查询主体是 <code>Broadcom / AVGO earnings</code>，不是 NVIDIA 业绩后复盘。</li>
+<li><code>example_delta=true</code>：使用 USD 4,000 的 AVGO 教学名义暴露和 5%／10%／15% 对称压力表。</li>
+<li><code>window_delta=true</code>：仅至 9 月 2 日收盘后的结果公布窗口。</li>
+</ul>
+<h2>数字骨架与边界</h2>
+<p>以下均为教学输入，不是现价、目标价、预期跳空、隐含波动率或概率。假设 USD 10,000 账户、<strong>10 股</strong> AVGO、每股 <strong>USD 400</strong> 教学锚点，未计费用、税费、点差或任何隔夜执行差异：</p>
+<div class="table-wrap"><table><thead><tr><th>Symmetric hypothetical absolute gap</th><th>Dollar change per USD 400 share</th><th>10-share P&amp;L change</th><th>Share exposure as % of USD 10,000 account</th></tr></thead><tbody><tr><td>5%</td><td>USD 20</td><td>USD 200</td><td>2%</td></tr><tr><td>10%</td><td>USD 40</td><td>USD 400</td><td>4%</td></tr><tr><td>15%</td><td>USD 60</td><td>USD 600</td><td>6%</td></tr></tbody></table></div>
+<p>名义暴露为 10 × USD 400 = <strong>USD 4,000</strong>，即账户的 40%。另一个完全不同的问题是普通计划仓位：若最大计划价格风险为 USD 100、计划止损距离为 USD 20，则 USD 100 ÷ USD 20 = <strong>5 股</strong>，未计费用。该止损算术不保证业绩后跳空的实际离场价格。</p>
+<p>所有平台草稿均为 <code>awaiting_human_review</code>。Reddit 首轮不放链接；X 主线程可独立阅读；不得发布、评论、私信或操作任何社交账号。</p></div>
+    </article><article id="medium" class="document-panel">
+      <header><span>long-form draft</span><strong>待人工审核</strong></header>
+      <div class="markdown-body"><h1>Broadcom Reports Wednesday: A Simple AVGO Exposure Check Before the Results</h1>
+<p>Broadcom has scheduled its fiscal third-quarter 2026 results for <strong>Wednesday, September 2, after the market closes</strong>, followed by a 5:00 p.m. ET conference call. Reuters has listed the report among this week’s market focal points. Those facts create a short-lived reason to check exposure before the event—not a reason to predict the results or AVGO’s next price.</p>
+<p>The useful question is smaller and more practical: if an account already has an AVGO position, how much dollar exposure is actually sitting in it if the price changes materially after results?</p>
+<h2>Start with the exposure, not a forecast</h2>
+<p>Use a deliberately simple teaching example:</p>
+<ul>
+<li>Account: USD 10,000</li>
+<li>Position: 10 AVGO shares</li>
+<li>Teaching price anchor: USD 400 per share</li>
+<li>Notional exposure: USD 4,000</li>
+</ul>
+<p>That is 40% of the account in one stock. The USD 400 input is only a round teaching anchor. It is not a live quote, target, estimate, or view of where AVGO should trade.</p>
+<p>Here is what three <strong>symmetric hypothetical</strong> absolute changes would mean for that 10-share position:</p>
+<div class="table-wrap"><table><thead><tr><th>Absolute change</th><th>Change per share</th><th>Change for 10 shares</th></tr></thead><tbody><tr><td>5%</td><td>USD 20</td><td>USD 200</td></tr><tr><td>10%</td><td>USD 40</td><td>USD 400</td></tr><tr><td>15%</td><td>USD 60</td><td>USD 600</td></tr></tbody></table></div>
+<p>These are arithmetic stress checks. They do not say Broadcom will move 5%, 10%, or 15%; they do not assign odds, choose up versus down, or interpret the earnings release.</p>
+<h2>A planned stop size is a different calculation</h2>
+<p>Suppose the maximum planned price risk is USD 100 and the planned stop distance is USD 20 per share. The basic position-size math is:</p>
+<p><code>USD 100 planned risk ÷ USD 20 stop distance = 5 shares</code></p>
+<p>That can be a useful planned-trade input, but it does not turn into a guaranteed loss cap after an overnight gap. A stop price and the price at which an order could actually fill are not the same thing.</p>
+<h2>Where a calculator helps</h2>
+<p>After doing the plain arithmetic, use PositionMath to verify the inputs:</p>
+<ol>
+<li><strong>Position Size</strong> for the USD 100 / USD 20 planned-stop example.</li>
+<li><strong>P&amp;L</strong> for the separately labelled 5%, 10%, and 15% hypothetical changes.</li>
+<li><strong>Portfolio Heat</strong> to see how USD 4,000 of one-stock exposure sits inside a USD 10,000 account.</li>
+</ol>
+<p>The calculation does not answer whether AVGO is a buy, sell, call, put, or hold. It simply makes the account impact visible before a scheduled corporate event.</p>
+<h2>Time boundary</h2>
+<p>This pre-results framing expires when Broadcom publishes the results, if Broadcom corrects the announced timing, or if a later verified fact changes the question. Any post-results piece would need new facts and a new review; it should not reuse this stress table as an implied earnings forecast.</p>
+<p>Sources: <a href="https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announce-third-quarter-fiscal-year-2026-financial" target="_blank" rel="noopener">Broadcom investor-relations announcement</a>; <a href="https://www.investing.com/news/economy-news/jobs-report-broadcom-results-pose-next-hurdles-for-stock-market-rally-4882045" target="_blank" rel="noopener">Reuters week-ahead coverage</a>.</p>
+<p><em>Draft status: awaiting_human_review. Not investment advice; hypothetical figures exclude fees, taxes, spreads and execution effects.</em></p></div>
+    </article><article id="reddit" class="document-panel">
+      <header><span>native discussion draft</span><strong>待人工审核</strong></header>
+      <div class="markdown-body"><h1>Reddit 首轮原生讨论草稿（不放链接）</h1>
+<p><strong>Title:</strong> Broadcom reports Wednesday: what does your AVGO position actually mean in dollars?</p>
+<p>Broadcom has results scheduled for Wednesday after the close. I am not trying to call the outcome—just checking the part that is easy to miss when the thread turns into calls versus puts: the dollar exposure already in the account.</p>
+<p>A round example: a USD 10,000 account holding 10 shares at a USD 400 teaching anchor has USD 4,000 of one-stock exposure. If the share price changed by 5%, 10%, or 15% in either direction, the position’s dollar change would be USD 200, USD 400, or USD 600.</p>
+<p>Those are not AVGO move forecasts. They are symmetric stress checks so the concentration is visible before a scheduled report.</p>
+<p>Separately, a planned trade with USD 100 maximum price risk and a USD 20 stop distance sizes to five shares before fees. That is useful sizing math, but it does not mean a stop guarantees an exit at that loss after a gap.</p>
+<p>How do you separate normal stop-based sizing from event-gap exposure when you already hold a position through earnings?</p>
+<p><em>No link in the first post. Draft only; awaiting_human_review. No calls, puts, price targets, or trade instruction.</em></p></div>
+    </article><article id="x" class="document-panel">
+      <header><span>short thread draft</span><strong>待人工审核</strong></header>
+      <div class="markdown-body"><h1>X 主线程草稿（可独立阅读）</h1>
+<p><strong>Post 1/4</strong></p>
+<p>Broadcom is scheduled to report after Wednesday’s close. Before turning that into a price call, there is a simpler question: what does an AVGO position mean in dollars if the price moves materially after results?</p>
+<p><strong>Post 2/4</strong></p>
+<p>Teaching example, not a live quote or forecast:</p>
+<p>USD 10,000 account 10 AVGO shares USD 400 per-share anchor</p>
+<p>That is USD 4,000 of one-stock exposure: 40% of the account.</p>
+<p><strong>Post 3/4</strong></p>
+<p>Under symmetric hypothetical absolute changes:</p>
+<p>5% = USD 200 on 10 shares 10% = USD 400 15% = USD 600</p>
+<p>Those are stress checks—not expected moves, probabilities, or a view on earnings direction.</p>
+<p><strong>Post 4/4</strong></p>
+<p>Normal planned sizing is different from gap exposure:</p>
+<p>USD 100 planned risk ÷ USD 20 planned stop = 5 shares before fees.</p>
+<p>A stop can guide normal sizing, but it does not guarantee an overnight gap exit. Check the arithmetic first; don’t turn a scheduled report into a prediction.</p>
+<p><em>Draft status: awaiting_human_review. No investment advice or trade instruction.</em></p></div>
+    </article><article id="review" class="document-panel">
+      <header><span>human gate</span><strong>必须完成</strong></header>
+      <div class="markdown-body"><h1>人工审核清单</h1>
+<h2>发布前必须复核</h2>
+<ul>
+<li>[ ] 重新打开 Broadcom 的投资者关系公告，确认结果仍是 2026-09-02 收盘后、电话会仍为 17:00 ET。</li>
+<li>[ ] 重新打开 Reuters 当期报道，确认没有把任何市场叙事改写为 Broadcom、AVGO 或利率方向结论。</li>
+<li>[ ] 如保留 Reddit 热度背景，仅将它表述为公开讨论，不引用、复述或放大 calls／puts／价格目标。</li>
+<li>[ ] 将所有 <code>USD 400</code>、5%／10%／15% 明确保留为教学输入与对称假设；不得改成现价、预计变幅、目标价或概率。</li>
+<li>[ ] 核算：10 × USD 400 = USD 4,000；USD 4,000 ÷ USD 10,000 = 40%；10 股下的 5%／10%／15% 分别为 USD 200／400／600。</li>
+<li>[ ] 核算：USD 100 ÷ USD 20 = 5 股；同时保留“止损不能保证跳空成交”的限制。</li>
+<li>[ ] Medium 必须保持“scheduled / has scheduled”等未过期时态；结果公布后不得直接发布此版本。</li>
+<li>[ ] Reddit 首轮不含任何链接、跟踪参数或硬性产品导流。</li>
+<li>[ ] X 四帖在不点击链接的情况下完整可读，且不含方向预测。</li>
+<li>[ ] 如要加入 PositionMath 链接，只能在 Medium 给出算术与边界之后放一个验证入口；不得声称计算器预测结果或保证执行。</li>
+<li>[ ] 三个平台的状态保持 <code>awaiting_human_review</code>；审核通过前不发布、不评论、不私信、不操作账号。</li>
+</ul>
+<h2>停用条件</h2>
+<p>Broadcom 发布 FY2026 Q3 结果、官方更正公布时点、或出现需要独立核验的后续事实时，停止使用本期“业绩前”标题和草稿。是否做结果后更新须重新通过新鲜度、双来源、流量路径、计算器桥接和新颖性门槛。</p></div>
+    </article></div>
+    </section>
+  </main>
+  <script>
+    const activate = (id) => {
+      document.querySelectorAll('.doc-tab').forEach((button) => button.classList.toggle('is-active', button.dataset.target === id));
+      document.querySelectorAll('.document-panel').forEach((panel) => panel.classList.toggle('is-active', panel.id === id));
+      history.replaceState(null, '', '#' + id);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    document.querySelectorAll('[data-target]').forEach((button) => button.addEventListener('click', () => activate(button.dataset.target)));
+    const initial = location.hash.slice(1);
+    if (initial && document.getElementById(initial)) activate(initial);
+  </script>
+</body>
+</html>
