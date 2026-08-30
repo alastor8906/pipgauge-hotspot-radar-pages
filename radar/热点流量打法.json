@@ -1592,6 +1592,51 @@
       "body_material": ["Kansas City Fed 2026 symposium record", "AP and Reuters August 28 independent reports", "USD 100 at 25/50/100 pips", "post-speech 24–48-hour expiry", "no-policy/no-price-prediction boundary"],
       "product_bridge": "PipGauge verifies EUR/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret the speech or forecast a currency move.",
       "product_bridge_type": "existing"
+    },
+    "HR-20260830-01": {
+      "playbook_status": "ready",
+      "execution_mode": "new",
+      "urgency": "high",
+      "publish_deadline": "2026-09-02T16:00:00-04:00",
+      "traffic_hook": "Broadcom has officially scheduled FY2026 Q3 results for Wednesday, September 2 after the close, and Reuters identifies the report as a current market focus. A current public earnings thread shows that AVGO exposure is already being discussed; the hook is the confirmed event clock, never a claim about the outcome.",
+      "traffic_window": "Publish or stage the non-directional exposure check from August 30 through the September 2 regular-session close. Retire the pre-results framing once Broadcom releases results, corrects the timing, or a later verified fact changes the calculation question.",
+      "search_intents": [
+        "Broadcom earnings September 2 position risk",
+        "AVGO earnings position size calculator",
+        "AVGO gap loss calculator",
+        "how many AVGO shares for 100 dollar risk",
+        "portfolio heat before earnings"
+      ],
+      "traffic_angle": "Borrow the confirmed Wednesday-after-close Broadcom earnings hook to answer a specific, non-directional question: in a USD 10,000 account, what does holding 10 AVGO shares at a clearly labelled USD 400 teaching anchor mean under 5%, 10% and 15% symmetric absolute-gap stress checks? The readable USD 200, USD 400 and USD 600 outcomes show concentration; none is an expected move or price forecast.",
+      "calculator_bridge": "First show USD 4,000 notional exposure from 10 shares at the USD 400 teaching anchor, then calculate the three symmetric stress rows. PositionMath P&L verifies the hypothetical dollar changes, Portfolio Heat places USD 4,000 within the USD 10,000 account, and Position Size verifies the separate USD 100 divided by USD 20 planned-stop example of five shares. The calculators do not forecast earnings or guarantee a stop fill after a gap.",
+      "example_scenario": "USD 10,000 account; 10 AVGO shares at a clearly labelled USD 400 teaching anchor, for USD 4,000 notional exposure. Symmetric hypothetical 5%/10%/15% absolute gaps equal USD 200/USD 400/USD 600. Separately, USD 100 planned loss divided by a USD 20 planned stop distance equals five shares before fees; stop-based sizing does not cap a gap exit.",
+      "distribution_order": [
+        "new site article for HR-20260830-01",
+        "Medium dated pre-results exposure check",
+        "X self-contained AVGO exposure thread",
+        "Reddit native process discussion without a first-round link"
+      ],
+      "link_placement": "Give the confirmed time, USD 4,000 exposure arithmetic and stop-versus-gap distinction before any product link. Put one PositionMath verification link after the calculation and caveats; do not put a link in the initial Reddit post, and keep the X thread independently readable.",
+      "expiry_condition": "Stop using the pre-results frame immediately when Broadcom publishes the results, corrects its announced time, or a new verified post-results fact changes the risk question. Do not recycle the 5%/10%/15% illustrative grid as an implied forecast or evergreen earnings claim.",
+      "editorial_boundary": "Do not predict Broadcom revenue, guidance, valuation, AVGO price, options-implied move, or market direction; do not recommend shares, calls or puts. USD 400 and 5%/10%/15% are labelled teaching inputs, not live quotes, estimates or probabilities. A planned stop is not a guaranteed gap exit and hypothetical P&L is not execution evidence.",
+      "refresh_target": null,
+      "refresh_signals": {
+        "fact_delta": true,
+        "search_delta": true,
+        "example_delta": true,
+        "window_delta": true
+      },
+      "refresh_updates": [],
+      "content_mainline": "Create one Broadcom-specific pre-results exposure check that turns the confirmed September 2 event into readable account-concentration arithmetic without forecasting AVGO or duplicating the NVIDIA package.",
+      "body_material": [
+        "Broadcom official September 2 after-market results and 5pm ET call",
+        "Reuters current week-ahead market-focus report",
+        "current public AVGO earnings discussion as heat only",
+        "USD 10,000 account with 10 shares at USD 400 under 5%/10%/15% symmetric stress checks",
+        "expiry on results, correction or new verified fact"
+      ],
+      "product_bridge": "PositionMath verifies hypothetical share P&L, portfolio heat and planned position size after the fact-led exposure explanation; it does not interpret Broadcom's results or forecast AVGO.",
+      "product_bridge_type": "existing"
     }
   }
 }

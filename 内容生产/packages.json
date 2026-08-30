@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T14:09:02.706Z",
+  "generated_at": "2026-08-30T14:08:02.443Z",
   "endpoint": "multi_platform_drafts_awaiting_human_review",
   "supported_platforms": [
     "medium",
@@ -7,6 +7,41 @@
     "x"
   ],
   "packages": [
+    {
+      "candidate_id": "HR-20260830-01",
+      "scan_date": "2026-08-30",
+      "primary_site": "PositionMath",
+      "topic": "Broadcom Reports Wednesday: Size a Non-Directional AVGO Gap-Risk Check",
+      "package_summary": "当期审核快照：利用 Broadcom 已确认的 9 月 2 日盘后业绩时点，演示 USD 10,000 账户中 AVGO 的非方向性名义暴露与假设跳空算术；不预测业绩、股价、波动幅度或交易方向。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "pre_results_window",
+      "time_status_label": "仅在 Broadcom 2026 年 9 月 2 日盘后公布业绩前使用；公布、官方更正或新可核验事实出现后必须重写或停用。",
+      "url": "../内容生产/2026-08-30/HR-20260830-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-30/HR-20260830-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-30/HR-20260830-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-30/HR-20260830-01/index.html#x"
+        }
+      ]
+    },
     {
       "candidate_id": "HR-20260829-01",
       "scan_date": "2026-08-29",

@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-08-29T22:07:16+08:00",
-  "latest_scan_date": "2026-08-29",
+  "generated_at": "2026-08-30T22:06:08+08:00",
+  "latest_scan_date": "2026-08-30",
   "available_dates": [
+    "2026-08-30",
     "2026-08-29",
     "2026-08-28",
     "2026-08-27",
@@ -42,8 +43,346 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-08-30",
+      "generated_at": "2026-08-30T22:06:08+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 37,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 1,
+        "observation": 2,
+        "discarded": 1,
+        "total": 4,
+        "selected_average": 98.0,
+        "all_selected_pass_gate": true,
+        "content_ready": 1,
+        "playbook_ready": 1
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-08-30",
+          "candidate_id": "HR-20260830-01",
+          "status": "selected",
+          "topic": "Broadcom Reports Wednesday: Size a Non-Directional AVGO Gap-Risk Check",
+          "primary_site": "PositionMath",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 23,
+          "evidence_quality": 15,
+          "actionability": 10,
+          "total_score": 98,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Position Size",
+            "Portfolio Heat",
+            "P&L",
+            "Stop Loss/Take Profit"
+          ],
+          "reason": "Broadcom confirms September 2 after-market results, Reuters identifies the report as a current market focus, and a current public earnings thread demonstrates active AVGO discussion. This is a distinct company/event rather than a duplicate of the NVIDIA package; the only content angle is transparent exposure arithmetic, never an earnings or price forecast",
+          "content_status": "review_ready",
+          "content_label": "Broadcom 业绩前 AVGO 非方向性暴露审核包待人工审核",
+          "content_url": "../内容生产/2026-08-30/HR-20260830-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-09-02T16:00:00-04:00",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "new",
+            "urgency": "high",
+            "publish_deadline": "2026-09-02T16:00:00-04:00",
+            "traffic_hook": "Broadcom has officially scheduled FY2026 Q3 results for Wednesday, September 2 after the close, and Reuters identifies the report as a current market focus. A current public earnings thread shows that AVGO exposure is already being discussed; the hook is the confirmed event clock, never a claim about the outcome.",
+            "traffic_window": "Publish or stage the non-directional exposure check from August 30 through the September 2 regular-session close. Retire the pre-results framing once Broadcom releases results, corrects the timing, or a later verified fact changes the calculation question.",
+            "search_intents": [
+              "Broadcom earnings September 2 position risk",
+              "AVGO earnings position size calculator",
+              "AVGO gap loss calculator",
+              "how many AVGO shares for 100 dollar risk",
+              "portfolio heat before earnings"
+            ],
+            "traffic_angle": "Borrow the confirmed Wednesday-after-close Broadcom earnings hook to answer a specific, non-directional question: in a USD 10,000 account, what does holding 10 AVGO shares at a clearly labelled USD 400 teaching anchor mean under 5%, 10% and 15% symmetric absolute-gap stress checks? The readable USD 200, USD 400 and USD 600 outcomes show concentration; none is an expected move or price forecast.",
+            "calculator_bridge": "First show USD 4,000 notional exposure from 10 shares at the USD 400 teaching anchor, then calculate the three symmetric stress rows. PositionMath P&L verifies the hypothetical dollar changes, Portfolio Heat places USD 4,000 within the USD 10,000 account, and Position Size verifies the separate USD 100 divided by USD 20 planned-stop example of five shares. The calculators do not forecast earnings or guarantee a stop fill after a gap.",
+            "example_scenario": "USD 10,000 account; 10 AVGO shares at a clearly labelled USD 400 teaching anchor, for USD 4,000 notional exposure. Symmetric hypothetical 5%/10%/15% absolute gaps equal USD 200/USD 400/USD 600. Separately, USD 100 planned loss divided by a USD 20 planned stop distance equals five shares before fees; stop-based sizing does not cap a gap exit.",
+            "distribution_order": [
+              "new site article for HR-20260830-01",
+              "Medium dated pre-results exposure check",
+              "X self-contained AVGO exposure thread",
+              "Reddit native process discussion without a first-round link"
+            ],
+            "link_placement": "Give the confirmed time, USD 4,000 exposure arithmetic and stop-versus-gap distinction before any product link. Put one PositionMath verification link after the calculation and caveats; do not put a link in the initial Reddit post, and keep the X thread independently readable.",
+            "expiry_condition": "Stop using the pre-results frame immediately when Broadcom publishes the results, corrects its announced time, or a new verified post-results fact changes the risk question. Do not recycle the 5%/10%/15% illustrative grid as an implied forecast or evergreen earnings claim.",
+            "editorial_boundary": "Do not predict Broadcom revenue, guidance, valuation, AVGO price, options-implied move, or market direction; do not recommend shares, calls or puts. USD 400 and 5%/10%/15% are labelled teaching inputs, not live quotes, estimates or probabilities. A planned stop is not a guaranteed gap exit and hypothetical P&L is not execution evidence.",
+            "refresh_target": null,
+            "refresh_signals": {
+              "fact_delta": true,
+              "search_delta": true,
+              "example_delta": true,
+              "window_delta": true
+            },
+            "refresh_updates": [],
+            "content_mainline": "Create one Broadcom-specific pre-results exposure check that turns the confirmed September 2 event into readable account-concentration arithmetic without forecasting AVGO or duplicating the NVIDIA package.",
+            "body_material": [
+              "Broadcom official September 2 after-market results and 5pm ET call",
+              "Reuters current week-ahead market-focus report",
+              "current public AVGO earnings discussion as heat only",
+              "USD 10,000 account with 10 shares at USD 400 under 5%/10%/15% symmetric stress checks",
+              "expiry on results, correction or new verified fact"
+            ],
+            "product_bridge": "PositionMath verifies hypothetical share P&L, portfolio heat and planned position size after the fact-led exposure explanation; it does not interpret Broadcom's results or forecast AVGO.",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Broadcom",
+                "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announce-third-quarter-fiscal-year-2026-financial",
+                "source_type": "official_earnings_schedule",
+                "published_at": "2026-08-03",
+                "freshness_role": "official_September_2_2026_after_market_results_and_1700_ET_call_time_inside_upcoming_seven_day_window",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.investing.com/news/economy-news/jobs-report-broadcom-results-pose-next-hurdles-for-stock-market-rally-4882045",
+                "source_type": "reliable_news_reprint",
+                "published_at": "2026-08-28",
+                "freshness_role": "current_independent_reporting_that_Broadcom_results_are_a_market_focus_this_week",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit r/wallstreetbets",
+                "url": "https://www.reddit.com/r/wallstreetbets/comments/1w0upg4/weekly_earnings_thread_831_94/",
+                "source_type": "community_heat",
+                "published_at": "2026-08-28",
+                "freshness_role": "current_public_AVGO_earnings_and_position_discussion_wording_not_used_for_fact_or_direction",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass_new",
+              "decision_gate": "selected_new",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": true,
+                "window_delta": true
+              },
+              "reopen_trigger": "Replace this pre-results package only when Broadcom publishes the results, corrects the release details, or a subsequent independently verified event creates a different non-directional calculation question.",
+              "rationale": "Broadcom's confirmed September 2 earnings are a distinct company, date, search object and exposure example from the prior NVIDIA packages. Official timing plus current Reuters coverage pass the two-reliable-source gate; current public earnings discussion supports traffic wording. The content may calculate transparent hypothetical share exposure only and must not state a direction, expected move or trading action."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-30",
+          "candidate_id": "HR-20260830-02",
+          "status": "observation",
+          "topic": "August Employment Report Is Four Days Away but Still Lacks a Distinct Retail Fixed-Risk Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 23,
+          "calculator_fit": 20,
+          "evidence_quality": 15,
+          "actionability": 5,
+          "total_score": 88,
+          "hard_gate": false,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Spread Cost"
+          ],
+          "reason": "BLS, AP and Reuters independently confirm the September 4 employment release and public calendars make the event visible, but this scan did not verify a distinct current non-directional retail calculation question beyond the generic NFP risk package HR-20260810-01; no playbook is justified",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/schedule/2026/09_sched_list.htm",
+                "source_type": "official_release_schedule",
+                "published_at": "2026-08-30",
+                "freshness_role": "official_September_4_2026_Employment_Situation_clock",
+                "reliable": true
+              },
+              {
+                "publisher": "AP",
+                "url": "https://apnews.com/article/f49df397e86954626d93d7f15f400b55",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-26",
+                "freshness_role": "independent_current_week_ahead_employment_report_context",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.investing.com/news/economy-news/jobs-report-broadcom-results-pose-next-hurdles-for-stock-market-rally-4882045",
+                "source_type": "reliable_news_reprint",
+                "published_at": "2026-08-28",
+                "freshness_role": "independent_current_week_ahead_employment_report_context",
+                "reliable": true
+              },
+              {
+                "publisher": "ForexFactory",
+                "url": "https://www.forexfactory.com/calendar?day=sep4.2026&event=146911",
+                "source_type": "public_calendar_heat",
+                "published_at": "2026-08-30",
+                "freshness_role": "current_public_calendar_discovery_only_not_used_to_confirm_release_time_or_forecast",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_no_distinct_verified_retail_calculation_journey",
+              "duplicate_of": [
+                "HR-20260810-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Published August employment data or a public English question that explicitly asks for a non-directional pip-value, fixed-risk or position-size calculation with inputs materially different from HR-20260810-01.",
+              "rationale": "The release date and reliable context are now strong, but the current public journey remains macro interpretation, forecasts and calendar checking. The scan does not manufacture a new retail calculation intent from the date alone, so the calculator-bridge hard gate fails and no playbook is created."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-30",
+          "candidate_id": "HR-20260830-03",
+          "status": "observation",
+          "topic": "Jackson Hole Post-Speech EURUSD Frame Has Expired Without a Second Refresh Delta",
+          "primary_site": "PipGauge",
+          "freshness": 22,
+          "traffic_potential": 18,
+          "calculator_fit": 24,
+          "evidence_quality": 15,
+          "actionability": 5,
+          "total_score": 84,
+          "hard_gate": false,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "The official symposium record, AP and Reuters remain verifiable inside the freshness window, but HR-20260829-01 already owns the 24-48 hour post-speech fact, search wording and USD100 table. Calendar decay alone is not a new traffic path",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Federal Reserve Bank of Kansas City",
+                "url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/2026/",
+                "source_type": "official_event_record",
+                "published_at": "2026-08-28",
+                "freshness_role": "official_record_of_completed_August_28_keynote",
+                "reliable": true
+              },
+              {
+                "publisher": "AP",
+                "url": "https://apnews.com/article/federal-reserve-warsh-interest-trump-inflation-ab896df808df3a5a3fa8b943ac5f3867",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-28",
+                "freshness_role": "independent_report_of_completed_keynote",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.marketscreener.com/news/will-warsh-s-jackson-hole-speech-be-a-course-correction-or-detour-ce7858dfdb8bf62c",
+                "source_type": "reliable_news_reprint",
+                "published_at": "2026-08-28",
+                "freshness_role": "independent_report_of_completed_keynote",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_duplicate_without_second_refresh_delta",
+              "duplicate_of": [
+                "HR-20260829-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": false
+              },
+              "reopen_trigger": "A later official policy decision, correction, materially different current query, or new verifiable number that changes both the title and the calculation example.",
+              "rationale": "The sources are still valid, but the prior day's post-speech refresh already owns the same completed-event wording, fixed-risk table and expiry. Passing time does not create a second refresh signal."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-30",
+          "candidate_id": "HR-20260830-04",
+          "status": "discarded",
+          "topic": "Directional AVGO Payrolls Jackson Hole and PCE Forecast Posts",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 60,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Price targets, calls or puts, interest-rate or FX direction forecasts, political framing, generic market commentary and unverified execution claims are excluded; no playbook or content package is created"
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-08-30T22:02:11+08:00",
+          "source_count": 4,
+          "note": "核验 Broadcom FY2026 Q3 发布时点、BLS 9 月 Employment Situation 日程、Kansas City Fed Jackson Hole 记录和 RBA／Topstep 慢变项的重开状态。"
+        },
+        {
+          "channel": "可靠英文媒体",
+          "status": "complete",
+          "checked_at": "2026-08-30T22:02:11+08:00",
+          "source_count": 3,
+          "note": "核验 Reuters 对 Broadcom 与就业报告本周焦点的当期报道，以及 AP 对本周就业报告的独立报道。"
+        },
+        {
+          "channel": "Reddit / ForexFactory",
+          "status": "complete",
+          "checked_at": "2026-08-30T22:02:11+08:00",
+          "source_count": 2,
+          "note": "核验公开 AVGO 周度业绩讨论及 9 月 4 日 NFP 日历；仅作热度与措辞，不确认事实、报价或方向。"
+        },
+        {
+          "channel": "X / Quora / BabyPips",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-08-30T22:02:11+08:00",
+          "source_count": 1,
+          "note": "公开索引没有提供新的、具体且非方向性的计算问题；不登录或操作账号，也不将缺失当作无热度。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-08-30_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-08-30_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-08-30"
+      }
+    },
+    {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -436,7 +775,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -846,7 +1185,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -1318,7 +1657,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -1663,7 +2002,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -2008,7 +2347,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -2460,7 +2799,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -2873,7 +3212,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -3105,7 +3444,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -3550,7 +3889,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -3925,7 +4264,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -4317,7 +4656,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -4693,7 +5032,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -5017,7 +5356,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -5400,7 +5739,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -5741,7 +6080,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -6116,7 +6455,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -6504,7 +6843,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -6849,7 +7188,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -7177,7 +7516,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -7489,7 +7828,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -7810,7 +8149,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -8171,7 +8510,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -8524,7 +8863,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -8968,7 +9307,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -9477,7 +9816,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -9947,7 +10286,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -10490,7 +10829,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -10762,7 +11101,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -11075,7 +11414,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -11510,7 +11849,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -12024,7 +12363,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -12533,7 +12872,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -13000,7 +13339,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -13413,7 +13752,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -13811,7 +14150,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-08-29T22:07:16+08:00",
+      "generated_at": "2026-08-30T22:06:08+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -14250,10 +14589,10 @@
       }
     }
   ],
-  "scan_date": "2026-08-29",
+  "scan_date": "2026-08-30",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 36,
+    "day": 37,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -14262,28 +14601,215 @@
   },
   "stats": {
     "selected": 1,
-    "observation": 3,
+    "observation": 2,
     "discarded": 1,
-    "total": 5,
-    "selected_average": 96.0,
+    "total": 4,
+    "selected_average": 98.0,
     "all_selected_pass_gate": true,
     "content_ready": 1,
     "playbook_ready": 1
   },
   "candidates": [
     {
-      "scan_date": "2026-08-29",
-      "candidate_id": "HR-20260829-01",
+      "scan_date": "2026-08-30",
+      "candidate_id": "HR-20260830-01",
       "status": "selected",
-      "topic": "Jackson Hole Remarks Are Out: Refresh EURUSD Fixed-Risk Sizing After the Speech",
+      "topic": "Broadcom Reports Wednesday: Size a Non-Directional AVGO Gap-Risk Check",
+      "primary_site": "PositionMath",
+      "freshness": 25,
+      "traffic_potential": 25,
+      "calculator_fit": 23,
+      "evidence_quality": 15,
+      "actionability": 10,
+      "total_score": 98,
+      "hard_gate": true,
+      "reliable_sources": 2,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Position Size",
+        "Portfolio Heat",
+        "P&L",
+        "Stop Loss/Take Profit"
+      ],
+      "reason": "Broadcom confirms September 2 after-market results, Reuters identifies the report as a current market focus, and a current public earnings thread demonstrates active AVGO discussion. This is a distinct company/event rather than a duplicate of the NVIDIA package; the only content angle is transparent exposure arithmetic, never an earnings or price forecast",
+      "content_status": "review_ready",
+      "content_label": "Broadcom 业绩前 AVGO 非方向性暴露审核包待人工审核",
+      "content_url": "../内容生产/2026-08-30/HR-20260830-01/index.html",
+      "content_format": "Medium / Reddit / X",
+      "deadline": "2026-09-02T16:00:00-04:00",
+      "traffic_playbook": {
+        "playbook_status": "ready",
+        "execution_mode": "new",
+        "urgency": "high",
+        "publish_deadline": "2026-09-02T16:00:00-04:00",
+        "traffic_hook": "Broadcom has officially scheduled FY2026 Q3 results for Wednesday, September 2 after the close, and Reuters identifies the report as a current market focus. A current public earnings thread shows that AVGO exposure is already being discussed; the hook is the confirmed event clock, never a claim about the outcome.",
+        "traffic_window": "Publish or stage the non-directional exposure check from August 30 through the September 2 regular-session close. Retire the pre-results framing once Broadcom releases results, corrects the timing, or a later verified fact changes the calculation question.",
+        "search_intents": [
+          "Broadcom earnings September 2 position risk",
+          "AVGO earnings position size calculator",
+          "AVGO gap loss calculator",
+          "how many AVGO shares for 100 dollar risk",
+          "portfolio heat before earnings"
+        ],
+        "traffic_angle": "Borrow the confirmed Wednesday-after-close Broadcom earnings hook to answer a specific, non-directional question: in a USD 10,000 account, what does holding 10 AVGO shares at a clearly labelled USD 400 teaching anchor mean under 5%, 10% and 15% symmetric absolute-gap stress checks? The readable USD 200, USD 400 and USD 600 outcomes show concentration; none is an expected move or price forecast.",
+        "calculator_bridge": "First show USD 4,000 notional exposure from 10 shares at the USD 400 teaching anchor, then calculate the three symmetric stress rows. PositionMath P&L verifies the hypothetical dollar changes, Portfolio Heat places USD 4,000 within the USD 10,000 account, and Position Size verifies the separate USD 100 divided by USD 20 planned-stop example of five shares. The calculators do not forecast earnings or guarantee a stop fill after a gap.",
+        "example_scenario": "USD 10,000 account; 10 AVGO shares at a clearly labelled USD 400 teaching anchor, for USD 4,000 notional exposure. Symmetric hypothetical 5%/10%/15% absolute gaps equal USD 200/USD 400/USD 600. Separately, USD 100 planned loss divided by a USD 20 planned stop distance equals five shares before fees; stop-based sizing does not cap a gap exit.",
+        "distribution_order": [
+          "new site article for HR-20260830-01",
+          "Medium dated pre-results exposure check",
+          "X self-contained AVGO exposure thread",
+          "Reddit native process discussion without a first-round link"
+        ],
+        "link_placement": "Give the confirmed time, USD 4,000 exposure arithmetic and stop-versus-gap distinction before any product link. Put one PositionMath verification link after the calculation and caveats; do not put a link in the initial Reddit post, and keep the X thread independently readable.",
+        "expiry_condition": "Stop using the pre-results frame immediately when Broadcom publishes the results, corrects its announced time, or a new verified post-results fact changes the risk question. Do not recycle the 5%/10%/15% illustrative grid as an implied forecast or evergreen earnings claim.",
+        "editorial_boundary": "Do not predict Broadcom revenue, guidance, valuation, AVGO price, options-implied move, or market direction; do not recommend shares, calls or puts. USD 400 and 5%/10%/15% are labelled teaching inputs, not live quotes, estimates or probabilities. A planned stop is not a guaranteed gap exit and hypothetical P&L is not execution evidence.",
+        "refresh_target": null,
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "refresh_updates": [],
+        "content_mainline": "Create one Broadcom-specific pre-results exposure check that turns the confirmed September 2 event into readable account-concentration arithmetic without forecasting AVGO or duplicating the NVIDIA package.",
+        "body_material": [
+          "Broadcom official September 2 after-market results and 5pm ET call",
+          "Reuters current week-ahead market-focus report",
+          "current public AVGO earnings discussion as heat only",
+          "USD 10,000 account with 10 shares at USD 400 under 5%/10%/15% symmetric stress checks",
+          "expiry on results, correction or new verified fact"
+        ],
+        "product_bridge": "PositionMath verifies hypothetical share P&L, portfolio heat and planned position size after the fact-led exposure explanation; it does not interpret Broadcom's results or forecast AVGO.",
+        "product_bridge_type": "existing"
+      },
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "Broadcom",
+            "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announce-third-quarter-fiscal-year-2026-financial",
+            "source_type": "official_earnings_schedule",
+            "published_at": "2026-08-03",
+            "freshness_role": "official_September_2_2026_after_market_results_and_1700_ET_call_time_inside_upcoming_seven_day_window",
+            "reliable": true
+          },
+          {
+            "publisher": "Reuters",
+            "url": "https://www.investing.com/news/economy-news/jobs-report-broadcom-results-pose-next-hurdles-for-stock-market-rally-4882045",
+            "source_type": "reliable_news_reprint",
+            "published_at": "2026-08-28",
+            "freshness_role": "current_independent_reporting_that_Broadcom_results_are_a_market_focus_this_week",
+            "reliable": true
+          },
+          {
+            "publisher": "Reddit r/wallstreetbets",
+            "url": "https://www.reddit.com/r/wallstreetbets/comments/1w0upg4/weekly_earnings_thread_831_94/",
+            "source_type": "community_heat",
+            "published_at": "2026-08-28",
+            "freshness_role": "current_public_AVGO_earnings_and_position_discussion_wording_not_used_for_fact_or_direction",
+            "reliable": false
+          }
+        ],
+        "decision": {
+          "novelty_gate": "pass_new",
+          "decision_gate": "selected_new",
+          "duplicate_of": [],
+          "refresh_signals": {
+            "fact_delta": true,
+            "search_delta": true,
+            "example_delta": true,
+            "window_delta": true
+          },
+          "reopen_trigger": "Replace this pre-results package only when Broadcom publishes the results, corrects the release details, or a subsequent independently verified event creates a different non-directional calculation question.",
+          "rationale": "Broadcom's confirmed September 2 earnings are a distinct company, date, search object and exposure example from the prior NVIDIA packages. Official timing plus current Reuters coverage pass the two-reliable-source gate; current public earnings discussion supports traffic wording. The content may calculate transparent hypothetical share exposure only and must not state a direction, expected move or trading action."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-08-30",
+      "candidate_id": "HR-20260830-02",
+      "status": "observation",
+      "topic": "August Employment Report Is Four Days Away but Still Lacks a Distinct Retail Fixed-Risk Journey",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 23,
+      "calculator_fit": 20,
+      "evidence_quality": 15,
+      "actionability": 5,
+      "total_score": 88,
+      "hard_gate": false,
+      "reliable_sources": 3,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Pip Value",
+        "Position Size",
+        "Spread Cost"
+      ],
+      "reason": "BLS, AP and Reuters independently confirm the September 4 employment release and public calendars make the event visible, but this scan did not verify a distinct current non-directional retail calculation question beyond the generic NFP risk package HR-20260810-01; no playbook is justified",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "U.S. Bureau of Labor Statistics",
+            "url": "https://www.bls.gov/schedule/2026/09_sched_list.htm",
+            "source_type": "official_release_schedule",
+            "published_at": "2026-08-30",
+            "freshness_role": "official_September_4_2026_Employment_Situation_clock",
+            "reliable": true
+          },
+          {
+            "publisher": "AP",
+            "url": "https://apnews.com/article/f49df397e86954626d93d7f15f400b55",
+            "source_type": "reliable_news",
+            "published_at": "2026-08-26",
+            "freshness_role": "independent_current_week_ahead_employment_report_context",
+            "reliable": true
+          },
+          {
+            "publisher": "Reuters",
+            "url": "https://www.investing.com/news/economy-news/jobs-report-broadcom-results-pose-next-hurdles-for-stock-market-rally-4882045",
+            "source_type": "reliable_news_reprint",
+            "published_at": "2026-08-28",
+            "freshness_role": "independent_current_week_ahead_employment_report_context",
+            "reliable": true
+          },
+          {
+            "publisher": "ForexFactory",
+            "url": "https://www.forexfactory.com/calendar?day=sep4.2026&event=146911",
+            "source_type": "public_calendar_heat",
+            "published_at": "2026-08-30",
+            "freshness_role": "current_public_calendar_discovery_only_not_used_to_confirm_release_time_or_forecast",
+            "reliable": false
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "observation_no_distinct_verified_retail_calculation_journey",
+          "duplicate_of": [
+            "HR-20260810-01"
+          ],
+          "refresh_signals": {
+            "fact_delta": true,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": true
+          },
+          "reopen_trigger": "Published August employment data or a public English question that explicitly asks for a non-directional pip-value, fixed-risk or position-size calculation with inputs materially different from HR-20260810-01.",
+          "rationale": "The release date and reliable context are now strong, but the current public journey remains macro interpretation, forecasts and calendar checking. The scan does not manufacture a new retail calculation intent from the date alone, so the calculator-bridge hard gate fails and no playbook is created."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-08-30",
+      "candidate_id": "HR-20260830-03",
+      "status": "observation",
+      "topic": "Jackson Hole Post-Speech EURUSD Frame Has Expired Without a Second Refresh Delta",
+      "primary_site": "PipGauge",
+      "freshness": 22,
+      "traffic_potential": 18,
       "calculator_fit": 24,
       "evidence_quality": 15,
-      "actionability": 9,
-      "total_score": 96,
-      "hard_gate": true,
+      "actionability": 5,
+      "total_score": 84,
+      "hard_gate": false,
       "reliable_sources": 3,
       "fresh_signal": true,
       "calculator_mapping": [
@@ -14292,62 +14818,7 @@
         "P&L",
         "Spread Cost"
       ],
-      "reason": "The completed August 28 keynote is independently reported by AP and Reuters with an official event record; it creates a short post-speech refresh window for existing non-directional EURUSD fixed-risk math",
-      "content_status": "review_ready",
-      "content_label": "Jackson Hole 演讲后 EURUSD 固定风险刷新审核包待人工审核",
-      "content_url": "../内容生产/2026-08-29/HR-20260829-01/index.html",
-      "content_format": "Medium / Reddit / X",
-      "deadline": "2026-08-30T23:59:00-04:00",
-      "traffic_playbook": {
-        "playbook_status": "ready",
-        "execution_mode": "refresh",
-        "urgency": "high",
-        "publish_deadline": "2026-08-30T23:59:00-04:00",
-        "traffic_hook": "The August 28 Jackson Hole keynote is now a completed, cross-reported event: the Kansas City Fed supplies the official event record while AP and Reuters independently report the remarks. That replaces the expired countdown with a short post-speech EUR/USD risk-check query.",
-        "traffic_window": "Refresh from the completed August 28 keynote through the next 24–48 hours, while readers search the speech alongside EUR/USD. Retire all post-speech framing after the window, an official correction, or a later formal policy event; do not recycle it as an evergreen Fed prediction post.",
-        "search_intents": [
-          "after Warsh Jackson Hole EURUSD risk",
-          "Jackson Hole remarks EURUSD position size",
-          "EURUSD position size calculator 50 pip stop",
-          "how many lots EURUSD 100 dollar risk",
-          "EURUSD pip value calculator"
-        ],
-        "traffic_angle": "Borrow the verified fact that the keynote is out—not an interpretation of its policy meaning—to answer the calculation a reader can use immediately: with a USD 100 planned loss and an explicitly labelled USD 10-per-pip teaching assumption, how does EUR/USD size change at 25, 50 and 100 pips? The 0.40/0.20/0.10-lot table is the answer; it predicts neither policy nor price direction.",
-        "calculator_bridge": "After the dated facts and the fixed-risk formula, link PipGauge Pip Value to verify the account/pair pip value and Position Size to verify 25/50/100-pip inputs. P&L and Spread Cost can test separately labelled hypothetical costs; the calculators do not interpret the speech or forecast EUR/USD.",
-        "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; EUR/USD in a USD account at an approximate USD 10 per pip per standard lot teaching assumption. A 25/50/100-pip planned stop maps to about 0.40/0.20/0.10 lot before spread, commission, slippage, or gaps.",
-        "distribution_order": [
-          "refresh existing site article HR-20260824-01",
-          "Medium dated post-speech fixed-risk update",
-          "X self-contained fixed-risk thread",
-          "Reddit native process discussion without a first-round link"
-        ],
-        "link_placement": "Lead with the fact that the speech is complete, then the formula and three readable sizes. Place one PipGauge verification link after the caveats; do not put a link in the initial Reddit post, and keep the X thread independently readable.",
-        "expiry_condition": "Stop this post-speech frame after the 24–48-hour window, on an official text correction, or when a subsequent formal policy decision or verified new calculation question changes what people need. Any later refresh must pass freshness, double-source, novelty and calculator-bridge gates again.",
-        "editorial_boundary": "Do not predict Warsh's policy, any rate decision, yields, EUR/USD or a market move. Do not call a planned stop a guaranteed fill, do not convert the USD 10 teaching assumption into a live quote, and do not present hypothetical costs as Jackson Hole execution data.",
-        "refresh_target": "HR-20260824-01",
-        "refresh_signals": {
-          "fact_delta": true,
-          "search_delta": true,
-          "example_delta": false,
-          "window_delta": true
-        },
-        "refresh_updates": [
-          "replace all pre-keynote/countdown headline and time language with an already-published-speech frame",
-          "replace the pre-event source panel with the August 28 AP and Reuters fact reports plus the official symposium record",
-          "retain the USD 100 at 25/50/100-pip table but relabel it as a post-speech fixed-risk check",
-          "replace the speech-start expiry with a 24–48-hour post-speech, correction, or formal-policy-event expiry gate"
-        ],
-        "content_mainline": "Refresh the existing Jackson Hole/EURUSD fixed-loss article with verifiable post-speech facts and an unchanged non-directional sizing table; do not create another Fed or EUR/USD article.",
-        "body_material": [
-          "Kansas City Fed 2026 symposium record",
-          "AP and Reuters August 28 independent reports",
-          "USD 100 at 25/50/100 pips",
-          "post-speech 24–48-hour expiry",
-          "no-policy/no-price-prediction boundary"
-        ],
-        "product_bridge": "PipGauge verifies EUR/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret the speech or forecast a currency move.",
-        "product_bridge_type": "existing"
-      },
+      "reason": "The official symposium record, AP and Reuters remain verifiable inside the freshness window, but HR-20260829-01 already owns the 24-48 hour post-speech fact, search wording and USD100 table. Calendar decay alone is not a new traffic path",
       "scan_audit": {
         "sources": [
           {
@@ -14355,7 +14826,7 @@
             "url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/2026/",
             "source_type": "official_event_record",
             "published_at": "2026-08-28",
-            "freshness_role": "official_record_of_completed_August_28_Jackson_Hole_keynote",
+            "freshness_role": "official_record_of_completed_August_28_keynote",
             "reliable": true
           },
           {
@@ -14363,7 +14834,7 @@
             "url": "https://apnews.com/article/federal-reserve-warsh-interest-trump-inflation-ab896df808df3a5a3fa8b943ac5f3867",
             "source_type": "reliable_news",
             "published_at": "2026-08-28",
-            "freshness_role": "independent_report_of_completed_keynote_and_no_imminent_rate_hike_implication",
+            "freshness_role": "independent_report_of_completed_keynote",
             "reliable": true
           },
           {
@@ -14371,88 +14842,15 @@
             "url": "https://www.marketscreener.com/news/will-warsh-s-jackson-hole-speech-be-a-course-correction-or-detour-ce7858dfdb8bf62c",
             "source_type": "reliable_news_reprint",
             "published_at": "2026-08-28",
-            "freshness_role": "independent_report_of_keynote_and_two_percent_inflation_target_context",
+            "freshness_role": "independent_report_of_completed_keynote",
             "reliable": true
-          },
-          {
-            "publisher": "Reddit r/Forex",
-            "url": "https://www.reddit.com/r/Forex/comments/1vxfpdk/thoughts_on_eurusd/",
-            "source_type": "community_heat",
-            "published_at": "2026-08-28",
-            "freshness_role": "public_EURUSD_and_Warsh_discussion_wording_not_used_for_fact_or_direction",
-            "reliable": false
-          }
-        ],
-        "decision": {
-          "novelty_gate": "pass_refresh",
-          "decision_gate": "selected_refresh",
-          "duplicate_of": [
-            "HR-20260824-01"
-          ],
-          "refresh_signals": {
-            "fact_delta": true,
-            "search_delta": true,
-            "example_delta": false,
-            "window_delta": true
-          },
-          "reopen_trigger": "Stop the post-speech frame after 24–48 hours, an official correction, a formal policy decision, or a new verified calculation question. Any later update requires a new qualified refresh gate.",
-          "rationale": "The completed keynote is a new verifiable fact relative to the pre-speech package; the public wording has shifted to after-speech EURUSD risk; and the short post-event window is distinct. The only permitted output is a refresh of the existing EURUSD fixed-risk article, with no policy, rate or price prediction."
-        }
-      }
-    },
-    {
-      "scan_date": "2026-08-29",
-      "candidate_id": "HR-20260829-02",
-      "status": "observation",
-      "topic": "July PCE Result Still Lacks a Verified Retail Fixed-Risk Query",
-      "primary_site": "PipGauge",
-      "freshness": 23,
-      "traffic_potential": 20,
-      "calculator_fit": 16,
-      "evidence_quality": 15,
-      "actionability": 4,
-      "total_score": 78,
-      "hard_gate": false,
-      "reliable_sources": 2,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Pip Value",
-        "Position Size",
-        "P&L"
-      ],
-      "reason": "BEA and Reuters remain current, but the visible public journey is macro interpretation and direction-first rather than a concrete retail pip-value or position-size question",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "U.S. Bureau of Economic Analysis",
-            "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026",
-            "source_type": "official_statistics_release",
-            "published_at": "2026-08-26",
-            "freshness_role": "official_July_PCE_result_inside_recent_window",
-            "reliable": true
-          },
-          {
-            "publisher": "Reuters",
-            "url": "https://www.investing.com/news/economy-news/dollar-near-eightday-high-as-us-data-lifts-fed-hike-bets-4878113",
-            "source_type": "reliable_news_reprint",
-            "published_at": "2026-08-27",
-            "freshness_role": "independent_current_PCE_context",
-            "reliable": true
-          },
-          {
-            "publisher": "BabyPips",
-            "url": "https://www.babypips.com/analysis/headline-sticky-core-pce-steady-gdp-fed-tightening-2026-08-27",
-            "source_type": "public_discussion_analysis",
-            "published_at": "2026-08-27",
-            "freshness_role": "current_macro_discussion_not_used_for_fact_or_direction",
-            "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_no_verified_retail_calculation_query",
+          "decision_gate": "observation_duplicate_without_second_refresh_delta",
           "duplicate_of": [
-            "HR-20260828-04"
+            "HR-20260829-01"
           ],
           "refresh_signals": {
             "fact_delta": false,
@@ -14460,185 +14858,71 @@
             "example_delta": false,
             "window_delta": false
           },
-          "reopen_trigger": "A public English question tied to the published PCE number that explicitly asks for a non-directional pip-value, fixed-risk or position-size calculation with readable inputs.",
-          "rationale": "Facts remain cross-verified, but the discoverable journey is macro interpretation and direction-first rather than calculator use. The calculator bridge hard gate fails, so no playbook or content package is created."
+          "reopen_trigger": "A later official policy decision, correction, materially different current query, or new verifiable number that changes both the title and the calculation example.",
+          "rationale": "The sources are still valid, but the prior day's post-speech refresh already owns the same completed-event wording, fixed-risk table and expiry. Passing time does not create a second refresh signal."
         }
       }
     },
     {
-      "scan_date": "2026-08-29",
-      "candidate_id": "HR-20260829-03",
-      "status": "observation",
-      "topic": "August Employment Situation Is Inside Seven Days but Has Only a Calendar Delta",
-      "primary_site": "PipGauge",
-      "freshness": 22,
-      "traffic_potential": 20,
-      "calculator_fit": 21,
-      "evidence_quality": 8,
-      "actionability": 5,
-      "total_score": 76,
-      "hard_gate": false,
-      "reliable_sources": 1,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Pip Value",
-        "Position Size",
-        "Spread Cost"
-      ],
-      "reason": "BLS verifies the September 4 release time, but no second independent reliable current fact source or distinct non-directional calculation query was verified; the prior payroll-risk package already owns generic sizing",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "U.S. Bureau of Labor Statistics",
-            "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
-            "source_type": "official_release_schedule",
-            "published_at": "2026-08-29",
-            "freshness_role": "official_September_4_2026_Employment_Situation_clock",
-            "reliable": true
-          },
-          {
-            "publisher": "ForexFactory",
-            "url": "https://www.forexfactory.com/calendar",
-            "source_type": "public_calendar_heat",
-            "published_at": "2026-08-29",
-            "freshness_role": "public_calendar_discovery_only_not_used_to_confirm_release_time",
-            "reliable": false
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_only_window_delta_and_missing_second_reliable_source",
-          "duplicate_of": [
-            "HR-20260810-01"
-          ],
-          "refresh_signals": {
-            "fact_delta": false,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": true
-          },
-          "reopen_trigger": "Published employment data with a second independent reliable report and a verified public non-directional risk-calculation query that differs materially from the prior payroll package.",
-          "rationale": "The official schedule is inside seven days but a calendar advance alone is not a qualifying refresh, and the second reliable source plus distinct retail calculation path are absent."
-        }
-      }
-    },
-    {
-      "scan_date": "2026-08-29",
-      "candidate_id": "HR-20260829-04",
-      "status": "observation",
-      "topic": "Topstep Dynamic Live Risk Expansion Has No New Dated Rule Change",
-      "primary_site": "PositionMath",
-      "freshness": 8,
-      "traffic_potential": 16,
-      "calculator_fit": 25,
-      "evidence_quality": 14,
-      "actionability": 5,
-      "total_score": 68,
-      "hard_gate": false,
-      "reliable_sources": 1,
-      "fresh_signal": false,
-      "calculator_mapping": [
-        "Daily Loss Limit",
-        "Trailing Drawdown",
-        "Prop Firm Calculator"
-      ],
-      "reason": "The official July rules remain accessible and public discussion continues, but no new dated version, formal changelog, or fresh rule-specific traffic event justifies a daily re-run",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "Topstep",
-            "url": "https://help.topstep.com/en/articles/11748475-dynamic-live-risk-expansion",
-            "source_type": "official_product_rule",
-            "published_at": "2026-07-17",
-            "freshness_role": "dated_rule_page_but_outside_72_hours_and_without_new_version",
-            "reliable": true
-          },
-          {
-            "publisher": "Reddit r/propfirm",
-            "url": "https://www.reddit.com/r/propfirm/comments/1w0mhf1/best_prop_firms_according_to_reddit/",
-            "source_type": "community_heat",
-            "published_at": "2026-08-28",
-            "freshness_role": "ongoing_drawdown_rule_discussion_not_used_to_confirm_a_rule_change",
-            "reliable": false
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_no_new_dated_rule_change",
-          "duplicate_of": [
-            "HR-20260820-04"
-          ],
-          "refresh_signals": {
-            "fact_delta": false,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": false
-          },
-          "reopen_trigger": "A dated Topstep rule, help-centre version, product changelog or independently verifiable current impact signal that changes the numeric calculation.",
-          "rationale": "Existing dynamic-risk math is useful but not a current event. Ongoing discussion cannot substitute for a new dated official rule and independent impact signal."
-        }
-      }
-    },
-    {
-      "scan_date": "2026-08-29",
-      "candidate_id": "HR-20260829-05",
+      "scan_date": "2026-08-30",
+      "candidate_id": "HR-20260830-04",
       "status": "discarded",
-      "topic": "Directional Jackson Hole EURUSD PCE Payrolls and Prop-Firm Forecast Posts",
+      "topic": "Directional AVGO Payrolls Jackson Hole and PCE Forecast Posts",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 24,
+      "traffic_potential": 25,
       "calculator_fit": 3,
       "evidence_quality": 5,
       "actionability": 2,
-      "total_score": 59,
+      "total_score": 60,
       "hard_gate": false,
       "reliable_sources": 0,
       "fresh_signal": true,
       "calculator_mapping": [
         "P&L"
       ],
-      "reason": "Price forecasts signals political framing unverified claims and generic market commentary are excluded"
+      "reason": "Price targets, calls or puts, interest-rate or FX direction forecasts, political framing, generic market commentary and unverified execution claims are excluded; no playbook or content package is created"
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-08-29T22:00:00+08:00",
+      "checked_at": "2026-08-30T22:02:11+08:00",
       "source_count": 4,
-      "note": "核验 Kansas City Fed 2026 Jackson Hole 日程、BEA July PCE、BLS September 4 Employment Situation 时钟及 Topstep 动态 Live 风险规则页。"
+      "note": "核验 Broadcom FY2026 Q3 发布时点、BLS 9 月 Employment Situation 日程、Kansas City Fed Jackson Hole 记录和 RBA／Topstep 慢变项的重开状态。"
     },
     {
       "channel": "可靠英文媒体",
       "status": "complete",
-      "checked_at": "2026-08-29T22:00:00+08:00",
+      "checked_at": "2026-08-30T22:02:11+08:00",
       "source_count": 3,
-      "note": "核验 AP 与 Reuters 对 8 月 28 日 Jackson Hole 演讲的独立报道，以及 Reuters 的 PCE/FX 语境。"
+      "note": "核验 Reuters 对 Broadcom 与就业报告本周焦点的当期报道，以及 AP 对本周就业报告的独立报道。"
     },
     {
       "channel": "Reddit / ForexFactory",
       "status": "complete",
-      "checked_at": "2026-08-29T22:00:00+08:00",
+      "checked_at": "2026-08-30T22:02:11+08:00",
       "source_count": 2,
-      "note": "核验公开 EUR/USD/Warsh 讨论及 prop-firm drawdown 讨论；只作为热度与措辞，绝不确认事实或方向。"
+      "note": "核验公开 AVGO 周度业绩讨论及 9 月 4 日 NFP 日历；仅作热度与措辞，不确认事实、报价或方向。"
     },
     {
       "channel": "X / Quora / BabyPips",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-08-29T22:00:00+08:00",
+      "checked_at": "2026-08-30T22:02:11+08:00",
       "source_count": 1,
-      "note": "可见索引未发现新的、具体且非方向性计算问题；不登录、不操作账号，也不将缺失当作无热度。"
+      "note": "公开索引没有提供新的、具体且非方向性的计算问题；不登录或操作账号，也不将缺失当作无热度。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-08-29_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-08-29_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-08-30_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-08-30_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
     "traffic_playbooks": "../热点流量打法.json",
-    "content_root": "../内容生产/2026-08-29"
+    "content_root": "../内容生产/2026-08-30"
   },
   "radar_model": "v2-content-first",
   "editorial_policy": {
