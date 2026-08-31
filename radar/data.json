@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-08-30T22:06:08+08:00",
-  "latest_scan_date": "2026-08-30",
+  "generated_at": "2026-08-31T22:06:04+08:00",
+  "latest_scan_date": "2026-08-31",
   "available_dates": [
+    "2026-08-31",
     "2026-08-30",
     "2026-08-29",
     "2026-08-28",
@@ -43,8 +44,339 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-08-31",
+      "generated_at": "2026-08-31T22:06:04+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 38,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 1,
+        "observation": 2,
+        "discarded": 1,
+        "total": 4,
+        "selected_average": 97.0,
+        "all_selected_pass_gate": true,
+        "content_ready": 1,
+        "playbook_ready": 1
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-08-31",
+          "candidate_id": "HR-20260831-01",
+          "status": "selected",
+          "topic": "RBNZ September 2 OCR: Size NZD/USD Fixed Risk Before the Decision",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 23,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 9,
+          "total_score": 97,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "RBNZ's dated official OCR page confirms the September 2 update and Reuters' August 31 preview independently makes it a current global market event; the public ForexFactory calendar supplies contemporaneous discovery wording. This is a new NZD/USD event path with a fixed-risk calculation, not a rate or currency forecast",
+          "content_status": "review_ready",
+          "content_label": "RBNZ 9月2日决议前 NZD/USD 固定风险审核包待人工审核",
+          "content_url": "../内容生产/2026-08-31/HR-20260831-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-09-02T13:30:00+12:00",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "new",
+            "urgency": "high",
+            "publish_deadline": "2026-09-02T13:30:00+12:00",
+            "traffic_hook": "The Reserve Bank of New Zealand's dated official OCR page lists a September 2 update, and Reuters' August 31 week-ahead report makes that decision a current global rates event. The hook is the verified decision clock and the public NZD event-calendar discovery path, never a claim about the OCR outcome or NZD/USD direction.",
+            "traffic_window": "Stage or publish the fixed-risk explainer from August 31 until the RBNZ publishes the OCR and Monetary Policy Statement at 2:00pm NZT on September 2. Retire all pre-decision wording as the result appears, if the RBNZ changes timing, or if a later verified fact creates a different calculation question.",
+            "search_intents": [
+              "RBNZ September 2 2026 NZDUSD risk",
+              "RBNZ decision NZDUSD position size calculator",
+              "NZDUSD pip value 50 pip stop",
+              "how many lots NZDUSD for 100 dollar risk",
+              "RBNZ rate decision fixed risk size"
+            ],
+            "traffic_angle": "Borrow the confirmed September 2 OCR/MPS countdown to answer one non-directional calculation question: for a USD 10,000 account with a USD 100 maximum planned loss, what NZD/USD size corresponds to 25-, 50- and 75-pip planned stops? Using an explicitly approximate USD 10 pip value per standard lot in a USD account gives 0.40, 0.20 and about 0.13 lot before costs. The table is a teaching risk budget, not a decision, rate or price forecast.",
+            "calculator_bridge": "State the event facts and show the fixed-risk formula first. PipGauge Pip Value verifies the NZD/USD per-pip assumption for the reader's account currency, and Position Size verifies USD 100 divided by the 25/50/75-pip stop inputs. P&L and Spread Cost may be used only as clearly labelled hypothetical checks; the calculators do not interpret the RBNZ decision or guarantee execution at a stop.",
+            "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; NZD/USD in a USD account at an approximate USD 10 per pip per standard lot. A 25/50/75-pip planned stop maps to 0.40/0.20/about 0.13 lot before commissions, spread and slippage. These are teaching inputs, not a live quote, expected move or trade instruction.",
+            "distribution_order": [
+              "new PipGauge NZD/USD event-risk note",
+              "Medium dated pre-decision fixed-risk explainer",
+              "X self-contained NZD/USD sizing thread",
+              "Reddit native process discussion without a first-round link"
+            ],
+            "link_placement": "Lead with the RBNZ clock, the USD 100 formula and the three readable sizes. Add at most one PipGauge verification link after the worked arithmetic and limits; do not put a link, tracking parameter or product pitch in the initial Reddit post, and keep the X thread independently readable.",
+            "expiry_condition": "Stop using this pre-decision frame as soon as the RBNZ releases the September 2 OCR/MPS, if the official schedule changes, or if a verified post-decision fact changes the user question. Do not recycle the 25/50/75-pip table as a forecast or an evergreen claim about RBNZ volatility.",
+            "editorial_boundary": "Do not predict the OCR, the statement, inflation, policy path, NZD/USD, rates or volatility. Do not recommend a long/short position, call a planned stop a guaranteed fill, or present assumed pip value, spread or costs as live event execution data. Treat Reuters expectations and ForexFactory calendar fields as context only, never as a trade signal.",
+            "refresh_target": null,
+            "refresh_signals": {
+              "fact_delta": true,
+              "search_delta": true,
+              "example_delta": true,
+              "window_delta": true
+            },
+            "refresh_updates": [],
+            "content_mainline": "Create one RBNZ-specific, pre-decision NZD/USD fixed-risk note that converts the confirmed September 2 decision clock into transparent USD 100 sizing arithmetic without forecasting the OCR or currency direction.",
+            "body_material": [
+              "RBNZ dated OCR page: next update September 2 at 2:00pm NZT",
+              "Reuters August 31 week-ahead report identifying the decision as current",
+              "ForexFactory public calendar as current discovery wording only",
+              "USD 100 fixed risk across 25/50/75 pip planned stops",
+              "immediate expiry when the OCR/MPS is published"
+            ],
+            "product_bridge": "PipGauge verifies NZD/USD pip value and fixed-risk position size after the fact-led explanation; it does not forecast the RBNZ, a currency move or an execution fill.",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Reserve Bank of New Zealand",
+                "url": "https://www.rbnz.govt.nz/monetary-policy/about-monetary-policy/the-official-cash-rate",
+                "source_type": "official_dated_ocr_page",
+                "published_at": "2026-07-14",
+                "freshness_role": "dated official page states the next OCR update is 2 September 2026 at 2:00pm NZT, inside the upcoming seven-day window",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.investing.com/news/economy-news/take-five-summers-over-buckle-up-4882165",
+                "source_type": "reliable_news_reprint",
+                "published_at": "2026-08-31",
+                "freshness_role": "independent current week-ahead report identifies the RBNZ September 2 decision as an imminent global rates event",
+                "reliable": true
+              },
+              {
+                "publisher": "ForexFactory",
+                "url": "https://www.forexfactory.com/calendar?week=sep1.2026",
+                "source_type": "public_calendar_heat",
+                "published_at": "2026-08-30",
+                "freshness_role": "public current-week event discovery and wording only; not used to confirm the decision facts or make an outcome claim",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass_new",
+              "decision_gate": "selected_new",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": true,
+                "window_delta": true
+              },
+              "reopen_trigger": "Replace this pre-decision package only when the RBNZ publishes the OCR/MPS, corrects its schedule, or a subsequent independently verified event produces a different non-directional NZD/USD calculation question.",
+              "rationale": "The dated RBNZ page and Reuters' current independent preview satisfy the two-publisher, freshness and fact gates. The calendar provides an observable current discovery path, while PipGauge naturally answers the explicit NZD/USD fixed-risk arithmetic. No existing package is NZD/USD/RBNZ-specific, so this is new rather than a same-calculator duplicate; no rate, policy or currency outcome is asserted."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-31",
+          "candidate_id": "HR-20260831-02",
+          "status": "observation",
+          "topic": "Broadcom Results Tomorrow Has No Second Pre-Results Refresh Delta",
+          "primary_site": "PositionMath",
+          "freshness": 25,
+          "traffic_potential": 23,
+          "calculator_fit": 23,
+          "evidence_quality": 15,
+          "actionability": 6,
+          "total_score": 92,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Position Size",
+            "Portfolio Heat",
+            "P&L",
+            "Stop Loss/Take Profit"
+          ],
+          "reason": "Broadcom's official schedule and Reuters remain current, but HR-20260830-01 already owns the same company date, earnings-risk search wording and USD400 exposure table. A one-day clock decrement is not a second qualified refresh signal",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Broadcom",
+                "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announce-third-quarter-fiscal-year-2026-financial",
+                "source_type": "official_earnings_schedule",
+                "published_at": "2026-08-03",
+                "freshness_role": "official September 2 after-market result time remains inside the upcoming window",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.investing.com/news/economy-news/jobs-report-broadcom-results-pose-next-hurdles-for-stock-market-rally-4882045",
+                "source_type": "reliable_news_reprint",
+                "published_at": "2026-08-28",
+                "freshness_role": "current week-ahead context remains accessible but adds no new company fact or calculation query",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_duplicate_without_second_refresh_delta",
+              "duplicate_of": [
+                "HR-20260830-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": false
+              },
+              "reopen_trigger": "Broadcom publishes results, corrects the announced time, or a fresh independently verified post-result fact changes both the user query and the calculation example.",
+              "rationale": "The August 30 package already owns the exact pre-results company/date, AVGO exposure query and teaching table. One less day on the calendar is not a fact, search, example or window delta, so it cannot produce another playbook or review package."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-31",
+          "candidate_id": "HR-20260831-03",
+          "status": "observation",
+          "topic": "August U.S. Employment Report Remains a Generic Calendar Rather Than a New Retail Calculation Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 22,
+          "calculator_fit": 20,
+          "evidence_quality": 15,
+          "actionability": 5,
+          "total_score": 87,
+          "hard_gate": false,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Spread Cost",
+            "P&L"
+          ],
+          "reason": "BLS AP and Reuters continue to verify the September 4 release and public calendar attention, but no new specific non-directional retail pip-value or position-size query distinct from HR-20260810-01 was verified; no playbook is justified",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/schedule/2026/09_sched_list.htm",
+                "source_type": "official_release_schedule",
+                "published_at": "2026-08-31",
+                "freshness_role": "official September 4 Employment Situation release clock",
+                "reliable": true
+              },
+              {
+                "publisher": "AP",
+                "url": "https://apnews.com/article/f49df397e86954626d93d7f15f400b55",
+                "source_type": "reliable_news",
+                "published_at": "2026-08-26",
+                "freshness_role": "independent current-week employment-report context",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.investing.com/news/economy-news/jobs-report-broadcom-results-pose-next-hurdles-for-stock-market-rally-4882045",
+                "source_type": "reliable_news_reprint",
+                "published_at": "2026-08-28",
+                "freshness_role": "independent current-week employment-report context",
+                "reliable": true
+              },
+              {
+                "publisher": "ForexFactory",
+                "url": "https://www.forexfactory.com/calendar?week=sep1.2026",
+                "source_type": "public_calendar_heat",
+                "published_at": "2026-08-30",
+                "freshness_role": "current public calendar discovery only, not used to confirm the release or create a forecast",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_no_distinct_verified_retail_calculation_journey",
+              "duplicate_of": [
+                "HR-20260810-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Published August employment data or a public English question explicitly requesting non-directional pip-value, fixed-risk or position-size math with materially different inputs from HR-20260810-01.",
+              "rationale": "The event is well sourced, but visible material remains macro interpretation, forecasts and calendar checking. The scan did not verify a new retail calculation journey, so it does not manufacture a playbook from a calendar countdown."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-08-31",
+          "candidate_id": "HR-20260831-04",
+          "status": "discarded",
+          "topic": "Directional RBNZ Broadcom Payrolls and FX Forecast Posts",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 60,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Rate and currency predictions, price targets, stock or option calls, political framing, login-wall materials and generic market commentary are excluded; no article, playbook or content package is created"
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-08-31T22:00:00+08:00",
+          "source_count": 4,
+          "note": "核验 RBNZ 的已注明更新时间 OCR 页面与 9 月 2 日 MPS 时点、Broadcom 业绩日程、BLS 9 月就业发布日程及慢变规则的重开状态。"
+        },
+        {
+          "channel": "可靠英文媒体",
+          "status": "complete",
+          "checked_at": "2026-08-31T22:00:00+08:00",
+          "source_count": 3,
+          "note": "核验 Reuters 8 月 31 日对 RBNZ 本周决策的独立预览、Reuters 对 Broadcom 的当期上下文，以及 AP 对美国就业报告的独立上下文。"
+        },
+        {
+          "channel": "Reddit / ForexFactory",
+          "status": "complete",
+          "checked_at": "2026-08-31T22:00:00+08:00",
+          "source_count": 2,
+          "note": "核验公开 ForexFactory 9 月周历的 RBNZ OCR/MPS、NFP 日历及公开 AVGO 讨论；仅用于发现和热度措辞，不确认事实、报价或方向。"
+        },
+        {
+          "channel": "X / Quora / BabyPips",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-08-31T22:00:00+08:00",
+          "source_count": 1,
+          "note": "公开索引没有提供新的、具体且非方向性的计算问题；未登录、发帖、评论或操作账号，也不将缺失视为无热度。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-08-31_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-08-31_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-08-31"
+      }
+    },
+    {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -382,7 +714,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -775,7 +1107,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -1185,7 +1517,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -1657,7 +1989,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -2002,7 +2334,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -2347,7 +2679,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -2799,7 +3131,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -3212,7 +3544,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -3444,7 +3776,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -3889,7 +4221,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -4264,7 +4596,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -4656,7 +4988,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -5032,7 +5364,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -5356,7 +5688,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -5739,7 +6071,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -6080,7 +6412,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -6455,7 +6787,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -6843,7 +7175,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -7188,7 +7520,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -7516,7 +7848,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -7828,7 +8160,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -8149,7 +8481,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -8510,7 +8842,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -8863,7 +9195,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -9307,7 +9639,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -9816,7 +10148,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -10286,7 +10618,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -10829,7 +11161,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -11101,7 +11433,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -11414,7 +11746,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -11849,7 +12181,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -12363,7 +12695,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -12872,7 +13204,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -13339,7 +13671,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -13752,7 +14084,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -14150,7 +14482,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-08-30T22:06:08+08:00",
+      "generated_at": "2026-08-31T22:06:04+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -14589,10 +14921,10 @@
       }
     }
   ],
-  "scan_date": "2026-08-30",
+  "scan_date": "2026-08-31",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 37,
+    "day": 38,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -14604,65 +14936,65 @@
     "observation": 2,
     "discarded": 1,
     "total": 4,
-    "selected_average": 98.0,
+    "selected_average": 97.0,
     "all_selected_pass_gate": true,
     "content_ready": 1,
     "playbook_ready": 1
   },
   "candidates": [
     {
-      "scan_date": "2026-08-30",
-      "candidate_id": "HR-20260830-01",
+      "scan_date": "2026-08-31",
+      "candidate_id": "HR-20260831-01",
       "status": "selected",
-      "topic": "Broadcom Reports Wednesday: Size a Non-Directional AVGO Gap-Risk Check",
-      "primary_site": "PositionMath",
+      "topic": "RBNZ September 2 OCR: Size NZD/USD Fixed Risk Before the Decision",
+      "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 25,
-      "calculator_fit": 23,
+      "traffic_potential": 23,
+      "calculator_fit": 25,
       "evidence_quality": 15,
-      "actionability": 10,
-      "total_score": 98,
+      "actionability": 9,
+      "total_score": 97,
       "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
+        "Pip Value",
         "Position Size",
-        "Portfolio Heat",
         "P&L",
-        "Stop Loss/Take Profit"
+        "Spread Cost"
       ],
-      "reason": "Broadcom confirms September 2 after-market results, Reuters identifies the report as a current market focus, and a current public earnings thread demonstrates active AVGO discussion. This is a distinct company/event rather than a duplicate of the NVIDIA package; the only content angle is transparent exposure arithmetic, never an earnings or price forecast",
+      "reason": "RBNZ's dated official OCR page confirms the September 2 update and Reuters' August 31 preview independently makes it a current global market event; the public ForexFactory calendar supplies contemporaneous discovery wording. This is a new NZD/USD event path with a fixed-risk calculation, not a rate or currency forecast",
       "content_status": "review_ready",
-      "content_label": "Broadcom 业绩前 AVGO 非方向性暴露审核包待人工审核",
-      "content_url": "../内容生产/2026-08-30/HR-20260830-01/index.html",
+      "content_label": "RBNZ 9月2日决议前 NZD/USD 固定风险审核包待人工审核",
+      "content_url": "../内容生产/2026-08-31/HR-20260831-01/index.html",
       "content_format": "Medium / Reddit / X",
-      "deadline": "2026-09-02T16:00:00-04:00",
+      "deadline": "2026-09-02T13:30:00+12:00",
       "traffic_playbook": {
         "playbook_status": "ready",
         "execution_mode": "new",
         "urgency": "high",
-        "publish_deadline": "2026-09-02T16:00:00-04:00",
-        "traffic_hook": "Broadcom has officially scheduled FY2026 Q3 results for Wednesday, September 2 after the close, and Reuters identifies the report as a current market focus. A current public earnings thread shows that AVGO exposure is already being discussed; the hook is the confirmed event clock, never a claim about the outcome.",
-        "traffic_window": "Publish or stage the non-directional exposure check from August 30 through the September 2 regular-session close. Retire the pre-results framing once Broadcom releases results, corrects the timing, or a later verified fact changes the calculation question.",
+        "publish_deadline": "2026-09-02T13:30:00+12:00",
+        "traffic_hook": "The Reserve Bank of New Zealand's dated official OCR page lists a September 2 update, and Reuters' August 31 week-ahead report makes that decision a current global rates event. The hook is the verified decision clock and the public NZD event-calendar discovery path, never a claim about the OCR outcome or NZD/USD direction.",
+        "traffic_window": "Stage or publish the fixed-risk explainer from August 31 until the RBNZ publishes the OCR and Monetary Policy Statement at 2:00pm NZT on September 2. Retire all pre-decision wording as the result appears, if the RBNZ changes timing, or if a later verified fact creates a different calculation question.",
         "search_intents": [
-          "Broadcom earnings September 2 position risk",
-          "AVGO earnings position size calculator",
-          "AVGO gap loss calculator",
-          "how many AVGO shares for 100 dollar risk",
-          "portfolio heat before earnings"
+          "RBNZ September 2 2026 NZDUSD risk",
+          "RBNZ decision NZDUSD position size calculator",
+          "NZDUSD pip value 50 pip stop",
+          "how many lots NZDUSD for 100 dollar risk",
+          "RBNZ rate decision fixed risk size"
         ],
-        "traffic_angle": "Borrow the confirmed Wednesday-after-close Broadcom earnings hook to answer a specific, non-directional question: in a USD 10,000 account, what does holding 10 AVGO shares at a clearly labelled USD 400 teaching anchor mean under 5%, 10% and 15% symmetric absolute-gap stress checks? The readable USD 200, USD 400 and USD 600 outcomes show concentration; none is an expected move or price forecast.",
-        "calculator_bridge": "First show USD 4,000 notional exposure from 10 shares at the USD 400 teaching anchor, then calculate the three symmetric stress rows. PositionMath P&L verifies the hypothetical dollar changes, Portfolio Heat places USD 4,000 within the USD 10,000 account, and Position Size verifies the separate USD 100 divided by USD 20 planned-stop example of five shares. The calculators do not forecast earnings or guarantee a stop fill after a gap.",
-        "example_scenario": "USD 10,000 account; 10 AVGO shares at a clearly labelled USD 400 teaching anchor, for USD 4,000 notional exposure. Symmetric hypothetical 5%/10%/15% absolute gaps equal USD 200/USD 400/USD 600. Separately, USD 100 planned loss divided by a USD 20 planned stop distance equals five shares before fees; stop-based sizing does not cap a gap exit.",
+        "traffic_angle": "Borrow the confirmed September 2 OCR/MPS countdown to answer one non-directional calculation question: for a USD 10,000 account with a USD 100 maximum planned loss, what NZD/USD size corresponds to 25-, 50- and 75-pip planned stops? Using an explicitly approximate USD 10 pip value per standard lot in a USD account gives 0.40, 0.20 and about 0.13 lot before costs. The table is a teaching risk budget, not a decision, rate or price forecast.",
+        "calculator_bridge": "State the event facts and show the fixed-risk formula first. PipGauge Pip Value verifies the NZD/USD per-pip assumption for the reader's account currency, and Position Size verifies USD 100 divided by the 25/50/75-pip stop inputs. P&L and Spread Cost may be used only as clearly labelled hypothetical checks; the calculators do not interpret the RBNZ decision or guarantee execution at a stop.",
+        "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; NZD/USD in a USD account at an approximate USD 10 per pip per standard lot. A 25/50/75-pip planned stop maps to 0.40/0.20/about 0.13 lot before commissions, spread and slippage. These are teaching inputs, not a live quote, expected move or trade instruction.",
         "distribution_order": [
-          "new site article for HR-20260830-01",
-          "Medium dated pre-results exposure check",
-          "X self-contained AVGO exposure thread",
+          "new PipGauge NZD/USD event-risk note",
+          "Medium dated pre-decision fixed-risk explainer",
+          "X self-contained NZD/USD sizing thread",
           "Reddit native process discussion without a first-round link"
         ],
-        "link_placement": "Give the confirmed time, USD 4,000 exposure arithmetic and stop-versus-gap distinction before any product link. Put one PositionMath verification link after the calculation and caveats; do not put a link in the initial Reddit post, and keep the X thread independently readable.",
-        "expiry_condition": "Stop using the pre-results frame immediately when Broadcom publishes the results, corrects its announced time, or a new verified post-results fact changes the risk question. Do not recycle the 5%/10%/15% illustrative grid as an implied forecast or evergreen earnings claim.",
-        "editorial_boundary": "Do not predict Broadcom revenue, guidance, valuation, AVGO price, options-implied move, or market direction; do not recommend shares, calls or puts. USD 400 and 5%/10%/15% are labelled teaching inputs, not live quotes, estimates or probabilities. A planned stop is not a guaranteed gap exit and hypothetical P&L is not execution evidence.",
+        "link_placement": "Lead with the RBNZ clock, the USD 100 formula and the three readable sizes. Add at most one PipGauge verification link after the worked arithmetic and limits; do not put a link, tracking parameter or product pitch in the initial Reddit post, and keep the X thread independently readable.",
+        "expiry_condition": "Stop using this pre-decision frame as soon as the RBNZ releases the September 2 OCR/MPS, if the official schedule changes, or if a verified post-decision fact changes the user question. Do not recycle the 25/50/75-pip table as a forecast or an evergreen claim about RBNZ volatility.",
+        "editorial_boundary": "Do not predict the OCR, the statement, inflation, policy path, NZD/USD, rates or volatility. Do not recommend a long/short position, call a planned stop a guaranteed fill, or present assumed pip value, spread or costs as live event execution data. Treat Reuters expectations and ForexFactory calendar fields as context only, never as a trade signal.",
         "refresh_target": null,
         "refresh_signals": {
           "fact_delta": true,
@@ -14671,41 +15003,41 @@
           "window_delta": true
         },
         "refresh_updates": [],
-        "content_mainline": "Create one Broadcom-specific pre-results exposure check that turns the confirmed September 2 event into readable account-concentration arithmetic without forecasting AVGO or duplicating the NVIDIA package.",
+        "content_mainline": "Create one RBNZ-specific, pre-decision NZD/USD fixed-risk note that converts the confirmed September 2 decision clock into transparent USD 100 sizing arithmetic without forecasting the OCR or currency direction.",
         "body_material": [
-          "Broadcom official September 2 after-market results and 5pm ET call",
-          "Reuters current week-ahead market-focus report",
-          "current public AVGO earnings discussion as heat only",
-          "USD 10,000 account with 10 shares at USD 400 under 5%/10%/15% symmetric stress checks",
-          "expiry on results, correction or new verified fact"
+          "RBNZ dated OCR page: next update September 2 at 2:00pm NZT",
+          "Reuters August 31 week-ahead report identifying the decision as current",
+          "ForexFactory public calendar as current discovery wording only",
+          "USD 100 fixed risk across 25/50/75 pip planned stops",
+          "immediate expiry when the OCR/MPS is published"
         ],
-        "product_bridge": "PositionMath verifies hypothetical share P&L, portfolio heat and planned position size after the fact-led exposure explanation; it does not interpret Broadcom's results or forecast AVGO.",
+        "product_bridge": "PipGauge verifies NZD/USD pip value and fixed-risk position size after the fact-led explanation; it does not forecast the RBNZ, a currency move or an execution fill.",
         "product_bridge_type": "existing"
       },
       "scan_audit": {
         "sources": [
           {
-            "publisher": "Broadcom",
-            "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announce-third-quarter-fiscal-year-2026-financial",
-            "source_type": "official_earnings_schedule",
-            "published_at": "2026-08-03",
-            "freshness_role": "official_September_2_2026_after_market_results_and_1700_ET_call_time_inside_upcoming_seven_day_window",
+            "publisher": "Reserve Bank of New Zealand",
+            "url": "https://www.rbnz.govt.nz/monetary-policy/about-monetary-policy/the-official-cash-rate",
+            "source_type": "official_dated_ocr_page",
+            "published_at": "2026-07-14",
+            "freshness_role": "dated official page states the next OCR update is 2 September 2026 at 2:00pm NZT, inside the upcoming seven-day window",
             "reliable": true
           },
           {
             "publisher": "Reuters",
-            "url": "https://www.investing.com/news/economy-news/jobs-report-broadcom-results-pose-next-hurdles-for-stock-market-rally-4882045",
+            "url": "https://www.investing.com/news/economy-news/take-five-summers-over-buckle-up-4882165",
             "source_type": "reliable_news_reprint",
-            "published_at": "2026-08-28",
-            "freshness_role": "current_independent_reporting_that_Broadcom_results_are_a_market_focus_this_week",
+            "published_at": "2026-08-31",
+            "freshness_role": "independent current week-ahead report identifies the RBNZ September 2 decision as an imminent global rates event",
             "reliable": true
           },
           {
-            "publisher": "Reddit r/wallstreetbets",
-            "url": "https://www.reddit.com/r/wallstreetbets/comments/1w0upg4/weekly_earnings_thread_831_94/",
-            "source_type": "community_heat",
-            "published_at": "2026-08-28",
-            "freshness_role": "current_public_AVGO_earnings_and_position_discussion_wording_not_used_for_fact_or_direction",
+            "publisher": "ForexFactory",
+            "url": "https://www.forexfactory.com/calendar?week=sep1.2026",
+            "source_type": "public_calendar_heat",
+            "published_at": "2026-08-30",
+            "freshness_role": "public current-week event discovery and wording only; not used to confirm the decision facts or make an outcome claim",
             "reliable": false
           }
         ],
@@ -14719,48 +15051,41 @@
             "example_delta": true,
             "window_delta": true
           },
-          "reopen_trigger": "Replace this pre-results package only when Broadcom publishes the results, corrects the release details, or a subsequent independently verified event creates a different non-directional calculation question.",
-          "rationale": "Broadcom's confirmed September 2 earnings are a distinct company, date, search object and exposure example from the prior NVIDIA packages. Official timing plus current Reuters coverage pass the two-reliable-source gate; current public earnings discussion supports traffic wording. The content may calculate transparent hypothetical share exposure only and must not state a direction, expected move or trading action."
+          "reopen_trigger": "Replace this pre-decision package only when the RBNZ publishes the OCR/MPS, corrects its schedule, or a subsequent independently verified event produces a different non-directional NZD/USD calculation question.",
+          "rationale": "The dated RBNZ page and Reuters' current independent preview satisfy the two-publisher, freshness and fact gates. The calendar provides an observable current discovery path, while PipGauge naturally answers the explicit NZD/USD fixed-risk arithmetic. No existing package is NZD/USD/RBNZ-specific, so this is new rather than a same-calculator duplicate; no rate, policy or currency outcome is asserted."
         }
       }
     },
     {
-      "scan_date": "2026-08-30",
-      "candidate_id": "HR-20260830-02",
+      "scan_date": "2026-08-31",
+      "candidate_id": "HR-20260831-02",
       "status": "observation",
-      "topic": "August Employment Report Is Four Days Away but Still Lacks a Distinct Retail Fixed-Risk Journey",
-      "primary_site": "PipGauge",
+      "topic": "Broadcom Results Tomorrow Has No Second Pre-Results Refresh Delta",
+      "primary_site": "PositionMath",
       "freshness": 25,
       "traffic_potential": 23,
-      "calculator_fit": 20,
+      "calculator_fit": 23,
       "evidence_quality": 15,
-      "actionability": 5,
-      "total_score": 88,
-      "hard_gate": false,
-      "reliable_sources": 3,
+      "actionability": 6,
+      "total_score": 92,
+      "hard_gate": true,
+      "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
-        "Pip Value",
         "Position Size",
-        "Spread Cost"
+        "Portfolio Heat",
+        "P&L",
+        "Stop Loss/Take Profit"
       ],
-      "reason": "BLS, AP and Reuters independently confirm the September 4 employment release and public calendars make the event visible, but this scan did not verify a distinct current non-directional retail calculation question beyond the generic NFP risk package HR-20260810-01; no playbook is justified",
+      "reason": "Broadcom's official schedule and Reuters remain current, but HR-20260830-01 already owns the same company date, earnings-risk search wording and USD400 exposure table. A one-day clock decrement is not a second qualified refresh signal",
       "scan_audit": {
         "sources": [
           {
-            "publisher": "U.S. Bureau of Labor Statistics",
-            "url": "https://www.bls.gov/schedule/2026/09_sched_list.htm",
-            "source_type": "official_release_schedule",
-            "published_at": "2026-08-30",
-            "freshness_role": "official_September_4_2026_Employment_Situation_clock",
-            "reliable": true
-          },
-          {
-            "publisher": "AP",
-            "url": "https://apnews.com/article/f49df397e86954626d93d7f15f400b55",
-            "source_type": "reliable_news",
-            "published_at": "2026-08-26",
-            "freshness_role": "independent_current_week_ahead_employment_report_context",
+            "publisher": "Broadcom",
+            "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announce-third-quarter-fiscal-year-2026-financial",
+            "source_type": "official_earnings_schedule",
+            "published_at": "2026-08-03",
+            "freshness_role": "official September 2 after-market result time remains inside the upcoming window",
             "reliable": true
           },
           {
@@ -14768,15 +15093,81 @@
             "url": "https://www.investing.com/news/economy-news/jobs-report-broadcom-results-pose-next-hurdles-for-stock-market-rally-4882045",
             "source_type": "reliable_news_reprint",
             "published_at": "2026-08-28",
-            "freshness_role": "independent_current_week_ahead_employment_report_context",
+            "freshness_role": "current week-ahead context remains accessible but adds no new company fact or calculation query",
+            "reliable": true
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "observation_duplicate_without_second_refresh_delta",
+          "duplicate_of": [
+            "HR-20260830-01"
+          ],
+          "refresh_signals": {
+            "fact_delta": false,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": false
+          },
+          "reopen_trigger": "Broadcom publishes results, corrects the announced time, or a fresh independently verified post-result fact changes both the user query and the calculation example.",
+          "rationale": "The August 30 package already owns the exact pre-results company/date, AVGO exposure query and teaching table. One less day on the calendar is not a fact, search, example or window delta, so it cannot produce another playbook or review package."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-08-31",
+      "candidate_id": "HR-20260831-03",
+      "status": "observation",
+      "topic": "August U.S. Employment Report Remains a Generic Calendar Rather Than a New Retail Calculation Journey",
+      "primary_site": "PipGauge",
+      "freshness": 25,
+      "traffic_potential": 22,
+      "calculator_fit": 20,
+      "evidence_quality": 15,
+      "actionability": 5,
+      "total_score": 87,
+      "hard_gate": false,
+      "reliable_sources": 3,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Pip Value",
+        "Position Size",
+        "Spread Cost",
+        "P&L"
+      ],
+      "reason": "BLS AP and Reuters continue to verify the September 4 release and public calendar attention, but no new specific non-directional retail pip-value or position-size query distinct from HR-20260810-01 was verified; no playbook is justified",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "U.S. Bureau of Labor Statistics",
+            "url": "https://www.bls.gov/schedule/2026/09_sched_list.htm",
+            "source_type": "official_release_schedule",
+            "published_at": "2026-08-31",
+            "freshness_role": "official September 4 Employment Situation release clock",
+            "reliable": true
+          },
+          {
+            "publisher": "AP",
+            "url": "https://apnews.com/article/f49df397e86954626d93d7f15f400b55",
+            "source_type": "reliable_news",
+            "published_at": "2026-08-26",
+            "freshness_role": "independent current-week employment-report context",
+            "reliable": true
+          },
+          {
+            "publisher": "Reuters",
+            "url": "https://www.investing.com/news/economy-news/jobs-report-broadcom-results-pose-next-hurdles-for-stock-market-rally-4882045",
+            "source_type": "reliable_news_reprint",
+            "published_at": "2026-08-28",
+            "freshness_role": "independent current-week employment-report context",
             "reliable": true
           },
           {
             "publisher": "ForexFactory",
-            "url": "https://www.forexfactory.com/calendar?day=sep4.2026&event=146911",
+            "url": "https://www.forexfactory.com/calendar?week=sep1.2026",
             "source_type": "public_calendar_heat",
             "published_at": "2026-08-30",
-            "freshness_role": "current_public_calendar_discovery_only_not_used_to_confirm_release_time_or_forecast",
+            "freshness_role": "current public calendar discovery only, not used to confirm the release or create a forecast",
             "reliable": false
           }
         ],
@@ -14792,82 +15183,16 @@
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "Published August employment data or a public English question that explicitly asks for a non-directional pip-value, fixed-risk or position-size calculation with inputs materially different from HR-20260810-01.",
-          "rationale": "The release date and reliable context are now strong, but the current public journey remains macro interpretation, forecasts and calendar checking. The scan does not manufacture a new retail calculation intent from the date alone, so the calculator-bridge hard gate fails and no playbook is created."
+          "reopen_trigger": "Published August employment data or a public English question explicitly requesting non-directional pip-value, fixed-risk or position-size math with materially different inputs from HR-20260810-01.",
+          "rationale": "The event is well sourced, but visible material remains macro interpretation, forecasts and calendar checking. The scan did not verify a new retail calculation journey, so it does not manufacture a playbook from a calendar countdown."
         }
       }
     },
     {
-      "scan_date": "2026-08-30",
-      "candidate_id": "HR-20260830-03",
-      "status": "observation",
-      "topic": "Jackson Hole Post-Speech EURUSD Frame Has Expired Without a Second Refresh Delta",
-      "primary_site": "PipGauge",
-      "freshness": 22,
-      "traffic_potential": 18,
-      "calculator_fit": 24,
-      "evidence_quality": 15,
-      "actionability": 5,
-      "total_score": 84,
-      "hard_gate": false,
-      "reliable_sources": 3,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Pip Value",
-        "Position Size",
-        "P&L",
-        "Spread Cost"
-      ],
-      "reason": "The official symposium record, AP and Reuters remain verifiable inside the freshness window, but HR-20260829-01 already owns the 24-48 hour post-speech fact, search wording and USD100 table. Calendar decay alone is not a new traffic path",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "Federal Reserve Bank of Kansas City",
-            "url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/2026/",
-            "source_type": "official_event_record",
-            "published_at": "2026-08-28",
-            "freshness_role": "official_record_of_completed_August_28_keynote",
-            "reliable": true
-          },
-          {
-            "publisher": "AP",
-            "url": "https://apnews.com/article/federal-reserve-warsh-interest-trump-inflation-ab896df808df3a5a3fa8b943ac5f3867",
-            "source_type": "reliable_news",
-            "published_at": "2026-08-28",
-            "freshness_role": "independent_report_of_completed_keynote",
-            "reliable": true
-          },
-          {
-            "publisher": "Reuters",
-            "url": "https://www.marketscreener.com/news/will-warsh-s-jackson-hole-speech-be-a-course-correction-or-detour-ce7858dfdb8bf62c",
-            "source_type": "reliable_news_reprint",
-            "published_at": "2026-08-28",
-            "freshness_role": "independent_report_of_completed_keynote",
-            "reliable": true
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_duplicate_without_second_refresh_delta",
-          "duplicate_of": [
-            "HR-20260829-01"
-          ],
-          "refresh_signals": {
-            "fact_delta": false,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": false
-          },
-          "reopen_trigger": "A later official policy decision, correction, materially different current query, or new verifiable number that changes both the title and the calculation example.",
-          "rationale": "The sources are still valid, but the prior day's post-speech refresh already owns the same completed-event wording, fixed-risk table and expiry. Passing time does not create a second refresh signal."
-        }
-      }
-    },
-    {
-      "scan_date": "2026-08-30",
-      "candidate_id": "HR-20260830-04",
+      "scan_date": "2026-08-31",
+      "candidate_id": "HR-20260831-04",
       "status": "discarded",
-      "topic": "Directional AVGO Payrolls Jackson Hole and PCE Forecast Posts",
+      "topic": "Directional RBNZ Broadcom Payrolls and FX Forecast Posts",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 25,
@@ -14881,48 +15206,48 @@
       "calculator_mapping": [
         "P&L"
       ],
-      "reason": "Price targets, calls or puts, interest-rate or FX direction forecasts, political framing, generic market commentary and unverified execution claims are excluded; no playbook or content package is created"
+      "reason": "Rate and currency predictions, price targets, stock or option calls, political framing, login-wall materials and generic market commentary are excluded; no article, playbook or content package is created"
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-08-30T22:02:11+08:00",
+      "checked_at": "2026-08-31T22:00:00+08:00",
       "source_count": 4,
-      "note": "核验 Broadcom FY2026 Q3 发布时点、BLS 9 月 Employment Situation 日程、Kansas City Fed Jackson Hole 记录和 RBA／Topstep 慢变项的重开状态。"
+      "note": "核验 RBNZ 的已注明更新时间 OCR 页面与 9 月 2 日 MPS 时点、Broadcom 业绩日程、BLS 9 月就业发布日程及慢变规则的重开状态。"
     },
     {
       "channel": "可靠英文媒体",
       "status": "complete",
-      "checked_at": "2026-08-30T22:02:11+08:00",
+      "checked_at": "2026-08-31T22:00:00+08:00",
       "source_count": 3,
-      "note": "核验 Reuters 对 Broadcom 与就业报告本周焦点的当期报道，以及 AP 对本周就业报告的独立报道。"
+      "note": "核验 Reuters 8 月 31 日对 RBNZ 本周决策的独立预览、Reuters 对 Broadcom 的当期上下文，以及 AP 对美国就业报告的独立上下文。"
     },
     {
       "channel": "Reddit / ForexFactory",
       "status": "complete",
-      "checked_at": "2026-08-30T22:02:11+08:00",
+      "checked_at": "2026-08-31T22:00:00+08:00",
       "source_count": 2,
-      "note": "核验公开 AVGO 周度业绩讨论及 9 月 4 日 NFP 日历；仅作热度与措辞，不确认事实、报价或方向。"
+      "note": "核验公开 ForexFactory 9 月周历的 RBNZ OCR/MPS、NFP 日历及公开 AVGO 讨论；仅用于发现和热度措辞，不确认事实、报价或方向。"
     },
     {
       "channel": "X / Quora / BabyPips",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-08-30T22:02:11+08:00",
+      "checked_at": "2026-08-31T22:00:00+08:00",
       "source_count": 1,
-      "note": "公开索引没有提供新的、具体且非方向性的计算问题；不登录或操作账号，也不将缺失当作无热度。"
+      "note": "公开索引没有提供新的、具体且非方向性的计算问题；未登录、发帖、评论或操作账号，也不将缺失视为无热度。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-08-30_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-08-30_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-08-31_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-08-31_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
     "traffic_playbooks": "../热点流量打法.json",
-    "content_root": "../内容生产/2026-08-30"
+    "content_root": "../内容生产/2026-08-31"
   },
   "radar_model": "v2-content-first",
   "editorial_policy": {

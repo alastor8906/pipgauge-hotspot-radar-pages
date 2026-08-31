@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T14:08:02.443Z",
+  "generated_at": "2026-08-31T14:07:59.074Z",
   "endpoint": "multi_platform_drafts_awaiting_human_review",
   "supported_platforms": [
     "medium",
@@ -7,6 +7,41 @@
     "x"
   ],
   "packages": [
+    {
+      "candidate_id": "HR-20260831-01",
+      "scan_date": "2026-08-31",
+      "primary_site": "PipGauge",
+      "topic": "RBNZ September 2 OCR: Size NZD/USD Fixed Risk Before the Decision",
+      "package_summary": "当期审核快照：以已确认的 RBNZ 9 月 2 日 OCR/MPS 时点，演示 USD 100 固定计划风险在 NZD/USD 25／50／75 pip 计划止损下的仓位算术；不预测 OCR、声明、NZD/USD 方向或事件波动。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "pre_decision_window",
+      "time_status_label": "仅在 2026 年 9 月 2 日 14:00 NZT 的 OCR/MPS 公布前使用；公布、官方更正或新的经核验后续事实出现时必须改写或停用。",
+      "url": "../内容生产/2026-08-31/HR-20260831-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-31/HR-20260831-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-31/HR-20260831-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-08-31/HR-20260831-01/index.html#x"
+        }
+      ]
+    },
     {
       "candidate_id": "HR-20260830-01",
       "scan_date": "2026-08-30",
