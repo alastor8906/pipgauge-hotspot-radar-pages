@@ -1,0 +1,159 @@
+{
+  "scan_date": "2026-08-31",
+  "generated_at": "2026-08-31T22:00:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-08-31T22:00:00+08:00",
+      "source_count": 4,
+      "note": "核验 RBNZ 的已注明更新时间 OCR 页面与 9 月 2 日 MPS 时点、Broadcom 业绩日程、BLS 9 月就业发布日程及慢变规则的重开状态。"
+    },
+    {
+      "channel": "可靠英文媒体",
+      "status": "complete",
+      "checked_at": "2026-08-31T22:00:00+08:00",
+      "source_count": 3,
+      "note": "核验 Reuters 8 月 31 日对 RBNZ 本周决策的独立预览、Reuters 对 Broadcom 的当期上下文，以及 AP 对美国就业报告的独立上下文。"
+    },
+    {
+      "channel": "Reddit / ForexFactory",
+      "status": "complete",
+      "checked_at": "2026-08-31T22:00:00+08:00",
+      "source_count": 2,
+      "note": "核验公开 ForexFactory 9 月周历的 RBNZ OCR/MPS、NFP 日历及公开 AVGO 讨论；仅用于发现和热度措辞，不确认事实、报价或方向。"
+    },
+    {
+      "channel": "X / Quora / BabyPips",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-08-31T22:00:00+08:00",
+      "source_count": 1,
+      "note": "公开索引没有提供新的、具体且非方向性的计算问题；未登录、发帖、评论或操作账号，也不将缺失视为无热度。"
+    }
+  ],
+  "candidates": {
+    "HR-20260831-01": {
+      "sources": [
+        {
+          "publisher": "Reserve Bank of New Zealand",
+          "url": "https://www.rbnz.govt.nz/monetary-policy/about-monetary-policy/the-official-cash-rate",
+          "source_type": "official_dated_ocr_page",
+          "published_at": "2026-07-14",
+          "freshness_role": "dated official page states the next OCR update is 2 September 2026 at 2:00pm NZT, inside the upcoming seven-day window",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.investing.com/news/economy-news/take-five-summers-over-buckle-up-4882165",
+          "source_type": "reliable_news_reprint",
+          "published_at": "2026-08-31",
+          "freshness_role": "independent current week-ahead report identifies the RBNZ September 2 decision as an imminent global rates event",
+          "reliable": true
+        },
+        {
+          "publisher": "ForexFactory",
+          "url": "https://www.forexfactory.com/calendar?week=sep1.2026",
+          "source_type": "public_calendar_heat",
+          "published_at": "2026-08-30",
+          "freshness_role": "public current-week event discovery and wording only; not used to confirm the decision facts or make an outcome claim",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass_new",
+        "decision_gate": "selected_new",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "reopen_trigger": "Replace this pre-decision package only when the RBNZ publishes the OCR/MPS, corrects its schedule, or a subsequent independently verified event produces a different non-directional NZD/USD calculation question.",
+        "rationale": "The dated RBNZ page and Reuters' current independent preview satisfy the two-publisher, freshness and fact gates. The calendar provides an observable current discovery path, while PipGauge naturally answers the explicit NZD/USD fixed-risk arithmetic. No existing package is NZD/USD/RBNZ-specific, so this is new rather than a same-calculator duplicate; no rate, policy or currency outcome is asserted."
+      }
+    },
+    "HR-20260831-02": {
+      "sources": [
+        {
+          "publisher": "Broadcom",
+          "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announce-third-quarter-fiscal-year-2026-financial",
+          "source_type": "official_earnings_schedule",
+          "published_at": "2026-08-03",
+          "freshness_role": "official September 2 after-market result time remains inside the upcoming window",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.investing.com/news/economy-news/jobs-report-broadcom-results-pose-next-hurdles-for-stock-market-rally-4882045",
+          "source_type": "reliable_news_reprint",
+          "published_at": "2026-08-28",
+          "freshness_role": "current week-ahead context remains accessible but adds no new company fact or calculation query",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_duplicate_without_second_refresh_delta",
+        "duplicate_of": ["HR-20260830-01"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "Broadcom publishes results, corrects the announced time, or a fresh independently verified post-result fact changes both the user query and the calculation example.",
+        "rationale": "The August 30 package already owns the exact pre-results company/date, AVGO exposure query and teaching table. One less day on the calendar is not a fact, search, example or window delta, so it cannot produce another playbook or review package."
+      }
+    },
+    "HR-20260831-03": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/schedule/2026/09_sched_list.htm",
+          "source_type": "official_release_schedule",
+          "published_at": "2026-08-31",
+          "freshness_role": "official September 4 Employment Situation release clock",
+          "reliable": true
+        },
+        {
+          "publisher": "AP",
+          "url": "https://apnews.com/article/f49df397e86954626d93d7f15f400b55",
+          "source_type": "reliable_news",
+          "published_at": "2026-08-26",
+          "freshness_role": "independent current-week employment-report context",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.investing.com/news/economy-news/jobs-report-broadcom-results-pose-next-hurdles-for-stock-market-rally-4882045",
+          "source_type": "reliable_news_reprint",
+          "published_at": "2026-08-28",
+          "freshness_role": "independent current-week employment-report context",
+          "reliable": true
+        },
+        {
+          "publisher": "ForexFactory",
+          "url": "https://www.forexfactory.com/calendar?week=sep1.2026",
+          "source_type": "public_calendar_heat",
+          "published_at": "2026-08-30",
+          "freshness_role": "current public calendar discovery only, not used to confirm the release or create a forecast",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_no_distinct_verified_retail_calculation_journey",
+        "duplicate_of": ["HR-20260810-01"],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "Published August employment data or a public English question explicitly requesting non-directional pip-value, fixed-risk or position-size math with materially different inputs from HR-20260810-01.",
+        "rationale": "The event is well sourced, but visible material remains macro interpretation, forecasts and calendar checking. The scan did not verify a new retail calculation journey, so it does not manufacture a playbook from a calendar countdown."
+      }
+    }
+  }
+}

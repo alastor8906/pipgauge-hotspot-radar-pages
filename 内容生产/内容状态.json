@@ -1,4 +1,18 @@
 {
+  "HR-20260831-01": {
+    "content_status": "review_ready",
+    "content_label": "RBNZ 9月2日决议前 NZD/USD 固定风险审核包待人工审核",
+    "content_url": "../内容生产/2026-08-31/HR-20260831-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-09-02T13:30:00+12:00"
+  },
+  "HR-20260830-01": {
+    "content_status": "review_ready",
+    "content_label": "Broadcom 业绩前 AVGO 非方向性暴露审核包待人工审核",
+    "content_url": "../内容生产/2026-08-30/HR-20260830-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-09-02T16:00:00-04:00"
+  },
   "HR-20260824-01": {
     "content_status": "review_ready",
     "content_label": "Jackson Hole Friday keynote EUR/USD 刷新审核包待人工审核",
