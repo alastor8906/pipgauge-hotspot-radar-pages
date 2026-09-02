@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-31T22:00:00+08:00",
+  "updated_at": "2026-09-02T22:00:00+08:00",
   "items": {
     "HR-20260831-01": {
       "playbook_status": "ready",
@@ -1681,6 +1681,56 @@
         "expiry on results, correction or new verified fact"
       ],
       "product_bridge": "PositionMath verifies hypothetical share P&L, portfolio heat and planned position size after the fact-led exposure explanation; it does not interpret Broadcom's results or forecast AVGO.",
+      "product_bridge_type": "existing"
+    },
+    "HR-20260902-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-09-03T12:00:00+12:00",
+      "traffic_hook": "RBNZ has published a same-day, official 25-basis-point OCR increase to 2.75%, independently reported in English by Qatar News Agency. The timely hook is the completed result and the visible post-decision NZD/USD discussion—not a claim about the next rate decision, NZD/USD direction, or realised market move.",
+      "traffic_window": "Refresh the existing RBNZ/NZDUSD risk note from the September 2 published result through September 3 before the RBNZ's scheduled NZFMA follow-up appearance. Retire the result-day framing after that short window, on an RBNZ correction, or when a later verified fact creates a different calculation question.",
+      "search_intents": [
+        "RBNZ raised OCR 2.75 NZDUSD risk",
+        "after RBNZ decision NZDUSD position size calculator",
+        "NZDUSD pip value 60 pip stop",
+        "how many lots NZDUSD for 100 dollar risk",
+        "RBNZ 2.75 fixed risk position size"
+      ],
+      "traffic_angle": "Borrow the verifiable 2.75% result to answer one post-event calculation question: with a USD 10,000 account, USD 100 maximum planned price risk, and an explicitly approximate USD 10-per-pip NZD/USD teaching input, what planned size corresponds to 30, 60, or 90 pips? The readable answer is about 0.33, 0.17, or 0.11 lot before costs. This table is a risk-budget check, not an expected reaction, policy-path view, or trade instruction.",
+      "calculator_bridge": "Lead with the released fact and manual formula. PipGauge Pip Value verifies NZD/USD pip value for the actual account currency and contract convention; Position Size verifies the USD 100 / 30/60/90-pip inputs. P&L and Spread Cost can be used only for separately labelled hypothetical checks. None of the calculators interpret the decision, forecast NZD/USD, or guarantee a stop fill.",
+      "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; NZD/USD in a USD account at an approximate USD 10 per pip per standard lot teaching assumption. A 30/60/90-pip planned stop maps to about 0.33/0.17/0.11 lot before commission, spread, slippage, or gaps. These are teaching inputs, not a live quote, expected move, or trade instruction.",
+      "distribution_order": [
+        "refresh existing site article HR-20260831-01",
+        "Medium dated post-decision fixed-risk refresh",
+        "X self-contained NZD/USD risk-math thread",
+        "Reddit native process discussion without a first-round link"
+      ],
+      "link_placement": "State the published RBNZ result, formula, three readable sizes, and the plan-versus-fill limit before a link. Add at most one PipGauge verification link after the arithmetic and caveats; do not put a link, tracking parameter, or product pitch in the initial Reddit post, and keep the X thread independently readable.",
+      "expiry_condition": "Stop the result-day frame after September 3, if RBNZ corrects the record, or if later verified information changes the user question. Do not recycle the 30/60/90-pip teaching table as a claim about RBNZ volatility, a policy forecast, or evergreen post-decision commentary.",
+      "editorial_boundary": "Do not predict the next OCR, policy path, inflation, NZD/USD, rates, volatility, profitability, or a market move. Do not recommend a long/short position, call a planned stop a guaranteed fill, or present assumed pip value, spread, or costs as observed event execution data.",
+      "refresh_target": "HR-20260831-01",
+      "refresh_signals": {
+        "fact_delta": true,
+        "search_delta": true,
+        "example_delta": true,
+        "window_delta": true
+      },
+      "refresh_updates": [
+        "replace the pre-decision title and all future-tense decision-clock language with the published 25bp-to-2.75% result",
+        "replace the dated OCR schedule and Reuters preview with the September 2 RBNZ decision, MPS, and independent Qatar News Agency report",
+        "replace the 25/50/75-pip table with a clearly labelled 30/60/90-pip post-result teaching table",
+        "replace pre-release expiry with the September 3 short follow-up, official-correction, or distinct-new-question gate"
+      ],
+      "content_mainline": "Refresh the existing RBNZ/NZDUSD article into a post-decision fixed-risk check using the published 2.75% fact and transparent 30/60/90-pip arithmetic; do not create another RBNZ or NZD/USD article.",
+      "body_material": [
+        "RBNZ September 2 official 25bp increase to 2.75%",
+        "independent Qatar News Agency same-day English report",
+        "public same-day RBNZ discussion as heat only",
+        "USD 100 risk at 30/60/90 pips",
+        "short September 3 expiry without price or policy prediction"
+      ],
+      "product_bridge": "PipGauge verifies NZD/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret RBNZ, forecast a currency move, or guarantee execution.",
       "product_bridge_type": "existing"
     }
   }
