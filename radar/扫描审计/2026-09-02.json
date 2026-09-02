@@ -1,0 +1,135 @@
+{
+  "scan_date": "2026-09-02",
+  "generated_at": "2026-09-02T22:00:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-09-02T22:00:00+08:00",
+      "source_count": 6,
+      "note": "核验 RBNZ 已发布 OCR/MPS、BLS Employment Situation 日程/新闻室，以及 Bank of Canada 当日公告机制；慢变规则按三日复查政策处理。"
+    },
+    {
+      "channel": "可靠英文媒体",
+      "status": "complete",
+      "checked_at": "2026-09-02T22:00:00+08:00",
+      "source_count": 1,
+      "note": "核验 Qatar News Agency 对 RBNZ 已发布 25bp 上调至 2.75% 的独立英文报道；未将无独立结果报道的 Bank of Canada 升级。"
+    },
+    {
+      "channel": "Reddit / ForexFactory",
+      "status": "complete",
+      "checked_at": "2026-09-02T22:00:00+08:00",
+      "source_count": 2,
+      "note": "核验当天公开 RBNZ/OCR 讨论与公开日历索引，仅用作结果后发现、讨论和查询措辞，不确认事实、报价或方向。"
+    },
+    {
+      "channel": "X / Quora / BabyPips",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-09-02T22:00:00+08:00",
+      "source_count": 1,
+      "note": "公开索引没有提供新的、具体且非方向性的计算问题；未登录、发帖、评论或操作账号，也不将缺失视为无热度。"
+    }
+  ],
+  "candidates": {
+    "HR-20260902-01": {
+      "sources": [
+        {
+          "publisher": "Reserve Bank of New Zealand",
+          "url": "https://www.rbnz.govt.nz/news-and-events/news/2026/09/ocr-increased-by-25-basis-points-to-2-75",
+          "source_type": "official_dated_rate_decision",
+          "published_at": "2026-09-02",
+          "freshness_role": "same-day official decision: OCR increased by 25 basis points to 2.75 percent by consensus",
+          "reliable": true
+        },
+        {
+          "publisher": "Qatar News Agency",
+          "url": "https://qna.org.qa/en/news/news-details?date=2%2F09%2F2026&id=new-zealand-central-bank-raises-official-cash-rate-to-275",
+          "source_type": "independent_english_news_wire",
+          "published_at": "2026-09-02",
+          "freshness_role": "independent same-day English report confirms the 25-basis-point increase to 2.75 percent",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/PersonalFinanceNZ",
+          "url": "https://www.reddit.com/r/PersonalFinanceNZ/comments/1w4x0mw/update_ocr_increased_to_275/",
+          "source_type": "public_discussion_heat",
+          "published_at": "2026-09-02",
+          "freshness_role": "same-day post-decision discussion and query wording only; not used to confirm the rate decision or infer NZD/USD direction",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass_refresh",
+        "decision_gate": "selected_refresh",
+        "duplicate_of": ["HR-20260831-01"],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "reopen_trigger": "RBNZ issues a correction, a distinct official follow-up produces a different non-directional calculation question, or a new independently verified event changes both the query and the example; otherwise retire the short post-result frame after September 3.",
+        "rationale": "The official result and independent same-day English report satisfy the two-publisher fact and freshness gate; public same-day discussion supplies a discovery signal. The completed 2.75% result, post-result wording, refreshed 30/60/90-pip teaching table and short follow-up window replace the expired pre-decision frame. Refreshing HR-20260831-01 prevents a duplicate RBNZ/NZDUSD article, and no policy path, currency direction, expected move or execution result is asserted."
+      }
+    },
+    "HR-20260902-02": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+          "source_type": "official_release_schedule",
+          "published_at": "2026-09-01",
+          "freshness_role": "official schedule lists the August 2026 Employment Situation for September 4 at 8:30 a.m. ET",
+          "reliable": true
+        },
+        {
+          "publisher": "U.S. Bureau of Labor Statistics Newsroom",
+          "url": "https://www.bls.gov/newsroom/",
+          "source_type": "official_newsroom_calendar",
+          "published_at": "2026-09-02",
+          "freshness_role": "same-day official newsroom confirms the upcoming Employment Situation slot",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_no_distinct_verified_retail_calculation_journey",
+        "duplicate_of": ["HR-20260810-01"],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "Published August employment data or a current public English question explicitly requesting a non-directional pip-value, fixed-risk or position-size calculation with materially different readable inputs from HR-20260810-01.",
+        "rationale": "The release is fresh and facts are supported, but current discoverable material is still calendar and macro interpretation rather than a new retail calculation journey. The existing NFP package already owns the generic event-risk chain, so countdown alone does not warrant another playbook."
+      }
+    },
+    "HR-20260902-03": {
+      "sources": [
+        {
+          "publisher": "Bank of Canada",
+          "url": "https://www.bankofcanada.ca/2026/09/interest-rate-announcement-september-2-2026/",
+          "source_type": "official_dated_rate_announcement",
+          "published_at": "2026-09-02",
+          "freshness_role": "official same-day decision page provides current event timing but does not supply a second independent reliable source",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_missing_independent_result_source_and_traffic_path",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "A second independent reliable English source confirms the published decision and a current public English query states a concrete non-directional CAD pip-value, fixed-risk or position-size problem.",
+        "rationale": "One official source establishes the calendar event, but the hard two-source gate and the natural traffic/calculator path are both absent. It remains observation rather than a padded CAD topic."
+      }
+    }
+  }
+}

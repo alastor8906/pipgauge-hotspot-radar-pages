@@ -275,6 +275,13 @@
     "content_format": "Medium / Reddit / X",
     "deadline": "2026-08-28T23:59:00+09:00"
   },
+  "HR-20260902-01": {
+    "content_status": "review_ready",
+    "content_label": "RBNZ 2.75% 结果后 NZD/USD 固定风险刷新审核包待人工审核",
+    "content_url": "../内容生产/2026-09-02/HR-20260902-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-09-03T12:00:00+12:00"
+  },
   "HR-20260829-01": {
     "content_status": "review_ready",
     "content_label": "Jackson Hole 演讲后 EURUSD 固定风险刷新审核包待人工审核",

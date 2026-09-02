@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-08-31T22:06:04+08:00",
-  "latest_scan_date": "2026-08-31",
+  "generated_at": "2026-09-02T22:06:10+08:00",
+  "latest_scan_date": "2026-09-02",
   "available_dates": [
+    "2026-09-02",
     "2026-08-31",
     "2026-08-30",
     "2026-08-29",
@@ -44,8 +45,319 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-09-02",
+      "generated_at": "2026-09-02T22:06:10+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 39,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 1,
+        "observation": 2,
+        "discarded": 1,
+        "total": 4,
+        "selected_average": 97.0,
+        "all_selected_pass_gate": true,
+        "content_ready": 1,
+        "playbook_ready": 1
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-09-02",
+          "candidate_id": "HR-20260902-01",
+          "status": "selected",
+          "topic": "RBNZ Raises OCR to 2.75%: Refresh the NZD/USD Fixed-Risk Check",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 23,
+          "calculator_fit": 25,
+          "evidence_quality": 14,
+          "actionability": 10,
+          "total_score": 97,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "RBNZ's September 2 official release records a consensus 25-basis-point OCR increase to 2.75%, and Qatar News Agency independently reports the same result; current public Reddit discussion supplies post-decision discovery wording. This refresh replaces HR-20260831-01's expired pre-decision clock with a post-result risk-size check and never predicts NZD/USD direction",
+          "content_status": "review_ready",
+          "content_label": "RBNZ 2.75% 结果后 NZD/USD 固定风险刷新审核包待人工审核",
+          "content_url": "../内容生产/2026-09-02/HR-20260902-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-09-03T12:00:00+12:00",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "refresh",
+            "urgency": "high",
+            "publish_deadline": "2026-09-03T12:00:00+12:00",
+            "traffic_hook": "RBNZ has published a same-day, official 25-basis-point OCR increase to 2.75%, independently reported in English by Qatar News Agency. The timely hook is the completed result and the visible post-decision NZD/USD discussion—not a claim about the next rate decision, NZD/USD direction, or realised market move.",
+            "traffic_window": "Refresh the existing RBNZ/NZDUSD risk note from the September 2 published result through September 3 before the RBNZ's scheduled NZFMA follow-up appearance. Retire the result-day framing after that short window, on an RBNZ correction, or when a later verified fact creates a different calculation question.",
+            "search_intents": [
+              "RBNZ raised OCR 2.75 NZDUSD risk",
+              "after RBNZ decision NZDUSD position size calculator",
+              "NZDUSD pip value 60 pip stop",
+              "how many lots NZDUSD for 100 dollar risk",
+              "RBNZ 2.75 fixed risk position size"
+            ],
+            "traffic_angle": "Borrow the verifiable 2.75% result to answer one post-event calculation question: with a USD 10,000 account, USD 100 maximum planned price risk, and an explicitly approximate USD 10-per-pip NZD/USD teaching input, what planned size corresponds to 30, 60, or 90 pips? The readable answer is about 0.33, 0.17, or 0.11 lot before costs. This table is a risk-budget check, not an expected reaction, policy-path view, or trade instruction.",
+            "calculator_bridge": "Lead with the released fact and manual formula. PipGauge Pip Value verifies NZD/USD pip value for the actual account currency and contract convention; Position Size verifies the USD 100 / 30/60/90-pip inputs. P&L and Spread Cost can be used only for separately labelled hypothetical checks. None of the calculators interpret the decision, forecast NZD/USD, or guarantee a stop fill.",
+            "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; NZD/USD in a USD account at an approximate USD 10 per pip per standard lot teaching assumption. A 30/60/90-pip planned stop maps to about 0.33/0.17/0.11 lot before commission, spread, slippage, or gaps. These are teaching inputs, not a live quote, expected move, or trade instruction.",
+            "distribution_order": [
+              "refresh existing site article HR-20260831-01",
+              "Medium dated post-decision fixed-risk refresh",
+              "X self-contained NZD/USD risk-math thread",
+              "Reddit native process discussion without a first-round link"
+            ],
+            "link_placement": "State the published RBNZ result, formula, three readable sizes, and the plan-versus-fill limit before a link. Add at most one PipGauge verification link after the arithmetic and caveats; do not put a link, tracking parameter, or product pitch in the initial Reddit post, and keep the X thread independently readable.",
+            "expiry_condition": "Stop the result-day frame after September 3, if RBNZ corrects the record, or if later verified information changes the user question. Do not recycle the 30/60/90-pip teaching table as a claim about RBNZ volatility, a policy forecast, or evergreen post-decision commentary.",
+            "editorial_boundary": "Do not predict the next OCR, policy path, inflation, NZD/USD, rates, volatility, profitability, or a market move. Do not recommend a long/short position, call a planned stop a guaranteed fill, or present assumed pip value, spread, or costs as observed event execution data.",
+            "refresh_target": "HR-20260831-01",
+            "refresh_signals": {
+              "fact_delta": true,
+              "search_delta": true,
+              "example_delta": true,
+              "window_delta": true
+            },
+            "refresh_updates": [
+              "replace the pre-decision title and all future-tense decision-clock language with the published 25bp-to-2.75% result",
+              "replace the dated OCR schedule and Reuters preview with the September 2 RBNZ decision, MPS, and independent Qatar News Agency report",
+              "replace the 25/50/75-pip table with a clearly labelled 30/60/90-pip post-result teaching table",
+              "replace pre-release expiry with the September 3 short follow-up, official-correction, or distinct-new-question gate"
+            ],
+            "content_mainline": "Refresh the existing RBNZ/NZDUSD article into a post-decision fixed-risk check using the published 2.75% fact and transparent 30/60/90-pip arithmetic; do not create another RBNZ or NZD/USD article.",
+            "body_material": [
+              "RBNZ September 2 official 25bp increase to 2.75%",
+              "independent Qatar News Agency same-day English report",
+              "public same-day RBNZ discussion as heat only",
+              "USD 100 risk at 30/60/90 pips",
+              "short September 3 expiry without price or policy prediction"
+            ],
+            "product_bridge": "PipGauge verifies NZD/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret RBNZ, forecast a currency move, or guarantee execution.",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Reserve Bank of New Zealand",
+                "url": "https://www.rbnz.govt.nz/news-and-events/news/2026/09/ocr-increased-by-25-basis-points-to-2-75",
+                "source_type": "official_dated_rate_decision",
+                "published_at": "2026-09-02",
+                "freshness_role": "same-day official decision: OCR increased by 25 basis points to 2.75 percent by consensus",
+                "reliable": true
+              },
+              {
+                "publisher": "Qatar News Agency",
+                "url": "https://qna.org.qa/en/news/news-details?date=2%2F09%2F2026&id=new-zealand-central-bank-raises-official-cash-rate-to-275",
+                "source_type": "independent_english_news_wire",
+                "published_at": "2026-09-02",
+                "freshness_role": "independent same-day English report confirms the 25-basis-point increase to 2.75 percent",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit r/PersonalFinanceNZ",
+                "url": "https://www.reddit.com/r/PersonalFinanceNZ/comments/1w4x0mw/update_ocr_increased_to_275/",
+                "source_type": "public_discussion_heat",
+                "published_at": "2026-09-02",
+                "freshness_role": "same-day post-decision discussion and query wording only; not used to confirm the rate decision or infer NZD/USD direction",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass_refresh",
+              "decision_gate": "selected_refresh",
+              "duplicate_of": [
+                "HR-20260831-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": true,
+                "window_delta": true
+              },
+              "reopen_trigger": "RBNZ issues a correction, a distinct official follow-up produces a different non-directional calculation question, or a new independently verified event changes both the query and the example; otherwise retire the short post-result frame after September 3.",
+              "rationale": "The official result and independent same-day English report satisfy the two-publisher fact and freshness gate; public same-day discussion supplies a discovery signal. The completed 2.75% result, post-result wording, refreshed 30/60/90-pip teaching table and short follow-up window replace the expired pre-decision frame. Refreshing HR-20260831-01 prevents a duplicate RBNZ/NZDUSD article, and no policy path, currency direction, expected move or execution result is asserted."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-02",
+          "candidate_id": "HR-20260902-02",
+          "status": "observation",
+          "topic": "August U.S. Employment Report Is Imminent but Still Lacks a New Verified Retail Calculation Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 22,
+          "calculator_fit": 20,
+          "evidence_quality": 15,
+          "actionability": 5,
+          "total_score": 87,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Spread Cost",
+            "P&L"
+          ],
+          "reason": "BLS's official schedule and current newsroom both confirm the September 4 Employment Situation release, but the discovered public material is calendar and macro interpretation rather than a distinct non-directional retail pip-value or position-size query beyond HR-20260810-01; no playbook is justified",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+                "source_type": "official_release_schedule",
+                "published_at": "2026-09-01",
+                "freshness_role": "official schedule lists the August 2026 Employment Situation for September 4 at 8:30 a.m. ET",
+                "reliable": true
+              },
+              {
+                "publisher": "U.S. Bureau of Labor Statistics Newsroom",
+                "url": "https://www.bls.gov/newsroom/",
+                "source_type": "official_newsroom_calendar",
+                "published_at": "2026-09-02",
+                "freshness_role": "same-day official newsroom confirms the upcoming Employment Situation slot",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_no_distinct_verified_retail_calculation_journey",
+              "duplicate_of": [
+                "HR-20260810-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Published August employment data or a current public English question explicitly requesting a non-directional pip-value, fixed-risk or position-size calculation with materially different readable inputs from HR-20260810-01.",
+              "rationale": "The release is fresh and facts are supported, but current discoverable material is still calendar and macro interpretation rather than a new retail calculation journey. The existing NFP package already owns the generic event-risk chain, so countdown alone does not warrant another playbook."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-02",
+          "candidate_id": "HR-20260902-03",
+          "status": "observation",
+          "topic": "Bank of Canada September 2 Decision: Hold Until an Independently Reported Result and a Calculation Path Emerge",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 21,
+          "calculator_fit": 22,
+          "evidence_quality": 8,
+          "actionability": 4,
+          "total_score": 80,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Spread Cost"
+          ],
+          "reason": "Bank of Canada officially confirms its September 2 decision publication, but this scan did not verify a second independent reliable result source or a concrete public non-directional CAD risk calculation question; calendar attention alone cannot create a playbook",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Bank of Canada",
+                "url": "https://www.bankofcanada.ca/2026/09/interest-rate-announcement-september-2-2026/",
+                "source_type": "official_dated_rate_announcement",
+                "published_at": "2026-09-02",
+                "freshness_role": "official same-day decision page provides current event timing but does not supply a second independent reliable source",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_missing_independent_result_source_and_traffic_path",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A second independent reliable English source confirms the published decision and a current public English query states a concrete non-directional CAD pip-value, fixed-risk or position-size problem.",
+              "rationale": "One official source establishes the calendar event, but the hard two-source gate and the natural traffic/calculator path are both absent. It remains observation rather than a padded CAD topic."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-02",
+          "candidate_id": "HR-20260902-04",
+          "status": "discarded",
+          "topic": "Directional RBNZ NZDUSD and Rate-Call Posts",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 24,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 59,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Price-direction calls, OCR-path predictions, trade signals, option calls, political arguments, login-wall material and generic reactions are excluded; no calculator bridge or content package is created"
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-09-02T22:00:00+08:00",
+          "source_count": 6,
+          "note": "核验 RBNZ 已发布 OCR/MPS、BLS Employment Situation 日程/新闻室，以及 Bank of Canada 当日公告机制；慢变规则按三日复查政策处理。"
+        },
+        {
+          "channel": "可靠英文媒体",
+          "status": "complete",
+          "checked_at": "2026-09-02T22:00:00+08:00",
+          "source_count": 1,
+          "note": "核验 Qatar News Agency 对 RBNZ 已发布 25bp 上调至 2.75% 的独立英文报道；未将无独立结果报道的 Bank of Canada 升级。"
+        },
+        {
+          "channel": "Reddit / ForexFactory",
+          "status": "complete",
+          "checked_at": "2026-09-02T22:00:00+08:00",
+          "source_count": 2,
+          "note": "核验当天公开 RBNZ/OCR 讨论与公开日历索引，仅用作结果后发现、讨论和查询措辞，不确认事实、报价或方向。"
+        },
+        {
+          "channel": "X / Quora / BabyPips",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-09-02T22:00:00+08:00",
+          "source_count": 1,
+          "note": "公开索引没有提供新的、具体且非方向性的计算问题；未登录、发帖、评论或操作账号，也不将缺失视为无热度。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-09-02_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-09-02_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-09-02"
+      }
+    },
+    {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -376,7 +688,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -714,7 +1026,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -1107,7 +1419,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -1517,7 +1829,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -1989,7 +2301,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -2334,7 +2646,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -2679,7 +2991,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -3131,7 +3443,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -3544,7 +3856,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -3776,7 +4088,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -4221,7 +4533,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -4596,7 +4908,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -4988,7 +5300,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -5364,7 +5676,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -5688,7 +6000,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -6071,7 +6383,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -6412,7 +6724,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -6787,7 +7099,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -7175,7 +7487,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -7520,7 +7832,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -7848,7 +8160,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -8160,7 +8472,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -8481,7 +8793,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -8842,7 +9154,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -9195,7 +9507,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -9639,7 +9951,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -10148,7 +10460,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -10618,7 +10930,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -11161,7 +11473,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -11433,7 +11745,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -11746,7 +12058,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -12181,7 +12493,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -12695,7 +13007,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -13204,7 +13516,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -13671,7 +13983,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -14084,7 +14396,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -14482,7 +14794,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-08-31T22:06:04+08:00",
+      "generated_at": "2026-09-02T22:06:10+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -14921,10 +15233,10 @@
       }
     }
   ],
-  "scan_date": "2026-08-31",
+  "scan_date": "2026-09-02",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 38,
+    "day": 39,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -14943,16 +15255,16 @@
   },
   "candidates": [
     {
-      "scan_date": "2026-08-31",
-      "candidate_id": "HR-20260831-01",
+      "scan_date": "2026-09-02",
+      "candidate_id": "HR-20260902-01",
       "status": "selected",
-      "topic": "RBNZ September 2 OCR: Size NZD/USD Fixed Risk Before the Decision",
+      "topic": "RBNZ Raises OCR to 2.75%: Refresh the NZD/USD Fixed-Risk Check",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 23,
       "calculator_fit": 25,
-      "evidence_quality": 15,
-      "actionability": 9,
+      "evidence_quality": 14,
+      "actionability": 10,
       "total_score": 97,
       "hard_gate": true,
       "reliable_sources": 2,
@@ -14963,162 +15275,111 @@
         "P&L",
         "Spread Cost"
       ],
-      "reason": "RBNZ's dated official OCR page confirms the September 2 update and Reuters' August 31 preview independently makes it a current global market event; the public ForexFactory calendar supplies contemporaneous discovery wording. This is a new NZD/USD event path with a fixed-risk calculation, not a rate or currency forecast",
+      "reason": "RBNZ's September 2 official release records a consensus 25-basis-point OCR increase to 2.75%, and Qatar News Agency independently reports the same result; current public Reddit discussion supplies post-decision discovery wording. This refresh replaces HR-20260831-01's expired pre-decision clock with a post-result risk-size check and never predicts NZD/USD direction",
       "content_status": "review_ready",
-      "content_label": "RBNZ 9月2日决议前 NZD/USD 固定风险审核包待人工审核",
-      "content_url": "../内容生产/2026-08-31/HR-20260831-01/index.html",
+      "content_label": "RBNZ 2.75% 结果后 NZD/USD 固定风险刷新审核包待人工审核",
+      "content_url": "../内容生产/2026-09-02/HR-20260902-01/index.html",
       "content_format": "Medium / Reddit / X",
-      "deadline": "2026-09-02T13:30:00+12:00",
+      "deadline": "2026-09-03T12:00:00+12:00",
       "traffic_playbook": {
         "playbook_status": "ready",
-        "execution_mode": "new",
+        "execution_mode": "refresh",
         "urgency": "high",
-        "publish_deadline": "2026-09-02T13:30:00+12:00",
-        "traffic_hook": "The Reserve Bank of New Zealand's dated official OCR page lists a September 2 update, and Reuters' August 31 week-ahead report makes that decision a current global rates event. The hook is the verified decision clock and the public NZD event-calendar discovery path, never a claim about the OCR outcome or NZD/USD direction.",
-        "traffic_window": "Stage or publish the fixed-risk explainer from August 31 until the RBNZ publishes the OCR and Monetary Policy Statement at 2:00pm NZT on September 2. Retire all pre-decision wording as the result appears, if the RBNZ changes timing, or if a later verified fact creates a different calculation question.",
+        "publish_deadline": "2026-09-03T12:00:00+12:00",
+        "traffic_hook": "RBNZ has published a same-day, official 25-basis-point OCR increase to 2.75%, independently reported in English by Qatar News Agency. The timely hook is the completed result and the visible post-decision NZD/USD discussion—not a claim about the next rate decision, NZD/USD direction, or realised market move.",
+        "traffic_window": "Refresh the existing RBNZ/NZDUSD risk note from the September 2 published result through September 3 before the RBNZ's scheduled NZFMA follow-up appearance. Retire the result-day framing after that short window, on an RBNZ correction, or when a later verified fact creates a different calculation question.",
         "search_intents": [
-          "RBNZ September 2 2026 NZDUSD risk",
-          "RBNZ decision NZDUSD position size calculator",
-          "NZDUSD pip value 50 pip stop",
+          "RBNZ raised OCR 2.75 NZDUSD risk",
+          "after RBNZ decision NZDUSD position size calculator",
+          "NZDUSD pip value 60 pip stop",
           "how many lots NZDUSD for 100 dollar risk",
-          "RBNZ rate decision fixed risk size"
+          "RBNZ 2.75 fixed risk position size"
         ],
-        "traffic_angle": "Borrow the confirmed September 2 OCR/MPS countdown to answer one non-directional calculation question: for a USD 10,000 account with a USD 100 maximum planned loss, what NZD/USD size corresponds to 25-, 50- and 75-pip planned stops? Using an explicitly approximate USD 10 pip value per standard lot in a USD account gives 0.40, 0.20 and about 0.13 lot before costs. The table is a teaching risk budget, not a decision, rate or price forecast.",
-        "calculator_bridge": "State the event facts and show the fixed-risk formula first. PipGauge Pip Value verifies the NZD/USD per-pip assumption for the reader's account currency, and Position Size verifies USD 100 divided by the 25/50/75-pip stop inputs. P&L and Spread Cost may be used only as clearly labelled hypothetical checks; the calculators do not interpret the RBNZ decision or guarantee execution at a stop.",
-        "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; NZD/USD in a USD account at an approximate USD 10 per pip per standard lot. A 25/50/75-pip planned stop maps to 0.40/0.20/about 0.13 lot before commissions, spread and slippage. These are teaching inputs, not a live quote, expected move or trade instruction.",
+        "traffic_angle": "Borrow the verifiable 2.75% result to answer one post-event calculation question: with a USD 10,000 account, USD 100 maximum planned price risk, and an explicitly approximate USD 10-per-pip NZD/USD teaching input, what planned size corresponds to 30, 60, or 90 pips? The readable answer is about 0.33, 0.17, or 0.11 lot before costs. This table is a risk-budget check, not an expected reaction, policy-path view, or trade instruction.",
+        "calculator_bridge": "Lead with the released fact and manual formula. PipGauge Pip Value verifies NZD/USD pip value for the actual account currency and contract convention; Position Size verifies the USD 100 / 30/60/90-pip inputs. P&L and Spread Cost can be used only for separately labelled hypothetical checks. None of the calculators interpret the decision, forecast NZD/USD, or guarantee a stop fill.",
+        "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; NZD/USD in a USD account at an approximate USD 10 per pip per standard lot teaching assumption. A 30/60/90-pip planned stop maps to about 0.33/0.17/0.11 lot before commission, spread, slippage, or gaps. These are teaching inputs, not a live quote, expected move, or trade instruction.",
         "distribution_order": [
-          "new PipGauge NZD/USD event-risk note",
-          "Medium dated pre-decision fixed-risk explainer",
-          "X self-contained NZD/USD sizing thread",
+          "refresh existing site article HR-20260831-01",
+          "Medium dated post-decision fixed-risk refresh",
+          "X self-contained NZD/USD risk-math thread",
           "Reddit native process discussion without a first-round link"
         ],
-        "link_placement": "Lead with the RBNZ clock, the USD 100 formula and the three readable sizes. Add at most one PipGauge verification link after the worked arithmetic and limits; do not put a link, tracking parameter or product pitch in the initial Reddit post, and keep the X thread independently readable.",
-        "expiry_condition": "Stop using this pre-decision frame as soon as the RBNZ releases the September 2 OCR/MPS, if the official schedule changes, or if a verified post-decision fact changes the user question. Do not recycle the 25/50/75-pip table as a forecast or an evergreen claim about RBNZ volatility.",
-        "editorial_boundary": "Do not predict the OCR, the statement, inflation, policy path, NZD/USD, rates or volatility. Do not recommend a long/short position, call a planned stop a guaranteed fill, or present assumed pip value, spread or costs as live event execution data. Treat Reuters expectations and ForexFactory calendar fields as context only, never as a trade signal.",
-        "refresh_target": null,
+        "link_placement": "State the published RBNZ result, formula, three readable sizes, and the plan-versus-fill limit before a link. Add at most one PipGauge verification link after the arithmetic and caveats; do not put a link, tracking parameter, or product pitch in the initial Reddit post, and keep the X thread independently readable.",
+        "expiry_condition": "Stop the result-day frame after September 3, if RBNZ corrects the record, or if later verified information changes the user question. Do not recycle the 30/60/90-pip teaching table as a claim about RBNZ volatility, a policy forecast, or evergreen post-decision commentary.",
+        "editorial_boundary": "Do not predict the next OCR, policy path, inflation, NZD/USD, rates, volatility, profitability, or a market move. Do not recommend a long/short position, call a planned stop a guaranteed fill, or present assumed pip value, spread, or costs as observed event execution data.",
+        "refresh_target": "HR-20260831-01",
         "refresh_signals": {
           "fact_delta": true,
           "search_delta": true,
           "example_delta": true,
           "window_delta": true
         },
-        "refresh_updates": [],
-        "content_mainline": "Create one RBNZ-specific, pre-decision NZD/USD fixed-risk note that converts the confirmed September 2 decision clock into transparent USD 100 sizing arithmetic without forecasting the OCR or currency direction.",
-        "body_material": [
-          "RBNZ dated OCR page: next update September 2 at 2:00pm NZT",
-          "Reuters August 31 week-ahead report identifying the decision as current",
-          "ForexFactory public calendar as current discovery wording only",
-          "USD 100 fixed risk across 25/50/75 pip planned stops",
-          "immediate expiry when the OCR/MPS is published"
+        "refresh_updates": [
+          "replace the pre-decision title and all future-tense decision-clock language with the published 25bp-to-2.75% result",
+          "replace the dated OCR schedule and Reuters preview with the September 2 RBNZ decision, MPS, and independent Qatar News Agency report",
+          "replace the 25/50/75-pip table with a clearly labelled 30/60/90-pip post-result teaching table",
+          "replace pre-release expiry with the September 3 short follow-up, official-correction, or distinct-new-question gate"
         ],
-        "product_bridge": "PipGauge verifies NZD/USD pip value and fixed-risk position size after the fact-led explanation; it does not forecast the RBNZ, a currency move or an execution fill.",
+        "content_mainline": "Refresh the existing RBNZ/NZDUSD article into a post-decision fixed-risk check using the published 2.75% fact and transparent 30/60/90-pip arithmetic; do not create another RBNZ or NZD/USD article.",
+        "body_material": [
+          "RBNZ September 2 official 25bp increase to 2.75%",
+          "independent Qatar News Agency same-day English report",
+          "public same-day RBNZ discussion as heat only",
+          "USD 100 risk at 30/60/90 pips",
+          "short September 3 expiry without price or policy prediction"
+        ],
+        "product_bridge": "PipGauge verifies NZD/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret RBNZ, forecast a currency move, or guarantee execution.",
         "product_bridge_type": "existing"
       },
       "scan_audit": {
         "sources": [
           {
             "publisher": "Reserve Bank of New Zealand",
-            "url": "https://www.rbnz.govt.nz/monetary-policy/about-monetary-policy/the-official-cash-rate",
-            "source_type": "official_dated_ocr_page",
-            "published_at": "2026-07-14",
-            "freshness_role": "dated official page states the next OCR update is 2 September 2026 at 2:00pm NZT, inside the upcoming seven-day window",
+            "url": "https://www.rbnz.govt.nz/news-and-events/news/2026/09/ocr-increased-by-25-basis-points-to-2-75",
+            "source_type": "official_dated_rate_decision",
+            "published_at": "2026-09-02",
+            "freshness_role": "same-day official decision: OCR increased by 25 basis points to 2.75 percent by consensus",
             "reliable": true
           },
           {
-            "publisher": "Reuters",
-            "url": "https://www.investing.com/news/economy-news/take-five-summers-over-buckle-up-4882165",
-            "source_type": "reliable_news_reprint",
-            "published_at": "2026-08-31",
-            "freshness_role": "independent current week-ahead report identifies the RBNZ September 2 decision as an imminent global rates event",
+            "publisher": "Qatar News Agency",
+            "url": "https://qna.org.qa/en/news/news-details?date=2%2F09%2F2026&id=new-zealand-central-bank-raises-official-cash-rate-to-275",
+            "source_type": "independent_english_news_wire",
+            "published_at": "2026-09-02",
+            "freshness_role": "independent same-day English report confirms the 25-basis-point increase to 2.75 percent",
             "reliable": true
           },
           {
-            "publisher": "ForexFactory",
-            "url": "https://www.forexfactory.com/calendar?week=sep1.2026",
-            "source_type": "public_calendar_heat",
-            "published_at": "2026-08-30",
-            "freshness_role": "public current-week event discovery and wording only; not used to confirm the decision facts or make an outcome claim",
+            "publisher": "Reddit r/PersonalFinanceNZ",
+            "url": "https://www.reddit.com/r/PersonalFinanceNZ/comments/1w4x0mw/update_ocr_increased_to_275/",
+            "source_type": "public_discussion_heat",
+            "published_at": "2026-09-02",
+            "freshness_role": "same-day post-decision discussion and query wording only; not used to confirm the rate decision or infer NZD/USD direction",
             "reliable": false
           }
         ],
         "decision": {
-          "novelty_gate": "pass_new",
-          "decision_gate": "selected_new",
-          "duplicate_of": [],
+          "novelty_gate": "pass_refresh",
+          "decision_gate": "selected_refresh",
+          "duplicate_of": [
+            "HR-20260831-01"
+          ],
           "refresh_signals": {
             "fact_delta": true,
             "search_delta": true,
             "example_delta": true,
             "window_delta": true
           },
-          "reopen_trigger": "Replace this pre-decision package only when the RBNZ publishes the OCR/MPS, corrects its schedule, or a subsequent independently verified event produces a different non-directional NZD/USD calculation question.",
-          "rationale": "The dated RBNZ page and Reuters' current independent preview satisfy the two-publisher, freshness and fact gates. The calendar provides an observable current discovery path, while PipGauge naturally answers the explicit NZD/USD fixed-risk arithmetic. No existing package is NZD/USD/RBNZ-specific, so this is new rather than a same-calculator duplicate; no rate, policy or currency outcome is asserted."
+          "reopen_trigger": "RBNZ issues a correction, a distinct official follow-up produces a different non-directional calculation question, or a new independently verified event changes both the query and the example; otherwise retire the short post-result frame after September 3.",
+          "rationale": "The official result and independent same-day English report satisfy the two-publisher fact and freshness gate; public same-day discussion supplies a discovery signal. The completed 2.75% result, post-result wording, refreshed 30/60/90-pip teaching table and short follow-up window replace the expired pre-decision frame. Refreshing HR-20260831-01 prevents a duplicate RBNZ/NZDUSD article, and no policy path, currency direction, expected move or execution result is asserted."
         }
       }
     },
     {
-      "scan_date": "2026-08-31",
-      "candidate_id": "HR-20260831-02",
+      "scan_date": "2026-09-02",
+      "candidate_id": "HR-20260902-02",
       "status": "observation",
-      "topic": "Broadcom Results Tomorrow Has No Second Pre-Results Refresh Delta",
-      "primary_site": "PositionMath",
-      "freshness": 25,
-      "traffic_potential": 23,
-      "calculator_fit": 23,
-      "evidence_quality": 15,
-      "actionability": 6,
-      "total_score": 92,
-      "hard_gate": true,
-      "reliable_sources": 2,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Position Size",
-        "Portfolio Heat",
-        "P&L",
-        "Stop Loss/Take Profit"
-      ],
-      "reason": "Broadcom's official schedule and Reuters remain current, but HR-20260830-01 already owns the same company date, earnings-risk search wording and USD400 exposure table. A one-day clock decrement is not a second qualified refresh signal",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "Broadcom",
-            "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announce-third-quarter-fiscal-year-2026-financial",
-            "source_type": "official_earnings_schedule",
-            "published_at": "2026-08-03",
-            "freshness_role": "official September 2 after-market result time remains inside the upcoming window",
-            "reliable": true
-          },
-          {
-            "publisher": "Reuters",
-            "url": "https://www.investing.com/news/economy-news/jobs-report-broadcom-results-pose-next-hurdles-for-stock-market-rally-4882045",
-            "source_type": "reliable_news_reprint",
-            "published_at": "2026-08-28",
-            "freshness_role": "current week-ahead context remains accessible but adds no new company fact or calculation query",
-            "reliable": true
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_duplicate_without_second_refresh_delta",
-          "duplicate_of": [
-            "HR-20260830-01"
-          ],
-          "refresh_signals": {
-            "fact_delta": false,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": false
-          },
-          "reopen_trigger": "Broadcom publishes results, corrects the announced time, or a fresh independently verified post-result fact changes both the user query and the calculation example.",
-          "rationale": "The August 30 package already owns the exact pre-results company/date, AVGO exposure query and teaching table. One less day on the calendar is not a fact, search, example or window delta, so it cannot produce another playbook or review package."
-        }
-      }
-    },
-    {
-      "scan_date": "2026-08-31",
-      "candidate_id": "HR-20260831-03",
-      "status": "observation",
-      "topic": "August U.S. Employment Report Remains a Generic Calendar Rather Than a New Retail Calculation Journey",
+      "topic": "August U.S. Employment Report Is Imminent but Still Lacks a New Verified Retail Calculation Journey",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 22,
@@ -15127,7 +15388,7 @@
       "actionability": 5,
       "total_score": 87,
       "hard_gate": false,
-      "reliable_sources": 3,
+      "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
         "Pip Value",
@@ -15135,40 +15396,24 @@
         "Spread Cost",
         "P&L"
       ],
-      "reason": "BLS AP and Reuters continue to verify the September 4 release and public calendar attention, but no new specific non-directional retail pip-value or position-size query distinct from HR-20260810-01 was verified; no playbook is justified",
+      "reason": "BLS's official schedule and current newsroom both confirm the September 4 Employment Situation release, but the discovered public material is calendar and macro interpretation rather than a distinct non-directional retail pip-value or position-size query beyond HR-20260810-01; no playbook is justified",
       "scan_audit": {
         "sources": [
           {
             "publisher": "U.S. Bureau of Labor Statistics",
-            "url": "https://www.bls.gov/schedule/2026/09_sched_list.htm",
+            "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
             "source_type": "official_release_schedule",
-            "published_at": "2026-08-31",
-            "freshness_role": "official September 4 Employment Situation release clock",
+            "published_at": "2026-09-01",
+            "freshness_role": "official schedule lists the August 2026 Employment Situation for September 4 at 8:30 a.m. ET",
             "reliable": true
           },
           {
-            "publisher": "AP",
-            "url": "https://apnews.com/article/f49df397e86954626d93d7f15f400b55",
-            "source_type": "reliable_news",
-            "published_at": "2026-08-26",
-            "freshness_role": "independent current-week employment-report context",
+            "publisher": "U.S. Bureau of Labor Statistics Newsroom",
+            "url": "https://www.bls.gov/newsroom/",
+            "source_type": "official_newsroom_calendar",
+            "published_at": "2026-09-02",
+            "freshness_role": "same-day official newsroom confirms the upcoming Employment Situation slot",
             "reliable": true
-          },
-          {
-            "publisher": "Reuters",
-            "url": "https://www.investing.com/news/economy-news/jobs-report-broadcom-results-pose-next-hurdles-for-stock-market-rally-4882045",
-            "source_type": "reliable_news_reprint",
-            "published_at": "2026-08-28",
-            "freshness_role": "independent current-week employment-report context",
-            "reliable": true
-          },
-          {
-            "publisher": "ForexFactory",
-            "url": "https://www.forexfactory.com/calendar?week=sep1.2026",
-            "source_type": "public_calendar_heat",
-            "published_at": "2026-08-30",
-            "freshness_role": "current public calendar discovery only, not used to confirm the release or create a forecast",
-            "reliable": false
           }
         ],
         "decision": {
@@ -15183,71 +15428,118 @@
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "Published August employment data or a public English question explicitly requesting non-directional pip-value, fixed-risk or position-size math with materially different inputs from HR-20260810-01.",
-          "rationale": "The event is well sourced, but visible material remains macro interpretation, forecasts and calendar checking. The scan did not verify a new retail calculation journey, so it does not manufacture a playbook from a calendar countdown."
+          "reopen_trigger": "Published August employment data or a current public English question explicitly requesting a non-directional pip-value, fixed-risk or position-size calculation with materially different readable inputs from HR-20260810-01.",
+          "rationale": "The release is fresh and facts are supported, but current discoverable material is still calendar and macro interpretation rather than a new retail calculation journey. The existing NFP package already owns the generic event-risk chain, so countdown alone does not warrant another playbook."
         }
       }
     },
     {
-      "scan_date": "2026-08-31",
-      "candidate_id": "HR-20260831-04",
-      "status": "discarded",
-      "topic": "Directional RBNZ Broadcom Payrolls and FX Forecast Posts",
+      "scan_date": "2026-09-02",
+      "candidate_id": "HR-20260902-03",
+      "status": "observation",
+      "topic": "Bank of Canada September 2 Decision: Hold Until an Independently Reported Result and a Calculation Path Emerge",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 25,
+      "traffic_potential": 21,
+      "calculator_fit": 22,
+      "evidence_quality": 8,
+      "actionability": 4,
+      "total_score": 80,
+      "hard_gate": false,
+      "reliable_sources": 1,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Pip Value",
+        "Position Size",
+        "Spread Cost"
+      ],
+      "reason": "Bank of Canada officially confirms its September 2 decision publication, but this scan did not verify a second independent reliable result source or a concrete public non-directional CAD risk calculation question; calendar attention alone cannot create a playbook",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "Bank of Canada",
+            "url": "https://www.bankofcanada.ca/2026/09/interest-rate-announcement-september-2-2026/",
+            "source_type": "official_dated_rate_announcement",
+            "published_at": "2026-09-02",
+            "freshness_role": "official same-day decision page provides current event timing but does not supply a second independent reliable source",
+            "reliable": true
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "observation_missing_independent_result_source_and_traffic_path",
+          "duplicate_of": [],
+          "refresh_signals": {
+            "fact_delta": true,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": true
+          },
+          "reopen_trigger": "A second independent reliable English source confirms the published decision and a current public English query states a concrete non-directional CAD pip-value, fixed-risk or position-size problem.",
+          "rationale": "One official source establishes the calendar event, but the hard two-source gate and the natural traffic/calculator path are both absent. It remains observation rather than a padded CAD topic."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-09-02",
+      "candidate_id": "HR-20260902-04",
+      "status": "discarded",
+      "topic": "Directional RBNZ NZDUSD and Rate-Call Posts",
+      "primary_site": "PipGauge",
+      "freshness": 25,
+      "traffic_potential": 24,
       "calculator_fit": 3,
       "evidence_quality": 5,
       "actionability": 2,
-      "total_score": 60,
+      "total_score": 59,
       "hard_gate": false,
       "reliable_sources": 0,
       "fresh_signal": true,
       "calculator_mapping": [
         "P&L"
       ],
-      "reason": "Rate and currency predictions, price targets, stock or option calls, political framing, login-wall materials and generic market commentary are excluded; no article, playbook or content package is created"
+      "reason": "Price-direction calls, OCR-path predictions, trade signals, option calls, political arguments, login-wall material and generic reactions are excluded; no calculator bridge or content package is created"
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-08-31T22:00:00+08:00",
-      "source_count": 4,
-      "note": "核验 RBNZ 的已注明更新时间 OCR 页面与 9 月 2 日 MPS 时点、Broadcom 业绩日程、BLS 9 月就业发布日程及慢变规则的重开状态。"
+      "checked_at": "2026-09-02T22:00:00+08:00",
+      "source_count": 6,
+      "note": "核验 RBNZ 已发布 OCR/MPS、BLS Employment Situation 日程/新闻室，以及 Bank of Canada 当日公告机制；慢变规则按三日复查政策处理。"
     },
     {
       "channel": "可靠英文媒体",
       "status": "complete",
-      "checked_at": "2026-08-31T22:00:00+08:00",
-      "source_count": 3,
-      "note": "核验 Reuters 8 月 31 日对 RBNZ 本周决策的独立预览、Reuters 对 Broadcom 的当期上下文，以及 AP 对美国就业报告的独立上下文。"
+      "checked_at": "2026-09-02T22:00:00+08:00",
+      "source_count": 1,
+      "note": "核验 Qatar News Agency 对 RBNZ 已发布 25bp 上调至 2.75% 的独立英文报道；未将无独立结果报道的 Bank of Canada 升级。"
     },
     {
       "channel": "Reddit / ForexFactory",
       "status": "complete",
-      "checked_at": "2026-08-31T22:00:00+08:00",
+      "checked_at": "2026-09-02T22:00:00+08:00",
       "source_count": 2,
-      "note": "核验公开 ForexFactory 9 月周历的 RBNZ OCR/MPS、NFP 日历及公开 AVGO 讨论；仅用于发现和热度措辞，不确认事实、报价或方向。"
+      "note": "核验当天公开 RBNZ/OCR 讨论与公开日历索引，仅用作结果后发现、讨论和查询措辞，不确认事实、报价或方向。"
     },
     {
       "channel": "X / Quora / BabyPips",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-08-31T22:00:00+08:00",
+      "checked_at": "2026-09-02T22:00:00+08:00",
       "source_count": 1,
       "note": "公开索引没有提供新的、具体且非方向性的计算问题；未登录、发帖、评论或操作账号，也不将缺失视为无热度。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-08-31_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-08-31_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-09-02_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-09-02_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
     "traffic_playbooks": "../热点流量打法.json",
-    "content_root": "../内容生产/2026-08-31"
+    "content_root": "../内容生产/2026-09-02"
   },
   "radar_model": "v2-content-first",
   "editorial_policy": {
