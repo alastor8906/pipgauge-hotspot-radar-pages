@@ -1,0 +1,143 @@
+{
+  "scan_date": "2026-09-03",
+  "generated_at": "2026-09-03T22:00:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-09-03T22:00:00+08:00",
+      "source_count": 6,
+      "note": "核验 Bank of Canada 已公布结果、BLS Employment Situation 日程/发布清单、ECB Governing Council 日程，以及 prop-firm 的慢变官方规则页。"
+    },
+    {
+      "channel": "可靠英文媒体",
+      "status": "complete",
+      "checked_at": "2026-09-03T22:00:00+08:00",
+      "source_count": 2,
+      "note": "核验 Reuters 对 Bank of Canada 2.25% rate hold 的独立英文报道，以及 Lumon 对九月央行窗口的独立英文背景；后者只用于 ECB 观察项的日期背景。"
+    },
+    {
+      "channel": "Reddit / ForexFactory",
+      "status": "complete",
+      "checked_at": "2026-09-03T22:00:00+08:00",
+      "source_count": 2,
+      "note": "核验 Bank of Canada 结果后的公开讨论和公开经济日历索引，仅用于发现、讨论及查询措辞，不确认事实、报价或方向。"
+    },
+    {
+      "channel": "X / Quora / BabyPips",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-09-03T22:00:00+08:00",
+      "source_count": 1,
+      "note": "公开索引未提供新的、具体且非方向性的 USD/CAD、EUR/USD 或 payroll 计算问题；未登录、发帖、评论或操作任何账户。"
+    }
+  ],
+  "candidates": {
+    "HR-20260903-01": {
+      "sources": [
+        {
+          "publisher": "Bank of Canada",
+          "url": "https://www.bankofcanada.ca/2026/09/fad-press-release-2026-09-02/",
+          "source_type": "official_dated_rate_decision",
+          "published_at": "2026-09-02",
+          "freshness_role": "official same-day decision: overnight rate held at 2.25 percent",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://ca.marketscreener.com/news/bank-of-canada-keeps-its-policy-rate-at-2-25-says-tariffs-could-hit-growth-ce7858d3d98cf427",
+          "source_type": "independent_english_news_wire",
+          "published_at": "2026-09-02",
+          "freshness_role": "independent same-day English report confirms the Bank of Canada held its policy rate at 2.25 percent",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/MortgagesCanada",
+          "url": "https://www.reddit.com/r/MortgagesCanada/comments/1w5bsrf/the_bank_of_canada_maintains_the_overnight_rate/",
+          "source_type": "public_discussion_heat",
+          "published_at": "2026-09-03",
+          "freshness_role": "public post-decision discussion and discovery wording only; not used to confirm the decision or infer USD/CAD direction",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass_new",
+        "decision_gate": "selected_new",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "reopen_trigger": "A Bank of Canada correction, a distinct verified Canadian data result that changes the non-directional calculation question, or a current public USD/CAD fixed-risk question with materially different inputs; otherwise retire the result-day frame after September 4.",
+        "rationale": "The official 2.25 percent result and Reuters' independent same-day report satisfy the two-publisher fact and freshness gate. A public post-decision discussion provides a current discovery signal. No historic Bank of Canada/USD-CAD package exists, so the confirmed rate-hold headline can lead a narrowly scoped fixed-risk calculation rather than a duplicate macro article. The USD 100 40/80/120-pip table is explicitly instructional and makes no rate, currency, volatility, or execution claim."
+      }
+    },
+    "HR-20260903-02": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+          "source_type": "official_release_schedule",
+          "published_at": "2026-09-03",
+          "freshness_role": "official schedule lists the August 2026 Employment Situation for September 4 at 8:30 a.m. ET",
+          "reliable": true
+        },
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/schedule/2026/09_sched_list.htm",
+          "source_type": "official_monthly_release_calendar",
+          "published_at": "2026-09-03",
+          "freshness_role": "official September calendar repeats the September 4 Employment Situation release time",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_same_publisher_and_no_distinct_verified_retail_calculation_journey",
+        "duplicate_of": ["HR-20260810-01"],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "Published August employment data plus a current public English question explicitly requesting a non-directional pip-value, fixed-risk or position-size calculation with materially different readable inputs from HR-20260810-01.",
+        "rationale": "The schedule is imminent, but the two pages share one publisher and the public material remains a calendar/direction-first journey. The existing payroll package owns generic macro-event sizing, so countdown alone does not establish a new playbook."
+      }
+    },
+    "HR-20260903-03": {
+      "sources": [
+        {
+          "publisher": "European Central Bank",
+          "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+          "source_type": "official_dated_meeting_calendar",
+          "published_at": "2026-09-03",
+          "freshness_role": "official calendar lists the September 9-10 monetary policy meeting and September 10 press conference",
+          "reliable": true
+        },
+        {
+          "publisher": "Lumon",
+          "url": "https://www.lumonpay.com/corporate/articles/september-fx-briefing-rate-decisions-driving-gdp-eur-usd/",
+          "source_type": "independent_english_event_context",
+          "published_at": "2026-09-01",
+          "freshness_role": "independent English briefing identifies the ECB in the current September central-bank decision window",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_only_calendar_window_delta_no_new_search_or_example_path",
+        "duplicate_of": ["HR-20260723-02"],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "A published ECB decision or a current public English question that states a concrete non-directional EUR/USD pip-value, fixed-risk or position-size need with a materially different readable example from the historic ECB package.",
+        "rationale": "The date and independent context meet factual coverage, but the scan found no distinct public non-directional calculation wording or new readable example. The closest historic ECB package already owns generic pre-decision sizing; only the clock has changed, so this must remain observation."
+      }
+    }
+  }
+}

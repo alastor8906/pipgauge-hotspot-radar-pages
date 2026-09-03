@@ -1,0 +1,20 @@
+{
+  "candidate_id": "HR-20260903-01",
+  "scan_date": "2026-09-03",
+  "primary_site": "PipGauge",
+  "topic": "Bank of Canada Holds at 2.25%: Calculate USD/CAD Fixed Risk After the Decision",
+  "execution_mode": "new",
+  "refresh_target": null,
+  "package_summary": "当期审核快照：以 Bank of Canada 已公布维持 2.25% 为事实钩子，演示 USD/CAD 的非方向性固定风险仓位算术；用 USD 100 的 40/80/120-pip 教学表核对仓位，不预测 USD/CAD、利率、波动或成交。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "post_decision_new_window",
+  "time_status_label": "仅在 2026 年 9 月 2 日 Bank of Canada 结果公布后的短期复核窗口使用；9 月 4 日后、官方更正或新的独立可核验事实出现时必须改写或停用。",
+  "documents": [
+    {"id": "facts", "label": "事实与论点", "file": "00-事实与论点.md", "platform": "internal", "kind": "editorial brief", "status_label": "已整理"},
+    {"id": "medium", "label": "Medium", "file": "01-Medium.md", "platform": "medium", "kind": "long-form draft", "status_label": "待人工审核"},
+    {"id": "reddit", "label": "Reddit", "file": "02-Reddit.md", "platform": "reddit", "kind": "native discussion draft", "status_label": "待人工审核"},
+    {"id": "x", "label": "X", "file": "03-X.md", "platform": "x", "kind": "short thread draft", "status_label": "待人工审核"},
+    {"id": "review", "label": "审核清单", "file": "04-人工审核.md", "platform": "internal", "kind": "human gate", "status_label": "必须完成"}
+  ]
+}
