@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-02T22:00:00+08:00",
+  "updated_at": "2026-09-03T22:00:00+08:00",
   "items": {
     "HR-20260831-01": {
       "playbook_status": "ready",
@@ -1681,6 +1681,29 @@
         "expiry on results, correction or new verified fact"
       ],
       "product_bridge": "PositionMath verifies hypothetical share P&L, portfolio heat and planned position size after the fact-led exposure explanation; it does not interpret Broadcom's results or forecast AVGO.",
+      "product_bridge_type": "existing"
+    },
+    "HR-20260903-01": {
+      "playbook_status": "ready",
+      "execution_mode": "new",
+      "urgency": "high",
+      "publish_deadline": "2026-09-04T08:30:00-04:00",
+      "traffic_hook": "Bank of Canada has published a September 2 hold at 2.25%, independently reported by Reuters. The hook is the completed, cross-reported rate-hold headline and visible post-decision discussion—not a claim about the next Bank decision, USD/CAD direction, or a realised market move.",
+      "traffic_window": "Stage or publish the dated fixed-risk explainer from September 3 through the September 4 U.S. employment release, while the completed Bank of Canada result remains a current search/discussion object. Retire the result-day frame after that short window, on a Bank of Canada correction, or when a later verified fact creates a different calculation question.",
+      "search_intents": ["Bank of Canada holds 2.25 USD CAD risk", "after Bank of Canada decision USDCAD position size calculator", "USDCAD pip value 80 pip stop", "how many lots USDCAD for 100 dollar risk", "Bank of Canada 2.25 fixed risk position size"],
+      "traffic_angle": "Borrow the verified 2.25% rate-hold headline to answer one post-event calculation question: with a USD 10,000 account, USD 100 maximum planned price risk, and an explicitly approximate USD 10-per-pip USD/CAD teaching input, what planned size corresponds to 40, 80, or 120 pips? The readable answer is 0.25, about 0.12, or about 0.08 lot before costs. This table is a risk-budget check, not an expected CAD reaction, policy-path view, or trade instruction.",
+      "calculator_bridge": "Lead with the released fact and manual formula. PipGauge Pip Value verifies USD/CAD pip value for the actual account currency and contract convention; Position Size verifies the USD 100 / 40/80/120-pip inputs. P&L and Spread Cost can be used only for separately labelled hypothetical checks. None of the calculators interpret the Bank of Canada decision, forecast USD/CAD, or guarantee a stop fill.",
+      "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; USD/CAD in a USD account at an approximate USD 10 per pip per standard lot teaching assumption. A 40/80/120-pip planned stop maps to about 0.25/0.12/0.08 lot before commission, spread, slippage, or gaps. These are teaching inputs, not a live quote, expected move, or trade instruction.",
+      "distribution_order": ["new PipGauge Bank of Canada / USD-CAD event-risk note", "Medium dated post-decision fixed-risk explainer", "X self-contained USD/CAD sizing thread", "Reddit native process discussion without a first-round link"],
+      "link_placement": "State the published Bank of Canada result, formula, three readable sizes, and the plan-versus-fill limit before a link. Add at most one PipGauge verification link after the arithmetic and caveats; do not put a link, tracking parameter, or product pitch in the initial Reddit post, and keep the X thread independently readable.",
+      "expiry_condition": "Stop the result-day frame after September 4, if Bank of Canada corrects the record, or if later verified information changes the user question. Do not recycle the 40/80/120-pip teaching table as a claim about USD/CAD volatility, a policy forecast, or evergreen post-decision commentary.",
+      "editorial_boundary": "Do not predict the next policy decision, policy path, inflation, USD/CAD, rates, volatility, profitability, or a market move. Do not recommend a long/short position, call a planned stop a guaranteed fill, or present assumed pip value, spread, or costs as observed event execution data.",
+      "refresh_target": null,
+      "refresh_signals": {"fact_delta": true, "search_delta": true, "example_delta": true, "window_delta": true},
+      "refresh_updates": [],
+      "content_mainline": "Create one Bank of Canada-specific post-decision USD/CAD fixed-risk note that turns the confirmed 2.25% result into transparent 40/80/120-pip arithmetic without forecasting the Bank or the currency.",
+      "body_material": ["Bank of Canada September 2 official hold at 2.25%", "Reuters independent same-day English report", "public post-decision discussion as heat only", "USD 100 risk at 40/80/120 pips", "short September 4 expiry without price or policy prediction"],
+      "product_bridge": "PipGauge verifies USD/CAD pip value and fixed-risk size after the fact-led explanation; it does not interpret Bank of Canada, forecast a currency move, or guarantee execution.",
       "product_bridge_type": "existing"
     },
     "HR-20260902-01": {
