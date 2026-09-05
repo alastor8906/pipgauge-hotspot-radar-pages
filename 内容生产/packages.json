@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T14:08:00.134Z",
+  "generated_at": "2026-09-05T14:07:07.859Z",
   "endpoint": "multi_platform_drafts_awaiting_human_review",
   "supported_platforms": [
     "medium",
@@ -7,6 +7,41 @@
     "x"
   ],
   "packages": [
+    {
+      "candidate_id": "HR-20260905-01",
+      "scan_date": "2026-09-05",
+      "primary_site": "PipGauge",
+      "topic": "U.S. Payrolls Added 162,000: Refresh the Fixed-Risk Check After the August Report",
+      "package_summary": "当期审核快照：以 9 月 4 日公布的美国 8 月非农 +162,000、失业率 4.1% 及前两月合计上修 55,000 为事实钩子，刷新既有 payroll 固定风险稿；用 USD 50 的 20/40/80-pip 教学表核对仓位，不预测美元、Fed、EUR/USD、波动或成交。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "post_release_refresh_window",
+      "time_status_label": "仅在 2026 年 9 月 4 日就业结果后的短期复核窗口使用；9 月 11 日 CPI 发布、BLS 更正或新的独立可核验事实出现时必须改写或停用。",
+      "url": "../内容生产/2026-09-05/HR-20260905-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-09-05/HR-20260905-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-09-05/HR-20260905-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-09-05/HR-20260905-01/index.html#x"
+        }
+      ]
+    },
     {
       "candidate_id": "HR-20260903-01",
       "scan_date": "2026-09-03",

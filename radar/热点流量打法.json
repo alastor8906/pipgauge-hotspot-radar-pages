@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-03T22:00:00+08:00",
+  "updated_at": "2026-09-05T22:00:00+08:00",
   "items": {
     "HR-20260831-01": {
       "playbook_status": "ready",
@@ -1754,6 +1754,56 @@
         "short September 3 expiry without price or policy prediction"
       ],
       "product_bridge": "PipGauge verifies NZD/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret RBNZ, forecast a currency move, or guarantee execution.",
+      "product_bridge_type": "existing"
+    },
+    "HR-20260905-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-09-06T12:00:00-04:00",
+      "traffic_hook": "The U.S. Bureau of Labor Statistics has published August payroll growth of 162,000, unemployment at 4.1%, and combined June-July revisions of plus 55,000; AP independently reported the result. BabyPips' same-day payroll result page supplies a current FX-audience discovery signal. The hook is the completed report and its revised numbers, never a dollar, Fed, EUR/USD, or market-direction claim.",
+      "traffic_window": "Refresh the existing payroll fixed-risk note from the September 4 published result through September 6 ET, then retire this dated frame before the September 11 CPI release. Stop immediately on a BLS correction or if a later independently verified fact creates a different calculation question.",
+      "search_intents": [
+        "August 2026 jobs report 162000 forex risk",
+        "payroll revisions plus 55000 position size calculator",
+        "after jobs report EURUSD fixed risk",
+        "EURUSD pip value 40 pip stop",
+        "how many lots EURUSD for 50 dollar risk"
+      ],
+      "traffic_angle": "Borrow the cross-reported +162,000 / 4.1% / +55,000 revisions result to answer one non-directional post-report question: with a USD 10,000 account, USD 50 maximum planned price risk, and an explicitly approximate USD 10-per-pip EUR/USD teaching input, what planned size corresponds to 20, 40, or 80 pips? The readable answer is 0.25, about 0.12, or about 0.06 lot before costs. This is a risk-budget check, not a forecast of EUR/USD, the dollar, rates, volatility, or a Fed decision.",
+      "calculator_bridge": "Lead with the released facts and manual fixed-risk formula. PipGauge Pip Value verifies EUR/USD pip value for the reader's actual account currency and contract convention; Position Size verifies the USD 50 / 20-40-80-pip inputs. P&L and Spread Cost may be used only as separately labelled hypothetical checks. The calculators do not interpret payrolls, forecast the market, or guarantee a stop fill.",
+      "example_scenario": "USD 10,000 account; USD 50 maximum planned price risk; EUR/USD in a USD account at an approximate USD 10 per pip per standard lot teaching assumption. A 20/40/80-pip planned stop maps to 0.25/about 0.12/about 0.06 lot before commission, spread, slippage, or gaps. These are teaching inputs, not a live quote, expected move, or trade instruction.",
+      "distribution_order": [
+        "refresh existing payroll fixed-risk article HR-20260810-01",
+        "Medium dated post-report fixed-risk refresh",
+        "X self-contained payroll-risk thread",
+        "Reddit native process discussion without a first-round link"
+      ],
+      "link_placement": "State the published data, formula, three readable sizes, and the plan-versus-fill limit before one PipGauge verification link. Do not put a link, tracking parameter, or product pitch in the initial Reddit post, and keep the X thread independently readable.",
+      "expiry_condition": "Stop using this post-report frame after September 6 ET, on a BLS correction, or when the September 11 CPI release or another independently verified fact changes the user question. Do not recycle the 20/40/80-pip teaching grid as a forecast, a typical payroll move, or evergreen market commentary.",
+      "editorial_boundary": "Do not predict EUR/USD, the dollar, the Fed, interest rates, volatility, profitability, or a market move. Do not recommend a long/short position, call a planned stop a guaranteed fill, or present assumed pip value, spread, or costs as observed event execution data. Do not conflate the payroll survey, unemployment rate, and revisions.",
+      "refresh_target": "HR-20260810-01",
+      "refresh_signals": {
+        "fact_delta": true,
+        "search_delta": true,
+        "example_delta": true,
+        "window_delta": true
+      },
+      "refresh_updates": [
+        "replace the old July -23,000 / 4.1% / -103,000-revisions headline and all fact blocks with the published August +162,000 / 4.1% / +55,000-combined-revisions result",
+        "replace the old post-July-report/preceding-CPI time language with a September 4 result-to-September 11 CPI short window",
+        "replace the 25/50/100-pip USD 50 table with an explicitly instructional 20/40/80-pip USD 50 table",
+        "remove any wording that treats the result as a dollar, Fed, EUR/USD, volatility, or execution forecast"
+      ],
+      "content_mainline": "Refresh the existing payroll fixed-risk article into a dated August-result check using published +162,000 / 4.1% / +55,000 facts and transparent USD 50 20/40/80-pip arithmetic; do not create another payroll article.",
+      "body_material": [
+        "BLS September 4 Employment Situation: +162,000, 4.1%, and +55,000 combined June-July revisions",
+        "AP independent same-day result report",
+        "BabyPips result page as discovery only",
+        "USD 50 risk at 20/40/80 pips",
+        "short September 6 expiry and September 11 CPI supersession gate"
+      ],
+      "product_bridge": "PipGauge verifies EUR/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret payrolls, forecast a currency move, or guarantee execution.",
       "product_bridge_type": "existing"
     }
   }

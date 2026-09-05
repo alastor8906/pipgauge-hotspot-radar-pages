@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-09-03T22:06:41+08:00",
-  "latest_scan_date": "2026-09-03",
+  "generated_at": "2026-09-05T22:06:25+08:00",
+  "latest_scan_date": "2026-09-05",
   "available_dates": [
+    "2026-09-05",
     "2026-09-03",
     "2026-09-02",
     "2026-08-31",
@@ -46,8 +47,330 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-09-05",
+      "generated_at": "2026-09-05T22:06:25+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 41,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 1,
+        "observation": 2,
+        "discarded": 1,
+        "total": 4,
+        "selected_average": 99.0,
+        "all_selected_pass_gate": true,
+        "content_ready": 1,
+        "playbook_ready": 1
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-09-05",
+          "candidate_id": "HR-20260905-01",
+          "status": "selected",
+          "topic": "U.S. Payrolls Added 162000: Refresh the Fixed-Risk Check After the August Report",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 24,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 10,
+          "total_score": 99,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "BLS's September 4 result (+162000 payrolls, 4.1% unemployment, +55000 combined June-July revisions) and AP's independent report satisfy the result fact gate; BabyPips supplies a current FX-audience discovery signal. Four refresh deltas update HR-20260810-01 without a dollar, Fed or EUR/USD forecast",
+          "content_status": "review_ready",
+          "content_label": "美国 8 月就业结果后固定风险刷新审核包待人工审核",
+          "content_url": "../内容生产/2026-09-05/HR-20260905-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-09-06T12:00:00-04:00",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "refresh",
+            "urgency": "high",
+            "publish_deadline": "2026-09-06T12:00:00-04:00",
+            "traffic_hook": "The U.S. Bureau of Labor Statistics has published August payroll growth of 162,000, unemployment at 4.1%, and combined June-July revisions of plus 55,000; AP independently reported the result. BabyPips' same-day payroll result page supplies a current FX-audience discovery signal. The hook is the completed report and its revised numbers, never a dollar, Fed, EUR/USD, or market-direction claim.",
+            "traffic_window": "Refresh the existing payroll fixed-risk note from the September 4 published result through September 6 ET, then retire this dated frame before the September 11 CPI release. Stop immediately on a BLS correction or if a later independently verified fact creates a different calculation question.",
+            "search_intents": [
+              "August 2026 jobs report 162000 forex risk",
+              "payroll revisions plus 55000 position size calculator",
+              "after jobs report EURUSD fixed risk",
+              "EURUSD pip value 40 pip stop",
+              "how many lots EURUSD for 50 dollar risk"
+            ],
+            "traffic_angle": "Borrow the cross-reported +162,000 / 4.1% / +55,000 revisions result to answer one non-directional post-report question: with a USD 10,000 account, USD 50 maximum planned price risk, and an explicitly approximate USD 10-per-pip EUR/USD teaching input, what planned size corresponds to 20, 40, or 80 pips? The readable answer is 0.25, about 0.12, or about 0.06 lot before costs. This is a risk-budget check, not a forecast of EUR/USD, the dollar, rates, volatility, or a Fed decision.",
+            "calculator_bridge": "Lead with the released facts and manual fixed-risk formula. PipGauge Pip Value verifies EUR/USD pip value for the reader's actual account currency and contract convention; Position Size verifies the USD 50 / 20-40-80-pip inputs. P&L and Spread Cost may be used only as separately labelled hypothetical checks. The calculators do not interpret payrolls, forecast the market, or guarantee a stop fill.",
+            "example_scenario": "USD 10,000 account; USD 50 maximum planned price risk; EUR/USD in a USD account at an approximate USD 10 per pip per standard lot teaching assumption. A 20/40/80-pip planned stop maps to 0.25/about 0.12/about 0.06 lot before commission, spread, slippage, or gaps. These are teaching inputs, not a live quote, expected move, or trade instruction.",
+            "distribution_order": [
+              "refresh existing payroll fixed-risk article HR-20260810-01",
+              "Medium dated post-report fixed-risk refresh",
+              "X self-contained payroll-risk thread",
+              "Reddit native process discussion without a first-round link"
+            ],
+            "link_placement": "State the published data, formula, three readable sizes, and the plan-versus-fill limit before one PipGauge verification link. Do not put a link, tracking parameter, or product pitch in the initial Reddit post, and keep the X thread independently readable.",
+            "expiry_condition": "Stop using this post-report frame after September 6 ET, on a BLS correction, or when the September 11 CPI release or another independently verified fact changes the user question. Do not recycle the 20/40/80-pip teaching grid as a forecast, a typical payroll move, or evergreen market commentary.",
+            "editorial_boundary": "Do not predict EUR/USD, the dollar, the Fed, interest rates, volatility, profitability, or a market move. Do not recommend a long/short position, call a planned stop a guaranteed fill, or present assumed pip value, spread, or costs as observed event execution data. Do not conflate the payroll survey, unemployment rate, and revisions.",
+            "refresh_target": "HR-20260810-01",
+            "refresh_signals": {
+              "fact_delta": true,
+              "search_delta": true,
+              "example_delta": true,
+              "window_delta": true
+            },
+            "refresh_updates": [
+              "replace the old July -23,000 / 4.1% / -103,000-revisions headline and all fact blocks with the published August +162,000 / 4.1% / +55,000-combined-revisions result",
+              "replace the old post-July-report/preceding-CPI time language with a September 4 result-to-September 11 CPI short window",
+              "replace the 25/50/100-pip USD 50 table with an explicitly instructional 20/40/80-pip USD 50 table",
+              "remove any wording that treats the result as a dollar, Fed, EUR/USD, volatility, or execution forecast"
+            ],
+            "content_mainline": "Refresh the existing payroll fixed-risk article into a dated August-result check using published +162,000 / 4.1% / +55,000 facts and transparent USD 50 20/40/80-pip arithmetic; do not create another payroll article.",
+            "body_material": [
+              "BLS September 4 Employment Situation: +162,000, 4.1%, and +55,000 combined June-July revisions",
+              "AP independent same-day result report",
+              "BabyPips result page as discovery only",
+              "USD 50 risk at 20/40/80 pips",
+              "short September 6 expiry and September 11 CPI supersession gate"
+            ],
+            "product_bridge": "PipGauge verifies EUR/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret payrolls, forecast a currency move, or guarantee execution.",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/news.release/archives/empsit_09042026.htm",
+                "source_type": "official_dated_employment_result",
+                "published_at": "2026-09-04",
+                "freshness_role": "official same-day August Employment Situation: payrolls +162,000, unemployment 4.1 percent, and combined June-July revisions +55,000",
+                "reliable": true
+              },
+              {
+                "publisher": "Associated Press",
+                "url": "https://apnews.com/article/stocks-markets-oil-trump-iran-war-1af16359af43eb8abc66445465f633c8",
+                "source_type": "independent_english_news_wire",
+                "published_at": "2026-09-04",
+                "freshness_role": "independent same-day English report confirms stronger August hiring, 4.1 percent unemployment, and +55,000 combined prior-month revisions",
+                "reliable": true
+              },
+              {
+                "publisher": "BabyPips",
+                "url": "https://www.babypips.com/news/headline-us-jobs-august-2026-nonfarm-payrolls-beat-forecasts",
+                "source_type": "public_fx_discussion_heat",
+                "published_at": "2026-09-04",
+                "freshness_role": "same-day FX-audience discovery wording for the published payroll result only; not used to confirm numbers, infer an expected move, or provide a trade view",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass_refresh",
+              "decision_gate": "selected_refresh",
+              "duplicate_of": [
+                "HR-20260810-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": true,
+                "window_delta": true
+              },
+              "reopen_trigger": "A BLS correction, a published September CPI result with an independently reported fact and a distinct non-directional retail calculation path, or a current public English question that requests materially different fixed-risk inputs; otherwise retire this result-day frame after September 6 ET.",
+              "rationale": "BLS and AP are independent reliable publishers for the same-day August result, while BabyPips establishes current FX-audience discovery wording. The published +162,000 / 4.1% / +55,000 result replaces the old July -23,000 / 4.1% / -103,000 fact set; the result-first query object, USD 50 20/40/80-pip teaching table, and post-release window make all four refresh signals true. This refresh updates the existing payroll fixed-risk article, not a new macro article, and makes no currency, Fed, market, volatility, or execution claim."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-05",
+          "candidate_id": "HR-20260905-02",
+          "status": "observation",
+          "topic": "ECB September 10 Decision Is Nearer but Still Has No New EURUSD Calculation Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 22,
+          "calculator_fit": 22,
+          "evidence_quality": 15,
+          "actionability": 5,
+          "total_score": 89,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Spread Cost"
+          ],
+          "reason": "ECB's September 4 weekly schedule and Lumon's September 1 English context verify the September 10 decision window, but a closer calendar date is not a new fact or a verified non-directional retail EURUSD calculation query; the historic ECB package still owns generic pre-decision sizing",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "European Central Bank",
+                "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html",
+                "source_type": "official_dated_weekly_schedule",
+                "published_at": "2026-09-04",
+                "freshness_role": "official schedule lists September 9 meeting day one and September 10 14:15 CET policy-decision publication plus 14:45 CET press conference",
+                "reliable": true
+              },
+              {
+                "publisher": "Lumon",
+                "url": "https://www.lumonpay.com/corporate/articles/september-fx-briefing-rate-decisions-driving-gdp-eur-usd/",
+                "source_type": "independent_english_event_context",
+                "published_at": "2026-09-01",
+                "freshness_role": "independent English context identifies the ECB in the current September central-bank event window",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_existing_calendar_window_closer_but_no_new_search_or_example_path",
+              "duplicate_of": [
+                "HR-20260723-02",
+                "HR-20260903-03"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A published ECB decision or a current public English question that states a concrete non-directional EUR/USD pip-value, fixed-risk, or position-size need with materially different readable inputs from the historic ECB package.",
+              "rationale": "The official date is now closer but was already documented in the prior scan; no newly published policy fact, specific public non-directional calculation wording, or replacement example was verified. A closer clock alone is not a refresh signal sufficient to create content."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-05",
+          "candidate_id": "HR-20260905-03",
+          "status": "observation",
+          "topic": "U.S. August CPI Due September 11 Has Only a Calendar Window and No Distinct Retail Calculation Demand",
+          "primary_site": "PipGauge",
+          "freshness": 24,
+          "traffic_potential": 22,
+          "calculator_fit": 20,
+          "evidence_quality": 8,
+          "actionability": 5,
+          "total_score": 79,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Spread Cost"
+          ],
+          "reason": "BLS's official CPI schedule and ForexFactory's public calendar show the September 11 release window, but only BLS is a reliable fact publisher in this scan and no new non-directional pip-value, fixed-risk or position-size journey distinct from prior CPI/payroll material was verified",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+                "source_type": "official_cpi_release_schedule",
+                "published_at": "2026-09-05",
+                "freshness_role": "official schedule lists the September 11 CPI release at 8:30 a.m. ET",
+                "reliable": true
+              },
+              {
+                "publisher": "ForexFactory",
+                "url": "https://www.forexfactory.com/calendar?range=sep5.2026-sep16.2026",
+                "source_type": "public_calendar_discovery",
+                "published_at": "2026-09-05",
+                "freshness_role": "public calendar confirms the current event-discovery window only; not used to confirm the release date or infer market direction",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_single_reliable_publisher_calendar_only_no_distinct_retail_calculation_journey",
+              "duplicate_of": [
+                "HR-20260810-02",
+                "HR-20260811-02"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Published August CPI data plus a second independent reliable English result source and a current public question explicitly requesting a materially different non-directional pip-value, fixed-risk, or position-size calculation from the historical CPI/payroll packages.",
+              "rationale": "The release is within seven days, but this scan has one reliable fact publisher and only calendar discovery, not an actual result or a distinct public retail calculation path. Generic pre-event sizing is already covered, so a countdown must not create a playbook."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-05",
+          "candidate_id": "HR-20260905-04",
+          "status": "discarded",
+          "topic": "Directional Payroll Dollar ECB CPI and Stock Forecast Posts",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 60,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Price targets, payroll-to-dollar calls, Fed or ECB predictions, stock signals, political framing, login-wall material and generic market commentary are excluded; no calculator bridge, playbook or content package is created"
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-09-05T22:00:00+08:00",
+          "source_count": 6,
+          "note": "核验 BLS 已公布的 August Employment Situation、BLS CPI 日程、ECB 9 月 4 日更新周程，以及 prop-firm 的慢变公开规则页。"
+        },
+        {
+          "channel": "可靠英文媒体",
+          "status": "complete",
+          "checked_at": "2026-09-05T22:00:00+08:00",
+          "source_count": 2,
+          "note": "核验 AP 对 8 月就业结果与修订的独立英文报道，以及 Lumon 对 9 月 ECB 窗口的独立英文背景；后者只用于 ECB 观察项。"
+        },
+        {
+          "channel": "Reddit / ForexFactory / BabyPips",
+          "status": "complete",
+          "checked_at": "2026-09-05T22:00:00+08:00",
+          "source_count": 3,
+          "note": "核验 BabyPips 当日 payroll 结果页、ForexFactory 公开经济日历和公开 Reddit 索引；仅用于发现、讨论及查询措辞，不确认事实、报价或方向。"
+        },
+        {
+          "channel": "X / Quora",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-09-05T22:00:00+08:00",
+          "source_count": 0,
+          "note": "X 公开索引未提供新的、具体且非方向性的 payroll、EUR/USD、ECB 或 CPI 计算问题；Quora 受 robots/login 限制，未将不可核验材料使用为证据。未登录、发帖、评论或操作任何账户。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-09-05_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-09-05_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-09-05"
+      }
+    },
+    {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -360,7 +683,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -671,7 +994,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -1002,7 +1325,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -1340,7 +1663,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -1733,7 +2056,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -2143,7 +2466,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -2615,7 +2938,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -2960,7 +3283,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -3305,7 +3628,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -3757,7 +4080,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -4170,7 +4493,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -4402,7 +4725,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -4847,7 +5170,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -5222,7 +5545,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -5614,7 +5937,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -5990,7 +6313,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -6314,7 +6637,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -6697,7 +7020,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -7038,7 +7361,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -7413,7 +7736,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -7801,7 +8124,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -8146,7 +8469,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -8474,7 +8797,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -8786,7 +9109,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -9107,7 +9430,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -9468,7 +9791,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -9821,7 +10144,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -10265,7 +10588,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -10774,7 +11097,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -11244,7 +11567,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -11787,7 +12110,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -12059,7 +12382,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -12372,7 +12695,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -12807,7 +13130,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -13321,7 +13644,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -13830,7 +14153,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -14297,7 +14620,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -14710,7 +15033,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -15108,7 +15431,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-09-03T22:06:41+08:00",
+      "generated_at": "2026-09-05T22:06:25+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -15547,10 +15870,10 @@
       }
     }
   ],
-  "scan_date": "2026-09-03",
+  "scan_date": "2026-09-05",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 40,
+    "day": 41,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -15562,24 +15885,24 @@
     "observation": 2,
     "discarded": 1,
     "total": 4,
-    "selected_average": 96.0,
+    "selected_average": 99.0,
     "all_selected_pass_gate": true,
     "content_ready": 1,
     "playbook_ready": 1
   },
   "candidates": [
     {
-      "scan_date": "2026-09-03",
-      "candidate_id": "HR-20260903-01",
+      "scan_date": "2026-09-05",
+      "candidate_id": "HR-20260905-01",
       "status": "selected",
-      "topic": "Bank of Canada Holds at 2.25%: Calculate USD/CAD Fixed Risk After the Decision",
+      "topic": "U.S. Payrolls Added 162000: Refresh the Fixed-Risk Check After the August Report",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 22,
+      "traffic_potential": 24,
       "calculator_fit": 25,
       "evidence_quality": 15,
-      "actionability": 9,
-      "total_score": 96,
+      "actionability": 10,
+      "total_score": 99,
       "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
@@ -15589,111 +15912,118 @@
         "P&L",
         "Spread Cost"
       ],
-      "reason": "Bank of Canada's September 2 official result and Reuters' independent same-day report confirm the 2.25% hold; current public discussion creates a short post-decision discovery window for a non-directional USD/CAD fixed-risk calculation",
+      "reason": "BLS's September 4 result (+162000 payrolls, 4.1% unemployment, +55000 combined June-July revisions) and AP's independent report satisfy the result fact gate; BabyPips supplies a current FX-audience discovery signal. Four refresh deltas update HR-20260810-01 without a dollar, Fed or EUR/USD forecast",
       "content_status": "review_ready",
-      "content_label": "Bank of Canada 2.25% 结果后 USD/CAD 固定风险审核包待人工审核",
-      "content_url": "../内容生产/2026-09-03/HR-20260903-01/index.html",
+      "content_label": "美国 8 月就业结果后固定风险刷新审核包待人工审核",
+      "content_url": "../内容生产/2026-09-05/HR-20260905-01/index.html",
       "content_format": "Medium / Reddit / X",
-      "deadline": "2026-09-04T08:30:00-04:00",
+      "deadline": "2026-09-06T12:00:00-04:00",
       "traffic_playbook": {
         "playbook_status": "ready",
-        "execution_mode": "new",
+        "execution_mode": "refresh",
         "urgency": "high",
-        "publish_deadline": "2026-09-04T08:30:00-04:00",
-        "traffic_hook": "Bank of Canada has published a September 2 hold at 2.25%, independently reported by Reuters. The hook is the completed, cross-reported rate-hold headline and visible post-decision discussion—not a claim about the next Bank decision, USD/CAD direction, or a realised market move.",
-        "traffic_window": "Stage or publish the dated fixed-risk explainer from September 3 through the September 4 U.S. employment release, while the completed Bank of Canada result remains a current search/discussion object. Retire the result-day frame after that short window, on a Bank of Canada correction, or when a later verified fact creates a different calculation question.",
+        "publish_deadline": "2026-09-06T12:00:00-04:00",
+        "traffic_hook": "The U.S. Bureau of Labor Statistics has published August payroll growth of 162,000, unemployment at 4.1%, and combined June-July revisions of plus 55,000; AP independently reported the result. BabyPips' same-day payroll result page supplies a current FX-audience discovery signal. The hook is the completed report and its revised numbers, never a dollar, Fed, EUR/USD, or market-direction claim.",
+        "traffic_window": "Refresh the existing payroll fixed-risk note from the September 4 published result through September 6 ET, then retire this dated frame before the September 11 CPI release. Stop immediately on a BLS correction or if a later independently verified fact creates a different calculation question.",
         "search_intents": [
-          "Bank of Canada holds 2.25 USD CAD risk",
-          "after Bank of Canada decision USDCAD position size calculator",
-          "USDCAD pip value 80 pip stop",
-          "how many lots USDCAD for 100 dollar risk",
-          "Bank of Canada 2.25 fixed risk position size"
+          "August 2026 jobs report 162000 forex risk",
+          "payroll revisions plus 55000 position size calculator",
+          "after jobs report EURUSD fixed risk",
+          "EURUSD pip value 40 pip stop",
+          "how many lots EURUSD for 50 dollar risk"
         ],
-        "traffic_angle": "Borrow the verified 2.25% rate-hold headline to answer one post-event calculation question: with a USD 10,000 account, USD 100 maximum planned price risk, and an explicitly approximate USD 10-per-pip USD/CAD teaching input, what planned size corresponds to 40, 80, or 120 pips? The readable answer is 0.25, about 0.12, or about 0.08 lot before costs. This table is a risk-budget check, not an expected CAD reaction, policy-path view, or trade instruction.",
-        "calculator_bridge": "Lead with the released fact and manual formula. PipGauge Pip Value verifies USD/CAD pip value for the actual account currency and contract convention; Position Size verifies the USD 100 / 40/80/120-pip inputs. P&L and Spread Cost can be used only for separately labelled hypothetical checks. None of the calculators interpret the Bank of Canada decision, forecast USD/CAD, or guarantee a stop fill.",
-        "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; USD/CAD in a USD account at an approximate USD 10 per pip per standard lot teaching assumption. A 40/80/120-pip planned stop maps to about 0.25/0.12/0.08 lot before commission, spread, slippage, or gaps. These are teaching inputs, not a live quote, expected move, or trade instruction.",
+        "traffic_angle": "Borrow the cross-reported +162,000 / 4.1% / +55,000 revisions result to answer one non-directional post-report question: with a USD 10,000 account, USD 50 maximum planned price risk, and an explicitly approximate USD 10-per-pip EUR/USD teaching input, what planned size corresponds to 20, 40, or 80 pips? The readable answer is 0.25, about 0.12, or about 0.06 lot before costs. This is a risk-budget check, not a forecast of EUR/USD, the dollar, rates, volatility, or a Fed decision.",
+        "calculator_bridge": "Lead with the released facts and manual fixed-risk formula. PipGauge Pip Value verifies EUR/USD pip value for the reader's actual account currency and contract convention; Position Size verifies the USD 50 / 20-40-80-pip inputs. P&L and Spread Cost may be used only as separately labelled hypothetical checks. The calculators do not interpret payrolls, forecast the market, or guarantee a stop fill.",
+        "example_scenario": "USD 10,000 account; USD 50 maximum planned price risk; EUR/USD in a USD account at an approximate USD 10 per pip per standard lot teaching assumption. A 20/40/80-pip planned stop maps to 0.25/about 0.12/about 0.06 lot before commission, spread, slippage, or gaps. These are teaching inputs, not a live quote, expected move, or trade instruction.",
         "distribution_order": [
-          "new PipGauge Bank of Canada / USD-CAD event-risk note",
-          "Medium dated post-decision fixed-risk explainer",
-          "X self-contained USD/CAD sizing thread",
+          "refresh existing payroll fixed-risk article HR-20260810-01",
+          "Medium dated post-report fixed-risk refresh",
+          "X self-contained payroll-risk thread",
           "Reddit native process discussion without a first-round link"
         ],
-        "link_placement": "State the published Bank of Canada result, formula, three readable sizes, and the plan-versus-fill limit before a link. Add at most one PipGauge verification link after the arithmetic and caveats; do not put a link, tracking parameter, or product pitch in the initial Reddit post, and keep the X thread independently readable.",
-        "expiry_condition": "Stop the result-day frame after September 4, if Bank of Canada corrects the record, or if later verified information changes the user question. Do not recycle the 40/80/120-pip teaching table as a claim about USD/CAD volatility, a policy forecast, or evergreen post-decision commentary.",
-        "editorial_boundary": "Do not predict the next policy decision, policy path, inflation, USD/CAD, rates, volatility, profitability, or a market move. Do not recommend a long/short position, call a planned stop a guaranteed fill, or present assumed pip value, spread, or costs as observed event execution data.",
-        "refresh_target": null,
+        "link_placement": "State the published data, formula, three readable sizes, and the plan-versus-fill limit before one PipGauge verification link. Do not put a link, tracking parameter, or product pitch in the initial Reddit post, and keep the X thread independently readable.",
+        "expiry_condition": "Stop using this post-report frame after September 6 ET, on a BLS correction, or when the September 11 CPI release or another independently verified fact changes the user question. Do not recycle the 20/40/80-pip teaching grid as a forecast, a typical payroll move, or evergreen market commentary.",
+        "editorial_boundary": "Do not predict EUR/USD, the dollar, the Fed, interest rates, volatility, profitability, or a market move. Do not recommend a long/short position, call a planned stop a guaranteed fill, or present assumed pip value, spread, or costs as observed event execution data. Do not conflate the payroll survey, unemployment rate, and revisions.",
+        "refresh_target": "HR-20260810-01",
         "refresh_signals": {
           "fact_delta": true,
           "search_delta": true,
           "example_delta": true,
           "window_delta": true
         },
-        "refresh_updates": [],
-        "content_mainline": "Create one Bank of Canada-specific post-decision USD/CAD fixed-risk note that turns the confirmed 2.25% result into transparent 40/80/120-pip arithmetic without forecasting the Bank or the currency.",
-        "body_material": [
-          "Bank of Canada September 2 official hold at 2.25%",
-          "Reuters independent same-day English report",
-          "public post-decision discussion as heat only",
-          "USD 100 risk at 40/80/120 pips",
-          "short September 4 expiry without price or policy prediction"
+        "refresh_updates": [
+          "replace the old July -23,000 / 4.1% / -103,000-revisions headline and all fact blocks with the published August +162,000 / 4.1% / +55,000-combined-revisions result",
+          "replace the old post-July-report/preceding-CPI time language with a September 4 result-to-September 11 CPI short window",
+          "replace the 25/50/100-pip USD 50 table with an explicitly instructional 20/40/80-pip USD 50 table",
+          "remove any wording that treats the result as a dollar, Fed, EUR/USD, volatility, or execution forecast"
         ],
-        "product_bridge": "PipGauge verifies USD/CAD pip value and fixed-risk size after the fact-led explanation; it does not interpret Bank of Canada, forecast a currency move, or guarantee execution.",
+        "content_mainline": "Refresh the existing payroll fixed-risk article into a dated August-result check using published +162,000 / 4.1% / +55,000 facts and transparent USD 50 20/40/80-pip arithmetic; do not create another payroll article.",
+        "body_material": [
+          "BLS September 4 Employment Situation: +162,000, 4.1%, and +55,000 combined June-July revisions",
+          "AP independent same-day result report",
+          "BabyPips result page as discovery only",
+          "USD 50 risk at 20/40/80 pips",
+          "short September 6 expiry and September 11 CPI supersession gate"
+        ],
+        "product_bridge": "PipGauge verifies EUR/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret payrolls, forecast a currency move, or guarantee execution.",
         "product_bridge_type": "existing"
       },
       "scan_audit": {
         "sources": [
           {
-            "publisher": "Bank of Canada",
-            "url": "https://www.bankofcanada.ca/2026/09/fad-press-release-2026-09-02/",
-            "source_type": "official_dated_rate_decision",
-            "published_at": "2026-09-02",
-            "freshness_role": "official same-day decision: overnight rate held at 2.25 percent",
+            "publisher": "U.S. Bureau of Labor Statistics",
+            "url": "https://www.bls.gov/news.release/archives/empsit_09042026.htm",
+            "source_type": "official_dated_employment_result",
+            "published_at": "2026-09-04",
+            "freshness_role": "official same-day August Employment Situation: payrolls +162,000, unemployment 4.1 percent, and combined June-July revisions +55,000",
             "reliable": true
           },
           {
-            "publisher": "Reuters",
-            "url": "https://ca.marketscreener.com/news/bank-of-canada-keeps-its-policy-rate-at-2-25-says-tariffs-could-hit-growth-ce7858d3d98cf427",
+            "publisher": "Associated Press",
+            "url": "https://apnews.com/article/stocks-markets-oil-trump-iran-war-1af16359af43eb8abc66445465f633c8",
             "source_type": "independent_english_news_wire",
-            "published_at": "2026-09-02",
-            "freshness_role": "independent same-day English report confirms the Bank of Canada held its policy rate at 2.25 percent",
+            "published_at": "2026-09-04",
+            "freshness_role": "independent same-day English report confirms stronger August hiring, 4.1 percent unemployment, and +55,000 combined prior-month revisions",
             "reliable": true
           },
           {
-            "publisher": "Reddit r/MortgagesCanada",
-            "url": "https://www.reddit.com/r/MortgagesCanada/comments/1w5bsrf/the_bank_of_canada_maintains_the_overnight_rate/",
-            "source_type": "public_discussion_heat",
-            "published_at": "2026-09-03",
-            "freshness_role": "public post-decision discussion and discovery wording only; not used to confirm the decision or infer USD/CAD direction",
+            "publisher": "BabyPips",
+            "url": "https://www.babypips.com/news/headline-us-jobs-august-2026-nonfarm-payrolls-beat-forecasts",
+            "source_type": "public_fx_discussion_heat",
+            "published_at": "2026-09-04",
+            "freshness_role": "same-day FX-audience discovery wording for the published payroll result only; not used to confirm numbers, infer an expected move, or provide a trade view",
             "reliable": false
           }
         ],
         "decision": {
-          "novelty_gate": "pass_new",
-          "decision_gate": "selected_new",
-          "duplicate_of": [],
+          "novelty_gate": "pass_refresh",
+          "decision_gate": "selected_refresh",
+          "duplicate_of": [
+            "HR-20260810-01"
+          ],
           "refresh_signals": {
             "fact_delta": true,
             "search_delta": true,
             "example_delta": true,
             "window_delta": true
           },
-          "reopen_trigger": "A Bank of Canada correction, a distinct verified Canadian data result that changes the non-directional calculation question, or a current public USD/CAD fixed-risk question with materially different inputs; otherwise retire the result-day frame after September 4.",
-          "rationale": "The official 2.25 percent result and Reuters' independent same-day report satisfy the two-publisher fact and freshness gate. A public post-decision discussion provides a current discovery signal. No historic Bank of Canada/USD-CAD package exists, so the confirmed rate-hold headline can lead a narrowly scoped fixed-risk calculation rather than a duplicate macro article. The USD 100 40/80/120-pip table is explicitly instructional and makes no rate, currency, volatility, or execution claim."
+          "reopen_trigger": "A BLS correction, a published September CPI result with an independently reported fact and a distinct non-directional retail calculation path, or a current public English question that requests materially different fixed-risk inputs; otherwise retire this result-day frame after September 6 ET.",
+          "rationale": "BLS and AP are independent reliable publishers for the same-day August result, while BabyPips establishes current FX-audience discovery wording. The published +162,000 / 4.1% / +55,000 result replaces the old July -23,000 / 4.1% / -103,000 fact set; the result-first query object, USD 50 20/40/80-pip teaching table, and post-release window make all four refresh signals true. This refresh updates the existing payroll fixed-risk article, not a new macro article, and makes no currency, Fed, market, volatility, or execution claim."
         }
       }
     },
     {
-      "scan_date": "2026-09-03",
-      "candidate_id": "HR-20260903-03",
+      "scan_date": "2026-09-05",
+      "candidate_id": "HR-20260905-02",
       "status": "observation",
-      "topic": "ECB September 10 Meeting Has a New Clock but No New EURUSD Calculation Journey",
+      "topic": "ECB September 10 Decision Is Nearer but Still Has No New EURUSD Calculation Journey",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 21,
+      "traffic_potential": 22,
       "calculator_fit": 22,
       "evidence_quality": 15,
       "actionability": 5,
-      "total_score": 88,
+      "total_score": 89,
       "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
@@ -15702,15 +16032,15 @@
         "Position Size",
         "Spread Cost"
       ],
-      "reason": "ECB's official calendar and independent current English context verify the meeting window, but no distinct public non-directional calculation query or new readable example clears the refresh gate",
+      "reason": "ECB's September 4 weekly schedule and Lumon's September 1 English context verify the September 10 decision window, but a closer calendar date is not a new fact or a verified non-directional retail EURUSD calculation query; the historic ECB package still owns generic pre-decision sizing",
       "scan_audit": {
         "sources": [
           {
             "publisher": "European Central Bank",
-            "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
-            "source_type": "official_dated_meeting_calendar",
-            "published_at": "2026-09-03",
-            "freshness_role": "official calendar lists the September 9-10 monetary policy meeting and September 10 press conference",
+            "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html",
+            "source_type": "official_dated_weekly_schedule",
+            "published_at": "2026-09-04",
+            "freshness_role": "official schedule lists September 9 meeting day one and September 10 14:15 CET policy-decision publication plus 14:45 CET press conference",
             "reliable": true
           },
           {
@@ -15718,39 +16048,40 @@
             "url": "https://www.lumonpay.com/corporate/articles/september-fx-briefing-rate-decisions-driving-gdp-eur-usd/",
             "source_type": "independent_english_event_context",
             "published_at": "2026-09-01",
-            "freshness_role": "independent English briefing identifies the ECB in the current September central-bank decision window",
+            "freshness_role": "independent English context identifies the ECB in the current September central-bank event window",
             "reliable": true
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_only_calendar_window_delta_no_new_search_or_example_path",
+          "decision_gate": "observation_existing_calendar_window_closer_but_no_new_search_or_example_path",
           "duplicate_of": [
-            "HR-20260723-02"
+            "HR-20260723-02",
+            "HR-20260903-03"
           ],
           "refresh_signals": {
-            "fact_delta": true,
+            "fact_delta": false,
             "search_delta": false,
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "A published ECB decision or a current public English question that states a concrete non-directional EUR/USD pip-value, fixed-risk or position-size need with a materially different readable example from the historic ECB package.",
-          "rationale": "The date and independent context meet factual coverage, but the scan found no distinct public non-directional calculation wording or new readable example. The closest historic ECB package already owns generic pre-decision sizing; only the clock has changed, so this must remain observation."
+          "reopen_trigger": "A published ECB decision or a current public English question that states a concrete non-directional EUR/USD pip-value, fixed-risk, or position-size need with materially different readable inputs from the historic ECB package.",
+          "rationale": "The official date is now closer but was already documented in the prior scan; no newly published policy fact, specific public non-directional calculation wording, or replacement example was verified. A closer clock alone is not a refresh signal sufficient to create content."
         }
       }
     },
     {
-      "scan_date": "2026-09-03",
-      "candidate_id": "HR-20260903-02",
+      "scan_date": "2026-09-05",
+      "candidate_id": "HR-20260905-03",
       "status": "observation",
-      "topic": "August U.S. Employment Report Is Imminent but Still Has No New Verified Retail Calculation Journey",
+      "topic": "U.S. August CPI Due September 11 Has Only a Calendar Window and No Distinct Retail Calculation Demand",
       "primary_site": "PipGauge",
-      "freshness": 25,
+      "freshness": 24,
       "traffic_potential": 22,
       "calculator_fit": 20,
       "evidence_quality": 8,
       "actionability": 5,
-      "total_score": 80,
+      "total_score": 79,
       "hard_gate": false,
       "reliable_sources": 1,
       "fresh_signal": true,
@@ -15759,103 +16090,104 @@
         "Position Size",
         "Spread Cost"
       ],
-      "reason": "Two BLS pages confirm the September 4 release but are one publisher; current material remains calendar/direction-first and duplicates the generic payroll-risk chain HR-20260810-01",
+      "reason": "BLS's official CPI schedule and ForexFactory's public calendar show the September 11 release window, but only BLS is a reliable fact publisher in this scan and no new non-directional pip-value, fixed-risk or position-size journey distinct from prior CPI/payroll material was verified",
       "scan_audit": {
         "sources": [
           {
             "publisher": "U.S. Bureau of Labor Statistics",
-            "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
-            "source_type": "official_release_schedule",
-            "published_at": "2026-09-03",
-            "freshness_role": "official schedule lists the August 2026 Employment Situation for September 4 at 8:30 a.m. ET",
+            "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+            "source_type": "official_cpi_release_schedule",
+            "published_at": "2026-09-05",
+            "freshness_role": "official schedule lists the September 11 CPI release at 8:30 a.m. ET",
             "reliable": true
           },
           {
-            "publisher": "U.S. Bureau of Labor Statistics",
-            "url": "https://www.bls.gov/schedule/2026/09_sched_list.htm",
-            "source_type": "official_monthly_release_calendar",
-            "published_at": "2026-09-03",
-            "freshness_role": "official September calendar repeats the September 4 Employment Situation release time",
-            "reliable": true
+            "publisher": "ForexFactory",
+            "url": "https://www.forexfactory.com/calendar?range=sep5.2026-sep16.2026",
+            "source_type": "public_calendar_discovery",
+            "published_at": "2026-09-05",
+            "freshness_role": "public calendar confirms the current event-discovery window only; not used to confirm the release date or infer market direction",
+            "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_same_publisher_and_no_distinct_verified_retail_calculation_journey",
+          "decision_gate": "observation_single_reliable_publisher_calendar_only_no_distinct_retail_calculation_journey",
           "duplicate_of": [
-            "HR-20260810-01"
+            "HR-20260810-02",
+            "HR-20260811-02"
           ],
           "refresh_signals": {
-            "fact_delta": true,
+            "fact_delta": false,
             "search_delta": false,
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "Published August employment data plus a current public English question explicitly requesting a non-directional pip-value, fixed-risk or position-size calculation with materially different readable inputs from HR-20260810-01.",
-          "rationale": "The schedule is imminent, but the two pages share one publisher and the public material remains a calendar/direction-first journey. The existing payroll package owns generic macro-event sizing, so countdown alone does not establish a new playbook."
+          "reopen_trigger": "Published August CPI data plus a second independent reliable English result source and a current public question explicitly requesting a materially different non-directional pip-value, fixed-risk, or position-size calculation from the historical CPI/payroll packages.",
+          "rationale": "The release is within seven days, but this scan has one reliable fact publisher and only calendar discovery, not an actual result or a distinct public retail calculation path. Generic pre-event sizing is already covered, so a countdown must not create a playbook."
         }
       }
     },
     {
-      "scan_date": "2026-09-03",
-      "candidate_id": "HR-20260903-04",
+      "scan_date": "2026-09-05",
+      "candidate_id": "HR-20260905-04",
       "status": "discarded",
-      "topic": "Directional USDCAD EURUSD Payroll and Stock Forecast Posts",
+      "topic": "Directional Payroll Dollar ECB CPI and Stock Forecast Posts",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 24,
+      "traffic_potential": 25,
       "calculator_fit": 3,
       "evidence_quality": 5,
       "actionability": 2,
-      "total_score": 59,
+      "total_score": 60,
       "hard_gate": false,
       "reliable_sources": 0,
       "fresh_signal": true,
       "calculator_mapping": [
         "P&L"
       ],
-      "reason": "Price targets, rate and currency direction calls, stock signals, political framing, login-wall material and generic market reactions are excluded; no calculator bridge or content package is created"
+      "reason": "Price targets, payroll-to-dollar calls, Fed or ECB predictions, stock signals, political framing, login-wall material and generic market commentary are excluded; no calculator bridge, playbook or content package is created"
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-09-03T22:00:00+08:00",
+      "checked_at": "2026-09-05T22:00:00+08:00",
       "source_count": 6,
-      "note": "核验 Bank of Canada 已公布结果、BLS Employment Situation 日程/发布清单、ECB Governing Council 日程，以及 prop-firm 的慢变官方规则页。"
+      "note": "核验 BLS 已公布的 August Employment Situation、BLS CPI 日程、ECB 9 月 4 日更新周程，以及 prop-firm 的慢变公开规则页。"
     },
     {
       "channel": "可靠英文媒体",
       "status": "complete",
-      "checked_at": "2026-09-03T22:00:00+08:00",
+      "checked_at": "2026-09-05T22:00:00+08:00",
       "source_count": 2,
-      "note": "核验 Reuters 对 Bank of Canada 2.25% rate hold 的独立英文报道，以及 Lumon 对九月央行窗口的独立英文背景；后者只用于 ECB 观察项的日期背景。"
+      "note": "核验 AP 对 8 月就业结果与修订的独立英文报道，以及 Lumon 对 9 月 ECB 窗口的独立英文背景；后者只用于 ECB 观察项。"
     },
     {
-      "channel": "Reddit / ForexFactory",
+      "channel": "Reddit / ForexFactory / BabyPips",
       "status": "complete",
-      "checked_at": "2026-09-03T22:00:00+08:00",
-      "source_count": 2,
-      "note": "核验 Bank of Canada 结果后的公开讨论和公开经济日历索引，仅用于发现、讨论及查询措辞，不确认事实、报价或方向。"
+      "checked_at": "2026-09-05T22:00:00+08:00",
+      "source_count": 3,
+      "note": "核验 BabyPips 当日 payroll 结果页、ForexFactory 公开经济日历和公开 Reddit 索引；仅用于发现、讨论及查询措辞，不确认事实、报价或方向。"
     },
     {
-      "channel": "X / Quora / BabyPips",
+      "channel": "X / Quora",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-09-03T22:00:00+08:00",
-      "source_count": 1,
-      "note": "公开索引未提供新的、具体且非方向性的 USD/CAD、EUR/USD 或 payroll 计算问题；未登录、发帖、评论或操作任何账户。"
+      "checked_at": "2026-09-05T22:00:00+08:00",
+      "source_count": 0,
+      "note": "X 公开索引未提供新的、具体且非方向性的 payroll、EUR/USD、ECB 或 CPI 计算问题；Quora 受 robots/login 限制，未将不可核验材料使用为证据。未登录、发帖、评论或操作任何账户。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-09-03_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-09-03_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-09-05_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-09-05_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
     "traffic_playbooks": "../热点流量打法.json",
-    "content_root": "../内容生产/2026-09-03"
+    "content_root": "../内容生产/2026-09-05"
   },
   "radar_model": "v2-content-first",
   "editorial_policy": {

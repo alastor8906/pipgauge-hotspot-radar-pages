@@ -295,5 +295,12 @@
     "content_url": "../内容生产/2026-08-29/HR-20260829-01/index.html",
     "content_format": "Medium / Reddit / X",
     "deadline": "2026-08-30T23:59:00-04:00"
+  },
+  "HR-20260905-01": {
+    "content_status": "review_ready",
+    "content_label": "美国 8 月就业结果后固定风险刷新审核包待人工审核",
+    "content_url": "../内容生产/2026-09-05/HR-20260905-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-09-06T12:00:00-04:00"
   }
 }
