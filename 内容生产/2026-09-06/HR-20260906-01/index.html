@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FTMO Labor Day Hours: Check US100 CFD Exposure Before the Early Close · 内容审核包</title>
+  <link rel="stylesheet" href="../../package.css">
+</head>
+<body>
+  <header class="package-header">
+    <a href="../../../radar/">返回热点雷达</a>
+    <span>HR-20260906-01</span>
+  </header>
+  <main class="package-shell">
+    <section class="package-hero">
+      <div class="package-kicker"><span>PipGauge</span><span>2026-09-06</span></div>
+      <h1>FTMO Labor Day Hours: Check US100 CFD Exposure Before the Early Close</h1>
+      <p>当期审核快照：以 FTMO 9 月 3 日公布的 9 月 7 日 US100.cash GMT+3 20:00 提前收盘为事实钩子，说明 firm-specific 时段与 US100 CFD 点值暴露算术的区别；用 0.50 contract × 30 points × 假设 USD 1/point = USD 15 的教学例子核验，不预测指数、流动性、波动或成交。</p>
+      <div class="state-grid">
+        <div><span>流水线状态</span><strong>三平台草稿已生成</strong></div>
+        <div><span>当前停点</span><strong>等待人工审核</strong></div>
+        <div><span>时效处理</span><strong>仅在 2026 年 9 月 7 日 FTMO 所列 Labor Day 时段前使用；该时段结束、FTMO 更正或适用规格变化时必须停用或改写。</strong></div>
+      </div>
+    </section>
+
+    <section class="platform-strip" aria-label="平台草稿快速入口"><button type="button" class="platform-tab" data-target="medium">Medium<span>草稿完成</span></button><button type="button" class="platform-tab" data-target="reddit">Reddit<span>草稿完成</span></button><button type="button" class="platform-tab" data-target="x">X<span>草稿完成</span></button></section>
+
+    <section class="review-layout">
+      <aside>
+        <p>审核顺序</p>
+        <nav class="doc-tabs"><button type="button" class="doc-tab is-active" data-target="facts">事实与论点</button><button type="button" class="doc-tab" data-target="medium">Medium</button><button type="button" class="doc-tab" data-target="reddit">Reddit</button><button type="button" class="doc-tab" data-target="x">X</button><button type="button" class="doc-tab" data-target="review">审核清单</button></nav>
+        <div class="stop-note"><strong>不会自动发布</strong><span>审核通过后，才由人决定是否复制到平台。</span></div>
+      </aside>
+      <div class="documents"><article id="facts" class="document-panel is-active">
+      <header><span>editorial brief</span><strong>已整理</strong></header>
+      <div class="markdown-body"><h1>事实与论点底稿</h1>
+<h2>可核验事实</h2>
+<ul>
+<li><a href="https://ftmo.com/en/blog/trading-updates/trading-update-3-sep-2026/" target="_blank" rel="noopener">FTMO 的 2026 年 9 月 3 日 CFD Trading Update</a> 明确：因美国 Labor Day，<strong>2026 年 9 月 7 日</strong> <code>US100.cash</code> 将在 MetaTrader 平台时间 <strong>GMT+3 20:00</strong> 提前收盘。该更新也列出其他 CFD 的不同时段；本文只使用已点名的 <code>US100.cash</code> 和原始时区，不把它泛化为其他 FTMO 产品、其他平台、其他符号或其他 prop firm。</li>
+<li><a href="https://comparepropfirms.com/labor-day-futures-prop-firm-trading-hours-2026/" target="_blank" rel="noopener">Compare Prop Firms 的 2026 年 9 月 4 日英文 Labor Day checklist</a> 是独立的当前行业核查/发现来源，说明 prop-firm 用户会在假期前核对 firm-specific close-by times 与强平边界。它不替代 FTMO 官方 CFD 符号、时区、规则或平台说明。</li>
+<li><a href="https://www.reddit.com/r/litefinance/comments/1w536fc/weekly_economic_calendar_for_0709202613092026/" target="_blank" rel="noopener">公开 Reddit 当周经济日历讨论</a> 只证明 9 月 7–11 日的事件发现语境；不用于确认 FTMO 条款、合约点值、报价、流动性、波动或任何市场结论。</li>
+</ul>
+<h2>选题与新颖性判断</h2>
+<p>这是一篇 <code>new</code> 审核包，而非 refresh：已检查历史每日包，没有 FTMO Labor Day <code>US100.cash</code> 的同构时段/点值主题。</p>
+<ul>
+<li><code>fact_delta=true</code>：FTMO 9 月 3 日带日期的 firm-specific 9 月 7 日时段更新。</li>
+<li><code>search_delta=true</code>：当前查询对象是 <code>FTMO Labor Day hours / FTMO US100 early close</code>，不是宏观事件或泛化的 NAS100 方向讨论。</li>
+<li><code>example_delta=true</code>：用可审计的 <code>quantity × planned point distance × point value</code> 算式解释读者需要核验的暴露，而非声称一个通用点值。</li>
+<li><code>window_delta=true</code>：9 月 6 日至 9 月 7 日早间 ET 是明确的假期前发现窗口；已过时的预关闭语言不得继续使用。</li>
+</ul>
+<h2>数字骨架与边界</h2>
+<p>所有数字都是教学输入，不是现场报价、FTMO 合约规格、预测波动、交易信号、实际点差或成交承诺。以 <strong>0.50 contract</strong>、<strong>30 planned points</strong>、<strong>hypothetical USD 1 per point</strong> 为例：</p>
+<div class="table-wrap"><table><thead><tr><th>Quantity</th><th>Planned point distance</th><th>Hypothetical point value</th><th>Arithmetic before costs</th><th>Illustrative exposure</th></tr></thead><tbody><tr><td>0.50 contract</td><td>30 points</td><td>USD 1 / point</td><td>0.50 × 30 × 1</td><td>USD 15</td></tr></tbody></table></div>
+<p><code>USD 1 / point</code> 故意只作为假设，不能写成 FTMO、PipGauge 或任何 broker 的真实点值；合约规格、账户币种、最小数量、费用、点差、融资、滑点、跳空、交易/强平规则都会改变实际结果。PipGauge US100 Point Value、P&amp;L 和 Margin 只用于核验读者的实际符号和输入。时段变更不等于任何人应开仓、平仓或持仓，也不保证可以在任意价格成交。</p>
+<p>所有平台草稿均为 <code>awaiting_human_review</code>。Reddit 首轮不放链接；X 主线程独立可读；不得发布、评论、私信或操作任何社交账号。</p></div>
+    </article><article id="medium" class="document-panel">
+      <header><span>long-form draft</span><strong>待人工审核</strong></header>
+      <div class="markdown-body"><h1>FTMO’s Labor Day Schedule Is a Time Check. Your US100 CFD Exposure Is a Separate Calculation.</h1>
+<p>FTMO’s CFD trading update dated September 3 lists a U.S. Labor Day schedule for Monday, September 7. For the named <code>US100.cash</code> symbol, it says the session closes early at 20:00 in MetaTrader platform time, GMT+3.</p>
+<p>That is a useful fact to verify if that is the exact firm, platform, and symbol a reader uses. It is not a forecast for the Nasdaq, a statement about liquidity, or an instruction to open, close, or hold a position. It also is not a universal market-hours schedule: another prop firm, platform, account type, or symbol can have a different timetable.</p>
+<p>The practical question that can be answered without making a market call is narrower: what dollar price exposure does a planned US100 CFD quantity represent under the reader’s own point-value specification?</p>
+<h2>Keep the two checks separate</h2>
+<p>The first check is a schedule check. Read the firm’s current announcement in its stated source timezone. FTMO uses GMT+3 in this particular notice, so do not silently convert the source record into a different platform clock and then treat the conversion as the official rule.</p>
+<p>The second check is arithmetic. Before costs, planned point exposure can be expressed as:</p>
+<blockquote>quantity × planned point distance × point value</blockquote>
+<p>The formula does not decide whether a trade should exist. It only makes an assumption visible. That distinction is especially important around shortened sessions, when a platform’s availability and a trader’s risk decision are separate issues.</p>
+<h2>A deliberately hypothetical example</h2>
+<p>Take a teaching setup, not a live contract specification:</p>
+<ul>
+<li>Quantity: 0.50 contract</li>
+<li>Planned point distance: 30 points</li>
+<li>Hypothetical point value: USD 1 per point</li>
+</ul>
+<p>The calculation is:</p>
+<blockquote>0.50 × 30 × USD 1 = USD 15</blockquote>
+<p>So the illustration produces USD 15 of planned price difference before costs. It does not establish that <code>US100.cash</code> at FTMO, a broker’s NAS100 contract, or any other CFD has a USD 1 point value. Those conventions can vary by account currency, contract size, symbol naming, minimum increment, and platform. The same 30-point input can represent a different cash amount when any one of those inputs changes.</p>
+<p>For example, keeping the hypothetical USD 1 point value but changing quantity changes the arithmetic directly:</p>
+<div class="table-wrap"><table><thead><tr><th>Quantity</th><th>Planned distance</th><th>Hypothetical point value</th><th>Planned price difference before costs</th></tr></thead><tbody><tr><td>0.25 contract</td><td>30 points</td><td>USD 1 / point</td><td>USD 7.50</td></tr><tr><td>0.50 contract</td><td>30 points</td><td>USD 1 / point</td><td>USD 15.00</td></tr><tr><td>1.00 contract</td><td>30 points</td><td>USD 1 / point</td><td>USD 30.00</td></tr></tbody></table></div>
+<p>This table is not a suggested position size and does not say that 30 points is an expected move. It simply preserves the same hypothetical assumptions so the effect of quantity is readable.</p>
+<h2>What the schedule cannot tell you</h2>
+<p>An early-close announcement cannot tell a reader the direction of US100, the quality of available liquidity, the size of a future spread, or the price at which an order would be filled. It cannot establish whether a planned stop will execute at a chosen price. Commission, spread, financing, slippage, gaps, minimum-size increments, firm rules, and any automatic-liquidation terms can make actual P&amp;L different from planned arithmetic.</p>
+<p>It also cannot be borrowed across firms. FTMO’s stated platform time is the relevant source for the exact FTMO notice. A reader using another firm should verify that firm’s own current update rather than treating an index label as a universal product specification.</p>
+<h2>Verify the inputs after understanding the formula</h2>
+<p>Once the schedule and the formula are clear, <a href="https://pipgauge.com/" target="_blank" rel="noopener">PipGauge’s US100 point-value tools</a> can be used to verify the actual symbol convention, point value, quantity, and a separately labelled P&amp;L or margin input. The useful sequence is facts first, arithmetic second, verification third.</p>
+<p>The tool does not determine FTMO’s holiday hours, recommend an action, forecast an index move, or guarantee execution. It only helps a reader replace the deliberately hypothetical USD 1 point-value input with the specification that applies to their own setup.</p>
+<p>This dated frame expires after the September 7 named session, if FTMO corrects its update, or whenever the symbol, platform, firm, or contract specification differs. It should not be left online as if it were a permanent holiday-hours or market-behavior claim.</p>
+<p><em>Draft status: awaiting_human_review. Educational specification and exposure arithmetic only; not investment advice or a trade instruction.</em></p></div>
+    </article><article id="reddit" class="document-panel">
+      <header><span>native discussion draft</span><strong>待人工审核</strong></header>
+      <div class="markdown-body"><h1>Draft title</h1>
+<p>FTMO lists an early Labor Day close for US100.cash — how do you separate the schedule check from the exposure math?</p>
+<h1>Draft body</h1>
+<p>FTMO’s September 3 CFD update says that its named <code>US100.cash</code> symbol is scheduled to close early at 20:00 MetaTrader platform time (GMT+3) on Monday, September 7 for U.S. Labor Day. That is a firm-specific schedule, so I would not assume it applies to another platform, firm, account type, or NAS100/US100 symbol.</p>
+<p>The mechanical part I think is worth separating from the holiday-hours question is point-value exposure. A schedule does not tell anyone what the index will do, whether to be in a position, or what a fill will look like. It only says that the normal session availability is altered.</p>
+<p>Teaching arithmetic only, not a live specification or a suggested trade:</p>
+<ul>
+<li>0.50 contract</li>
+<li>30 planned points</li>
+<li>hypothetical USD 1 per point</li>
+</ul>
+<p>That is 0.50 × 30 × 1 = USD 15 before costs. The USD 1 input is intentionally hypothetical: actual point value can change with the symbol specification, contract size, account currency, and platform. Spread, commission, financing, slippage, gaps, minimum size, and firm rules can also make realised P&amp;L different.</p>
+<p>For people who trade CFDs or prop accounts, what is your process for documenting the source timezone, the exact symbol specification, and the difference between a planned exposure calculation and the firm’s actual holiday schedule?</p>
+<p><em>Draft status: awaiting_human_review. First-round Reddit draft intentionally contains no link, tracking parameter, or product pitch.</em></p></div>
+    </article><article id="x" class="document-panel">
+      <header><span>short thread draft</span><strong>待人工审核</strong></header>
+      <div class="markdown-body"><h1>X thread draft</h1>
+<p><strong>1/4</strong></p>
+<p>FTMO’s dated CFD update lists a U.S. Labor Day early close for its named <code>US100.cash</code> symbol: 20:00 MetaTrader platform time (GMT+3) on September 7.</p>
+<p>That is a firm-specific schedule fact, not a NAS100 forecast or a universal market-hours rule.</p>
+<p><strong>2/4</strong></p>
+<p>The separate mechanical question is point-value exposure:</p>
+<p>quantity × planned point distance × point value</p>
+<p>The formula makes an assumption visible. It does not tell anyone whether to open, close, or hold a CFD position.</p>
+<p><strong>3/4</strong></p>
+<p>Teaching example only:</p>
+<p>0.50 contract × 30 planned points × hypothetical USD 1 per point = USD 15 before costs.</p>
+<p>USD 1 is not asserted as FTMO’s or any broker’s actual point value. Symbol specs and account currency must be verified.</p>
+<p><strong>4/4</strong></p>
+<p>An early close does not predict direction, liquidity, spread, volatility, or a fill. Commission, financing, slippage, gaps, minimum size and firm rules can all change actual results.</p>
+<p>Verify the firm’s own source timezone and your own symbol specification separately.</p>
+<p><em>Draft status: awaiting_human_review. Educational specification/exposure arithmetic only; no trade instruction.</em></p></div>
+    </article><article id="review" class="document-panel">
+      <header><span>human gate</span><strong>必须完成</strong></header>
+      <div class="markdown-body"><h1>人工审核清单</h1>
+<h2>本期范围与时效</h2>
+<ul>
+<li>[ ] 这是 <code>HR-20260906-01</code> 的 <code>new</code> 审核包。已查历史内容生产目录，无 FTMO Labor Day <code>US100.cash</code> 时段/点值同构文；不得将它偷换为泛化 NAS100 行情文。</li>
+<li>[ ] 标题、首段和所有平台版本必须写明这是 FTMO 的 <strong>2026 年 9 月 3 日</strong>更新、适用于其命名的 <code>US100.cash</code>，且将 <strong>2026 年 9 月 7 日 20:00 GMT+3 MetaTrader platform time</strong> 保留为控制性源时区。</li>
+<li>[ ] 审核时若已过 FTMO 所列 9 月 7 日时段、FTMO 已更正或用户不适用 firm/platform/symbol，则不要以“即将提前收盘”语气发布；应停用或重写，不允许把旧公告伪装成即时热点。</li>
+</ul>
+<h2>事实与数字复核</h2>
+<ul>
+<li>[ ] 重新打开 <a href="https://ftmo.com/en/blog/trading-updates/trading-update-3-sep-2026/" target="_blank" rel="noopener">FTMO 9 月 3 日 CFD Trading Update</a>，确认 <code>US100.cash</code>、日期、GMT+3 平台时间和 20:00 提前收盘。不得将公告外推为其他 firm、FTMO Futures、其他账户、其他平台或所有 NAS100 CFD。</li>
+<li>[ ] 重新打开 <a href="https://comparepropfirms.com/labor-day-futures-prop-firm-trading-hours-2026/" target="_blank" rel="noopener">Compare Prop Firms 9 月 4 日英文 checklist</a>，只将其表述为独立的当前 prop-firm 假期时段发现/核查来源；不要用它重写 FTMO CFD 的官方规格。</li>
+<li>[ ] 如保留 <a href="https://www.reddit.com/r/litefinance/comments/1w536fc/weekly_economic_calendar_for_0709202613092026/" target="_blank" rel="noopener">Reddit 当周公开日历讨论</a>，只能称为当周发现语境，不能作为 FTMO 规则、点值、报价、流动性、波动或方向结论。</li>
+<li>[ ] 保留 <code>0.50 × 30 × USD 1 = USD 15</code> 的算术，并在每处明确 USD 1/point 是假设，不是 live quote、FTMO 条款或 broker specification。</li>
+<li>[ ] 保留 symbol specification、账户币种、最小数量、佣金、点差、融资、滑点、跳空、强平与实际成交边界；不得将计划值写成最大实际损失保证。</li>
+</ul>
+<h2>平台与链接闸门</h2>
+<ul>
+<li>[ ] Medium 先给事实、时区、公式和假设，再在后段保留一次 PipGauge 核验链接；不得用“today/just before close”之类在审核时已过期的时态，也不得预测 US100/NAS100、股票、流动性或波动。</li>
+<li>[ ] Reddit 首轮不得含链接、跟踪参数或硬性产品导流；必须保留“schedule 与交易决定分离”的问题讨论语气。</li>
+<li>[ ] X 四帖即使不点击链接也完整可读；不得含方向预期、开/平/持仓指令或将假设点值写成合约事实。</li>
+<li>[ ] 三个平台状态均保持 <code>awaiting_human_review</code>；人工审核通过前不发布、不评论、不私信、不操作账号。</li>
+</ul>
+<h2>停用条件</h2>
+<p>FTMO 所列的 9 月 7 日时段结束、FTMO 官方更正、或一个后续 firm-specific 更新改变规则/时段时，停止使用该预关闭标题和草稿。不得复用为常年假期时段、真实点差/流动性研究、指数方向预测或任何 firm 的通用规则。</p></div>
+    </article></div>
+    </section>
+  </main>
+  <script>
+    const activate = (id) => {
+      document.querySelectorAll('.doc-tab').forEach((button) => button.classList.toggle('is-active', button.dataset.target === id));
+      document.querySelectorAll('.document-panel').forEach((panel) => panel.classList.toggle('is-active', panel.id === id));
+      history.replaceState(null, '', '#' + id);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    document.querySelectorAll('[data-target]').forEach((button) => button.addEventListener('click', () => activate(button.dataset.target)));
+    const initial = location.hash.slice(1);
+    if (initial && document.getElementById(initial)) activate(initial);
+  </script>
+</body>
+</html>

@@ -296,6 +296,13 @@
     "content_format": "Medium / Reddit / X",
     "deadline": "2026-08-30T23:59:00-04:00"
   },
+  "HR-20260906-01": {
+    "content_status": "review_ready",
+    "content_label": "FTMO Labor Day US100 CFD 提前收盘风险核验审核包待人工审核",
+    "content_url": "../内容生产/2026-09-06/HR-20260906-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-09-07T08:00:00-04:00"
+  },
   "HR-20260905-01": {
     "content_status": "review_ready",
     "content_label": "美国 8 月就业结果后固定风险刷新审核包待人工审核",

@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-09-05T22:06:25+08:00",
-  "latest_scan_date": "2026-09-05",
+  "generated_at": "2026-09-06T22:06:11+08:00",
+  "latest_scan_date": "2026-09-06",
   "available_dates": [
+    "2026-09-06",
     "2026-09-05",
     "2026-09-03",
     "2026-09-02",
@@ -47,8 +48,324 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-09-06",
+      "generated_at": "2026-09-06T22:06:11+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 42,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 1,
+        "observation": 2,
+        "discarded": 1,
+        "total": 4,
+        "selected_average": 98.0,
+        "all_selected_pass_gate": true,
+        "content_ready": 1,
+        "playbook_ready": 1
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-09-06",
+          "candidate_id": "HR-20260906-01",
+          "status": "selected",
+          "topic": "FTMO Labor Day Hours: Check US100 CFD Exposure Before the Early Close",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 23,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 10,
+          "total_score": 98,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "US100 Point Value",
+            "P&L",
+            "Margin",
+            "Position Size"
+          ],
+          "reason": "FTMO's dated September 3 official CFD trading update sets September 7 Labor Day early closes, including US100.cash at 20:00 platform time (GMT+3); Compare Prop Firms' independent English September 4 checklist verifies the short-horizon prop-firm holiday-hours discovery path. The new firm-specific timing and a transparent point-value exposure check create a natural, non-directional PipGauge bridge.",
+          "content_status": "review_ready",
+          "content_label": "FTMO Labor Day US100 CFD 提前收盘风险核验审核包待人工审核",
+          "content_url": "../内容生产/2026-09-06/HR-20260906-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-09-07T08:00:00-04:00",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "new",
+            "urgency": "high",
+            "publish_deadline": "2026-09-07T08:00:00-04:00",
+            "traffic_hook": "FTMO's dated September 3 CFD Trading Update says that, for U.S. Labor Day on September 7, US100.cash is scheduled to close early at 20:00 MetaTrader platform time (GMT+3), alongside other named CFDs. Compare Prop Firms' independently published English holiday checklist supplies a current prop-trader discovery signal. The hook is the firm-specific schedule and the reader's need to verify exposure before an altered session, never a Nasdaq, oil, index, or market-direction call.",
+            "traffic_window": "Publish from September 6 through the morning of September 7 ET, before the named early-close session. Retire the pre-close framing as the official platform session ends, if FTMO changes the update, or if the reader is on a different firm, platform, instrument, or contract specification.",
+            "search_intents": [
+              "FTMO Labor Day trading hours 2026",
+              "FTMO US100 early close September 7",
+              "US100 CFD point value position size",
+              "how to calculate US100 CFD exposure before early close",
+              "FTMO holiday trading hours GMT+3"
+            ],
+            "traffic_angle": "Use the dated FTMO Labor Day schedule to answer a narrow calculation question: what dollar price exposure does a planned US100 CFD position represent under the reader's own point value before an early close? A readable teaching example is 0.50 contract × 30 planned points × an explicitly hypothetical USD 1 per point = USD 15 before costs. The point-value assumption is deliberately not presented as FTMO's or every broker's specification: users must verify symbol specifications. The article explains exposure arithmetic and the difference between a scheduled session change and a trade recommendation; it does not say whether to open, close, or hold a position.",
+            "calculator_bridge": "Start with FTMO's source-time schedule and the manual quantity × planned point distance × point value formula. PipGauge's US100 Point Value and P&L calculators verify the reader's actual symbol convention, quantity and planned point distance; Margin may be used as a separately labelled check. PositionMath is only a secondary generic position-size cross-check. None of the calculators determines FTMO's schedule, recommends an action, or guarantees execution at an early close.",
+            "example_scenario": "Teaching only: 0.50 US100 CFD contract, a 30-point planned distance and a hypothetical USD 1 per point contract value gives USD 15 (0.50 × 30 × 1) before spread, commission, financing, slippage, gaps, minimum-size rules or forced-liquidation terms. The USD 1 assumption is not a live quote or an FTMO contract specification; readers must confirm their broker/platform specification and account currency.",
+            "distribution_order": [
+              "new PipGauge firm-specific holiday-hours exposure note",
+              "Medium source-time and point-value explainer",
+              "X self-contained holiday-hours/exposure thread",
+              "Reddit native process discussion without a first-round link"
+            ],
+            "link_placement": "Give the source timezone, named US100.cash early-close fact, formula, teaching arithmetic and product-specification limit before one PipGauge verification link. Do not put a link, tracking parameter or product pitch in the initial Reddit post; the X thread must remain understandable without a click.",
+            "expiry_condition": "Stop using the pre-Labor-Day wording after FTMO's September 7 named session, on an FTMO schedule correction, or if a later firm-specific update replaces it. Do not reuse this example as a claim about universal holiday hours, US100 direction, volatility, liquidity, spreads or execution quality.",
+            "editorial_boundary": "Do not predict NAS100/US100, U.S. equities, oil, currencies, interest rates, volatility, liquidity, spreads, profitability or a market move. Do not tell readers to open, close or hold a position, imply that all FTMO products or other firms have the same hours, or call a planned calculation a guaranteed fill. Keep FTMO's GMT+3 platform time as the controlling source and treat all teaching point values as assumptions pending symbol-specification verification.",
+            "refresh_target": null,
+            "refresh_signals": {
+              "fact_delta": true,
+              "search_delta": true,
+              "example_delta": true,
+              "window_delta": true
+            },
+            "content_mainline": "Explain the dated FTMO Labor Day US100.cash early close in the source timezone, then show how a reader can calculate their own planned point-value exposure without turning the schedule into a trade instruction or a market forecast.",
+            "body_material": [
+              "FTMO September 3 CFD Trading Update: US100.cash early close at 20:00 GMT+3 on September 7",
+              "Compare Prop Firms September 4 independent English holiday-hours checklist as discovery/impact evidence",
+              "0.50 contract × 30 planned points × hypothetical USD 1 per point = USD 15 teaching arithmetic",
+              "symbol specification, account-currency, cost and forced-liquidation limits",
+              "September 7 pre-close publication window and immediate expiry"
+            ],
+            "product_bridge": "PipGauge verifies a reader's US100 point value, P&L and margin inputs after the firm schedule and arithmetic are explained; it does not interpret holiday hours, forecast an index move or guarantee execution.",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "FTMO",
+                "url": "https://ftmo.com/en/blog/trading-updates/trading-update-3-sep-2026/",
+                "source_type": "official_dated_product_trading_update",
+                "published_at": "2026-09-03",
+                "freshness_role": "official CFD schedule: for September 7 U.S. Labor Day, US100.cash closes early at 20:00 MetaTrader platform time GMT+3; named instruments and times are firm-specific",
+                "reliable": true
+              },
+              {
+                "publisher": "Compare Prop Firms",
+                "url": "https://comparepropfirms.com/labor-day-futures-prop-firm-trading-hours-2026/",
+                "source_type": "independent_english_industry_impact_and_discovery",
+                "published_at": "2026-09-04",
+                "freshness_role": "independent dated English prop-firm holiday-hours checklist demonstrates the current discovery/verification path; it is not used to replace FTMO's own CFD symbol schedule",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit",
+                "url": "https://www.reddit.com/r/litefinance/comments/1w536fc/weekly_economic_calendar_for_0709202613092026/",
+                "source_type": "public_calendar_discussion_heat",
+                "published_at": "2026-09-02",
+                "freshness_role": "public weekly-calendar discussion shows the event-heavy September 7–11 discovery context only; not used to confirm FTMO terms, contract values, hours or market outcomes",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass_new",
+              "decision_gate": "selected_new_official_product_schedule_plus_independent_current_impact",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": true,
+                "window_delta": true
+              },
+              "reopen_trigger": "An FTMO correction or post-holiday dated firm update that changes a concrete, independently verifiable rule or creates a new non-directional exposure calculation; otherwise retire immediately after the September 7 session.",
+              "rationale": "The dated official FTMO update supplies the firm-specific US100.cash early-close fact, while an independent dated English prop-firm checklist supplies the required current public impact/discovery evidence. The topic is not an investment call: it answers a short-window, user-verifiable point-value exposure question with an explicitly hypothetical USD 1 point-value example that must be replaced by the reader's actual symbol specification. No near-identical Labor Day article exists in the historical package inventory."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-06",
+          "candidate_id": "HR-20260906-02",
+          "status": "observation",
+          "topic": "ECB September 10 Meeting Is Now Four Days Away but Still Has No New EURUSD Calculation Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 22,
+          "calculator_fit": 22,
+          "evidence_quality": 15,
+          "actionability": 5,
+          "total_score": 89,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Spread Cost"
+          ],
+          "reason": "ECB's September 4 weekly schedule and independent current English context verify the September 10 decision window, but the closer calendar date is the only refresh signal; no new official policy fact, public non-directional calculation query, or replacement example clears the two-signal refresh gate for historic ECB sizing content.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "European Central Bank",
+                "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html",
+                "source_type": "official_dated_weekly_schedule",
+                "published_at": "2026-09-04",
+                "freshness_role": "official schedule lists September 9 meeting day one and September 10 14:15 CET policy-decision publication plus 14:45 CET press conference",
+                "reliable": true
+              },
+              {
+                "publisher": "Lumon",
+                "url": "https://www.lumonpay.com/corporate/articles/september-fx-briefing-rate-decisions-driving-gdp-eur-usd/",
+                "source_type": "independent_english_event_context",
+                "published_at": "2026-09-01",
+                "freshness_role": "independent English context identifies the ECB in the current September central-bank event window",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_existing_calendar_window_closer_but_no_new_search_or_example_path",
+              "duplicate_of": [
+                "HR-20260723-02",
+                "HR-20260903-03",
+                "HR-20260905-02"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A published ECB decision or a current public English question that states a concrete non-directional EUR/USD pip-value, fixed-risk or position-size need with materially different readable inputs from the historic ECB package.",
+              "rationale": "The date is closer but was documented in prior scans. No newly published policy fact, specific public non-directional calculation wording or replacement example was verified. A closer clock alone is insufficient for a refresh or playbook."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-06",
+          "candidate_id": "HR-20260906-03",
+          "status": "observation",
+          "topic": "U.S. August CPI Due September 11 Still Has Only a Calendar Window and No Distinct Retail Calculation Demand",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 22,
+          "calculator_fit": 20,
+          "evidence_quality": 8,
+          "actionability": 5,
+          "total_score": 80,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Spread Cost"
+          ],
+          "reason": "BLS confirms the September 11 CPI release, and ForexFactory supplies current public calendar discovery, but there remains one reliable fact publisher and no newly verified non-directional retail pip-value, fixed-risk, or position-size journey distinct from prior CPI/payroll content.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/cpi/",
+                "source_type": "official_cpi_release_schedule",
+                "published_at": "2026-09-06",
+                "freshness_role": "official CPI page lists the September 11 08:30 ET scheduled release for August 2026 CPI",
+                "reliable": true
+              },
+              {
+                "publisher": "ForexFactory",
+                "url": "https://www.forexfactory.com/calendar?range=sep8.2026-sep15.2026",
+                "source_type": "public_calendar_discovery",
+                "published_at": "2026-09-06",
+                "freshness_role": "public current economic calendar provides event-discovery context only; not used to confirm the official release timing or infer market direction",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_single_reliable_publisher_calendar_only_no_distinct_retail_calculation_journey",
+              "duplicate_of": [
+                "HR-20260810-02",
+                "HR-20260811-02",
+                "HR-20260905-03"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Published August CPI data plus a second independent reliable English result source and a current public question explicitly requesting a materially different non-directional pip-value, fixed-risk or position-size calculation from historical CPI/payroll packages.",
+              "rationale": "The release is inside seven days, but this scan has one reliable fact publisher and only calendar discovery. No distinct public retail calculation path was verified, and generic pre-event sizing is already covered; no playbook is generated."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-06",
+          "candidate_id": "HR-20260906-04",
+          "status": "discarded",
+          "topic": "Directional ECB CPI Payroll Oil and Index Forecast Posts",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 60,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Price targets, rate and currency direction calls, oil and index signals, political framing, login-wall material and generic market reactions are excluded; no auditable calculator bridge, playbook or content package is created."
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-09-06T22:00:00+08:00",
+          "source_count": 5,
+          "note": "核验 FTMO 9 月 3 日 CFD Trading Update、ECB 9 月 4 日周程、BLS CPI 页面/日程，以及 prop-firm 慢变规则页。"
+        },
+        {
+          "channel": "可靠英文媒体与独立行业核查",
+          "status": "complete",
+          "checked_at": "2026-09-06T22:00:00+08:00",
+          "source_count": 2,
+          "note": "核验 Compare Prop Firms 9 月 4 日英文 Labor Day prop-firm checklist，以及既有独立 ECB 英文背景。FTMO 的公司规格只由官方页确认。"
+        },
+        {
+          "channel": "Reddit / ForexFactory / BabyPips",
+          "status": "complete",
+          "checked_at": "2026-09-06T22:00:00+08:00",
+          "source_count": 3,
+          "note": "核验 ForexFactory 9 月 8–15 日公开日历、公开 Reddit 经济日历/风险讨论索引与 BabyPips 公共索引；只用于发现、讨论和查询措辞，不确认规则、价格或方向。"
+        },
+        {
+          "channel": "X / Quora",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-09-06T22:00:00+08:00",
+          "source_count": 0,
+          "note": "X 公开索引未提供新的、可核验且非方向性的 FTMO、ECB 或 CPI 计算问题；Quora 受 robots/login 限制，未将不可核验材料使用为证据。未登录、发帖、评论或操作任何账户。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-09-06_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-09-06_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-09-06"
+      }
+    },
+    {
       "scan_date": "2026-09-05",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 41,
@@ -370,7 +687,7 @@
     },
     {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -683,7 +1000,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -994,7 +1311,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -1325,7 +1642,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -1663,7 +1980,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -2056,7 +2373,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -2466,7 +2783,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -2938,7 +3255,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -3283,7 +3600,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -3628,7 +3945,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -4080,7 +4397,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -4493,7 +4810,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -4725,7 +5042,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -5170,7 +5487,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -5545,7 +5862,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -5937,7 +6254,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -6313,7 +6630,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -6637,7 +6954,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -7020,7 +7337,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -7361,7 +7678,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -7736,7 +8053,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -8124,7 +8441,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -8469,7 +8786,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -8797,7 +9114,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -9109,7 +9426,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -9430,7 +9747,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -9791,7 +10108,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -10144,7 +10461,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -10588,7 +10905,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -11097,7 +11414,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -11567,7 +11884,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -12110,7 +12427,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -12382,7 +12699,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -12695,7 +13012,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -13130,7 +13447,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -13644,7 +13961,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -14153,7 +14470,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -14620,7 +14937,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -15033,7 +15350,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -15431,7 +15748,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-09-05T22:06:25+08:00",
+      "generated_at": "2026-09-06T22:06:11+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -15870,10 +16187,10 @@
       }
     }
   ],
-  "scan_date": "2026-09-05",
+  "scan_date": "2026-09-06",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 41,
+    "day": 42,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -15885,138 +16202,130 @@
     "observation": 2,
     "discarded": 1,
     "total": 4,
-    "selected_average": 99.0,
+    "selected_average": 98.0,
     "all_selected_pass_gate": true,
     "content_ready": 1,
     "playbook_ready": 1
   },
   "candidates": [
     {
-      "scan_date": "2026-09-05",
-      "candidate_id": "HR-20260905-01",
+      "scan_date": "2026-09-06",
+      "candidate_id": "HR-20260906-01",
       "status": "selected",
-      "topic": "U.S. Payrolls Added 162000: Refresh the Fixed-Risk Check After the August Report",
+      "topic": "FTMO Labor Day Hours: Check US100 CFD Exposure Before the Early Close",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 24,
+      "traffic_potential": 23,
       "calculator_fit": 25,
       "evidence_quality": 15,
       "actionability": 10,
-      "total_score": 99,
+      "total_score": 98,
       "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
-        "Pip Value",
-        "Position Size",
+        "US100 Point Value",
         "P&L",
-        "Spread Cost"
+        "Margin",
+        "Position Size"
       ],
-      "reason": "BLS's September 4 result (+162000 payrolls, 4.1% unemployment, +55000 combined June-July revisions) and AP's independent report satisfy the result fact gate; BabyPips supplies a current FX-audience discovery signal. Four refresh deltas update HR-20260810-01 without a dollar, Fed or EUR/USD forecast",
+      "reason": "FTMO's dated September 3 official CFD trading update sets September 7 Labor Day early closes, including US100.cash at 20:00 platform time (GMT+3); Compare Prop Firms' independent English September 4 checklist verifies the short-horizon prop-firm holiday-hours discovery path. The new firm-specific timing and a transparent point-value exposure check create a natural, non-directional PipGauge bridge.",
       "content_status": "review_ready",
-      "content_label": "美国 8 月就业结果后固定风险刷新审核包待人工审核",
-      "content_url": "../内容生产/2026-09-05/HR-20260905-01/index.html",
+      "content_label": "FTMO Labor Day US100 CFD 提前收盘风险核验审核包待人工审核",
+      "content_url": "../内容生产/2026-09-06/HR-20260906-01/index.html",
       "content_format": "Medium / Reddit / X",
-      "deadline": "2026-09-06T12:00:00-04:00",
+      "deadline": "2026-09-07T08:00:00-04:00",
       "traffic_playbook": {
         "playbook_status": "ready",
-        "execution_mode": "refresh",
+        "execution_mode": "new",
         "urgency": "high",
-        "publish_deadline": "2026-09-06T12:00:00-04:00",
-        "traffic_hook": "The U.S. Bureau of Labor Statistics has published August payroll growth of 162,000, unemployment at 4.1%, and combined June-July revisions of plus 55,000; AP independently reported the result. BabyPips' same-day payroll result page supplies a current FX-audience discovery signal. The hook is the completed report and its revised numbers, never a dollar, Fed, EUR/USD, or market-direction claim.",
-        "traffic_window": "Refresh the existing payroll fixed-risk note from the September 4 published result through September 6 ET, then retire this dated frame before the September 11 CPI release. Stop immediately on a BLS correction or if a later independently verified fact creates a different calculation question.",
+        "publish_deadline": "2026-09-07T08:00:00-04:00",
+        "traffic_hook": "FTMO's dated September 3 CFD Trading Update says that, for U.S. Labor Day on September 7, US100.cash is scheduled to close early at 20:00 MetaTrader platform time (GMT+3), alongside other named CFDs. Compare Prop Firms' independently published English holiday checklist supplies a current prop-trader discovery signal. The hook is the firm-specific schedule and the reader's need to verify exposure before an altered session, never a Nasdaq, oil, index, or market-direction call.",
+        "traffic_window": "Publish from September 6 through the morning of September 7 ET, before the named early-close session. Retire the pre-close framing as the official platform session ends, if FTMO changes the update, or if the reader is on a different firm, platform, instrument, or contract specification.",
         "search_intents": [
-          "August 2026 jobs report 162000 forex risk",
-          "payroll revisions plus 55000 position size calculator",
-          "after jobs report EURUSD fixed risk",
-          "EURUSD pip value 40 pip stop",
-          "how many lots EURUSD for 50 dollar risk"
+          "FTMO Labor Day trading hours 2026",
+          "FTMO US100 early close September 7",
+          "US100 CFD point value position size",
+          "how to calculate US100 CFD exposure before early close",
+          "FTMO holiday trading hours GMT+3"
         ],
-        "traffic_angle": "Borrow the cross-reported +162,000 / 4.1% / +55,000 revisions result to answer one non-directional post-report question: with a USD 10,000 account, USD 50 maximum planned price risk, and an explicitly approximate USD 10-per-pip EUR/USD teaching input, what planned size corresponds to 20, 40, or 80 pips? The readable answer is 0.25, about 0.12, or about 0.06 lot before costs. This is a risk-budget check, not a forecast of EUR/USD, the dollar, rates, volatility, or a Fed decision.",
-        "calculator_bridge": "Lead with the released facts and manual fixed-risk formula. PipGauge Pip Value verifies EUR/USD pip value for the reader's actual account currency and contract convention; Position Size verifies the USD 50 / 20-40-80-pip inputs. P&L and Spread Cost may be used only as separately labelled hypothetical checks. The calculators do not interpret payrolls, forecast the market, or guarantee a stop fill.",
-        "example_scenario": "USD 10,000 account; USD 50 maximum planned price risk; EUR/USD in a USD account at an approximate USD 10 per pip per standard lot teaching assumption. A 20/40/80-pip planned stop maps to 0.25/about 0.12/about 0.06 lot before commission, spread, slippage, or gaps. These are teaching inputs, not a live quote, expected move, or trade instruction.",
+        "traffic_angle": "Use the dated FTMO Labor Day schedule to answer a narrow calculation question: what dollar price exposure does a planned US100 CFD position represent under the reader's own point value before an early close? A readable teaching example is 0.50 contract × 30 planned points × an explicitly hypothetical USD 1 per point = USD 15 before costs. The point-value assumption is deliberately not presented as FTMO's or every broker's specification: users must verify symbol specifications. The article explains exposure arithmetic and the difference between a scheduled session change and a trade recommendation; it does not say whether to open, close, or hold a position.",
+        "calculator_bridge": "Start with FTMO's source-time schedule and the manual quantity × planned point distance × point value formula. PipGauge's US100 Point Value and P&L calculators verify the reader's actual symbol convention, quantity and planned point distance; Margin may be used as a separately labelled check. PositionMath is only a secondary generic position-size cross-check. None of the calculators determines FTMO's schedule, recommends an action, or guarantees execution at an early close.",
+        "example_scenario": "Teaching only: 0.50 US100 CFD contract, a 30-point planned distance and a hypothetical USD 1 per point contract value gives USD 15 (0.50 × 30 × 1) before spread, commission, financing, slippage, gaps, minimum-size rules or forced-liquidation terms. The USD 1 assumption is not a live quote or an FTMO contract specification; readers must confirm their broker/platform specification and account currency.",
         "distribution_order": [
-          "refresh existing payroll fixed-risk article HR-20260810-01",
-          "Medium dated post-report fixed-risk refresh",
-          "X self-contained payroll-risk thread",
+          "new PipGauge firm-specific holiday-hours exposure note",
+          "Medium source-time and point-value explainer",
+          "X self-contained holiday-hours/exposure thread",
           "Reddit native process discussion without a first-round link"
         ],
-        "link_placement": "State the published data, formula, three readable sizes, and the plan-versus-fill limit before one PipGauge verification link. Do not put a link, tracking parameter, or product pitch in the initial Reddit post, and keep the X thread independently readable.",
-        "expiry_condition": "Stop using this post-report frame after September 6 ET, on a BLS correction, or when the September 11 CPI release or another independently verified fact changes the user question. Do not recycle the 20/40/80-pip teaching grid as a forecast, a typical payroll move, or evergreen market commentary.",
-        "editorial_boundary": "Do not predict EUR/USD, the dollar, the Fed, interest rates, volatility, profitability, or a market move. Do not recommend a long/short position, call a planned stop a guaranteed fill, or present assumed pip value, spread, or costs as observed event execution data. Do not conflate the payroll survey, unemployment rate, and revisions.",
-        "refresh_target": "HR-20260810-01",
+        "link_placement": "Give the source timezone, named US100.cash early-close fact, formula, teaching arithmetic and product-specification limit before one PipGauge verification link. Do not put a link, tracking parameter or product pitch in the initial Reddit post; the X thread must remain understandable without a click.",
+        "expiry_condition": "Stop using the pre-Labor-Day wording after FTMO's September 7 named session, on an FTMO schedule correction, or if a later firm-specific update replaces it. Do not reuse this example as a claim about universal holiday hours, US100 direction, volatility, liquidity, spreads or execution quality.",
+        "editorial_boundary": "Do not predict NAS100/US100, U.S. equities, oil, currencies, interest rates, volatility, liquidity, spreads, profitability or a market move. Do not tell readers to open, close or hold a position, imply that all FTMO products or other firms have the same hours, or call a planned calculation a guaranteed fill. Keep FTMO's GMT+3 platform time as the controlling source and treat all teaching point values as assumptions pending symbol-specification verification.",
+        "refresh_target": null,
         "refresh_signals": {
           "fact_delta": true,
           "search_delta": true,
           "example_delta": true,
           "window_delta": true
         },
-        "refresh_updates": [
-          "replace the old July -23,000 / 4.1% / -103,000-revisions headline and all fact blocks with the published August +162,000 / 4.1% / +55,000-combined-revisions result",
-          "replace the old post-July-report/preceding-CPI time language with a September 4 result-to-September 11 CPI short window",
-          "replace the 25/50/100-pip USD 50 table with an explicitly instructional 20/40/80-pip USD 50 table",
-          "remove any wording that treats the result as a dollar, Fed, EUR/USD, volatility, or execution forecast"
-        ],
-        "content_mainline": "Refresh the existing payroll fixed-risk article into a dated August-result check using published +162,000 / 4.1% / +55,000 facts and transparent USD 50 20/40/80-pip arithmetic; do not create another payroll article.",
+        "content_mainline": "Explain the dated FTMO Labor Day US100.cash early close in the source timezone, then show how a reader can calculate their own planned point-value exposure without turning the schedule into a trade instruction or a market forecast.",
         "body_material": [
-          "BLS September 4 Employment Situation: +162,000, 4.1%, and +55,000 combined June-July revisions",
-          "AP independent same-day result report",
-          "BabyPips result page as discovery only",
-          "USD 50 risk at 20/40/80 pips",
-          "short September 6 expiry and September 11 CPI supersession gate"
+          "FTMO September 3 CFD Trading Update: US100.cash early close at 20:00 GMT+3 on September 7",
+          "Compare Prop Firms September 4 independent English holiday-hours checklist as discovery/impact evidence",
+          "0.50 contract × 30 planned points × hypothetical USD 1 per point = USD 15 teaching arithmetic",
+          "symbol specification, account-currency, cost and forced-liquidation limits",
+          "September 7 pre-close publication window and immediate expiry"
         ],
-        "product_bridge": "PipGauge verifies EUR/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret payrolls, forecast a currency move, or guarantee execution.",
+        "product_bridge": "PipGauge verifies a reader's US100 point value, P&L and margin inputs after the firm schedule and arithmetic are explained; it does not interpret holiday hours, forecast an index move or guarantee execution.",
         "product_bridge_type": "existing"
       },
       "scan_audit": {
         "sources": [
           {
-            "publisher": "U.S. Bureau of Labor Statistics",
-            "url": "https://www.bls.gov/news.release/archives/empsit_09042026.htm",
-            "source_type": "official_dated_employment_result",
-            "published_at": "2026-09-04",
-            "freshness_role": "official same-day August Employment Situation: payrolls +162,000, unemployment 4.1 percent, and combined June-July revisions +55,000",
+            "publisher": "FTMO",
+            "url": "https://ftmo.com/en/blog/trading-updates/trading-update-3-sep-2026/",
+            "source_type": "official_dated_product_trading_update",
+            "published_at": "2026-09-03",
+            "freshness_role": "official CFD schedule: for September 7 U.S. Labor Day, US100.cash closes early at 20:00 MetaTrader platform time GMT+3; named instruments and times are firm-specific",
             "reliable": true
           },
           {
-            "publisher": "Associated Press",
-            "url": "https://apnews.com/article/stocks-markets-oil-trump-iran-war-1af16359af43eb8abc66445465f633c8",
-            "source_type": "independent_english_news_wire",
+            "publisher": "Compare Prop Firms",
+            "url": "https://comparepropfirms.com/labor-day-futures-prop-firm-trading-hours-2026/",
+            "source_type": "independent_english_industry_impact_and_discovery",
             "published_at": "2026-09-04",
-            "freshness_role": "independent same-day English report confirms stronger August hiring, 4.1 percent unemployment, and +55,000 combined prior-month revisions",
+            "freshness_role": "independent dated English prop-firm holiday-hours checklist demonstrates the current discovery/verification path; it is not used to replace FTMO's own CFD symbol schedule",
             "reliable": true
           },
           {
-            "publisher": "BabyPips",
-            "url": "https://www.babypips.com/news/headline-us-jobs-august-2026-nonfarm-payrolls-beat-forecasts",
-            "source_type": "public_fx_discussion_heat",
-            "published_at": "2026-09-04",
-            "freshness_role": "same-day FX-audience discovery wording for the published payroll result only; not used to confirm numbers, infer an expected move, or provide a trade view",
+            "publisher": "Reddit",
+            "url": "https://www.reddit.com/r/litefinance/comments/1w536fc/weekly_economic_calendar_for_0709202613092026/",
+            "source_type": "public_calendar_discussion_heat",
+            "published_at": "2026-09-02",
+            "freshness_role": "public weekly-calendar discussion shows the event-heavy September 7–11 discovery context only; not used to confirm FTMO terms, contract values, hours or market outcomes",
             "reliable": false
           }
         ],
         "decision": {
-          "novelty_gate": "pass_refresh",
-          "decision_gate": "selected_refresh",
-          "duplicate_of": [
-            "HR-20260810-01"
-          ],
+          "novelty_gate": "pass_new",
+          "decision_gate": "selected_new_official_product_schedule_plus_independent_current_impact",
+          "duplicate_of": [],
           "refresh_signals": {
             "fact_delta": true,
             "search_delta": true,
             "example_delta": true,
             "window_delta": true
           },
-          "reopen_trigger": "A BLS correction, a published September CPI result with an independently reported fact and a distinct non-directional retail calculation path, or a current public English question that requests materially different fixed-risk inputs; otherwise retire this result-day frame after September 6 ET.",
-          "rationale": "BLS and AP are independent reliable publishers for the same-day August result, while BabyPips establishes current FX-audience discovery wording. The published +162,000 / 4.1% / +55,000 result replaces the old July -23,000 / 4.1% / -103,000 fact set; the result-first query object, USD 50 20/40/80-pip teaching table, and post-release window make all four refresh signals true. This refresh updates the existing payroll fixed-risk article, not a new macro article, and makes no currency, Fed, market, volatility, or execution claim."
+          "reopen_trigger": "An FTMO correction or post-holiday dated firm update that changes a concrete, independently verifiable rule or creates a new non-directional exposure calculation; otherwise retire immediately after the September 7 session.",
+          "rationale": "The dated official FTMO update supplies the firm-specific US100.cash early-close fact, while an independent dated English prop-firm checklist supplies the required current public impact/discovery evidence. The topic is not an investment call: it answers a short-window, user-verifiable point-value exposure question with an explicitly hypothetical USD 1 point-value example that must be replaced by the reader's actual symbol specification. No near-identical Labor Day article exists in the historical package inventory."
         }
       }
     },
     {
-      "scan_date": "2026-09-05",
-      "candidate_id": "HR-20260905-02",
+      "scan_date": "2026-09-06",
+      "candidate_id": "HR-20260906-02",
       "status": "observation",
-      "topic": "ECB September 10 Decision Is Nearer but Still Has No New EURUSD Calculation Journey",
+      "topic": "ECB September 10 Meeting Is Now Four Days Away but Still Has No New EURUSD Calculation Journey",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 22,
@@ -16032,7 +16341,7 @@
         "Position Size",
         "Spread Cost"
       ],
-      "reason": "ECB's September 4 weekly schedule and Lumon's September 1 English context verify the September 10 decision window, but a closer calendar date is not a new fact or a verified non-directional retail EURUSD calculation query; the historic ECB package still owns generic pre-decision sizing",
+      "reason": "ECB's September 4 weekly schedule and independent current English context verify the September 10 decision window, but the closer calendar date is the only refresh signal; no new official policy fact, public non-directional calculation query, or replacement example clears the two-signal refresh gate for historic ECB sizing content.",
       "scan_audit": {
         "sources": [
           {
@@ -16057,7 +16366,8 @@
           "decision_gate": "observation_existing_calendar_window_closer_but_no_new_search_or_example_path",
           "duplicate_of": [
             "HR-20260723-02",
-            "HR-20260903-03"
+            "HR-20260903-03",
+            "HR-20260905-02"
           ],
           "refresh_signals": {
             "fact_delta": false,
@@ -16065,23 +16375,23 @@
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "A published ECB decision or a current public English question that states a concrete non-directional EUR/USD pip-value, fixed-risk, or position-size need with materially different readable inputs from the historic ECB package.",
-          "rationale": "The official date is now closer but was already documented in the prior scan; no newly published policy fact, specific public non-directional calculation wording, or replacement example was verified. A closer clock alone is not a refresh signal sufficient to create content."
+          "reopen_trigger": "A published ECB decision or a current public English question that states a concrete non-directional EUR/USD pip-value, fixed-risk or position-size need with materially different readable inputs from the historic ECB package.",
+          "rationale": "The date is closer but was documented in prior scans. No newly published policy fact, specific public non-directional calculation wording or replacement example was verified. A closer clock alone is insufficient for a refresh or playbook."
         }
       }
     },
     {
-      "scan_date": "2026-09-05",
-      "candidate_id": "HR-20260905-03",
+      "scan_date": "2026-09-06",
+      "candidate_id": "HR-20260906-03",
       "status": "observation",
-      "topic": "U.S. August CPI Due September 11 Has Only a Calendar Window and No Distinct Retail Calculation Demand",
+      "topic": "U.S. August CPI Due September 11 Still Has Only a Calendar Window and No Distinct Retail Calculation Demand",
       "primary_site": "PipGauge",
-      "freshness": 24,
+      "freshness": 25,
       "traffic_potential": 22,
       "calculator_fit": 20,
       "evidence_quality": 8,
       "actionability": 5,
-      "total_score": 79,
+      "total_score": 80,
       "hard_gate": false,
       "reliable_sources": 1,
       "fresh_signal": true,
@@ -16090,23 +16400,23 @@
         "Position Size",
         "Spread Cost"
       ],
-      "reason": "BLS's official CPI schedule and ForexFactory's public calendar show the September 11 release window, but only BLS is a reliable fact publisher in this scan and no new non-directional pip-value, fixed-risk or position-size journey distinct from prior CPI/payroll material was verified",
+      "reason": "BLS confirms the September 11 CPI release, and ForexFactory supplies current public calendar discovery, but there remains one reliable fact publisher and no newly verified non-directional retail pip-value, fixed-risk, or position-size journey distinct from prior CPI/payroll content.",
       "scan_audit": {
         "sources": [
           {
             "publisher": "U.S. Bureau of Labor Statistics",
-            "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+            "url": "https://www.bls.gov/cpi/",
             "source_type": "official_cpi_release_schedule",
-            "published_at": "2026-09-05",
-            "freshness_role": "official schedule lists the September 11 CPI release at 8:30 a.m. ET",
+            "published_at": "2026-09-06",
+            "freshness_role": "official CPI page lists the September 11 08:30 ET scheduled release for August 2026 CPI",
             "reliable": true
           },
           {
             "publisher": "ForexFactory",
-            "url": "https://www.forexfactory.com/calendar?range=sep5.2026-sep16.2026",
+            "url": "https://www.forexfactory.com/calendar?range=sep8.2026-sep15.2026",
             "source_type": "public_calendar_discovery",
-            "published_at": "2026-09-05",
-            "freshness_role": "public calendar confirms the current event-discovery window only; not used to confirm the release date or infer market direction",
+            "published_at": "2026-09-06",
+            "freshness_role": "public current economic calendar provides event-discovery context only; not used to confirm the official release timing or infer market direction",
             "reliable": false
           }
         ],
@@ -16115,7 +16425,8 @@
           "decision_gate": "observation_single_reliable_publisher_calendar_only_no_distinct_retail_calculation_journey",
           "duplicate_of": [
             "HR-20260810-02",
-            "HR-20260811-02"
+            "HR-20260811-02",
+            "HR-20260905-03"
           ],
           "refresh_signals": {
             "fact_delta": false,
@@ -16123,16 +16434,16 @@
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "Published August CPI data plus a second independent reliable English result source and a current public question explicitly requesting a materially different non-directional pip-value, fixed-risk, or position-size calculation from the historical CPI/payroll packages.",
-          "rationale": "The release is within seven days, but this scan has one reliable fact publisher and only calendar discovery, not an actual result or a distinct public retail calculation path. Generic pre-event sizing is already covered, so a countdown must not create a playbook."
+          "reopen_trigger": "Published August CPI data plus a second independent reliable English result source and a current public question explicitly requesting a materially different non-directional pip-value, fixed-risk or position-size calculation from historical CPI/payroll packages.",
+          "rationale": "The release is inside seven days, but this scan has one reliable fact publisher and only calendar discovery. No distinct public retail calculation path was verified, and generic pre-event sizing is already covered; no playbook is generated."
         }
       }
     },
     {
-      "scan_date": "2026-09-05",
-      "candidate_id": "HR-20260905-04",
+      "scan_date": "2026-09-06",
+      "candidate_id": "HR-20260906-04",
       "status": "discarded",
-      "topic": "Directional Payroll Dollar ECB CPI and Stock Forecast Posts",
+      "topic": "Directional ECB CPI Payroll Oil and Index Forecast Posts",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 25,
@@ -16146,48 +16457,48 @@
       "calculator_mapping": [
         "P&L"
       ],
-      "reason": "Price targets, payroll-to-dollar calls, Fed or ECB predictions, stock signals, political framing, login-wall material and generic market commentary are excluded; no calculator bridge, playbook or content package is created"
+      "reason": "Price targets, rate and currency direction calls, oil and index signals, political framing, login-wall material and generic market reactions are excluded; no auditable calculator bridge, playbook or content package is created."
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-09-05T22:00:00+08:00",
-      "source_count": 6,
-      "note": "核验 BLS 已公布的 August Employment Situation、BLS CPI 日程、ECB 9 月 4 日更新周程，以及 prop-firm 的慢变公开规则页。"
+      "checked_at": "2026-09-06T22:00:00+08:00",
+      "source_count": 5,
+      "note": "核验 FTMO 9 月 3 日 CFD Trading Update、ECB 9 月 4 日周程、BLS CPI 页面/日程，以及 prop-firm 慢变规则页。"
     },
     {
-      "channel": "可靠英文媒体",
+      "channel": "可靠英文媒体与独立行业核查",
       "status": "complete",
-      "checked_at": "2026-09-05T22:00:00+08:00",
+      "checked_at": "2026-09-06T22:00:00+08:00",
       "source_count": 2,
-      "note": "核验 AP 对 8 月就业结果与修订的独立英文报道，以及 Lumon 对 9 月 ECB 窗口的独立英文背景；后者只用于 ECB 观察项。"
+      "note": "核验 Compare Prop Firms 9 月 4 日英文 Labor Day prop-firm checklist，以及既有独立 ECB 英文背景。FTMO 的公司规格只由官方页确认。"
     },
     {
       "channel": "Reddit / ForexFactory / BabyPips",
       "status": "complete",
-      "checked_at": "2026-09-05T22:00:00+08:00",
+      "checked_at": "2026-09-06T22:00:00+08:00",
       "source_count": 3,
-      "note": "核验 BabyPips 当日 payroll 结果页、ForexFactory 公开经济日历和公开 Reddit 索引；仅用于发现、讨论及查询措辞，不确认事实、报价或方向。"
+      "note": "核验 ForexFactory 9 月 8–15 日公开日历、公开 Reddit 经济日历/风险讨论索引与 BabyPips 公共索引；只用于发现、讨论和查询措辞，不确认规则、价格或方向。"
     },
     {
       "channel": "X / Quora",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-09-05T22:00:00+08:00",
+      "checked_at": "2026-09-06T22:00:00+08:00",
       "source_count": 0,
-      "note": "X 公开索引未提供新的、具体且非方向性的 payroll、EUR/USD、ECB 或 CPI 计算问题；Quora 受 robots/login 限制，未将不可核验材料使用为证据。未登录、发帖、评论或操作任何账户。"
+      "note": "X 公开索引未提供新的、可核验且非方向性的 FTMO、ECB 或 CPI 计算问题；Quora 受 robots/login 限制，未将不可核验材料使用为证据。未登录、发帖、评论或操作任何账户。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-09-05_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-09-05_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-09-06_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-09-06_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
     "traffic_playbooks": "../热点流量打法.json",
-    "content_root": "../内容生产/2026-09-05"
+    "content_root": "../内容生产/2026-09-06"
   },
   "radar_model": "v2-content-first",
   "editorial_policy": {

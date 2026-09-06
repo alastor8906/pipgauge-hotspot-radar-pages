@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-02T22:00:00+08:00",
+  "updated_at": "2026-09-06T22:00:00+08:00",
   "items": {
     "HR-20260831-01": {
       "playbook_status": "ready",
@@ -1683,6 +1683,29 @@
       "product_bridge": "PositionMath verifies hypothetical share P&L, portfolio heat and planned position size after the fact-led exposure explanation; it does not interpret Broadcom's results or forecast AVGO.",
       "product_bridge_type": "existing"
     },
+    "HR-20260903-01": {
+      "playbook_status": "ready",
+      "execution_mode": "new",
+      "urgency": "high",
+      "publish_deadline": "2026-09-04T08:30:00-04:00",
+      "traffic_hook": "Bank of Canada has published a September 2 hold at 2.25%, independently reported by Reuters. The hook is the completed, cross-reported rate-hold headline and visible post-decision discussion—not a claim about the next Bank decision, USD/CAD direction, or a realised market move.",
+      "traffic_window": "Stage or publish the dated fixed-risk explainer from September 3 through the September 4 U.S. employment release, while the completed Bank of Canada result remains a current search/discussion object. Retire the result-day frame after that short window, on a Bank of Canada correction, or when a later verified fact creates a different calculation question.",
+      "search_intents": ["Bank of Canada holds 2.25 USD CAD risk", "after Bank of Canada decision USDCAD position size calculator", "USDCAD pip value 80 pip stop", "how many lots USDCAD for 100 dollar risk", "Bank of Canada 2.25 fixed risk position size"],
+      "traffic_angle": "Borrow the verified 2.25% rate-hold headline to answer one post-event calculation question: with a USD 10,000 account, USD 100 maximum planned price risk, and an explicitly approximate USD 10-per-pip USD/CAD teaching input, what planned size corresponds to 40, 80, or 120 pips? The readable answer is 0.25, about 0.12, or about 0.08 lot before costs. This table is a risk-budget check, not an expected CAD reaction, policy-path view, or trade instruction.",
+      "calculator_bridge": "Lead with the released fact and manual formula. PipGauge Pip Value verifies USD/CAD pip value for the actual account currency and contract convention; Position Size verifies the USD 100 / 40/80/120-pip inputs. P&L and Spread Cost can be used only for separately labelled hypothetical checks. None of the calculators interpret the Bank of Canada decision, forecast USD/CAD, or guarantee a stop fill.",
+      "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; USD/CAD in a USD account at an approximate USD 10 per pip per standard lot teaching assumption. A 40/80/120-pip planned stop maps to about 0.25/0.12/0.08 lot before commission, spread, slippage, or gaps. These are teaching inputs, not a live quote, expected move, or trade instruction.",
+      "distribution_order": ["new PipGauge Bank of Canada / USD-CAD event-risk note", "Medium dated post-decision fixed-risk explainer", "X self-contained USD/CAD sizing thread", "Reddit native process discussion without a first-round link"],
+      "link_placement": "State the published Bank of Canada result, formula, three readable sizes, and the plan-versus-fill limit before a link. Add at most one PipGauge verification link after the arithmetic and caveats; do not put a link, tracking parameter, or product pitch in the initial Reddit post, and keep the X thread independently readable.",
+      "expiry_condition": "Stop the result-day frame after September 4, if Bank of Canada corrects the record, or if later verified information changes the user question. Do not recycle the 40/80/120-pip teaching table as a claim about USD/CAD volatility, a policy forecast, or evergreen post-decision commentary.",
+      "editorial_boundary": "Do not predict the next policy decision, policy path, inflation, USD/CAD, rates, volatility, profitability, or a market move. Do not recommend a long/short position, call a planned stop a guaranteed fill, or present assumed pip value, spread, or costs as observed event execution data.",
+      "refresh_target": null,
+      "refresh_signals": {"fact_delta": true, "search_delta": true, "example_delta": true, "window_delta": true},
+      "refresh_updates": [],
+      "content_mainline": "Create one Bank of Canada-specific post-decision USD/CAD fixed-risk note that turns the confirmed 2.25% result into transparent 40/80/120-pip arithmetic without forecasting the Bank or the currency.",
+      "body_material": ["Bank of Canada September 2 official hold at 2.25%", "Reuters independent same-day English report", "public post-decision discussion as heat only", "USD 100 risk at 40/80/120 pips", "short September 4 expiry without price or policy prediction"],
+      "product_bridge": "PipGauge verifies USD/CAD pip value and fixed-risk size after the fact-led explanation; it does not interpret Bank of Canada, forecast a currency move, or guarantee execution.",
+      "product_bridge_type": "existing"
+    },
     "HR-20260902-01": {
       "playbook_status": "ready",
       "execution_mode": "refresh",
@@ -1731,6 +1754,100 @@
         "short September 3 expiry without price or policy prediction"
       ],
       "product_bridge": "PipGauge verifies NZD/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret RBNZ, forecast a currency move, or guarantee execution.",
+      "product_bridge_type": "existing"
+    },
+    "HR-20260906-01": {
+      "playbook_status": "ready",
+      "execution_mode": "new",
+      "urgency": "high",
+      "publish_deadline": "2026-09-07T08:00:00-04:00",
+      "traffic_hook": "FTMO's dated September 3 CFD Trading Update says that, for U.S. Labor Day on September 7, US100.cash is scheduled to close early at 20:00 MetaTrader platform time (GMT+3), alongside other named CFDs. Compare Prop Firms' independently published English holiday checklist supplies a current prop-trader discovery signal. The hook is the firm-specific schedule and the reader's need to verify exposure before an altered session, never a Nasdaq, oil, index, or market-direction call.",
+      "traffic_window": "Publish from September 6 through the morning of September 7 ET, before the named early-close session. Retire the pre-close framing as the official platform session ends, if FTMO changes the update, or if the reader is on a different firm, platform, instrument, or contract specification.",
+      "search_intents": [
+        "FTMO Labor Day trading hours 2026",
+        "FTMO US100 early close September 7",
+        "US100 CFD point value position size",
+        "how to calculate US100 CFD exposure before early close",
+        "FTMO holiday trading hours GMT+3"
+      ],
+      "traffic_angle": "Use the dated FTMO Labor Day schedule to answer a narrow calculation question: what dollar price exposure does a planned US100 CFD position represent under the reader's own point value before an early close? A readable teaching example is 0.50 contract × 30 planned points × an explicitly hypothetical USD 1 per point = USD 15 before costs. The point-value assumption is deliberately not presented as FTMO's or every broker's specification: users must verify symbol specifications. The article explains exposure arithmetic and the difference between a scheduled session change and a trade recommendation; it does not say whether to open, close, or hold a position.",
+      "calculator_bridge": "Start with FTMO's source-time schedule and the manual quantity × planned point distance × point value formula. PipGauge's US100 Point Value and P&L calculators verify the reader's actual symbol convention, quantity and planned point distance; Margin may be used as a separately labelled check. PositionMath is only a secondary generic position-size cross-check. None of the calculators determines FTMO's schedule, recommends an action, or guarantees execution at an early close.",
+      "example_scenario": "Teaching only: 0.50 US100 CFD contract, a 30-point planned distance and a hypothetical USD 1 per point contract value gives USD 15 (0.50 × 30 × 1) before spread, commission, financing, slippage, gaps, minimum-size rules or forced-liquidation terms. The USD 1 assumption is not a live quote or an FTMO contract specification; readers must confirm their broker/platform specification and account currency.",
+      "distribution_order": [
+        "new PipGauge firm-specific holiday-hours exposure note",
+        "Medium source-time and point-value explainer",
+        "X self-contained holiday-hours/exposure thread",
+        "Reddit native process discussion without a first-round link"
+      ],
+      "link_placement": "Give the source timezone, named US100.cash early-close fact, formula, teaching arithmetic and product-specification limit before one PipGauge verification link. Do not put a link, tracking parameter or product pitch in the initial Reddit post; the X thread must remain understandable without a click.",
+      "expiry_condition": "Stop using the pre-Labor-Day wording after FTMO's September 7 named session, on an FTMO schedule correction, or if a later firm-specific update replaces it. Do not reuse this example as a claim about universal holiday hours, US100 direction, volatility, liquidity, spreads or execution quality.",
+      "editorial_boundary": "Do not predict NAS100/US100, U.S. equities, oil, currencies, interest rates, volatility, liquidity, spreads, profitability or a market move. Do not tell readers to open, close or hold a position, imply that all FTMO products or other firms have the same hours, or call a planned calculation a guaranteed fill. Keep FTMO's GMT+3 platform time as the controlling source and treat all teaching point values as assumptions pending symbol-specification verification.",
+      "refresh_target": null,
+      "refresh_signals": {
+        "fact_delta": true,
+        "search_delta": true,
+        "example_delta": true,
+        "window_delta": true
+      },
+      "content_mainline": "Explain the dated FTMO Labor Day US100.cash early close in the source timezone, then show how a reader can calculate their own planned point-value exposure without turning the schedule into a trade instruction or a market forecast.",
+      "body_material": [
+        "FTMO September 3 CFD Trading Update: US100.cash early close at 20:00 GMT+3 on September 7",
+        "Compare Prop Firms September 4 independent English holiday-hours checklist as discovery/impact evidence",
+        "0.50 contract × 30 planned points × hypothetical USD 1 per point = USD 15 teaching arithmetic",
+        "symbol specification, account-currency, cost and forced-liquidation limits",
+        "September 7 pre-close publication window and immediate expiry"
+      ],
+      "product_bridge": "PipGauge verifies a reader's US100 point value, P&L and margin inputs after the firm schedule and arithmetic are explained; it does not interpret holiday hours, forecast an index move or guarantee execution.",
+      "product_bridge_type": "existing"
+    },
+    "HR-20260905-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-09-06T12:00:00-04:00",
+      "traffic_hook": "The U.S. Bureau of Labor Statistics has published August payroll growth of 162,000, unemployment at 4.1%, and combined June-July revisions of plus 55,000; AP independently reported the result. BabyPips' same-day payroll result page supplies a current FX-audience discovery signal. The hook is the completed report and its revised numbers, never a dollar, Fed, EUR/USD, or market-direction claim.",
+      "traffic_window": "Refresh the existing payroll fixed-risk note from the September 4 published result through September 6 ET, then retire this dated frame before the September 11 CPI release. Stop immediately on a BLS correction or if a later independently verified fact creates a different calculation question.",
+      "search_intents": [
+        "August 2026 jobs report 162000 forex risk",
+        "payroll revisions plus 55000 position size calculator",
+        "after jobs report EURUSD fixed risk",
+        "EURUSD pip value 40 pip stop",
+        "how many lots EURUSD for 50 dollar risk"
+      ],
+      "traffic_angle": "Borrow the cross-reported +162,000 / 4.1% / +55,000 revisions result to answer one non-directional post-report question: with a USD 10,000 account, USD 50 maximum planned price risk, and an explicitly approximate USD 10-per-pip EUR/USD teaching input, what planned size corresponds to 20, 40, or 80 pips? The readable answer is 0.25, about 0.12, or about 0.06 lot before costs. This is a risk-budget check, not a forecast of EUR/USD, the dollar, rates, volatility, or a Fed decision.",
+      "calculator_bridge": "Lead with the released facts and manual fixed-risk formula. PipGauge Pip Value verifies EUR/USD pip value for the reader's actual account currency and contract convention; Position Size verifies the USD 50 / 20-40-80-pip inputs. P&L and Spread Cost may be used only as separately labelled hypothetical checks. The calculators do not interpret payrolls, forecast the market, or guarantee a stop fill.",
+      "example_scenario": "USD 10,000 account; USD 50 maximum planned price risk; EUR/USD in a USD account at an approximate USD 10 per pip per standard lot teaching assumption. A 20/40/80-pip planned stop maps to 0.25/about 0.12/about 0.06 lot before commission, spread, slippage, or gaps. These are teaching inputs, not a live quote, expected move, or trade instruction.",
+      "distribution_order": [
+        "refresh existing payroll fixed-risk article HR-20260810-01",
+        "Medium dated post-report fixed-risk refresh",
+        "X self-contained payroll-risk thread",
+        "Reddit native process discussion without a first-round link"
+      ],
+      "link_placement": "State the published data, formula, three readable sizes, and the plan-versus-fill limit before one PipGauge verification link. Do not put a link, tracking parameter, or product pitch in the initial Reddit post, and keep the X thread independently readable.",
+      "expiry_condition": "Stop using this post-report frame after September 6 ET, on a BLS correction, or when the September 11 CPI release or another independently verified fact changes the user question. Do not recycle the 20/40/80-pip teaching grid as a forecast, a typical payroll move, or evergreen market commentary.",
+      "editorial_boundary": "Do not predict EUR/USD, the dollar, the Fed, interest rates, volatility, profitability, or a market move. Do not recommend a long/short position, call a planned stop a guaranteed fill, or present assumed pip value, spread, or costs as observed event execution data. Do not conflate the payroll survey, unemployment rate, and revisions.",
+      "refresh_target": "HR-20260810-01",
+      "refresh_signals": {
+        "fact_delta": true,
+        "search_delta": true,
+        "example_delta": true,
+        "window_delta": true
+      },
+      "refresh_updates": [
+        "replace the old July -23,000 / 4.1% / -103,000-revisions headline and all fact blocks with the published August +162,000 / 4.1% / +55,000-combined-revisions result",
+        "replace the old post-July-report/preceding-CPI time language with a September 4 result-to-September 11 CPI short window",
+        "replace the 25/50/100-pip USD 50 table with an explicitly instructional 20/40/80-pip USD 50 table",
+        "remove any wording that treats the result as a dollar, Fed, EUR/USD, volatility, or execution forecast"
+      ],
+      "content_mainline": "Refresh the existing payroll fixed-risk article into a dated August-result check using published +162,000 / 4.1% / +55,000 facts and transparent USD 50 20/40/80-pip arithmetic; do not create another payroll article.",
+      "body_material": [
+        "BLS September 4 Employment Situation: +162,000, 4.1%, and +55,000 combined June-July revisions",
+        "AP independent same-day result report",
+        "BabyPips result page as discovery only",
+        "USD 50 risk at 20/40/80 pips",
+        "short September 6 expiry and September 11 CPI supersession gate"
+      ],
+      "product_bridge": "PipGauge verifies EUR/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret payrolls, forecast a currency move, or guarantee execution.",
       "product_bridge_type": "existing"
     }
   }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T14:07:07.859Z",
+  "generated_at": "2026-09-06T14:08:08.666Z",
   "endpoint": "multi_platform_drafts_awaiting_human_review",
   "supported_platforms": [
     "medium",
@@ -7,6 +7,41 @@
     "x"
   ],
   "packages": [
+    {
+      "candidate_id": "HR-20260906-01",
+      "scan_date": "2026-09-06",
+      "primary_site": "PipGauge",
+      "topic": "FTMO Labor Day Hours: Check US100 CFD Exposure Before the Early Close",
+      "package_summary": "当期审核快照：以 FTMO 9 月 3 日公布的 9 月 7 日 US100.cash GMT+3 20:00 提前收盘为事实钩子，说明 firm-specific 时段与 US100 CFD 点值暴露算术的区别；用 0.50 contract × 30 points × 假设 USD 1/point = USD 15 的教学例子核验，不预测指数、流动性、波动或成交。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "pre_holiday_schedule_window",
+      "time_status_label": "仅在 2026 年 9 月 7 日 FTMO 所列 Labor Day 时段前使用；该时段结束、FTMO 更正或适用规格变化时必须停用或改写。",
+      "url": "../内容生产/2026-09-06/HR-20260906-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-09-06/HR-20260906-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-09-06/HR-20260906-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-09-06/HR-20260906-01/index.html#x"
+        }
+      ]
+    },
     {
       "candidate_id": "HR-20260905-01",
       "scan_date": "2026-09-05",

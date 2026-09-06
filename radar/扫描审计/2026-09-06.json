@@ -1,0 +1,143 @@
+{
+  "scan_date": "2026-09-06",
+  "generated_at": "2026-09-06T22:00:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-09-06T22:00:00+08:00",
+      "source_count": 5,
+      "note": "核验 FTMO 9 月 3 日 CFD Trading Update、ECB 9 月 4 日周程、BLS CPI 页面/日程，以及 prop-firm 慢变规则页。"
+    },
+    {
+      "channel": "可靠英文媒体与独立行业核查",
+      "status": "complete",
+      "checked_at": "2026-09-06T22:00:00+08:00",
+      "source_count": 2,
+      "note": "核验 Compare Prop Firms 9 月 4 日英文 Labor Day prop-firm checklist，以及既有独立 ECB 英文背景。FTMO 的公司规格只由官方页确认。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "complete",
+      "checked_at": "2026-09-06T22:00:00+08:00",
+      "source_count": 3,
+      "note": "核验 ForexFactory 9 月 8–15 日公开日历、公开 Reddit 经济日历/风险讨论索引与 BabyPips 公共索引；只用于发现、讨论和查询措辞，不确认规则、价格或方向。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-09-06T22:00:00+08:00",
+      "source_count": 0,
+      "note": "X 公开索引未提供新的、可核验且非方向性的 FTMO、ECB 或 CPI 计算问题；Quora 受 robots/login 限制，未将不可核验材料使用为证据。未登录、发帖、评论或操作任何账户。"
+    }
+  ],
+  "candidates": {
+    "HR-20260906-01": {
+      "sources": [
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/en/blog/trading-updates/trading-update-3-sep-2026/",
+          "source_type": "official_dated_product_trading_update",
+          "published_at": "2026-09-03",
+          "freshness_role": "official CFD schedule: for September 7 U.S. Labor Day, US100.cash closes early at 20:00 MetaTrader platform time GMT+3; named instruments and times are firm-specific",
+          "reliable": true
+        },
+        {
+          "publisher": "Compare Prop Firms",
+          "url": "https://comparepropfirms.com/labor-day-futures-prop-firm-trading-hours-2026/",
+          "source_type": "independent_english_industry_impact_and_discovery",
+          "published_at": "2026-09-04",
+          "freshness_role": "independent dated English prop-firm holiday-hours checklist demonstrates the current discovery/verification path; it is not used to replace FTMO's own CFD symbol schedule",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit",
+          "url": "https://www.reddit.com/r/litefinance/comments/1w536fc/weekly_economic_calendar_for_0709202613092026/",
+          "source_type": "public_calendar_discussion_heat",
+          "published_at": "2026-09-02",
+          "freshness_role": "public weekly-calendar discussion shows the event-heavy September 7–11 discovery context only; not used to confirm FTMO terms, contract values, hours or market outcomes",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass_new",
+        "decision_gate": "selected_new_official_product_schedule_plus_independent_current_impact",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "reopen_trigger": "An FTMO correction or post-holiday dated firm update that changes a concrete, independently verifiable rule or creates a new non-directional exposure calculation; otherwise retire immediately after the September 7 session.",
+        "rationale": "The dated official FTMO update supplies the firm-specific US100.cash early-close fact, while an independent dated English prop-firm checklist supplies the required current public impact/discovery evidence. The topic is not an investment call: it answers a short-window, user-verifiable point-value exposure question with an explicitly hypothetical USD 1 point-value example that must be replaced by the reader's actual symbol specification. No near-identical Labor Day article exists in the historical package inventory."
+      }
+    },
+    "HR-20260906-02": {
+      "sources": [
+        {
+          "publisher": "European Central Bank",
+          "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html",
+          "source_type": "official_dated_weekly_schedule",
+          "published_at": "2026-09-04",
+          "freshness_role": "official schedule lists September 9 meeting day one and September 10 14:15 CET policy-decision publication plus 14:45 CET press conference",
+          "reliable": true
+        },
+        {
+          "publisher": "Lumon",
+          "url": "https://www.lumonpay.com/corporate/articles/september-fx-briefing-rate-decisions-driving-gdp-eur-usd/",
+          "source_type": "independent_english_event_context",
+          "published_at": "2026-09-01",
+          "freshness_role": "independent English context identifies the ECB in the current September central-bank event window",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_existing_calendar_window_closer_but_no_new_search_or_example_path",
+        "duplicate_of": ["HR-20260723-02", "HR-20260903-03", "HR-20260905-02"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "A published ECB decision or a current public English question that states a concrete non-directional EUR/USD pip-value, fixed-risk or position-size need with materially different readable inputs from the historic ECB package.",
+        "rationale": "The date is closer but was documented in prior scans. No newly published policy fact, specific public non-directional calculation wording or replacement example was verified. A closer clock alone is insufficient for a refresh or playbook."
+      }
+    },
+    "HR-20260906-03": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/cpi/",
+          "source_type": "official_cpi_release_schedule",
+          "published_at": "2026-09-06",
+          "freshness_role": "official CPI page lists the September 11 08:30 ET scheduled release for August 2026 CPI",
+          "reliable": true
+        },
+        {
+          "publisher": "ForexFactory",
+          "url": "https://www.forexfactory.com/calendar?range=sep8.2026-sep15.2026",
+          "source_type": "public_calendar_discovery",
+          "published_at": "2026-09-06",
+          "freshness_role": "public current economic calendar provides event-discovery context only; not used to confirm the official release timing or infer market direction",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_single_reliable_publisher_calendar_only_no_distinct_retail_calculation_journey",
+        "duplicate_of": ["HR-20260810-02", "HR-20260811-02", "HR-20260905-03"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "Published August CPI data plus a second independent reliable English result source and a current public question explicitly requesting a materially different non-directional pip-value, fixed-risk or position-size calculation from historical CPI/payroll packages.",
+        "rationale": "The release is inside seven days, but this scan has one reliable fact publisher and only calendar discovery. No distinct public retail calculation path was verified, and generic pre-event sizing is already covered; no playbook is generated."
+      }
+    }
+  }
+}

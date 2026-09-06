@@ -1,0 +1,55 @@
+{
+  "candidate_id": "HR-20260906-01",
+  "scan_date": "2026-09-06",
+  "primary_site": "PipGauge",
+  "topic": "FTMO Labor Day Hours: Check US100 CFD Exposure Before the Early Close",
+  "execution_mode": "new",
+  "refresh_target": null,
+  "package_summary": "当期审核快照：以 FTMO 9 月 3 日公布的 9 月 7 日 US100.cash GMT+3 20:00 提前收盘为事实钩子，说明 firm-specific 时段与 US100 CFD 点值暴露算术的区别；用 0.50 contract × 30 points × 假设 USD 1/point = USD 15 的教学例子核验，不预测指数、流动性、波动或成交。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "pre_holiday_schedule_window",
+  "time_status_label": "仅在 2026 年 9 月 7 日 FTMO 所列 Labor Day 时段前使用；该时段结束、FTMO 更正或适用规格变化时必须停用或改写。",
+  "documents": [
+    {
+      "id": "facts",
+      "label": "事实与论点",
+      "file": "00-事实与论点.md",
+      "platform": "internal",
+      "kind": "editorial brief",
+      "status_label": "已整理"
+    },
+    {
+      "id": "medium",
+      "label": "Medium",
+      "file": "01-Medium.md",
+      "platform": "medium",
+      "kind": "long-form draft",
+      "status_label": "待人工审核"
+    },
+    {
+      "id": "reddit",
+      "label": "Reddit",
+      "file": "02-Reddit.md",
+      "platform": "reddit",
+      "kind": "native discussion draft",
+      "status_label": "待人工审核"
+    },
+    {
+      "id": "x",
+      "label": "X",
+      "file": "03-X.md",
+      "platform": "x",
+      "kind": "short thread draft",
+      "status_label": "待人工审核"
+    },
+    {
+      "id": "review",
+      "label": "审核清单",
+      "file": "04-人工审核.md",
+      "platform": "internal",
+      "kind": "human gate",
+      "status_label": "必须完成"
+    }
+  ]
+}

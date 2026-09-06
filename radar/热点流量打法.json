@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-05T22:00:00+08:00",
+  "updated_at": "2026-09-06T22:00:00+08:00",
   "items": {
     "HR-20260831-01": {
       "playbook_status": "ready",
@@ -1754,6 +1754,50 @@
         "short September 3 expiry without price or policy prediction"
       ],
       "product_bridge": "PipGauge verifies NZD/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret RBNZ, forecast a currency move, or guarantee execution.",
+      "product_bridge_type": "existing"
+    },
+    "HR-20260906-01": {
+      "playbook_status": "ready",
+      "execution_mode": "new",
+      "urgency": "high",
+      "publish_deadline": "2026-09-07T08:00:00-04:00",
+      "traffic_hook": "FTMO's dated September 3 CFD Trading Update says that, for U.S. Labor Day on September 7, US100.cash is scheduled to close early at 20:00 MetaTrader platform time (GMT+3), alongside other named CFDs. Compare Prop Firms' independently published English holiday checklist supplies a current prop-trader discovery signal. The hook is the firm-specific schedule and the reader's need to verify exposure before an altered session, never a Nasdaq, oil, index, or market-direction call.",
+      "traffic_window": "Publish from September 6 through the morning of September 7 ET, before the named early-close session. Retire the pre-close framing as the official platform session ends, if FTMO changes the update, or if the reader is on a different firm, platform, instrument, or contract specification.",
+      "search_intents": [
+        "FTMO Labor Day trading hours 2026",
+        "FTMO US100 early close September 7",
+        "US100 CFD point value position size",
+        "how to calculate US100 CFD exposure before early close",
+        "FTMO holiday trading hours GMT+3"
+      ],
+      "traffic_angle": "Use the dated FTMO Labor Day schedule to answer a narrow calculation question: what dollar price exposure does a planned US100 CFD position represent under the reader's own point value before an early close? A readable teaching example is 0.50 contract × 30 planned points × an explicitly hypothetical USD 1 per point = USD 15 before costs. The point-value assumption is deliberately not presented as FTMO's or every broker's specification: users must verify symbol specifications. The article explains exposure arithmetic and the difference between a scheduled session change and a trade recommendation; it does not say whether to open, close, or hold a position.",
+      "calculator_bridge": "Start with FTMO's source-time schedule and the manual quantity × planned point distance × point value formula. PipGauge's US100 Point Value and P&L calculators verify the reader's actual symbol convention, quantity and planned point distance; Margin may be used as a separately labelled check. PositionMath is only a secondary generic position-size cross-check. None of the calculators determines FTMO's schedule, recommends an action, or guarantees execution at an early close.",
+      "example_scenario": "Teaching only: 0.50 US100 CFD contract, a 30-point planned distance and a hypothetical USD 1 per point contract value gives USD 15 (0.50 × 30 × 1) before spread, commission, financing, slippage, gaps, minimum-size rules or forced-liquidation terms. The USD 1 assumption is not a live quote or an FTMO contract specification; readers must confirm their broker/platform specification and account currency.",
+      "distribution_order": [
+        "new PipGauge firm-specific holiday-hours exposure note",
+        "Medium source-time and point-value explainer",
+        "X self-contained holiday-hours/exposure thread",
+        "Reddit native process discussion without a first-round link"
+      ],
+      "link_placement": "Give the source timezone, named US100.cash early-close fact, formula, teaching arithmetic and product-specification limit before one PipGauge verification link. Do not put a link, tracking parameter or product pitch in the initial Reddit post; the X thread must remain understandable without a click.",
+      "expiry_condition": "Stop using the pre-Labor-Day wording after FTMO's September 7 named session, on an FTMO schedule correction, or if a later firm-specific update replaces it. Do not reuse this example as a claim about universal holiday hours, US100 direction, volatility, liquidity, spreads or execution quality.",
+      "editorial_boundary": "Do not predict NAS100/US100, U.S. equities, oil, currencies, interest rates, volatility, liquidity, spreads, profitability or a market move. Do not tell readers to open, close or hold a position, imply that all FTMO products or other firms have the same hours, or call a planned calculation a guaranteed fill. Keep FTMO's GMT+3 platform time as the controlling source and treat all teaching point values as assumptions pending symbol-specification verification.",
+      "refresh_target": null,
+      "refresh_signals": {
+        "fact_delta": true,
+        "search_delta": true,
+        "example_delta": true,
+        "window_delta": true
+      },
+      "content_mainline": "Explain the dated FTMO Labor Day US100.cash early close in the source timezone, then show how a reader can calculate their own planned point-value exposure without turning the schedule into a trade instruction or a market forecast.",
+      "body_material": [
+        "FTMO September 3 CFD Trading Update: US100.cash early close at 20:00 GMT+3 on September 7",
+        "Compare Prop Firms September 4 independent English holiday-hours checklist as discovery/impact evidence",
+        "0.50 contract × 30 planned points × hypothetical USD 1 per point = USD 15 teaching arithmetic",
+        "symbol specification, account-currency, cost and forced-liquidation limits",
+        "September 7 pre-close publication window and immediate expiry"
+      ],
+      "product_bridge": "PipGauge verifies a reader's US100 point value, P&L and margin inputs after the firm schedule and arithmetic are explained; it does not interpret holiday hours, forecast an index move or guarantee execution.",
       "product_bridge_type": "existing"
     },
     "HR-20260905-01": {
