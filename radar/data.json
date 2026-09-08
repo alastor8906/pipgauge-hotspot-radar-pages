@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-09-07T22:04:20+08:00",
-  "latest_scan_date": "2026-09-07",
+  "generated_at": "2026-09-08T22:07:07+08:00",
+  "latest_scan_date": "2026-09-08",
   "available_dates": [
+    "2026-09-08",
     "2026-09-07",
     "2026-09-06",
     "2026-09-05",
@@ -49,8 +50,337 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-09-08",
+      "generated_at": "2026-09-08T22:07:07+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 44,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 1,
+        "observation": 2,
+        "discarded": 1,
+        "total": 4,
+        "selected_average": 95.0,
+        "all_selected_pass_gate": true,
+        "content_ready": 1,
+        "playbook_ready": 1
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-09-08",
+          "candidate_id": "HR-20260908-01",
+          "status": "selected",
+          "topic": "FTMO Futures Beta: Calculate the 50K Pro Daily-Loss Headroom Before You Size a Trade",
+          "primary_site": "PipGauge",
+          "freshness": 21,
+          "traffic_potential": 24,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 10,
+          "total_score": 95,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Daily Loss Limit",
+            "Position Size",
+            "Prop Firm Simulator"
+          ],
+          "reason": "FTMO's dated Futures beta launch and formal 50K Pro rules provide a USD 1,000 day-one Daily Loss Limit; Prop Firm Times' September 5 independent rule check and September 8 public discussion establish current verification demand. A USD 1,000 minus USD 200 buffer calculation creates a PipGauge-first, non-directional risk-budget bridge without claiming a futures contract point value or recommending the program.",
+          "content_status": "review_ready",
+          "content_label": "FTMO Futures 50K Pro daily-loss 风险预算审核包待人工审核",
+          "content_url": "../内容生产/2026-09-08/HR-20260908-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-09-10T17:00:00-04:00",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "new",
+            "urgency": "medium",
+            "publish_deadline": "2026-09-10T17:00:00-04:00",
+            "traffic_hook": "FTMO Futures is newly live in beta and its official 50K Pro rules state a USD 1,000 Daily Loss Limit. A September 5 independent rule check and a September 8 public futures-versus-forex discussion make the live user task rule verification, not a prediction about futures or a verdict on the firm.",
+            "traffic_window": "Use the beta-launch verification frame from September 8 through September 10 17:00 ET while the official beta and rule page remain unchanged. Retire the launch framing on any dated FTMO correction, plan/eligibility/platform change, or when current public rule-check discussion no longer supports a short-window search path.",
+            "search_intents": [
+              "FTMO Futures 50K Pro daily loss limit",
+              "FTMO Futures daily loss calculation",
+              "FTMO Futures drawdown position size",
+              "how much risk per trade with 1000 daily loss limit",
+              "FTMO Futures 50K Pro rules"
+            ],
+            "traffic_angle": "Borrow the new FTMO Futures beta and its official USD 1,000 50K Pro day-one Daily Loss Limit to answer one immediately calculable question: after reserving a clearly labelled USD 200 buffer, how does a reader translate USD 800 planned price risk into quantity for a 40-point planned stop? The readable answer is the formula floor(800 ÷ (40 × reader-verified USD/point)), not a claim about a contract value, a trade or a market direction.",
+            "calculator_bridge": "After identifying the exact FTMO plan, phase and official daily-loss definition, PipGauge Daily Loss Limit checks the stated ceiling, current headroom and chosen buffer. PipGauge Position Size then uses the reader's verified contract point value and planned stop; PositionMath Prop Firm Simulator is a secondary rule-input cross-check. None of the tools interpret FTMO terms, determine eligibility, recommend the program or guarantee a stop fill.",
+            "example_scenario": "50K Pro Evaluation; official first-day Daily Loss Limit USD 1,000; editorial buffer USD 200; maximum planned price risk USD 800 before costs; 40 planned points. Quantity = floor(800 ÷ (40 × reader-verified USD per point)). The USD 200 is not an FTMO requirement and USD per point must not be assumed from another contract, broker or platform.",
+            "distribution_order": [
+              "new PipGauge rule-to-risk-budget explainer",
+              "Medium current beta rule-reading draft",
+              "X self-contained daily-loss-budget thread",
+              "Reddit native process discussion without a first-round link"
+            ],
+            "link_placement": "Lead with the beta fact, exact plan/phase warning, USD 1,000 minus USD 200 arithmetic and variable point-value formula. Put at most one PipGauge verification link after the worked method and limits; no link, tracking parameter or promotion in the first Reddit post, and keep the X thread independently readable.",
+            "expiry_condition": "Stop using this beta-launch frame on any FTMO rule, payout, plan, eligibility or platform update; when the beta label or rule page changes; when the September 10 review deadline passes without current verification demand; or when a later verified fact creates a different calculation question. Do not recycle the USD 1,000/200/800 numbers as evergreen firm terms.",
+            "editorial_boundary": "Do not compare or endorse prop firms, recommend an account purchase, predict futures prices, tell readers to trade, call a daily-loss ceiling a position-size limit, claim a default contract point value, or promise a stop fill. Do not treat a public Reddit post as a rule source. State that evaluation and Sim-Funded rules can differ and that the reader must verify the current official plan, phase, account and contract specification.",
+            "refresh_target": null,
+            "refresh_signals": {
+              "fact_delta": true,
+              "search_delta": true,
+              "example_delta": true,
+              "window_delta": true
+            },
+            "refresh_updates": [],
+            "content_mainline": "Create one dated FTMO Futures beta rule-to-risk-budget note that turns the official 50K Pro USD 1,000 day-one daily-loss ceiling into a transparent USD 800 planned-risk formula after a labelled USD 200 buffer, without firm comparison, contract-value assumptions or market forecasts.",
+            "body_material": [
+              "FTMO Futures beta launch post and formal Trading Objectives & Rules",
+              "50K Pro Evaluation USD 1,000 Daily Loss Limit and equity definition",
+              "Prop Firm Times September 5 independent rule cross-check",
+              "USD 1,000 ceiling minus USD 200 buffer equals USD 800 planned price risk",
+              "40-point formula using reader-verified USD per point",
+              "September 10 ET expiry / immediate official-rule-change stop gate"
+            ],
+            "product_bridge": "PipGauge checks daily-loss headroom and translates a reader-verified point value plus planned stop into a planned-risk quantity after the fact-led rule explanation; it does not validate FTMO terms, choose a contract, recommend a program or forecast futures.",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "FTMO",
+                "url": "https://ftmo.com/en/futures/blog/ftmo-futures-is-here-prove-your-edge-in-the-futures-market/",
+                "source_type": "official_dated_product_launch",
+                "published_at": "2026-09-02",
+                "freshness_role": "official launch states FTMO Futures is live in beta, with Growth and Pro paths; formal futures rules provide the current 50K Pro daily-loss and drawdown mechanics",
+                "reliable": true
+              },
+              {
+                "publisher": "Prop Firm Times",
+                "url": "https://propfirmtimes.com/blog/ftmo-futures-beta-payout-ratio/",
+                "source_type": "independent_english_rule_cross_check",
+                "published_at": "2026-09-05",
+                "freshness_role": "independent September 5 analysis verifies the new beta remains an active rule-comparison and calculation topic and flags why official rule wording, not marketing shorthand, must anchor the arithmetic",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit",
+                "url": "https://www.reddit.com/r/PropFirmTester/comments/1vat12a/forex_or_futures/",
+                "source_type": "public_current_discussion_heat",
+                "published_at": "2026-09-08",
+                "freshness_role": "public September 8 discussion supplies a current futures-versus-forex discovery signal only; it is not used to validate FTMO terms, quality, price or a trading outcome",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass_new",
+              "decision_gate": "selected_new_official_product_launch_plus_independent_current_rule_check_and_calculator_path",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": true,
+                "window_delta": true
+              },
+              "reopen_trigger": "Any dated FTMO Futures rule, payout, plan, availability or platform correction; otherwise retire the beta-launch framing after the current public launch/discovery window and do not turn it into evergreen firm promotion.",
+              "rationale": "This is a new, dated product category absent from the historical package inventory. The official launch and rulebook establish the beta and 50K Pro daily-loss mechanic; independent September 5 review and September 8 public discussion establish a current verification/discovery path. The content answers only how to reserve a buffer under a stated daily-loss rule and translate the remainder into planned per-trade price risk. It does not recommend the program, compare firms, forecast futures, or claim a contract point value."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-08",
+          "candidate_id": "HR-20260908-02",
+          "status": "observation",
+          "topic": "ECB September 10 Decision Is Nearer but Still Has No New EURUSD Calculation Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 22,
+          "calculator_fit": 22,
+          "evidence_quality": 15,
+          "actionability": 5,
+          "total_score": 89,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Spread Cost"
+          ],
+          "reason": "ECB's weekly schedule and independent English event context still verify the September 10 window, but it is only a closer clock. No new policy fact, public non-directional retail calculation query, or replacement example clears the two-signal refresh gate for historic ECB sizing content.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "European Central Bank",
+                "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html",
+                "source_type": "official_dated_weekly_schedule",
+                "published_at": "2026-09-04",
+                "freshness_role": "official schedule continues to list the September 10 monetary-policy decision and press conference",
+                "reliable": true
+              },
+              {
+                "publisher": "Lumon",
+                "url": "https://www.lumonpay.com/corporate/articles/september-fx-briefing-rate-decisions-driving-gdp-eur-usd/",
+                "source_type": "independent_english_event_context",
+                "published_at": "2026-09-01",
+                "freshness_role": "independent September FX-event context; not used for a policy or EUR/USD prediction",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_only_window_delta_for_existing_ecb_sizing_chain",
+              "duplicate_of": [
+                "HR-20260723-02",
+                "HR-20260903-03",
+                "HR-20260905-02",
+                "HR-20260907-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Published ECB decision plus a second independent reliable English result source and a verified materially different, non-directional EUR/USD calculation query or replacement example.",
+              "rationale": "Another day closer is still a single window delta. No new decision, search phrasing or readable example was verified, so a generic EUR/USD sizing article remains duplicate content."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-08",
+          "candidate_id": "HR-20260908-03",
+          "status": "observation",
+          "topic": "U.S. PPI and CPI Dates Are Cross-Checked but Have No Distinct Retail Calculation Demand",
+          "primary_site": "PipGauge",
+          "freshness": 24,
+          "traffic_potential": 22,
+          "calculator_fit": 19,
+          "evidence_quality": 15,
+          "actionability": 5,
+          "total_score": 85,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Spread Cost"
+          ],
+          "reason": "BLS and the New York Fed cross-check September 10 PPI and September 11 CPI timing, but the dates were already known and current public discovery is direction/policy-first. No verified non-directional PipGauge calculation journey differs from historic payroll/CPI fixed-risk packages.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/schedule/2026/09_sched_list.htm",
+                "source_type": "official_ppi_release_schedule",
+                "published_at": "2026-09-08",
+                "freshness_role": "official September schedule lists August PPI for September 10 at 08:30 ET and CPI for September 11 at 08:30 ET",
+                "reliable": true
+              },
+              {
+                "publisher": "Federal Reserve Bank of New York",
+                "url": "https://www.newyorkfed.org/research/calendars/i-sep26.html",
+                "source_type": "independent_official_calendar",
+                "published_at": "2026-09-08",
+                "freshness_role": "independent official September calendar confirms the PPI/CPI release timing; it does not provide a retail sizing question or market conclusion",
+                "reliable": true
+              },
+              {
+                "publisher": "ForexFactory",
+                "url": "https://www.forexfactory.com/calendar?day=sep8.2026",
+                "source_type": "public_calendar_discovery",
+                "published_at": "2026-09-08",
+                "freshness_role": "current public calendar is discovery context only, not a fact substitute or signal",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_cross_checked_calendar_without_distinct_non_directional_calculation_path",
+              "duplicate_of": [
+                "HR-20260810-02",
+                "HR-20260811-02",
+                "HR-20260905-03",
+                "HR-20260907-02",
+                "HR-20260907-03"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Published PPI or CPI result plus two independent reliable result sources and a verified distinct non-directional calculation request that does not reuse the historic payroll/CPI fixed-risk table.",
+              "rationale": "The dates are cross-checked but already known, and public discovery remains direction/policy-first. There is no verified PipGauge-first calculation journey; no playbook is generated."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-08",
+          "candidate_id": "HR-20260908-04",
+          "status": "discarded",
+          "topic": "Nigeria CFD Proposal Directional Macro Forecasts and Unverifiable Social Posts",
+          "primary_site": "PipGauge",
+          "freshness": 24,
+          "traffic_potential": 20,
+          "calculator_fit": 8,
+          "evidence_quality": 10,
+          "actionability": 2,
+          "total_score": 64,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Margin",
+            "Position Size"
+          ],
+          "reason": "Nigeria SEC's September 1 online forex/CFD proposal is a verified regulatory observation but has no independent reliable English impact source or natural PipGauge-first traffic path in this scan. Directional forecasts, price targets, calls, political framing, login walls and unverifiable social material remain excluded."
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-09-08T22:02:24+08:00",
+          "source_count": 4,
+          "note": "核验 FTMO Futures 的官方 launch post 与 Trading Objectives and Rules；复核 ECB、BLS PPI/CPI 的近期日程，以及 Nigerian SEC 9 月 1 日 online forex/CFD proposed rules。"
+        },
+        {
+          "channel": "可靠英文媒体与独立行业核查",
+          "status": "complete",
+          "checked_at": "2026-09-08T22:02:24+08:00",
+          "source_count": 3,
+          "note": "核验 Prop Firm Times 9 月 5 日对 FTMO Futures 规则与 payout wording 的独立核查、Compare Prop Firms 9 月 4 日 weekly roundup，以及既有 AP/Lumon 事件背景。产品规则均以 FTMO 官方页为准。"
+        },
+        {
+          "channel": "Reddit / ForexFactory / BabyPips",
+          "status": "complete",
+          "checked_at": "2026-09-08T22:02:24+08:00",
+          "source_count": 2,
+          "note": "核验公开 Reddit 的 9 月 8 日 futures-versus-forex 讨论和 ForexFactory 9 月 8 日公开日历。Reddit 只证明 FTMO/Futures 比较与规则核对仍是当前讨论，不确认计划、帐户、合约或市场结论。"
+        },
+        {
+          "channel": "X / Quora",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-09-08T22:02:24+08:00",
+          "source_count": 0,
+          "note": "X 公开索引未提供可核验的新非方向性计算问题；Quora 的公开结果受 robots/login 限制，未使用不可验证材料。未登录、发帖、评论、私信或操作任何帐户。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-09-08_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-09-08_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-09-08"
+      }
+    },
+    {
       "scan_date": "2026-09-07",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 43,
@@ -352,7 +682,7 @@
     },
     {
       "scan_date": "2026-09-06",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 42,
@@ -668,7 +998,7 @@
     },
     {
       "scan_date": "2026-09-05",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 41,
@@ -990,7 +1320,7 @@
     },
     {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -1303,7 +1633,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -1614,7 +1944,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -1945,7 +2275,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -2283,7 +2613,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -2676,7 +3006,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -3086,7 +3416,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -3558,7 +3888,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -3903,7 +4233,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -4248,7 +4578,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -4700,7 +5030,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -5113,7 +5443,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -5345,7 +5675,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -5790,7 +6120,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -6165,7 +6495,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -6557,7 +6887,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -6933,7 +7263,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -7257,7 +7587,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -7640,7 +7970,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -7981,7 +8311,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -8356,7 +8686,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -8744,7 +9074,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -9089,7 +9419,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -9417,7 +9747,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -9729,7 +10059,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -10050,7 +10380,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -10411,7 +10741,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -10764,7 +11094,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -11208,7 +11538,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -11717,7 +12047,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -12187,7 +12517,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -12730,7 +13060,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -13002,7 +13332,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -13315,7 +13645,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -13750,7 +14080,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -14264,7 +14594,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -14773,7 +15103,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -15240,7 +15570,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -15653,7 +15983,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -16051,7 +16381,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-09-07T22:04:20+08:00",
+      "generated_at": "2026-09-08T22:07:07+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -16490,10 +16820,10 @@
       }
     }
   ],
-  "scan_date": "2026-09-07",
+  "scan_date": "2026-09-08",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 43,
+    "day": 44,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -16501,21 +16831,135 @@
     "mode": "topic_traffic_playbooks_and_content_drafts"
   },
   "stats": {
-    "selected": 0,
-    "observation": 3,
+    "selected": 1,
+    "observation": 2,
     "discarded": 1,
     "total": 4,
-    "selected_average": 0,
+    "selected_average": 95.0,
     "all_selected_pass_gate": true,
-    "content_ready": 0,
-    "playbook_ready": 0
+    "content_ready": 1,
+    "playbook_ready": 1
   },
   "candidates": [
     {
-      "scan_date": "2026-09-07",
-      "candidate_id": "HR-20260907-01",
+      "scan_date": "2026-09-08",
+      "candidate_id": "HR-20260908-01",
+      "status": "selected",
+      "topic": "FTMO Futures Beta: Calculate the 50K Pro Daily-Loss Headroom Before You Size a Trade",
+      "primary_site": "PipGauge",
+      "freshness": 21,
+      "traffic_potential": 24,
+      "calculator_fit": 25,
+      "evidence_quality": 15,
+      "actionability": 10,
+      "total_score": 95,
+      "hard_gate": true,
+      "reliable_sources": 2,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Daily Loss Limit",
+        "Position Size",
+        "Prop Firm Simulator"
+      ],
+      "reason": "FTMO's dated Futures beta launch and formal 50K Pro rules provide a USD 1,000 day-one Daily Loss Limit; Prop Firm Times' September 5 independent rule check and September 8 public discussion establish current verification demand. A USD 1,000 minus USD 200 buffer calculation creates a PipGauge-first, non-directional risk-budget bridge without claiming a futures contract point value or recommending the program.",
+      "content_status": "review_ready",
+      "content_label": "FTMO Futures 50K Pro daily-loss 风险预算审核包待人工审核",
+      "content_url": "../内容生产/2026-09-08/HR-20260908-01/index.html",
+      "content_format": "Medium / Reddit / X",
+      "deadline": "2026-09-10T17:00:00-04:00",
+      "traffic_playbook": {
+        "playbook_status": "ready",
+        "execution_mode": "new",
+        "urgency": "medium",
+        "publish_deadline": "2026-09-10T17:00:00-04:00",
+        "traffic_hook": "FTMO Futures is newly live in beta and its official 50K Pro rules state a USD 1,000 Daily Loss Limit. A September 5 independent rule check and a September 8 public futures-versus-forex discussion make the live user task rule verification, not a prediction about futures or a verdict on the firm.",
+        "traffic_window": "Use the beta-launch verification frame from September 8 through September 10 17:00 ET while the official beta and rule page remain unchanged. Retire the launch framing on any dated FTMO correction, plan/eligibility/platform change, or when current public rule-check discussion no longer supports a short-window search path.",
+        "search_intents": [
+          "FTMO Futures 50K Pro daily loss limit",
+          "FTMO Futures daily loss calculation",
+          "FTMO Futures drawdown position size",
+          "how much risk per trade with 1000 daily loss limit",
+          "FTMO Futures 50K Pro rules"
+        ],
+        "traffic_angle": "Borrow the new FTMO Futures beta and its official USD 1,000 50K Pro day-one Daily Loss Limit to answer one immediately calculable question: after reserving a clearly labelled USD 200 buffer, how does a reader translate USD 800 planned price risk into quantity for a 40-point planned stop? The readable answer is the formula floor(800 ÷ (40 × reader-verified USD/point)), not a claim about a contract value, a trade or a market direction.",
+        "calculator_bridge": "After identifying the exact FTMO plan, phase and official daily-loss definition, PipGauge Daily Loss Limit checks the stated ceiling, current headroom and chosen buffer. PipGauge Position Size then uses the reader's verified contract point value and planned stop; PositionMath Prop Firm Simulator is a secondary rule-input cross-check. None of the tools interpret FTMO terms, determine eligibility, recommend the program or guarantee a stop fill.",
+        "example_scenario": "50K Pro Evaluation; official first-day Daily Loss Limit USD 1,000; editorial buffer USD 200; maximum planned price risk USD 800 before costs; 40 planned points. Quantity = floor(800 ÷ (40 × reader-verified USD per point)). The USD 200 is not an FTMO requirement and USD per point must not be assumed from another contract, broker or platform.",
+        "distribution_order": [
+          "new PipGauge rule-to-risk-budget explainer",
+          "Medium current beta rule-reading draft",
+          "X self-contained daily-loss-budget thread",
+          "Reddit native process discussion without a first-round link"
+        ],
+        "link_placement": "Lead with the beta fact, exact plan/phase warning, USD 1,000 minus USD 200 arithmetic and variable point-value formula. Put at most one PipGauge verification link after the worked method and limits; no link, tracking parameter or promotion in the first Reddit post, and keep the X thread independently readable.",
+        "expiry_condition": "Stop using this beta-launch frame on any FTMO rule, payout, plan, eligibility or platform update; when the beta label or rule page changes; when the September 10 review deadline passes without current verification demand; or when a later verified fact creates a different calculation question. Do not recycle the USD 1,000/200/800 numbers as evergreen firm terms.",
+        "editorial_boundary": "Do not compare or endorse prop firms, recommend an account purchase, predict futures prices, tell readers to trade, call a daily-loss ceiling a position-size limit, claim a default contract point value, or promise a stop fill. Do not treat a public Reddit post as a rule source. State that evaluation and Sim-Funded rules can differ and that the reader must verify the current official plan, phase, account and contract specification.",
+        "refresh_target": null,
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "refresh_updates": [],
+        "content_mainline": "Create one dated FTMO Futures beta rule-to-risk-budget note that turns the official 50K Pro USD 1,000 day-one daily-loss ceiling into a transparent USD 800 planned-risk formula after a labelled USD 200 buffer, without firm comparison, contract-value assumptions or market forecasts.",
+        "body_material": [
+          "FTMO Futures beta launch post and formal Trading Objectives & Rules",
+          "50K Pro Evaluation USD 1,000 Daily Loss Limit and equity definition",
+          "Prop Firm Times September 5 independent rule cross-check",
+          "USD 1,000 ceiling minus USD 200 buffer equals USD 800 planned price risk",
+          "40-point formula using reader-verified USD per point",
+          "September 10 ET expiry / immediate official-rule-change stop gate"
+        ],
+        "product_bridge": "PipGauge checks daily-loss headroom and translates a reader-verified point value plus planned stop into a planned-risk quantity after the fact-led rule explanation; it does not validate FTMO terms, choose a contract, recommend a program or forecast futures.",
+        "product_bridge_type": "existing"
+      },
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "FTMO",
+            "url": "https://ftmo.com/en/futures/blog/ftmo-futures-is-here-prove-your-edge-in-the-futures-market/",
+            "source_type": "official_dated_product_launch",
+            "published_at": "2026-09-02",
+            "freshness_role": "official launch states FTMO Futures is live in beta, with Growth and Pro paths; formal futures rules provide the current 50K Pro daily-loss and drawdown mechanics",
+            "reliable": true
+          },
+          {
+            "publisher": "Prop Firm Times",
+            "url": "https://propfirmtimes.com/blog/ftmo-futures-beta-payout-ratio/",
+            "source_type": "independent_english_rule_cross_check",
+            "published_at": "2026-09-05",
+            "freshness_role": "independent September 5 analysis verifies the new beta remains an active rule-comparison and calculation topic and flags why official rule wording, not marketing shorthand, must anchor the arithmetic",
+            "reliable": true
+          },
+          {
+            "publisher": "Reddit",
+            "url": "https://www.reddit.com/r/PropFirmTester/comments/1vat12a/forex_or_futures/",
+            "source_type": "public_current_discussion_heat",
+            "published_at": "2026-09-08",
+            "freshness_role": "public September 8 discussion supplies a current futures-versus-forex discovery signal only; it is not used to validate FTMO terms, quality, price or a trading outcome",
+            "reliable": false
+          }
+        ],
+        "decision": {
+          "novelty_gate": "pass_new",
+          "decision_gate": "selected_new_official_product_launch_plus_independent_current_rule_check_and_calculator_path",
+          "duplicate_of": [],
+          "refresh_signals": {
+            "fact_delta": true,
+            "search_delta": true,
+            "example_delta": true,
+            "window_delta": true
+          },
+          "reopen_trigger": "Any dated FTMO Futures rule, payout, plan, availability or platform correction; otherwise retire the beta-launch framing after the current public launch/discovery window and do not turn it into evergreen firm promotion.",
+          "rationale": "This is a new, dated product category absent from the historical package inventory. The official launch and rulebook establish the beta and 50K Pro daily-loss mechanic; independent September 5 review and September 8 public discussion establish a current verification/discovery path. The content answers only how to reserve a buffer under a stated daily-loss rule and translate the remainder into planned per-trade price risk. It does not recommend the program, compare firms, forecast futures, or claim a contract point value."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-09-08",
+      "candidate_id": "HR-20260908-02",
       "status": "observation",
-      "topic": "ECB September 10 Decision Is Closer but Still Has No New EURUSD Calculation Journey",
+      "topic": "ECB September 10 Decision Is Nearer but Still Has No New EURUSD Calculation Journey",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 22,
@@ -16531,7 +16975,7 @@
         "Position Size",
         "Spread Cost"
       ],
-      "reason": "ECB's dated weekly schedule and independent English event context still verify the September 10 decision, but the additional day is only a window change. No new official policy fact, current public non-directional calculation query, or replacement example clears the two-signal refresh gate for historic ECB sizing content.",
+      "reason": "ECB's weekly schedule and independent English event context still verify the September 10 window, but it is only a closer clock. No new policy fact, public non-directional retail calculation query, or replacement example clears the two-signal refresh gate for historic ECB sizing content.",
       "scan_audit": {
         "sources": [
           {
@@ -16539,7 +16983,7 @@
             "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html",
             "source_type": "official_dated_weekly_schedule",
             "published_at": "2026-09-04",
-            "freshness_role": "official schedule lists September 10 14:15 CET monetary-policy-decision publication and 14:45 CET press conference",
+            "freshness_role": "official schedule continues to list the September 10 monetary-policy decision and press conference",
             "reliable": true
           },
           {
@@ -16547,7 +16991,7 @@
             "url": "https://www.lumonpay.com/corporate/articles/september-fx-briefing-rate-decisions-driving-gdp-eur-usd/",
             "source_type": "independent_english_event_context",
             "published_at": "2026-09-01",
-            "freshness_role": "independent English context places the ECB in the current September decision window; it is not used for a rate or FX prediction",
+            "freshness_role": "independent September FX-event context; not used for a policy or EUR/USD prediction",
             "reliable": true
           }
         ],
@@ -16558,7 +17002,7 @@
             "HR-20260723-02",
             "HR-20260903-03",
             "HR-20260905-02",
-            "HR-20260906-02"
+            "HR-20260907-01"
           ],
           "refresh_signals": {
             "fact_delta": false,
@@ -16566,23 +17010,23 @@
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "Published ECB decision plus a second independent reliable English result source and a current public question stating a concrete, non-directional EUR/USD pip-value, fixed-risk or position-size need with materially new readable inputs.",
-          "rationale": "The date is closer, but no new policy fact, public retail calculation wording or replacement example was verified. The two-signal refresh rule blocks a duplicate ECB countdown and no playbook is generated."
+          "reopen_trigger": "Published ECB decision plus a second independent reliable English result source and a verified materially different, non-directional EUR/USD calculation query or replacement example.",
+          "rationale": "Another day closer is still a single window delta. No new decision, search phrasing or readable example was verified, so a generic EUR/USD sizing article remains duplicate content."
         }
       }
     },
     {
-      "scan_date": "2026-09-07",
-      "candidate_id": "HR-20260907-02",
+      "scan_date": "2026-09-08",
+      "candidate_id": "HR-20260908-03",
       "status": "observation",
-      "topic": "U.S. August CPI Due September 11 Has Cross-Reported Calendar Attention but No Distinct Retail Calculation Demand",
+      "topic": "U.S. PPI and CPI Dates Are Cross-Checked but Have No Distinct Retail Calculation Demand",
       "primary_site": "PipGauge",
       "freshness": 24,
-      "traffic_potential": 23,
-      "calculator_fit": 20,
+      "traffic_potential": 22,
+      "calculator_fit": 19,
       "evidence_quality": 15,
       "actionability": 5,
-      "total_score": 87,
+      "total_score": 85,
       "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
@@ -16591,203 +17035,116 @@
         "Position Size",
         "Spread Cost"
       ],
-      "reason": "BLS confirms the September 11 CPI release and AP's current week-ahead coverage independently confirms the release window, but cross-reported calendar attention is not a new fact, query or example. No verified non-directional retail pip-value, fixed-risk or position-size journey distinct from prior CPI/payroll content was found.",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "U.S. Bureau of Labor Statistics",
-            "url": "https://www.bls.gov/cpi/",
-            "source_type": "official_cpi_release_schedule",
-            "published_at": "2026-09-07",
-            "freshness_role": "official CPI page lists September 11 2026 at 08:30 ET for the August 2026 CPI release",
-            "reliable": true
-          },
-          {
-            "publisher": "Associated Press",
-            "url": "https://apnews.com/article/a62d7e48184634d7ac1d1777b8b6688e",
-            "source_type": "independent_english_week_ahead_coverage",
-            "published_at": "2026-09-04",
-            "freshness_role": "independent English coverage identifies this week's PPI and September 11 CPI releases as the current inflation-data focus; it is not used to infer a market move",
-            "reliable": true
-          },
-          {
-            "publisher": "Reddit",
-            "url": "https://www.reddit.com/r/litefinance/comments/1w536fc/weekly_economic_calendar_for_0709202613092026/",
-            "source_type": "public_calendar_discussion_heat",
-            "published_at": "2026-09-02",
-            "freshness_role": "public weekly calendar demonstrates only current event discovery; its direction-oriented comments are excluded from factual and calculation-demand claims",
-            "reliable": false
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_cross_reported_calendar_attention_without_new_retail_calculation_path",
-          "duplicate_of": [
-            "HR-20260810-02",
-            "HR-20260811-02",
-            "HR-20260905-03",
-            "HR-20260906-03"
-          ],
-          "refresh_signals": {
-            "fact_delta": false,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": true
-          },
-          "reopen_trigger": "Published August CPI data plus a verified, materially different non-directional user calculation request and a second independent reliable English result source, or a new official rule that changes a concrete calculator input.",
-          "rationale": "The added AP cross-reporting strengthens the calendar fact gate but does not create a new content fact, user question or teaching example. Generic CPI fixed-risk arithmetic would duplicate prior CPI/payroll packages, so no playbook is generated."
-        }
-      }
-    },
-    {
-      "scan_date": "2026-09-07",
-      "candidate_id": "HR-20260907-03",
-      "status": "observation",
-      "topic": "U.S. August PPI Due September 10 Has No Standalone PipGauge Calculation Path",
-      "primary_site": "PipGauge",
-      "freshness": 24,
-      "traffic_potential": 20,
-      "calculator_fit": 14,
-      "evidence_quality": 15,
-      "actionability": 4,
-      "total_score": 77,
-      "hard_gate": true,
-      "reliable_sources": 2,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Pip Value",
-        "Position Size"
-      ],
-      "reason": "BLS and AP both identify the September 10 PPI release, but public material is direction- and policy-expectation-first. No specific non-directional sizing, point-value, margin or cost question was verified, and a generic pre-data risk table would duplicate existing CPI/payroll treatment.",
+      "reason": "BLS and the New York Fed cross-check September 10 PPI and September 11 CPI timing, but the dates were already known and current public discovery is direction/policy-first. No verified non-directional PipGauge calculation journey differs from historic payroll/CPI fixed-risk packages.",
       "scan_audit": {
         "sources": [
           {
             "publisher": "U.S. Bureau of Labor Statistics",
             "url": "https://www.bls.gov/schedule/2026/09_sched_list.htm",
             "source_type": "official_ppi_release_schedule",
-            "published_at": "2026-09-07",
-            "freshness_role": "official September schedule lists August 2026 PPI for September 10 at 08:30 ET",
+            "published_at": "2026-09-08",
+            "freshness_role": "official September schedule lists August PPI for September 10 at 08:30 ET and CPI for September 11 at 08:30 ET",
             "reliable": true
           },
           {
-            "publisher": "Associated Press",
-            "url": "https://apnews.com/article/a62d7e48184634d7ac1d1777b8b6688e",
-            "source_type": "independent_english_week_ahead_coverage",
-            "published_at": "2026-09-04",
-            "freshness_role": "independent English coverage identifies the week's PPI and CPI timing; it is not used for policy, FX, index or inflation-direction claims",
+            "publisher": "Federal Reserve Bank of New York",
+            "url": "https://www.newyorkfed.org/research/calendars/i-sep26.html",
+            "source_type": "independent_official_calendar",
+            "published_at": "2026-09-08",
+            "freshness_role": "independent official September calendar confirms the PPI/CPI release timing; it does not provide a retail sizing question or market conclusion",
             "reliable": true
+          },
+          {
+            "publisher": "ForexFactory",
+            "url": "https://www.forexfactory.com/calendar?day=sep8.2026",
+            "source_type": "public_calendar_discovery",
+            "published_at": "2026-09-08",
+            "freshness_role": "current public calendar is discovery context only, not a fact substitute or signal",
+            "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_no_verified_calculator_bridge_or_traffic_path",
-          "duplicate_of": [],
-          "refresh_signals": {
-            "fact_delta": true,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": true
-          },
-          "reopen_trigger": "A published PPI result plus an independently verifiable, non-directional public calculation request that maps specifically to PipGauge inputs rather than a generic macro-risk table.",
-          "rationale": "The new dated PPI event is real, but a calendar alone does not supply a natural calculation problem. Existing public discussion is direction/policy first; no defensible traffic hook or calculator bridge exists, so no playbook is generated."
-        }
-      }
-    },
-    {
-      "scan_date": "2026-09-07",
-      "candidate_id": "HR-20260907-04",
-      "status": "discarded",
-      "topic": "Expired FTMO Labor Day Early-Close Frame and Directional Macro Forecast Posts",
-      "primary_site": "PipGauge",
-      "freshness": 8,
-      "traffic_potential": 20,
-      "calculator_fit": 3,
-      "evidence_quality": 10,
-      "actionability": 2,
-      "total_score": 43,
-      "hard_gate": false,
-      "reliable_sources": 2,
-      "fresh_signal": false,
-      "calculator_mapping": [
-        "US100 Point Value",
-        "P&L"
-      ],
-      "reason": "FTMO's firm-specific September 7 early-close window is already ending and cannot support a fresh pre-close article; ECB, CPI, PPI, FX, index and rate direction calls, price targets, political framing, login walls and unverifiable social posts remain excluded.",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "FTMO",
-            "url": "https://ftmo.com/en/blog/trading-updates/trading-update-3-sep-2026/",
-            "source_type": "official_dated_product_trading_update",
-            "published_at": "2026-09-03",
-            "freshness_role": "firm-specific US100.cash early-close schedule for September 7, now at expiry; it cannot support a fresh pre-close claim after the session",
-            "reliable": true
-          },
-          {
-            "publisher": "Compare Prop Firms",
-            "url": "https://comparepropfirms.com/labor-day-futures-prop-firm-trading-hours-2026/",
-            "source_type": "independent_english_industry_discovery",
-            "published_at": "2026-09-04",
-            "freshness_role": "independent holiday-hours discovery context only; it does not extend FTMO's expired window or replace its symbol schedule",
-            "reliable": true
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "discard_expired_firm_specific_window_and_excluded_directional_material",
+          "decision_gate": "observation_cross_checked_calendar_without_distinct_non_directional_calculation_path",
           "duplicate_of": [
-            "HR-20260906-01"
+            "HR-20260810-02",
+            "HR-20260811-02",
+            "HR-20260905-03",
+            "HR-20260907-02",
+            "HR-20260907-03"
           ],
           "refresh_signals": {
             "fact_delta": false,
             "search_delta": false,
             "example_delta": false,
-            "window_delta": false
+            "window_delta": true
           },
-          "reopen_trigger": "A new dated FTMO or other firm-specific official schedule or rule with an independent current impact signal and a pre-expiry, non-directional calculation question.",
-          "rationale": "Yesterday's pre-close frame expires during this period. Repeating it would create stale content; directional and unverifiable adjacent material remains excluded."
+          "reopen_trigger": "Published PPI or CPI result plus two independent reliable result sources and a verified distinct non-directional calculation request that does not reuse the historic payroll/CPI fixed-risk table.",
+          "rationale": "The dates are cross-checked but already known, and public discovery remains direction/policy-first. There is no verified PipGauge-first calculation journey; no playbook is generated."
         }
       }
+    },
+    {
+      "scan_date": "2026-09-08",
+      "candidate_id": "HR-20260908-04",
+      "status": "discarded",
+      "topic": "Nigeria CFD Proposal Directional Macro Forecasts and Unverifiable Social Posts",
+      "primary_site": "PipGauge",
+      "freshness": 24,
+      "traffic_potential": 20,
+      "calculator_fit": 8,
+      "evidence_quality": 10,
+      "actionability": 2,
+      "total_score": 64,
+      "hard_gate": false,
+      "reliable_sources": 1,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Margin",
+        "Position Size"
+      ],
+      "reason": "Nigeria SEC's September 1 online forex/CFD proposal is a verified regulatory observation but has no independent reliable English impact source or natural PipGauge-first traffic path in this scan. Directional forecasts, price targets, calls, political framing, login walls and unverifiable social material remain excluded."
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-09-07T22:02:36+08:00",
-      "source_count": 3,
-      "note": "核验 ECB 9 月 4 日 weekly schedule、BLS CPI 页面和 BLS 2026 年 9 月发布日程；同时检查前一日 FTMO firm-specific Labor Day 窗口是否仍有效。"
+      "checked_at": "2026-09-08T22:02:24+08:00",
+      "source_count": 4,
+      "note": "核验 FTMO Futures 的官方 launch post 与 Trading Objectives and Rules；复核 ECB、BLS PPI/CPI 的近期日程，以及 Nigerian SEC 9 月 1 日 online forex/CFD proposed rules。"
     },
     {
       "channel": "可靠英文媒体与独立行业核查",
       "status": "complete",
-      "checked_at": "2026-09-07T22:02:36+08:00",
-      "source_count": 2,
-      "note": "核验 AP 9 月 4 日本周通胀数据报道，以及 Lumon 9 月英文 FX 事件背景；各自只用于独立事件语境，不替代官方日程或产生市场方向结论。"
+      "checked_at": "2026-09-08T22:02:24+08:00",
+      "source_count": 3,
+      "note": "核验 Prop Firm Times 9 月 5 日对 FTMO Futures 规则与 payout wording 的独立核查、Compare Prop Firms 9 月 4 日 weekly roundup，以及既有 AP/Lumon 事件背景。产品规则均以 FTMO 官方页为准。"
     },
     {
       "channel": "Reddit / ForexFactory / BabyPips",
-      "status": "checked_no_material_signal",
-      "checked_at": "2026-09-07T22:02:36+08:00",
-      "source_count": 1,
-      "note": "核验公开 Reddit 9 月 7–13 日历讨论和公开索引。材料以方向性事件预期为主，未发现可核验的新非方向性 pip-value、仓位、保证金或成本计算请求；不将其作为事实源。"
+      "status": "complete",
+      "checked_at": "2026-09-08T22:02:24+08:00",
+      "source_count": 2,
+      "note": "核验公开 Reddit 的 9 月 8 日 futures-versus-forex 讨论和 ForexFactory 9 月 8 日公开日历。Reddit 只证明 FTMO/Futures 比较与规则核对仍是当前讨论，不确认计划、帐户、合约或市场结论。"
     },
     {
       "channel": "X / Quora",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-09-07T22:02:36+08:00",
+      "checked_at": "2026-09-08T22:02:24+08:00",
       "source_count": 0,
-      "note": "X 公开索引未给出可核验的新非方向性计算问题；Quora 受 robots/login 限制，未使用不可核验材料。未登录、发帖、评论或操作任何账户。"
+      "note": "X 公开索引未提供可核验的新非方向性计算问题；Quora 的公开结果受 robots/login 限制，未使用不可验证材料。未登录、发帖、评论、私信或操作任何帐户。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-09-07_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-09-07_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-09-08_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-09-08_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
-    "traffic_playbooks": "../热点流量打法.json"
+    "traffic_playbooks": "../热点流量打法.json",
+    "content_root": "../内容生产/2026-09-08"
   },
   "radar_model": "v2-content-first",
   "editorial_policy": {

@@ -1,0 +1,20 @@
+{
+  "candidate_id": "HR-20260908-01",
+  "scan_date": "2026-09-08",
+  "primary_site": "PipGauge",
+  "topic": "FTMO Futures Beta: Calculate the 50K Pro Daily-Loss Headroom Before You Size a Trade",
+  "execution_mode": "new",
+  "refresh_target": null,
+  "package_summary": "当期审核快照：以 FTMO Futures beta 和 50K Pro Evaluation 首日 USD 1,000 daily-loss rule 为事实钩子，演示如何先留 USD 200 缓冲、再把 USD 800 计划价格风险换算成读者已核验的每点价值与止损距离；不比较 firm，不预测 futures 方向，不声称合约点值。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "beta_launch_verification_window",
+  "time_status_label": "仅在 FTMO Futures beta 与当前规则页仍有效、且能核验读者实际合约输入时使用；任何条款、资格、平台或数值更新都必须重新核验或停用。",
+  "documents": [
+    {"id": "facts", "label": "事实与论点", "file": "00-事实与论点.md", "platform": "internal", "kind": "editorial brief", "status_label": "已整理"},
+    {"id": "medium", "label": "Medium", "file": "01-Medium.md", "platform": "medium", "kind": "long-form draft", "status_label": "待人工审核"},
+    {"id": "reddit", "label": "Reddit", "file": "02-Reddit.md", "platform": "reddit", "kind": "native discussion draft", "status_label": "待人工审核"},
+    {"id": "x", "label": "X", "file": "03-X.md", "platform": "x", "kind": "short thread draft", "status_label": "待人工审核"},
+    {"id": "review", "label": "审核清单", "file": "04-人工审核.md", "platform": "internal", "kind": "human gate", "status_label": "必须完成"}
+  ]
+}
