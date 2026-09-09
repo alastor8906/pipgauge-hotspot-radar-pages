@@ -1,0 +1,136 @@
+{
+  "scan_date": "2026-09-09",
+  "generated_at": "2026-09-09T22:01:28+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-09-09T22:01:28+08:00",
+      "source_count": 4,
+      "note": "核验 ECB 9 月 10 日决策/发布会时点、BLS PPI 计划、New York Fed 9 月日历，以及 FTMO Futures beta 公开说明。"
+    },
+    {
+      "channel": "可靠英文媒体与独立行业核查",
+      "status": "complete",
+      "checked_at": "2026-09-09T22:01:28+08:00",
+      "source_count": 2,
+      "note": "核验 Reuters 9 月 9 日由 MarketScreener 转载的欧洲市场/ECB 决策前报道，以及 Prop Firm Briefing 9 月 6 日独立 FTMO Futures 规则复查。官方页面仍是规则事实锚点。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "complete",
+      "checked_at": "2026-09-09T22:01:28+08:00",
+      "source_count": 2,
+      "note": "核验公开 Reddit 的 EUR 方向讨论与 ForexFactory 9 月 10 日日历；仅作发现/热度检查，未用作规则、日期或市场结论的事实来源。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-09-09T22:01:28+08:00",
+      "source_count": 0,
+      "note": "X 公开索引未提供可核验的新非方向性计算问题；Quora 结果受 robots/login 限制，未使用不可验证材料。未登录、发帖、评论、私信或操作任何帐户。"
+    }
+  ],
+  "candidates": {
+    "HR-20260909-01": {
+      "sources": [
+        {
+          "publisher": "European Central Bank",
+          "url": "https://www.ecb.europa.eu/press/press_conference/html/index.en.html",
+          "source_type": "official_dated_decision_and_press_conference_schedule",
+          "published_at": "undated; checked 2026-09-09",
+          "freshness_role": "official page currently lists the September 10 decision at 14:15 CET and press conference at 14:45 CET; the page itself supplies no publication date",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://ca.marketscreener.com/news/european-shares-dip-as-oil-nears-100-mideast-tensions-fan-inflation-fears-ce785bd9da8dfe25",
+          "source_type": "independent_current_english_market_context",
+          "published_at": "2026-09-09",
+          "freshness_role": "current independent context identifies the imminent ECB decision amid inflation-risk reporting; it is not used for a rate, EUR/USD or oil prediction",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit",
+          "url": "https://www.reddit.com/r/Forex/comments/1wbk43p/why_euro_so_strong/",
+          "source_type": "public_current_discussion_discovery",
+          "published_at": "2026-09-09",
+          "freshness_role": "current public EUR discussion is direction-first and supplies no verified non-directional calculator query; it is not a fact source",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_only_current_context_and_window_do_not_create_distinct_ecb_calculation_path",
+        "duplicate_of": ["HR-20260723-02", "HR-20260903-03", "HR-20260905-02", "HR-20260907-01", "HR-20260908-02"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "Published ECB decision plus a second independent reliable English result source and a verified materially different, non-directional EUR/USD calculation query or replacement example.",
+        "rationale": "The current Reuters report adds timely event context, but it does not change the official decision fact, the reader's non-directional calculation request, or a usable example. The only qualified delta is the nearer release window, so an ECB sizing refresh would duplicate the historic chain."
+      }
+    },
+    "HR-20260909-02": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/schedule/news_release/ppi.htm",
+          "source_type": "official_ppi_release_schedule",
+          "published_at": "undated schedule; checked 2026-09-09",
+          "freshness_role": "official schedule currently lists the August 2026 PPI release for September 10 at 08:30 ET; the page does not date this individual calendar entry",
+          "reliable": true
+        },
+        {
+          "publisher": "Federal Reserve Bank of New York",
+          "url": "https://www.newyorkfed.org/research/calendars/i-sep26.html",
+          "source_type": "independent_official_economic_calendar",
+          "published_at": "undated calendar; checked 2026-09-09",
+          "freshness_role": "independent official September calendar currently confirms the PPI/CPI event window but does not establish a retail calculator demand",
+          "reliable": true
+        },
+        {
+          "publisher": "ForexFactory",
+          "url": "https://www.forexfactory.com/calendar?day=sep10.2026",
+          "source_type": "public_current_calendar_discovery",
+          "published_at": "undated calendar; checked 2026-09-09",
+          "freshness_role": "current public calendar supplies discovery context only; it is not a fact substitute or trade signal",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_cross_checked_calendar_without_distinct_non_directional_calculation_path",
+        "duplicate_of": ["HR-20260810-02", "HR-20260811-02", "HR-20260905-03", "HR-20260907-02", "HR-20260907-03", "HR-20260908-03"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "Published PPI or CPI result plus two independent reliable result sources and a verified distinct non-directional calculation request that does not reuse the historic payroll/CPI fixed-risk table.",
+        "rationale": "The event dates are cross-checked but already owned by recent calendar observations. Current discovery signals remain direction/policy-first, leaving no PipGauge-first search-to-calculator route and no second qualified refresh signal."
+      }
+    },
+    "HR-20260909-03": {
+      "sources": [
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/en/futures/beta-description/",
+          "source_type": "official_current_beta_description",
+          "published_at": "undated page; checked 2026-09-09",
+          "freshness_role": "current official beta page says objectives for already purchased Evaluation and Sim-Funded Accounts do not change halfway; it has no dated new rule or version for this scan",
+          "reliable": true
+        },
+        {
+          "publisher": "Prop Firm Briefing",
+          "url": "https://propfirmbriefing.com/prop-firm-rules/ftmo-futures/",
+          "source_type": "independent_english_rule_recheck",
+          "published_at": "2026-09-06",
+          "freshness_role": "independent September 6 recheck records no published FTMO Futures rule change; it supports continued monitoring, not a new rule claim",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_only_no_dated_delta_beyond_existing_ftmo_beta_package",
+        "duplicate_of": ["HR-20260908-01"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": false},
+        "reopen_trigger": "A dated FTMO Futures rule, plan, payout, eligibility, platform or instrument update plus an independent current impact/heat source that creates at least two refresh signals and a different calculation question.",
+        "rationale": "The sources are useful to check the current state, but expressly do not provide a new dated rule or new arithmetic. Repeating the 50K Pro daily-loss explanation would be duplicate content, so the September 8 package remains the only active review snapshot."
+      }
+    }
+  }
+}
