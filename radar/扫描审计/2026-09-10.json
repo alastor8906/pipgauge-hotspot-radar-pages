@@ -1,0 +1,136 @@
+{
+  "scan_date": "2026-09-10",
+  "generated_at": "2026-09-10T22:00:49+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-09-10T22:00:49+08:00",
+      "source_count": 3,
+      "note": "核验 BLS August 2026 PPI 正式新闻稿、BLS PPI/CPI 日程，以及 ECB 9 月 10 日新闻发布会页面。"
+    },
+    {
+      "channel": "可靠英文媒体与独立行业核查",
+      "status": "complete",
+      "checked_at": "2026-09-10T22:00:49+08:00",
+      "source_count": 2,
+      "note": "核验 AP 的美国 8 月 PPI 结果报道和 AP 的 ECB 决议报道。ECB 官方公开索引在本次检查时尚未给出可引用的 9 月 10 日结果正文，未把 AP 单源数字当作双源事实。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "complete",
+      "checked_at": "2026-09-10T22:00:49+08:00",
+      "source_count": 2,
+      "note": "核验 ForexFactory 9 月 10 日历及公开 Reddit/论坛索引；它们只显示事件和方向性讨论，未提供可验证的非方向性计算问题。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-09-10T22:00:49+08:00",
+      "source_count": 0,
+      "note": "公开索引没有可核验的新非方向性计算问题；Quora 结果仍受 robots/login 限制，未采用不可验证材料。未登录、发帖、评论、私信或操作任何账户。"
+    }
+  ],
+  "candidates": {
+    "HR-20260910-01": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.dol.gov/newsroom/economicdata/ppi_09102026.pdf",
+          "source_type": "official_published_ppi_release",
+          "published_at": "2026-09-10",
+          "freshness_role": "official August 2026 PPI release: final demand +0.4% month over month and +5.4% year over year; final demand less foods, energy and trade services +0.3% month over month",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/66d1591b979271ee7b79b113d715f6ef",
+          "source_type": "independent_current_english_result_report",
+          "published_at": "2026-09-10",
+          "freshness_role": "independently reports the published August wholesale-inflation result and its current news context; it is not used for a market-direction claim",
+          "reliable": true
+        },
+        {
+          "publisher": "ForexFactory",
+          "url": "https://www.forexfactory.com/calendar?day=sep10.2026",
+          "source_type": "public_current_calendar_discovery",
+          "published_at": "2026-09-10",
+          "freshness_role": "confirms contemporaneous high-impact calendar attention only; discussion and calendar data are not a fact substitute or trade signal",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_published_ppi_has_fact_and_window_delta_but_no_verified_distinct_non_directional_search_to_calculator_path",
+        "duplicate_of": ["HR-20260810-02", "HR-20260811-02", "HR-20260905-03", "HR-20260907-02", "HR-20260908-03", "HR-20260909-02"],
+        "refresh_signals": {"fact_delta": true, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "A publicly verifiable, non-directional PPI-result calculation query with a distinct risk, point-value, margin or cost example, or a later independently sourced fact that changes the reader task rather than merely its market context.",
+        "rationale": "The released PPI values are new and the result window is current, but using them to repeat an EUR/USD fixed-risk table would not establish new search demand or a new calculator task. Directional inflation, rate and currency reactions are excluded."
+      }
+    },
+    "HR-20260910-02": {
+      "sources": [
+        {
+          "publisher": "European Central Bank",
+          "url": "https://www.ecb.europa.eu/press/press_conference/html/index.en.html",
+          "source_type": "official_dated_decision_window",
+          "published_at": "2026-09-10; page checked 2026-09-10",
+          "freshness_role": "official page identifies the September 10 Berlin press-conference and decision-release window, but the public index checked in this run did not yet expose the dated result text or rate values",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/de62b59fba535fccaf6f75e52d037c63",
+          "source_type": "independent_current_english_decision_report",
+          "published_at": "2026-09-10",
+          "freshness_role": "reports a 25-basis-point ECB increase to 2.50%; retained as one independently reported current result while awaiting a separately verifiable official result page",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_result_not_yet_dual_source_verified_and_no_distinct_non_directional_ecb_calculation_path",
+        "duplicate_of": ["HR-20260723-02", "HR-20260903-03", "HR-20260905-02", "HR-20260907-01", "HR-20260908-02", "HR-20260909-01"],
+        "refresh_signals": {"fact_delta": true, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "A dated ECB decision text that independently verifies the reported result plus a separate reliable result source, and a public, materially different non-directional EUR calculation query or replacement example.",
+        "rationale": "The event has occurred, but the only accessible result number in this run is AP's report; the ECB page verifies timing rather than the numeric outcome. Even after the official result is available, a generic EUR/USD risk grid would remain insufficient without a different public calculator journey."
+      }
+    },
+    "HR-20260910-03": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+          "source_type": "official_cpi_release_schedule",
+          "published_at": "undated schedule; checked 2026-09-10",
+          "freshness_role": "official schedule lists the August 2026 CPI release for September 11",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/66d1591b979271ee7b79b113d715f6ef",
+          "source_type": "independent_current_english_event_context",
+          "published_at": "2026-09-10",
+          "freshness_role": "current PPI result report identifies the next-day CPI release; it is not used to predict inflation, rates or currency direction",
+          "reliable": true
+        },
+        {
+          "publisher": "ForexFactory",
+          "url": "https://www.forexfactory.com/calendar?day=sep10.2026",
+          "source_type": "public_current_calendar_discovery",
+          "published_at": "2026-09-10",
+          "freshness_role": "discovery context only; no non-directional calculator query verified",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_cpi_window_and_ppi_context_do_not_create_distinct_fixed_risk_search_path",
+        "duplicate_of": ["HR-20260810-02", "HR-20260811-02", "HR-20260905-03", "HR-20260907-02", "HR-20260908-03", "HR-20260909-02"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "Published CPI figures independently confirmed by two reliable English sources plus a verifiable non-directional reader calculation problem that does not reuse the payroll/CPI fixed-risk table.",
+        "rationale": "The calendar is current but already owned by prior observation periods. The PPI result changes news context, not the reader's verified calculator task; public discussion remains direction and policy first."
+      }
+    }
+  }
+}
