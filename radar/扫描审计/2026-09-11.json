@@ -1,0 +1,100 @@
+{
+  "scan_date": "2026-09-11",
+  "generated_at": "2026-09-11T22:00:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-09-11T22:00:00+08:00",
+      "source_count": 3,
+      "note": "核验 BLS 8 月 CPI 正式发布、Federal Reserve 2026 FOMC 日程和 FTMO Futures 更新归档。"
+    },
+    {
+      "channel": "可靠英文媒体与独立行业核查",
+      "status": "complete",
+      "checked_at": "2026-09-11T22:00:00+08:00",
+      "source_count": 2,
+      "note": "核验 AP 的当日 CPI/FOMC 语境报道与 Prop Firm Briefing 的 FTMO Futures 规则变更日志。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "complete",
+      "checked_at": "2026-09-11T22:00:00+08:00",
+      "source_count": 2,
+      "note": "核验公开 CPI 结果贴与 prop 规则讨论；它们只作热度/问题发现，未验证出新的非方向性计算问题。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-09-11T22:00:00+08:00",
+      "source_count": 0,
+      "note": "公开索引未提供可核验的新非方向性计算问题；Quora 仍受 robots/login 限制，未采用不可验证材料。未登录、发帖、评论、私信或操作任何账户。"
+    }
+  ],
+  "candidates": {
+    "HR-20260911-01": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/news.release/pdf/cpi.pdf",
+          "source_type": "official_published_cpi_release",
+          "published_at": "2026-09-11",
+          "freshness_role": "official August 2026 CPI result: all items +0.4% month over month and +3.4% year over year; core +0.3% month over month and +2.4% year over year",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/consumer-prices-inflation-fed-interest-rates-c76f53f7a53def0c464ca44ac637f203",
+          "source_type": "independent_current_english_result_report",
+          "published_at": "2026-09-11",
+          "freshness_role": "independently reports the published August CPI result and its current policy context; it is not used for a market-direction claim",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit",
+          "url": "https://www.reddit.com/r/neoliberal/comments/1wdf1fm/august_2026_us_cpi_release_prices_increased_04/",
+          "source_type": "public_current_discussion_discovery",
+          "published_at": "2026-09-11",
+          "freshness_role": "confirms contemporaneous result discussion only; it does not establish a fact or a non-directional calculator need",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_published_cpi_has_fact_and_window_delta_but_no_verified_distinct_non_directional_search_to_calculator_path",
+        "duplicate_of": ["HR-20260810-02", "HR-20260811-02", "HR-20260905-03", "HR-20260907-02", "HR-20260910-03"],
+        "refresh_signals": {"fact_delta": true, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "A publicly verifiable, non-directional CPI-result calculation query with a distinct risk, point-value, margin or cost example, or a later independently sourced fact that changes the reader task rather than merely its market narrative.",
+        "rationale": "The released CPI values are new and current, but the verified public material is inflation, rate and asset-direction first. Reusing a generic FX fixed-risk table would repeat the existing CPI/PPI/payroll content and would not establish a new calculator journey."
+      }
+    },
+    "HR-20260911-02": {
+      "sources": [
+        {
+          "publisher": "Federal Reserve",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "source_type": "official_dated_fomc_schedule",
+          "published_at": "2026 schedule; checked 2026-09-11",
+          "freshness_role": "officially lists the September 15-16, 2026 FOMC meeting and the associated Summary of Economic Projections",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/consumer-prices-inflation-fed-interest-rates-c76f53f7a53def0c464ca44ac637f203",
+          "source_type": "independent_current_english_event_context",
+          "published_at": "2026-09-11",
+          "freshness_role": "current CPI reporting identifies the following week's policy decision window; it is not used to predict a policy or market outcome",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_fomc_window_has_no_new_result_query_or_replacement_example_for_existing_event_risk_content",
+        "duplicate_of": ["HR-20260724-01", "HR-20260817-01", "HR-20260820-01", "HR-20260823-01"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "A published FOMC result independently confirmed by reliable English sources plus a public, non-directional account-risk or product-specification question that changes the reader task; assess refresh before making any new article.",
+        "rationale": "The event is inside seven days, but the only usable calculation is the already-covered generic pre-decision FX risk table. A closer meeting date is one refresh signal, not a traffic path or a reason to duplicate historical FOMC work."
+      }
+    }
+  }
+}
