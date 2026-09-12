@@ -1,0 +1,72 @@
+{
+  "schema_version": 2,
+  "scan_date": "2026-08-20",
+  "generated_at": "2026-08-20T22:00:00+08:00",
+  "coverage": [
+    {"channel":"官方与一手来源","status":"complete","checked_at":"2026-08-20T22:00:00+08:00","source_count":4,"note":"覆盖 Federal Reserve 已发布纪要、ABS July Labour Force、Japan Ministry of Finance 与 PBOC 公开页面；只把带日期和可回溯数字的材料写入事实候选。"},
+    {"channel":"可靠英文媒体 / 独立经济日历","status":"complete","checked_at":"2026-08-20T22:00:00+08:00","source_count":4,"note":"覆盖 AP、Reuters 和 Forex Factory 日历。日历只用于时间、预期或社区可见度交叉，不替代官方结果。"},
+    {"channel":"Reddit / ForexFactory","status":"complete","checked_at":"2026-08-20T22:00:00+08:00","source_count":5,"note":"检查 FOMC 和澳洲就业当日公开讨论及日历；它们只证明讨论/查询信号，绝不作为统计或政策事实源。"},
+    {"channel":"X / Quora / BabyPips","status":"checked_no_material_signal","checked_at":"2026-08-20T22:00:00+08:00","source_count":0,"note":"未发现可公开核验、在本期改变计算器承接或刷新结论的材料；未登录或操作账号。"}
+  ],
+  "candidates": {
+    "HR-20260820-01": {
+      "sources": [
+        {"publisher":"Federal Reserve Board","url":"https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm","source_type":"official_minutes","published_at":"2026-08-19","freshness_role":"official_July_28_29_minutes_released_with_9_3_vote_and_policy_text_inside_24_hours","reliable":true},
+        {"publisher":"Associated Press","url":"https://apnews.com/article/0030d04832b89b564b743b34ab2cd8de","source_type":"reliable_news","published_at":"2026-08-19","freshness_role":"independent_same_day_confirmation_of_published_minutes_and_9_3_hold","reliable":true},
+        {"publisher":"Reuters","url":"https://currently.att.yahoo.com/att/fed-policymakers-inflation-concerns-increased-180421968.html","source_type":"reliable_news","published_at":"2026-08-19","freshness_role":"independent_same_day_confirmation_of_minutes_inflation_language","reliable":true},
+        {"publisher":"Reddit r/Forexstrategy","url":"https://www.reddit.com/r/Forexstrategy/comments/1vsksj0/fed_minutes_at_2pm_et_do_you_trade_the_hawkish/","source_type":"community_heat","published_at":"2026-08-19","freshness_role":"public_current_minutes_and_9_3_vote_discussion_not_used_for_facts","reliable":false}
+      ],
+      "decision": {
+        "novelty_gate":"pass_refresh",
+        "decision_gate":"selected_refresh",
+        "duplicate_of":["HR-20260730-02","HR-20260817-01"],
+        "refresh_signals":{"fact_delta":true,"search_delta":true,"example_delta":true,"window_delta":true},
+        "reopen_trigger":"A newer U.S. data release, a Fed correction, or the September FOMC decision must be checked before any further update.",
+        "rationale":"The official text replaces an anticipated event; the public query object is now released minutes and 9-3 vote context; the factual USD 100/25-50-100-pip table is a distinct result-window example; and the 24-hour result window is explicit. The existing FOMC article is refreshed rather than duplicated."
+      }
+    },
+    "HR-20260820-02": {
+      "sources": [
+        {"publisher":"Australian Bureau of Statistics","url":"https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/jul-2026","source_type":"official_release","published_at":"2026-08-20","freshness_role":"official_July_2026_labour_force_actual_minus_15800_and_4_5_percent_inside_24_hours","reliable":true},
+        {"publisher":"Reuters","url":"https://theduke.fm/2026/08/19/australia-jobless-rate-hits-near-five-year-high-of-4-5-in-july/","source_type":"reliable_news","published_at":"2026-08-20","freshness_role":"independent_confirmation_of_actual_result_revised_June_and_consensus_context","reliable":true},
+        {"publisher":"Reddit r/australia","url":"https://www.reddit.com/r/australia/comments/1vt6me6/unemployment_rate_rises_to_45_in_july/","source_type":"community_heat","published_at":"2026-08-20","freshness_role":"same_day_public_result_discussion_not_used_for_facts","reliable":false}
+      ],
+      "decision": {
+        "novelty_gate":"pass_refresh",
+        "decision_gate":"selected_refresh",
+        "duplicate_of":["HR-20260811-01","HR-20260819-01"],
+        "refresh_signals":{"fact_delta":true,"search_delta":true,"example_delta":true,"window_delta":true},
+        "reopen_trigger":"ABS correction, a verified newer Australian labour/RBA event, or a source-backed new query can reopen the existing AUD/USD article; otherwise retire the result frame after its 24-hour window.",
+        "rationale":"ABS actual results and Reuters independent confirmation replace the prior schedule and consensus; search language changes to jobs result; the example moves to USD 100 and 25/50/75 pips; and the one-day post-release traffic window is dated. This refreshes the RBA/AUD article without a second same-structure page."
+      }
+    },
+    "HR-20260820-03": {
+      "sources": [
+        {"publisher":"Japan Ministry of Finance","url":"https://www.mof.go.jp/english/policy/customs_tariff/trade/index.html","source_type":"official_release","published_at":"2026-08-20","freshness_role":"same_day_July_trade_balance_result","reliable":true},
+        {"publisher":"Forex Factory","url":"https://www.forexfactory.com/calendar?month=aug.2026","source_type":"public_calendar_heat","published_at":"2026-08-20","freshness_role":"same_day_calendar_visibility_not_independent_reliable_fact","reliable":false}
+      ],
+      "decision": {
+        "novelty_gate":"not_evaluated_hard_gate_fail",
+        "decision_gate":"observation_missing_independent_fact_and_specific_traffic_path",
+        "duplicate_of":[],
+        "refresh_signals":{"fact_delta":true,"search_delta":false,"example_delta":false,"window_delta":false},
+        "reopen_trigger":"Independent reliable English confirmation plus a specific public USD/JPY pip-value, position-size or fixed-risk query distinct from generic trade commentary.",
+        "rationale":"A fresh official trade result is not sufficient by itself and does not create an evidenced retail calculation journey."
+      }
+    },
+    "HR-20260820-04": {
+      "sources": [
+        {"publisher":"People's Bank of China","url":"http://www.pbc.gov.cn/en/3688110/3688172/4157443/index.html","source_type":"official_rate_page","published_at":"2026-08-20","freshness_role":"same_day_LPR_setting_context","reliable":true},
+        {"publisher":"Forex Factory","url":"https://www.forexfactory.com/calendar?month=aug.2026","source_type":"public_calendar_heat","published_at":"2026-08-20","freshness_role":"public_calendar_cross_check_of_unchanged_1y_and_5y_LPR_not_independent_reliable_fact","reliable":false}
+      ],
+      "decision": {
+        "novelty_gate":"fail",
+        "decision_gate":"observation_no_specific_retail_traffic_path",
+        "duplicate_of":[],
+        "refresh_signals":{"fact_delta":true,"search_delta":false,"example_delta":false,"window_delta":true},
+        "reopen_trigger":"A source-backed English USDCNH sizing or risk query with a dated event window and a natural PipGauge calculation bridge.",
+        "rationale":"The dated rate fact has two sources, but generic policy commentary does not justify inventing a calculator need or a traffic playbook."
+      }
+    }
+  }
+}

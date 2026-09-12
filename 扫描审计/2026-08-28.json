@@ -1,0 +1,45 @@
+{
+  "scan_date": "2026-08-28",
+  "generated_at": "2026-08-28T22:00:00+08:00",
+  "coverage": [
+    {"channel":"官方与一手来源","status":"complete","checked_at":"2026-08-28T22:00:00+08:00","source_count":4,"note":"核验日本统计局东京 CPI 结果、Kansas City Fed Jackson Hole 日程、NVIDIA Q2 FY27 结果及 BEA PCE 发布。"},
+    {"channel":"可靠英文媒体 / 独立日历","status":"complete","checked_at":"2026-08-28T22:00:00+08:00","source_count":6,"note":"核验 Reuters 东京 CPI 与 FX/PCE 语境、AP Jackson Hole、Axios/NVIDIA 结果后语境，以及 ForexFactory 当期公开日历。"},
+    {"channel":"Reddit / ForexFactory","status":"complete","checked_at":"2026-08-28T22:00:00+08:00","source_count":3,"note":"核验 ForexFactory Tokyo Core CPI 实际值日历和公开 USDJPY/Jackson Hole 讨论索引；社区材料只用于热度与措辞，不确认事实或方向。"},
+    {"channel":"X / Quora / BabyPips","status":"checked_no_material_signal","checked_at":"2026-08-28T22:00:00+08:00","source_count":1,"note":"X、Quora 与 BabyPips 的可见索引未出现新的、具体且非方向性计算需求；不登录或操作账号，且不把缺失视作无热度。"}
+  ],
+  "candidates": {
+    "HR-20260828-01": {
+      "sources": [
+        {"publisher":"Japan Statistics Bureau","url":"https://www.stat.go.jp/data/cpi/1.html?guid=ON","source_type":"official_statistics_release","published_at":"2026-08-28","freshness_role":"official_Tokyo_August_CPI_preliminary_release","reliable":true},
+        {"publisher":"Reuters","url":"https://www.marketscreener.com/news/tokyo-core-inflation-accelerates-in-august-nears-boj-target-ce7858dfd981ff21","source_type":"reliable_news_reprint","published_at":"2026-08-28","freshness_role":"independent_report_of_1_8_core_CPI_versus_1_7_consensus_and_revised_1_7_previous","reliable":true},
+        {"publisher":"ForexFactory","url":"https://www.forexfactory.com/calendar?day=aug28.2026&event=148675","source_type":"public_calendar_heat","published_at":"2026-08-28","freshness_role":"current_public_actual_1_8_calendar_and_search_wording_not_used_for_fact_adjudication","reliable":false},
+        {"publisher":"Reddit r/Forexstrategy","url":"https://www.reddit.com/r/Forexstrategy/comments/1w09c8l/usdjpy_forecast_will_inflation_data_be_enough_to/","source_type":"community_heat","published_at":"2026-08-28","freshness_role":"public_Tokyo_CPI_USDJPY_discussion_signal_not_used_for_facts_or_direction","reliable":false}
+      ],
+      "decision": {"novelty_gate":"pass_refresh","decision_gate":"selected_refresh","duplicate_of":["HR-20260827-02"],"refresh_signals":{"fact_delta":true,"search_delta":true,"example_delta":true,"window_delta":true},"reopen_trigger":"Stop the Tokyo-CPI/159.30 frame after the August 28 same-day window, an official statistics correction, a materially different verified USDJPY fact, or a BOJ decision. A further refresh needs a new calculation question and fresh evidence.","rationale":"The dated official result and Reuters create a new fact; the traffic query changes from a deputy-governor speech to the released CPI actual; 1.8 versus 1.7 replaces the factual headline and event card; and the post-release window is distinct. The only permitted output is a refresh of the existing USDJPY fixed-risk article, without policy or price prediction."}
+    },
+    "HR-20260828-02": {
+      "sources": [
+        {"publisher":"Federal Reserve Bank of Kansas City","url":"https://www.kansascityfed.org/research/jackson-hole-economic-symposium/2026/","source_type":"official_event_agenda","published_at":"2026-08-28","freshness_role":"official_current_August_28_keynote_agenda","reliable":true},
+        {"publisher":"AP","url":"https://apnews.com/article/federal-reserve-warsh-interest-trump-inflation-ab896df808df3a5a3fa8b943ac5f3867","source_type":"reliable_news","published_at":"2026-08-28","freshness_role":"independent_current_attention_context","reliable":true},
+        {"publisher":"Reuters","url":"https://www.marketscreener.com/news/dollar-flat-near-one-week-high-as-investors-await-warsh-s-jackson-hole-debut-ce7858dfd88df022","source_type":"reliable_news_reprint","published_at":"2026-08-28","freshness_role":"independent_current_event_context","reliable":true}
+      ],
+      "decision": {"novelty_gate":"fail","decision_gate":"observation_duplicate_countdown","duplicate_of":["HR-20260824-01"],"refresh_signals":{"fact_delta":false,"search_delta":false,"example_delta":false,"window_delta":true},"reopen_trigger":"Official remarks or a transcript that creates a verifiable new non-directional calculation question distinct from the existing EURUSD fixed-risk table.","rationale":"The official clock and attention are real but already owned by the current Jackson Hole package. Before a new verified fact arrives, advancing the clock is only one refresh signal and no duplicate playbook or package is permitted."}
+    },
+    "HR-20260828-03": {
+      "sources": [
+        {"publisher":"NVIDIA","url":"https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx","source_type":"official_company_results","published_at":"2026-08-26","freshness_role":"official_results_still_inside_72_hours","reliable":true},
+        {"publisher":"AP","url":"https://apnews.com/article/nvidia-artificial-intelligence-earnings-dc8d556e709b50915cca9217a60b1991","source_type":"reliable_news","published_at":"2026-08-26","freshness_role":"independent_results_confirmation","reliable":true},
+        {"publisher":"Axios","url":"https://www.axios.com/2026/08/27/nvidia-ai-earnings-stock","source_type":"reliable_news","published_at":"2026-08-27","freshness_role":"reported_7_percent_result_day_move_already_used_by_prior_refresh","reliable":true}
+      ],
+      "decision": {"novelty_gate":"fail","decision_gate":"observation_duplicate_result_window","duplicate_of":["HR-20260827-01"],"refresh_signals":{"fact_delta":false,"search_delta":false,"example_delta":false,"window_delta":true},"reopen_trigger":"A new official correction, another verified company fact, or a current non-directional exposure query that needs materially different numbers from the 7-percent result-day table.","rationale":"The existing result-day package already uses the official result and reported 7-percent move. The remaining freshness window cannot become a second same-structure article without a second qualified refresh signal."}
+    },
+    "HR-20260828-04": {
+      "sources": [
+        {"publisher":"U.S. Bureau of Economic Analysis","url":"https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026","source_type":"official_statistics_release","published_at":"2026-08-26","freshness_role":"official_July_PCE_result","reliable":true},
+        {"publisher":"Reuters","url":"https://www.investing.com/news/economy-news/dollar-near-eightday-high-as-us-data-lifts-fed-hike-bets-4878113","source_type":"reliable_news_reprint","published_at":"2026-08-27","freshness_role":"independent_current_PCE_context","reliable":true},
+        {"publisher":"BabyPips","url":"https://www.babypips.com/analysis/headline-sticky-core-pce-steady-gdp-fed-tightening-2026-08-27","source_type":"public_discussion_analysis","published_at":"2026-08-27","freshness_role":"current_macro_discussion_not_used_for_direction_or_facts","reliable":false}
+      ],
+      "decision": {"novelty_gate":"fail","decision_gate":"observation_no_verified_retail_calculation_query","duplicate_of":["HR-20260827-04"],"refresh_signals":{"fact_delta":false,"search_delta":false,"example_delta":false,"window_delta":false},"reopen_trigger":"A current public English question tied to the released PCE number that explicitly requests a non-directional EURUSD/USD pip-value, fixed-risk, or position-size calculation with readable inputs.","rationale":"Facts and discussion are present but the public journey remains macro interpretation and direction-first. The calculator-fit hard gate fails, so no traffic playbook or content package is allowed."}
+    }
+  }
+}

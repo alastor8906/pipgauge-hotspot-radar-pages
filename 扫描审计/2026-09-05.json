@@ -1,0 +1,143 @@
+{
+  "scan_date": "2026-09-05",
+  "generated_at": "2026-09-05T22:00:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-09-05T22:00:00+08:00",
+      "source_count": 6,
+      "note": "核验 BLS 已公布的 August Employment Situation、BLS CPI 日程、ECB 9 月 4 日更新周程，以及 prop-firm 的慢变公开规则页。"
+    },
+    {
+      "channel": "可靠英文媒体",
+      "status": "complete",
+      "checked_at": "2026-09-05T22:00:00+08:00",
+      "source_count": 2,
+      "note": "核验 AP 对 8 月就业结果与修订的独立英文报道，以及 Lumon 对 9 月 ECB 窗口的独立英文背景；后者只用于 ECB 观察项。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "complete",
+      "checked_at": "2026-09-05T22:00:00+08:00",
+      "source_count": 3,
+      "note": "核验 BabyPips 当日 payroll 结果页、ForexFactory 公开经济日历和公开 Reddit 索引；仅用于发现、讨论及查询措辞，不确认事实、报价或方向。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-09-05T22:00:00+08:00",
+      "source_count": 0,
+      "note": "X 公开索引未提供新的、具体且非方向性的 payroll、EUR/USD、ECB 或 CPI 计算问题；Quora 受 robots/login 限制，未将不可核验材料使用为证据。未登录、发帖、评论或操作任何账户。"
+    }
+  ],
+  "candidates": {
+    "HR-20260905-01": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/news.release/archives/empsit_09042026.htm",
+          "source_type": "official_dated_employment_result",
+          "published_at": "2026-09-04",
+          "freshness_role": "official same-day August Employment Situation: payrolls +162,000, unemployment 4.1 percent, and combined June-July revisions +55,000",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/stocks-markets-oil-trump-iran-war-1af16359af43eb8abc66445465f633c8",
+          "source_type": "independent_english_news_wire",
+          "published_at": "2026-09-04",
+          "freshness_role": "independent same-day English report confirms stronger August hiring, 4.1 percent unemployment, and +55,000 combined prior-month revisions",
+          "reliable": true
+        },
+        {
+          "publisher": "BabyPips",
+          "url": "https://www.babypips.com/news/headline-us-jobs-august-2026-nonfarm-payrolls-beat-forecasts",
+          "source_type": "public_fx_discussion_heat",
+          "published_at": "2026-09-04",
+          "freshness_role": "same-day FX-audience discovery wording for the published payroll result only; not used to confirm numbers, infer an expected move, or provide a trade view",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass_refresh",
+        "decision_gate": "selected_refresh",
+        "duplicate_of": ["HR-20260810-01"],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "reopen_trigger": "A BLS correction, a published September CPI result with an independently reported fact and a distinct non-directional retail calculation path, or a current public English question that requests materially different fixed-risk inputs; otherwise retire this result-day frame after September 6 ET.",
+        "rationale": "BLS and AP are independent reliable publishers for the same-day August result, while BabyPips establishes current FX-audience discovery wording. The published +162,000 / 4.1% / +55,000 result replaces the old July -23,000 / 4.1% / -103,000 fact set; the result-first query object, USD 50 20/40/80-pip teaching table, and post-release window make all four refresh signals true. This refresh updates the existing payroll fixed-risk article, not a new macro article, and makes no currency, Fed, market, volatility, or execution claim."
+      }
+    },
+    "HR-20260905-02": {
+      "sources": [
+        {
+          "publisher": "European Central Bank",
+          "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html",
+          "source_type": "official_dated_weekly_schedule",
+          "published_at": "2026-09-04",
+          "freshness_role": "official schedule lists September 9 meeting day one and September 10 14:15 CET policy-decision publication plus 14:45 CET press conference",
+          "reliable": true
+        },
+        {
+          "publisher": "Lumon",
+          "url": "https://www.lumonpay.com/corporate/articles/september-fx-briefing-rate-decisions-driving-gdp-eur-usd/",
+          "source_type": "independent_english_event_context",
+          "published_at": "2026-09-01",
+          "freshness_role": "independent English context identifies the ECB in the current September central-bank event window",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_existing_calendar_window_closer_but_no_new_search_or_example_path",
+        "duplicate_of": ["HR-20260723-02", "HR-20260903-03"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "A published ECB decision or a current public English question that states a concrete non-directional EUR/USD pip-value, fixed-risk, or position-size need with materially different readable inputs from the historic ECB package.",
+        "rationale": "The official date is now closer but was already documented in the prior scan; no newly published policy fact, specific public non-directional calculation wording, or replacement example was verified. A closer clock alone is not a refresh signal sufficient to create content."
+      }
+    },
+    "HR-20260905-03": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+          "source_type": "official_cpi_release_schedule",
+          "published_at": "2026-09-05",
+          "freshness_role": "official schedule lists the September 11 CPI release at 8:30 a.m. ET",
+          "reliable": true
+        },
+        {
+          "publisher": "ForexFactory",
+          "url": "https://www.forexfactory.com/calendar?range=sep5.2026-sep16.2026",
+          "source_type": "public_calendar_discovery",
+          "published_at": "2026-09-05",
+          "freshness_role": "public calendar confirms the current event-discovery window only; not used to confirm the release date or infer market direction",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_single_reliable_publisher_calendar_only_no_distinct_retail_calculation_journey",
+        "duplicate_of": ["HR-20260810-02", "HR-20260811-02"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "Published August CPI data plus a second independent reliable English result source and a current public question explicitly requesting a materially different non-directional pip-value, fixed-risk, or position-size calculation from the historical CPI/payroll packages.",
+        "rationale": "The release is within seven days, but this scan has one reliable fact publisher and only calendar discovery, not an actual result or a distinct public retail calculation path. Generic pre-event sizing is already covered, so a countdown must not create a playbook."
+      }
+    }
+  }
+}
