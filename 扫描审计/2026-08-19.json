@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "scan_date": "2026-08-19",
+  "generated_at": "2026-08-19T22:00:00+08:00",
+  "coverage": [
+    {"channel":"官方与一手来源","status":"complete","checked_at":"2026-08-19T22:00:00+08:00","source_count":5,"note":"覆盖 Federal Reserve、ONS、ABS、Statistics Bureau of Japan 和公开规则页；只记录有日期或明确发布窗口的材料。"},
+    {"channel":"可靠英文媒体 / 独立经济日历","status":"complete","checked_at":"2026-08-19T22:00:00+08:00","source_count":3,"note":"覆盖 Kiplinger 与 Westpac Economics；独立日历只核对时间、共识或前值，不能替代结果事实。"},
+    {"channel":"Reddit / ForexFactory","status":"complete","checked_at":"2026-08-19T22:00:00+08:00","source_count":5,"note":"公开讨论只用于热度与查询对象，不用于确认统计、政策或规则事实。"},
+    {"channel":"X / Quora / BabyPips","status":"checked_no_material_signal","checked_at":"2026-08-19T22:00:00+08:00","source_count":0,"note":"未发现可核验且能改变计算路径的公开材料；未登录或操作账号。"}
+  ],
+  "candidates": {
+    "HR-20260819-01": {"sources":[
+      {"publisher":"Australian Bureau of Statistics","url":"https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/latest-release","source_type":"official_release_calendar","published_at":"2026-08-19","freshness_role":"official_August_20_2026_1130_AEST_July_labour_force_release_inside_24_hours","reliable":true},
+      {"publisher":"Westpac Economics","url":"https://library.westpaciq.com.au/content/dam/public/westpaciq/secure/economics/documents/aus/2026/07/Economic_Calendar_August_2026_WBC.pdf","source_type":"independent_economic_calendar","published_at":"2026-08-05","freshness_role":"independent_August_20_time_and_calendar_consensus_cross_check","reliable":true},
+      {"publisher":"Reddit r/EducatedInvesting","url":"https://www.reddit.com/r/EducatedInvesting/comments/1vpv5ap/week_ahead_setup_aug_1721_canada_cpi_ukjapan/","source_type":"community_calendar_heat","published_at":"2026-08-16","freshness_role":"current_public_week_ahead_discussion_of_Australia_employment","reliable":false}],
+      "decision":{"novelty_gate":"pass_refresh","decision_gate":"selected_refresh","duplicate_of":["HR-20260811-01"],"refresh_signals":{"fact_delta":true,"search_delta":true,"example_delta":true,"window_delta":true},"reopen_trigger":"At ABS release, stop the pre-release package and reassess only after official facts plus independent confirmation and a distinct traffic path","rationale":"The dated employment release, Australia-jobs query, revised 25/50/75-pip fixed-risk example and sub-24-hour window provide four refresh signals. This updates the existing AUD/USD RBA article."}},
+    "HR-20260819-02": {"sources":[
+      {"publisher":"Federal Reserve Board","url":"https://www.federalreserve.gov/monetarypolicy.htm","source_type":"official_calendar","published_at":"2026-08-19","freshness_role":"official_August_19_2026_1400_ET_minutes_release_today","reliable":true},
+      {"publisher":"Kiplinger","url":"https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar","source_type":"reliable_news_calendar","published_at":"2026-08-14","freshness_role":"independent_current_week_minutes_context","reliable":true},
+      {"publisher":"Reddit r/Forexstrategy","url":"https://www.reddit.com/r/Forexstrategy/comments/1vsezex/what_are_you_watching_most_closely_in_todays/","source_type":"community_heat","published_at":"2026-08-19","freshness_role":"same_day_public_minutes_discussion_not_used_for_facts","reliable":false}],
+      "decision":{"novelty_gate":"fail","decision_gate":"observation_insufficient_new_refresh_signals","duplicate_of":["HR-20260817-01","HR-20260818-01"],"refresh_signals":{"fact_delta":false,"search_delta":false,"example_delta":false,"window_delta":true},"reopen_trigger":"Fed publishes minutes or corrects release information; then reassess the existing FOMC article from verified text","rationale":"The same pre-release event, queries, fixed-risk table and traffic route were already packaged. A shorter wait is one signal only."}},
+    "HR-20260819-03": {"sources":[
+      {"publisher":"Office for National Statistics","url":"https://www.ons.gov.uk/economy/inflationandpriceindices","source_type":"official_release","published_at":"2026-08-19","freshness_role":"same_day_July_CPI_release_and_2_9_percent_public_result","reliable":true},
+      {"publisher":"Reddit u_ONS_UK","url":"https://www.reddit.com/r/u_ONS_UK/comments/1vsdwn7/consumer_prices_index_cpi_rose_by_29_in_the_12/","source_type":"community_heat","published_at":"2026-08-19","freshness_role":"same_day_public_discussion_not_independent_fact","reliable":false}],
+      "decision":{"novelty_gate":"not_evaluated_hard_gate_fail","decision_gate":"observation_missing_second_independent_reliable_result_and_distinct_traffic_path","duplicate_of":[],"refresh_signals":{"fact_delta":true,"search_delta":false,"example_delta":false,"window_delta":false},"reopen_trigger":"Independent reliable English confirmation and a specific GBP/USD risk or pip-value query","rationale":"A same-publisher social repost is not independent fact verification, and generic inflation commentary is not a natural calculator path."}},
+    "HR-20260819-04": {"sources":[
+      {"publisher":"Statistics Bureau of Japan","url":"https://www.stat.go.jp/english/data/cpi/","source_type":"official_release_schedule","published_at":"2026-08-19","freshness_role":"official_August_21_2026_start_of_2025_base_CPI_release_inside_48_hours","reliable":true},
+      {"publisher":"Westpac Economics","url":"https://library.westpaciq.com.au/content/dam/public/westpaciq/secure/economics/documents/aus/2026/07/Economic_Calendar_August_2026_WBC.pdf","source_type":"independent_economic_calendar","published_at":"2026-08-05","freshness_role":"independent_August_21_Japan_CPI_calendar_cross_check","reliable":true}],
+      "decision":{"novelty_gate":"fail","decision_gate":"observation_no_specific_retail_traffic_path","duplicate_of":[],"refresh_signals":{"fact_delta":true,"search_delta":false,"example_delta":false,"window_delta":true},"reopen_trigger":"A verified release result plus public USD/JPY risk or base-series conversion question","rationale":"The date and base transition are real, but no current English retail question justifies a generic pip-value wrapper."}}
+  }
+}
