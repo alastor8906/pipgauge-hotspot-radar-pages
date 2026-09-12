@@ -1,0 +1,196 @@
+{
+  "scan_date": "2026-08-27",
+  "generated_at": "2026-08-27T22:00:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-08-27T22:00:00+08:00",
+      "source_count": 4,
+      "note": "核验 NVIDIA Q2 FY27 结果、BOJ 8 月 27 日讲话与发布日程，以及 Kansas City Fed Jackson Hole 页面。"
+    },
+    {
+      "channel": "可靠英文媒体 / 独立日历",
+      "status": "complete",
+      "checked_at": "2026-08-27T22:00:00+08:00",
+      "source_count": 5,
+      "note": "核验 AP 的 NVIDIA 结果报道、Axios 的 8 月 27 日结果后市场背景、Reuters 的 BOJ 与 USDJPY 当日报道、Reuters/Axios 的 Jackson Hole 当前语境。"
+    },
+    {
+      "channel": "Reddit / ForexFactory",
+      "status": "complete",
+      "checked_at": "2026-08-27T22:00:00+08:00",
+      "source_count": 3,
+      "note": "核验 NVIDIA 结果公开讨论、当日市场线程与 ForexFactory 公开日历/索引；社区材料只用于热度与措辞，不确认事实或方向。"
+    },
+    {
+      "channel": "X / Quora / BabyPips",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-08-27T22:00:00+08:00",
+      "source_count": 1,
+      "note": "BabyPips 当日 PCE/GDP 分析证明宏观关注仍在，但可见材料为方向或解释优先；X、Quora 公开索引未出现新的、具体且非方向性计算需求。未登录或操作账号。"
+    }
+  ],
+  "candidates": {
+    "HR-20260827-01": {
+      "sources": [
+        {
+          "publisher": "NVIDIA",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx",
+          "source_type": "official_company_results",
+          "published_at": "2026-08-26",
+          "freshness_role": "official_Q2_FY27_results_with_96_2bn_revenue_and_2_46_GAAP_EPS",
+          "reliable": true
+        },
+        {
+          "publisher": "AP",
+          "url": "https://apnews.com/article/nvidia-artificial-intelligence-earnings-dc8d556e709b50915cca9217a60b1991",
+          "source_type": "reliable_news",
+          "published_at": "2026-08-26",
+          "freshness_role": "independent_results_confirmation_and_current_context",
+          "reliable": true
+        },
+        {
+          "publisher": "Axios",
+          "url": "https://www.axios.com/2026/08/27/nvidia-ai-earnings-stock",
+          "source_type": "reliable_news",
+          "published_at": "2026-08-27",
+          "freshness_role": "same_day_reported_more_than_7_percent_morning_move_used_only_as_readable_exposure_example",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/stocks",
+          "url": "https://www.reddit.com/r/stocks/comments/1vz8pnh/nvidia_announces_financial_results_for_second/",
+          "source_type": "community_heat",
+          "published_at": "2026-08-27",
+          "freshness_role": "current_public_post_result_discussion_not_used_for_facts_or_direction",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass_refresh",
+        "decision_gate": "selected_refresh",
+        "duplicate_of": ["HR-20260824-02"],
+        "refresh_signals": {"fact_delta": true, "search_delta": true, "example_delta": true, "window_delta": true},
+        "reopen_trigger": "Stop this result-day exposure framing after the August 27 regular session, on an official correction, or when a later verified fact creates a distinct non-directional calculation question.",
+        "rationale": "The official result is a new formal fact, public wording has changed from pre-release holding to post-result exposure, and Axios provides a reported same-day percentage move for a clearly labelled arithmetic example. This is a refresh of the existing gap-risk article, not a forecast or a second earnings article."
+      }
+    },
+    "HR-20260827-02": {
+      "sources": [
+        {
+          "publisher": "Bank of Japan",
+          "url": "https://www.boj.or.jp/en/about/press",
+          "source_type": "official_central_bank_speech_index",
+          "published_at": "2026-08-27",
+          "freshness_role": "official_listing_of_HIMINO_Ryozo_August_27_Saitama_speech",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.marketscreener.com/news/boj-deputy-governor-himino-calls-for-timely-rate-hike-ce7858ded98af220",
+          "source_type": "reliable_news_reprint",
+          "published_at": "2026-08-27",
+          "freshness_role": "independent_same_day_report_of_speech_and_no_explicit_next_meeting_signal",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://ca.investing.com/news/economy-news/dollar-steady-before-jackson-hole-yen-little-changed-after-bojs-himino-speech-4818615",
+          "source_type": "reliable_news_reprint",
+          "published_at": "2026-08-27",
+          "freshness_role": "same_day_USDJPY_159_29_reference_for_pip_value_example_not_a_forecast",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/wallstreetbetsHUZZAH",
+          "url": "https://www.reddit.com/r/wallstreetbetsHUZZAH/comments/1vz80tg/what_are_your_moves_tomorrow_august_27_2026/",
+          "source_type": "community_heat",
+          "published_at": "2026-08-27",
+          "freshness_role": "public_same_day_news_reference_not_used_for_facts_or_direction",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass_refresh",
+        "decision_gate": "selected_refresh",
+        "duplicate_of": ["HR-20260802-01"],
+        "refresh_signals": {"fact_delta": true, "search_delta": true, "example_delta": true, "window_delta": true},
+        "reopen_trigger": "Stop after the August 28 press-conference/material window, a BOJ correction, or a new official policy decision; a later refresh must use a different verified fact and query.",
+        "rationale": "A dated official speech and independent same-day reports replace the prior intervention hook. The reported 159.29 reference creates a new transparent pip-value input, while the query changes to fixed-risk sizing after a speech rather than guessing the next policy decision."
+      }
+    },
+    "HR-20260827-03": {
+      "sources": [
+        {
+          "publisher": "Federal Reserve Bank of Kansas City",
+          "url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/",
+          "source_type": "official_event_page",
+          "published_at": "2026-08-27",
+          "freshness_role": "official_August_27_to_29_symposium_dates",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.investing.com/news/economy-news/feds-warsh-faces-challenge-whether-inflation-is-a-problem-or-not-4878912",
+          "source_type": "reliable_news_reprint",
+          "published_at": "2026-08-27",
+          "freshness_role": "same_day_current_event_context_before_Friday_speech",
+          "reliable": true
+        },
+        {
+          "publisher": "Axios",
+          "url": "https://www.axios.com/2026/08/27/jackson-hole-federal-reserve",
+          "source_type": "reliable_news",
+          "published_at": "2026-08-27",
+          "freshness_role": "same_day_public_attention_context_not_a_new_calculation_query",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_duplicate_countdown",
+        "duplicate_of": ["HR-20260824-01"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "Verified official remarks, an official schedule correction, or a distinct current non-directional EURUSD calculation query that the existing USD 100 table does not already answer.",
+        "rationale": "The event now being under way is a clock change only. The August 24 refresh already owns the same Friday keynote, fixed-risk table, search framing and expiry, so no new playbook or package is permitted."
+      }
+    },
+    "HR-20260827-04": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "url": "https://www.bea.gov/news/schedule/full",
+          "source_type": "official_release_schedule",
+          "published_at": "2026-08-26",
+          "freshness_role": "official_PCE_and_Q2_GDP_release_window_previously_verified",
+          "reliable": true
+        },
+        {
+          "publisher": "BabyPips",
+          "url": "https://www.babypips.com/analysis/headline-sticky-core-pce-steady-gdp-fed-tightening-2026-08-27",
+          "source_type": "public_discussion_analysis",
+          "published_at": "2026-08-27",
+          "freshness_role": "same_day_discussion_context_not_used_for_direction_or_facts_beyond_cited_releases",
+          "reliable": false
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.investing.com/news/economy-news/us-stock-futures-subdued-in-runup-to-nvidia-results-inflation-print-4876659",
+          "source_type": "reliable_news_reprint",
+          "published_at": "2026-08-26",
+          "freshness_role": "independent_result_context_previously_verified",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_no_verified_retail_calculation_query",
+        "duplicate_of": ["HR-20260826-02"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": false},
+        "reopen_trigger": "A current public English question tied to the released figures that asks a concrete non-directional EURUSD/USD pip-value, fixed-risk or position-size calculation with readable parameters.",
+        "rationale": "Discussion exists, but it is macro interpretation and direction-first. No natural calculator bridge or traffic path was verified, so the hard calculator-fit gate fails and no playbook is allowed."
+      }
+    }
+  }
+}
