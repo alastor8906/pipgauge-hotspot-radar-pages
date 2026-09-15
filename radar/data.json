@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-09-14T22:03:41+08:00",
-  "latest_scan_date": "2026-09-14",
+  "generated_at": "2026-09-15T22:03:12+08:00",
+  "latest_scan_date": "2026-09-15",
   "available_dates": [
+    "2026-09-15",
     "2026-09-14",
     "2026-09-13",
     "2026-09-12",
@@ -56,8 +57,222 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-09-15",
+      "generated_at": "2026-09-15T22:03:12+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 51,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 0,
+        "observation": 2,
+        "discarded": 1,
+        "total": 3,
+        "selected_average": 0,
+        "all_selected_pass_gate": true,
+        "content_ready": 0,
+        "playbook_ready": 0
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-09-15",
+          "candidate_id": "HR-20260915-01",
+          "status": "observation",
+          "topic": "FOMC Decision Day Has Verified Attention but No New Non-Directional Search-to-Calculator Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 24,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 6,
+          "total_score": 95,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Margin",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "Federal Reserve's September calendar and AP's September 15 report independently verify the two-day meeting and September 16 decision window. Public Reddit calendar discussion confirms attention, but it is direction and policy focused; no distinct non-directional sizing, pip-value, margin or cost question, replacement example, or calculator journey passes the two-signal refresh gate.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Federal Reserve",
+                "url": "https://www.federalreserve.gov/newsevents/2026-september.htm",
+                "source_type": "official_dated_fomc_schedule",
+                "published_at": "2026-09 calendar; checked 2026-09-15",
+                "freshness_role": "officially lists the September 15-16, 2026 two-day FOMC meeting, September 16 decision at 2:00 p.m. ET and press conference at 2:30 p.m. ET",
+                "reliable": true
+              },
+              {
+                "publisher": "Associated Press",
+                "url": "https://apnews.com/article/ffd60cca8bb045bb9b1c389f5f1b73af",
+                "source_type": "independent_current_english_news_report",
+                "published_at": "2026-09-15",
+                "freshness_role": "independently identifies the decision as due Wednesday; used only to corroborate the current decision window, not policy or market direction",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit r/EconReports",
+                "url": "https://www.reddit.com/r/EconReports/comments/1wgxqfb/us_economic_calendar_september_15th_2026/",
+                "source_type": "public_discussion_signal",
+                "published_at": "2026-09-15",
+                "freshness_role": "public event-calendar discussion confirms attention but supplies no fact verification or non-directional calculation task",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_fomc_started_with_two_reliable_sources_but_only_window_delta_and_no_distinct_non_directional_search_to_calculator_path",
+              "duplicate_of": [
+                "HR-20260724-01",
+                "HR-20260817-01",
+                "HR-20260820-01",
+                "HR-20260823-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A September 16 published FOMC result independently confirmed by reliable English sources plus a publicly verifiable non-directional account-risk or product-specification question that changes the reader task; assess refresh before any new article.",
+              "rationale": "The event began and receives attention, but that is only a countdown/window change. Current public material remains policy- and direction-first, while existing EUR/USD fixed-risk material already answers the generic calculation."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-15",
+          "candidate_id": "HR-20260915-02",
+          "status": "observation",
+          "topic": "Bank of England September 17 Window Remains a Watch Item Without a New GBP/USD Calculation Demand",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 20,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 5,
+          "total_score": 90,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Margin",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "Bank of England's current-rate page lists September 17, 2026 as next due and MNI's public meeting calendar independently corroborates the current window. No result, public non-directional GBP/USD calculation query, or replacement numeric example was verified; a generic event-risk table would repeat historic BoE work.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Bank of England",
+                "url": "https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate?advsrcSuggest=NA05&source=NA05",
+                "source_type": "official_dated_mpc_result_window",
+                "published_at": "page current; checked 2026-09-15",
+                "freshness_role": "official page states Next due: 17 September 2026",
+                "reliable": true
+              },
+              {
+                "publisher": "MNI Markets",
+                "url": "https://www.mnimarkets.com/calendars/boe-meeting-calendar",
+                "source_type": "independent_current_english_meeting_calendar",
+                "published_at": "checked 2026-09-15",
+                "freshness_role": "independent public calendar corroborates the current Bank of England meeting window; it does not support a market forecast",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_boe_imminent_window_has_two_reliable_sources_but_only_one_refresh_signal_and_no_distinct_public_gbpusd_calculation_path",
+              "duplicate_of": [
+                "HR-20260724-11",
+                "HR-20260730-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A September 17 published result independently confirmed by reliable English sources plus a public non-directional GBP/USD risk, point-value, margin or cost question and replacement example; assess refresh before any new article.",
+              "rationale": "The timetable remains current but no dated decision, public non-directional query or readable replacement numeric example was verified. A generic GBP/USD sizing table would repeat historic BoE event-risk content."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-15",
+          "candidate_id": "HR-20260915-03",
+          "status": "discarded",
+          "topic": "Directional FOMC BoE FX Equity Crypto and Stale FTMO Commentary",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 60,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Pure market-direction predictions, price targets, signals, political framing, sports or entertainment, login-wall material and unverifiable social posts are excluded. FTMO's September 10 update is outside the 72-hour window and supplies no current rule, number or independent non-directional demand signal."
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-09-15T22:01:27+08:00",
+          "source_count": 3,
+          "note": "核验 Federal Reserve 的 9 月 FOMC 时间、Bank of England 的下一次结果日和 FTMO 当前公开 trading-update 索引。"
+        },
+        {
+          "channel": "可靠英文媒体与独立行业核查",
+          "status": "complete",
+          "checked_at": "2026-09-15T22:01:27+08:00",
+          "source_count": 2,
+          "note": "核验 AP 9 月 15 日 FOMC 报道和 MNI Markets 的公开 BoE meeting calendar；均只用于事实窗口与关注核验，不用于市场方向。"
+        },
+        {
+          "channel": "Reddit / ForexFactory / BabyPips",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-09-15T22:01:27+08:00",
+          "source_count": 1,
+          "note": "公开索引与日历讨论验证 FOMC 正在被讨论，但未发现可核验、不同于既有稿的非方向性仓位、点值、保证金或成本计算问题。"
+        },
+        {
+          "channel": "X / Quora",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-09-15T22:01:27+08:00",
+          "source_count": 0,
+          "note": "公开索引没有提供可核验的新非方向性计算问题；未采用登录、墙后或不可验证材料，也未登录或操作账户。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-09-15_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-09-15_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json"
+      }
+    },
+    {
       "scan_date": "2026-09-14",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 50,
@@ -261,7 +476,7 @@
     },
     {
       "scan_date": "2026-09-13",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 49,
@@ -466,7 +681,7 @@
     },
     {
       "scan_date": "2026-09-12",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 48,
@@ -652,7 +867,7 @@
     },
     {
       "scan_date": "2026-09-11",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 47,
@@ -869,7 +1084,7 @@
     },
     {
       "scan_date": "2026-09-10",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 46,
@@ -1155,7 +1370,7 @@
     },
     {
       "scan_date": "2026-09-09",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 45,
@@ -1435,7 +1650,7 @@
     },
     {
       "scan_date": "2026-09-08",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 44,
@@ -1764,7 +1979,7 @@
     },
     {
       "scan_date": "2026-09-07",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 43,
@@ -2066,7 +2281,7 @@
     },
     {
       "scan_date": "2026-09-06",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 42,
@@ -2382,7 +2597,7 @@
     },
     {
       "scan_date": "2026-09-05",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 41,
@@ -2704,7 +2919,7 @@
     },
     {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -3017,7 +3232,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -3328,7 +3543,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -3659,7 +3874,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -3997,7 +4212,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -4390,7 +4605,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -4800,7 +5015,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -5272,7 +5487,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -5617,7 +5832,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -5962,7 +6177,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -6414,7 +6629,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -6827,7 +7042,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -7059,7 +7274,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -7504,7 +7719,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -7879,7 +8094,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -8271,7 +8486,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -8647,7 +8862,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -8971,7 +9186,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -9354,7 +9569,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -9695,7 +9910,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -10070,7 +10285,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -10458,7 +10673,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -10803,7 +11018,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -11131,7 +11346,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -11443,7 +11658,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -11764,7 +11979,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -12125,7 +12340,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -12478,7 +12693,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -12922,7 +13137,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -13431,7 +13646,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -13901,7 +14116,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -14444,7 +14659,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -14716,7 +14931,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -15029,7 +15244,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -15464,7 +15679,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -15978,7 +16193,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -16487,7 +16702,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -16954,7 +17169,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -17367,7 +17582,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -17765,7 +17980,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-09-14T22:03:41+08:00",
+      "generated_at": "2026-09-15T22:03:12+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -18204,10 +18419,10 @@
       }
     }
   ],
-  "scan_date": "2026-09-14",
+  "scan_date": "2026-09-15",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 50,
+    "day": 51,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -18226,10 +18441,10 @@
   },
   "candidates": [
     {
-      "scan_date": "2026-09-14",
-      "candidate_id": "HR-20260914-01",
+      "scan_date": "2026-09-15",
+      "candidate_id": "HR-20260915-01",
       "status": "observation",
-      "topic": "FOMC September 15-16 Is Imminent but Still Lacks a Distinct Non-Directional Search-to-Calculator Journey",
+      "topic": "FOMC Decision Day Has Verified Attention but No New Non-Directional Search-to-Calculator Journey",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 24,
@@ -18243,32 +18458,41 @@
       "calculator_mapping": [
         "Pip Value",
         "Position Size",
+        "Margin",
         "P&L",
         "Spread Cost"
       ],
-      "reason": "Federal Reserve's dated September calendar and AP's current week-ahead report independently verify the imminent FOMC window, but only the countdown changed. Public discussion remains policy and direction first; no separately verifiable non-directional question, replacement example or calculator journey clears the two-signal refresh gate.",
+      "reason": "Federal Reserve's September calendar and AP's September 15 report independently verify the two-day meeting and September 16 decision window. Public Reddit calendar discussion confirms attention, but it is direction and policy focused; no distinct non-directional sizing, pip-value, margin or cost question, replacement example, or calculator journey passes the two-signal refresh gate.",
       "scan_audit": {
         "sources": [
           {
             "publisher": "Federal Reserve",
             "url": "https://www.federalreserve.gov/newsevents/2026-september.htm",
             "source_type": "official_dated_fomc_schedule",
-            "published_at": "2026-09 calendar; checked 2026-09-14",
-            "freshness_role": "officially lists the September 15-16, 2026 two-day FOMC meeting, the September 16 decision at 2:00 p.m. ET and press conference at 2:30 p.m. ET",
+            "published_at": "2026-09 calendar; checked 2026-09-15",
+            "freshness_role": "officially lists the September 15-16, 2026 two-day FOMC meeting, September 16 decision at 2:00 p.m. ET and press conference at 2:30 p.m. ET",
             "reliable": true
           },
           {
             "publisher": "Associated Press",
-            "url": "https://apnews.com/article/f634189cab75aab88fe0abb995e6cc5c",
-            "source_type": "independent_current_english_week_ahead_report",
-            "published_at": "2026-09-10",
-            "freshness_role": "identifies the Federal Reserve decision as a focal event in the following week; used only to corroborate current attention and timing, not policy or market direction",
+            "url": "https://apnews.com/article/ffd60cca8bb045bb9b1c389f5f1b73af",
+            "source_type": "independent_current_english_news_report",
+            "published_at": "2026-09-15",
+            "freshness_role": "independently identifies the decision as due Wednesday; used only to corroborate the current decision window, not policy or market direction",
             "reliable": true
+          },
+          {
+            "publisher": "Reddit r/EconReports",
+            "url": "https://www.reddit.com/r/EconReports/comments/1wgxqfb/us_economic_calendar_september_15th_2026/",
+            "source_type": "public_discussion_signal",
+            "published_at": "2026-09-15",
+            "freshness_role": "public event-calendar discussion confirms attention but supplies no fact verification or non-directional calculation task",
+            "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_fomc_imminent_window_has_two_reliable_sources_but_only_one_refresh_signal_and_no_distinct_non_directional_search_to_calculator_path",
+          "decision_gate": "observation_fomc_started_with_two_reliable_sources_but_only_window_delta_and_no_distinct_non_directional_search_to_calculator_path",
           "duplicate_of": [
             "HR-20260724-01",
             "HR-20260817-01",
@@ -18281,16 +18505,16 @@
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "A published FOMC result independently confirmed by reliable English sources plus a publicly verifiable, non-directional account-risk or product-specification question that changes the reader task; assess refresh before any new article.",
-          "rationale": "The event is imminent and the source gate passes, but a countdown is only one refresh signal. Current public material remains policy- and direction-first, while the available EUR/USD fixed-risk table is already covered rather than a new traffic path."
+          "reopen_trigger": "A September 16 published FOMC result independently confirmed by reliable English sources plus a publicly verifiable non-directional account-risk or product-specification question that changes the reader task; assess refresh before any new article.",
+          "rationale": "The event began and receives attention, but that is only a countdown/window change. Current public material remains policy- and direction-first, while existing EUR/USD fixed-risk material already answers the generic calculation."
         }
       }
     },
     {
-      "scan_date": "2026-09-14",
-      "candidate_id": "HR-20260914-02",
+      "scan_date": "2026-09-15",
+      "candidate_id": "HR-20260915-02",
       "status": "observation",
-      "topic": "Bank of England September 17 Publication Window Has No New GBP/USD Calculation Demand",
+      "topic": "Bank of England September 17 Window Remains a Watch Item Without a New GBP/USD Calculation Demand",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 20,
@@ -18304,32 +18528,33 @@
       "calculator_mapping": [
         "Pip Value",
         "Position Size",
+        "Margin",
         "P&L",
         "Spread Cost"
       ],
-      "reason": "Bank of England's official MPC schedule and MNI Markets' public meeting calendar independently verify the September 17 window, but neither an official result nor a public non-directional GBP/USD calculation query or replacement example was verified. A generic event-risk table would repeat the existing BoE work.",
+      "reason": "Bank of England's current-rate page lists September 17, 2026 as next due and MNI's public meeting calendar independently corroborates the current window. No result, public non-directional GBP/USD calculation query, or replacement numeric example was verified; a generic event-risk table would repeat historic BoE work.",
       "scan_audit": {
         "sources": [
           {
             "publisher": "Bank of England",
-            "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
-            "source_type": "official_dated_mpc_publication_schedule",
-            "published_at": "page updated 2026-05-26; checked 2026-09-14",
-            "freshness_role": "officially identifies September 17, 2026 as the next Bank Rate, Monetary Policy Summary and minutes publication date",
+            "url": "https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate?advsrcSuggest=NA05&source=NA05",
+            "source_type": "official_dated_mpc_result_window",
+            "published_at": "page current; checked 2026-09-15",
+            "freshness_role": "official page states Next due: 17 September 2026",
             "reliable": true
           },
           {
             "publisher": "MNI Markets",
             "url": "https://www.mnimarkets.com/calendars/boe-meeting-calendar",
             "source_type": "independent_current_english_meeting_calendar",
-            "published_at": "checked 2026-09-14",
-            "freshness_role": "independent public BoE meeting-calendar coverage identifies the current September meeting window; it verifies timing context only, not a policy or market forecast",
+            "published_at": "checked 2026-09-15",
+            "freshness_role": "independent public calendar corroborates the current Bank of England meeting window; it does not support a market forecast",
             "reliable": true
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_boe_imminent_window_has_two_reliable_sources_but_only_one_refresh_signal_and_no_distinct_public_gbpusd_calculation_journey",
+          "decision_gate": "observation_boe_imminent_window_has_two_reliable_sources_but_only_one_refresh_signal_and_no_distinct_public_gbpusd_calculation_path",
           "duplicate_of": [
             "HR-20260724-11",
             "HR-20260730-01"
@@ -18340,16 +18565,16 @@
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "A September 17 published result independently confirmed by reliable English sources plus a public, non-directional GBP/USD risk, point-value, margin or cost question and replacement example; assess a refresh of the existing BoE content before any new article.",
-          "rationale": "The September timetable is current, but no dated policy result, public non-directional query or readable replacement numeric example was verified. A generic GBP/USD sizing table would repeat historical BoE event-risk content rather than provide a defensible event-specific traffic path."
+          "reopen_trigger": "A September 17 published result independently confirmed by reliable English sources plus a public non-directional GBP/USD risk, point-value, margin or cost question and replacement example; assess refresh before any new article.",
+          "rationale": "The timetable remains current but no dated decision, public non-directional query or readable replacement numeric example was verified. A generic GBP/USD sizing table would repeat historic BoE event-risk content."
         }
       }
     },
     {
-      "scan_date": "2026-09-14",
-      "candidate_id": "HR-20260914-03",
+      "scan_date": "2026-09-15",
+      "candidate_id": "HR-20260915-03",
       "status": "discarded",
-      "topic": "Directional FOMC BoE FX Equity and Crypto Prediction Posts",
+      "topic": "Directional FOMC BoE FX Equity Crypto and Stale FTMO Commentary",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 25,
@@ -18358,48 +18583,48 @@
       "actionability": 2,
       "total_score": 60,
       "hard_gate": false,
-      "reliable_sources": 0,
+      "reliable_sources": 1,
       "fresh_signal": true,
       "calculator_mapping": [
         "P&L"
       ],
-      "reason": "Direction calls, price targets, signals, political framing, sports or entertainment, login-wall material and unverifiable social posts are excluded. They do not supply a fact-led, non-directional calculator path."
+      "reason": "Pure market-direction predictions, price targets, signals, political framing, sports or entertainment, login-wall material and unverifiable social posts are excluded. FTMO's September 10 update is outside the 72-hour window and supplies no current rule, number or independent non-directional demand signal."
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-09-14T22:01:27+08:00",
+      "checked_at": "2026-09-15T22:01:27+08:00",
       "source_count": 3,
-      "note": "核验 Federal Reserve 的 9 月 FOMC 时间、Bank of England 的下一次 MPC 发布日及 FTMO 9 月 10 日 Futures Trading Update。"
+      "note": "核验 Federal Reserve 的 9 月 FOMC 时间、Bank of England 的下一次结果日和 FTMO 当前公开 trading-update 索引。"
     },
     {
       "channel": "可靠英文媒体与独立行业核查",
       "status": "complete",
-      "checked_at": "2026-09-14T22:01:27+08:00",
+      "checked_at": "2026-09-15T22:01:27+08:00",
       "source_count": 2,
-      "note": "核验 AP 的 FOMC 本周前瞻与 MNI Markets 的公开 BoE meeting calendar；二者只用于核验事件窗口和当前关注，不用于市场方向推断。"
+      "note": "核验 AP 9 月 15 日 FOMC 报道和 MNI Markets 的公开 BoE meeting calendar；均只用于事实窗口与关注核验，不用于市场方向。"
     },
     {
-      "channel": "Reddit / ForexFactory / BabyPips / Forex Peace Army",
+      "channel": "Reddit / ForexFactory / BabyPips",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-09-14T22:01:27+08:00",
-      "source_count": 2,
-      "note": "检查公开宏观日历、讨论与检索索引；没有发现可公开核验、不同于历史稿的非方向性仓位、点值、保证金或成本计算问题。"
+      "checked_at": "2026-09-15T22:01:27+08:00",
+      "source_count": 1,
+      "note": "公开索引与日历讨论验证 FOMC 正在被讨论，但未发现可核验、不同于既有稿的非方向性仓位、点值、保证金或成本计算问题。"
     },
     {
       "channel": "X / Quora",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-09-14T22:01:27+08:00",
+      "checked_at": "2026-09-15T22:01:27+08:00",
       "source_count": 0,
       "note": "公开索引没有提供可核验的新非方向性计算问题；未采用登录、墙后或不可验证材料，也未登录或操作账户。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-09-14_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-09-14_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-09-15_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-09-15_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",

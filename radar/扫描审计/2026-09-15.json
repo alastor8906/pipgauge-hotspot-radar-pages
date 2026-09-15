@@ -1,0 +1,100 @@
+{
+  "scan_date": "2026-09-15",
+  "generated_at": "2026-09-15T22:01:27+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-09-15T22:01:27+08:00",
+      "source_count": 3,
+      "note": "核验 Federal Reserve 的 9 月 FOMC 时间、Bank of England 的下一次结果日和 FTMO 当前公开 trading-update 索引。"
+    },
+    {
+      "channel": "可靠英文媒体与独立行业核查",
+      "status": "complete",
+      "checked_at": "2026-09-15T22:01:27+08:00",
+      "source_count": 2,
+      "note": "核验 AP 9 月 15 日 FOMC 报道和 MNI Markets 的公开 BoE meeting calendar；均只用于事实窗口与关注核验，不用于市场方向。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-09-15T22:01:27+08:00",
+      "source_count": 1,
+      "note": "公开索引与日历讨论验证 FOMC 正在被讨论，但未发现可核验、不同于既有稿的非方向性仓位、点值、保证金或成本计算问题。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-09-15T22:01:27+08:00",
+      "source_count": 0,
+      "note": "公开索引没有提供可核验的新非方向性计算问题；未采用登录、墙后或不可验证材料，也未登录或操作账户。"
+    }
+  ],
+  "candidates": {
+    "HR-20260915-01": {
+      "sources": [
+        {
+          "publisher": "Federal Reserve",
+          "url": "https://www.federalreserve.gov/newsevents/2026-september.htm",
+          "source_type": "official_dated_fomc_schedule",
+          "published_at": "2026-09 calendar; checked 2026-09-15",
+          "freshness_role": "officially lists the September 15-16, 2026 two-day FOMC meeting, September 16 decision at 2:00 p.m. ET and press conference at 2:30 p.m. ET",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/ffd60cca8bb045bb9b1c389f5f1b73af",
+          "source_type": "independent_current_english_news_report",
+          "published_at": "2026-09-15",
+          "freshness_role": "independently identifies the decision as due Wednesday; used only to corroborate the current decision window, not policy or market direction",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/EconReports",
+          "url": "https://www.reddit.com/r/EconReports/comments/1wgxqfb/us_economic_calendar_september_15th_2026/",
+          "source_type": "public_discussion_signal",
+          "published_at": "2026-09-15",
+          "freshness_role": "public event-calendar discussion confirms attention but supplies no fact verification or non-directional calculation task",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_fomc_started_with_two_reliable_sources_but_only_window_delta_and_no_distinct_non_directional_search_to_calculator_path",
+        "duplicate_of": ["HR-20260724-01", "HR-20260817-01", "HR-20260820-01", "HR-20260823-01"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "A September 16 published FOMC result independently confirmed by reliable English sources plus a publicly verifiable non-directional account-risk or product-specification question that changes the reader task; assess refresh before any new article.",
+        "rationale": "The event began and receives attention, but that is only a countdown/window change. Current public material remains policy- and direction-first, while existing EUR/USD fixed-risk material already answers the generic calculation."
+      }
+    },
+    "HR-20260915-02": {
+      "sources": [
+        {
+          "publisher": "Bank of England",
+          "url": "https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate?advsrcSuggest=NA05&source=NA05",
+          "source_type": "official_dated_mpc_result_window",
+          "published_at": "page current; checked 2026-09-15",
+          "freshness_role": "official page states Next due: 17 September 2026",
+          "reliable": true
+        },
+        {
+          "publisher": "MNI Markets",
+          "url": "https://www.mnimarkets.com/calendars/boe-meeting-calendar",
+          "source_type": "independent_current_english_meeting_calendar",
+          "published_at": "checked 2026-09-15",
+          "freshness_role": "independent public calendar corroborates the current Bank of England meeting window; it does not support a market forecast",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_boe_imminent_window_has_two_reliable_sources_but_only_one_refresh_signal_and_no_distinct_public_gbpusd_calculation_path",
+        "duplicate_of": ["HR-20260724-11", "HR-20260730-01"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "A September 17 published result independently confirmed by reliable English sources plus a public non-directional GBP/USD risk, point-value, margin or cost question and replacement example; assess refresh before any new article.",
+        "rationale": "The timetable remains current but no dated decision, public non-directional query or readable replacement numeric example was verified. A generic GBP/USD sizing table would repeat historic BoE event-risk content."
+      }
+    }
+  }
+}
