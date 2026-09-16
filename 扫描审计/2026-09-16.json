@@ -1,0 +1,144 @@
+{
+  "scan_date": "2026-09-16",
+  "generated_at": "2026-09-16T22:08:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-09-16T22:08:00+08:00",
+      "source_count": 6,
+      "note": "核验 Federal Reserve、Bank of England、Bank of Japan、FTMO、The5ers 与 Nigeria SEC 的公开英文或官方材料；没有发现本期可用的新规则增量。"
+    },
+    {
+      "channel": "可靠英文媒体与独立行业核查",
+      "status": "complete",
+      "checked_at": "2026-09-16T22:08:00+08:00",
+      "source_count": 2,
+      "note": "核验 AP 当日 FOMC 决策前报道和 MNI Markets 的公开 BoE meeting calendar；只用于事件窗口与事实交叉确认，不用于市场方向。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-09-16T22:08:00+08:00",
+      "source_count": 4,
+      "note": "公开当日帖子显示 FOMC 与 BOJ 受到关注，但均为等待结果、价格或方向讨论；未找到独立、可验证的仓位、点值、保证金或成本计算问题。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-09-16T22:08:00+08:00",
+      "source_count": 0,
+      "note": "公开索引没有提供可核验的新非方向性计算问题；Quora 受 robots 限制，未采用墙后、登录或不可验证材料，也未登录或操作账户。"
+    }
+  ],
+  "candidates": {
+    "HR-20260916-01": {
+      "sources": [
+        {
+          "publisher": "Federal Reserve",
+          "url": "https://www.federalreserve.gov/newsevents/2026-september.htm",
+          "source_type": "official_dated_fomc_schedule",
+          "published_at": "2026-09 calendar; checked 2026-09-16",
+          "freshness_role": "officially lists the September 15-16, 2026 FOMC meeting, September 16 decision at 2:00 p.m. ET and press conference at 2:30 p.m. ET",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/e2e82957e490b7be205db6013f621c3d",
+          "source_type": "independent_current_english_news_report",
+          "published_at": "2026-09-16",
+          "freshness_role": "independently reports that the Federal Reserve decision is due later Wednesday; used only to corroborate the timing, not policy or market direction",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/Forexstrategy",
+          "url": "https://www.reddit.com/r/Forexstrategy/comments/1whtvdb/fomc_day_what_are_you_watching/",
+          "source_type": "public_discussion_signal",
+          "published_at": "2026-09-16",
+          "freshness_role": "same-day attention signal but the post waits for the result and supplies no fact verification or distinct non-directional calculation task",
+          "reliable": false
+        },
+        {
+          "publisher": "ForexFactory",
+          "url": "https://www.forexfactory.com/thread/post/15904243",
+          "source_type": "public_discussion_signal",
+          "published_at": "2026-09-16",
+          "freshness_role": "same-day public discussion is directional and level-based, not an eligible fact or non-directional calculator-demand signal",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_fomc_decision_window_has_two_reliable_sources_but_only_window_delta_and_no_distinct_non_directional_search_to_calculator_path",
+        "duplicate_of": ["HR-20260724-01", "HR-20260817-01", "HR-20260820-01", "HR-20260823-01"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "A published September 16 FOMC result independently confirmed by reliable English sources plus a publicly verifiable non-directional account-risk or product-specification question that changes the reader task; assess refresh before any new article.",
+        "rationale": "Decision-day attention remains a countdown signal. Existing EUR/USD fixed-risk material already answers the generic calculation, while the current public discussion is policy- and direction-first."
+      }
+    },
+    "HR-20260916-02": {
+      "sources": [
+        {
+          "publisher": "Bank of England",
+          "url": "https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate?advsrcSuggest=NA05&source=NA05",
+          "source_type": "official_dated_mpc_result_window",
+          "published_at": "page current; checked 2026-09-16",
+          "freshness_role": "official page states Next due: 17 September 2026",
+          "reliable": true
+        },
+        {
+          "publisher": "MNI Markets",
+          "url": "https://www.mnimarkets.com/calendars/boe-meeting-calendar",
+          "source_type": "independent_current_english_meeting_calendar",
+          "published_at": "checked 2026-09-16",
+          "freshness_role": "independent public calendar corroborates the current Bank of England meeting window; it does not support a market forecast",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_boe_imminent_window_has_two_reliable_sources_but_only_one_refresh_signal_and_no_distinct_public_gbpusd_calculation_path",
+        "duplicate_of": ["HR-20260724-11", "HR-20260730-01"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "A September 17 published result independently confirmed by reliable English sources plus a public non-directional GBP/USD risk, point-value, margin or cost question and replacement example; assess refresh before any new article.",
+        "rationale": "The timetable is current, but no dated decision, public non-directional query or readable replacement numeric example was verified. A generic GBP/USD sizing table would repeat historical BoE event-risk content."
+      }
+    },
+    "HR-20260916-03": {
+      "sources": [
+        {
+          "publisher": "Bank of Japan",
+          "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
+          "source_type": "official_english_mpm_schedule",
+          "published_at": "current schedule; checked 2026-09-16",
+          "freshness_role": "official English schedule lists the September 17-18 Monetary Policy Meeting",
+          "reliable": true
+        },
+        {
+          "publisher": "Bank of Japan",
+          "url": "https://www.boj.or.jp/en/about/calendar/index.htm",
+          "source_type": "official_english_release_schedule_same_publisher",
+          "published_at": "updated 2026-09-11; checked 2026-09-16",
+          "freshness_role": "same publisher's English release schedule lists the statement on monetary policy for September 18; it cannot count as an independent second reliable source",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/economy",
+          "url": "https://www.reddit.com/r/economy/comments/1wbfj4y/when_the_worlds_safest_borrower_stopped_being/",
+          "source_type": "public_discussion_signal",
+          "published_at": "2026-09-09; checked 2026-09-16",
+          "freshness_role": "discussion is rate-probability and USD/JPY-direction focused, so it is neither a second fact source nor a non-directional calculator-demand signal",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_boj_window_has_one_independent_reliable_publisher_and_no_distinct_non_directional_usdjpy_calculation_path",
+        "duplicate_of": ["HR-20260724-03", "HR-20260731-01"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "A September 18 published result independently confirmed by a second reliable English publisher plus a public non-directional USD/JPY risk, pip-value, margin or cost question and replacement example; assess refresh before any new article.",
+        "rationale": "The new meeting date is only a window change. The scan did not verify independent event facts or a reader task distinct from earlier BOJ/USDJPY risk packages."
+      }
+    }
+  }
+}
