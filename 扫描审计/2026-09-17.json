@@ -1,0 +1,172 @@
+{
+  "scan_date": "2026-09-17",
+  "generated_at": "2026-09-17T22:02:39+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-09-17T22:02:39+08:00",
+      "source_count": 5,
+      "note": "核验 Federal Reserve、Bank of England、Bank of Japan、The5ers 与规则/日程公开英文页面；仅采用有日期或当前页面可验证的事实。"
+    },
+    {
+      "channel": "可靠英文媒体与独立行业核查",
+      "status": "complete",
+      "checked_at": "2026-09-17T22:02:39+08:00",
+      "source_count": 2,
+      "note": "AP 同日独立报道 FOMC 和 Bank of England 结果；只用于结果和投票交叉核验，不用于市场方向。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-09-17T22:02:39+08:00",
+      "source_count": 4,
+      "note": "公开 Reddit 与 ForexFactory 显示联储、英国央行结果仍处于讨论/日历发现窗口，但未出现可验证的非方向性仓位、点值、保证金、成本或规则计算任务。BabyPips 的公开 position-size 工具是常青参考，不能被误作当期需求。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-09-17T22:02:39+08:00",
+      "source_count": 0,
+      "note": "公开索引没有可核验的新非方向性计算问题；Quora 受 robots/登录限制，未采用墙后材料，未登录或操作任何账户。"
+    }
+  ],
+  "candidates": {
+    "HR-20260917-01": {
+      "sources": [
+        {
+          "publisher": "Federal Reserve",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+          "source_type": "official_dated_fomc_statement",
+          "published_at": "2026-09-16",
+          "freshness_role": "official result: 12-0 vote to raise the target range by 25bp to 3.75%-4.00%",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/bab1bcb07e973bfb2dd0c3e5fbbb73b1",
+          "source_type": "independent_current_english_news_report",
+          "published_at": "2026-09-16",
+          "freshness_role": "independently reports the first Fed rate increase in three years",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/bonds",
+          "url": "https://www.reddit.com/r/bonds/comments/1wi4v5i/fed_forecasts_see_latest_hike_followed_by_another/",
+          "source_type": "public_discussion_signal",
+          "published_at": "2026-09-16",
+          "freshness_role": "same-day attention signal; discussion is rate-path and bond-market oriented, not a new FX calculation task",
+          "reliable": false
+        },
+        {
+          "publisher": "ForexFactory",
+          "url": "https://www.forexfactory.com/calendar?range=sep17.2026-sep28.2026",
+          "source_type": "public_calendar_discovery_signal",
+          "published_at": "checked 2026-09-17",
+          "freshness_role": "public calendar lists the current 4.00% USD central-bank rate but does not establish an account-risk calculation query",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_verified_result_but_no_new_non_directional_search_or_result_linked_calculation_input",
+        "duplicate_of": ["HR-20260724-01", "HR-20260817-01", "HR-20260820-01", "HR-20260823-01"],
+        "refresh_signals": {"fact_delta": true, "search_delta": false, "example_delta": false, "window_delta": false},
+        "reopen_trigger": "A publicly verifiable non-directional account-risk, specification, margin, pip-value or execution-cost question whose inputs differ from the historical fixed-risk packages; reassess refresh before any new article.",
+        "rationale": "The result is fresh and cross-verified, but treating a generic EUR/USD risk table as a FOMC-result refresh would recycle a completed reader task without a second qualified delta."
+      }
+    },
+    "HR-20260917-02": {
+      "sources": [
+        {
+          "publisher": "Bank of England",
+          "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+          "source_type": "official_dated_mpc_result",
+          "published_at": "2026-09-17",
+          "freshness_role": "official result: Bank Rate maintained at 3.75% by a 6-3 vote, with three members voting for 4.00%",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/9d2abfcda73347ccb1a19dd39f1c06c8",
+          "source_type": "independent_current_english_news_report",
+          "published_at": "2026-09-17",
+          "freshness_role": "independently reports the 3.75% hold and three votes for an increase",
+          "reliable": true
+        },
+        {
+          "publisher": "ForexFactory",
+          "url": "https://www.forexfactory.com/calendar?range=sep17.2026-sep28.2026",
+          "source_type": "public_calendar_discovery_signal",
+          "published_at": "checked 2026-09-17",
+          "freshness_role": "current public calendar exposes the GBP official-rate and vote result, but does not verify a GBP/USD calculator demand",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_verified_boe_result_but_no_distinct_gbpusd_search_or_calculation_path",
+        "duplicate_of": ["HR-20260724-11", "HR-20260730-01"],
+        "refresh_signals": {"fact_delta": true, "search_delta": false, "example_delta": false, "window_delta": false},
+        "reopen_trigger": "A publicly verifiable non-directional GBP/USD risk, pip-value, margin or cost question with an input that materially replaces the historical teaching table; evaluate a refresh target before new content.",
+        "rationale": "The official result is sufficiently sourced, but 3.75% and 6-3 change the factual recap only. They do not turn the historical generic GBP/USD fixed-risk table into a new reader task."
+      }
+    },
+    "HR-20260917-03": {
+      "sources": [
+        {
+          "publisher": "The5ers",
+          "url": "https://the5ers.com/faqs/is-news-trading-allowed-in-the-high-stakes-program2024/",
+          "source_type": "official_dated_product_rule",
+          "published_at": "last update 2026-09-15",
+          "freshness_role": "official FAQ describes the two-minute no-new-order window around related high-impact news for High Stakes accounts",
+          "reliable": true
+        },
+        {
+          "publisher": "ForexFactory",
+          "url": "https://www.forexfactory.com/calendar?range=sep17.2026-sep28.2026",
+          "source_type": "public_calendar_context",
+          "published_at": "checked 2026-09-17",
+          "freshness_role": "shows current high-impact-event context only; it is not independent evidence of the The5ers rule update or a demand signal about it",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_official_rule_without_independent_impact_or_natural_calculation_task",
+        "duplicate_of": [],
+        "refresh_signals": {"fact_delta": true, "search_delta": false, "example_delta": false, "window_delta": false},
+        "reopen_trigger": "A dated numerical The5ers risk-rule change plus an independent public impact/heat source and a concrete daily-loss, trailing-drawdown or risk-budget calculation question.",
+        "rationale": "A prohibition on initiating orders in a time band is a compliance fact, not by itself a calculator journey. Creating a generic position-size article would be topic padding."
+      }
+    },
+    "HR-20260917-04": {
+      "sources": [
+        {
+          "publisher": "Bank of Japan",
+          "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
+          "source_type": "official_english_mpm_schedule",
+          "published_at": "current schedule; checked 2026-09-17",
+          "freshness_role": "official English schedule lists the September 17-18 Monetary Policy Meeting",
+          "reliable": true
+        },
+        {
+          "publisher": "Bank of Japan",
+          "url": "https://www.boj.or.jp/en/about/calendar/index.htm",
+          "source_type": "official_english_release_schedule_same_publisher",
+          "published_at": "updated 2026-09-11; checked 2026-09-17",
+          "freshness_role": "same publisher's schedule lists the September 18 statement; it cannot count as an independent second reliable source",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_single_independent_publisher_and_no_non_directional_usdjpy_calculation_demand",
+        "duplicate_of": ["HR-20260724-03", "HR-20260731-01"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "A September 18 official result independently confirmed by a second reliable English publisher plus a public non-directional USD/JPY risk, pip-value, margin or cost question that changes the reader task.",
+        "rationale": "The meeting is still an event window only. One publisher's schedule and direction-focused coverage cannot justify a prebuilt USD/JPY risk article."
+      }
+    }
+  }
+}
