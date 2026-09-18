@@ -1,0 +1,126 @@
+{
+  "scan_date": "2026-09-18",
+  "generated_at": "2026-09-18T22:00:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-09-18T22:00:00+08:00",
+      "source_count": 3,
+      "note": "核验 FTMO 9 月 17 日正式 launch 新闻稿、FTMO Futures 当前规则页和 BOJ 9 月 18 日英文政策发布索引；数字和条款只取现行官方规则。"
+    },
+    {
+      "channel": "可靠英文媒体与独立行业核查",
+      "status": "complete",
+      "checked_at": "2026-09-18T22:00:00+08:00",
+      "source_count": 2,
+      "note": "AP 同日独立核验 BOJ 结果；Liquidity24 独立发布 FTMO 9 月 17 日 launch-discovery 项。后者不替代 FTMO 的计划、资格或规则数字。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "complete",
+      "checked_at": "2026-09-18T22:00:00+08:00",
+      "source_count": 3,
+      "note": "公开 Reddit 的 FTMO Futures 50K Pro 规则讨论证明可读的当期 rule-check 意图；BOJ 讨论仍为政策与方向。ForexFactory/BabyPips 没有新增可核验、不同于现有内容的计算旅程。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-09-18T22:00:00+08:00",
+      "source_count": 0,
+      "note": "公开索引未提供可核验的新增非方向性计算问题；未使用登录、墙后或不可验证材料。"
+    }
+  ],
+  "candidates": {
+    "HR-20260918-01": {
+      "sources": [
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/en/press-release/ftmo-launches-ftmo-futures/",
+          "source_type": "official_dated_product_formal_launch",
+          "published_at": "2026-09-17",
+          "freshness_role": "official press release records formal FTMO Futures launch with Growth and Pro plans",
+          "reliable": true
+        },
+        {
+          "publisher": "Liquidity24",
+          "url": "https://www.liquidity24.com/ftmo-expands-into-futures-market-with-the-launch-of-ftmo-futures",
+          "source_type": "independent_english_industry_launch_discovery",
+          "published_at": "2026-09-17",
+          "freshness_role": "independent industry publication makes the formal launch a current public discovery event; it is not used to establish FTMO rule numbers",
+          "reliable": true
+        },
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/en/futures/trading-objectives-and-rules/",
+          "source_type": "official_current_product_rules",
+          "published_at": "checked 2026-09-18",
+          "freshness_role": "current 50K Pro rule view gives a USD 1,000 Daily Loss Limit Amount and equity definition; official terms override every other source",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/PropFirmGenie",
+          "url": "https://www.reddit.com/r/PropFirmGenie/comments/1w9wal1/ftmo_futures_pro_might_actually_be_one_of_the/",
+          "source_type": "public_current_rule_reading_heat",
+          "published_at": "2026-09-16",
+          "freshness_role": "public 50K Pro discussion names the USD 1,000 hard daily limit and shows current rule-reading intent; it is not used to validate terms or recommend any firm",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass_refresh",
+        "decision_gate": "selected_refresh_official_formal_launch_plus_independent_discovery_and_current_rule_reading_path",
+        "duplicate_of": ["HR-20260908-01"],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "Any dated FTMO Futures plan, phase, daily-loss, drawdown, eligibility, platform or launch-status correction; otherwise expire formal-launch language after September 20 and do not recreate the same daily-loss article.",
+        "rationale": "The prior package was explicitly beta-framed. A dated formal launch now changes the factual status, launch-specific search wording and short discovery window, while current official rules provide the same plan-specific USD 1,000 arithmetic anchor. The update is limited to the different reader question created by formal launch: distinguish a day-level loss boundary from planned price risk using a transparent buffer and reader-verified contract value. It does not rank firms, recommend a purchase, forecast futures, claim contract specifications or promise execution."
+      }
+    },
+    "HR-20260918-02": {
+      "sources": [
+        {
+          "publisher": "Bank of Japan",
+          "url": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/index.htm",
+          "source_type": "official_dated_monetary_policy_release_index",
+          "published_at": "2026-09-18",
+          "freshness_role": "official September 18 index records the monetary-policy operations-guideline change",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/japan-economy-interest-rates-inflation-67e71246d3af41bcfc61aa788f9959c7",
+          "source_type": "independent_current_english_news_report",
+          "published_at": "2026-09-18",
+          "freshness_role": "independently reports a 25bp increase from 1.00% to 1.25% and two dissenters",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/Economics",
+          "url": "https://www.reddit.com/r/Economics/comments/1wji9yh/bank_of_japan_hikes_rate_to_31year_high_to/",
+          "source_type": "public_current_discussion_signal",
+          "published_at": "2026-09-18",
+          "freshness_role": "same-day attention signal, but discussion is policy and market-direction oriented rather than a new calculator task",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_existing_boj_usdjpy_path_has_only_fact_and_result_window_delta",
+        "duplicate_of": ["HR-20260724-03", "HR-20260731-01", "HR-20260827-02", "HR-20260828-01"],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "Reopen only if a public, independently verifiable non-directional USD/JPY pip-value, position-size, margin or cost question appears with a distinct numeric input or workflow not already owned by the prior BOJ packages.",
+        "rationale": "The BOJ decision is well sourced and fresh, but source-backed attention is rate, yen and equity direction first. It does not produce a new reader calculation task; reusing a fixed-risk table would manufacture a search-to-calculator path that has not been verified."
+      }
+    }
+  }
+}

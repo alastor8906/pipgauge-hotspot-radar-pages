@@ -1,0 +1,20 @@
+{
+  "candidate_id": "HR-20260918-01",
+  "scan_date": "2026-09-18",
+  "primary_site": "PipGauge",
+  "topic": "FTMO Futures Formal Launch: Refresh the 50K Pro Daily-Loss Headroom Check",
+  "execution_mode": "refresh",
+  "refresh_target": "HR-20260908-01",
+  "package_summary": "当期审核快照：将既有 FTMO Futures beta 包更新为 9 月 17 日正式 launch 的 rule-reading 版本；以当前 50K Pro USD 1,000 Daily Loss Limit 为事实锚点，保留 USD 200 编辑缓冲和读者已核验 USD/point 的变量公式。不是 firm 比较、购买建议、合约规格、期货方向或执行保证。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "formal_launch_refresh_window",
+  "time_status_label": "仅在 FTMO 9 月 17 日正式 launch 与当前 50K / Pro / 正确阶段规则仍可核验的短期 discovery window 使用；9 月 20 日后、规则/资格/计划/平台变更或讨论冷却时必须改写或停用。",
+  "documents": [
+    {"id": "facts", "label": "事实与论点", "file": "00-事实与论点.md", "platform": "internal", "kind": "editorial brief", "status_label": "已整理"},
+    {"id": "medium", "label": "Medium", "file": "01-Medium.md", "platform": "medium", "kind": "long-form draft", "status_label": "待人工审核"},
+    {"id": "reddit", "label": "Reddit", "file": "02-Reddit.md", "platform": "reddit", "kind": "native discussion draft", "status_label": "待人工审核"},
+    {"id": "x", "label": "X", "file": "03-X.md", "platform": "x", "kind": "short thread draft", "status_label": "待人工审核"},
+    {"id": "review", "label": "审核清单", "file": "04-人工审核.md", "platform": "internal", "kind": "human gate", "status_label": "必须完成"}
+  ]
+}
