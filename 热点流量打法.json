@@ -1,7 +1,56 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-17T22:02:39+08:00",
+  "updated_at": "2026-09-20T22:02:52+08:00",
   "items": {
+    "HR-20260918-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-09-20T17:00:00-04:00",
+      "traffic_hook": "FTMO's dated September 17 press release says FTMO Futures has formally launched with Growth and Pro plans. The immediate reader question is not whether a futures contract will rise or fall; it is how to read the stated 50K Pro daily-loss boundary once a beta-labelled page has become a current launch page.",
+      "traffic_window": "Refresh the existing September 8 FTMO Futures 50K Pro note during the September 17-20 formal-launch discovery window. Retire launch wording when the initial launch discussion cools, when FTMO changes plan/rule/eligibility text, or when a verified rule revision creates a different question.",
+      "search_intents": [
+        "FTMO Futures launch 2026 50K Pro daily loss limit",
+        "FTMO Futures 50K Pro daily loss calculation",
+        "FTMO Futures hard daily loss equity rule",
+        "how much risk per trade with FTMO Futures 1000 daily loss"
+      ],
+      "traffic_angle": "Borrow the verified formal-launch headline to answer one time-sensitive rule-reading question: given the official USD 1,000 50K Pro daily-loss amount, what remains after a clearly labelled USD 200 editorial buffer before a reader converts a 40-point planned stop using that reader's verified USD-per-point value? The readable arithmetic is USD 1,000 minus USD 200 equals USD 800 planned price-risk budget before costs; quantity is floor(800 divided by (40 times verified USD per point)). It is neither a contract-value assertion nor a futures-direction view.",
+      "calculator_bridge": "After the dated launch fact and formula, PipGauge Daily Loss Limit is the primary check for the account-state/buffer distinction and PipGauge Position Size is used only after the reader verifies the actual contract's USD-per-point value and planned stop. PositionMath Prop Firm Simulator is an optional cross-check of rule inputs. Neither calculator interprets FTMO eligibility, substitutes for its rules, recommends an account, or guarantees that a stop will fill.",
+      "example_scenario": "FTMO Futures 50K Pro, correct plan and phase reconfirmed in the official rules; USD 1,000 stated daily-loss amount; USD 200 editorial buffer for open P&L, commissions and input uncertainty; USD 800 maximum planned price risk before costs; 40-point planned stop; whole quantity equals floor(800 divided by (40 times reader-verified USD per point)). USD 200 is not an FTMO rule and USD per point is deliberately not assumed.",
+      "distribution_order": [
+        "refresh existing PipGauge article HR-20260908-01",
+        "Medium formal-launch rule-reading update",
+        "X self-contained daily-loss-versus-per-trade-risk thread",
+        "Reddit native rule-reading discussion without a first-round link"
+      ],
+      "link_placement": "Lead with the official launch date, the stated USD 1,000 amount and the formula. Add at most one PipGauge verification link after the worked arithmetic and limits. Do not place a link, UTM parameter or product pitch in the initial Reddit post; X must be comprehensible without a link.",
+      "expiry_condition": "Stop using the formal-launch frame after September 20, on any FTMO plan/rule/eligibility/platform revision, if the current rules no longer show the cited 50K Pro figure, or if public launch discussion no longer supports this specific rule-reading question. Do not turn the USD 800 teaching budget into an evergreen claim or a purchase prompt.",
+      "editorial_boundary": "Do not rank, endorse or disparage FTMO or another firm; do not make a purchase recommendation, give futures/market direction, assume a CME/FTMO/broker point value, present the editorial buffer as a firm rule, or say that a planned stop will prevent a breach. The official rule remains the source of truth and may vary by plan, phase, eligibility and current terms.",
+      "refresh_target": "HR-20260908-01",
+      "refresh_signals": {
+        "fact_delta": true,
+        "search_delta": true,
+        "example_delta": false,
+        "window_delta": true
+      },
+      "refresh_updates": [
+        "replace all beta language with the dated September 17 formal-launch fact",
+        "replace the expired September 10 review deadline with the September 20 formal-launch discovery window",
+        "reconfirm 50K / Pro / correct phase before retaining the USD 1,000 daily-loss example",
+        "retain the USD 200 editorial buffer and variable USD-per-point formula, explicitly labelled as non-FTMO teaching inputs"
+      ],
+      "content_mainline": "Refresh the existing FTMO Futures 50K Pro daily-loss note; do not publish a second generic prop-firm or futures-risk article. The new launch hook must lead to the same transparent, non-directional rule-to-planned-risk calculation only.",
+      "body_material": [
+        "FTMO September 17 formal-launch press release",
+        "current official Futures Trading Objectives & Rules for the 50K Pro daily-loss/equity mechanics",
+        "Liquidity24 September 17 independent launch-discovery coverage",
+        "public Reddit 50K Pro daily-loss discussion as heat only",
+        "USD 1,000 less USD 200 equals USD 800 before-cost teaching budget with a 40-point variable-value formula"
+      ],
+      "product_bridge": "PipGauge helps a reader turn a current rule and verified contract specification into transparent planned-risk arithmetic; it does not validate FTMO terms, account eligibility, market direction, contract specs or execution.",
+      "product_bridge_type": "existing"
+    },
     "HR-20260831-01": {
       "playbook_status": "ready",
       "execution_mode": "new",

@@ -1,0 +1,167 @@
+{
+  "scan_date": "2026-09-20",
+  "generated_at": "2026-09-20T22:02:52+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-09-20T22:02:52+08:00",
+      "source_count": 6,
+      "note": "核验 CME 9 月 14 日 Globex listing notice、当前 factor-futures product/price-limit 页面、FTMO 9 月 17 日正式 launch、当前 Futures rules 与 FAQ，以及 Bank of England 9 月 policy summary。只将有日期的决定、上市状态和可见规格作为事实。"
+    },
+    {
+      "channel": "可靠英文媒体与独立行业核查",
+      "status": "complete",
+      "checked_at": "2026-09-20T22:02:52+08:00",
+      "source_count": 3,
+      "note": "核验 FinanceFeeds 对 CME factor-futures suite 的独立英文报道、Liquidity24 对 FTMO Futures formal launch 的上一期可追溯发现页，以及 Kiplinger 本周经济日程。后两者不替代官方规则或决策数字。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "complete",
+      "checked_at": "2026-09-20T22:02:52+08:00",
+      "source_count": 3,
+      "note": "检索公开 CME factor futures、FTMO Futures 和 GBP/BoE 讨论。检到的材料为产品推广、一般期货讨论或政策/方向讨论；均未形成可核验的当期非方向性计算需求。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-09-20T22:02:52+08:00",
+      "source_count": 0,
+      "note": "公开索引未提供可核验的 factor-futures、FTMO 或 GBP 计算查询；Quora 受 robots/login 限制，未采用墙后内容。未登录、发帖、评论、私信或操作任何账户。"
+    }
+  ],
+  "candidates": {
+    "HR-20260920-01": {
+      "sources": [
+        {
+          "publisher": "CME Group",
+          "url": "https://www.cmegroup.com/notices/electronic-trading/2026/09/20260914.html",
+          "source_type": "official_dated_globex_listing_notice",
+          "published_at": "2026-09-14",
+          "freshness_role": "sets the September 20 effective date and September 21 trade date for the six E-mini Factor futures, pending regulatory review",
+          "reliable": true
+        },
+        {
+          "publisher": "CME Group",
+          "url": "https://www.cmegroup.com/markets/equities/sp-500-dow-jones-factor-futures.html",
+          "source_type": "official_current_contract_product_specification",
+          "published_at": "checked 2026-09-20",
+          "freshness_role": "current product page identifies E-mini S&P 500 Growth futures as USD 20 times its underlying index; same publisher, not an independent source",
+          "reliable": true
+        },
+        {
+          "publisher": "FinanceFeeds",
+          "url": "https://financefeeds.com/cme-will-put-six-equity-factors-into-futures-on-21-september/",
+          "source_type": "independent_english_industry_launch_discovery",
+          "published_at": "2026-08-28",
+          "freshness_role": "independently identifies the six-contract launch while leaving live volume and open interest unresolved",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
+          "url": "https://www.cmegroup.com/trading/price-limits.html",
+          "source_type": "public_discussion_search_negative_result",
+          "published_at": "checked 2026-09-20",
+          "freshness_role": "public discovery search found no attributable, non-directional user calculation question; linked CME price-limit page confirms a listed SPGRZ6 reference but is not a social source",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_current_specification_delta_without_verified_public_calculation_demand_or_safe_existing_calculator_bridge",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "A dated official tick, multiplier, margin or contract input together with a separately attributable public, non-directional quantity, tick-value, notional or portfolio-risk question that an existing calculator can answer without substituting for the contract specification.",
+        "rationale": "The effective-date and visible USD 20 multiplier are a material official fact delta, but no reader journey has been verified. Generic P&L, position-size or portfolio-heat arithmetic would either assume unavailable specifications or create demand that sources do not show. Two qualified refresh signals and a natural calculator bridge are absent."
+      }
+    },
+    "HR-20260920-02": {
+      "sources": [
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/en/press-release/ftmo-launches-ftmo-futures/",
+          "source_type": "official_dated_product_formal_launch",
+          "published_at": "2026-09-17",
+          "freshness_role": "formal Futures launch remains inside the 72-hour window and is already used by HR-20260918-01",
+          "reliable": true
+        },
+        {
+          "publisher": "Liquidity24",
+          "url": "https://www.liquidity24.com/ftmo-expands-into-futures-market-with-the-launch-of-ftmo-futures",
+          "source_type": "independent_english_industry_launch_discovery",
+          "published_at": "2026-09-17",
+          "freshness_role": "independent launch-discovery source already recorded for the prior refresh; it does not create a new rule or demand fact today",
+          "reliable": true
+        },
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/en/futures/faq/what-are-the-trading-objectives-and-what-happens-if-i-violate-them/",
+          "source_type": "official_current_rule_consequence_faq",
+          "published_at": "checked 2026-09-20",
+          "freshness_role": "restates soft and hard loss-limit violation consequences but has no dated rule-change/version marker and does not replace plan, phase or daily-loss figures",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_duplicate_of_prior_formal_launch_refresh_without_second_qualified_delta",
+        "duplicate_of": ["HR-20260918-01"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "A dated official correction to plan, phase, daily-loss, drawdown, eligibility, platform or contract specification plus a distinct public rule-reading calculation query; otherwise let the existing formal-launch frame expire on its stated schedule.",
+        "rationale": "The existing review package owns the formal-launch daily-loss question through September 20 ET. The FAQ does not demonstrate a new term, query object, readable example or separate window. A second refresh would be duplicate content."
+      }
+    },
+    "HR-20260920-03": {
+      "sources": [
+        {
+          "publisher": "Bank of England",
+          "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+          "source_type": "official_dated_monetary_policy_summary",
+          "published_at": "2026-09-17",
+          "freshness_role": "records the September decision to maintain Bank Rate at 3.75%, but the scheduled scan is beyond the default 72-hour window",
+          "reliable": true
+        },
+        {
+          "publisher": "Kiplinger",
+          "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+          "source_type": "independent_current_english_week_ahead_context",
+          "published_at": "2026-09-18",
+          "freshness_role": "current week-ahead source confirms the market calendar emphasis but provides no GBP-specific non-directional calculation demand",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
+          "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+          "source_type": "public_discussion_search_negative_result",
+          "published_at": "checked 2026-09-20",
+          "freshness_role": "public results are policy or GBP-direction discussion rather than a new attributable pip-value, position-size, margin or cost query",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_expired_freshness_and_no_distinct_gbp_calculation_path",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "A new dated BoE result, rule or event window plus an attributable public non-directional GBP calculation query with a distinct numeric input or workflow not owned by historical central-bank content.",
+        "rationale": "The result is cross-verified but past the default 72-hour window. Current discourse is direction-first and does not establish a distinct calculator journey; a generic GBP fixed-risk grid would be topic padding."
+      }
+    }
+  }
+}
