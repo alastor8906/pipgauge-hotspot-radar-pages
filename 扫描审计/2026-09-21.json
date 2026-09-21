@@ -1,0 +1,43 @@
+{
+  "scan_date": "2026-09-21",
+  "generated_at": "2026-09-21T22:02:16+08:00",
+  "coverage": [
+    {"channel": "官方与一手来源", "status": "complete", "checked_at": "2026-09-21T22:02:16+08:00", "source_count": 5, "note": "核验 CME 9 月 14 日 Globex listing notice、E-mini Factor futures FAQ 和当前六合约 multiplier 表，以及 S&P Global 2026 PMI release-date 表。只将带日期的上市/发布时点和明确规格作为事实。"},
+    {"channel": "可靠英文媒体与独立日程核查", "status": "complete", "checked_at": "2026-09-21T22:02:16+08:00", "source_count": 2, "note": "核验 FinanceFeeds 对 CME factor-futures launch 的独立英文发现页，以及 Kiplinger 的 9 月 21–25 日经济日历。它们不替代 CME 合约规格或 S&P Global 发布时点。"},
+    {"channel": "Reddit / ForexFactory / BabyPips", "status": "complete", "checked_at": "2026-09-21T22:02:16+08:00", "source_count": 2, "note": "检索公开 CME factor-futures 与 September PMI 讨论。可见结果为日历、方向或一般交易讨论；未形成可归属、非方向性 quantity、tick-value、notional、pip-value、fixed-risk、margin 或 cost 问题。"},
+    {"channel": "X / Quora", "status": "checked_no_material_signal", "checked_at": "2026-09-21T22:02:16+08:00", "source_count": 0, "note": "公开索引未提供可核验的 CME factor-futures 或 PMI 计算查询；Quora 受 robots/login 限制，未采用墙后内容。未登录、发帖、评论、私信或操作任何账户。"}
+  ],
+  "candidates": {
+    "HR-20260921-01": {
+      "sources": [
+        {"publisher": "CME Group", "url": "https://www.cmegroup.com/notices/electronic-trading/2026/09/20260914.html", "source_type": "official_dated_globex_listing_notice", "published_at": "2026-09-14", "freshness_role": "sets the September 20 effective date and September 21 first trade date for the six E-mini Factor futures, pending completion of regulatory review", "reliable": true},
+        {"publisher": "CME Group", "url": "https://www.cmegroup.com/articles/faqs/faq-e-mini-factor-futures.html", "source_type": "official_current_contract_faq_and_multiplier_table", "published_at": "checked 2026-09-21", "freshness_role": "current FAQ and product page identify all six product codes and multipliers; same publisher, not an independent source", "reliable": true},
+        {"publisher": "FinanceFeeds", "url": "https://financefeeds.com/cme-will-put-six-equity-factors-into-futures-on-21-september/", "source_type": "independent_english_industry_launch_discovery", "published_at": "2026-08-28", "freshness_role": "independently identifies the six-contract launch but does not establish retail platform availability, margin, liquidity or calculation demand", "reliable": true},
+        {"publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes", "url": "https://www.cmegroup.com/markets/equities/sp-500-dow-jones-factor-futures.html", "source_type": "public_discussion_search_negative_result", "published_at": "checked 2026-09-21", "freshness_role": "public discovery search found no attributable, non-directional reader calculation question; the linked CME page is a specification source, not a community source", "reliable": false}
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_first_trade_date_and_full_multiplier_visibility_without_verified_public_calculation_demand_or_safe_existing_calculator_bridge",
+        "duplicate_of": ["HR-20260920-01"],
+        "refresh_signals": {"fact_delta": true, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "A dated official tick, margin or final contract input together with a separately attributable public, non-directional quantity, tick-value, notional or portfolio-risk question that an existing calculator can answer without substituting for the specification.",
+        "rationale": "The first trade date and consolidated six-contract multiplier table are material official facts, but no verified reader journey exists. Generic P&L, position-size or portfolio-heat arithmetic would either assume unavailable contract inputs or create demand that sources do not show. The qualified refresh gate and a natural calculator bridge are absent."
+      }
+    },
+    "HR-20260921-02": {
+      "sources": [
+        {"publisher": "S&P Global PMI", "url": "https://www.pmi.spglobal.com/Public/Home/PDF/UK_Rel_Dates", "source_type": "official_dated_2026_release_schedule", "published_at": "2026-04-13", "freshness_role": "lists September 23, 2026 Flash PMI release times for US, UK, Eurozone and other major economies", "reliable": true},
+        {"publisher": "Kiplinger", "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar", "source_type": "independent_current_english_week_ahead_calendar", "published_at": "2026-09-18", "freshness_role": "independently lists the September 23 09:45 ET S&P Global Flash Services and Manufacturing PMI window", "reliable": true},
+        {"publisher": "ForexFactory / Reddit public indexes", "url": "https://www.forexfactory.com/calendar?day=sep22.2026", "source_type": "public_discussion_search_insufficient_signal", "published_at": "checked 2026-09-21", "freshness_role": "calendar and forum results are event/direction discussion, not an attributable non-directional calculator query; inconsistent date wording is not used as a fact source", "reliable": false}
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_scheduled_macro_window_without_published_result_or_distinct_non_directional_search_to_calculator_path",
+        "duplicate_of": [],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "A published September PMI result cross-verified by two reliable sources, plus an attributable public non-directional calculation question and at least one further refresh signal that supplies a distinct input or workflow.",
+        "rationale": "The release window is real and near, but no result, reader question, replacement numeric teaching input or natural calculator bridge is verified. A generic FX event-risk grid would duplicate existing macro packages and invent a traffic path."
+      }
+    }
+  }
+}
