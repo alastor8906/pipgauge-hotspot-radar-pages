@@ -1,0 +1,167 @@
+{
+  "scan_date": "2026-09-22",
+  "generated_at": "2026-09-22T22:00:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-09-22T22:00:00+08:00",
+      "source_count": 6,
+      "note": "复核 CME 9 月 14 日 Globex listing notice、E-mini Factor futures FAQ 与 8 月 26 日 clearing advisory；复核 S&P Global 2026 PMI release-date 表；复核 FTMO 9 月 17 日 Futures launch 与当前 Trading Updates。只采用带日期、可公开访问的规则、上市和发布时点。"
+    },
+    {
+      "channel": "可靠英文媒体与独立日程核查",
+      "status": "complete",
+      "checked_at": "2026-09-22T22:00:00+08:00",
+      "source_count": 3,
+      "note": "复核 FinanceFeeds 的 CME launch 发现页、Kiplinger 的当周经济日历，以及 Prop Firm Briefing 的 FTMO Futures 独立规则复查页。它们不替代 CME、S&P Global 或 FTMO 的一手事实。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "complete",
+      "checked_at": "2026-09-22T22:00:00+08:00",
+      "source_count": 4,
+      "note": "检索公开 CME factor-futures、9 月 PMI 与 FTMO Futures/maximum-loss 讨论。ForexFactory 公开周历可见，Reddit 可见的近期 prop-risk 讨论为通用规则/体验语境；未得到可归属到新 CME 合约、PMI 结果或 FTMO Futures 新变更的非方向性计算查询。BabyPips 未发现可核验的当期补充信号。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-09-22T22:00:00+08:00",
+      "source_count": 0,
+      "note": "公开索引没有提供可核验、可归属的 CME factor-futures、PMI 或 FTMO Futures 计算查询；Quora 受 robots/login 限制，未采用墙后内容。未登录、发帖、评论、私信或操作任何账户。"
+    }
+  ],
+  "candidates": {
+    "HR-20260922-01": {
+      "sources": [
+        {
+          "publisher": "CME Group",
+          "url": "https://www.cmegroup.com/notices/electronic-trading/2026/09/20260914.html",
+          "source_type": "official_dated_globex_listing_notice",
+          "published_at": "2026-09-14",
+          "freshness_role": "sets the September 20 effective date and September 21 first trade date for the five CME and one CBOT E-mini Factor futures, pending completion of regulatory review",
+          "reliable": true
+        },
+        {
+          "publisher": "CME Group",
+          "url": "https://www.cmegroup.com/articles/faqs/faq-e-mini-factor-futures.html",
+          "source_type": "official_current_contract_faq_and_multiplier_table",
+          "published_at": "checked 2026-09-22",
+          "freshness_role": "current FAQ lists product codes, contract multipliers and settlement mechanics; same publisher is not a second independent source",
+          "reliable": true
+        },
+        {
+          "publisher": "FinanceFeeds",
+          "url": "https://financefeeds.com/cme-will-put-six-equity-factors-into-futures-on-21-september/",
+          "source_type": "independent_english_industry_launch_discovery",
+          "published_at": "2026-08-28",
+          "freshness_role": "independently identifies the launch, but does not establish retail platform availability, margin, liquidity, or a calculator demand",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
+          "url": "https://www.cmegroup.com/markets/equities/sp-500-dow-jones-factor-futures.html",
+          "source_type": "public_discussion_search_negative_result",
+          "published_at": "checked 2026-09-22",
+          "freshness_role": "public discovery found product and directional-factor discussion, but no attributable non-directional quantity, tick-value, notional, margin, or portfolio-risk question; linked CME page is a specification source, not a community source",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_post_listing_specification_visibility_without_verified_retail_calculation_demand_or_safe_existing_calculator_bridge",
+        "duplicate_of": ["HR-20260921-01"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "A dated official tick, margin, or final contract input together with a separately attributable public, non-directional quantity, tick-value, notional, or portfolio-risk question that an existing calculator can answer without substituting for the specification.",
+        "rationale": "The contracts are now listed, but that is not a new September 22 fact relative to the September 21 audit. No verified public reader journey exists. Generic Position Size, P&L, or Portfolio Heat arithmetic would assume unavailable contract inputs or manufacture demand; the qualified refresh gate and natural calculator bridge remain absent."
+      }
+    },
+    "HR-20260922-02": {
+      "sources": [
+        {
+          "publisher": "S&P Global PMI",
+          "url": "https://www.pmi.spglobal.com/Public/Home/PDF/UK_Rel_Dates",
+          "source_type": "official_dated_2026_release_schedule",
+          "published_at": "2026-04-13",
+          "freshness_role": "lists the September 23, 2026 Flash PMI release times for US, UK, Eurozone and other major economies",
+          "reliable": true
+        },
+        {
+          "publisher": "Kiplinger",
+          "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+          "source_type": "independent_current_english_week_ahead_calendar",
+          "published_at": "2026-09-18",
+          "freshness_role": "independently lists the September 23 09:45 ET S&P Global Flash Services and Manufacturing PMI window",
+          "reliable": true
+        },
+        {
+          "publisher": "ForexFactory / Reddit public indexes",
+          "url": "https://www.forexfactory.com/calendar?range=sep22.2026-sep25.2026",
+          "source_type": "public_discussion_search_insufficient_signal",
+          "published_at": "checked 2026-09-22",
+          "freshness_role": "calendar and forum material is event- or direction-first rather than an attributable non-directional calculator query; inconsistent displayed release-date wording is not used as a fact source",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_scheduled_macro_window_without_published_result_or_distinct_non_directional_search_to_calculator_path",
+        "duplicate_of": ["HR-20260921-02"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "A published September PMI result cross-verified by two reliable sources, plus an attributable public non-directional calculation question and at least one further refresh signal that supplies a distinct input or workflow.",
+        "rationale": "The release remains within one day, but has not yet supplied a result, a reader question, a replacement numeric teaching input, or a natural calculator bridge. A generic FX event-risk grid would duplicate historical macro packages and invent a traffic path."
+      }
+    },
+    "HR-20260922-03": {
+      "sources": [
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/en/press-releases/",
+          "source_type": "official_dated_futures_launch_release",
+          "published_at": "2026-09-17",
+          "freshness_role": "confirms the formal launch of FTMO Futures; it is the source of product facts but is now outside the default 72-hour event window",
+          "reliable": true
+        },
+        {
+          "publisher": "Prop Firm Briefing",
+          "url": "https://propfirmbriefing.com/prop-firm-rules/ftmo-futures/",
+          "source_type": "independent_public_rule_check",
+          "published_at": "2026-09-08; checked 2026-09-22",
+          "freshness_role": "independent rule-reading page says it has recorded no published rule change since its September 6 verification; it cannot create a new official rule delta",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit",
+          "url": "https://www.reddit.com/r/Forex/comments/1u8ckib/i_simulated_10000_ftmo_challenges_with_a/",
+          "source_type": "public_recent_prop_risk_discussion_heat_only",
+          "published_at": "2026-09-19",
+          "freshness_role": "recent generic discussion shows continuing daily-limit and losing-streak interest, but does not establish an FTMO Futures rule change, contract-specific input, or launch-specific search journey",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_existing_ftmo_futures_launch_package_has_no_second_fact_search_example_or_window_delta",
+        "duplicate_of": ["HR-20260918-01"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "A dated FTMO plan, rule, eligibility, platform, payout, or objective change plus an independently attributable launch- or change-specific non-directional calculation query; two refresh signals are required before refreshing HR-20260918-01.",
+        "rationale": "The formal launch was already refreshed on September 18 and its traffic window ended September 20. The current independent rule check reports no change; a generic recent prop-risk conversation is heat only and does not create a second qualified refresh. Do not manufacture another daily-loss article."
+      }
+    }
+  }
+}
