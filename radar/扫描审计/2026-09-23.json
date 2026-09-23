@@ -1,0 +1,42 @@
+{
+  "scan_date": "2026-09-23",
+  "generated_at": "2026-09-23T22:05:00+08:00",
+  "coverage": [
+    {"channel": "官方与一手来源", "status": "complete", "checked_at": "2026-09-23T22:05:00+08:00", "source_count": 4, "note": "检查 S&P Global PMI 当前发布索引、Tradeify 当前公开账户页、CFTC DCM rule filings 和既有 CME factor-futures 一手材料；只采用可公开访问的规则、发布和监管事实。"},
+    {"channel": "可靠英文媒体与独立变化发现", "status": "complete", "checked_at": "2026-09-23T22:05:00+08:00", "source_count": 2, "note": "RTTNews 独立报道 9 月 23 日 Eurozone Flash PMI；Ephore Market 的 dated log 仅作 prop-rule 发现和复核线索，不替代官方规则。"},
+    {"channel": "Reddit / ForexFactory / BabyPips", "status": "complete", "checked_at": "2026-09-23T22:05:00+08:00", "source_count": 2, "note": "检索公开 PMI、EUR/USD、position-size、Tradeify、daily-loss 和 consistency 讨论。可见 PMI/政策/方向与泛化风险语境，但未发现可归属到本期 PMI 结果或 Tradeify 本期变更的非方向性计算查询。"},
+    {"channel": "X / Quora", "status": "checked_no_material_signal", "checked_at": "2026-09-23T22:05:00+08:00", "source_count": 0, "note": "公开索引没有提供可核验、可归属的当期 PMI 或 Tradeify 计算查询；Quora 的 robots/login 限制内容未采用。未登录、发帖、评论、私信或操作任何账户。"}
+  ],
+  "candidates": {
+    "HR-20260923-01": {
+      "sources": [
+        {"publisher": "S&P Global PMI", "url": "https://www.pmi.spglobal.com/Public/Release/PressReleases?language=en", "source_type": "official_current_flash_pmi_release_index", "published_at": "2026-09-23", "freshness_role": "official release index for the September Flash PMI publication window and underlying release", "reliable": true},
+        {"publisher": "RTTNews", "url": "https://www.rttnews.com/3693202/eurozone-private-sector-growth-strongest-since-early-2023.aspx?type=gleco", "source_type": "independent_english_result_report", "published_at": "2026-09-23T06:30:00-04:00", "freshness_role": "independently reports the S&P Global eurozone flash composite result of 53.1, August 52.0 and 51.7 expectation", "reliable": true},
+        {"publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes", "url": "https://www.forexfactory.com/calendar", "source_type": "public_discussion_search_insufficient_signal", "published_at": "checked 2026-09-23", "freshness_role": "public PMI material was direction/policy/calendar first; no attributable non-directional pip-value, position-size, margin or cost question was retained", "reliable": false}
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_new_macro_fact_without_a_distinct_non_directional_search_to_calculator_journey",
+        "duplicate_of": ["HR-20260917-01", "HR-20260917-02"],
+        "refresh_signals": {"fact_delta": true, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "A separately attributable public non-directional calculation query tied to this result, plus at least one further search, example or timing delta and a defined historical article to refresh rather than duplicate.",
+        "rationale": "The released result is fresh and cross-checked, but it does not make a generic FX risk table a timely answer. No user-specific fixed-risk, pip-value, margin or cost question, replacement numeric teaching input, or natural calculator path was verified."
+      }
+    },
+    "HR-20260923-02": {
+      "sources": [
+        {"publisher": "Tradeify", "url": "https://tradeify.co/", "source_type": "official_current_account_rule_summary", "published_at": "checked 2026-09-23", "freshness_role": "current cards expose daily-loss and consistency fields, but do not date a plan-specific change or safely supply a complete rule calculation", "reliable": true},
+        {"publisher": "Ephore Market", "url": "https://ephore-market.com/en/pages/prop-firm-rule-changes", "source_type": "independent_dated_rule_change_discovery_log", "published_at": "2026-09-22", "freshness_role": "reports a current Tradeify check but instructs readers to confirm official pages; discovery does not establish an official current rule delta", "reliable": false},
+        {"publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes", "url": "https://www.reddit.com/r/proptrading/", "source_type": "public_discussion_search_insufficient_signal", "published_at": "checked 2026-09-23", "freshness_role": "generic daily-loss and consistency discussion was not attributable to a dated Tradeify change", "reliable": false}
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_change_discovery_without_dated_official_delta_or_change_specific_calculation_demand",
+        "duplicate_of": ["HR-20260918-01"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": false},
+        "reopen_trigger": "A dated official Tradeify rule/plan/eligibility/payout change and a separately attributable public non-directional calculation question; compare at least two refresh signals with existing prop packages before any refresh.",
+        "rationale": "The independent log is a useful discovery signal, not a second reliable fact source. Current official account cards do not prove a new delta and do not provide a safe, plan-and-phase-specific risk budget. Do not manufacture a daily-loss explainer."
+      }
+    }
+  }
+}
