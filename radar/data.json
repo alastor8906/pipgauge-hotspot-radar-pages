@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-09-22T22:03:29+08:00",
-  "latest_scan_date": "2026-09-22",
+  "generated_at": "2026-09-23T22:06:29+08:00",
+  "latest_scan_date": "2026-09-23",
   "available_dates": [
+    "2026-09-23",
     "2026-09-22",
     "2026-09-21",
     "2026-09-20",
@@ -64,8 +65,246 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-09-23",
+      "generated_at": "2026-09-23T22:06:29+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 59,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 0,
+        "observation": 2,
+        "discarded": 2,
+        "total": 4,
+        "selected_average": 0,
+        "all_selected_pass_gate": true,
+        "content_ready": 0,
+        "playbook_ready": 0
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-09-23",
+          "candidate_id": "HR-20260923-01",
+          "status": "observation",
+          "topic": "September Flash Eurozone PMI Result Has No Distinct Search-to-Calculator Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 24,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 5,
+          "total_score": 94,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Margin",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "S&P Global's current release index and RTTNews independently establish the September flash eurozone result (composite 53.1 versus August 52.0), but the publicly verifiable discussion is policy and EUR/USD direction-first. A PMI print alone does not create a reader-specific pip-value, fixed-risk, margin or cost calculation journey; no new playbook or macro-risk refresh is justified.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "S&P Global PMI",
+                "url": "https://www.pmi.spglobal.com/Public/Release/PressReleases?language=en",
+                "source_type": "official_current_flash_pmi_release_index",
+                "published_at": "2026-09-23",
+                "freshness_role": "official release index for the September Flash PMI publication window and underlying release",
+                "reliable": true
+              },
+              {
+                "publisher": "RTTNews",
+                "url": "https://www.rttnews.com/3693202/eurozone-private-sector-growth-strongest-since-early-2023.aspx?type=gleco",
+                "source_type": "independent_english_result_report",
+                "published_at": "2026-09-23T06:30:00-04:00",
+                "freshness_role": "independently reports the S&P Global eurozone flash composite result of 53.1, August 52.0 and 51.7 expectation",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
+                "url": "https://www.forexfactory.com/calendar",
+                "source_type": "public_discussion_search_insufficient_signal",
+                "published_at": "checked 2026-09-23",
+                "freshness_role": "public PMI material was direction/policy/calendar first; no attributable non-directional pip-value, position-size, margin or cost question was retained",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_new_macro_fact_without_a_distinct_non_directional_search_to_calculator_journey",
+              "duplicate_of": [
+                "HR-20260917-01",
+                "HR-20260917-02"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A separately attributable public non-directional calculation query tied to this result, plus at least one further search, example or timing delta and a defined historical article to refresh rather than duplicate.",
+              "rationale": "The released result is fresh and cross-checked, but it does not make a generic FX risk table a timely answer. No user-specific fixed-risk, pip-value, margin or cost question, replacement numeric teaching input, or natural calculator path was verified."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-23",
+          "candidate_id": "HR-20260923-02",
+          "status": "observation",
+          "topic": "Tradeify Rule-Change Discovery Has No Dated Official Delta to Turn Into a Calculation Task",
+          "primary_site": "PositionMath",
+          "freshness": 18,
+          "traffic_potential": 17,
+          "calculator_fit": 25,
+          "evidence_quality": 10,
+          "actionability": 4,
+          "total_score": 74,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Daily Loss Limit",
+            "Consistency Rule",
+            "Prop Firm Simulator"
+          ],
+          "reason": "A public dated rule-log says it checked Tradeify on September 22, while the official site exposes current daily-loss and consistency fields, but no dated official plan/rule change or attributable reader question was verified. Current marketing copy is internally inconsistent across account cards, so it cannot support a safe risk-budget example or a refresh.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Tradeify",
+                "url": "https://tradeify.co/",
+                "source_type": "official_current_account_rule_summary",
+                "published_at": "checked 2026-09-23",
+                "freshness_role": "current cards expose daily-loss and consistency fields, but do not date a plan-specific change or safely supply a complete rule calculation",
+                "reliable": true
+              },
+              {
+                "publisher": "Ephore Market",
+                "url": "https://ephore-market.com/en/pages/prop-firm-rule-changes",
+                "source_type": "independent_dated_rule_change_discovery_log",
+                "published_at": "2026-09-22",
+                "freshness_role": "reports a current Tradeify check but instructs readers to confirm official pages; discovery does not establish an official current rule delta",
+                "reliable": false
+              },
+              {
+                "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
+                "url": "https://www.reddit.com/r/proptrading/",
+                "source_type": "public_discussion_search_insufficient_signal",
+                "published_at": "checked 2026-09-23",
+                "freshness_role": "generic daily-loss and consistency discussion was not attributable to a dated Tradeify change",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_change_discovery_without_dated_official_delta_or_change_specific_calculation_demand",
+              "duplicate_of": [
+                "HR-20260918-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": false
+              },
+              "reopen_trigger": "A dated official Tradeify rule/plan/eligibility/payout change and a separately attributable public non-directional calculation question; compare at least two refresh signals with existing prop packages before any refresh.",
+              "rationale": "The independent log is a useful discovery signal, not a second reliable fact source. Current official account cards do not prove a new delta and do not provide a safe, plan-and-phase-specific risk budget. Do not manufacture a daily-loss explainer."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-23",
+          "candidate_id": "HR-20260923-03",
+          "status": "discarded",
+          "topic": "CFTC Forecast-Contract Incentive and Sports-Data Filings",
+          "primary_site": "PositionMath",
+          "freshness": 24,
+          "traffic_potential": 14,
+          "calculator_fit": 8,
+          "evidence_quality": 15,
+          "actionability": 1,
+          "total_score": 62,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L",
+            "Position Size"
+          ],
+          "reason": "CFTC filings are fresh and public, but the inspected items concern exchange incentive programs, quote obligations or sports/event-contract operations rather than a user-facing PipGauge or PositionMath calculation problem. Sports and non-calculable exchange-operations angles are excluded."
+        },
+        {
+          "scan_date": "2026-09-23",
+          "candidate_id": "HR-20260923-04",
+          "status": "discarded",
+          "topic": "Directional PMI FX Equity Crypto and Geopolitical Commentary",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 60,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Price targets, trade calls, political framing, sports or entertainment, login-wall material and unverified social posts are outside the radar. They do not establish a fact-led, non-directional calculator journey."
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-09-23T22:05:00+08:00",
+          "source_count": 4,
+          "note": "检查 S&P Global PMI 当前发布索引、Tradeify 当前公开账户页、CFTC DCM rule filings 和既有 CME factor-futures 一手材料；只采用可公开访问的规则、发布和监管事实。"
+        },
+        {
+          "channel": "可靠英文媒体与独立变化发现",
+          "status": "complete",
+          "checked_at": "2026-09-23T22:05:00+08:00",
+          "source_count": 2,
+          "note": "RTTNews 独立报道 9 月 23 日 Eurozone Flash PMI；Ephore Market 的 dated log 仅作 prop-rule 发现和复核线索，不替代官方规则。"
+        },
+        {
+          "channel": "Reddit / ForexFactory / BabyPips",
+          "status": "complete",
+          "checked_at": "2026-09-23T22:05:00+08:00",
+          "source_count": 2,
+          "note": "检索公开 PMI、EUR/USD、position-size、Tradeify、daily-loss 和 consistency 讨论。可见 PMI/政策/方向与泛化风险语境，但未发现可归属到本期 PMI 结果或 Tradeify 本期变更的非方向性计算查询。"
+        },
+        {
+          "channel": "X / Quora",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-09-23T22:05:00+08:00",
+          "source_count": 0,
+          "note": "公开索引没有提供可核验、可归属的当期 PMI 或 Tradeify 计算查询；Quora 的 robots/login 限制内容未采用。未登录、发帖、评论、私信或操作任何账户。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-09-23_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-09-23_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json"
+      }
+    },
+    {
       "scan_date": "2026-09-22",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 58,
@@ -354,7 +593,7 @@
     },
     {
       "scan_date": "2026-09-21",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 57,
@@ -576,7 +815,7 @@
     },
     {
       "scan_date": "2026-09-20",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 56,
@@ -861,7 +1100,7 @@
     },
     {
       "scan_date": "2026-09-19",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 55,
@@ -1136,7 +1375,7 @@
     },
     {
       "scan_date": "2026-09-18",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 54,
@@ -1418,7 +1657,7 @@
     },
     {
       "scan_date": "2026-09-17",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 53,
@@ -1763,7 +2002,7 @@
     },
     {
       "scan_date": "2026-09-16",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 52,
@@ -2053,7 +2292,7 @@
     },
     {
       "scan_date": "2026-09-15",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 51,
@@ -2267,7 +2506,7 @@
     },
     {
       "scan_date": "2026-09-14",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 50,
@@ -2471,7 +2710,7 @@
     },
     {
       "scan_date": "2026-09-13",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 49,
@@ -2676,7 +2915,7 @@
     },
     {
       "scan_date": "2026-09-12",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 48,
@@ -2862,7 +3101,7 @@
     },
     {
       "scan_date": "2026-09-11",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 47,
@@ -3079,7 +3318,7 @@
     },
     {
       "scan_date": "2026-09-10",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 46,
@@ -3365,7 +3604,7 @@
     },
     {
       "scan_date": "2026-09-09",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 45,
@@ -3645,7 +3884,7 @@
     },
     {
       "scan_date": "2026-09-08",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 44,
@@ -3974,7 +4213,7 @@
     },
     {
       "scan_date": "2026-09-07",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 43,
@@ -4276,7 +4515,7 @@
     },
     {
       "scan_date": "2026-09-06",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 42,
@@ -4592,7 +4831,7 @@
     },
     {
       "scan_date": "2026-09-05",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 41,
@@ -4914,7 +5153,7 @@
     },
     {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -5227,7 +5466,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -5538,7 +5777,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -5869,7 +6108,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -6207,7 +6446,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -6600,7 +6839,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -7010,7 +7249,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -7482,7 +7721,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -7827,7 +8066,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -8172,7 +8411,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -8624,7 +8863,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -9037,7 +9276,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -9269,7 +9508,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -9714,7 +9953,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -10089,7 +10328,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -10481,7 +10720,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -10857,7 +11096,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -11181,7 +11420,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -11564,7 +11803,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -11905,7 +12144,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -12280,7 +12519,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -12668,7 +12907,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -13013,7 +13252,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -13341,7 +13580,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -13653,7 +13892,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -13974,7 +14213,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -14335,7 +14574,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -14688,7 +14927,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -15132,7 +15371,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -15641,7 +15880,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -16111,7 +16350,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -16654,7 +16893,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -16926,7 +17165,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -17239,7 +17478,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -17674,7 +17913,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -18188,7 +18427,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -18697,7 +18936,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -19165,7 +19404,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -19579,7 +19818,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -19978,7 +20217,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-09-22T22:03:29+08:00",
+      "generated_at": "2026-09-23T22:06:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -20417,10 +20656,10 @@
       }
     }
   ],
-  "scan_date": "2026-09-22",
+  "scan_date": "2026-09-23",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 58,
+    "day": 59,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -20429,8 +20668,8 @@
   },
   "stats": {
     "selected": 0,
-    "observation": 3,
-    "discarded": 1,
+    "observation": 2,
+    "discarded": 2,
     "total": 4,
     "selected_average": 0,
     "all_selected_pass_gate": true,
@@ -20439,17 +20678,17 @@
   },
   "candidates": [
     {
-      "scan_date": "2026-09-22",
-      "candidate_id": "HR-20260922-02",
+      "scan_date": "2026-09-23",
+      "candidate_id": "HR-20260923-01",
       "status": "observation",
-      "topic": "September Flash PMI Is Near but Still Has No Distinct Search-to-Calculator Journey",
+      "topic": "September Flash Eurozone PMI Result Has No Distinct Search-to-Calculator Journey",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 21,
-      "calculator_fit": 19,
+      "traffic_potential": 24,
+      "calculator_fit": 25,
       "evidence_quality": 15,
-      "actionability": 4,
-      "total_score": 84,
+      "actionability": 5,
+      "total_score": 94,
       "hard_gate": false,
       "reliable_sources": 2,
       "fresh_signal": true,
@@ -20460,102 +20699,103 @@
         "P&L",
         "Spread Cost"
       ],
-      "reason": "S&P Global's dated 2026 release calendar and Kiplinger's current weekly calendar independently place the September Flash PMI window on September 23. No cross-verified published result, attributable non-directional pip-value/fixed-risk/margin/cost query, replacement numeric input or natural calculator bridge was verified. A generic event-risk table would repeat prior macro packages.",
+      "reason": "S&P Global's current release index and RTTNews independently establish the September flash eurozone result (composite 53.1 versus August 52.0), but the publicly verifiable discussion is policy and EUR/USD direction-first. A PMI print alone does not create a reader-specific pip-value, fixed-risk, margin or cost calculation journey; no new playbook or macro-risk refresh is justified.",
       "scan_audit": {
         "sources": [
           {
             "publisher": "S&P Global PMI",
-            "url": "https://www.pmi.spglobal.com/Public/Home/PDF/UK_Rel_Dates",
-            "source_type": "official_dated_2026_release_schedule",
-            "published_at": "2026-04-13",
-            "freshness_role": "lists the September 23, 2026 Flash PMI release times for US, UK, Eurozone and other major economies",
+            "url": "https://www.pmi.spglobal.com/Public/Release/PressReleases?language=en",
+            "source_type": "official_current_flash_pmi_release_index",
+            "published_at": "2026-09-23",
+            "freshness_role": "official release index for the September Flash PMI publication window and underlying release",
             "reliable": true
           },
           {
-            "publisher": "Kiplinger",
-            "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
-            "source_type": "independent_current_english_week_ahead_calendar",
-            "published_at": "2026-09-18",
-            "freshness_role": "independently lists the September 23 09:45 ET S&P Global Flash Services and Manufacturing PMI window",
+            "publisher": "RTTNews",
+            "url": "https://www.rttnews.com/3693202/eurozone-private-sector-growth-strongest-since-early-2023.aspx?type=gleco",
+            "source_type": "independent_english_result_report",
+            "published_at": "2026-09-23T06:30:00-04:00",
+            "freshness_role": "independently reports the S&P Global eurozone flash composite result of 53.1, August 52.0 and 51.7 expectation",
             "reliable": true
           },
           {
-            "publisher": "ForexFactory / Reddit public indexes",
-            "url": "https://www.forexfactory.com/calendar?range=sep22.2026-sep25.2026",
+            "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
+            "url": "https://www.forexfactory.com/calendar",
             "source_type": "public_discussion_search_insufficient_signal",
-            "published_at": "checked 2026-09-22",
-            "freshness_role": "calendar and forum material is event- or direction-first rather than an attributable non-directional calculator query; inconsistent displayed release-date wording is not used as a fact source",
+            "published_at": "checked 2026-09-23",
+            "freshness_role": "public PMI material was direction/policy/calendar first; no attributable non-directional pip-value, position-size, margin or cost question was retained",
             "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_scheduled_macro_window_without_published_result_or_distinct_non_directional_search_to_calculator_path",
+          "decision_gate": "observation_new_macro_fact_without_a_distinct_non_directional_search_to_calculator_journey",
           "duplicate_of": [
-            "HR-20260921-02"
+            "HR-20260917-01",
+            "HR-20260917-02"
           ],
           "refresh_signals": {
-            "fact_delta": false,
+            "fact_delta": true,
             "search_delta": false,
             "example_delta": false,
-            "window_delta": false
+            "window_delta": true
           },
-          "reopen_trigger": "A published September PMI result cross-verified by two reliable sources, plus an attributable public non-directional calculation question and at least one further refresh signal that supplies a distinct input or workflow.",
-          "rationale": "The release remains within one day, but has not yet supplied a result, a reader question, a replacement numeric teaching input, or a natural calculator bridge. A generic FX event-risk grid would duplicate historical macro packages and invent a traffic path."
+          "reopen_trigger": "A separately attributable public non-directional calculation query tied to this result, plus at least one further search, example or timing delta and a defined historical article to refresh rather than duplicate.",
+          "rationale": "The released result is fresh and cross-checked, but it does not make a generic FX risk table a timely answer. No user-specific fixed-risk, pip-value, margin or cost question, replacement numeric teaching input, or natural calculator path was verified."
         }
       }
     },
     {
-      "scan_date": "2026-09-22",
-      "candidate_id": "HR-20260922-03",
+      "scan_date": "2026-09-23",
+      "candidate_id": "HR-20260923-02",
       "status": "observation",
-      "topic": "FTMO Futures Launch Has No Second Qualified Refresh Delta",
-      "primary_site": "PipGauge",
-      "freshness": 20,
-      "traffic_potential": 20,
+      "topic": "Tradeify Rule-Change Discovery Has No Dated Official Delta to Turn Into a Calculation Task",
+      "primary_site": "PositionMath",
+      "freshness": 18,
+      "traffic_potential": 17,
       "calculator_fit": 25,
-      "evidence_quality": 15,
-      "actionability": 3,
-      "total_score": 83,
-      "hard_gate": true,
-      "reliable_sources": 2,
+      "evidence_quality": 10,
+      "actionability": 4,
+      "total_score": 74,
+      "hard_gate": false,
+      "reliable_sources": 1,
       "fresh_signal": true,
       "calculator_mapping": [
         "Daily Loss Limit",
-        "Position Size",
+        "Consistency Rule",
         "Prop Firm Simulator"
       ],
-      "reason": "FTMO's September 17 formal launch and the independent public rule check remain verifiable, while a September 19 generic prop-risk discussion only supports broad daily-limit interest. HR-20260918-01 already owns the launch-specific 50K Pro rule-reading path; no official rule, user-query, readable-example or window delta supports a second refresh or another same-shape article.",
+      "reason": "A public dated rule-log says it checked Tradeify on September 22, while the official site exposes current daily-loss and consistency fields, but no dated official plan/rule change or attributable reader question was verified. Current marketing copy is internally inconsistent across account cards, so it cannot support a safe risk-budget example or a refresh.",
       "scan_audit": {
         "sources": [
           {
-            "publisher": "FTMO",
-            "url": "https://ftmo.com/en/press-releases/",
-            "source_type": "official_dated_futures_launch_release",
-            "published_at": "2026-09-17",
-            "freshness_role": "confirms the formal launch of FTMO Futures; it is the source of product facts but is now outside the default 72-hour event window",
+            "publisher": "Tradeify",
+            "url": "https://tradeify.co/",
+            "source_type": "official_current_account_rule_summary",
+            "published_at": "checked 2026-09-23",
+            "freshness_role": "current cards expose daily-loss and consistency fields, but do not date a plan-specific change or safely supply a complete rule calculation",
             "reliable": true
           },
           {
-            "publisher": "Prop Firm Briefing",
-            "url": "https://propfirmbriefing.com/prop-firm-rules/ftmo-futures/",
-            "source_type": "independent_public_rule_check",
-            "published_at": "2026-09-08; checked 2026-09-22",
-            "freshness_role": "independent rule-reading page says it has recorded no published rule change since its September 6 verification; it cannot create a new official rule delta",
-            "reliable": true
+            "publisher": "Ephore Market",
+            "url": "https://ephore-market.com/en/pages/prop-firm-rule-changes",
+            "source_type": "independent_dated_rule_change_discovery_log",
+            "published_at": "2026-09-22",
+            "freshness_role": "reports a current Tradeify check but instructs readers to confirm official pages; discovery does not establish an official current rule delta",
+            "reliable": false
           },
           {
-            "publisher": "Reddit",
-            "url": "https://www.reddit.com/r/Forex/comments/1u8ckib/i_simulated_10000_ftmo_challenges_with_a/",
-            "source_type": "public_recent_prop_risk_discussion_heat_only",
-            "published_at": "2026-09-19",
-            "freshness_role": "recent generic discussion shows continuing daily-limit and losing-streak interest, but does not establish an FTMO Futures rule change, contract-specific input, or launch-specific search journey",
+            "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
+            "url": "https://www.reddit.com/r/proptrading/",
+            "source_type": "public_discussion_search_insufficient_signal",
+            "published_at": "checked 2026-09-23",
+            "freshness_role": "generic daily-loss and consistency discussion was not attributable to a dated Tradeify change",
             "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_existing_ftmo_futures_launch_package_has_no_second_fact_search_example_or_window_delta",
+          "decision_gate": "observation_change_discovery_without_dated_official_delta_or_change_specific_calculation_demand",
           "duplicate_of": [
             "HR-20260918-01"
           ],
@@ -20565,89 +20805,37 @@
             "example_delta": false,
             "window_delta": false
           },
-          "reopen_trigger": "A dated FTMO plan, rule, eligibility, platform, payout, or objective change plus an independently attributable launch- or change-specific non-directional calculation query; two refresh signals are required before refreshing HR-20260918-01.",
-          "rationale": "The formal launch was already refreshed on September 18 and its traffic window ended September 20. The current independent rule check reports no change; a generic recent prop-risk conversation is heat only and does not create a second qualified refresh. Do not manufacture another daily-loss article."
+          "reopen_trigger": "A dated official Tradeify rule/plan/eligibility/payout change and a separately attributable public non-directional calculation question; compare at least two refresh signals with existing prop packages before any refresh.",
+          "rationale": "The independent log is a useful discovery signal, not a second reliable fact source. Current official account cards do not prove a new delta and do not provide a safe, plan-and-phase-specific risk budget. Do not manufacture a daily-loss explainer."
         }
       }
     },
     {
-      "scan_date": "2026-09-22",
-      "candidate_id": "HR-20260922-01",
-      "status": "observation",
-      "topic": "CME E-mini Factor Futures Remain Without a Verified Retail Calculation Journey",
+      "scan_date": "2026-09-23",
+      "candidate_id": "HR-20260923-03",
+      "status": "discarded",
+      "topic": "CFTC Forecast-Contract Incentive and Sports-Data Filings",
       "primary_site": "PositionMath",
       "freshness": 24,
-      "traffic_potential": 21,
-      "calculator_fit": 16,
+      "traffic_potential": 14,
+      "calculator_fit": 8,
       "evidence_quality": 15,
-      "actionability": 4,
-      "total_score": 80,
-      "hard_gate": true,
-      "reliable_sources": 2,
+      "actionability": 1,
+      "total_score": 62,
+      "hard_gate": false,
+      "reliable_sources": 1,
       "fresh_signal": true,
       "calculator_mapping": [
-        "Position Size",
         "P&L",
-        "Portfolio Heat"
+        "Position Size"
       ],
-      "reason": "CME's September 21 first trade date and public multiplier table remain verifiable, with FinanceFeeds as independent launch discovery. Relative to the September 21 audit there is no fact, search, example or window delta, and public Reddit, X, Quora, BabyPips and ForexFactory checks still yield no attributable non-directional quantity, tick-value, notional, margin or portfolio-risk question. Generic calculators cannot safely substitute for contract specifications, so no playbook is created.",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "CME Group",
-            "url": "https://www.cmegroup.com/notices/electronic-trading/2026/09/20260914.html",
-            "source_type": "official_dated_globex_listing_notice",
-            "published_at": "2026-09-14",
-            "freshness_role": "sets the September 20 effective date and September 21 first trade date for the five CME and one CBOT E-mini Factor futures, pending completion of regulatory review",
-            "reliable": true
-          },
-          {
-            "publisher": "CME Group",
-            "url": "https://www.cmegroup.com/articles/faqs/faq-e-mini-factor-futures.html",
-            "source_type": "official_current_contract_faq_and_multiplier_table",
-            "published_at": "checked 2026-09-22",
-            "freshness_role": "current FAQ lists product codes, contract multipliers and settlement mechanics; same publisher is not a second independent source",
-            "reliable": true
-          },
-          {
-            "publisher": "FinanceFeeds",
-            "url": "https://financefeeds.com/cme-will-put-six-equity-factors-into-futures-on-21-september/",
-            "source_type": "independent_english_industry_launch_discovery",
-            "published_at": "2026-08-28",
-            "freshness_role": "independently identifies the launch, but does not establish retail platform availability, margin, liquidity, or a calculator demand",
-            "reliable": true
-          },
-          {
-            "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
-            "url": "https://www.cmegroup.com/markets/equities/sp-500-dow-jones-factor-futures.html",
-            "source_type": "public_discussion_search_negative_result",
-            "published_at": "checked 2026-09-22",
-            "freshness_role": "public discovery found product and directional-factor discussion, but no attributable non-directional quantity, tick-value, notional, margin, or portfolio-risk question; linked CME page is a specification source, not a community source",
-            "reliable": false
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_post_listing_specification_visibility_without_verified_retail_calculation_demand_or_safe_existing_calculator_bridge",
-          "duplicate_of": [
-            "HR-20260921-01"
-          ],
-          "refresh_signals": {
-            "fact_delta": false,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": false
-          },
-          "reopen_trigger": "A dated official tick, margin, or final contract input together with a separately attributable public, non-directional quantity, tick-value, notional, or portfolio-risk question that an existing calculator can answer without substituting for the specification.",
-          "rationale": "The contracts are now listed, but that is not a new September 22 fact relative to the September 21 audit. No verified public reader journey exists. Generic Position Size, P&L, or Portfolio Heat arithmetic would assume unavailable contract inputs or manufacture demand; the qualified refresh gate and natural calculator bridge remain absent."
-        }
-      }
+      "reason": "CFTC filings are fresh and public, but the inspected items concern exchange incentive programs, quote obligations or sports/event-contract operations rather than a user-facing PipGauge or PositionMath calculation problem. Sports and non-calculable exchange-operations angles are excluded."
     },
     {
-      "scan_date": "2026-09-22",
-      "candidate_id": "HR-20260922-04",
+      "scan_date": "2026-09-23",
+      "candidate_id": "HR-20260923-04",
       "status": "discarded",
-      "topic": "Directional Factor Futures PMI FX Equity Crypto and Unverifiable Social Commentary",
+      "topic": "Directional PMI FX Equity Crypto and Geopolitical Commentary",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 25,
@@ -20661,43 +20849,43 @@
       "calculator_mapping": [
         "P&L"
       ],
-      "reason": "Price targets, trade signals, factor-performance calls, political framing, sports or entertainment, login-wall material, pure crypto hype and unverifiable social posts are excluded. They do not establish a fact-led non-directional calculator journey."
+      "reason": "Price targets, trade calls, political framing, sports or entertainment, login-wall material and unverified social posts are outside the radar. They do not establish a fact-led, non-directional calculator journey."
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-09-22T22:00:00+08:00",
-      "source_count": 6,
-      "note": "复核 CME 9 月 14 日 Globex listing notice、E-mini Factor futures FAQ 与 8 月 26 日 clearing advisory；复核 S&P Global 2026 PMI release-date 表；复核 FTMO 9 月 17 日 Futures launch 与当前 Trading Updates。只采用带日期、可公开访问的规则、上市和发布时点。"
+      "checked_at": "2026-09-23T22:05:00+08:00",
+      "source_count": 4,
+      "note": "检查 S&P Global PMI 当前发布索引、Tradeify 当前公开账户页、CFTC DCM rule filings 和既有 CME factor-futures 一手材料；只采用可公开访问的规则、发布和监管事实。"
     },
     {
-      "channel": "可靠英文媒体与独立日程核查",
+      "channel": "可靠英文媒体与独立变化发现",
       "status": "complete",
-      "checked_at": "2026-09-22T22:00:00+08:00",
-      "source_count": 3,
-      "note": "复核 FinanceFeeds 的 CME launch 发现页、Kiplinger 的当周经济日历，以及 Prop Firm Briefing 的 FTMO Futures 独立规则复查页。它们不替代 CME、S&P Global 或 FTMO 的一手事实。"
+      "checked_at": "2026-09-23T22:05:00+08:00",
+      "source_count": 2,
+      "note": "RTTNews 独立报道 9 月 23 日 Eurozone Flash PMI；Ephore Market 的 dated log 仅作 prop-rule 发现和复核线索，不替代官方规则。"
     },
     {
       "channel": "Reddit / ForexFactory / BabyPips",
       "status": "complete",
-      "checked_at": "2026-09-22T22:00:00+08:00",
-      "source_count": 4,
-      "note": "检索公开 CME factor-futures、9 月 PMI 与 FTMO Futures/maximum-loss 讨论。ForexFactory 公开周历可见，Reddit 可见的近期 prop-risk 讨论为通用规则/体验语境；未得到可归属到新 CME 合约、PMI 结果或 FTMO Futures 新变更的非方向性计算查询。BabyPips 未发现可核验的当期补充信号。"
+      "checked_at": "2026-09-23T22:05:00+08:00",
+      "source_count": 2,
+      "note": "检索公开 PMI、EUR/USD、position-size、Tradeify、daily-loss 和 consistency 讨论。可见 PMI/政策/方向与泛化风险语境，但未发现可归属到本期 PMI 结果或 Tradeify 本期变更的非方向性计算查询。"
     },
     {
       "channel": "X / Quora",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-09-22T22:00:00+08:00",
+      "checked_at": "2026-09-23T22:05:00+08:00",
       "source_count": 0,
-      "note": "公开索引没有提供可核验、可归属的 CME factor-futures、PMI 或 FTMO Futures 计算查询；Quora 受 robots/login 限制，未采用墙后内容。未登录、发帖、评论、私信或操作任何账户。"
+      "note": "公开索引没有提供可核验、可归属的当期 PMI 或 Tradeify 计算查询；Quora 的 robots/login 限制内容未采用。未登录、发帖、评论、私信或操作任何账户。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-09-22_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-09-22_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-09-23_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-09-23_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
