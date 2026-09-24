@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-09-23T22:06:29+08:00",
-  "latest_scan_date": "2026-09-23",
+  "generated_at": "2026-09-24T22:04:29+08:00",
+  "latest_scan_date": "2026-09-24",
   "available_dates": [
+    "2026-09-24",
     "2026-09-23",
     "2026-09-22",
     "2026-09-21",
@@ -65,8 +66,288 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-09-24",
+      "generated_at": "2026-09-24T22:04:29+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 60,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 0,
+        "observation": 3,
+        "discarded": 1,
+        "total": 4,
+        "selected_average": 0,
+        "all_selected_pass_gate": true,
+        "content_ready": 0,
+        "playbook_ready": 0
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-09-24",
+          "candidate_id": "HR-20260924-01",
+          "status": "observation",
+          "topic": "SNB Holds at 0 Percent but Has No Verified CHF Calculation Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 23,
+          "calculator_fit": 22,
+          "evidence_quality": 15,
+          "actionability": 4,
+          "total_score": 89,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Margin",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "SNB's September 24 dated assessment and Reuters' independent same-day report verify the 0% hold and current CHF attention. Public ForexFactory and Reddit material is calendar, policy or directional commentary; no attributable reader-specific pip-value, fixed-risk, margin or cost question, defined traffic window or natural calculator bridge was verified.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Swiss National Bank",
+                "url": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260924",
+                "source_type": "official_dated_monetary_policy_assessment",
+                "published_at": "2026-09-24",
+                "freshness_role": "official assessment states that the SNB policy rate remains 0% and supplies the current inflation forecast context",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://squawknews.com/news/354854-swiss-national-bank-holds-rates-as-expected-despite-rising-inflation",
+                "source_type": "independent_english_same_day_news_report_via_public_syndication",
+                "published_at": "2026-09-24T07:30:00Z",
+                "freshness_role": "Reuters byline independently reports the expected 0% hold and the current inflation context",
+                "reliable": true
+              },
+              {
+                "publisher": "ForexFactory / Reddit public indexes",
+                "url": "https://www.forexfactory.com/calendar?fr=1",
+                "source_type": "public_event_and_discussion_search_insufficient_signal",
+                "published_at": "checked 2026-09-24",
+                "freshness_role": "calendar and public discussion were policy, CHF direction or general education first; no attributable non-directional CHF calculation request was retained",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_new_macro_fact_without_verified_non_directional_search_to_calculator_journey",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A publicly attributable CHF account-currency, pip-value, fixed-risk, margin or cost question tied to this decision, plus a distinct replacement numeric example or current search phrase and a defined article target if one exists.",
+              "rationale": "The decision is fresh and independently verified, but event attention is not itself a calculator journey. Creating a generic CHF risk table would not answer a verified reader question and would manufacture a traffic path."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-24",
+          "candidate_id": "HR-20260924-02",
+          "status": "observation",
+          "topic": "Norges Bank Raises to 4.50 Percent but Has No Verified NOK Calculation Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 20,
+          "calculator_fit": 21,
+          "evidence_quality": 15,
+          "actionability": 4,
+          "total_score": 85,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Margin",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "Norges Bank's English September 24 release and Reuters' independent report verify the 25bp increase to 4.50%. Public calendar coverage proves event awareness but not a non-directional, reader-specific EUR/NOK or USD/NOK quantity, pip-value, margin or cost calculation request; no new playbook is created.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Norges Bank",
+                "url": "https://www.norges-bank.no/en/news-events/news/Press-releases/2026/2026-09-24-rate/",
+                "source_type": "official_dated_monetary_policy_decision",
+                "published_at": "2026-09-24T10:00:00+02:00",
+                "freshness_role": "official English release records a 25bp increase from 4.25% to 4.50% and the next decision date",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.boursorama.com/bourse/actualites/norvege-la-banque-centrale-releve-ses-taux-et-prevoit-une-nouvelle-hausse-0d8a89b91dd95ffe15a4983d27289b52",
+                "source_type": "independent_same_day_news_report_via_public_syndication",
+                "published_at": "2026-09-24T10:28:00+02:00",
+                "freshness_role": "Reuters byline independently reports the 25bp increase to 4.50% and current NOK reaction context",
+                "reliable": true
+              },
+              {
+                "publisher": "ForexFactory public calendar",
+                "url": "https://www.forexfactory.com/calendar?range=sep17.2026-sep28.2026",
+                "source_type": "public_calendar_search_insufficient_signal",
+                "published_at": "checked 2026-09-24",
+                "freshness_role": "public economic-calendar discovery supports event awareness but not an attributable non-directional NOK calculation query",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_new_macro_fact_without_verified_non_directional_search_to_calculator_journey",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A publicly attributable EUR/NOK or USD/NOK account-currency, pip-value, fixed-risk, margin or cost query tied to the September 24 decision, with a distinct numeric example and an explicit timely calculator path.",
+              "rationale": "The rate surprise is factual and current, but the checked public material establishes market attention, not a reader-specific calculation task. No content or playbook may be created merely from a policy headline."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-24",
+          "candidate_id": "HR-20260924-03",
+          "status": "observation",
+          "topic": "SARB Raises to 7.25 Percent but Has No Verified ZAR Calculation Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 19,
+          "calculator_fit": 20,
+          "evidence_quality": 15,
+          "actionability": 4,
+          "total_score": 83,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Margin",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "SARB's dated September statement and Reuters' independent report verify the 25bp increase to 7.25% effective September 25. No publicly attributable non-directional USD/ZAR or EUR/ZAR risk, pip-value, margin or cost query and no readable replacement example were verified; generic central-bank math would not be a natural calculator path.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "South African Reserve Bank",
+                "url": "https://www.reservebank.co.za/en/home/publications/publication-detail-pages/statements/monetary-policy-statements/2026/september",
+                "source_type": "official_dated_monetary_policy_statement",
+                "published_at": "2026-09-24",
+                "freshness_role": "official statement records a 25bp increase to 7.25% effective 25 September",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.tradingview.com/news/reuters.com%2C2026-09-24%3Anewsml_Zaw668Jbt%3A0-zawya-south-african-reserve-bank-hikes-rates-as-oil-middle-east-tensions-bite/",
+                "source_type": "independent_english_same_day_news_report_via_public_syndication",
+                "published_at": "2026-09-24",
+                "freshness_role": "Reuters report independently identifies the 25bp increase from 7.00% to 7.25% and its 25 September effective date",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
+                "url": "https://www.forexfactory.com/calendar",
+                "source_type": "public_discussion_search_insufficient_signal",
+                "published_at": "checked 2026-09-24",
+                "freshness_role": "no attributable non-directional USD/ZAR or EUR/ZAR pip-value, position-size, margin or cost question was found in public material",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_new_macro_fact_without_verified_non_directional_search_to_calculator_journey",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A separately attributable public USD/ZAR or EUR/ZAR calculation question tied to the effective-date or decision result, plus a second search, example or timing delta and a defined non-duplicate article path.",
+              "rationale": "A fresh policy result and Reuters confirmation do not establish that a generic risk formula will capture current demand. Without a concrete calculation intent, the item remains a watch only."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-24",
+          "candidate_id": "HR-20260924-04",
+          "status": "discarded",
+          "topic": "Prop Rule Changelog Claims and Directional Social Commentary",
+          "primary_site": "PipGauge",
+          "freshness": 24,
+          "traffic_potential": 20,
+          "calculator_fit": 8,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 59,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Position Size",
+            "Daily Loss Limit"
+          ],
+          "reason": "An industry rule-change log is only a discovery lead until a dated official plan-specific change and independent reader demand are verified. Current public Topstep complaint, prediction posts, price targets, crypto hype, politics, sports, entertainment, login-wall material and unverifiable social commentary are excluded."
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-09-24T22:02:16+08:00",
+          "source_count": 3,
+          "note": "核验 SNB、Norges Bank 与 SARB 当日英文政策发布；利率、变动幅度和生效日只取各央行正式文本。"
+        },
+        {
+          "channel": "可靠英文媒体与独立报道",
+          "status": "complete",
+          "checked_at": "2026-09-24T22:02:16+08:00",
+          "source_count": 3,
+          "note": "核验 Reuters 当日对 SNB、Norges Bank 与 SARB 决定的独立报道（通过公开转载页读取）；转载不替代官方数字与规则。"
+        },
+        {
+          "channel": "Reddit / ForexFactory / BabyPips",
+          "status": "complete",
+          "checked_at": "2026-09-24T22:02:16+08:00",
+          "source_count": 2,
+          "note": "ForexFactory 当日公开日历确认 SNB 时段与市场发现语境；Reddit 公开索引复核 CHF 与通用仓位讨论。没有保留可归属、非方向性的 CHF、NOK 或 ZAR 计算问题。BabyPips 未发现本期新增可核验计算旅程。"
+        },
+        {
+          "channel": "X / Quora",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-09-24T22:02:16+08:00",
+          "source_count": 0,
+          "note": "公开索引未提供可核验、与本期央行结果绑定的新增非方向性计算问题；未使用登录、墙后或不可验证材料。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-09-24_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-09-24_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json"
+      }
+    },
+    {
       "scan_date": "2026-09-23",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 59,
@@ -304,7 +585,7 @@
     },
     {
       "scan_date": "2026-09-22",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 58,
@@ -593,7 +874,7 @@
     },
     {
       "scan_date": "2026-09-21",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 57,
@@ -815,7 +1096,7 @@
     },
     {
       "scan_date": "2026-09-20",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 56,
@@ -1100,7 +1381,7 @@
     },
     {
       "scan_date": "2026-09-19",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 55,
@@ -1375,7 +1656,7 @@
     },
     {
       "scan_date": "2026-09-18",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 54,
@@ -1657,7 +1938,7 @@
     },
     {
       "scan_date": "2026-09-17",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 53,
@@ -2002,7 +2283,7 @@
     },
     {
       "scan_date": "2026-09-16",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 52,
@@ -2292,7 +2573,7 @@
     },
     {
       "scan_date": "2026-09-15",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 51,
@@ -2506,7 +2787,7 @@
     },
     {
       "scan_date": "2026-09-14",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 50,
@@ -2710,7 +2991,7 @@
     },
     {
       "scan_date": "2026-09-13",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 49,
@@ -2915,7 +3196,7 @@
     },
     {
       "scan_date": "2026-09-12",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 48,
@@ -3101,7 +3382,7 @@
     },
     {
       "scan_date": "2026-09-11",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 47,
@@ -3318,7 +3599,7 @@
     },
     {
       "scan_date": "2026-09-10",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 46,
@@ -3604,7 +3885,7 @@
     },
     {
       "scan_date": "2026-09-09",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 45,
@@ -3884,7 +4165,7 @@
     },
     {
       "scan_date": "2026-09-08",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 44,
@@ -4213,7 +4494,7 @@
     },
     {
       "scan_date": "2026-09-07",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 43,
@@ -4515,7 +4796,7 @@
     },
     {
       "scan_date": "2026-09-06",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 42,
@@ -4831,7 +5112,7 @@
     },
     {
       "scan_date": "2026-09-05",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 41,
@@ -5153,7 +5434,7 @@
     },
     {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -5466,7 +5747,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -5777,7 +6058,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -6108,7 +6389,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -6446,7 +6727,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -6839,7 +7120,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -7249,7 +7530,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -7721,7 +8002,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -8066,7 +8347,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -8411,7 +8692,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -8863,7 +9144,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -9276,7 +9557,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -9508,7 +9789,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -9953,7 +10234,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -10328,7 +10609,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -10720,7 +11001,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -11096,7 +11377,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -11420,7 +11701,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -11803,7 +12084,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -12144,7 +12425,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -12519,7 +12800,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -12907,7 +13188,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -13252,7 +13533,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -13580,7 +13861,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -13892,7 +14173,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -14213,7 +14494,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -14574,7 +14855,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -14927,7 +15208,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -15371,7 +15652,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -15880,7 +16161,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -16350,7 +16631,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -16893,7 +17174,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -17165,7 +17446,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -17478,7 +17759,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -17913,7 +18194,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -18427,7 +18708,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -18936,7 +19217,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -19404,7 +19685,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -19818,7 +20099,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -20217,7 +20498,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-09-23T22:06:29+08:00",
+      "generated_at": "2026-09-24T22:04:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -20656,10 +20937,10 @@
       }
     }
   ],
-  "scan_date": "2026-09-23",
+  "scan_date": "2026-09-24",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 59,
+    "day": 60,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -20668,8 +20949,8 @@
   },
   "stats": {
     "selected": 0,
-    "observation": 2,
-    "discarded": 2,
+    "observation": 3,
+    "discarded": 1,
     "total": 4,
     "selected_average": 0,
     "all_selected_pass_gate": true,
@@ -20678,17 +20959,17 @@
   },
   "candidates": [
     {
-      "scan_date": "2026-09-23",
-      "candidate_id": "HR-20260923-01",
+      "scan_date": "2026-09-24",
+      "candidate_id": "HR-20260924-01",
       "status": "observation",
-      "topic": "September Flash Eurozone PMI Result Has No Distinct Search-to-Calculator Journey",
+      "topic": "SNB Holds at 0 Percent but Has No Verified CHF Calculation Journey",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 24,
-      "calculator_fit": 25,
+      "traffic_potential": 23,
+      "calculator_fit": 22,
       "evidence_quality": 15,
-      "actionability": 5,
-      "total_score": 94,
+      "actionability": 4,
+      "total_score": 89,
       "hard_gate": false,
       "reliable_sources": 2,
       "fresh_signal": true,
@@ -20699,193 +20980,235 @@
         "P&L",
         "Spread Cost"
       ],
-      "reason": "S&P Global's current release index and RTTNews independently establish the September flash eurozone result (composite 53.1 versus August 52.0), but the publicly verifiable discussion is policy and EUR/USD direction-first. A PMI print alone does not create a reader-specific pip-value, fixed-risk, margin or cost calculation journey; no new playbook or macro-risk refresh is justified.",
+      "reason": "SNB's September 24 dated assessment and Reuters' independent same-day report verify the 0% hold and current CHF attention. Public ForexFactory and Reddit material is calendar, policy or directional commentary; no attributable reader-specific pip-value, fixed-risk, margin or cost question, defined traffic window or natural calculator bridge was verified.",
       "scan_audit": {
         "sources": [
           {
-            "publisher": "S&P Global PMI",
-            "url": "https://www.pmi.spglobal.com/Public/Release/PressReleases?language=en",
-            "source_type": "official_current_flash_pmi_release_index",
-            "published_at": "2026-09-23",
-            "freshness_role": "official release index for the September Flash PMI publication window and underlying release",
+            "publisher": "Swiss National Bank",
+            "url": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260924",
+            "source_type": "official_dated_monetary_policy_assessment",
+            "published_at": "2026-09-24",
+            "freshness_role": "official assessment states that the SNB policy rate remains 0% and supplies the current inflation forecast context",
             "reliable": true
           },
           {
-            "publisher": "RTTNews",
-            "url": "https://www.rttnews.com/3693202/eurozone-private-sector-growth-strongest-since-early-2023.aspx?type=gleco",
-            "source_type": "independent_english_result_report",
-            "published_at": "2026-09-23T06:30:00-04:00",
-            "freshness_role": "independently reports the S&P Global eurozone flash composite result of 53.1, August 52.0 and 51.7 expectation",
+            "publisher": "Reuters",
+            "url": "https://squawknews.com/news/354854-swiss-national-bank-holds-rates-as-expected-despite-rising-inflation",
+            "source_type": "independent_english_same_day_news_report_via_public_syndication",
+            "published_at": "2026-09-24T07:30:00Z",
+            "freshness_role": "Reuters byline independently reports the expected 0% hold and the current inflation context",
             "reliable": true
           },
           {
-            "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
-            "url": "https://www.forexfactory.com/calendar",
-            "source_type": "public_discussion_search_insufficient_signal",
-            "published_at": "checked 2026-09-23",
-            "freshness_role": "public PMI material was direction/policy/calendar first; no attributable non-directional pip-value, position-size, margin or cost question was retained",
+            "publisher": "ForexFactory / Reddit public indexes",
+            "url": "https://www.forexfactory.com/calendar?fr=1",
+            "source_type": "public_event_and_discussion_search_insufficient_signal",
+            "published_at": "checked 2026-09-24",
+            "freshness_role": "calendar and public discussion were policy, CHF direction or general education first; no attributable non-directional CHF calculation request was retained",
             "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_new_macro_fact_without_a_distinct_non_directional_search_to_calculator_journey",
-          "duplicate_of": [
-            "HR-20260917-01",
-            "HR-20260917-02"
-          ],
+          "decision_gate": "observation_new_macro_fact_without_verified_non_directional_search_to_calculator_journey",
+          "duplicate_of": [],
           "refresh_signals": {
             "fact_delta": true,
             "search_delta": false,
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "A separately attributable public non-directional calculation query tied to this result, plus at least one further search, example or timing delta and a defined historical article to refresh rather than duplicate.",
-          "rationale": "The released result is fresh and cross-checked, but it does not make a generic FX risk table a timely answer. No user-specific fixed-risk, pip-value, margin or cost question, replacement numeric teaching input, or natural calculator path was verified."
+          "reopen_trigger": "A publicly attributable CHF account-currency, pip-value, fixed-risk, margin or cost question tied to this decision, plus a distinct replacement numeric example or current search phrase and a defined article target if one exists.",
+          "rationale": "The decision is fresh and independently verified, but event attention is not itself a calculator journey. Creating a generic CHF risk table would not answer a verified reader question and would manufacture a traffic path."
         }
       }
     },
     {
-      "scan_date": "2026-09-23",
-      "candidate_id": "HR-20260923-02",
+      "scan_date": "2026-09-24",
+      "candidate_id": "HR-20260924-02",
       "status": "observation",
-      "topic": "Tradeify Rule-Change Discovery Has No Dated Official Delta to Turn Into a Calculation Task",
-      "primary_site": "PositionMath",
-      "freshness": 18,
-      "traffic_potential": 17,
-      "calculator_fit": 25,
-      "evidence_quality": 10,
+      "topic": "Norges Bank Raises to 4.50 Percent but Has No Verified NOK Calculation Journey",
+      "primary_site": "PipGauge",
+      "freshness": 25,
+      "traffic_potential": 20,
+      "calculator_fit": 21,
+      "evidence_quality": 15,
       "actionability": 4,
-      "total_score": 74,
+      "total_score": 85,
       "hard_gate": false,
-      "reliable_sources": 1,
+      "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
-        "Daily Loss Limit",
-        "Consistency Rule",
-        "Prop Firm Simulator"
+        "Pip Value",
+        "Position Size",
+        "Margin",
+        "P&L",
+        "Spread Cost"
       ],
-      "reason": "A public dated rule-log says it checked Tradeify on September 22, while the official site exposes current daily-loss and consistency fields, but no dated official plan/rule change or attributable reader question was verified. Current marketing copy is internally inconsistent across account cards, so it cannot support a safe risk-budget example or a refresh.",
+      "reason": "Norges Bank's English September 24 release and Reuters' independent report verify the 25bp increase to 4.50%. Public calendar coverage proves event awareness but not a non-directional, reader-specific EUR/NOK or USD/NOK quantity, pip-value, margin or cost calculation request; no new playbook is created.",
       "scan_audit": {
         "sources": [
           {
-            "publisher": "Tradeify",
-            "url": "https://tradeify.co/",
-            "source_type": "official_current_account_rule_summary",
-            "published_at": "checked 2026-09-23",
-            "freshness_role": "current cards expose daily-loss and consistency fields, but do not date a plan-specific change or safely supply a complete rule calculation",
+            "publisher": "Norges Bank",
+            "url": "https://www.norges-bank.no/en/news-events/news/Press-releases/2026/2026-09-24-rate/",
+            "source_type": "official_dated_monetary_policy_decision",
+            "published_at": "2026-09-24T10:00:00+02:00",
+            "freshness_role": "official English release records a 25bp increase from 4.25% to 4.50% and the next decision date",
             "reliable": true
           },
           {
-            "publisher": "Ephore Market",
-            "url": "https://ephore-market.com/en/pages/prop-firm-rule-changes",
-            "source_type": "independent_dated_rule_change_discovery_log",
-            "published_at": "2026-09-22",
-            "freshness_role": "reports a current Tradeify check but instructs readers to confirm official pages; discovery does not establish an official current rule delta",
-            "reliable": false
+            "publisher": "Reuters",
+            "url": "https://www.boursorama.com/bourse/actualites/norvege-la-banque-centrale-releve-ses-taux-et-prevoit-une-nouvelle-hausse-0d8a89b91dd95ffe15a4983d27289b52",
+            "source_type": "independent_same_day_news_report_via_public_syndication",
+            "published_at": "2026-09-24T10:28:00+02:00",
+            "freshness_role": "Reuters byline independently reports the 25bp increase to 4.50% and current NOK reaction context",
+            "reliable": true
           },
           {
-            "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
-            "url": "https://www.reddit.com/r/proptrading/",
-            "source_type": "public_discussion_search_insufficient_signal",
-            "published_at": "checked 2026-09-23",
-            "freshness_role": "generic daily-loss and consistency discussion was not attributable to a dated Tradeify change",
+            "publisher": "ForexFactory public calendar",
+            "url": "https://www.forexfactory.com/calendar?range=sep17.2026-sep28.2026",
+            "source_type": "public_calendar_search_insufficient_signal",
+            "published_at": "checked 2026-09-24",
+            "freshness_role": "public economic-calendar discovery supports event awareness but not an attributable non-directional NOK calculation query",
             "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_change_discovery_without_dated_official_delta_or_change_specific_calculation_demand",
-          "duplicate_of": [
-            "HR-20260918-01"
-          ],
+          "decision_gate": "observation_new_macro_fact_without_verified_non_directional_search_to_calculator_journey",
+          "duplicate_of": [],
           "refresh_signals": {
-            "fact_delta": false,
+            "fact_delta": true,
             "search_delta": false,
             "example_delta": false,
-            "window_delta": false
+            "window_delta": true
           },
-          "reopen_trigger": "A dated official Tradeify rule/plan/eligibility/payout change and a separately attributable public non-directional calculation question; compare at least two refresh signals with existing prop packages before any refresh.",
-          "rationale": "The independent log is a useful discovery signal, not a second reliable fact source. Current official account cards do not prove a new delta and do not provide a safe, plan-and-phase-specific risk budget. Do not manufacture a daily-loss explainer."
+          "reopen_trigger": "A publicly attributable EUR/NOK or USD/NOK account-currency, pip-value, fixed-risk, margin or cost query tied to the September 24 decision, with a distinct numeric example and an explicit timely calculator path.",
+          "rationale": "The rate surprise is factual and current, but the checked public material establishes market attention, not a reader-specific calculation task. No content or playbook may be created merely from a policy headline."
         }
       }
     },
     {
-      "scan_date": "2026-09-23",
-      "candidate_id": "HR-20260923-03",
-      "status": "discarded",
-      "topic": "CFTC Forecast-Contract Incentive and Sports-Data Filings",
-      "primary_site": "PositionMath",
-      "freshness": 24,
-      "traffic_potential": 14,
-      "calculator_fit": 8,
-      "evidence_quality": 15,
-      "actionability": 1,
-      "total_score": 62,
-      "hard_gate": false,
-      "reliable_sources": 1,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "P&L",
-        "Position Size"
-      ],
-      "reason": "CFTC filings are fresh and public, but the inspected items concern exchange incentive programs, quote obligations or sports/event-contract operations rather than a user-facing PipGauge or PositionMath calculation problem. Sports and non-calculable exchange-operations angles are excluded."
-    },
-    {
-      "scan_date": "2026-09-23",
-      "candidate_id": "HR-20260923-04",
-      "status": "discarded",
-      "topic": "Directional PMI FX Equity Crypto and Geopolitical Commentary",
+      "scan_date": "2026-09-24",
+      "candidate_id": "HR-20260924-03",
+      "status": "observation",
+      "topic": "SARB Raises to 7.25 Percent but Has No Verified ZAR Calculation Journey",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 25,
-      "calculator_fit": 3,
+      "traffic_potential": 19,
+      "calculator_fit": 20,
+      "evidence_quality": 15,
+      "actionability": 4,
+      "total_score": 83,
+      "hard_gate": false,
+      "reliable_sources": 2,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Pip Value",
+        "Position Size",
+        "Margin",
+        "P&L",
+        "Spread Cost"
+      ],
+      "reason": "SARB's dated September statement and Reuters' independent report verify the 25bp increase to 7.25% effective September 25. No publicly attributable non-directional USD/ZAR or EUR/ZAR risk, pip-value, margin or cost query and no readable replacement example were verified; generic central-bank math would not be a natural calculator path.",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "South African Reserve Bank",
+            "url": "https://www.reservebank.co.za/en/home/publications/publication-detail-pages/statements/monetary-policy-statements/2026/september",
+            "source_type": "official_dated_monetary_policy_statement",
+            "published_at": "2026-09-24",
+            "freshness_role": "official statement records a 25bp increase to 7.25% effective 25 September",
+            "reliable": true
+          },
+          {
+            "publisher": "Reuters",
+            "url": "https://www.tradingview.com/news/reuters.com%2C2026-09-24%3Anewsml_Zaw668Jbt%3A0-zawya-south-african-reserve-bank-hikes-rates-as-oil-middle-east-tensions-bite/",
+            "source_type": "independent_english_same_day_news_report_via_public_syndication",
+            "published_at": "2026-09-24",
+            "freshness_role": "Reuters report independently identifies the 25bp increase from 7.00% to 7.25% and its 25 September effective date",
+            "reliable": true
+          },
+          {
+            "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
+            "url": "https://www.forexfactory.com/calendar",
+            "source_type": "public_discussion_search_insufficient_signal",
+            "published_at": "checked 2026-09-24",
+            "freshness_role": "no attributable non-directional USD/ZAR or EUR/ZAR pip-value, position-size, margin or cost question was found in public material",
+            "reliable": false
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "observation_new_macro_fact_without_verified_non_directional_search_to_calculator_journey",
+          "duplicate_of": [],
+          "refresh_signals": {
+            "fact_delta": true,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": true
+          },
+          "reopen_trigger": "A separately attributable public USD/ZAR or EUR/ZAR calculation question tied to the effective-date or decision result, plus a second search, example or timing delta and a defined non-duplicate article path.",
+          "rationale": "A fresh policy result and Reuters confirmation do not establish that a generic risk formula will capture current demand. Without a concrete calculation intent, the item remains a watch only."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-09-24",
+      "candidate_id": "HR-20260924-04",
+      "status": "discarded",
+      "topic": "Prop Rule Changelog Claims and Directional Social Commentary",
+      "primary_site": "PipGauge",
+      "freshness": 24,
+      "traffic_potential": 20,
+      "calculator_fit": 8,
       "evidence_quality": 5,
       "actionability": 2,
-      "total_score": 60,
+      "total_score": 59,
       "hard_gate": false,
       "reliable_sources": 0,
       "fresh_signal": true,
       "calculator_mapping": [
-        "P&L"
+        "Position Size",
+        "Daily Loss Limit"
       ],
-      "reason": "Price targets, trade calls, political framing, sports or entertainment, login-wall material and unverified social posts are outside the radar. They do not establish a fact-led, non-directional calculator journey."
+      "reason": "An industry rule-change log is only a discovery lead until a dated official plan-specific change and independent reader demand are verified. Current public Topstep complaint, prediction posts, price targets, crypto hype, politics, sports, entertainment, login-wall material and unverifiable social commentary are excluded."
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-09-23T22:05:00+08:00",
-      "source_count": 4,
-      "note": "检查 S&P Global PMI 当前发布索引、Tradeify 当前公开账户页、CFTC DCM rule filings 和既有 CME factor-futures 一手材料；只采用可公开访问的规则、发布和监管事实。"
+      "checked_at": "2026-09-24T22:02:16+08:00",
+      "source_count": 3,
+      "note": "核验 SNB、Norges Bank 与 SARB 当日英文政策发布；利率、变动幅度和生效日只取各央行正式文本。"
     },
     {
-      "channel": "可靠英文媒体与独立变化发现",
+      "channel": "可靠英文媒体与独立报道",
       "status": "complete",
-      "checked_at": "2026-09-23T22:05:00+08:00",
-      "source_count": 2,
-      "note": "RTTNews 独立报道 9 月 23 日 Eurozone Flash PMI；Ephore Market 的 dated log 仅作 prop-rule 发现和复核线索，不替代官方规则。"
+      "checked_at": "2026-09-24T22:02:16+08:00",
+      "source_count": 3,
+      "note": "核验 Reuters 当日对 SNB、Norges Bank 与 SARB 决定的独立报道（通过公开转载页读取）；转载不替代官方数字与规则。"
     },
     {
       "channel": "Reddit / ForexFactory / BabyPips",
       "status": "complete",
-      "checked_at": "2026-09-23T22:05:00+08:00",
+      "checked_at": "2026-09-24T22:02:16+08:00",
       "source_count": 2,
-      "note": "检索公开 PMI、EUR/USD、position-size、Tradeify、daily-loss 和 consistency 讨论。可见 PMI/政策/方向与泛化风险语境，但未发现可归属到本期 PMI 结果或 Tradeify 本期变更的非方向性计算查询。"
+      "note": "ForexFactory 当日公开日历确认 SNB 时段与市场发现语境；Reddit 公开索引复核 CHF 与通用仓位讨论。没有保留可归属、非方向性的 CHF、NOK 或 ZAR 计算问题。BabyPips 未发现本期新增可核验计算旅程。"
     },
     {
       "channel": "X / Quora",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-09-23T22:05:00+08:00",
+      "checked_at": "2026-09-24T22:02:16+08:00",
       "source_count": 0,
-      "note": "公开索引没有提供可核验、可归属的当期 PMI 或 Tradeify 计算查询；Quora 的 robots/login 限制内容未采用。未登录、发帖、评论、私信或操作任何账户。"
+      "note": "公开索引未提供可核验、与本期央行结果绑定的新增非方向性计算问题；未使用登录、墙后或不可验证材料。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-09-23_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-09-23_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-09-24_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-09-24_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
