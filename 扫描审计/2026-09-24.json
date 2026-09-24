@@ -1,0 +1,159 @@
+{
+  "scan_date": "2026-09-24",
+  "generated_at": "2026-09-24T22:02:16+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-09-24T22:02:16+08:00",
+      "source_count": 3,
+      "note": "核验 SNB、Norges Bank 与 SARB 当日英文政策发布；利率、变动幅度和生效日只取各央行正式文本。"
+    },
+    {
+      "channel": "可靠英文媒体与独立报道",
+      "status": "complete",
+      "checked_at": "2026-09-24T22:02:16+08:00",
+      "source_count": 3,
+      "note": "核验 Reuters 当日对 SNB、Norges Bank 与 SARB 决定的独立报道（通过公开转载页读取）；转载不替代官方数字与规则。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "complete",
+      "checked_at": "2026-09-24T22:02:16+08:00",
+      "source_count": 2,
+      "note": "ForexFactory 当日公开日历确认 SNB 时段与市场发现语境；Reddit 公开索引复核 CHF 与通用仓位讨论。没有保留可归属、非方向性的 CHF、NOK 或 ZAR 计算问题。BabyPips 未发现本期新增可核验计算旅程。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-09-24T22:02:16+08:00",
+      "source_count": 0,
+      "note": "公开索引未提供可核验、与本期央行结果绑定的新增非方向性计算问题；未使用登录、墙后或不可验证材料。"
+    }
+  ],
+  "candidates": {
+    "HR-20260924-01": {
+      "sources": [
+        {
+          "publisher": "Swiss National Bank",
+          "url": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260924",
+          "source_type": "official_dated_monetary_policy_assessment",
+          "published_at": "2026-09-24",
+          "freshness_role": "official assessment states that the SNB policy rate remains 0% and supplies the current inflation forecast context",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://squawknews.com/news/354854-swiss-national-bank-holds-rates-as-expected-despite-rising-inflation",
+          "source_type": "independent_english_same_day_news_report_via_public_syndication",
+          "published_at": "2026-09-24T07:30:00Z",
+          "freshness_role": "Reuters byline independently reports the expected 0% hold and the current inflation context",
+          "reliable": true
+        },
+        {
+          "publisher": "ForexFactory / Reddit public indexes",
+          "url": "https://www.forexfactory.com/calendar?fr=1",
+          "source_type": "public_event_and_discussion_search_insufficient_signal",
+          "published_at": "checked 2026-09-24",
+          "freshness_role": "calendar and public discussion were policy, CHF direction or general education first; no attributable non-directional CHF calculation request was retained",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_new_macro_fact_without_verified_non_directional_search_to_calculator_journey",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "A publicly attributable CHF account-currency, pip-value, fixed-risk, margin or cost question tied to this decision, plus a distinct replacement numeric example or current search phrase and a defined article target if one exists.",
+        "rationale": "The decision is fresh and independently verified, but event attention is not itself a calculator journey. Creating a generic CHF risk table would not answer a verified reader question and would manufacture a traffic path."
+      }
+    },
+    "HR-20260924-02": {
+      "sources": [
+        {
+          "publisher": "Norges Bank",
+          "url": "https://www.norges-bank.no/en/news-events/news/Press-releases/2026/2026-09-24-rate/",
+          "source_type": "official_dated_monetary_policy_decision",
+          "published_at": "2026-09-24T10:00:00+02:00",
+          "freshness_role": "official English release records a 25bp increase from 4.25% to 4.50% and the next decision date",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.boursorama.com/bourse/actualites/norvege-la-banque-centrale-releve-ses-taux-et-prevoit-une-nouvelle-hausse-0d8a89b91dd95ffe15a4983d27289b52",
+          "source_type": "independent_same_day_news_report_via_public_syndication",
+          "published_at": "2026-09-24T10:28:00+02:00",
+          "freshness_role": "Reuters byline independently reports the 25bp increase to 4.50% and current NOK reaction context",
+          "reliable": true
+        },
+        {
+          "publisher": "ForexFactory public calendar",
+          "url": "https://www.forexfactory.com/calendar?range=sep17.2026-sep28.2026",
+          "source_type": "public_calendar_search_insufficient_signal",
+          "published_at": "checked 2026-09-24",
+          "freshness_role": "public economic-calendar discovery supports event awareness but not an attributable non-directional NOK calculation query",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_new_macro_fact_without_verified_non_directional_search_to_calculator_journey",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "A publicly attributable EUR/NOK or USD/NOK account-currency, pip-value, fixed-risk, margin or cost query tied to the September 24 decision, with a distinct numeric example and an explicit timely calculator path.",
+        "rationale": "The rate surprise is factual and current, but the checked public material establishes market attention, not a reader-specific calculation task. No content or playbook may be created merely from a policy headline."
+      }
+    },
+    "HR-20260924-03": {
+      "sources": [
+        {
+          "publisher": "South African Reserve Bank",
+          "url": "https://www.reservebank.co.za/en/home/publications/publication-detail-pages/statements/monetary-policy-statements/2026/september",
+          "source_type": "official_dated_monetary_policy_statement",
+          "published_at": "2026-09-24",
+          "freshness_role": "official statement records a 25bp increase to 7.25% effective 25 September",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.tradingview.com/news/reuters.com%2C2026-09-24%3Anewsml_Zaw668Jbt%3A0-zawya-south-african-reserve-bank-hikes-rates-as-oil-middle-east-tensions-bite/",
+          "source_type": "independent_english_same_day_news_report_via_public_syndication",
+          "published_at": "2026-09-24",
+          "freshness_role": "Reuters report independently identifies the 25bp increase from 7.00% to 7.25% and its 25 September effective date",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
+          "url": "https://www.forexfactory.com/calendar",
+          "source_type": "public_discussion_search_insufficient_signal",
+          "published_at": "checked 2026-09-24",
+          "freshness_role": "no attributable non-directional USD/ZAR or EUR/ZAR pip-value, position-size, margin or cost question was found in public material",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_new_macro_fact_without_verified_non_directional_search_to_calculator_journey",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "A separately attributable public USD/ZAR or EUR/ZAR calculation question tied to the effective-date or decision result, plus a second search, example or timing delta and a defined non-duplicate article path.",
+        "rationale": "A fresh policy result and Reuters confirmation do not establish that a generic risk formula will capture current demand. Without a concrete calculation intent, the item remains a watch only."
+      }
+    }
+  }
+}
