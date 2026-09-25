@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-09-24T22:04:29+08:00",
-  "latest_scan_date": "2026-09-24",
+  "generated_at": "2026-09-25T22:05:10+08:00",
+  "latest_scan_date": "2026-09-25",
   "available_dates": [
+    "2026-09-25",
     "2026-09-24",
     "2026-09-23",
     "2026-09-22",
@@ -66,8 +67,288 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-09-25",
+      "generated_at": "2026-09-25T22:05:10+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 61,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 0,
+        "observation": 3,
+        "discarded": 1,
+        "total": 4,
+        "selected_average": 0,
+        "all_selected_pass_gate": true,
+        "content_ready": 0,
+        "playbook_ready": 0
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-09-25",
+          "candidate_id": "HR-20260925-03",
+          "status": "observation",
+          "topic": "U.S. September 30 GDP and PCE Release Window Is Real but Still Lacks a Distinct Risk-Math Journey",
+          "primary_site": "PipGauge",
+          "freshness": 24,
+          "traffic_potential": 22,
+          "calculator_fit": 20,
+          "evidence_quality": 15,
+          "actionability": 4,
+          "total_score": 85,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Margin",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "BEA's official release schedule places Q2 third-estimate GDP and August Personal Income and Outlays on September 30, while Kiplinger's current September 21-25 calendar independently identifies the week's economic-release context. The next-week date is fresh, but public calendar and forum checks are release- and direction-first; no specific non-directional fixed-risk, pip-value, margin or cost query, replacement example or clear non-duplicate calculator journey was verified.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Economic Analysis",
+                "url": "https://www.bea.gov/news/schedule",
+                "source_type": "official_dated_release_schedule",
+                "published_at": "2026-09-24",
+                "freshness_role": "official schedule places GDP third estimate and August Personal Income and Outlays on September 30 at 8:30 AM ET",
+                "reliable": true
+              },
+              {
+                "publisher": "Kiplinger",
+                "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+                "source_type": "independent_english_current_economic_calendar",
+                "published_at": "2026-09-18",
+                "freshness_role": "independent current-week calendar confirms the surrounding U.S. data-release context",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
+                "url": "https://www.reddit.com/r/EconReports/comments/1wpu7re/us_economic_calendar_september_25th_2026/",
+                "source_type": "public_calendar_discussion_insufficient_signal",
+                "published_at": "2026-09-25",
+                "freshness_role": "current public calendar signal does not supply an attributable non-directional pip-value, fixed-risk, margin or cost question",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_release_clock_without_distinct_search_to_calculator_journey",
+              "duplicate_of": [
+                "HR-20260924-01",
+                "HR-20260924-02",
+                "HR-20260924-03"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "An independently reported released result or a publicly attributable non-directional fixed-risk, pip-value, margin or cost query tied to this release, with at least one additional fact, search or example delta.",
+              "rationale": "A nearer publication date is only one refresh signal. No verified reader calculation demand or replacement numeric input distinguishes this from the generic macro-event fixed-risk packages already in the ledger."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-25",
+          "candidate_id": "HR-20260925-02",
+          "status": "observation",
+          "topic": "Hong Kong National Day HK50 Closure Has Verified Dates but No Current Calculation Demand",
+          "primary_site": "PipGauge",
+          "freshness": 24,
+          "traffic_potential": 21,
+          "calculator_fit": 20,
+          "evidence_quality": 15,
+          "actionability": 4,
+          "total_score": 84,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "HK50 Point Value",
+            "P&L",
+            "Margin",
+            "Position Size"
+          ],
+          "reason": "FTMO's September 24 update says HK50.cash will close on Thursday October 1 for Hong Kong National Day, and HFM's September 2026 public schedule independently lists HK50 as closed on that date. This is a dated cross-source holiday fact, but public search/discussion checks did not yield an attributable non-directional HK50 point-value, quantity, margin or cost question. A generic exposure table would manufacture demand and would also require broker-specific contract assumptions.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "FTMO",
+                "url": "https://ftmo.com/en/trading-updates/",
+                "source_type": "official_dated_cfd_holiday_schedule",
+                "published_at": "2026-09-24",
+                "freshness_role": "official update says HK50.cash is closed on Thursday October 1 for Hong Kong National Day",
+                "reliable": true
+              },
+              {
+                "publisher": "HFM",
+                "url": "https://www.hfm.com/int/en/trading-instruments/trading-hours",
+                "source_type": "independent_official_holiday_schedule",
+                "published_at": "2026-09-24",
+                "freshness_role": "public September schedule independently lists HK50 as closed for Chinese National Day on October 1",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
+                "url": "https://www.forexfactory.com/calendar",
+                "source_type": "public_discussion_search_insufficient_signal",
+                "published_at": "checked 2026-09-25",
+                "freshness_role": "no attributable current HK50 point-value, quantity, margin or cost question was found",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_cross_verified_holiday_without_non_directional_calculation_demand",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A public attributable HK50 point-value, quantity, margin or cost question tied to the October 1 closure, plus a second search, example or timing delta and a reader-verified contract-specification path.",
+              "rationale": "The holiday is current and cross-source verified, but calendar interest does not establish a reader calculation path. Any fixed point-value example would risk presenting broker-specific contract terms as universal."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-25",
+          "candidate_id": "HR-20260925-01",
+          "status": "observation",
+          "topic": "FTMO September 26 Platform Maintenance Is Fresh but Has No Verified Calculator Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 19,
+          "calculator_fit": 18,
+          "evidence_quality": 15,
+          "actionability": 3,
+          "total_score": 80,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Margin",
+            "Daily Loss Limit",
+            "Position Size"
+          ],
+          "reason": "FTMO's dated September 24 CFD update specifies two September 26 maintenance windows affecting named platforms; IC Markets independently publishes September 26 server-maintenance windows in the same GMT+3 operational context. The source evidence supports a current operational fact, but no attributable public reader question connects this maintenance to account-risk headroom, position size, margin, pip/point value or costs. Maintenance itself is not a natural calculator bridge, so no playbook is created.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "FTMO",
+                "url": "https://ftmo.com/en/trading-updates/",
+                "source_type": "official_dated_cfd_trading_update",
+                "published_at": "2026-09-24",
+                "freshness_role": "official update identifies two September 26 maintenance windows and affected platform-access risk",
+                "reliable": true
+              },
+              {
+                "publisher": "IC Markets",
+                "url": "https://www.ic.com/eu/en/blog/scheduled-server-maintenance-september-2026/",
+                "source_type": "independent_official_operational_notice",
+                "published_at": "2026-09-24",
+                "freshness_role": "independent broker notice confirms a current September 26 GMT+3 maintenance operational context, without asserting FTMO-specific terms",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
+                "url": "https://www.forexfactory.com/calendar",
+                "source_type": "public_discussion_search_insufficient_signal",
+                "published_at": "checked 2026-09-25",
+                "freshness_role": "no attributable maintenance-linked non-directional account-risk, margin, quantity, point-value or cost question was retained",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_fresh_operational_fact_without_verified_search_to_calculator_journey",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A public, attributable maintenance-specific question about account headroom, margin, quantity, contract value or costs that supplies a distinct verified input and a short discovery window.",
+              "rationale": "Platform downtime is an operational fact, not automatically a calculation task. No public evidence identifies a reader calculation that PipGauge or PositionMath can answer without inventing terms or account state."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-25",
+          "candidate_id": "HR-20260925-04",
+          "status": "discarded",
+          "topic": "Directional FX Index Crypto Politics Sports and Login-Wall Commentary",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 60,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Price targets, trade signals, macro and currency predictions, firm-purchase promotion, political framing, sports or entertainment, pure crypto hype, login-wall material and unverifiable social posts are excluded. They do not establish a fact-led non-directional calculation journey."
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-09-25T22:00:00+08:00",
+          "source_count": 3,
+          "note": "核验 FTMO 9 月 24 日已日期化交易更新、HFM 9 月交易时间表与 BEA 9 月 30 日发布日程；时间、产品范围和发布日只取各正式文本。"
+        },
+        {
+          "channel": "独立公开运营来源与英文日历",
+          "status": "complete",
+          "checked_at": "2026-09-25T22:00:00+08:00",
+          "source_count": 3,
+          "note": "核验 IC Markets 9 月 26 日官方维护通知、HFM 对 10 月 1 日 HK50 关闭的公开表格，以及 Kiplinger 的当周英文经济日历；它们用于交叉背景，不能替代品牌自身条款或日程。"
+        },
+        {
+          "channel": "Reddit / ForexFactory / BabyPips",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-09-25T22:00:00+08:00",
+          "source_count": 0,
+          "note": "公开索引只有宏观日历、方向讨论或泛化维护抱怨；没有保留与本期维护、HK50 假日或 9 月 30 日发布绑定的可归属非方向性计算问题。"
+        },
+        {
+          "channel": "X / Quora",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-09-25T22:00:00+08:00",
+          "source_count": 0,
+          "note": "公开可验证索引未显示新增的 account-risk、quantity、pip/point value、margin 或 cost 问题；未使用登录、墙后或不可验证材料。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-09-25_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-09-25_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json"
+      }
+    },
+    {
       "scan_date": "2026-09-24",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 60,
@@ -347,7 +628,7 @@
     },
     {
       "scan_date": "2026-09-23",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 59,
@@ -585,7 +866,7 @@
     },
     {
       "scan_date": "2026-09-22",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 58,
@@ -874,7 +1155,7 @@
     },
     {
       "scan_date": "2026-09-21",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 57,
@@ -1096,7 +1377,7 @@
     },
     {
       "scan_date": "2026-09-20",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 56,
@@ -1381,7 +1662,7 @@
     },
     {
       "scan_date": "2026-09-19",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 55,
@@ -1656,7 +1937,7 @@
     },
     {
       "scan_date": "2026-09-18",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 54,
@@ -1938,7 +2219,7 @@
     },
     {
       "scan_date": "2026-09-17",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 53,
@@ -2283,7 +2564,7 @@
     },
     {
       "scan_date": "2026-09-16",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 52,
@@ -2573,7 +2854,7 @@
     },
     {
       "scan_date": "2026-09-15",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 51,
@@ -2787,7 +3068,7 @@
     },
     {
       "scan_date": "2026-09-14",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 50,
@@ -2991,7 +3272,7 @@
     },
     {
       "scan_date": "2026-09-13",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 49,
@@ -3196,7 +3477,7 @@
     },
     {
       "scan_date": "2026-09-12",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 48,
@@ -3382,7 +3663,7 @@
     },
     {
       "scan_date": "2026-09-11",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 47,
@@ -3599,7 +3880,7 @@
     },
     {
       "scan_date": "2026-09-10",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 46,
@@ -3885,7 +4166,7 @@
     },
     {
       "scan_date": "2026-09-09",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 45,
@@ -4165,7 +4446,7 @@
     },
     {
       "scan_date": "2026-09-08",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 44,
@@ -4494,7 +4775,7 @@
     },
     {
       "scan_date": "2026-09-07",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 43,
@@ -4796,7 +5077,7 @@
     },
     {
       "scan_date": "2026-09-06",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 42,
@@ -5112,7 +5393,7 @@
     },
     {
       "scan_date": "2026-09-05",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 41,
@@ -5434,7 +5715,7 @@
     },
     {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -5747,7 +6028,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -6058,7 +6339,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -6389,7 +6670,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -6727,7 +7008,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -7120,7 +7401,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -7530,7 +7811,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -8002,7 +8283,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -8347,7 +8628,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -8692,7 +8973,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -9144,7 +9425,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -9557,7 +9838,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -9789,7 +10070,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -10234,7 +10515,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -10609,7 +10890,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -11001,7 +11282,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -11377,7 +11658,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -11701,7 +11982,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -12084,7 +12365,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -12425,7 +12706,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -12800,7 +13081,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -13188,7 +13469,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -13533,7 +13814,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -13861,7 +14142,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -14173,7 +14454,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -14494,7 +14775,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -14855,7 +15136,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -15208,7 +15489,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -15652,7 +15933,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -16161,7 +16442,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -16631,7 +16912,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -17174,7 +17455,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -17446,7 +17727,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -17759,7 +18040,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -18194,7 +18475,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -18708,7 +18989,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -19217,7 +19498,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -19685,7 +19966,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -20099,7 +20380,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -20498,7 +20779,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-09-24T22:04:29+08:00",
+      "generated_at": "2026-09-25T22:05:10+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -20937,10 +21218,10 @@
       }
     }
   ],
-  "scan_date": "2026-09-24",
+  "scan_date": "2026-09-25",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 60,
+    "day": 61,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -20959,79 +21240,14 @@
   },
   "candidates": [
     {
-      "scan_date": "2026-09-24",
-      "candidate_id": "HR-20260924-01",
+      "scan_date": "2026-09-25",
+      "candidate_id": "HR-20260925-03",
       "status": "observation",
-      "topic": "SNB Holds at 0 Percent but Has No Verified CHF Calculation Journey",
+      "topic": "U.S. September 30 GDP and PCE Release Window Is Real but Still Lacks a Distinct Risk-Math Journey",
       "primary_site": "PipGauge",
-      "freshness": 25,
-      "traffic_potential": 23,
-      "calculator_fit": 22,
-      "evidence_quality": 15,
-      "actionability": 4,
-      "total_score": 89,
-      "hard_gate": false,
-      "reliable_sources": 2,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Pip Value",
-        "Position Size",
-        "Margin",
-        "P&L",
-        "Spread Cost"
-      ],
-      "reason": "SNB's September 24 dated assessment and Reuters' independent same-day report verify the 0% hold and current CHF attention. Public ForexFactory and Reddit material is calendar, policy or directional commentary; no attributable reader-specific pip-value, fixed-risk, margin or cost question, defined traffic window or natural calculator bridge was verified.",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "Swiss National Bank",
-            "url": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260924",
-            "source_type": "official_dated_monetary_policy_assessment",
-            "published_at": "2026-09-24",
-            "freshness_role": "official assessment states that the SNB policy rate remains 0% and supplies the current inflation forecast context",
-            "reliable": true
-          },
-          {
-            "publisher": "Reuters",
-            "url": "https://squawknews.com/news/354854-swiss-national-bank-holds-rates-as-expected-despite-rising-inflation",
-            "source_type": "independent_english_same_day_news_report_via_public_syndication",
-            "published_at": "2026-09-24T07:30:00Z",
-            "freshness_role": "Reuters byline independently reports the expected 0% hold and the current inflation context",
-            "reliable": true
-          },
-          {
-            "publisher": "ForexFactory / Reddit public indexes",
-            "url": "https://www.forexfactory.com/calendar?fr=1",
-            "source_type": "public_event_and_discussion_search_insufficient_signal",
-            "published_at": "checked 2026-09-24",
-            "freshness_role": "calendar and public discussion were policy, CHF direction or general education first; no attributable non-directional CHF calculation request was retained",
-            "reliable": false
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_new_macro_fact_without_verified_non_directional_search_to_calculator_journey",
-          "duplicate_of": [],
-          "refresh_signals": {
-            "fact_delta": true,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": true
-          },
-          "reopen_trigger": "A publicly attributable CHF account-currency, pip-value, fixed-risk, margin or cost question tied to this decision, plus a distinct replacement numeric example or current search phrase and a defined article target if one exists.",
-          "rationale": "The decision is fresh and independently verified, but event attention is not itself a calculator journey. Creating a generic CHF risk table would not answer a verified reader question and would manufacture a traffic path."
-        }
-      }
-    },
-    {
-      "scan_date": "2026-09-24",
-      "candidate_id": "HR-20260924-02",
-      "status": "observation",
-      "topic": "Norges Bank Raises to 4.50 Percent but Has No Verified NOK Calculation Journey",
-      "primary_site": "PipGauge",
-      "freshness": 25,
-      "traffic_potential": 20,
-      "calculator_fit": 21,
+      "freshness": 24,
+      "traffic_potential": 22,
+      "calculator_fit": 20,
       "evidence_quality": 15,
       "actionability": 4,
       "total_score": 85,
@@ -21045,102 +21261,105 @@
         "P&L",
         "Spread Cost"
       ],
-      "reason": "Norges Bank's English September 24 release and Reuters' independent report verify the 25bp increase to 4.50%. Public calendar coverage proves event awareness but not a non-directional, reader-specific EUR/NOK or USD/NOK quantity, pip-value, margin or cost calculation request; no new playbook is created.",
+      "reason": "BEA's official release schedule places Q2 third-estimate GDP and August Personal Income and Outlays on September 30, while Kiplinger's current September 21-25 calendar independently identifies the week's economic-release context. The next-week date is fresh, but public calendar and forum checks are release- and direction-first; no specific non-directional fixed-risk, pip-value, margin or cost query, replacement example or clear non-duplicate calculator journey was verified.",
       "scan_audit": {
         "sources": [
           {
-            "publisher": "Norges Bank",
-            "url": "https://www.norges-bank.no/en/news-events/news/Press-releases/2026/2026-09-24-rate/",
-            "source_type": "official_dated_monetary_policy_decision",
-            "published_at": "2026-09-24T10:00:00+02:00",
-            "freshness_role": "official English release records a 25bp increase from 4.25% to 4.50% and the next decision date",
+            "publisher": "U.S. Bureau of Economic Analysis",
+            "url": "https://www.bea.gov/news/schedule",
+            "source_type": "official_dated_release_schedule",
+            "published_at": "2026-09-24",
+            "freshness_role": "official schedule places GDP third estimate and August Personal Income and Outlays on September 30 at 8:30 AM ET",
             "reliable": true
           },
           {
-            "publisher": "Reuters",
-            "url": "https://www.boursorama.com/bourse/actualites/norvege-la-banque-centrale-releve-ses-taux-et-prevoit-une-nouvelle-hausse-0d8a89b91dd95ffe15a4983d27289b52",
-            "source_type": "independent_same_day_news_report_via_public_syndication",
-            "published_at": "2026-09-24T10:28:00+02:00",
-            "freshness_role": "Reuters byline independently reports the 25bp increase to 4.50% and current NOK reaction context",
+            "publisher": "Kiplinger",
+            "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+            "source_type": "independent_english_current_economic_calendar",
+            "published_at": "2026-09-18",
+            "freshness_role": "independent current-week calendar confirms the surrounding U.S. data-release context",
             "reliable": true
           },
           {
-            "publisher": "ForexFactory public calendar",
-            "url": "https://www.forexfactory.com/calendar?range=sep17.2026-sep28.2026",
-            "source_type": "public_calendar_search_insufficient_signal",
-            "published_at": "checked 2026-09-24",
-            "freshness_role": "public economic-calendar discovery supports event awareness but not an attributable non-directional NOK calculation query",
+            "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
+            "url": "https://www.reddit.com/r/EconReports/comments/1wpu7re/us_economic_calendar_september_25th_2026/",
+            "source_type": "public_calendar_discussion_insufficient_signal",
+            "published_at": "2026-09-25",
+            "freshness_role": "current public calendar signal does not supply an attributable non-directional pip-value, fixed-risk, margin or cost question",
             "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_new_macro_fact_without_verified_non_directional_search_to_calculator_journey",
-          "duplicate_of": [],
+          "decision_gate": "observation_release_clock_without_distinct_search_to_calculator_journey",
+          "duplicate_of": [
+            "HR-20260924-01",
+            "HR-20260924-02",
+            "HR-20260924-03"
+          ],
           "refresh_signals": {
-            "fact_delta": true,
+            "fact_delta": false,
             "search_delta": false,
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "A publicly attributable EUR/NOK or USD/NOK account-currency, pip-value, fixed-risk, margin or cost query tied to the September 24 decision, with a distinct numeric example and an explicit timely calculator path.",
-          "rationale": "The rate surprise is factual and current, but the checked public material establishes market attention, not a reader-specific calculation task. No content or playbook may be created merely from a policy headline."
+          "reopen_trigger": "An independently reported released result or a publicly attributable non-directional fixed-risk, pip-value, margin or cost query tied to this release, with at least one additional fact, search or example delta.",
+          "rationale": "A nearer publication date is only one refresh signal. No verified reader calculation demand or replacement numeric input distinguishes this from the generic macro-event fixed-risk packages already in the ledger."
         }
       }
     },
     {
-      "scan_date": "2026-09-24",
-      "candidate_id": "HR-20260924-03",
+      "scan_date": "2026-09-25",
+      "candidate_id": "HR-20260925-02",
       "status": "observation",
-      "topic": "SARB Raises to 7.25 Percent but Has No Verified ZAR Calculation Journey",
+      "topic": "Hong Kong National Day HK50 Closure Has Verified Dates but No Current Calculation Demand",
       "primary_site": "PipGauge",
-      "freshness": 25,
-      "traffic_potential": 19,
+      "freshness": 24,
+      "traffic_potential": 21,
       "calculator_fit": 20,
       "evidence_quality": 15,
       "actionability": 4,
-      "total_score": 83,
+      "total_score": 84,
       "hard_gate": false,
       "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
-        "Pip Value",
-        "Position Size",
-        "Margin",
+        "HK50 Point Value",
         "P&L",
-        "Spread Cost"
+        "Margin",
+        "Position Size"
       ],
-      "reason": "SARB's dated September statement and Reuters' independent report verify the 25bp increase to 7.25% effective September 25. No publicly attributable non-directional USD/ZAR or EUR/ZAR risk, pip-value, margin or cost query and no readable replacement example were verified; generic central-bank math would not be a natural calculator path.",
+      "reason": "FTMO's September 24 update says HK50.cash will close on Thursday October 1 for Hong Kong National Day, and HFM's September 2026 public schedule independently lists HK50 as closed on that date. This is a dated cross-source holiday fact, but public search/discussion checks did not yield an attributable non-directional HK50 point-value, quantity, margin or cost question. A generic exposure table would manufacture demand and would also require broker-specific contract assumptions.",
       "scan_audit": {
         "sources": [
           {
-            "publisher": "South African Reserve Bank",
-            "url": "https://www.reservebank.co.za/en/home/publications/publication-detail-pages/statements/monetary-policy-statements/2026/september",
-            "source_type": "official_dated_monetary_policy_statement",
+            "publisher": "FTMO",
+            "url": "https://ftmo.com/en/trading-updates/",
+            "source_type": "official_dated_cfd_holiday_schedule",
             "published_at": "2026-09-24",
-            "freshness_role": "official statement records a 25bp increase to 7.25% effective 25 September",
+            "freshness_role": "official update says HK50.cash is closed on Thursday October 1 for Hong Kong National Day",
             "reliable": true
           },
           {
-            "publisher": "Reuters",
-            "url": "https://www.tradingview.com/news/reuters.com%2C2026-09-24%3Anewsml_Zaw668Jbt%3A0-zawya-south-african-reserve-bank-hikes-rates-as-oil-middle-east-tensions-bite/",
-            "source_type": "independent_english_same_day_news_report_via_public_syndication",
+            "publisher": "HFM",
+            "url": "https://www.hfm.com/int/en/trading-instruments/trading-hours",
+            "source_type": "independent_official_holiday_schedule",
             "published_at": "2026-09-24",
-            "freshness_role": "Reuters report independently identifies the 25bp increase from 7.00% to 7.25% and its 25 September effective date",
+            "freshness_role": "public September schedule independently lists HK50 as closed for Chinese National Day on October 1",
             "reliable": true
           },
           {
             "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
             "url": "https://www.forexfactory.com/calendar",
             "source_type": "public_discussion_search_insufficient_signal",
-            "published_at": "checked 2026-09-24",
-            "freshness_role": "no attributable non-directional USD/ZAR or EUR/ZAR pip-value, position-size, margin or cost question was found in public material",
+            "published_at": "checked 2026-09-25",
+            "freshness_role": "no attributable current HK50 point-value, quantity, margin or cost question was found",
             "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_new_macro_fact_without_verified_non_directional_search_to_calculator_journey",
+          "decision_gate": "observation_cross_verified_holiday_without_non_directional_calculation_demand",
           "duplicate_of": [],
           "refresh_signals": {
             "fact_delta": true,
@@ -21148,67 +21367,129 @@
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "A separately attributable public USD/ZAR or EUR/ZAR calculation question tied to the effective-date or decision result, plus a second search, example or timing delta and a defined non-duplicate article path.",
-          "rationale": "A fresh policy result and Reuters confirmation do not establish that a generic risk formula will capture current demand. Without a concrete calculation intent, the item remains a watch only."
+          "reopen_trigger": "A public attributable HK50 point-value, quantity, margin or cost question tied to the October 1 closure, plus a second search, example or timing delta and a reader-verified contract-specification path.",
+          "rationale": "The holiday is current and cross-source verified, but calendar interest does not establish a reader calculation path. Any fixed point-value example would risk presenting broker-specific contract terms as universal."
         }
       }
     },
     {
-      "scan_date": "2026-09-24",
-      "candidate_id": "HR-20260924-04",
-      "status": "discarded",
-      "topic": "Prop Rule Changelog Claims and Directional Social Commentary",
+      "scan_date": "2026-09-25",
+      "candidate_id": "HR-20260925-01",
+      "status": "observation",
+      "topic": "FTMO September 26 Platform Maintenance Is Fresh but Has No Verified Calculator Journey",
       "primary_site": "PipGauge",
-      "freshness": 24,
-      "traffic_potential": 20,
-      "calculator_fit": 8,
+      "freshness": 25,
+      "traffic_potential": 19,
+      "calculator_fit": 18,
+      "evidence_quality": 15,
+      "actionability": 3,
+      "total_score": 80,
+      "hard_gate": false,
+      "reliable_sources": 2,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Margin",
+        "Daily Loss Limit",
+        "Position Size"
+      ],
+      "reason": "FTMO's dated September 24 CFD update specifies two September 26 maintenance windows affecting named platforms; IC Markets independently publishes September 26 server-maintenance windows in the same GMT+3 operational context. The source evidence supports a current operational fact, but no attributable public reader question connects this maintenance to account-risk headroom, position size, margin, pip/point value or costs. Maintenance itself is not a natural calculator bridge, so no playbook is created.",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "FTMO",
+            "url": "https://ftmo.com/en/trading-updates/",
+            "source_type": "official_dated_cfd_trading_update",
+            "published_at": "2026-09-24",
+            "freshness_role": "official update identifies two September 26 maintenance windows and affected platform-access risk",
+            "reliable": true
+          },
+          {
+            "publisher": "IC Markets",
+            "url": "https://www.ic.com/eu/en/blog/scheduled-server-maintenance-september-2026/",
+            "source_type": "independent_official_operational_notice",
+            "published_at": "2026-09-24",
+            "freshness_role": "independent broker notice confirms a current September 26 GMT+3 maintenance operational context, without asserting FTMO-specific terms",
+            "reliable": true
+          },
+          {
+            "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
+            "url": "https://www.forexfactory.com/calendar",
+            "source_type": "public_discussion_search_insufficient_signal",
+            "published_at": "checked 2026-09-25",
+            "freshness_role": "no attributable maintenance-linked non-directional account-risk, margin, quantity, point-value or cost question was retained",
+            "reliable": false
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "observation_fresh_operational_fact_without_verified_search_to_calculator_journey",
+          "duplicate_of": [],
+          "refresh_signals": {
+            "fact_delta": true,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": true
+          },
+          "reopen_trigger": "A public, attributable maintenance-specific question about account headroom, margin, quantity, contract value or costs that supplies a distinct verified input and a short discovery window.",
+          "rationale": "Platform downtime is an operational fact, not automatically a calculation task. No public evidence identifies a reader calculation that PipGauge or PositionMath can answer without inventing terms or account state."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-09-25",
+      "candidate_id": "HR-20260925-04",
+      "status": "discarded",
+      "topic": "Directional FX Index Crypto Politics Sports and Login-Wall Commentary",
+      "primary_site": "PipGauge",
+      "freshness": 25,
+      "traffic_potential": 25,
+      "calculator_fit": 3,
       "evidence_quality": 5,
       "actionability": 2,
-      "total_score": 59,
+      "total_score": 60,
       "hard_gate": false,
       "reliable_sources": 0,
       "fresh_signal": true,
       "calculator_mapping": [
-        "Position Size",
-        "Daily Loss Limit"
+        "P&L"
       ],
-      "reason": "An industry rule-change log is only a discovery lead until a dated official plan-specific change and independent reader demand are verified. Current public Topstep complaint, prediction posts, price targets, crypto hype, politics, sports, entertainment, login-wall material and unverifiable social commentary are excluded."
+      "reason": "Price targets, trade signals, macro and currency predictions, firm-purchase promotion, political framing, sports or entertainment, pure crypto hype, login-wall material and unverifiable social posts are excluded. They do not establish a fact-led non-directional calculation journey."
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-09-24T22:02:16+08:00",
+      "checked_at": "2026-09-25T22:00:00+08:00",
       "source_count": 3,
-      "note": "核验 SNB、Norges Bank 与 SARB 当日英文政策发布；利率、变动幅度和生效日只取各央行正式文本。"
+      "note": "核验 FTMO 9 月 24 日已日期化交易更新、HFM 9 月交易时间表与 BEA 9 月 30 日发布日程；时间、产品范围和发布日只取各正式文本。"
     },
     {
-      "channel": "可靠英文媒体与独立报道",
+      "channel": "独立公开运营来源与英文日历",
       "status": "complete",
-      "checked_at": "2026-09-24T22:02:16+08:00",
+      "checked_at": "2026-09-25T22:00:00+08:00",
       "source_count": 3,
-      "note": "核验 Reuters 当日对 SNB、Norges Bank 与 SARB 决定的独立报道（通过公开转载页读取）；转载不替代官方数字与规则。"
+      "note": "核验 IC Markets 9 月 26 日官方维护通知、HFM 对 10 月 1 日 HK50 关闭的公开表格，以及 Kiplinger 的当周英文经济日历；它们用于交叉背景，不能替代品牌自身条款或日程。"
     },
     {
       "channel": "Reddit / ForexFactory / BabyPips",
-      "status": "complete",
-      "checked_at": "2026-09-24T22:02:16+08:00",
-      "source_count": 2,
-      "note": "ForexFactory 当日公开日历确认 SNB 时段与市场发现语境；Reddit 公开索引复核 CHF 与通用仓位讨论。没有保留可归属、非方向性的 CHF、NOK 或 ZAR 计算问题。BabyPips 未发现本期新增可核验计算旅程。"
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-09-25T22:00:00+08:00",
+      "source_count": 0,
+      "note": "公开索引只有宏观日历、方向讨论或泛化维护抱怨；没有保留与本期维护、HK50 假日或 9 月 30 日发布绑定的可归属非方向性计算问题。"
     },
     {
       "channel": "X / Quora",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-09-24T22:02:16+08:00",
+      "checked_at": "2026-09-25T22:00:00+08:00",
       "source_count": 0,
-      "note": "公开索引未提供可核验、与本期央行结果绑定的新增非方向性计算问题；未使用登录、墙后或不可验证材料。"
+      "note": "公开可验证索引未显示新增的 account-risk、quantity、pip/point value、margin 或 cost 问题；未使用登录、墙后或不可验证材料。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-09-24_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-09-24_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-09-25_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-09-25_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",

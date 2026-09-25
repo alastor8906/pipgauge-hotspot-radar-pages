@@ -1,0 +1,36 @@
+{
+  "scan_date": "2026-09-25",
+  "generated_at": "2026-09-25T22:00:00+08:00",
+  "coverage": [
+    {"channel":"官方与一手来源","status":"complete","checked_at":"2026-09-25T22:00:00+08:00","source_count":3,"note":"核验 FTMO 9 月 24 日已日期化交易更新、HFM 9 月交易时间表与 BEA 9 月 30 日发布日程；时间、产品范围和发布日只取各正式文本。"},
+    {"channel":"独立公开运营来源与英文日历","status":"complete","checked_at":"2026-09-25T22:00:00+08:00","source_count":3,"note":"核验 IC Markets 9 月 26 日官方维护通知、HFM 对 10 月 1 日 HK50 关闭的公开表格，以及 Kiplinger 的当周英文经济日历；它们用于交叉背景，不能替代品牌自身条款或日程。"},
+    {"channel":"Reddit / ForexFactory / BabyPips","status":"checked_no_material_signal","checked_at":"2026-09-25T22:00:00+08:00","source_count":0,"note":"公开索引只有宏观日历、方向讨论或泛化维护抱怨；没有保留与本期维护、HK50 假日或 9 月 30 日发布绑定的可归属非方向性计算问题。"},
+    {"channel":"X / Quora","status":"checked_no_material_signal","checked_at":"2026-09-25T22:00:00+08:00","source_count":0,"note":"公开可验证索引未显示新增的 account-risk、quantity、pip/point value、margin 或 cost 问题；未使用登录、墙后或不可验证材料。"}
+  ],
+  "candidates": {
+    "HR-20260925-01": {
+      "sources": [
+        {"publisher":"FTMO","url":"https://ftmo.com/en/trading-updates/","source_type":"official_dated_cfd_trading_update","published_at":"2026-09-24","freshness_role":"official update identifies two September 26 maintenance windows and affected platform-access risk","reliable":true},
+        {"publisher":"IC Markets","url":"https://www.ic.com/eu/en/blog/scheduled-server-maintenance-september-2026/","source_type":"independent_official_operational_notice","published_at":"2026-09-24","freshness_role":"independent broker notice confirms a current September 26 GMT+3 maintenance operational context, without asserting FTMO-specific terms","reliable":true},
+        {"publisher":"Reddit / X / Quora / BabyPips / ForexFactory public indexes","url":"https://www.forexfactory.com/calendar","source_type":"public_discussion_search_insufficient_signal","published_at":"checked 2026-09-25","freshness_role":"no attributable maintenance-linked non-directional account-risk, margin, quantity, point-value or cost question was retained","reliable":false}
+      ],
+      "decision": {"novelty_gate":"fail","decision_gate":"observation_fresh_operational_fact_without_verified_search_to_calculator_journey","duplicate_of":[],"refresh_signals":{"fact_delta":true,"search_delta":false,"example_delta":false,"window_delta":true},"reopen_trigger":"A public, attributable maintenance-specific question about account headroom, margin, quantity, contract value or costs that supplies a distinct verified input and a short discovery window.","rationale":"Platform downtime is an operational fact, not automatically a calculation task. No public evidence identifies a reader calculation that PipGauge or PositionMath can answer without inventing terms or account state."}
+    },
+    "HR-20260925-02": {
+      "sources": [
+        {"publisher":"FTMO","url":"https://ftmo.com/en/trading-updates/","source_type":"official_dated_cfd_holiday_schedule","published_at":"2026-09-24","freshness_role":"official update says HK50.cash is closed on Thursday October 1 for Hong Kong National Day","reliable":true},
+        {"publisher":"HFM","url":"https://www.hfm.com/int/en/trading-instruments/trading-hours","source_type":"independent_official_holiday_schedule","published_at":"2026-09-24","freshness_role":"public September schedule independently lists HK50 as closed for Chinese National Day on October 1","reliable":true},
+        {"publisher":"Reddit / X / Quora / BabyPips / ForexFactory public indexes","url":"https://www.forexfactory.com/calendar","source_type":"public_discussion_search_insufficient_signal","published_at":"checked 2026-09-25","freshness_role":"no attributable current HK50 point-value, quantity, margin or cost question was found","reliable":false}
+      ],
+      "decision": {"novelty_gate":"fail","decision_gate":"observation_cross_verified_holiday_without_non_directional_calculation_demand","duplicate_of":[],"refresh_signals":{"fact_delta":true,"search_delta":false,"example_delta":false,"window_delta":true},"reopen_trigger":"A public attributable HK50 point-value, quantity, margin or cost question tied to the October 1 closure, plus a second search, example or timing delta and a reader-verified contract-specification path.","rationale":"The holiday is current and cross-source verified, but calendar interest does not establish a reader calculation path. Any fixed point-value example would risk presenting broker-specific contract terms as universal."}
+    },
+    "HR-20260925-03": {
+      "sources": [
+        {"publisher":"U.S. Bureau of Economic Analysis","url":"https://www.bea.gov/news/schedule","source_type":"official_dated_release_schedule","published_at":"2026-09-24","freshness_role":"official schedule places GDP third estimate and August Personal Income and Outlays on September 30 at 8:30 AM ET","reliable":true},
+        {"publisher":"Kiplinger","url":"https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar","source_type":"independent_english_current_economic_calendar","published_at":"2026-09-18","freshness_role":"independent current-week calendar confirms the surrounding U.S. data-release context","reliable":true},
+        {"publisher":"Reddit / X / Quora / BabyPips / ForexFactory public indexes","url":"https://www.reddit.com/r/EconReports/comments/1wpu7re/us_economic_calendar_september_25th_2026/","source_type":"public_calendar_discussion_insufficient_signal","published_at":"2026-09-25","freshness_role":"current public calendar signal does not supply an attributable non-directional pip-value, fixed-risk, margin or cost question","reliable":false}
+      ],
+      "decision": {"novelty_gate":"fail","decision_gate":"observation_release_clock_without_distinct_search_to_calculator_journey","duplicate_of":["HR-20260924-01","HR-20260924-02","HR-20260924-03"],"refresh_signals":{"fact_delta":false,"search_delta":false,"example_delta":false,"window_delta":true},"reopen_trigger":"An independently reported released result or a publicly attributable non-directional fixed-risk, pip-value, margin or cost query tied to this release, with at least one additional fact, search or example delta.","rationale":"A nearer publication date is only one refresh signal. No verified reader calculation demand or replacement numeric input distinguishes this from the generic macro-event fixed-risk packages already in the ledger."}
+    }
+  }
+}
