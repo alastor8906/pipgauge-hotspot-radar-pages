@@ -1,4 +1,12 @@
 {
+  "_last_scan": {
+    "scan_date": "2026-09-28",
+    "selected_count": 0,
+    "content_package_count": 0,
+    "platform_draft_count": 0,
+    "status": "no_package_created",
+    "note": "No formal selection; no current content review package or platform draft was generated."
+  },
   "HR-20260927-01": {
     "content_status": "review_ready",
     "content_label": "RBA 9月29日决策前 AUD/USD 固定风险刷新审核包待人工审核",
