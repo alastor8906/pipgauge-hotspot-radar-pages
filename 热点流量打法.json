@@ -1,6 +1,13 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-27T22:02:58+08:00",
+  "updated_at": "2026-09-28T22:02:00+08:00",
+  "last_scan": {
+    "scan_date": "2026-09-28",
+    "selected_count": 0,
+    "playbook_ready_count": 0,
+    "content_package_count": 0,
+    "note": "No item passed the dated-fact, independent-source, novelty and search-to-calculator gates. No playbook was created or refreshed."
+  },
   "items": {
     "HR-20260927-01": {
       "playbook_status": "ready",

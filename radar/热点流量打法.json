@@ -1,7 +1,64 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-26T22:01:25+08:00",
+  "updated_at": "2026-09-28T22:02:00+08:00",
+  "last_scan": {
+    "scan_date": "2026-09-28",
+    "selected_count": 0,
+    "playbook_ready_count": 0,
+    "content_package_count": 0,
+    "note": "No item passed the dated-fact, independent-source, novelty and search-to-calculator gates. No playbook was created or refreshed."
+  },
   "items": {
+    "HR-20260927-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-09-29T14:30:00+10:00",
+      "traffic_hook": "The Reserve Bank of Australia's official calendar puts its Monetary Policy Decision Statement at 2:30 pm AEST on Tuesday, September 29, with a 3:30 pm media conference. Reuters and ABC's recent coverage, ForexFactory's event listing, and current public Reddit discussion make the decision clock a live discovery hook. The hook is the verified clock and a fixed-loss calculation, never an RBA or AUD/USD call.",
+      "traffic_window": "Refresh the existing August 11 RBA/AUD/USD article from September 27 until the RBA publishes the decision statement at 2:30 pm AEST on September 29. The pre-decision headline and all future-tense decision language expire immediately when the statement arrives, if RBA changes the schedule, or if a published result creates a separately verified post-decision query.",
+      "search_intents": [
+        "RBA September 29 2026 decision AUDUSD risk",
+        "RBA decision AUDUSD position size calculator",
+        "AUDUSD pip value 50 pip stop",
+        "how many lots AUDUSD for 100 dollar risk",
+        "RBA rate decision fixed risk size"
+      ],
+      "traffic_angle": "Borrow the dated September 29 decision clock to answer a question that stays non-directional: if a USD 10,000 account caps planned price loss at USD 100, what AUD/USD size corresponds to a 25-, 50-, or 75-pip planned stop? At an explicitly approximate USD 10 per pip per standard lot in a USD account, the readable teaching values are 0.40, 0.20, and about 0.13 lot before costs. The RBA headline earns attention; the fixed-loss arithmetic answers the search; neither predicts the statement or AUD/USD.",
+      "calculator_bridge": "Give the RBA time, formula, and worked table first. PipGauge Pip Value verifies the AUD/USD per-pip assumption for the reader's account currency, then PipGauge Position Size checks USD 100 divided by the reader's planned stop. PositionMath may only be an optional generic cross-check. P&L or Spread Cost are hypothetical stress tools, not claims about the RBA event or execution.",
+      "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; AUD/USD in a USD account at an approximate USD 10 per pip per standard lot. A 25/50/75-pip planned stop maps to 0.40/0.20/about 0.13 lot before commission, spread, slippage, and broker rounding. These are teaching inputs, not a live quote, expected range, or trade instruction.",
+      "distribution_order": [
+        "refresh existing PipGauge article HR-20260811-01",
+        "Medium dated pre-decision fixed-risk refresh",
+        "X self-contained AUD/USD sizing thread",
+        "Reddit native process discussion without a first-round link"
+      ],
+      "link_placement": "Lead with the official decision time, formula, and three readable sizes. Add at most one PipGauge verification link only after the arithmetic and execution caveats. Do not put a link, tracking parameter, or product pitch in the first Reddit post. The X thread must remain understandable with no link.",
+      "expiry_condition": "Stop the pre-decision frame as the September 29 statement appears, if the RBA alters its calendar, or if a verified published result changes the reader question. Do not recycle the 25/50/75-pip grid as an RBA forecast, expected-move estimate, or evergreen claim about AUD/USD volatility.",
+      "editorial_boundary": "Do not predict the cash-rate decision, policy path, inflation, AUD/USD, rates, volatility, profitability, or a market move. Do not recommend long/short exposure, present consensus or news commentary as a signal, call a planned stop a guaranteed fill, or present assumed pip value, spread, commission, or slippage as observed event execution data.",
+      "refresh_target": "HR-20260811-01",
+      "refresh_signals": {
+        "fact_delta": true,
+        "search_delta": true,
+        "example_delta": true,
+        "window_delta": true
+      },
+      "refresh_updates": [
+        "replace the August 11 4.35% hold and post-decision framing with the official September 29 2:30 pm AEST decision-statement clock and 3:30 pm media conference",
+        "replace the stale USD 50 at 20/35/50-pip table with an explicitly instructional USD 100 at 25/50/75-pip table",
+        "replace old FOREX.com immediate-move commentary with current RBA, Reuters, ABC, ForexFactory, and public Reddit source context",
+        "replace the expired August 12 CPI cutoff with an immediate September 29 statement-publication stop gate"
+      ],
+      "content_mainline": "Refresh the existing RBA/AUD/USD risk article into a dated September 29 pre-decision fixed-risk check. Update the title, opening, sources, timing, and example; do not publish a second RBA or AUD/USD macro article.",
+      "body_material": [
+        "RBA official September 28-29 Monetary Policy Board meeting and September 29 2:30 pm AEST statement / 3:30 pm media conference",
+        "Reuters September 22 current RBA coverage and ABC September 22 independent decision-week context",
+        "ForexFactory September 29 calendar and public Reddit discussion as discovery/heat only",
+        "USD 100 fixed risk across 25/50/75-pip planned stops",
+        "immediate expiry when the statement is released"
+      ],
+      "product_bridge": "PipGauge verifies an AUD/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret RBA policy, forecast a currency move, or guarantee an execution fill.",
+      "product_bridge_type": "existing"
+    },
     "HR-20260918-01": {
       "playbook_status": "ready",
       "execution_mode": "refresh",

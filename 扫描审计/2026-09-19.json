@@ -1,0 +1,159 @@
+{
+  "scan_date": "2026-09-19",
+  "generated_at": "2026-09-19T22:02:44+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-09-19T22:02:44+08:00",
+      "source_count": 5,
+      "note": "核验 FTMO 9 月 17 日 CFD maintenance update、正式 Futures launch 与当前 rules，以及 CME 9 月 14 日 Globex listing notice 和 Factor futures FAQ。仅将有日期的条款、时间和上市状态作事实。"
+    },
+    {
+      "channel": "可靠英文媒体与独立行业核查",
+      "status": "complete",
+      "checked_at": "2026-09-19T22:02:44+08:00",
+      "source_count": 2,
+      "note": "核验 FinanceFeeds 对 CME factor-futures suite 的独立英文报道，以及 Liquidity24 对 FTMO Futures formal launch 的上一期独立发现页；后者仅用于确认上一期 refresh 仍可追溯。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "complete",
+      "checked_at": "2026-09-19T22:02:44+08:00",
+      "source_count": 3,
+      "note": "检索公开 FTMO Futures Reddit、ForexFactory 与 BabyPips。检到的 FTMO Reddit 贴为折扣/体验讨论；BabyPips 新文为常青 consistency-rule 解释；均未形成当期可验证的非方向性计算需求。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-09-19T22:02:44+08:00",
+      "source_count": 0,
+      "note": "公开 X 索引未提供可核验的 E-mini Factor 或 FTMO calculation query；Quora 受 robots/login 限制，未采用墙后材料。未登录、发帖、评论、私信或操作任何账户。"
+    }
+  ],
+  "candidates": {
+    "HR-20260919-01": {
+      "sources": [
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/en/blog/trading-updates/trading-update-17-sep-2026/",
+          "source_type": "official_dated_cfd_maintenance_update",
+          "published_at": "2026-09-17",
+          "freshness_role": "officially schedules MT4/MT5 maintenance for September 19, 02:00-18:00 GMT+3, and says overnight holders should check contract specifications for swaps",
+          "reliable": true
+        },
+        {
+          "publisher": "ForexFactory",
+          "url": "https://www.forexfactory.com/calendar?week=sep19.2026",
+          "source_type": "public_current_calendar_discovery_check",
+          "published_at": "checked 2026-09-19",
+          "freshness_role": "public discovery check only; it supplied no independent FTMO-maintenance impact or specification calculation question",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_maintenance_has_one_official_source_but_no_independent_demand_numeric_input_or_publishable_window",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "Before a future named maintenance window ends, an independent public English demand source and an official or reader-verified symbol specification with a specific non-directional calculation input must both exist; otherwise retain it as an operational notice, not content demand.",
+        "rationale": "The official maintenance notice is current, but at scan time the stated 18:00 GMT+3 endpoint leaves about one hour. Its swap reminder contains no swap amount, point value, margin or other calculated input, and no verified independent reader query was found. A generic P&L or margin article would be topic padding."
+      }
+    },
+    "HR-20260919-02": {
+      "sources": [
+        {
+          "publisher": "CME Group",
+          "url": "https://www.cmegroup.com/notices/electronic-trading/2026/09/20260914.html",
+          "source_type": "official_dated_globex_listing_notice",
+          "published_at": "2026-09-14",
+          "freshness_role": "confirms a September 21 trade date for five CME and one CBOT E-mini Factor futures, which is inside the seven-day forward event window, subject to regulatory review",
+          "reliable": true
+        },
+        {
+          "publisher": "FinanceFeeds",
+          "url": "https://financefeeds.com/cme-will-put-six-equity-factors-into-futures-on-21-september/",
+          "source_type": "independent_english_industry_product_report",
+          "published_at": "2026-08-28",
+          "freshness_role": "independently describes the six-contract suite and identifies post-launch volume and open interest as unresolved rather than asserting retail use or liquidity",
+          "reliable": true
+        },
+        {
+          "publisher": "CME Group",
+          "url": "https://www.cmegroup.com/articles/faqs/faq-e-mini-factor-futures.html",
+          "source_type": "official_current_product_faq_same_publisher",
+          "published_at": "checked 2026-09-19",
+          "freshness_role": "lists the six underlying factor indexes and preserves the pending-regulatory-review condition; it is not an independent second publisher",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
+          "url": "https://www.cmegroup.com/markets/equities/sp-500-dow-jones-factor-futures.html",
+          "source_type": "public_discussion_search_negative_result",
+          "published_at": "checked 2026-09-19",
+          "freshness_role": "public discovery searches found no attributable, non-directional tick-value, quantity, margin or portfolio-risk question; the linked CME page is retained only as the product identity reference",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_future_launch_is_cross_verified_but_has_no_verified_existing_calculator_path_or_public_calculation_demand",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "After listing, reopen only on a dated official contract-specification or margin input plus a separately attributable public, non-directional user question that an existing PositionMath or PipGauge calculator can answer without pretending to know the contract specification.",
+        "rationale": "The launch is verifiable and imminent, but its current public discussion is product availability and prospective liquidity. Existing generic calculators cannot establish the new contracts' tick, multiplier, margin or portfolio correlation. Without a source-backed calculation question and natural bridge, creating a P&L example would fabricate demand."
+      }
+    },
+    "HR-20260919-03": {
+      "sources": [
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/en/press-release/ftmo-launches-ftmo-futures/",
+          "source_type": "official_dated_product_formal_launch",
+          "published_at": "2026-09-17",
+          "freshness_role": "formal Futures launch remains inside the 72-hour window but was already used as the dated refresh fact in HR-20260918-01",
+          "reliable": true
+        },
+        {
+          "publisher": "Liquidity24",
+          "url": "https://www.liquidity24.com/ftmo-expands-into-futures-market-with-the-launch-of-ftmo-futures",
+          "source_type": "independent_english_industry_launch_discovery",
+          "published_at": "2026-09-17",
+          "freshness_role": "independent formal-launch discovery source already recorded in the previous period; it does not establish a new rule or calculation input today",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/PropFirmTester",
+          "url": "https://www.reddit.com/r/PropFirmTester/comments/1wkjrkv/got_a_handful_of_99_off_codes_for_ftmo_futures/",
+          "source_type": "public_current_promotional_experience_discussion",
+          "published_at": "2026-09-19",
+          "freshness_role": "current discussion signal only; disclosed discount/experience content provides no independently verifiable rule fact or non-directional calculation task",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_duplicate_of_prior_formal_launch_refresh_without_second_qualified_delta",
+        "duplicate_of": ["HR-20260918-01"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "A dated official correction to the plan, phase, daily-loss, drawdown, eligibility, platform or contract specification together with a distinct public rule-reading calculation query; otherwise expire formal-launch language after the prior package's September 20 deadline.",
+        "rationale": "The prior package already converts the formal launch and current 50K Pro daily-loss rule into a bounded, variable-input calculation. Today's promotional Reddit discussion neither changes the facts nor supplies a new reader task, searchable wording or example. A second refresh would be duplicate content."
+      }
+    }
+  }
+}
