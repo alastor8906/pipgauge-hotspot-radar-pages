@@ -1,0 +1,143 @@
+{
+  "scan_date": "2026-09-29",
+  "generated_at": "2026-09-29T22:02:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-09-29T22:02:00+08:00",
+      "source_count": 3,
+      "note": "核验 RBA 9 月 29 日决定声明、BEA 9 月 30 日 GDP/Personal Income and Outlays 日程与 FTMO 9 月 24 日 Futures update；利率、时点与规则性事实只取英文正式页面。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-09-29T22:02:00+08:00",
+      "source_count": 1,
+      "note": "ABC News Australia 的同日英文报道独立交叉确认 RBA 25bp 上调至 4.60%。未把单一官方 BEA 日程或 FTMO 自身归档误算成独立来源。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "partial",
+      "checked_at": "2026-09-29T22:02:00+08:00",
+      "source_count": 1,
+      "note": "公开 r/AusFinance 结果日讨论显示 RBA 结果关注；GDP/PCE 与 FTMO 的公开材料仍是日历、方向或泛化讨论，未保留可归属的 non-directional fixed-risk、pip/tick value、margin、quantity、cost 或 portfolio-risk 问题。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-09-29T22:02:00+08:00",
+      "source_count": 0,
+      "note": "公开可验证索引未产生本期可保留的计算需求；Quora robots 限制未绕过。没有使用登录、墙后、截图或不可验证内容。"
+    }
+  ],
+  "candidates": {
+    "HR-20260929-01": {
+      "sources": [
+        {
+          "publisher": "Reserve Bank of Australia",
+          "url": "https://www.rba.gov.au/media-releases/2026/mr-26-27.html",
+          "source_type": "official_dated_policy_decision",
+          "published_at": "2026-09-29",
+          "freshness_role": "official September 29 statement records a 25-basis-point increase in the cash-rate target to 4.60%",
+          "reliable": true
+        },
+        {
+          "publisher": "ABC News Australia",
+          "url": "https://www.abc.net.au/news/2026-09-29/rba-lifts-rates-highest-level-in-15-years-september-2026/107206640",
+          "source_type": "independent_reliable_same_day_news",
+          "published_at": "2026-09-29",
+          "freshness_role": "independent same-day English report confirms the 25bp increase from 4.35% to 4.60%",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/AusFinance",
+          "url": "https://www.reddit.com/r/AusFinance/comments/1wt0msg/rba_lifts_interest_rates_025pc_to_46pc/",
+          "source_type": "public_result_day_discussion_heat",
+          "published_at": "2026-09-29",
+          "freshness_role": "same-day public result discussion demonstrates attention only; it does not establish policy facts, AUD/USD direction, realised volatility, spreads or fills",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass",
+        "decision_gate": "selected_refresh_existing_audusd_rba_article_with_published_fact_and_post_result_search_to_calculator_path",
+        "duplicate_of": ["HR-20260811-01", "HR-20260927-01"],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "reopen_trigger": "After the September 30 result-day window, reopen only on an RBA correction or a later independently verified fact paired with an attributable non-directional calculation question and an additional refresh signal.",
+        "rationale": "The official 4.60% result and independent same-day report replace the expired calendar frame; public result-day attention supports a current discovery path. The 30/60/90-pip USD 100 table replaces the former pre-decision table. Refresh the existing article, never create a second RBA/AUDUSD article."
+      }
+    },
+    "HR-20260929-02": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Economic Analysis",
+          "url": "https://www.bea.gov/news/schedule",
+          "source_type": "official_dated_release_schedule",
+          "published_at": "checked 2026-09-29",
+          "freshness_role": "official schedule places GDP Third Estimate and August Personal Income and Outlays on September 30 2026 at 8:30 AM ET",
+          "reliable": true
+        },
+        {
+          "publisher": "ForexFactory / Reddit public indexes",
+          "url": "https://www.forexfactory.com/calendar?day=sep30.2026",
+          "source_type": "public_calendar_discussion_insufficient_signal",
+          "published_at": "checked 2026-09-29",
+          "freshness_role": "current calendar/discussion discovery remains release- and direction-led, without an attributable calculator question",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_same_release_clock_without_independent_fact_source_or_search_to_calculator_journey",
+        "duplicate_of": ["HR-20260925-03", "HR-20260928-02"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "A released result independently reported in reliable English, an attributable non-directional fixed-risk, pip-value, margin or cost question, and one additional fact, search, example or window delta.",
+        "rationale": "The nearer release time alone cannot create a new generic macro-risk article. The source count and natural calculator path both remain insufficient."
+      }
+    },
+    "HR-20260929-03": {
+      "sources": [
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/en/futures/blog/trading-updates/futures-trading-update-24-sep-2026/",
+          "source_type": "official_dated_futures_update",
+          "published_at": "2026-09-24",
+          "freshness_role": "official update says no disruptions or holidays are expected in the upcoming week",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
+          "url": "https://www.forexfactory.com/calendar",
+          "source_type": "public_discussion_search_insufficient_signal",
+          "published_at": "checked 2026-09-29",
+          "freshness_role": "no attributable update-linked daily-loss, quantity, contract-value, margin or cost question was retained",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_no_new_rule_example_or_window_after_existing_formal_launch_refresh",
+        "duplicate_of": ["HR-20260918-01", "HR-20260928-03"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "A dated FTMO plan, rule, eligibility, platform or contract-specification change with an independent public impact signal and an attributable non-directional daily-loss or quantity question, plus a second refresh signal.",
+        "rationale": "A no-disruption notice changes no input to the formal-launch daily-loss reading path and does not establish a new user calculation task."
+      }
+    }
+  }
+}

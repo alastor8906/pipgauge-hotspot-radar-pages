@@ -1,14 +1,37 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-28T22:02:00+08:00",
+  "updated_at": "2026-09-29T22:02:00+08:00",
   "last_scan": {
-    "scan_date": "2026-09-28",
-    "selected_count": 0,
-    "playbook_ready_count": 0,
-    "content_package_count": 0,
-    "note": "No item passed the dated-fact, independent-source, novelty and search-to-calculator gates. No playbook was created or refreshed."
+    "scan_date": "2026-09-29",
+    "selected_count": 1,
+    "playbook_ready_count": 1,
+    "content_package_count": 1,
+    "note": "One result-led RBA refresh passed the dated-fact, two-independent-source, novelty and natural search-to-calculator gates. It updates the existing AUD/USD article; it does not create a same-shape second article."
   },
   "items": {
+    "HR-20260929-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-09-30T08:30:00-04:00",
+      "traffic_hook": "The Reserve Bank of Australia has published its September 29 decision: a 25-basis-point cash-rate increase to 4.60%. ABC News independently reported the result, and a same-day public Reddit discussion shows active result-day attention. The hook is the completed, source-checked 4.60% decision—not an AUD/USD target, rate-path call, or claim about the market reaction.",
+      "traffic_window": "Refresh the existing AUD/USD fixed-risk article on September 29 and keep the dated result frame only through the September 30 U.S. GDP/PCE release window. Replace the headline and lead if the RBA corrects the statement, a later official RBA document changes the material facts, or a distinct verified question supersedes this result-day calculation path.",
+      "search_intents": ["RBA raises cash rate 4.60 AUDUSD risk", "RBA September 29 2026 AUDUSD position size calculator", "AUDUSD pip value 60 pip stop", "how many lots AUDUSD for 100 dollar risk", "RBA 4.60 fixed risk position size"],
+      "traffic_angle": "Borrow the verified 4.60% rate-rise headline to answer one post-decision calculation question: with a USD 10,000 account, USD 100 maximum planned price risk, and an explicitly approximate USD 10-per-pip AUD/USD teaching input, what planned size corresponds to 30, 60, or 90 pips? The readable answers are about 0.33, 0.17, and 0.11 lot before costs. The result earns attention; the fixed-risk table answers the numerical question; neither predicts AUD/USD or interprets the next RBA meeting.",
+      "calculator_bridge": "State the published decision, formula and three worked sizes first. PipGauge Pip Value verifies AUD/USD pip value for the reader's account currency and contract convention; PipGauge Position Size verifies the USD 100 and planned-stop inputs. P&L or Spread Cost can only be labelled hypothetical checks. PositionMath is optional and cannot interpret RBA policy, predict AUD/USD, or guarantee execution.",
+      "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; AUD/USD in a USD account at an approximate USD 10 per pip per standard lot teaching assumption. A 30/60/90-pip planned stop maps to about 0.33/0.17/0.11 lot before commission, spread, slippage and broker rounding. These are teaching inputs, not a live quote, expected range, or trade instruction.",
+      "distribution_order": ["refresh existing PipGauge article HR-20260811-01 via the September 27 pre-decision refresh HR-20260927-01", "Medium dated post-decision fixed-risk refresh", "X self-contained AUD/USD risk-math thread", "Reddit native process discussion without a first-round link"],
+      "link_placement": "Lead with the RBA result, formula, the three readable sizes and the plan-versus-fill limit. Put one PipGauge verification link after that useful material. Do not put a link, tracking parameter or product pitch in the initial Reddit post, and keep the X thread independently readable.",
+      "expiry_condition": "Stop using the result-day title after September 30, on an RBA correction, or when a later independently verified fact produces a distinct reader question. Do not recycle the 30/60/90-pip grid as a claim about actual AUD/USD volatility, the effect of the hike, spreads, fills or a policy forecast.",
+      "editorial_boundary": "Do not predict the next RBA decision, policy path, inflation, AUD/USD, rates, volatility, profitability or a market move. Do not recommend long/short exposure, call a planned stop a guaranteed fill, or represent assumed pip value, spread, commission or slippage as observed event execution data.",
+      "refresh_target": "HR-20260811-01",
+      "refresh_signals": {"fact_delta": true, "search_delta": true, "example_delta": true, "window_delta": true},
+      "refresh_updates": ["replace the expired pre-decision title and all scheduled/coming decision language from HR-20260927-01 with the published September 29 25bp-to-4.60% fact", "replace pre-decision calendar and preview sources with the RBA decision statement and ABC same-day report; retain Reddit only as heat evidence", "replace the 25/50/75-pip teaching table with a clearly labelled 30/60/90-pip post-result table", "replace the statement-publication expiry with the September 30, official-correction or distinct-new-question gate"],
+      "content_mainline": "Refresh the existing RBA/AUD/USD article into a post-decision fixed-risk check using the published 4.60% fact and transparent 30/60/90-pip arithmetic; do not create another RBA or AUD/USD article.",
+      "body_material": ["RBA September 29 official 25bp increase to 4.60%", "ABC News independent same-day English report", "public Reddit result-day attention as heat only", "USD 100 risk at 30/60/90 pips", "short September 30 expiry without price or policy prediction"],
+      "product_bridge": "PipGauge verifies AUD/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret the RBA decision, forecast a currency move, or guarantee execution.",
+      "product_bridge_type": "existing"
+    },
     "HR-20260927-01": {
       "playbook_status": "ready",
       "execution_mode": "refresh",
