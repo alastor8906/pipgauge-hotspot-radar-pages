@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-09-29T22:05:22+08:00",
-  "latest_scan_date": "2026-09-29",
+  "generated_at": "2026-09-30T22:07:58+08:00",
+  "latest_scan_date": "2026-09-30",
   "available_dates": [
+    "2026-09-30",
     "2026-09-29",
     "2026-09-28",
     "2026-09-27",
@@ -71,8 +72,418 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-09-30",
+      "generated_at": "2026-09-30T22:07:58+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 66,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 1,
+        "observation": 3,
+        "discarded": 1,
+        "total": 5,
+        "selected_average": 97.0,
+        "all_selected_pass_gate": true,
+        "content_ready": 1,
+        "playbook_ready": 1
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-09-30",
+          "candidate_id": "HR-20260930-01",
+          "status": "selected",
+          "topic": "Australia's August CPI Is 4.0%: Refresh the AUD/USD Fixed-Risk Check",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 24,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 8,
+          "total_score": 97,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L"
+          ],
+          "reason": "ABS's September 30 release records annual August CPI at 4.0% after July's 3.5%, independently confirmed by ABC News; same-day public Reddit and ForexFactory signals show result-day attention. Refresh HR-20260811-01 and replace the expired HR-20260929-01 RBA-result snapshot with a non-directional USD 100 / 40-80-120-pip AUD/USD fixed-risk check; do not treat the teaching stops as an observed or expected CPI move.",
+          "content_status": "review_ready",
+          "content_label": "澳洲 8 月 CPI 4.0% 结果后 AUD/USD 固定风险刷新审核包待人工审核",
+          "content_url": "../内容生产/2026-09-30/HR-20260930-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-10-01T00:00:00+10:00",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "refresh",
+            "urgency": "high",
+            "publish_deadline": "2026-10-01T00:00:00+10:00",
+            "traffic_hook": "Australia's ABS has published August annual CPI at 4.0%, after 3.5% in July. ABC News Australia independently reported the same result, and same-day public Reddit discussion plus ForexFactory's current calendar show result-day attention. The hook is the source-checked CPI result—not an AUD/USD target, an RBA-path call, or a market-reaction claim.",
+            "traffic_window": "Refresh the existing AUD/USD fixed-risk article on September 30 and retain the dated CPI-result frame only through the October 1 Australian session. Replace the headline and lead if ABS or ABC corrects material facts, a later official RBA/ABS document changes the relevant facts, or a distinct verified reader question supersedes this result-day calculation path.",
+            "search_intents": [
+              "Australia August CPI 4.0 AUDUSD risk",
+              "Australia CPI 2026 AUDUSD position size calculator",
+              "AUDUSD pip value 80 pip stop",
+              "how many lots AUDUSD for 100 dollar risk",
+              "Australia CPI fixed risk position size"
+            ],
+            "traffic_angle": "Borrow the verified 4.0% CPI headline to answer one post-result calculation question: with a USD 10,000 account, USD 100 maximum planned price risk, and an explicitly approximate USD 10-per-pip AUD/USD teaching input, what planned size corresponds to 40, 80, or 120 pips? The readable answers are 0.25, about 0.12, and about 0.08 lot before costs. The result earns attention; the fixed-risk table answers the numerical question; neither predicts AUD/USD, RBA policy, inflation or volatility. The stop inputs are not presented as an actual or expected CPI-day range.",
+            "calculator_bridge": "State the published CPI result, formula, three worked sizes and stop-input limit first. PipGauge Pip Value verifies AUD/USD pip value for the reader's account currency and contract convention; PipGauge Position Size verifies the USD 100 and planned-stop inputs. P&L or Spread Cost can only be labelled hypothetical checks. PositionMath is optional and cannot interpret CPI, predict AUD/USD, or guarantee execution.",
+            "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; AUD/USD in a USD account at an approximate USD 10 per pip per standard lot teaching assumption. A 40/80/120-pip planned stop maps to 0.25/about 0.12/about 0.08 lot before commission, spread, slippage and broker rounding. These are teaching inputs, not a live quote, expected CPI range or trade instruction.",
+            "distribution_order": [
+              "refresh existing PipGauge article HR-20260811-01 and replace the September 29 result snapshot HR-20260929-01",
+              "Medium dated post-CPI fixed-risk refresh",
+              "X self-contained AUD/USD risk-math thread",
+              "Reddit native process discussion without a first-round link"
+            ],
+            "link_placement": "Lead with the ABS/ABC result, formula, three readable sizes and the plan-versus-fill limit. Put one PipGauge verification link after that useful material. Do not put a link, tracking parameter or product pitch in the initial Reddit post, and keep the X thread independently readable.",
+            "expiry_condition": "Stop using the CPI-result title after the October 1 Australian session, on an ABS/ABC correction, or when a later independently verified fact produces a distinct reader question. Do not recycle the 40/80/120-pip grid as a claim about actual AUD/USD volatility, the effect of CPI, spreads, fills or an RBA forecast.",
+            "editorial_boundary": "Do not predict the next RBA decision, policy path, inflation, AUD/USD, rates, volatility, profitability or a market move. Do not recommend long/short exposure, call a planned stop a guaranteed fill, or represent assumed pip value, spread, commission or slippage as observed event execution data.",
+            "refresh_target": "HR-20260811-01",
+            "refresh_signals": {
+              "fact_delta": true,
+              "search_delta": true,
+              "example_delta": false,
+              "window_delta": true
+            },
+            "refresh_updates": [
+              "replace the September 29 RBA 4.60% result title and all RBA-result lead language from HR-20260929-01 with the published ABS August CPI 4.0% result after 3.5% in July",
+              "replace RBA/ABC decision sources with the ABS CPI release and ABC same-day CPI report; retain Reddit and ForexFactory only as heat/discovery evidence",
+              "replace the 30/60/90-pip teaching table with a clearly labelled 40/80/120-pip table and say explicitly that it is not an observed or expected CPI range",
+              "replace the September 30 expiry with the October 1 Australian-session, official-correction or distinct-new-question gate"
+            ],
+            "content_mainline": "Refresh the existing RBA/AUD/USD article into a post-CPI fixed-risk check using the published 4.0% result and transparent 40/80/120-pip arithmetic; do not create another RBA or AUD/USD article.",
+            "body_material": [
+              "ABS September 30 official August CPI release: 4.0% annual CPI after 3.5% in July",
+              "ABC News Australia independent same-day English report",
+              "public Reddit and ForexFactory result-day attention as heat only",
+              "USD 100 risk at 40/80/120 pips",
+              "short October 1 Australian-session expiry without price or policy prediction"
+            ],
+            "product_bridge": "PipGauge verifies AUD/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret CPI, forecast a currency move, or guarantee execution.",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Australian Bureau of Statistics",
+                "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release",
+                "source_type": "official_dated_cpi_release",
+                "published_at": "2026-09-30",
+                "freshness_role": "official August 2026 release records annual CPI at 4.0%, after 3.5% in July, and original monthly CPI at 0.4%",
+                "reliable": true
+              },
+              {
+                "publisher": "ABC News Australia",
+                "url": "https://www.abc.net.au/news/2026-09-30/asx-markets-business-live-news/107210136",
+                "source_type": "independent_reliable_same_day_news",
+                "published_at": "2026-09-30",
+                "freshness_role": "independent same-day English report confirms annual CPI rose to 4.0% from 3.5%",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit r/AusFinance",
+                "url": "https://www.reddit.com/r/AusFinance/comments/1wts9da/cpi_rose_40_in_the_year_to_august_2026/",
+                "source_type": "public_result_day_discussion_heat",
+                "published_at": "2026-09-30",
+                "freshness_role": "same-day public discussion demonstrates attention only; it does not establish CPI facts, AUD/USD direction, realised volatility, spreads or fills",
+                "reliable": false
+              },
+              {
+                "publisher": "ForexFactory",
+                "url": "https://www.forexfactory.com/calendar?range=sep28.2026-sep30.2026",
+                "source_type": "public_calendar_discovery",
+                "published_at": "checked 2026-09-30",
+                "freshness_role": "public calendar displays the current Australian CPI entries; discovery only, not a factual or execution source",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass",
+              "decision_gate": "selected_refresh_existing_audusd_rba_article_with_published_cpi_fact_and_result_day_search_to_calculator_path",
+              "duplicate_of": [
+                "HR-20260811-01",
+                "HR-20260929-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "After the October 1 Australian-session window, reopen only on an ABS or ABC correction, a later independently verified Australian fact paired with an attributable non-directional calculation question, and at least one additional refresh signal.",
+              "rationale": "ABS and ABC establish a same-day, cross-checked CPI result; public discussion supports attention. The reader question changes from the prior RBA decision result to a CPI result while the USD 100 fixed-risk calculation remains the transparent answer. The 40/80/120-pip grid is clearly labelled as teaching input rather than an event-volatility claim. Refresh the existing article; never create a second RBA/AUDUSD article."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-30",
+          "candidate_id": "HR-20260930-02",
+          "status": "observation",
+          "topic": "U.S. GDP and PCE Results Are Fresh but Still Lack an Attributable Risk-Math Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 24,
+          "calculator_fit": 18,
+          "evidence_quality": 15,
+          "actionability": 3,
+          "total_score": 85,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Margin",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "BEA's released August PCE figures and AP's independently reported 2.2% Q2 GDP result establish current facts, but retained public discussions are direction and immediate-reaction led. No attributable non-directional fixed-risk, pip-value, margin, cost or portfolio-risk question was verified; generic macro arithmetic would manufacture demand.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Economic Analysis",
+                "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-august-2026",
+                "source_type": "official_dated_personal_income_and_outlays_release",
+                "published_at": "2026-09-30",
+                "freshness_role": "official August release records 0.2% core PCE month on month, 3.4% headline PCE year on year, 3.0% core PCE year on year, 0.2% personal income and 0.9% spending",
+                "reliable": true
+              },
+              {
+                "publisher": "Associated Press",
+                "url": "https://apnews.com/article/economic-growth-inflation-trump-trade-b759367e9e6149fe145652cc95887aa0",
+                "source_type": "independent_reliable_same_day_news",
+                "published_at": "2026-09-30",
+                "freshness_role": "independent same-day English report confirms second-quarter GDP third estimate at 2.2%, revised from 1.5%",
+                "reliable": true
+              },
+              {
+                "publisher": "ForexFactory",
+                "url": "https://www.forexfactory.com/calendar?range=sep28.2026-sep30.2026",
+                "source_type": "public_calendar_actuals",
+                "published_at": "checked 2026-09-30",
+                "freshness_role": "current calendar displays GDP, core PCE and related actuals; it is discovery, not an independent reliable fact source",
+                "reliable": false
+              },
+              {
+                "publisher": "Reddit r/TradeVerseNetwork",
+                "url": "https://www.reddit.com/r/TradeVerseNetwork/comments/1wu40y4/sept_30_data_dump_core_pce_cools_to_30_yoy_q2_gdp/",
+                "source_type": "public_result_day_discussion_insufficient_signal",
+                "published_at": "2026-09-30",
+                "freshness_role": "same-day post is a direction and immediate-market-reaction discussion, not an attributable non-directional calculator question",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_cross_reported_macro_results_without_attributable_search_to_calculator_journey",
+              "duplicate_of": [
+                "HR-20260928-02",
+                "HR-20260929-02"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A public, attributable non-directional fixed-risk, pip-value, margin, cost or portfolio-risk question linked to these released results, plus one additional refresh signal.",
+              "rationale": "The facts are current and cross-reported, but the retained public material asks what the data means for direction or immediate reaction. No verified reader is seeking a release-specific calculation. A generic EUR/USD, index or macro table would manufacture a journey rather than capture one."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-30",
+          "candidate_id": "HR-20260930-03",
+          "status": "observation",
+          "topic": "China's September PMI Returns to 50.1 but Has No Calculator-Linked Two-Source Path",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 20,
+          "calculator_fit": 18,
+          "evidence_quality": 10,
+          "actionability": 3,
+          "total_score": 76,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Currency Converter",
+            "Position Size",
+            "Portfolio Heat"
+          ],
+          "reason": "AP reports China's official September manufacturing PMI at 50.1 after 49.8, and current public discussion exists, but no second independent reliable English fact source or attributable non-directional calculation question was retained. Do not force a USD/CNY, gold or index calculator bridge onto a directional macro discussion.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Associated Press",
+                "url": "https://apnews.com/article/b53c7e697fc842de4c9a57ac5362cd05",
+                "source_type": "reliable_same_day_news_reporting_official_data",
+                "published_at": "2026-09-30",
+                "freshness_role": "same-day English report says China's official manufacturing PMI rose to 50.1 in September from 49.8 in August",
+                "reliable": true
+              },
+              {
+                "publisher": "ForexFactory",
+                "url": "https://www.forexfactory.com/calendar?range=sep28.2026-sep30.2026",
+                "source_type": "public_calendar_actuals",
+                "published_at": "checked 2026-09-30",
+                "freshness_role": "current calendar displays 50.1 manufacturing PMI and related China data; it is not an independent reliable fact source",
+                "reliable": false
+              },
+              {
+                "publisher": "Reddit public index",
+                "url": "https://www.reddit.com/r/MarketFluxHub/comments/1wttcfu/china_manufacturing_pmi_returns_to_growth_in/",
+                "source_type": "public_discussion_insufficient_signal",
+                "published_at": "2026-09-30",
+                "freshness_role": "same-day indexed discussion is growth and market-direction led, without an attributable non-directional calculation question",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_missing_second_independent_reliable_fact_source_and_calculator_journey",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A second reliable English fact source and a public, attributable non-directional USD/CNY conversion, risk-budget, position, cost or portfolio-risk question.",
+              "rationale": "A new PMI result alone does not create a validated PipGauge or PositionMath user task. The available discussion is directional, and no second independent reliable English fact source was retained."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-30",
+          "candidate_id": "HR-20260930-04",
+          "status": "observation",
+          "topic": "FTMO Futures Formal Launch Has No New Rule-Math Delta",
+          "primary_site": "PositionMath",
+          "freshness": 12,
+          "traffic_potential": 16,
+          "calculator_fit": 22,
+          "evidence_quality": 10,
+          "actionability": 4,
+          "total_score": 64,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": false,
+          "calculator_mapping": [
+            "Daily Loss Limit",
+            "Position Size",
+            "Prop Firm Simulator"
+          ],
+          "reason": "FTMO's September 17 formal launch is already covered by HR-20260918-01. No dated plan, daily-loss, drawdown, eligibility, contract-specification or platform change, independent current impact signal, or attributable quantity question was verified; no same-shape refresh is created.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "FTMO",
+                "url": "https://ftmo.com/en/press-release/ftmo-launches-ftmo-futures/",
+                "source_type": "official_dated_product_launch",
+                "published_at": "2026-09-17",
+                "freshness_role": "official September 17 release remains the formal FTMO Futures launch record, but it is now outside the initial launch window and adds no new current rule input",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
+                "url": "https://www.forexfactory.com/calendar",
+                "source_type": "public_discussion_search_insufficient_signal",
+                "published_at": "checked 2026-09-30",
+                "freshness_role": "no dated rule, eligibility, daily-loss, drawdown, contract-specification or platform change and no attributable daily-loss or quantity question was retained",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_no_new_rule_math_or_refresh_delta_after_existing_formal_launch_package",
+              "duplicate_of": [
+                "HR-20260918-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": false
+              },
+              "reopen_trigger": "A dated FTMO plan, rule, eligibility, platform or contract-specification change with an independent public impact signal and an attributable non-directional daily-loss or quantity question, plus a second refresh signal.",
+              "rationale": "The existing formal-launch package owns the only verified rule-reading path. Repeating it without a changed official input, new searchable user question or defined window would be duplicate production."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-09-30",
+          "candidate_id": "HR-20260930-05",
+          "status": "discarded",
+          "topic": "Directional CPI GDP PMI FX Equity Crypto Politics Sports and Unverifiable Social Commentary",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 60,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Direction calls, rate-probability and price-target posts, prop-firm purchase promotion, political framing, sports or entertainment, pure crypto hype, login-wall material and unverifiable social commentary are excluded. None supplies a fact-led, non-directional calculation journey."
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-09-30T22:00:00+08:00",
+          "source_count": 4,
+          "note": "核验 ABS 8 月 CPI、BEA 8 月 Personal Income and Outlays、FTMO 9 月 17 日 Futures 发布与中国 PMI 的官方归属；数值、日期与规则性事实只取公开英文正式页面或由独立可靠英文媒体明确归属。"
+        },
+        {
+          "channel": "独立可靠英文来源",
+          "status": "complete",
+          "checked_at": "2026-09-30T22:00:00+08:00",
+          "source_count": 3,
+          "note": "ABC News Australia 同日交叉确认 ABS CPI；AP 同日独立确认美国 Q2 GDP 第三次估计与中国 PMI。未把日历、社区或单一官方发布误算成独立可靠来源。"
+        },
+        {
+          "channel": "Reddit / ForexFactory / BabyPips",
+          "status": "partial",
+          "checked_at": "2026-09-30T22:00:00+08:00",
+          "source_count": 4,
+          "note": "r/AusFinance 和 ForexFactory 显示澳洲 CPI 结果日注意力；美国数据和中国 PMI 的可见讨论是市场方向或即时反应导向，未保留为计算需求；BabyPips 未发现可归属的当期非方向性问题。"
+        },
+        {
+          "channel": "X / Quora",
+          "status": "limited",
+          "checked_at": "2026-09-30T22:00:00+08:00",
+          "source_count": 0,
+          "note": "公开可验证索引未产生可保留的当期计算需求；Quora robots 限制未绕过。没有使用登录、墙后、截图或不可验证内容。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-09-30_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-09-30_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-09-30"
+      }
+    },
+    {
       "scan_date": "2026-09-29",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 65,
@@ -396,7 +807,7 @@
     },
     {
       "scan_date": "2026-09-28",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 64,
@@ -681,7 +1092,7 @@
     },
     {
       "scan_date": "2026-09-27",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 63,
@@ -1031,7 +1442,7 @@
     },
     {
       "scan_date": "2026-09-26",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 62,
@@ -1240,7 +1651,7 @@
     },
     {
       "scan_date": "2026-09-25",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 61,
@@ -1520,7 +1931,7 @@
     },
     {
       "scan_date": "2026-09-24",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 60,
@@ -1800,7 +2211,7 @@
     },
     {
       "scan_date": "2026-09-23",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 59,
@@ -2038,7 +2449,7 @@
     },
     {
       "scan_date": "2026-09-22",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 58,
@@ -2327,7 +2738,7 @@
     },
     {
       "scan_date": "2026-09-21",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 57,
@@ -2549,7 +2960,7 @@
     },
     {
       "scan_date": "2026-09-20",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 56,
@@ -2834,7 +3245,7 @@
     },
     {
       "scan_date": "2026-09-19",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 55,
@@ -3109,7 +3520,7 @@
     },
     {
       "scan_date": "2026-09-18",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 54,
@@ -3391,7 +3802,7 @@
     },
     {
       "scan_date": "2026-09-17",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 53,
@@ -3736,7 +4147,7 @@
     },
     {
       "scan_date": "2026-09-16",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 52,
@@ -4026,7 +4437,7 @@
     },
     {
       "scan_date": "2026-09-15",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 51,
@@ -4240,7 +4651,7 @@
     },
     {
       "scan_date": "2026-09-14",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 50,
@@ -4444,7 +4855,7 @@
     },
     {
       "scan_date": "2026-09-13",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 49,
@@ -4649,7 +5060,7 @@
     },
     {
       "scan_date": "2026-09-12",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 48,
@@ -4835,7 +5246,7 @@
     },
     {
       "scan_date": "2026-09-11",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 47,
@@ -5052,7 +5463,7 @@
     },
     {
       "scan_date": "2026-09-10",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 46,
@@ -5338,7 +5749,7 @@
     },
     {
       "scan_date": "2026-09-09",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 45,
@@ -5618,7 +6029,7 @@
     },
     {
       "scan_date": "2026-09-08",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 44,
@@ -5947,7 +6358,7 @@
     },
     {
       "scan_date": "2026-09-07",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 43,
@@ -6249,7 +6660,7 @@
     },
     {
       "scan_date": "2026-09-06",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 42,
@@ -6565,7 +6976,7 @@
     },
     {
       "scan_date": "2026-09-05",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 41,
@@ -6887,7 +7298,7 @@
     },
     {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -7200,7 +7611,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -7511,7 +7922,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -7842,7 +8253,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -8180,7 +8591,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -8573,7 +8984,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -8983,7 +9394,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -9455,7 +9866,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -9800,7 +10211,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -10145,7 +10556,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -10597,7 +11008,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -11010,7 +11421,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -11242,7 +11653,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -11687,7 +12098,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -12062,7 +12473,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -12454,7 +12865,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -12830,7 +13241,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -13154,7 +13565,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -13537,7 +13948,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -13878,7 +14289,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -14253,7 +14664,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -14641,7 +15052,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -14986,7 +15397,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -15314,7 +15725,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -15626,7 +16037,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -15947,7 +16358,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -16308,7 +16719,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -16661,7 +17072,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -17105,7 +17516,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -17614,7 +18025,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -18084,7 +18495,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -18627,7 +19038,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -18899,7 +19310,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -19212,7 +19623,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -19647,7 +20058,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -20161,7 +20572,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -20670,7 +21081,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -21138,7 +21549,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -21552,7 +21963,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -21951,7 +22362,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-09-29T22:05:22+08:00",
+      "generated_at": "2026-09-30T22:07:58+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -22390,10 +22801,10 @@
       }
     }
   ],
-  "scan_date": "2026-09-29",
+  "scan_date": "2026-09-30",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 65,
+    "day": 66,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -22402,27 +22813,27 @@
   },
   "stats": {
     "selected": 1,
-    "observation": 2,
+    "observation": 3,
     "discarded": 1,
-    "total": 4,
-    "selected_average": 99.0,
+    "total": 5,
+    "selected_average": 97.0,
     "all_selected_pass_gate": true,
     "content_ready": 1,
     "playbook_ready": 1
   },
   "candidates": [
     {
-      "scan_date": "2026-09-29",
-      "candidate_id": "HR-20260929-01",
+      "scan_date": "2026-09-30",
+      "candidate_id": "HR-20260930-01",
       "status": "selected",
-      "topic": "RBA Raises the Cash Rate to 4.60%: Refresh the AUD/USD Fixed-Risk Check",
+      "topic": "Australia's August CPI Is 4.0%: Refresh the AUD/USD Fixed-Risk Check",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 24,
       "calculator_fit": 25,
       "evidence_quality": 15,
-      "actionability": 10,
-      "total_score": 99,
+      "actionability": 8,
+      "total_score": 97,
       "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
@@ -22431,121 +22842,129 @@
         "Position Size",
         "P&L"
       ],
-      "reason": "The RBA's September 29 statement confirms a 25bp increase to 4.60%, independently reported by ABC News, while an active public Reddit result discussion demonstrates same-day attention. This is a result-led refresh of HR-20260927-01 / HR-20260811-01: replace the expired decision-clock title, facts and example with a dated 4.60% result and a non-directional USD 100 / 30-60-90-pip AUD/USD fixed-risk table; do not forecast the currency or policy path.",
+      "reason": "ABS's September 30 release records annual August CPI at 4.0% after July's 3.5%, independently confirmed by ABC News; same-day public Reddit and ForexFactory signals show result-day attention. Refresh HR-20260811-01 and replace the expired HR-20260929-01 RBA-result snapshot with a non-directional USD 100 / 40-80-120-pip AUD/USD fixed-risk check; do not treat the teaching stops as an observed or expected CPI move.",
       "content_status": "review_ready",
-      "content_label": "RBA 4.60% 结果版 AUD/USD 固定风险刷新审核包待人工审核",
-      "content_url": "../内容生产/2026-09-29/HR-20260929-01/index.html",
+      "content_label": "澳洲 8 月 CPI 4.0% 结果后 AUD/USD 固定风险刷新审核包待人工审核",
+      "content_url": "../内容生产/2026-09-30/HR-20260930-01/index.html",
       "content_format": "Medium / Reddit / X",
-      "deadline": "2026-09-30T08:30:00-04:00",
+      "deadline": "2026-10-01T00:00:00+10:00",
       "traffic_playbook": {
         "playbook_status": "ready",
         "execution_mode": "refresh",
         "urgency": "high",
-        "publish_deadline": "2026-09-30T08:30:00-04:00",
-        "traffic_hook": "The Reserve Bank of Australia has published its September 29 decision: a 25-basis-point cash-rate increase to 4.60%. ABC News independently reported the result, and a same-day public Reddit discussion shows active result-day attention. The hook is the completed, source-checked 4.60% decision—not an AUD/USD target, rate-path call, or claim about the market reaction.",
-        "traffic_window": "Refresh the existing AUD/USD fixed-risk article on September 29 and keep the dated result frame only through the September 30 U.S. GDP/PCE release window. Replace the headline and lead if the RBA corrects the statement, a later official RBA document changes the material facts, or a distinct verified question supersedes this result-day calculation path.",
+        "publish_deadline": "2026-10-01T00:00:00+10:00",
+        "traffic_hook": "Australia's ABS has published August annual CPI at 4.0%, after 3.5% in July. ABC News Australia independently reported the same result, and same-day public Reddit discussion plus ForexFactory's current calendar show result-day attention. The hook is the source-checked CPI result—not an AUD/USD target, an RBA-path call, or a market-reaction claim.",
+        "traffic_window": "Refresh the existing AUD/USD fixed-risk article on September 30 and retain the dated CPI-result frame only through the October 1 Australian session. Replace the headline and lead if ABS or ABC corrects material facts, a later official RBA/ABS document changes the relevant facts, or a distinct verified reader question supersedes this result-day calculation path.",
         "search_intents": [
-          "RBA raises cash rate 4.60 AUDUSD risk",
-          "RBA September 29 2026 AUDUSD position size calculator",
-          "AUDUSD pip value 60 pip stop",
+          "Australia August CPI 4.0 AUDUSD risk",
+          "Australia CPI 2026 AUDUSD position size calculator",
+          "AUDUSD pip value 80 pip stop",
           "how many lots AUDUSD for 100 dollar risk",
-          "RBA 4.60 fixed risk position size"
+          "Australia CPI fixed risk position size"
         ],
-        "traffic_angle": "Borrow the verified 4.60% rate-rise headline to answer one post-decision calculation question: with a USD 10,000 account, USD 100 maximum planned price risk, and an explicitly approximate USD 10-per-pip AUD/USD teaching input, what planned size corresponds to 30, 60, or 90 pips? The readable answers are about 0.33, 0.17, and 0.11 lot before costs. The result earns attention; the fixed-risk table answers the numerical question; neither predicts AUD/USD or interprets the next RBA meeting.",
-        "calculator_bridge": "State the published decision, formula and three worked sizes first. PipGauge Pip Value verifies AUD/USD pip value for the reader's account currency and contract convention; PipGauge Position Size verifies the USD 100 and planned-stop inputs. P&L or Spread Cost can only be labelled hypothetical checks. PositionMath is optional and cannot interpret RBA policy, predict AUD/USD, or guarantee execution.",
-        "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; AUD/USD in a USD account at an approximate USD 10 per pip per standard lot teaching assumption. A 30/60/90-pip planned stop maps to about 0.33/0.17/0.11 lot before commission, spread, slippage and broker rounding. These are teaching inputs, not a live quote, expected range, or trade instruction.",
+        "traffic_angle": "Borrow the verified 4.0% CPI headline to answer one post-result calculation question: with a USD 10,000 account, USD 100 maximum planned price risk, and an explicitly approximate USD 10-per-pip AUD/USD teaching input, what planned size corresponds to 40, 80, or 120 pips? The readable answers are 0.25, about 0.12, and about 0.08 lot before costs. The result earns attention; the fixed-risk table answers the numerical question; neither predicts AUD/USD, RBA policy, inflation or volatility. The stop inputs are not presented as an actual or expected CPI-day range.",
+        "calculator_bridge": "State the published CPI result, formula, three worked sizes and stop-input limit first. PipGauge Pip Value verifies AUD/USD pip value for the reader's account currency and contract convention; PipGauge Position Size verifies the USD 100 and planned-stop inputs. P&L or Spread Cost can only be labelled hypothetical checks. PositionMath is optional and cannot interpret CPI, predict AUD/USD, or guarantee execution.",
+        "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; AUD/USD in a USD account at an approximate USD 10 per pip per standard lot teaching assumption. A 40/80/120-pip planned stop maps to 0.25/about 0.12/about 0.08 lot before commission, spread, slippage and broker rounding. These are teaching inputs, not a live quote, expected CPI range or trade instruction.",
         "distribution_order": [
-          "refresh existing PipGauge article HR-20260811-01 via the September 27 pre-decision refresh HR-20260927-01",
-          "Medium dated post-decision fixed-risk refresh",
+          "refresh existing PipGauge article HR-20260811-01 and replace the September 29 result snapshot HR-20260929-01",
+          "Medium dated post-CPI fixed-risk refresh",
           "X self-contained AUD/USD risk-math thread",
           "Reddit native process discussion without a first-round link"
         ],
-        "link_placement": "Lead with the RBA result, formula, the three readable sizes and the plan-versus-fill limit. Put one PipGauge verification link after that useful material. Do not put a link, tracking parameter or product pitch in the initial Reddit post, and keep the X thread independently readable.",
-        "expiry_condition": "Stop using the result-day title after September 30, on an RBA correction, or when a later independently verified fact produces a distinct reader question. Do not recycle the 30/60/90-pip grid as a claim about actual AUD/USD volatility, the effect of the hike, spreads, fills or a policy forecast.",
+        "link_placement": "Lead with the ABS/ABC result, formula, three readable sizes and the plan-versus-fill limit. Put one PipGauge verification link after that useful material. Do not put a link, tracking parameter or product pitch in the initial Reddit post, and keep the X thread independently readable.",
+        "expiry_condition": "Stop using the CPI-result title after the October 1 Australian session, on an ABS/ABC correction, or when a later independently verified fact produces a distinct reader question. Do not recycle the 40/80/120-pip grid as a claim about actual AUD/USD volatility, the effect of CPI, spreads, fills or an RBA forecast.",
         "editorial_boundary": "Do not predict the next RBA decision, policy path, inflation, AUD/USD, rates, volatility, profitability or a market move. Do not recommend long/short exposure, call a planned stop a guaranteed fill, or represent assumed pip value, spread, commission or slippage as observed event execution data.",
         "refresh_target": "HR-20260811-01",
         "refresh_signals": {
           "fact_delta": true,
           "search_delta": true,
-          "example_delta": true,
+          "example_delta": false,
           "window_delta": true
         },
         "refresh_updates": [
-          "replace the expired pre-decision title and all scheduled/coming decision language from HR-20260927-01 with the published September 29 25bp-to-4.60% fact",
-          "replace pre-decision calendar and preview sources with the RBA decision statement and ABC same-day report; retain Reddit only as heat evidence",
-          "replace the 25/50/75-pip teaching table with a clearly labelled 30/60/90-pip post-result table",
-          "replace the statement-publication expiry with the September 30, official-correction or distinct-new-question gate"
+          "replace the September 29 RBA 4.60% result title and all RBA-result lead language from HR-20260929-01 with the published ABS August CPI 4.0% result after 3.5% in July",
+          "replace RBA/ABC decision sources with the ABS CPI release and ABC same-day CPI report; retain Reddit and ForexFactory only as heat/discovery evidence",
+          "replace the 30/60/90-pip teaching table with a clearly labelled 40/80/120-pip table and say explicitly that it is not an observed or expected CPI range",
+          "replace the September 30 expiry with the October 1 Australian-session, official-correction or distinct-new-question gate"
         ],
-        "content_mainline": "Refresh the existing RBA/AUD/USD article into a post-decision fixed-risk check using the published 4.60% fact and transparent 30/60/90-pip arithmetic; do not create another RBA or AUD/USD article.",
+        "content_mainline": "Refresh the existing RBA/AUD/USD article into a post-CPI fixed-risk check using the published 4.0% result and transparent 40/80/120-pip arithmetic; do not create another RBA or AUD/USD article.",
         "body_material": [
-          "RBA September 29 official 25bp increase to 4.60%",
-          "ABC News independent same-day English report",
-          "public Reddit result-day attention as heat only",
-          "USD 100 risk at 30/60/90 pips",
-          "short September 30 expiry without price or policy prediction"
+          "ABS September 30 official August CPI release: 4.0% annual CPI after 3.5% in July",
+          "ABC News Australia independent same-day English report",
+          "public Reddit and ForexFactory result-day attention as heat only",
+          "USD 100 risk at 40/80/120 pips",
+          "short October 1 Australian-session expiry without price or policy prediction"
         ],
-        "product_bridge": "PipGauge verifies AUD/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret the RBA decision, forecast a currency move, or guarantee execution.",
+        "product_bridge": "PipGauge verifies AUD/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret CPI, forecast a currency move, or guarantee execution.",
         "product_bridge_type": "existing"
       },
       "scan_audit": {
         "sources": [
           {
-            "publisher": "Reserve Bank of Australia",
-            "url": "https://www.rba.gov.au/media-releases/2026/mr-26-27.html",
-            "source_type": "official_dated_policy_decision",
-            "published_at": "2026-09-29",
-            "freshness_role": "official September 29 statement records a 25-basis-point increase in the cash-rate target to 4.60%",
+            "publisher": "Australian Bureau of Statistics",
+            "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release",
+            "source_type": "official_dated_cpi_release",
+            "published_at": "2026-09-30",
+            "freshness_role": "official August 2026 release records annual CPI at 4.0%, after 3.5% in July, and original monthly CPI at 0.4%",
             "reliable": true
           },
           {
             "publisher": "ABC News Australia",
-            "url": "https://www.abc.net.au/news/2026-09-29/rba-lifts-rates-highest-level-in-15-years-september-2026/107206640",
+            "url": "https://www.abc.net.au/news/2026-09-30/asx-markets-business-live-news/107210136",
             "source_type": "independent_reliable_same_day_news",
-            "published_at": "2026-09-29",
-            "freshness_role": "independent same-day English report confirms the 25bp increase from 4.35% to 4.60%",
+            "published_at": "2026-09-30",
+            "freshness_role": "independent same-day English report confirms annual CPI rose to 4.0% from 3.5%",
             "reliable": true
           },
           {
             "publisher": "Reddit r/AusFinance",
-            "url": "https://www.reddit.com/r/AusFinance/comments/1wt0msg/rba_lifts_interest_rates_025pc_to_46pc/",
+            "url": "https://www.reddit.com/r/AusFinance/comments/1wts9da/cpi_rose_40_in_the_year_to_august_2026/",
             "source_type": "public_result_day_discussion_heat",
-            "published_at": "2026-09-29",
-            "freshness_role": "same-day public result discussion demonstrates attention only; it does not establish policy facts, AUD/USD direction, realised volatility, spreads or fills",
+            "published_at": "2026-09-30",
+            "freshness_role": "same-day public discussion demonstrates attention only; it does not establish CPI facts, AUD/USD direction, realised volatility, spreads or fills",
+            "reliable": false
+          },
+          {
+            "publisher": "ForexFactory",
+            "url": "https://www.forexfactory.com/calendar?range=sep28.2026-sep30.2026",
+            "source_type": "public_calendar_discovery",
+            "published_at": "checked 2026-09-30",
+            "freshness_role": "public calendar displays the current Australian CPI entries; discovery only, not a factual or execution source",
             "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "pass",
-          "decision_gate": "selected_refresh_existing_audusd_rba_article_with_published_fact_and_post_result_search_to_calculator_path",
+          "decision_gate": "selected_refresh_existing_audusd_rba_article_with_published_cpi_fact_and_result_day_search_to_calculator_path",
           "duplicate_of": [
             "HR-20260811-01",
-            "HR-20260927-01"
+            "HR-20260929-01"
           ],
           "refresh_signals": {
             "fact_delta": true,
             "search_delta": true,
-            "example_delta": true,
+            "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "After the September 30 result-day window, reopen only on an RBA correction or a later independently verified fact paired with an attributable non-directional calculation question and an additional refresh signal.",
-          "rationale": "The official 4.60% result and independent same-day report replace the expired calendar frame; public result-day attention supports a current discovery path. The 30/60/90-pip USD 100 table replaces the former pre-decision table. Refresh the existing article, never create a second RBA/AUDUSD article."
+          "reopen_trigger": "After the October 1 Australian-session window, reopen only on an ABS or ABC correction, a later independently verified Australian fact paired with an attributable non-directional calculation question, and at least one additional refresh signal.",
+          "rationale": "ABS and ABC establish a same-day, cross-checked CPI result; public discussion supports attention. The reader question changes from the prior RBA decision result to a CPI result while the USD 100 fixed-risk calculation remains the transparent answer. The 40/80/120-pip grid is clearly labelled as teaching input rather than an event-volatility claim. Refresh the existing article; never create a second RBA/AUDUSD article."
         }
       }
     },
     {
-      "scan_date": "2026-09-29",
-      "candidate_id": "HR-20260929-02",
+      "scan_date": "2026-09-30",
+      "candidate_id": "HR-20260930-02",
       "status": "observation",
-      "topic": "U.S. September 30 GDP and PCE Release Window Still Lacks a Distinct Risk-Math Journey",
+      "topic": "U.S. GDP and PCE Results Are Fresh but Still Lack an Attributable Risk-Math Journey",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 23,
-      "calculator_fit": 20,
-      "evidence_quality": 12,
-      "actionability": 4,
-      "total_score": 84,
+      "traffic_potential": 24,
+      "calculator_fit": 18,
+      "evidence_quality": 15,
+      "actionability": 3,
+      "total_score": 85,
       "hard_gate": false,
-      "reliable_sources": 1,
+      "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
         "Pip Value",
@@ -22554,56 +22973,135 @@
         "P&L",
         "Spread Cost"
       ],
-      "reason": "BEA's official schedule confirms the September 30 08:30 ET GDP third estimate and August Personal Income and Outlays release. The current calendar window remains real, but no second independent reliable event source or attributable public non-directional fixed-risk, pip-value, margin or cost question was verified; it is not enough to manufacture a generic macro table.",
+      "reason": "BEA's released August PCE figures and AP's independently reported 2.2% Q2 GDP result establish current facts, but retained public discussions are direction and immediate-reaction led. No attributable non-directional fixed-risk, pip-value, margin, cost or portfolio-risk question was verified; generic macro arithmetic would manufacture demand.",
       "scan_audit": {
         "sources": [
           {
             "publisher": "U.S. Bureau of Economic Analysis",
-            "url": "https://www.bea.gov/news/schedule",
-            "source_type": "official_dated_release_schedule",
-            "published_at": "checked 2026-09-29",
-            "freshness_role": "official schedule places GDP Third Estimate and August Personal Income and Outlays on September 30 2026 at 8:30 AM ET",
+            "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-august-2026",
+            "source_type": "official_dated_personal_income_and_outlays_release",
+            "published_at": "2026-09-30",
+            "freshness_role": "official August release records 0.2% core PCE month on month, 3.4% headline PCE year on year, 3.0% core PCE year on year, 0.2% personal income and 0.9% spending",
             "reliable": true
           },
           {
-            "publisher": "ForexFactory / Reddit public indexes",
-            "url": "https://www.forexfactory.com/calendar?day=sep30.2026",
-            "source_type": "public_calendar_discussion_insufficient_signal",
-            "published_at": "checked 2026-09-29",
-            "freshness_role": "current calendar/discussion discovery remains release- and direction-led, without an attributable calculator question",
+            "publisher": "Associated Press",
+            "url": "https://apnews.com/article/economic-growth-inflation-trump-trade-b759367e9e6149fe145652cc95887aa0",
+            "source_type": "independent_reliable_same_day_news",
+            "published_at": "2026-09-30",
+            "freshness_role": "independent same-day English report confirms second-quarter GDP third estimate at 2.2%, revised from 1.5%",
+            "reliable": true
+          },
+          {
+            "publisher": "ForexFactory",
+            "url": "https://www.forexfactory.com/calendar?range=sep28.2026-sep30.2026",
+            "source_type": "public_calendar_actuals",
+            "published_at": "checked 2026-09-30",
+            "freshness_role": "current calendar displays GDP, core PCE and related actuals; it is discovery, not an independent reliable fact source",
+            "reliable": false
+          },
+          {
+            "publisher": "Reddit r/TradeVerseNetwork",
+            "url": "https://www.reddit.com/r/TradeVerseNetwork/comments/1wu40y4/sept_30_data_dump_core_pce_cools_to_30_yoy_q2_gdp/",
+            "source_type": "public_result_day_discussion_insufficient_signal",
+            "published_at": "2026-09-30",
+            "freshness_role": "same-day post is a direction and immediate-market-reaction discussion, not an attributable non-directional calculator question",
             "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_same_release_clock_without_independent_fact_source_or_search_to_calculator_journey",
+          "decision_gate": "observation_cross_reported_macro_results_without_attributable_search_to_calculator_journey",
           "duplicate_of": [
-            "HR-20260925-03",
-            "HR-20260928-02"
+            "HR-20260928-02",
+            "HR-20260929-02"
           ],
           "refresh_signals": {
-            "fact_delta": false,
+            "fact_delta": true,
             "search_delta": false,
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "A released result independently reported in reliable English, an attributable non-directional fixed-risk, pip-value, margin or cost question, and one additional fact, search, example or window delta.",
-          "rationale": "The nearer release time alone cannot create a new generic macro-risk article. The source count and natural calculator path both remain insufficient."
+          "reopen_trigger": "A public, attributable non-directional fixed-risk, pip-value, margin, cost or portfolio-risk question linked to these released results, plus one additional refresh signal.",
+          "rationale": "The facts are current and cross-reported, but the retained public material asks what the data means for direction or immediate reaction. No verified reader is seeking a release-specific calculation. A generic EUR/USD, index or macro table would manufacture a journey rather than capture one."
         }
       }
     },
     {
-      "scan_date": "2026-09-29",
-      "candidate_id": "HR-20260929-03",
+      "scan_date": "2026-09-30",
+      "candidate_id": "HR-20260930-03",
       "status": "observation",
-      "topic": "FTMO Futures September 24 No-Disruption Notice Still Has No Rule-Math Refresh Path",
+      "topic": "China's September PMI Returns to 50.1 but Has No Calculator-Linked Two-Source Path",
+      "primary_site": "PipGauge",
+      "freshness": 25,
+      "traffic_potential": 20,
+      "calculator_fit": 18,
+      "evidence_quality": 10,
+      "actionability": 3,
+      "total_score": 76,
+      "hard_gate": false,
+      "reliable_sources": 1,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Currency Converter",
+        "Position Size",
+        "Portfolio Heat"
+      ],
+      "reason": "AP reports China's official September manufacturing PMI at 50.1 after 49.8, and current public discussion exists, but no second independent reliable English fact source or attributable non-directional calculation question was retained. Do not force a USD/CNY, gold or index calculator bridge onto a directional macro discussion.",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "Associated Press",
+            "url": "https://apnews.com/article/b53c7e697fc842de4c9a57ac5362cd05",
+            "source_type": "reliable_same_day_news_reporting_official_data",
+            "published_at": "2026-09-30",
+            "freshness_role": "same-day English report says China's official manufacturing PMI rose to 50.1 in September from 49.8 in August",
+            "reliable": true
+          },
+          {
+            "publisher": "ForexFactory",
+            "url": "https://www.forexfactory.com/calendar?range=sep28.2026-sep30.2026",
+            "source_type": "public_calendar_actuals",
+            "published_at": "checked 2026-09-30",
+            "freshness_role": "current calendar displays 50.1 manufacturing PMI and related China data; it is not an independent reliable fact source",
+            "reliable": false
+          },
+          {
+            "publisher": "Reddit public index",
+            "url": "https://www.reddit.com/r/MarketFluxHub/comments/1wttcfu/china_manufacturing_pmi_returns_to_growth_in/",
+            "source_type": "public_discussion_insufficient_signal",
+            "published_at": "2026-09-30",
+            "freshness_role": "same-day indexed discussion is growth and market-direction led, without an attributable non-directional calculation question",
+            "reliable": false
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "observation_missing_second_independent_reliable_fact_source_and_calculator_journey",
+          "duplicate_of": [],
+          "refresh_signals": {
+            "fact_delta": true,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": true
+          },
+          "reopen_trigger": "A second reliable English fact source and a public, attributable non-directional USD/CNY conversion, risk-budget, position, cost or portfolio-risk question.",
+          "rationale": "A new PMI result alone does not create a validated PipGauge or PositionMath user task. The available discussion is directional, and no second independent reliable English fact source was retained."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-09-30",
+      "candidate_id": "HR-20260930-04",
+      "status": "observation",
+      "topic": "FTMO Futures Formal Launch Has No New Rule-Math Delta",
       "primary_site": "PositionMath",
-      "freshness": 17,
+      "freshness": 12,
       "traffic_potential": 16,
       "calculator_fit": 22,
       "evidence_quality": 10,
-      "actionability": 3,
-      "total_score": 68,
+      "actionability": 4,
+      "total_score": 64,
       "hard_gate": false,
       "reliable_sources": 1,
       "fresh_signal": false,
@@ -22612,32 +23110,31 @@
         "Position Size",
         "Prop Firm Simulator"
       ],
-      "reason": "FTMO's dated September 24 update remains a no-disruption notice, not a plan, eligibility, loss-limit, contract-specification or platform-rule change. It has no independent impact source, new numeric example or attributable non-directional quantity/daily-loss question; HR-20260918-01 remains the formal-launch rule-reading package.",
+      "reason": "FTMO's September 17 formal launch is already covered by HR-20260918-01. No dated plan, daily-loss, drawdown, eligibility, contract-specification or platform change, independent current impact signal, or attributable quantity question was verified; no same-shape refresh is created.",
       "scan_audit": {
         "sources": [
           {
             "publisher": "FTMO",
-            "url": "https://ftmo.com/en/futures/blog/trading-updates/futures-trading-update-24-sep-2026/",
-            "source_type": "official_dated_futures_update",
-            "published_at": "2026-09-24",
-            "freshness_role": "official update says no disruptions or holidays are expected in the upcoming week",
+            "url": "https://ftmo.com/en/press-release/ftmo-launches-ftmo-futures/",
+            "source_type": "official_dated_product_launch",
+            "published_at": "2026-09-17",
+            "freshness_role": "official September 17 release remains the formal FTMO Futures launch record, but it is now outside the initial launch window and adds no new current rule input",
             "reliable": true
           },
           {
             "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
             "url": "https://www.forexfactory.com/calendar",
             "source_type": "public_discussion_search_insufficient_signal",
-            "published_at": "checked 2026-09-29",
-            "freshness_role": "no attributable update-linked daily-loss, quantity, contract-value, margin or cost question was retained",
+            "published_at": "checked 2026-09-30",
+            "freshness_role": "no dated rule, eligibility, daily-loss, drawdown, contract-specification or platform change and no attributable daily-loss or quantity question was retained",
             "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_no_new_rule_example_or_window_after_existing_formal_launch_refresh",
+          "decision_gate": "observation_no_new_rule_math_or_refresh_delta_after_existing_formal_launch_package",
           "duplicate_of": [
-            "HR-20260918-01",
-            "HR-20260928-03"
+            "HR-20260918-01"
           ],
           "refresh_signals": {
             "fact_delta": false,
@@ -22646,15 +23143,15 @@
             "window_delta": false
           },
           "reopen_trigger": "A dated FTMO plan, rule, eligibility, platform or contract-specification change with an independent public impact signal and an attributable non-directional daily-loss or quantity question, plus a second refresh signal.",
-          "rationale": "A no-disruption notice changes no input to the formal-launch daily-loss reading path and does not establish a new user calculation task."
+          "rationale": "The existing formal-launch package owns the only verified rule-reading path. Repeating it without a changed official input, new searchable user question or defined window would be duplicate production."
         }
       }
     },
     {
-      "scan_date": "2026-09-29",
-      "candidate_id": "HR-20260929-04",
+      "scan_date": "2026-09-30",
+      "candidate_id": "HR-20260930-05",
       "status": "discarded",
-      "topic": "Directional RBA GDP PCE FX Equity Crypto Politics Sports and Unverifiable Social Commentary",
+      "topic": "Directional CPI GDP PMI FX Equity Crypto Politics Sports and Unverifiable Social Commentary",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 25,
@@ -22668,48 +23165,48 @@
       "calculator_mapping": [
         "P&L"
       ],
-      "reason": "Direction calls, rate-probability and price-target posts, firm-purchase promotion, political framing, sports or entertainment, pure crypto hype, login-wall material and unverifiable social commentary are excluded. None supplies a fact-led, non-directional calculation journey."
+      "reason": "Direction calls, rate-probability and price-target posts, prop-firm purchase promotion, political framing, sports or entertainment, pure crypto hype, login-wall material and unverifiable social commentary are excluded. None supplies a fact-led, non-directional calculation journey."
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-09-29T22:02:00+08:00",
-      "source_count": 3,
-      "note": "核验 RBA 9 月 29 日决定声明、BEA 9 月 30 日 GDP/Personal Income and Outlays 日程与 FTMO 9 月 24 日 Futures update；利率、时点与规则性事实只取英文正式页面。"
+      "checked_at": "2026-09-30T22:00:00+08:00",
+      "source_count": 4,
+      "note": "核验 ABS 8 月 CPI、BEA 8 月 Personal Income and Outlays、FTMO 9 月 17 日 Futures 发布与中国 PMI 的官方归属；数值、日期与规则性事实只取公开英文正式页面或由独立可靠英文媒体明确归属。"
     },
     {
       "channel": "独立可靠英文来源",
       "status": "complete",
-      "checked_at": "2026-09-29T22:02:00+08:00",
-      "source_count": 1,
-      "note": "ABC News Australia 的同日英文报道独立交叉确认 RBA 25bp 上调至 4.60%。未把单一官方 BEA 日程或 FTMO 自身归档误算成独立来源。"
+      "checked_at": "2026-09-30T22:00:00+08:00",
+      "source_count": 3,
+      "note": "ABC News Australia 同日交叉确认 ABS CPI；AP 同日独立确认美国 Q2 GDP 第三次估计与中国 PMI。未把日历、社区或单一官方发布误算成独立可靠来源。"
     },
     {
       "channel": "Reddit / ForexFactory / BabyPips",
       "status": "partial",
-      "checked_at": "2026-09-29T22:02:00+08:00",
-      "source_count": 1,
-      "note": "公开 r/AusFinance 结果日讨论显示 RBA 结果关注；GDP/PCE 与 FTMO 的公开材料仍是日历、方向或泛化讨论，未保留可归属的 non-directional fixed-risk、pip/tick value、margin、quantity、cost 或 portfolio-risk 问题。"
+      "checked_at": "2026-09-30T22:00:00+08:00",
+      "source_count": 4,
+      "note": "r/AusFinance 和 ForexFactory 显示澳洲 CPI 结果日注意力；美国数据和中国 PMI 的可见讨论是市场方向或即时反应导向，未保留为计算需求；BabyPips 未发现可归属的当期非方向性问题。"
     },
     {
       "channel": "X / Quora",
       "status": "limited",
-      "checked_at": "2026-09-29T22:02:00+08:00",
+      "checked_at": "2026-09-30T22:00:00+08:00",
       "source_count": 0,
-      "note": "公开可验证索引未产生本期可保留的计算需求；Quora robots 限制未绕过。没有使用登录、墙后、截图或不可验证内容。"
+      "note": "公开可验证索引未产生可保留的当期计算需求；Quora robots 限制未绕过。没有使用登录、墙后、截图或不可验证内容。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-09-29_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-09-29_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-09-30_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-09-30_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
     "traffic_playbooks": "../热点流量打法.json",
-    "content_root": "../内容生产/2026-09-29"
+    "content_root": "../内容生产/2026-09-30"
   },
   "radar_model": "v2-content-first",
   "editorial_policy": {
