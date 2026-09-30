@@ -1,14 +1,37 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-29T22:02:00+08:00",
+  "updated_at": "2026-09-30T22:00:00+08:00",
   "last_scan": {
-    "scan_date": "2026-09-29",
+    "scan_date": "2026-09-30",
     "selected_count": 1,
     "playbook_ready_count": 1,
     "content_package_count": 1,
-    "note": "One result-led RBA refresh passed the dated-fact, two-independent-source, novelty and natural search-to-calculator gates. It updates the existing AUD/USD article; it does not create a same-shape second article."
+    "note": "One ABS/ABC cross-checked Australian CPI result refresh passed the dated-fact, two-independent-source, novelty and natural search-to-calculator gates. It updates the existing AUD/USD article and retires the expired RBA result-day snapshot; it does not create a same-shape second article."
   },
   "items": {
+    "HR-20260930-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-10-01T00:00:00+10:00",
+      "traffic_hook": "Australia's ABS has published August annual CPI at 4.0%, after 3.5% in July. ABC News Australia independently reported the same result, and same-day public Reddit discussion plus ForexFactory's current calendar show result-day attention. The hook is the source-checked CPI result—not an AUD/USD target, an RBA-path call, or a market-reaction claim.",
+      "traffic_window": "Refresh the existing AUD/USD fixed-risk article on September 30 and retain the dated CPI-result frame only through the October 1 Australian session. Replace the headline and lead if ABS or ABC corrects material facts, a later official RBA/ABS document changes the relevant facts, or a distinct verified reader question supersedes this result-day calculation path.",
+      "search_intents": ["Australia August CPI 4.0 AUDUSD risk", "Australia CPI 2026 AUDUSD position size calculator", "AUDUSD pip value 80 pip stop", "how many lots AUDUSD for 100 dollar risk", "Australia CPI fixed risk position size"],
+      "traffic_angle": "Borrow the verified 4.0% CPI headline to answer one post-result calculation question: with a USD 10,000 account, USD 100 maximum planned price risk, and an explicitly approximate USD 10-per-pip AUD/USD teaching input, what planned size corresponds to 40, 80, or 120 pips? The readable answers are 0.25, about 0.12, and about 0.08 lot before costs. The result earns attention; the fixed-risk table answers the numerical question; neither predicts AUD/USD, RBA policy, inflation or volatility. The stop inputs are not presented as an actual or expected CPI-day range.",
+      "calculator_bridge": "State the published CPI result, formula, three worked sizes and stop-input limit first. PipGauge Pip Value verifies AUD/USD pip value for the reader's account currency and contract convention; PipGauge Position Size verifies the USD 100 and planned-stop inputs. P&L or Spread Cost can only be labelled hypothetical checks. PositionMath is optional and cannot interpret CPI, predict AUD/USD, or guarantee execution.",
+      "example_scenario": "USD 10,000 account; USD 100 maximum planned price risk; AUD/USD in a USD account at an approximate USD 10 per pip per standard lot teaching assumption. A 40/80/120-pip planned stop maps to 0.25/about 0.12/about 0.08 lot before commission, spread, slippage and broker rounding. These are teaching inputs, not a live quote, expected CPI range or trade instruction.",
+      "distribution_order": ["refresh existing PipGauge article HR-20260811-01 and replace the September 29 result snapshot HR-20260929-01", "Medium dated post-CPI fixed-risk refresh", "X self-contained AUD/USD risk-math thread", "Reddit native process discussion without a first-round link"],
+      "link_placement": "Lead with the ABS/ABC result, formula, three readable sizes and the plan-versus-fill limit. Put one PipGauge verification link after that useful material. Do not put a link, tracking parameter or product pitch in the initial Reddit post, and keep the X thread independently readable.",
+      "expiry_condition": "Stop using the CPI-result title after the October 1 Australian session, on an ABS/ABC correction, or when a later independently verified fact produces a distinct reader question. Do not recycle the 40/80/120-pip grid as a claim about actual AUD/USD volatility, the effect of CPI, spreads, fills or an RBA forecast.",
+      "editorial_boundary": "Do not predict the next RBA decision, policy path, inflation, AUD/USD, rates, volatility, profitability or a market move. Do not recommend long/short exposure, call a planned stop a guaranteed fill, or represent assumed pip value, spread, commission or slippage as observed event execution data.",
+      "refresh_target": "HR-20260811-01",
+      "refresh_signals": {"fact_delta": true, "search_delta": true, "example_delta": false, "window_delta": true},
+      "refresh_updates": ["replace the September 29 RBA 4.60% result title and all RBA-result lead language from HR-20260929-01 with the published ABS August CPI 4.0% result after 3.5% in July", "replace RBA/ABC decision sources with the ABS CPI release and ABC same-day CPI report; retain Reddit and ForexFactory only as heat/discovery evidence", "replace the 30/60/90-pip teaching table with a clearly labelled 40/80/120-pip table and say explicitly that it is not an observed or expected CPI range", "replace the September 30 expiry with the October 1 Australian-session, official-correction or distinct-new-question gate"],
+      "content_mainline": "Refresh the existing RBA/AUD/USD article into a post-CPI fixed-risk check using the published 4.0% result and transparent 40/80/120-pip arithmetic; do not create another RBA or AUD/USD article.",
+      "body_material": ["ABS September 30 official August CPI release: 4.0% annual CPI after 3.5% in July", "ABC News Australia independent same-day English report", "public Reddit and ForexFactory result-day attention as heat only", "USD 100 risk at 40/80/120 pips", "short October 1 Australian-session expiry without price or policy prediction"],
+      "product_bridge": "PipGauge verifies AUD/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret CPI, forecast a currency move, or guarantee execution.",
+      "product_bridge_type": "existing"
+    },
     "HR-20260929-01": {
       "playbook_status": "ready",
       "execution_mode": "refresh",

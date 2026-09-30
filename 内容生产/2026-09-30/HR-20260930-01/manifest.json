@@ -1,0 +1,20 @@
+{
+  "candidate_id": "HR-20260930-01",
+  "scan_date": "2026-09-30",
+  "primary_site": "PipGauge",
+  "topic": "Australia's August CPI Is 4.0%: Refresh the AUD/USD Fixed-Risk Check",
+  "execution_mode": "refresh",
+  "refresh_target": "HR-20260811-01",
+  "package_summary": "当期审核快照：以 ABS 已发布的 8 月 CPI 同比 4.0% 更新既有 AUD/USD 固定风险稿；用 USD 100 与 40/80/120-pip 教学表承接，不预测汇率、利率或波动。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "post_cpi_short_window",
+  "time_status_label": "仅在 2026 年 10 月 1 日澳洲时段前使用；ABS/ABC 更正、RBA 或 ABS 出现后续正式事实，或有新的已核验问题时，必须重审或停用。",
+  "documents": [
+    {"id":"facts","label":"事实与论点","file":"00-事实与论点.md","platform":"internal","kind":"editorial brief","status_label":"已整理"},
+    {"id":"medium","label":"Medium","file":"01-Medium.md","platform":"medium","kind":"long-form draft","status_label":"待人工审核"},
+    {"id":"reddit","label":"Reddit","file":"02-Reddit.md","platform":"reddit","kind":"native discussion draft","status_label":"待人工审核"},
+    {"id":"x","label":"X","file":"03-X.md","platform":"x","kind":"short thread draft","status_label":"待人工审核"},
+    {"id":"review","label":"审核清单","file":"04-人工审核.md","platform":"internal","kind":"human gate","status_label":"必须完成"}
+  ]
+}
