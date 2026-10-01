@@ -1,0 +1,144 @@
+{
+  "scan_date": "2026-10-01",
+  "generated_at": "2026-10-01T22:00:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-01T22:00:00+08:00",
+      "source_count": 5,
+      "note": "核验 BLS 10 月 2 日 Employment Situation 时钟、ABS 9 月 30 日 CPI、Traze 9 月 28 日临时杠杆公告及 Bitget 9 月 30 日 CFD 特殊时段公告；日期、时钟与 provider 条款仅取各自公开英文一手页面。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-10-01T22:00:00+08:00",
+      "source_count": 3,
+      "note": "Reuters 的 9 月 27 日 week-ahead 报道独立确认 10 月 2 日 payrolls 是本周重要事件；ABC News Australia 仍可交叉核验前日 CPI。未把 provider 的不同公告误算为同一规则的独立验证。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-10-01T22:00:00+08:00",
+      "source_count": 3,
+      "note": "公开日历和 Reddit 显示 NFP 日历/事件风险注意力，但保留内容是方向或即时反应导向；没有找到归属于本次事实、非方向性的 fixed-risk、pip/tick value、margin、quantity、cost 或 portfolio-risk 问题。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-01T22:00:00+08:00",
+      "source_count": 0,
+      "note": "公开可验证索引未出现可保留的当期计算需求；Quora robots 限制没有绕过。未使用登录、墙后、截图或不可验证材料。"
+    }
+  ],
+  "candidates": {
+    "HR-20261001-01": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/schedule/2026/home.htm",
+          "source_type": "official_dated_release_schedule",
+          "published_at": "checked 2026-10-01",
+          "freshness_role": "official schedule lists September 2026 Employment Situation for Friday October 2 at 8:30 AM ET",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.lse.co.uk/news/rpt-wall-st-week-ahead-jobs-report-inflation-data-to-test-us-rate-path-economic-strength-unk82gt8ztqjcwe.html",
+          "source_type": "independent_reliable_week_ahead_news",
+          "published_at": "2026-09-27",
+          "freshness_role": "Reuters calls the October 2 monthly employment report the main Wall Street event for the current week",
+          "reliable": true
+        },
+        {
+          "publisher": "ForexFactory",
+          "url": "https://www.forexfactory.com/calendar?range=sep20.2026-oct10.2026",
+          "source_type": "public_calendar_discovery",
+          "published_at": "checked 2026-10-01",
+          "freshness_role": "public calendar displays Non-Farm Employment Change and Unemployment Rate as current event discovery only",
+          "reliable": false
+        },
+        {
+          "publisher": "Reddit r/Daytrading",
+          "url": "https://www.reddit.com/r/Daytrading/comments/1w72iqm/anyone_else_avoid_trading_the_exact_nfp_release/",
+          "source_type": "public_event_risk_discussion_insufficient_signal",
+          "published_at": "checked 2026-10-01",
+          "freshness_role": "visible discussion is about avoiding the exact release and does not establish an attributable calculation request",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_existing_payroll_fixed_risk_path_has_only_nearer_window_and_no_new_non_directional_search_to_calculator_journey",
+        "duplicate_of": ["HR-20260905-01", "HR-20260810-01"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "BLS releases actual September results, an independent reliable English outlet cross-reports material values, a public attributable non-directional calculation question appears, and at least one additional fact, search, example or window delta is present.",
+        "rationale": "The report clock and broad attention are real, but previous release packages already own the generic payroll fixed-risk method. Current public material is direction or reaction led. A new 25/50/100-pip-style table would be invented demand, not a validated traffic journey."
+      }
+    },
+    "HR-20261001-02": {
+      "sources": [
+        {
+          "publisher": "Traze Securities",
+          "url": "https://traze.ae/about-traze/announcements/",
+          "source_type": "official_dated_provider_leverage_notice",
+          "published_at": "2026-09-28",
+          "freshness_role": "provider says some FX/XAUUSD accounts above 1:500 are temporarily reduced to 1:500 around listed October U.S. economic announcements",
+          "reliable": true
+        },
+        {
+          "publisher": "Bitget CFD",
+          "url": "https://www.bitgetapp.com/support/articles/12560603896304",
+          "source_type": "different_provider_notice_not_independent_confirmation",
+          "published_at": "2026-09-30",
+          "freshness_role": "separate provider describes its own products, special periods and leverage settings; it does not confirm Traze terms",
+          "reliable": false
+        },
+        {
+          "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
+          "url": "https://www.forexfactory.com/calendar?range=sep20.2026-oct10.2026",
+          "source_type": "public_search_no_attributable_provider_question",
+          "published_at": "checked 2026-10-01",
+          "freshness_role": "no public, attributable provider-specific margin, leverage or quantity question was retained",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_provider_specific_leverage_terms_lack_independent_impact_and_natural_existing_calculator_path",
+        "duplicate_of": [],
+        "refresh_signals": {"fact_delta": true, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "A dated change to the same provider's public rule with independently verifiable impact or an attributable public question, plus a product-specific and non-generalized margin or quantity calculation path.",
+        "rationale": "Different brokers' temporary settings cannot be combined into a general leverage rule. Without a reader path tied to one provider's actual terms, a generic margin explainer would overstate applicability."
+      }
+    },
+    "HR-20261001-03": {
+      "sources": [
+        {
+          "publisher": "Australian Bureau of Statistics",
+          "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release",
+          "source_type": "official_dated_cpi_release",
+          "published_at": "2026-09-30",
+          "freshness_role": "official August CPI release remains verifiable but is not a new fact during this scan",
+          "reliable": true
+        },
+        {
+          "publisher": "ABC News Australia",
+          "url": "https://www.abc.net.au/news/2026-09-30/asx-markets-business-live-news/107210136",
+          "source_type": "independent_reliable_same_day_news",
+          "published_at": "2026-09-30",
+          "freshness_role": "independent confirmation remains available but does not extend the stated result-day traffic window",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_expired_selected_refresh_without_new_fact_query_or_example_delta",
+        "duplicate_of": ["HR-20260930-01", "HR-20260811-01"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": false},
+        "reopen_trigger": "An ABS or ABC correction, later independently verified Australian fact with an attributable non-directional calculation question, and at least one additional refresh signal.",
+        "rationale": "The prior package declared an October 1 Australian-session expiry. Extending it after that deadline without any new evidence would leave stale time language in circulation and duplicate the AUD/USD fixed-risk article."
+      }
+    }
+  }
+}

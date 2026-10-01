@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-30T22:00:00+08:00",
+  "updated_at": "2026-10-01T22:00:00+08:00",
   "last_scan": {
-    "scan_date": "2026-09-30",
-    "selected_count": 1,
-    "playbook_ready_count": 1,
-    "content_package_count": 1,
-    "note": "One ABS/ABC cross-checked Australian CPI result refresh passed the dated-fact, two-independent-source, novelty and natural search-to-calculator gates. It updates the existing AUD/USD article and retires the expired RBA result-day snapshot; it does not create a same-shape second article."
+    "scan_date": "2026-10-01",
+    "selected_count": 0,
+    "playbook_ready_count": 0,
+    "content_package_count": 0,
+    "note": "No item passed the current dated-fact, independent-source, novelty and natural search-to-calculator gates. The October 2 U.S. jobs-report clock is real but repeats the existing payroll fixed-risk path with only a nearer window; no playbook was created or refreshed."
   },
   "items": {
     "HR-20260930-01": {
