@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-10-01T22:04:44+08:00",
-  "latest_scan_date": "2026-10-01",
+  "generated_at": "2026-10-02T22:06:20+08:00",
+  "latest_scan_date": "2026-10-02",
   "available_dates": [
+    "2026-10-02",
     "2026-10-01",
     "2026-09-30",
     "2026-09-29",
@@ -73,8 +74,291 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-10-02",
+      "generated_at": "2026-10-02T22:06:20+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 68,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 0,
+        "observation": 3,
+        "discarded": 1,
+        "total": 4,
+        "selected_average": 0,
+        "all_selected_pass_gate": true,
+        "content_ready": 0,
+        "playbook_ready": 0
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-10-02",
+          "candidate_id": "HR-20261002-01",
+          "status": "observation",
+          "topic": "U.S. September Payrolls Are Published but Still Do Not Create a New Search-to-Calculator Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 4,
+          "total_score": 94,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "BLS reports September payrolls +29,000, unemployment 4.2%, and combined July-August revisions -60,000; AP independently confirms the released result. BabyPips, ForexFactory and public Reddit show current NFP attention, but retained material is direction/reaction-led rather than an attributable non-directional calculation request. HR-20260905-01 already owns the result-day payroll fixed-risk chain; a new generic lot-size table would manufacture rather than capture demand.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
+                "source_type": "official_dated_employment_result",
+                "published_at": "2026-10-02",
+                "freshness_role": "official same-day September Employment Situation: payrolls +29,000, unemployment 4.2 percent, and combined July-August revisions -60,000",
+                "reliable": true
+              },
+              {
+                "publisher": "Associated Press",
+                "url": "https://apnews.com/article/44b99f9ccbff863888af99402ddf535e",
+                "source_type": "independent_english_news_wire",
+                "published_at": "2026-10-02",
+                "freshness_role": "independent same-day English report confirms +29,000 payrolls, 4.2 percent unemployment, and the combined -60,000 prior-month revisions",
+                "reliable": true
+              },
+              {
+                "publisher": "BabyPips",
+                "url": "https://www.babypips.com/news",
+                "source_type": "public_fx_event_discovery_insufficient_calculation_signal",
+                "published_at": "2026-10-02",
+                "freshness_role": "current public news index retains the September 2026 NFP event guide; used only as FX-audience discovery",
+                "reliable": false
+              },
+              {
+                "publisher": "ForexFactory",
+                "url": "https://www.forexfactory.com/?sc_lang=en",
+                "source_type": "public_calendar_discovery_insufficient_calculation_signal",
+                "published_at": "checked 2026-10-02",
+                "freshness_role": "public calendar is checked for event discovery only and is not used to confirm BLS figures or infer direction",
+                "reliable": false
+              },
+              {
+                "publisher": "Reddit r/Forexstrategy",
+                "url": "https://www.reddit.com/r/Forexstrategy/comments/1wvox8k/september_nfp_what_are_you_expecting/",
+                "source_type": "public_directional_discussion_insufficient_calculation_signal",
+                "published_at": "2026-10-02",
+                "freshness_role": "same-day visible discussion is directional and does not establish an attributable non-directional sizing, pip-value, margin or cost request",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_existing_payroll_result_fixed_risk_path_has_fact_delta_only_without_new_attributable_search_or_example_delta",
+              "duplicate_of": [
+                "HR-20260905-01",
+                "HR-20260810-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A public attributable non-directional calculation question tied to this released result plus at least one additional fact, search, example or distinct-window delta; any qualified work must refresh the existing payroll article rather than create a second shape.",
+              "rationale": "The released values are both fresh and independently confirmed, but the retained public attention is directional or immediate-reaction led. Previous payroll result packages already own the generic fixed-risk arithmetic, so replacing numbers in another lot-size table would manufacture demand instead of finding a new calculator journey."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-10-02",
+          "candidate_id": "HR-20261002-02",
+          "status": "observation",
+          "topic": "E-nano Futures Get Fresh Retail Explanation but Have No Natural PipGauge or PositionMath Bridge",
+          "primary_site": "PositionMath",
+          "freshness": 22,
+          "traffic_potential": 19,
+          "calculator_fit": 12,
+          "evidence_quality": 15,
+          "actionability": 3,
+          "total_score": 71,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Position Size",
+            "Risk/Reward"
+          ],
+          "reason": "CME confirms the E-nano contract terms and NinjaTrader independently describes the August launch; BabyPips published a September 30 retail explainer and public Reddit discussion raises tick-value and commission questions. The current attention is real, but PipGauge NAS100 tools are CFD-specific and PositionMath has no verified CME E-nano contract/tick workflow. Do not relabel a CFD or generic stock calculator as a futures-specification answer or invent a product gap.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "CME Group",
+                "url": "https://www.cmegroup.com/articles/faqs/faq-e-nano-equity-index-futures.html",
+                "source_type": "official_contract_specification",
+                "published_at": "checked 2026-10-02",
+                "freshness_role": "official source for E-nano multipliers, ticks, settlement and offset terms",
+                "reliable": true
+              },
+              {
+                "publisher": "NinjaTrader",
+                "url": "https://ninjatrader.com/futures/futures-contracts/e-nano/",
+                "source_type": "independent_english_product_explainer",
+                "published_at": "checked 2026-10-02",
+                "freshness_role": "independent explanation describes August 24 launch and the one-tenth Micro / one-hundredth E-mini exposure ratio",
+                "reliable": true
+              },
+              {
+                "publisher": "BabyPips",
+                "url": "https://www.babypips.com/news/explainer-what-are-e-nano-futures-2026-09-30",
+                "source_type": "recent_public_retail_explainer_heat",
+                "published_at": "2026-09-30",
+                "freshness_role": "recent public explainer establishes a current retail-discovery window but does not replace CME specifications",
+                "reliable": false
+              },
+              {
+                "publisher": "Reddit r/FuturesTrading",
+                "url": "https://www.reddit.com/r/FuturesTrading/comments/1w4f89u/looks_like_ninjatrader_and_robinhood_picked_up/",
+                "source_type": "public_tick_commission_discussion",
+                "published_at": "2026-09-02",
+                "freshness_role": "public discussion raises tick-size and commission questions but is not a contract-fact source",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass_nonduplicate_but_not_actionable",
+              "decision_gate": "observation_no_verified_existing_calculator_accepts_cme_e_nano_specs_without_cfd_or_generic_tool_misrepresentation",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": true,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A versioned existing-site E-nano futures workflow or a public, attributable non-directional exposure/risk question that one existing calculator can accurately answer with verified CME input conventions.",
+              "rationale": "The recent retail explanation and public tick/commission attention are genuine. However, PipGauge NAS100 Point Value is CFD-specific and PositionMath has no verified CME E-nano contract/tick workflow. Publishing a bridge would confuse product specifications, so no playbook or product-gap claim is created."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-10-02",
+          "candidate_id": "HR-20261002-04",
+          "status": "discarded",
+          "topic": "Directional NFP FX Equity Oil Crypto Politics Sports and Unverifiable Social Commentary",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 60,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Direction calls, price targets, NFP/ISM trade setups, broker or prop-firm purchase promotion, political framing, sports or entertainment, pure crypto hype, login-wall material and unverifiable social commentary are excluded. None supplies a source-checked, non-directional calculation journey."
+        },
+        {
+          "scan_date": "2026-10-02",
+          "candidate_id": "HR-20261002-03",
+          "status": "observation",
+          "topic": "CME Wind Power Futures Are Due October 5 but Lack Independent Demand and an Existing Calculator Path",
+          "primary_site": "PipGauge",
+          "freshness": 24,
+          "traffic_potential": 11,
+          "calculator_fit": 5,
+          "evidence_quality": 9,
+          "actionability": 2,
+          "total_score": 51,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Position Size",
+            "P&L"
+          ],
+          "reason": "CME's official FAQ states first trade date October 5, pending regulatory review, and provides contract multipliers and tick information. No independent reliable current impact source or attributable public calculation demand was retained, and neither existing site has a verified wind-power-futures workflow. Keep only as a source-led observation.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "CME Group",
+                "url": "https://www.cmegroup.com/articles/faqs/faq-wind-power-futures-and-options.html",
+                "source_type": "official_upcoming_product_faq",
+                "published_at": "checked 2026-10-02",
+                "freshness_role": "official FAQ sets October 5 first trade date pending regulatory review and lists contract and tick terms",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_single_official_source_without_independent_impact_signal_or_existing_calculator_path",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "An independently reliable English launch/impact report or a public attributable calculation question after trading begins, plus a verified existing calculator workflow that does not blur contract specifications.",
+              "rationale": "The upcoming date is factual and inside the time window, but one official source cannot establish the required independent impact or demand path. No public non-directional calculation demand or accurate existing-tool bridge was retained."
+            }
+          }
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-10-02T22:03:00+08:00",
+          "source_count": 3,
+          "note": "核验 BLS 当日 September Employment Situation、CME E-nano FAQ 与 CME Wind Power futures FAQ；数字、日期、合约规格与上线窗口仅取对应一手英文页面。"
+        },
+        {
+          "channel": "独立可靠英文来源",
+          "status": "complete",
+          "checked_at": "2026-10-02T22:03:00+08:00",
+          "source_count": 2,
+          "note": "AP 独立确认就业结果；NinjaTrader 独立说明 E-nano 的上市、比例与规格。后者不代替 CME 合约事实。"
+        },
+        {
+          "channel": "Reddit / ForexFactory / BabyPips",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-10-02T22:03:00+08:00",
+          "source_count": 4,
+          "note": "BabyPips、ForexFactory 与 Reddit 显示 NFP 和 E-nano 的当前发现或讨论；NFP 保留内容为方向/即时反应，E-nano 为 tick/commission/access 讨论。均没有可由两站既有工具准确回答的当期非方向性计算旅程。"
+        },
+        {
+          "channel": "X / Quora",
+          "status": "limited",
+          "checked_at": "2026-10-02T22:03:00+08:00",
+          "source_count": 0,
+          "note": "公开可验证索引未出现可保留的当期计算需求；没有使用登录、墙后、截图或不可验证材料。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-10-02_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-10-02_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json"
+      }
+    },
+    {
       "scan_date": "2026-10-01",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 67,
@@ -353,7 +637,7 @@
     },
     {
       "scan_date": "2026-09-30",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 66,
@@ -763,7 +1047,7 @@
     },
     {
       "scan_date": "2026-09-29",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 65,
@@ -1087,7 +1371,7 @@
     },
     {
       "scan_date": "2026-09-28",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 64,
@@ -1372,7 +1656,7 @@
     },
     {
       "scan_date": "2026-09-27",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 63,
@@ -1722,7 +2006,7 @@
     },
     {
       "scan_date": "2026-09-26",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 62,
@@ -1931,7 +2215,7 @@
     },
     {
       "scan_date": "2026-09-25",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 61,
@@ -2211,7 +2495,7 @@
     },
     {
       "scan_date": "2026-09-24",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 60,
@@ -2491,7 +2775,7 @@
     },
     {
       "scan_date": "2026-09-23",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 59,
@@ -2729,7 +3013,7 @@
     },
     {
       "scan_date": "2026-09-22",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 58,
@@ -3018,7 +3302,7 @@
     },
     {
       "scan_date": "2026-09-21",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 57,
@@ -3240,7 +3524,7 @@
     },
     {
       "scan_date": "2026-09-20",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 56,
@@ -3525,7 +3809,7 @@
     },
     {
       "scan_date": "2026-09-19",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 55,
@@ -3800,7 +4084,7 @@
     },
     {
       "scan_date": "2026-09-18",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 54,
@@ -4082,7 +4366,7 @@
     },
     {
       "scan_date": "2026-09-17",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 53,
@@ -4427,7 +4711,7 @@
     },
     {
       "scan_date": "2026-09-16",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 52,
@@ -4717,7 +5001,7 @@
     },
     {
       "scan_date": "2026-09-15",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 51,
@@ -4931,7 +5215,7 @@
     },
     {
       "scan_date": "2026-09-14",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 50,
@@ -5135,7 +5419,7 @@
     },
     {
       "scan_date": "2026-09-13",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 49,
@@ -5340,7 +5624,7 @@
     },
     {
       "scan_date": "2026-09-12",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 48,
@@ -5526,7 +5810,7 @@
     },
     {
       "scan_date": "2026-09-11",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 47,
@@ -5743,7 +6027,7 @@
     },
     {
       "scan_date": "2026-09-10",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 46,
@@ -6029,7 +6313,7 @@
     },
     {
       "scan_date": "2026-09-09",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 45,
@@ -6309,7 +6593,7 @@
     },
     {
       "scan_date": "2026-09-08",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 44,
@@ -6638,7 +6922,7 @@
     },
     {
       "scan_date": "2026-09-07",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 43,
@@ -6940,7 +7224,7 @@
     },
     {
       "scan_date": "2026-09-06",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 42,
@@ -7256,7 +7540,7 @@
     },
     {
       "scan_date": "2026-09-05",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 41,
@@ -7578,7 +7862,7 @@
     },
     {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -7891,7 +8175,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -8202,7 +8486,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -8533,7 +8817,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -8871,7 +9155,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -9264,7 +9548,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -9674,7 +9958,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -10146,7 +10430,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -10491,7 +10775,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -10836,7 +11120,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -11288,7 +11572,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -11701,7 +11985,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -11933,7 +12217,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -12378,7 +12662,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -12753,7 +13037,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -13145,7 +13429,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -13521,7 +13805,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -13845,7 +14129,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -14228,7 +14512,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -14569,7 +14853,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -14944,7 +15228,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -15332,7 +15616,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -15677,7 +15961,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -16005,7 +16289,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -16317,7 +16601,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -16638,7 +16922,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -16999,7 +17283,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -17352,7 +17636,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -17796,7 +18080,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -18305,7 +18589,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -18775,7 +19059,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -19318,7 +19602,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -19590,7 +19874,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -19903,7 +20187,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -20338,7 +20622,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -20852,7 +21136,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -21361,7 +21645,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -21829,7 +22113,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -22243,7 +22527,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -22642,7 +22926,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-10-01T22:04:44+08:00",
+      "generated_at": "2026-10-02T22:06:20+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -23081,10 +23365,10 @@
       }
     }
   ],
-  "scan_date": "2026-10-01",
+  "scan_date": "2026-10-02",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 67,
+    "day": 68,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -23103,18 +23387,18 @@
   },
   "candidates": [
     {
-      "scan_date": "2026-10-01",
-      "candidate_id": "HR-20261001-01",
+      "scan_date": "2026-10-02",
+      "candidate_id": "HR-20261002-01",
       "status": "observation",
-      "topic": "U.S. September Jobs Report Is Due October 2 but Has No New Search-to-Calculator Delta",
+      "topic": "U.S. September Payrolls Are Published but Still Do Not Create a New Search-to-Calculator Journey",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 24,
+      "traffic_potential": 25,
       "calculator_fit": 25,
       "evidence_quality": 15,
       "actionability": 4,
-      "total_score": 93,
-      "hard_gate": true,
+      "total_score": 94,
+      "hard_gate": false,
       "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
@@ -23123,185 +23407,143 @@
         "P&L",
         "Spread Cost"
       ],
-      "reason": "BLS fixes the September Employment Situation at October 2 08:30 ET and Reuters identifies it as the week’s main Wall Street event; ForexFactory and public Reddit show calendar attention. Yet the verified audience material remains direction/reaction led, and HR-20260905-01 already owns the payroll fixed-risk chain. The nearer release window alone is not a second refresh delta; do not create a new playbook or review package.",
+      "reason": "BLS reports September payrolls +29,000, unemployment 4.2%, and combined July-August revisions -60,000; AP independently confirms the released result. BabyPips, ForexFactory and public Reddit show current NFP attention, but retained material is direction/reaction-led rather than an attributable non-directional calculation request. HR-20260905-01 already owns the result-day payroll fixed-risk chain; a new generic lot-size table would manufacture rather than capture demand.",
       "scan_audit": {
         "sources": [
           {
             "publisher": "U.S. Bureau of Labor Statistics",
-            "url": "https://www.bls.gov/schedule/2026/home.htm",
-            "source_type": "official_dated_release_schedule",
-            "published_at": "checked 2026-10-01",
-            "freshness_role": "official schedule lists September 2026 Employment Situation for Friday October 2 at 8:30 AM ET",
+            "url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
+            "source_type": "official_dated_employment_result",
+            "published_at": "2026-10-02",
+            "freshness_role": "official same-day September Employment Situation: payrolls +29,000, unemployment 4.2 percent, and combined July-August revisions -60,000",
             "reliable": true
           },
           {
-            "publisher": "Reuters",
-            "url": "https://www.lse.co.uk/news/rpt-wall-st-week-ahead-jobs-report-inflation-data-to-test-us-rate-path-economic-strength-unk82gt8ztqjcwe.html",
-            "source_type": "independent_reliable_week_ahead_news",
-            "published_at": "2026-09-27",
-            "freshness_role": "Reuters calls the October 2 monthly employment report the main Wall Street event for the current week",
+            "publisher": "Associated Press",
+            "url": "https://apnews.com/article/44b99f9ccbff863888af99402ddf535e",
+            "source_type": "independent_english_news_wire",
+            "published_at": "2026-10-02",
+            "freshness_role": "independent same-day English report confirms +29,000 payrolls, 4.2 percent unemployment, and the combined -60,000 prior-month revisions",
             "reliable": true
           },
           {
-            "publisher": "ForexFactory",
-            "url": "https://www.forexfactory.com/calendar?range=sep20.2026-oct10.2026",
-            "source_type": "public_calendar_discovery",
-            "published_at": "checked 2026-10-01",
-            "freshness_role": "public calendar displays Non-Farm Employment Change and Unemployment Rate as current event discovery only",
+            "publisher": "BabyPips",
+            "url": "https://www.babypips.com/news",
+            "source_type": "public_fx_event_discovery_insufficient_calculation_signal",
+            "published_at": "2026-10-02",
+            "freshness_role": "current public news index retains the September 2026 NFP event guide; used only as FX-audience discovery",
             "reliable": false
           },
           {
-            "publisher": "Reddit r/Daytrading",
-            "url": "https://www.reddit.com/r/Daytrading/comments/1w72iqm/anyone_else_avoid_trading_the_exact_nfp_release/",
-            "source_type": "public_event_risk_discussion_insufficient_signal",
-            "published_at": "checked 2026-10-01",
-            "freshness_role": "visible discussion is about avoiding the exact release and does not establish an attributable calculation request",
+            "publisher": "ForexFactory",
+            "url": "https://www.forexfactory.com/?sc_lang=en",
+            "source_type": "public_calendar_discovery_insufficient_calculation_signal",
+            "published_at": "checked 2026-10-02",
+            "freshness_role": "public calendar is checked for event discovery only and is not used to confirm BLS figures or infer direction",
+            "reliable": false
+          },
+          {
+            "publisher": "Reddit r/Forexstrategy",
+            "url": "https://www.reddit.com/r/Forexstrategy/comments/1wvox8k/september_nfp_what_are_you_expecting/",
+            "source_type": "public_directional_discussion_insufficient_calculation_signal",
+            "published_at": "2026-10-02",
+            "freshness_role": "same-day visible discussion is directional and does not establish an attributable non-directional sizing, pip-value, margin or cost request",
             "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_existing_payroll_fixed_risk_path_has_only_nearer_window_and_no_new_non_directional_search_to_calculator_journey",
+          "decision_gate": "observation_existing_payroll_result_fixed_risk_path_has_fact_delta_only_without_new_attributable_search_or_example_delta",
           "duplicate_of": [
             "HR-20260905-01",
             "HR-20260810-01"
           ],
-          "refresh_signals": {
-            "fact_delta": false,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": true
-          },
-          "reopen_trigger": "BLS releases actual September results, an independent reliable English outlet cross-reports material values, a public attributable non-directional calculation question appears, and at least one additional fact, search, example or window delta is present.",
-          "rationale": "The report clock and broad attention are real, but previous release packages already own the generic payroll fixed-risk method. Current public material is direction or reaction led. A new 25/50/100-pip-style table would be invented demand, not a validated traffic journey."
-        }
-      }
-    },
-    {
-      "scan_date": "2026-10-01",
-      "candidate_id": "HR-20261001-02",
-      "status": "observation",
-      "topic": "Temporary Broker Leverage Notices Around U.S. Data Are Provider-Specific and Lack an Independent Demand Path",
-      "primary_site": "PipGauge",
-      "freshness": 24,
-      "traffic_potential": 17,
-      "calculator_fit": 24,
-      "evidence_quality": 10,
-      "actionability": 4,
-      "total_score": 79,
-      "hard_gate": false,
-      "reliable_sources": 1,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Margin",
-        "Position Size"
-      ],
-      "reason": "Traze's September 28 notice says some FX/XAUUSD accounts above 1:500 are temporarily reduced to 1:500 around listed U.S. data; Bitget separately announces its own CFD special-period settings. These are provider-specific conditions, not independent confirmation of one rule. No public attributable reader question or universal PipGauge calculation journey was verified, so do not generalize broker terms or manufacture a margin article.",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "Traze Securities",
-            "url": "https://traze.ae/about-traze/announcements/",
-            "source_type": "official_dated_provider_leverage_notice",
-            "published_at": "2026-09-28",
-            "freshness_role": "provider says some FX/XAUUSD accounts above 1:500 are temporarily reduced to 1:500 around listed October U.S. economic announcements",
-            "reliable": true
-          },
-          {
-            "publisher": "Bitget CFD",
-            "url": "https://www.bitgetapp.com/support/articles/12560603896304",
-            "source_type": "different_provider_notice_not_independent_confirmation",
-            "published_at": "2026-09-30",
-            "freshness_role": "separate provider describes its own products, special periods and leverage settings; it does not confirm Traze terms",
-            "reliable": false
-          },
-          {
-            "publisher": "Reddit / X / Quora / BabyPips / ForexFactory public indexes",
-            "url": "https://www.forexfactory.com/calendar?range=sep20.2026-oct10.2026",
-            "source_type": "public_search_no_attributable_provider_question",
-            "published_at": "checked 2026-10-01",
-            "freshness_role": "no public, attributable provider-specific margin, leverage or quantity question was retained",
-            "reliable": false
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_provider_specific_leverage_terms_lack_independent_impact_and_natural_existing_calculator_path",
-          "duplicate_of": [],
           "refresh_signals": {
             "fact_delta": true,
             "search_delta": false,
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "A dated change to the same provider's public rule with independently verifiable impact or an attributable public question, plus a product-specific and non-generalized margin or quantity calculation path.",
-          "rationale": "Different brokers' temporary settings cannot be combined into a general leverage rule. Without a reader path tied to one provider's actual terms, a generic margin explainer would overstate applicability."
+          "reopen_trigger": "A public attributable non-directional calculation question tied to this released result plus at least one additional fact, search, example or distinct-window delta; any qualified work must refresh the existing payroll article rather than create a second shape.",
+          "rationale": "The released values are both fresh and independently confirmed, but the retained public attention is directional or immediate-reaction led. Previous payroll result packages already own the generic fixed-risk arithmetic, so replacing numbers in another lot-size table would manufacture demand instead of finding a new calculator journey."
         }
       }
     },
     {
-      "scan_date": "2026-10-01",
-      "candidate_id": "HR-20261001-03",
+      "scan_date": "2026-10-02",
+      "candidate_id": "HR-20261002-02",
       "status": "observation",
-      "topic": "Australia August CPI Refresh Has Expired Without a New Fact or Query Delta",
-      "primary_site": "PipGauge",
-      "freshness": 10,
-      "traffic_potential": 15,
-      "calculator_fit": 25,
+      "topic": "E-nano Futures Get Fresh Retail Explanation but Have No Natural PipGauge or PositionMath Bridge",
+      "primary_site": "PositionMath",
+      "freshness": 22,
+      "traffic_potential": 19,
+      "calculator_fit": 12,
       "evidence_quality": 15,
       "actionability": 3,
-      "total_score": 68,
-      "hard_gate": true,
+      "total_score": 71,
+      "hard_gate": false,
       "reliable_sources": 2,
-      "fresh_signal": false,
+      "fresh_signal": true,
       "calculator_mapping": [
-        "Pip Value",
         "Position Size",
-        "P&L"
+        "Risk/Reward"
       ],
-      "reason": "The ABS/ABC August CPI refresh is already represented by HR-20260930-01 and its stated Australian-session window ended before this scan. No correction, later official fact, new attributable non-directional query, or replacement example was verified; do not perpetuate an expired result-day headline.",
+      "reason": "CME confirms the E-nano contract terms and NinjaTrader independently describes the August launch; BabyPips published a September 30 retail explainer and public Reddit discussion raises tick-value and commission questions. The current attention is real, but PipGauge NAS100 tools are CFD-specific and PositionMath has no verified CME E-nano contract/tick workflow. Do not relabel a CFD or generic stock calculator as a futures-specification answer or invent a product gap.",
       "scan_audit": {
         "sources": [
           {
-            "publisher": "Australian Bureau of Statistics",
-            "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release",
-            "source_type": "official_dated_cpi_release",
-            "published_at": "2026-09-30",
-            "freshness_role": "official August CPI release remains verifiable but is not a new fact during this scan",
+            "publisher": "CME Group",
+            "url": "https://www.cmegroup.com/articles/faqs/faq-e-nano-equity-index-futures.html",
+            "source_type": "official_contract_specification",
+            "published_at": "checked 2026-10-02",
+            "freshness_role": "official source for E-nano multipliers, ticks, settlement and offset terms",
             "reliable": true
           },
           {
-            "publisher": "ABC News Australia",
-            "url": "https://www.abc.net.au/news/2026-09-30/asx-markets-business-live-news/107210136",
-            "source_type": "independent_reliable_same_day_news",
-            "published_at": "2026-09-30",
-            "freshness_role": "independent confirmation remains available but does not extend the stated result-day traffic window",
+            "publisher": "NinjaTrader",
+            "url": "https://ninjatrader.com/futures/futures-contracts/e-nano/",
+            "source_type": "independent_english_product_explainer",
+            "published_at": "checked 2026-10-02",
+            "freshness_role": "independent explanation describes August 24 launch and the one-tenth Micro / one-hundredth E-mini exposure ratio",
             "reliable": true
+          },
+          {
+            "publisher": "BabyPips",
+            "url": "https://www.babypips.com/news/explainer-what-are-e-nano-futures-2026-09-30",
+            "source_type": "recent_public_retail_explainer_heat",
+            "published_at": "2026-09-30",
+            "freshness_role": "recent public explainer establishes a current retail-discovery window but does not replace CME specifications",
+            "reliable": false
+          },
+          {
+            "publisher": "Reddit r/FuturesTrading",
+            "url": "https://www.reddit.com/r/FuturesTrading/comments/1w4f89u/looks_like_ninjatrader_and_robinhood_picked_up/",
+            "source_type": "public_tick_commission_discussion",
+            "published_at": "2026-09-02",
+            "freshness_role": "public discussion raises tick-size and commission questions but is not a contract-fact source",
+            "reliable": false
           }
         ],
         "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_expired_selected_refresh_without_new_fact_query_or_example_delta",
-          "duplicate_of": [
-            "HR-20260930-01",
-            "HR-20260811-01"
-          ],
+          "novelty_gate": "pass_nonduplicate_but_not_actionable",
+          "decision_gate": "observation_no_verified_existing_calculator_accepts_cme_e_nano_specs_without_cfd_or_generic_tool_misrepresentation",
+          "duplicate_of": [],
           "refresh_signals": {
             "fact_delta": false,
-            "search_delta": false,
+            "search_delta": true,
             "example_delta": false,
-            "window_delta": false
+            "window_delta": true
           },
-          "reopen_trigger": "An ABS or ABC correction, later independently verified Australian fact with an attributable non-directional calculation question, and at least one additional refresh signal.",
-          "rationale": "The prior package declared an October 1 Australian-session expiry. Extending it after that deadline without any new evidence would leave stale time language in circulation and duplicate the AUD/USD fixed-risk article."
+          "reopen_trigger": "A versioned existing-site E-nano futures workflow or a public, attributable non-directional exposure/risk question that one existing calculator can accurately answer with verified CME input conventions.",
+          "rationale": "The recent retail explanation and public tick/commission attention are genuine. However, PipGauge NAS100 Point Value is CFD-specific and PositionMath has no verified CME E-nano contract/tick workflow. Publishing a bridge would confuse product specifications, so no playbook or product-gap claim is created."
         }
       }
     },
     {
-      "scan_date": "2026-10-01",
-      "candidate_id": "HR-20261001-04",
+      "scan_date": "2026-10-02",
+      "candidate_id": "HR-20261002-04",
       "status": "discarded",
-      "topic": "Directional NFP ISM FX Equity Crypto Politics Sports and Unverifiable Social Commentary",
+      "topic": "Directional NFP FX Equity Oil Crypto Politics Sports and Unverifiable Social Commentary",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 25,
@@ -23316,42 +23558,88 @@
         "P&L"
       ],
       "reason": "Direction calls, price targets, NFP/ISM trade setups, broker or prop-firm purchase promotion, political framing, sports or entertainment, pure crypto hype, login-wall material and unverifiable social commentary are excluded. None supplies a source-checked, non-directional calculation journey."
+    },
+    {
+      "scan_date": "2026-10-02",
+      "candidate_id": "HR-20261002-03",
+      "status": "observation",
+      "topic": "CME Wind Power Futures Are Due October 5 but Lack Independent Demand and an Existing Calculator Path",
+      "primary_site": "PipGauge",
+      "freshness": 24,
+      "traffic_potential": 11,
+      "calculator_fit": 5,
+      "evidence_quality": 9,
+      "actionability": 2,
+      "total_score": 51,
+      "hard_gate": false,
+      "reliable_sources": 1,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Position Size",
+        "P&L"
+      ],
+      "reason": "CME's official FAQ states first trade date October 5, pending regulatory review, and provides contract multipliers and tick information. No independent reliable current impact source or attributable public calculation demand was retained, and neither existing site has a verified wind-power-futures workflow. Keep only as a source-led observation.",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "CME Group",
+            "url": "https://www.cmegroup.com/articles/faqs/faq-wind-power-futures-and-options.html",
+            "source_type": "official_upcoming_product_faq",
+            "published_at": "checked 2026-10-02",
+            "freshness_role": "official FAQ sets October 5 first trade date pending regulatory review and lists contract and tick terms",
+            "reliable": true
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "observation_single_official_source_without_independent_impact_signal_or_existing_calculator_path",
+          "duplicate_of": [],
+          "refresh_signals": {
+            "fact_delta": true,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": true
+          },
+          "reopen_trigger": "An independently reliable English launch/impact report or a public attributable calculation question after trading begins, plus a verified existing calculator workflow that does not blur contract specifications.",
+          "rationale": "The upcoming date is factual and inside the time window, but one official source cannot establish the required independent impact or demand path. No public non-directional calculation demand or accurate existing-tool bridge was retained."
+        }
+      }
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-10-01T22:00:00+08:00",
-      "source_count": 5,
-      "note": "核验 BLS 10 月 2 日 Employment Situation 时钟、ABS 9 月 30 日 CPI、Traze 9 月 28 日临时杠杆公告及 Bitget 9 月 30 日 CFD 特殊时段公告；日期、时钟与 provider 条款仅取各自公开英文一手页面。"
+      "checked_at": "2026-10-02T22:03:00+08:00",
+      "source_count": 3,
+      "note": "核验 BLS 当日 September Employment Situation、CME E-nano FAQ 与 CME Wind Power futures FAQ；数字、日期、合约规格与上线窗口仅取对应一手英文页面。"
     },
     {
       "channel": "独立可靠英文来源",
       "status": "complete",
-      "checked_at": "2026-10-01T22:00:00+08:00",
-      "source_count": 3,
-      "note": "Reuters 的 9 月 27 日 week-ahead 报道独立确认 10 月 2 日 payrolls 是本周重要事件；ABC News Australia 仍可交叉核验前日 CPI。未把 provider 的不同公告误算为同一规则的独立验证。"
+      "checked_at": "2026-10-02T22:03:00+08:00",
+      "source_count": 2,
+      "note": "AP 独立确认就业结果；NinjaTrader 独立说明 E-nano 的上市、比例与规格。后者不代替 CME 合约事实。"
     },
     {
       "channel": "Reddit / ForexFactory / BabyPips",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-10-01T22:00:00+08:00",
-      "source_count": 3,
-      "note": "公开日历和 Reddit 显示 NFP 日历/事件风险注意力，但保留内容是方向或即时反应导向；没有找到归属于本次事实、非方向性的 fixed-risk、pip/tick value、margin、quantity、cost 或 portfolio-risk 问题。"
+      "checked_at": "2026-10-02T22:03:00+08:00",
+      "source_count": 4,
+      "note": "BabyPips、ForexFactory 与 Reddit 显示 NFP 和 E-nano 的当前发现或讨论；NFP 保留内容为方向/即时反应，E-nano 为 tick/commission/access 讨论。均没有可由两站既有工具准确回答的当期非方向性计算旅程。"
     },
     {
       "channel": "X / Quora",
       "status": "limited",
-      "checked_at": "2026-10-01T22:00:00+08:00",
+      "checked_at": "2026-10-02T22:03:00+08:00",
       "source_count": 0,
-      "note": "公开可验证索引未出现可保留的当期计算需求；Quora robots 限制没有绕过。未使用登录、墙后、截图或不可验证材料。"
+      "note": "公开可验证索引未出现可保留的当期计算需求；没有使用登录、墙后、截图或不可验证材料。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-10-01_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-10-01_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-10-02_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-10-02_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
