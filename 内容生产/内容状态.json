@@ -1,11 +1,11 @@
 {
   "_last_scan": {
-    "scan_date": "2026-09-30",
-    "selected_count": 1,
-    "content_package_count": 1,
-    "platform_draft_count": 3,
-    "status": "review_package_created",
-    "note": "One selected refresh has one current review package containing Medium, Reddit and X drafts; all stop at awaiting_human_review."
+    "scan_date": "2026-10-02",
+    "selected_count": 0,
+    "content_package_count": 0,
+    "platform_draft_count": 0,
+    "status": "no_qualified_topic",
+    "note": "No candidate passed all gates; no playbook or review package was generated, and all historical drafts remain awaiting_human_review."
   },
   "HR-20260930-01": {
     "content_status": "review_ready",

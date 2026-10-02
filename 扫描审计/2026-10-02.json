@@ -1,0 +1,152 @@
+{
+  "scan_date": "2026-10-02",
+  "generated_at": "2026-10-02T22:03:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-02T22:03:00+08:00",
+      "source_count": 3,
+      "note": "核验 BLS 当日 September Employment Situation、CME E-nano FAQ 与 CME Wind Power futures FAQ；数字、日期、合约规格与上线窗口仅取对应一手英文页面。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-10-02T22:03:00+08:00",
+      "source_count": 2,
+      "note": "AP 独立确认就业结果；NinjaTrader 独立说明 E-nano 的上市、比例与规格。后者不代替 CME 合约事实。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-10-02T22:03:00+08:00",
+      "source_count": 4,
+      "note": "BabyPips、ForexFactory 与 Reddit 显示 NFP 和 E-nano 的当前发现或讨论；NFP 保留内容为方向/即时反应，E-nano 为 tick/commission/access 讨论。均没有可由两站既有工具准确回答的当期非方向性计算旅程。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-02T22:03:00+08:00",
+      "source_count": 0,
+      "note": "公开可验证索引未出现可保留的当期计算需求；没有使用登录、墙后、截图或不可验证材料。"
+    }
+  ],
+  "candidates": {
+    "HR-20261002-01": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
+          "source_type": "official_dated_employment_result",
+          "published_at": "2026-10-02",
+          "freshness_role": "official same-day September Employment Situation: payrolls +29,000, unemployment 4.2 percent, and combined July-August revisions -60,000",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/44b99f9ccbff863888af99402ddf535e",
+          "source_type": "independent_english_news_wire",
+          "published_at": "2026-10-02",
+          "freshness_role": "independent same-day English report confirms +29,000 payrolls, 4.2 percent unemployment, and the combined -60,000 prior-month revisions",
+          "reliable": true
+        },
+        {
+          "publisher": "BabyPips",
+          "url": "https://www.babypips.com/news",
+          "source_type": "public_fx_event_discovery_insufficient_calculation_signal",
+          "published_at": "2026-10-02",
+          "freshness_role": "current public news index retains the September 2026 NFP event guide; used only as FX-audience discovery",
+          "reliable": false
+        },
+        {
+          "publisher": "ForexFactory",
+          "url": "https://www.forexfactory.com/?sc_lang=en",
+          "source_type": "public_calendar_discovery_insufficient_calculation_signal",
+          "published_at": "checked 2026-10-02",
+          "freshness_role": "public calendar is checked for event discovery only and is not used to confirm BLS figures or infer direction",
+          "reliable": false
+        },
+        {
+          "publisher": "Reddit r/Forexstrategy",
+          "url": "https://www.reddit.com/r/Forexstrategy/comments/1wvox8k/september_nfp_what_are_you_expecting/",
+          "source_type": "public_directional_discussion_insufficient_calculation_signal",
+          "published_at": "2026-10-02",
+          "freshness_role": "same-day visible discussion is directional and does not establish an attributable non-directional sizing, pip-value, margin or cost request",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_existing_payroll_result_fixed_risk_path_has_fact_delta_only_without_new_attributable_search_or_example_delta",
+        "duplicate_of": ["HR-20260905-01", "HR-20260810-01"],
+        "refresh_signals": {"fact_delta": true, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "A public attributable non-directional calculation question tied to this released result plus at least one additional fact, search, example or distinct-window delta; any qualified work must refresh the existing payroll article rather than create a second shape.",
+        "rationale": "The released values are both fresh and independently confirmed, but the retained public attention is directional or immediate-reaction led. Previous payroll result packages already own the generic fixed-risk arithmetic, so replacing numbers in another lot-size table would manufacture demand instead of finding a new calculator journey."
+      }
+    },
+    "HR-20261002-02": {
+      "sources": [
+        {
+          "publisher": "CME Group",
+          "url": "https://www.cmegroup.com/articles/faqs/faq-e-nano-equity-index-futures.html",
+          "source_type": "official_contract_specification",
+          "published_at": "checked 2026-10-02",
+          "freshness_role": "official source for E-nano multipliers, ticks, settlement and offset terms",
+          "reliable": true
+        },
+        {
+          "publisher": "NinjaTrader",
+          "url": "https://ninjatrader.com/futures/futures-contracts/e-nano/",
+          "source_type": "independent_english_product_explainer",
+          "published_at": "checked 2026-10-02",
+          "freshness_role": "independent explanation describes August 24 launch and the one-tenth Micro / one-hundredth E-mini exposure ratio",
+          "reliable": true
+        },
+        {
+          "publisher": "BabyPips",
+          "url": "https://www.babypips.com/news/explainer-what-are-e-nano-futures-2026-09-30",
+          "source_type": "recent_public_retail_explainer_heat",
+          "published_at": "2026-09-30",
+          "freshness_role": "recent public explainer establishes a current retail-discovery window but does not replace CME specifications",
+          "reliable": false
+        },
+        {
+          "publisher": "Reddit r/FuturesTrading",
+          "url": "https://www.reddit.com/r/FuturesTrading/comments/1w4f89u/looks_like_ninjatrader_and_robinhood_picked_up/",
+          "source_type": "public_tick_commission_discussion",
+          "published_at": "2026-09-02",
+          "freshness_role": "public discussion raises tick-size and commission questions but is not a contract-fact source",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass_nonduplicate_but_not_actionable",
+        "decision_gate": "observation_no_verified_existing_calculator_accepts_cme_e_nano_specs_without_cfd_or_generic_tool_misrepresentation",
+        "duplicate_of": [],
+        "refresh_signals": {"fact_delta": false, "search_delta": true, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "A versioned existing-site E-nano futures workflow or a public, attributable non-directional exposure/risk question that one existing calculator can accurately answer with verified CME input conventions.",
+        "rationale": "The recent retail explanation and public tick/commission attention are genuine. However, PipGauge NAS100 Point Value is CFD-specific and PositionMath has no verified CME E-nano contract/tick workflow. Publishing a bridge would confuse product specifications, so no playbook or product-gap claim is created."
+      }
+    },
+    "HR-20261002-03": {
+      "sources": [
+        {
+          "publisher": "CME Group",
+          "url": "https://www.cmegroup.com/articles/faqs/faq-wind-power-futures-and-options.html",
+          "source_type": "official_upcoming_product_faq",
+          "published_at": "checked 2026-10-02",
+          "freshness_role": "official FAQ sets October 5 first trade date pending regulatory review and lists contract and tick terms",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_single_official_source_without_independent_impact_signal_or_existing_calculator_path",
+        "duplicate_of": [],
+        "refresh_signals": {"fact_delta": true, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "An independently reliable English launch/impact report or a public attributable calculation question after trading begins, plus a verified existing calculator workflow that does not blur contract specifications.",
+        "rationale": "The upcoming date is factual and inside the time window, but one official source cannot establish the required independent impact or demand path. No public non-directional calculation demand or accurate existing-tool bridge was retained."
+      }
+    }
+  }
+}
