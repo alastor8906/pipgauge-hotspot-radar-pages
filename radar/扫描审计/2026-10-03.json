@@ -1,0 +1,126 @@
+{
+  "scan_date": "2026-10-03",
+  "generated_at": "2026-10-03T22:02:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-03T22:02:00+08:00",
+      "source_count": 2,
+      "note": "核验 Federal Reserve October calendar 的 October 7 FOMC-minutes release time，以及 CME Globex notice 的 October 4/5 Compute futures listing condition、product identifiers 与平台范围；时间、条件和产品字段只取正式英文页面。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-10-03T22:02:00+08:00",
+      "source_count": 2,
+      "note": "AP 的 October 1 week-ahead report 独立确认 FOMC minutes 为下周事件；Reuters brief 独立报道 CME/Silicon Data planned October 5 Compute futures launch。二者不取代一手日程或合约条件。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-10-03T22:02:00+08:00",
+      "source_count": 3,
+      "note": "ForexFactory 证明 FOMC minutes 可公开发现；Reddit 显示 minutes 与 Compute futures 的当前发现/讨论。minutes 帖为方向性高风险语言，Compute 帖为 benchmark/discovery 讨论；均不证明可由既有两站准确回答的非方向性计算需求。BabyPips 当前新闻索引以数据/方向市场反应为主，没有保留可归属的计算问题。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-03T22:02:00+08:00",
+      "source_count": 0,
+      "note": "公开可验证索引未出现可保留的当期非方向性计算需求；没有使用登录、墙后、截图或不可验证材料。"
+    }
+  ],
+  "candidates": {
+    "HR-20261003-01": {
+      "sources": [
+        {
+          "publisher": "Federal Reserve Board",
+          "url": "https://www.federalreserve.gov/newsevents/2026-october.htm",
+          "source_type": "official_dated_calendar",
+          "published_at": "checked 2026-10-03",
+          "freshness_role": "official calendar lists October 7 2026 at 2:00 p.m. ET for FOMC Minutes from the September 15-16 meeting",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/04ce7f968db2fe696f582452503dc0d2",
+          "source_type": "independent_english_week_ahead_news",
+          "published_at": "2026-10-01",
+          "freshness_role": "independent October 1 report identifies the FOMC minutes as a coming-week macro release",
+          "reliable": true
+        },
+        {
+          "publisher": "ForexFactory",
+          "url": "https://www.forexfactory.com/calendar/304-us-fomc-meeting-minutes?reset=1",
+          "source_type": "public_event_calendar_discovery",
+          "published_at": "checked 2026-10-03",
+          "freshness_role": "public event page shows Upcoming Oct 7 2026 2:00pm; used only for discoverability, not facts or direction",
+          "reliable": false
+        },
+        {
+          "publisher": "Reddit r/Daytrading",
+          "url": "https://www.reddit.com/r/Daytrading/comments/1ww0zf6/this_was_infuriating/",
+          "source_type": "public_directional_high_risk_discussion_insufficient_calculation_signal",
+          "published_at": "2026-10-03",
+          "freshness_role": "same-day post names October 7 FOMC minutes but frames it as an unsafe directional fullport/size-down setup rather than a reader-specific non-directional calculation need",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_existing_fomc_fixed_risk_path_has_new_clock_but_no_attributable_non_directional_search_or_example_delta",
+        "duplicate_of": ["HR-20260817-01", "HR-20260820-01"],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "A public attributable non-directional calculation question tied to the October 7 minutes plus an additional factual, search, example or materially distinct-window delta; any qualified work must refresh the existing FOMC article rather than create another generic event-risk shape.",
+        "rationale": "The official clock and independent week-ahead report satisfy factual recency, but retained public attention is direction/reaction and high-risk sizing language rather than an attributable pip-value, fixed-risk, margin, cost or portfolio-risk question. Existing FOMC packages own generic event-risk arithmetic, so changing the date or stop inputs would manufacture demand."
+      }
+    },
+    "HR-20261003-02": {
+      "sources": [
+        {
+          "publisher": "CME Group",
+          "url": "https://www.cmegroup.com/notices/electronic-trading/2026/09/20260914.html",
+          "source_type": "official_upcoming_listing_notice",
+          "published_at": "2026-09-14",
+          "freshness_role": "official notice states Compute futures effective Sunday October 4 / trade date Monday October 5, pending regulatory review, and identifies GPU1 and GPU2",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.stockopedia.com/share-prices/cme-NSQ%3ACME/news/brief-cme-group-silicon-data-to-launch-compute-futures-on-october-5-to-unlock-new-way-to-hedge-ai-risks-019ff17f-f216-74d4-8b14-e92b78b6bc7d/",
+          "source_type": "independent_english_news_wire",
+          "published_at": "2026-08-11",
+          "freshness_role": "Reuters brief independently reports CME and Silicon Data's planned October 5 launch; the launch itself is within the upcoming-seven-day freshness window",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/economy",
+          "url": "https://www.reddit.com/r/economy/comments/1wwjb83/the_coming_futures_market_in_ai_compute_financial/",
+          "source_type": "public_current_discovery_discussion",
+          "published_at": "2026-10-03",
+          "freshness_role": "same-day public discussion concerns H100/B200 rental-rate references, benchmark choice and the October 5 listing; used as attention evidence only",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass_nonduplicate_but_not_actionable",
+        "decision_gate": "observation_no_verified_existing_calculator_accepts_compute_futures_contract_specs_without_cfd_stock_or_generic_tool_misrepresentation",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "A versioned existing-site Compute-futures workflow or a public attributable non-directional exposure/risk question that an existing calculator can accurately answer after official multiplier, tick, margin, cost and settlement inputs have all been checked.",
+        "rationale": "The listing clock and public discovery attention are real, but the capability map has no verified GPU1/GPU2 futures contract, tick-value, margin, commission or settlement convention workflow. A NAS100 CFD or generic stock/risk calculator cannot be represented as an accurate Compute futures answer, so no playbook or feature-gap claim is created."
+      }
+    }
+  }
+}
