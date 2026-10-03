@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-02T22:03:00+08:00",
+  "updated_at": "2026-10-03T22:02:00+08:00",
   "last_scan": {
-    "scan_date": "2026-10-02",
+    "scan_date": "2026-10-03",
     "selected_count": 0,
     "playbook_ready_count": 0,
     "content_package_count": 0,
-    "note": "No item passed the current dated-fact, independent-source, novelty and natural search-to-calculator gates. The published September payroll result has new facts but no attributable non-directional search-to-calculator delta beyond the existing payroll fixed-risk path; E-nano and wind-power futures lack a safe existing-calculator bridge. No playbook was created or refreshed."
+    "note": "No item passed the current dated-fact, independent-source, novelty and natural search-to-calculator gates. The October 7 FOMC-minutes clock is real but retained public attention is directional rather than an attributable non-directional calculation demand, and historical FOMC fixed-risk packages already own the generic path. CME Compute futures have a verified October 5 listing window and discovery attention but no safe existing calculator handoff. No playbook was created or refreshed."
   },
   "items": {
     "HR-20260930-01": {
