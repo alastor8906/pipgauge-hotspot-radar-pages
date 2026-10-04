@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-10-03T22:06:23+08:00",
-  "latest_scan_date": "2026-10-03",
+  "generated_at": "2026-10-04T22:05:36+08:00",
+  "latest_scan_date": "2026-10-04",
   "available_dates": [
+    "2026-10-04",
     "2026-10-03",
     "2026-10-02",
     "2026-10-01",
@@ -75,8 +76,234 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-10-04",
+      "generated_at": "2026-10-04T22:05:36+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 70,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 0,
+        "observation": 2,
+        "discarded": 1,
+        "total": 3,
+        "selected_average": 0,
+        "all_selected_pass_gate": true,
+        "content_ready": 0,
+        "playbook_ready": 0
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-10-04",
+          "candidate_id": "HR-20261004-01",
+          "status": "observation",
+          "topic": "FOMC Minutes Are Due October 7 but Still Have No Attributable New Search-to-Calculator Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 24,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 4,
+          "total_score": 93,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Margin",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "The Federal Reserve lists the September 15-16 FOMC minutes for October 7 and AP independently identifies the event in its current-week calendar; ForexFactory provides public event discovery. Public material retained this run remains calendar-led or directional rather than a new attributable non-directional calculation question. Existing FOMC fixed-risk packages already own the generic event-math path; do not manufacture a second refresh from a nearer clock alone.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Federal Reserve Board",
+                "url": "https://www.federalreserve.gov/monetarypolicy.htm",
+                "source_type": "official_dated_calendar",
+                "published_at": "last updated 2026-10-01; checked 2026-10-04",
+                "freshness_role": "official page lists FOMC Minutes on October 7 for the September 15-16 meeting",
+                "reliable": true
+              },
+              {
+                "publisher": "Associated Press",
+                "url": "https://apnews.com/article/04ce7f968db2fe696f582452503dc0d2",
+                "source_type": "independent_english_week_ahead_news",
+                "published_at": "2026-10-01; checked 2026-10-04",
+                "freshness_role": "independent report identifies the October 7 FOMC minutes as a coming-week event",
+                "reliable": true
+              },
+              {
+                "publisher": "ForexFactory",
+                "url": "https://www.forexfactory.com/calendar?week=oct5.2026",
+                "source_type": "public_event_calendar_discovery",
+                "published_at": "checked 2026-10-04",
+                "freshness_role": "public weekly calendar is used only for event discoverability, not facts or direction",
+                "reliable": false
+              },
+              {
+                "publisher": "Reddit r/Daytrading",
+                "url": "https://www.reddit.com/r/Daytrading/comments/1wqg9th/what_kind_of_monthly_percentage_returns_are_you/",
+                "source_type": "public_general_risk_discussion_insufficient_event_specific_signal",
+                "published_at": "2026-09-26; checked 2026-10-04",
+                "freshness_role": "discussion asks generally about risk mechanics and position sizing, not an attributable FOMC-minute calculation request",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_existing_fomc_fixed_risk_path_has_only_clock_delta_and_no_attributable_non_directional_search_or_example_delta",
+              "duplicate_of": [
+                "HR-20260817-01",
+                "HR-20260820-01",
+                "HR-20261003-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A public attributable non-directional calculation question tied specifically to the October 7 minutes plus at least one additional fact, search, example or materially distinct-window delta. Any qualified work must refresh the existing FOMC article rather than create another generic event-risk shape.",
+              "rationale": "The official calendar and independent coverage sustain factual recency, but the retained audience material has no event-specific non-directional calculation journey. Moving closer to the event is one refresh signal, not a reason to reproduce an existing fixed-risk explanation."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-10-04",
+          "candidate_id": "HR-20261004-02",
+          "status": "observation",
+          "topic": "CME Compute Futures Begin October 5 but Still Have No Verified PipGauge or PositionMath Handoff",
+          "primary_site": "PositionMath",
+          "freshness": 25,
+          "traffic_potential": 21,
+          "calculator_fit": 10,
+          "evidence_quality": 15,
+          "actionability": 3,
+          "total_score": 74,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Position Size",
+            "P&L",
+            "Portfolio Heat"
+          ],
+          "reason": "CME's product page now states GPU1/GPU2 contract units and a USD 7.30 tick value, while Reuters independently reported the planned October 5 launch; public Reddit discussion remains discovery-led. Neither existing site has a verified Compute-futures workflow that accepts the official contract unit, tick, margin, commission, settlement and broker-access conditions together. Do not represent a CFD, equity or generic calculator as a Compute futures calculator.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "CME Group",
+                "url": "https://www.cmegroup.com/markets/energy/power/compute-futures.html",
+                "source_type": "official_product_page",
+                "published_at": "checked 2026-10-04",
+                "freshness_role": "official page identifies October 5 2026 launch context, GPU1/GPU2, 730 GPU-hours per contract and USD 7.30 value per tick",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.stockopedia.com/share-prices/cme-NSQ%3ACME/news/brief-cme-group-silicon-data-to-launch-compute-futures-on-october-5-to-unlock-new-way-to-hedge-ai-risks-019ff17f-f216-74d4-8b14-e92b78b6bc7d/",
+                "source_type": "independent_english_news_wire",
+                "published_at": "2026-08-11; checked 2026-10-04",
+                "freshness_role": "independently reports the planned October 5 launch, which is within the upcoming-seven-day event window",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit r/FuturesTrading",
+                "url": "https://www.reddit.com/r/FuturesTrading/comments/1vlve3m/cme_group_and_silicon_data_to_launch_compute/",
+                "source_type": "public_product_discovery_discussion",
+                "published_at": "2026-08-11; checked 2026-10-04",
+                "freshness_role": "public discussion shows product discovery and broker-access uncertainty, but no current attributable calculator request",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass_nonduplicate_but_not_actionable",
+              "decision_gate": "observation_no_verified_existing_calculator_accepts_compute_futures_contract_specs_and_broker_conditions_without_misrepresentation",
+              "duplicate_of": [
+                "HR-20261003-02"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": true,
+                "window_delta": true
+              },
+              "reopen_trigger": "A versioned existing-site Compute-futures workflow, or a public attributable non-directional exposure request that the existing site can accurately answer after official multiplier, tick, margin, commission, settlement and broker-access terms are all checked.",
+              "rationale": "The CME page adds a verifiable contract unit and USD 7.30 tick value, but neither PipGauge nor PositionMath has a verified Compute futures contract workflow. A generic CFD, equity or P&L form cannot be presented as an accurate substitute without accepting all relevant contract and broker conditions. No traffic playbook or feature-gap claim is created."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-10-04",
+          "candidate_id": "HR-20261004-03",
+          "status": "discarded",
+          "topic": "Directional Macro Calls Commodity Forecasts Crypto Hype Politics Sports Entertainment and Unverifiable Social Commentary",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 60,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "Directional calls around ISM, FOMC, FX, equities, oil, metals or crypto; broker and prop purchase promotion; political, sports and entertainment material; login-wall pages; and unverifiable social posts are excluded. None produced a source-checked, non-directional calculation journey with a natural existing-tool handoff."
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-10-04T22:00:00+08:00",
+          "source_count": 3,
+          "note": "核验 Federal Reserve 的货币政策日程（10 月 7 日 FOMC minutes）与 CME Compute Futures 产品页及正式上市资料（10 月 5 日、GPU1/GPU2、730 GPU-hours、USD 7.30 tick）。事件时间、合约字段和条件仅取公开英文一手页。"
+        },
+        {
+          "channel": "独立可靠英文来源",
+          "status": "complete",
+          "checked_at": "2026-10-04T22:00:00+08:00",
+          "source_count": 2,
+          "note": "保留 AP 对 upcoming FOMC minutes 的独立周度确认，以及 Reuters 对 CME/Silicon Data 10 月 5 日计划上市的独立报道。它们不替代一手日程或产品规格。"
+        },
+        {
+          "channel": "Reddit / ForexFactory / BabyPips",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-10-04T22:00:00+08:00",
+          "source_count": 4,
+          "note": "核验公开 Reddit、ForexFactory 10 月 5 日日历与 BabyPips 新闻/论坛索引。可见材料为日历发现、方向性市场叙事、一般风险讨论或 Compute futures 的产品发现；没有保留可归属、当期且可由现有两站准确承接的非方向性计算请求。"
+        },
+        {
+          "channel": "X / Quora",
+          "status": "limited",
+          "checked_at": "2026-10-04T22:00:00+08:00",
+          "source_count": 0,
+          "note": "公开可验证索引未出现可保留的当期非方向性计算需求；Quora 索引受 robots 限制。没有使用登录、墙后、截图或不可验证材料。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-10-04_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-10-04_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json"
+      }
+    },
+    {
       "scan_date": "2026-10-03",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 69,
@@ -299,7 +526,7 @@
     },
     {
       "scan_date": "2026-10-02",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 68,
@@ -582,7 +809,7 @@
     },
     {
       "scan_date": "2026-10-01",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 67,
@@ -861,7 +1088,7 @@
     },
     {
       "scan_date": "2026-09-30",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 66,
@@ -1271,7 +1498,7 @@
     },
     {
       "scan_date": "2026-09-29",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 65,
@@ -1595,7 +1822,7 @@
     },
     {
       "scan_date": "2026-09-28",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 64,
@@ -1880,7 +2107,7 @@
     },
     {
       "scan_date": "2026-09-27",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 63,
@@ -2230,7 +2457,7 @@
     },
     {
       "scan_date": "2026-09-26",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 62,
@@ -2439,7 +2666,7 @@
     },
     {
       "scan_date": "2026-09-25",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 61,
@@ -2719,7 +2946,7 @@
     },
     {
       "scan_date": "2026-09-24",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 60,
@@ -2999,7 +3226,7 @@
     },
     {
       "scan_date": "2026-09-23",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 59,
@@ -3237,7 +3464,7 @@
     },
     {
       "scan_date": "2026-09-22",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 58,
@@ -3526,7 +3753,7 @@
     },
     {
       "scan_date": "2026-09-21",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 57,
@@ -3748,7 +3975,7 @@
     },
     {
       "scan_date": "2026-09-20",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 56,
@@ -4033,7 +4260,7 @@
     },
     {
       "scan_date": "2026-09-19",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 55,
@@ -4308,7 +4535,7 @@
     },
     {
       "scan_date": "2026-09-18",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 54,
@@ -4590,7 +4817,7 @@
     },
     {
       "scan_date": "2026-09-17",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 53,
@@ -4935,7 +5162,7 @@
     },
     {
       "scan_date": "2026-09-16",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 52,
@@ -5225,7 +5452,7 @@
     },
     {
       "scan_date": "2026-09-15",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 51,
@@ -5439,7 +5666,7 @@
     },
     {
       "scan_date": "2026-09-14",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 50,
@@ -5643,7 +5870,7 @@
     },
     {
       "scan_date": "2026-09-13",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 49,
@@ -5848,7 +6075,7 @@
     },
     {
       "scan_date": "2026-09-12",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 48,
@@ -6034,7 +6261,7 @@
     },
     {
       "scan_date": "2026-09-11",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 47,
@@ -6251,7 +6478,7 @@
     },
     {
       "scan_date": "2026-09-10",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 46,
@@ -6537,7 +6764,7 @@
     },
     {
       "scan_date": "2026-09-09",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 45,
@@ -6817,7 +7044,7 @@
     },
     {
       "scan_date": "2026-09-08",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 44,
@@ -7146,7 +7373,7 @@
     },
     {
       "scan_date": "2026-09-07",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 43,
@@ -7448,7 +7675,7 @@
     },
     {
       "scan_date": "2026-09-06",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 42,
@@ -7764,7 +7991,7 @@
     },
     {
       "scan_date": "2026-09-05",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 41,
@@ -8086,7 +8313,7 @@
     },
     {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -8399,7 +8626,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -8710,7 +8937,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -9041,7 +9268,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -9379,7 +9606,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -9772,7 +9999,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -10182,7 +10409,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -10654,7 +10881,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -10999,7 +11226,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -11344,7 +11571,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -11796,7 +12023,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -12209,7 +12436,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -12441,7 +12668,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -12886,7 +13113,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -13261,7 +13488,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -13653,7 +13880,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -14029,7 +14256,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -14353,7 +14580,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -14736,7 +14963,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -15077,7 +15304,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -15452,7 +15679,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -15840,7 +16067,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -16185,7 +16412,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -16513,7 +16740,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -16825,7 +17052,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -17146,7 +17373,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -17507,7 +17734,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -17860,7 +18087,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -18304,7 +18531,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -18813,7 +19040,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -19283,7 +19510,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -19826,7 +20053,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -20098,7 +20325,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -20411,7 +20638,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -20846,7 +21073,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -21360,7 +21587,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -21869,7 +22096,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -22337,7 +22564,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -22751,7 +22978,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -23150,7 +23377,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-10-03T22:06:23+08:00",
+      "generated_at": "2026-10-04T22:05:36+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -23589,10 +23816,10 @@
       }
     }
   ],
-  "scan_date": "2026-10-03",
+  "scan_date": "2026-10-04",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 69,
+    "day": 70,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -23611,10 +23838,10 @@
   },
   "candidates": [
     {
-      "scan_date": "2026-10-03",
-      "candidate_id": "HR-20261003-01",
+      "scan_date": "2026-10-04",
+      "candidate_id": "HR-20261004-01",
       "status": "observation",
-      "topic": "FOMC Minutes Are Due October 7 but Have No Attributable New Search-to-Calculator Journey",
+      "topic": "FOMC Minutes Are Due October 7 but Still Have No Attributable New Search-to-Calculator Journey",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 24,
@@ -23632,72 +23859,73 @@
         "P&L",
         "Spread Cost"
       ],
-      "reason": "The Federal Reserve calendar fixes the September 15-16 FOMC minutes for October 7 at 14:00 ET, and AP's October 1 week-ahead report independently places the release in this week's market calendar; ForexFactory confirms the public event clock. The current public Reddit signal is a direction-led, unsafe 'fullport/size down' discussion rather than an attributable non-directional pip-value, fixed-risk, margin or cost request. Historical FOMC fixed-risk packages already own the generic event-math path; a new title or stop grid would manufacture, not capture, a distinct journey.",
+      "reason": "The Federal Reserve lists the September 15-16 FOMC minutes for October 7 and AP independently identifies the event in its current-week calendar; ForexFactory provides public event discovery. Public material retained this run remains calendar-led or directional rather than a new attributable non-directional calculation question. Existing FOMC fixed-risk packages already own the generic event-math path; do not manufacture a second refresh from a nearer clock alone.",
       "scan_audit": {
         "sources": [
           {
             "publisher": "Federal Reserve Board",
-            "url": "https://www.federalreserve.gov/newsevents/2026-october.htm",
+            "url": "https://www.federalreserve.gov/monetarypolicy.htm",
             "source_type": "official_dated_calendar",
-            "published_at": "checked 2026-10-03",
-            "freshness_role": "official calendar lists October 7 2026 at 2:00 p.m. ET for FOMC Minutes from the September 15-16 meeting",
+            "published_at": "last updated 2026-10-01; checked 2026-10-04",
+            "freshness_role": "official page lists FOMC Minutes on October 7 for the September 15-16 meeting",
             "reliable": true
           },
           {
             "publisher": "Associated Press",
             "url": "https://apnews.com/article/04ce7f968db2fe696f582452503dc0d2",
             "source_type": "independent_english_week_ahead_news",
-            "published_at": "2026-10-01",
-            "freshness_role": "independent October 1 report identifies the FOMC minutes as a coming-week macro release",
+            "published_at": "2026-10-01; checked 2026-10-04",
+            "freshness_role": "independent report identifies the October 7 FOMC minutes as a coming-week event",
             "reliable": true
           },
           {
             "publisher": "ForexFactory",
-            "url": "https://www.forexfactory.com/calendar/304-us-fomc-meeting-minutes?reset=1",
+            "url": "https://www.forexfactory.com/calendar?week=oct5.2026",
             "source_type": "public_event_calendar_discovery",
-            "published_at": "checked 2026-10-03",
-            "freshness_role": "public event page shows Upcoming Oct 7 2026 2:00pm; used only for discoverability, not facts or direction",
+            "published_at": "checked 2026-10-04",
+            "freshness_role": "public weekly calendar is used only for event discoverability, not facts or direction",
             "reliable": false
           },
           {
             "publisher": "Reddit r/Daytrading",
-            "url": "https://www.reddit.com/r/Daytrading/comments/1ww0zf6/this_was_infuriating/",
-            "source_type": "public_directional_high_risk_discussion_insufficient_calculation_signal",
-            "published_at": "2026-10-03",
-            "freshness_role": "same-day post names October 7 FOMC minutes but frames it as an unsafe directional fullport/size-down setup rather than a reader-specific non-directional calculation need",
+            "url": "https://www.reddit.com/r/Daytrading/comments/1wqg9th/what_kind_of_monthly_percentage_returns_are_you/",
+            "source_type": "public_general_risk_discussion_insufficient_event_specific_signal",
+            "published_at": "2026-09-26; checked 2026-10-04",
+            "freshness_role": "discussion asks generally about risk mechanics and position sizing, not an attributable FOMC-minute calculation request",
             "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_existing_fomc_fixed_risk_path_has_new_clock_but_no_attributable_non_directional_search_or_example_delta",
+          "decision_gate": "observation_existing_fomc_fixed_risk_path_has_only_clock_delta_and_no_attributable_non_directional_search_or_example_delta",
           "duplicate_of": [
             "HR-20260817-01",
-            "HR-20260820-01"
+            "HR-20260820-01",
+            "HR-20261003-01"
           ],
           "refresh_signals": {
-            "fact_delta": true,
+            "fact_delta": false,
             "search_delta": false,
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "A public attributable non-directional calculation question tied to the October 7 minutes plus an additional factual, search, example or materially distinct-window delta; any qualified work must refresh the existing FOMC article rather than create another generic event-risk shape.",
-          "rationale": "The official clock and independent week-ahead report satisfy factual recency, but retained public attention is direction/reaction and high-risk sizing language rather than an attributable pip-value, fixed-risk, margin, cost or portfolio-risk question. Existing FOMC packages own generic event-risk arithmetic, so changing the date or stop inputs would manufacture demand."
+          "reopen_trigger": "A public attributable non-directional calculation question tied specifically to the October 7 minutes plus at least one additional fact, search, example or materially distinct-window delta. Any qualified work must refresh the existing FOMC article rather than create another generic event-risk shape.",
+          "rationale": "The official calendar and independent coverage sustain factual recency, but the retained audience material has no event-specific non-directional calculation journey. Moving closer to the event is one refresh signal, not a reason to reproduce an existing fixed-risk explanation."
         }
       }
     },
     {
-      "scan_date": "2026-10-03",
-      "candidate_id": "HR-20261003-02",
+      "scan_date": "2026-10-04",
+      "candidate_id": "HR-20261004-02",
       "status": "observation",
-      "topic": "CME Compute Futures List October 5 but Have No Safe PipGauge or PositionMath Handoff",
+      "topic": "CME Compute Futures Begin October 5 but Still Have No Verified PipGauge or PositionMath Handoff",
       "primary_site": "PositionMath",
       "freshness": 25,
       "traffic_potential": 21,
-      "calculator_fit": 8,
+      "calculator_fit": 10,
       "evidence_quality": 15,
       "actionability": 3,
-      "total_score": 72,
+      "total_score": 74,
       "hard_gate": false,
       "reliable_sources": 2,
       "fresh_signal": true,
@@ -23706,54 +23934,56 @@
         "P&L",
         "Portfolio Heat"
       ],
-      "reason": "CME's current Globex notice specifies October 4/5 listing timing and GPU1/GPU2 identifiers, while Reuters independently reported the planned October 5 launch; a public Reddit post dated October 3 shows discovery attention. Neither site has a verified CME Compute-futures workflow for contract multiplier, tick value, margin, commission or index-settlement conventions. Do not relabel a CFD, stock or generic calculator as a compute-futures answer or invent a product gap.",
+      "reason": "CME's product page now states GPU1/GPU2 contract units and a USD 7.30 tick value, while Reuters independently reported the planned October 5 launch; public Reddit discussion remains discovery-led. Neither existing site has a verified Compute-futures workflow that accepts the official contract unit, tick, margin, commission, settlement and broker-access conditions together. Do not represent a CFD, equity or generic calculator as a Compute futures calculator.",
       "scan_audit": {
         "sources": [
           {
             "publisher": "CME Group",
-            "url": "https://www.cmegroup.com/notices/electronic-trading/2026/09/20260914.html",
-            "source_type": "official_upcoming_listing_notice",
-            "published_at": "2026-09-14",
-            "freshness_role": "official notice states Compute futures effective Sunday October 4 / trade date Monday October 5, pending regulatory review, and identifies GPU1 and GPU2",
+            "url": "https://www.cmegroup.com/markets/energy/power/compute-futures.html",
+            "source_type": "official_product_page",
+            "published_at": "checked 2026-10-04",
+            "freshness_role": "official page identifies October 5 2026 launch context, GPU1/GPU2, 730 GPU-hours per contract and USD 7.30 value per tick",
             "reliable": true
           },
           {
             "publisher": "Reuters",
             "url": "https://www.stockopedia.com/share-prices/cme-NSQ%3ACME/news/brief-cme-group-silicon-data-to-launch-compute-futures-on-october-5-to-unlock-new-way-to-hedge-ai-risks-019ff17f-f216-74d4-8b14-e92b78b6bc7d/",
             "source_type": "independent_english_news_wire",
-            "published_at": "2026-08-11",
-            "freshness_role": "Reuters brief independently reports CME and Silicon Data's planned October 5 launch; the launch itself is within the upcoming-seven-day freshness window",
+            "published_at": "2026-08-11; checked 2026-10-04",
+            "freshness_role": "independently reports the planned October 5 launch, which is within the upcoming-seven-day event window",
             "reliable": true
           },
           {
-            "publisher": "Reddit r/economy",
-            "url": "https://www.reddit.com/r/economy/comments/1wwjb83/the_coming_futures_market_in_ai_compute_financial/",
-            "source_type": "public_current_discovery_discussion",
-            "published_at": "2026-10-03",
-            "freshness_role": "same-day public discussion concerns H100/B200 rental-rate references, benchmark choice and the October 5 listing; used as attention evidence only",
+            "publisher": "Reddit r/FuturesTrading",
+            "url": "https://www.reddit.com/r/FuturesTrading/comments/1vlve3m/cme_group_and_silicon_data_to_launch_compute/",
+            "source_type": "public_product_discovery_discussion",
+            "published_at": "2026-08-11; checked 2026-10-04",
+            "freshness_role": "public discussion shows product discovery and broker-access uncertainty, but no current attributable calculator request",
             "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "pass_nonduplicate_but_not_actionable",
-          "decision_gate": "observation_no_verified_existing_calculator_accepts_compute_futures_contract_specs_without_cfd_stock_or_generic_tool_misrepresentation",
-          "duplicate_of": [],
+          "decision_gate": "observation_no_verified_existing_calculator_accepts_compute_futures_contract_specs_and_broker_conditions_without_misrepresentation",
+          "duplicate_of": [
+            "HR-20261003-02"
+          ],
           "refresh_signals": {
             "fact_delta": true,
-            "search_delta": true,
-            "example_delta": false,
+            "search_delta": false,
+            "example_delta": true,
             "window_delta": true
           },
-          "reopen_trigger": "A versioned existing-site Compute-futures workflow or a public attributable non-directional exposure/risk question that an existing calculator can accurately answer after official multiplier, tick, margin, cost and settlement inputs have all been checked.",
-          "rationale": "The listing clock and public discovery attention are real, but the capability map has no verified GPU1/GPU2 futures contract, tick-value, margin, commission or settlement convention workflow. A NAS100 CFD or generic stock/risk calculator cannot be represented as an accurate Compute futures answer, so no playbook or feature-gap claim is created."
+          "reopen_trigger": "A versioned existing-site Compute-futures workflow, or a public attributable non-directional exposure request that the existing site can accurately answer after official multiplier, tick, margin, commission, settlement and broker-access terms are all checked.",
+          "rationale": "The CME page adds a verifiable contract unit and USD 7.30 tick value, but neither PipGauge nor PositionMath has a verified Compute futures contract workflow. A generic CFD, equity or P&L form cannot be presented as an accurate substitute without accepting all relevant contract and broker conditions. No traffic playbook or feature-gap claim is created."
         }
       }
     },
     {
-      "scan_date": "2026-10-03",
-      "candidate_id": "HR-20261003-03",
+      "scan_date": "2026-10-04",
+      "candidate_id": "HR-20261004-03",
       "status": "discarded",
-      "topic": "Directional FOMC ISM NFP FX Equity Oil Crypto Politics Sports and Unverifiable Social Commentary",
+      "topic": "Directional Macro Calls Commodity Forecasts Crypto Hype Politics Sports Entertainment and Unverifiable Social Commentary",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 25,
@@ -23767,43 +23997,43 @@
       "calculator_mapping": [
         "P&L"
       ],
-      "reason": "Price targets, rate-probability or policy calls, FOMC/ISM/NFP trade setups, broker or prop-firm purchase promotion, political framing, sports or entertainment, pure crypto hype, login-wall material and unverifiable social posts are excluded. None forms a fact-led, non-directional calculation journey."
+      "reason": "Directional calls around ISM, FOMC, FX, equities, oil, metals or crypto; broker and prop purchase promotion; political, sports and entertainment material; login-wall pages; and unverifiable social posts are excluded. None produced a source-checked, non-directional calculation journey with a natural existing-tool handoff."
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-10-03T22:02:00+08:00",
-      "source_count": 2,
-      "note": "核验 Federal Reserve October calendar 的 October 7 FOMC-minutes release time，以及 CME Globex notice 的 October 4/5 Compute futures listing condition、product identifiers 与平台范围；时间、条件和产品字段只取正式英文页面。"
+      "checked_at": "2026-10-04T22:00:00+08:00",
+      "source_count": 3,
+      "note": "核验 Federal Reserve 的货币政策日程（10 月 7 日 FOMC minutes）与 CME Compute Futures 产品页及正式上市资料（10 月 5 日、GPU1/GPU2、730 GPU-hours、USD 7.30 tick）。事件时间、合约字段和条件仅取公开英文一手页。"
     },
     {
       "channel": "独立可靠英文来源",
       "status": "complete",
-      "checked_at": "2026-10-03T22:02:00+08:00",
+      "checked_at": "2026-10-04T22:00:00+08:00",
       "source_count": 2,
-      "note": "AP 的 October 1 week-ahead report 独立确认 FOMC minutes 为下周事件；Reuters brief 独立报道 CME/Silicon Data planned October 5 Compute futures launch。二者不取代一手日程或合约条件。"
+      "note": "保留 AP 对 upcoming FOMC minutes 的独立周度确认，以及 Reuters 对 CME/Silicon Data 10 月 5 日计划上市的独立报道。它们不替代一手日程或产品规格。"
     },
     {
       "channel": "Reddit / ForexFactory / BabyPips",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-10-03T22:02:00+08:00",
-      "source_count": 3,
-      "note": "ForexFactory 证明 FOMC minutes 可公开发现；Reddit 显示 minutes 与 Compute futures 的当前发现/讨论。minutes 帖为方向性高风险语言，Compute 帖为 benchmark/discovery 讨论；均不证明可由既有两站准确回答的非方向性计算需求。BabyPips 当前新闻索引以数据/方向市场反应为主，没有保留可归属的计算问题。"
+      "checked_at": "2026-10-04T22:00:00+08:00",
+      "source_count": 4,
+      "note": "核验公开 Reddit、ForexFactory 10 月 5 日日历与 BabyPips 新闻/论坛索引。可见材料为日历发现、方向性市场叙事、一般风险讨论或 Compute futures 的产品发现；没有保留可归属、当期且可由现有两站准确承接的非方向性计算请求。"
     },
     {
       "channel": "X / Quora",
       "status": "limited",
-      "checked_at": "2026-10-03T22:02:00+08:00",
+      "checked_at": "2026-10-04T22:00:00+08:00",
       "source_count": 0,
-      "note": "公开可验证索引未出现可保留的当期非方向性计算需求；没有使用登录、墙后、截图或不可验证材料。"
+      "note": "公开可验证索引未出现可保留的当期非方向性计算需求；Quora 索引受 robots 限制。没有使用登录、墙后、截图或不可验证材料。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-10-03_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-10-03_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-10-04_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-10-04_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
