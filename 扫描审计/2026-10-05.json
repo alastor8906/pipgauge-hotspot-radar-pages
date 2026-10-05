@@ -1,0 +1,143 @@
+{
+  "scan_date": "2026-10-05",
+  "generated_at": "2026-10-05T22:00:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-05T22:00:00+08:00",
+      "source_count": 4,
+      "note": "核验 Federal Reserve 2026 FOMC calendar，以及 CME technology roadmap、Compute 新闻稿与 Globex notice。当前 CME roadmap 的 postponed 状态优先于旧的 10 月 5 日计划；日期、状态和产品字段仅取公开英文一手页。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "partial",
+      "checked_at": "2026-10-05T22:00:00+08:00",
+      "source_count": 1,
+      "note": "保留 Associated Press 的 10 月 1 日 week-ahead 报道，独立确认本周 FOMC minutes 时点。未找到可验证的独立英文来源来支持 CME roadmap 的当前 postponed 状态或 DXC 的当期需求，因此这些项目不能通过双来源门槛。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-10-05T22:00:00+08:00",
+      "source_count": 2,
+      "note": "公开 Reddit 帖子分别是一般仓位/点差讨论和方向性的 FOMC 持仓计划；ForexFactory 与 BabyPips 公开索引用于发现但未保留事件专属、非方向性 fixed-risk、pip/tick value、margin、quantity、cost 或 portfolio-risk 问题。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-05T22:00:00+08:00",
+      "source_count": 0,
+      "note": "公开可验证索引未出现可保留的当期非方向性计算需求；Quora robots 限制和动态社交页的不可复核内容均不计入证据。未使用登录、墙后、截图或不可验证材料。"
+    }
+  ],
+  "candidates": {
+    "HR-20261005-01": {
+      "sources": [
+        {
+          "publisher": "Federal Reserve Board",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "source_type": "official_meeting_calendar",
+          "published_at": "checked 2026-10-05",
+          "freshness_role": "identifies the September 15-16 meeting and states that regular-meeting minutes are released three weeks after the policy decision",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/04ce7f968db2fe696f582452503dc0d2",
+          "source_type": "independent_english_week_ahead_news",
+          "published_at": "2026-10-01; checked 2026-10-05",
+          "freshness_role": "independently identifies the October 7 FOMC minutes as a current-week event",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/fundedoptions",
+          "url": "https://www.reddit.com/r/fundedoptions/comments/1wy8lve/earnings_season_fed_minutes_my_funded_account/",
+          "source_type": "public_directional_positioning_discussion_insufficient",
+          "published_at": "2026-10-05; checked 2026-10-05",
+          "freshness_role": "shows event awareness but is a personal market/position plan, not an attributable non-directional calculation request",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_existing_fomc_fixed_risk_path_has_only_clock_delta_and_no_attributable_non_directional_search_or_example_delta",
+        "duplicate_of": ["HR-20260817-01", "HR-20260820-01", "HR-20261003-01", "HR-20261004-01"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "A public attributable non-directional calculation question tied specifically to the October 7 minutes plus at least one additional fact, search, example or materially distinct-window delta. Any qualified work must refresh the existing FOMC article rather than create another generic event-risk shape.",
+        "rationale": "The event clock is closer, but source-checked public material remains directional or general sizing commentary. One window delta is not sufficient to recreate a fixed-risk explanation already represented in historical FOMC material."
+      }
+    },
+    "HR-20261005-02": {
+      "sources": [
+        {
+          "publisher": "CME Group",
+          "url": "https://www.cmegroup.com/solutions/market-access/globex/develop-to-globex/technology-roadmap.html",
+          "source_type": "official_current_technology_roadmap",
+          "published_at": "checked 2026-10-05",
+          "freshness_role": "current roadmap marks Compute Futures as Postponed, replacing the expected October 5 production date",
+          "reliable": true
+        },
+        {
+          "publisher": "CME Group",
+          "url": "https://investor.cmegroup.com/news-releases/news-release-details/cme-group-and-silicon-data-launch-compute-futures-october-5",
+          "source_type": "official_historical_announcement",
+          "published_at": "2026-08-11; checked 2026-10-05",
+          "freshness_role": "documents the prior October 5 plan pending regulatory review and is retained only to explain the status change",
+          "reliable": true
+        },
+        {
+          "publisher": "CME Group",
+          "url": "https://www.cmegroup.com/notices/electronic-trading/2026/08/20260817.html",
+          "source_type": "official_historical_globex_notice",
+          "published_at": "2026-08-17; checked 2026-10-05",
+          "freshness_role": "documents the prior GPU1/GPU2 planned listing; same publisher and not independent confirmation",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass_fact_correction_but_not_actionable",
+        "decision_gate": "observation_postponed_status_removes_launch_window_and_no_verified_existing_calculator_accepts_compute_futures_contract_specs_and_broker_conditions",
+        "duplicate_of": ["HR-20261003-02", "HR-20261004-02"],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "A new dated CME production notice plus an independently verifiable, attributable non-directional exposure question and proof that an existing site can accurately accept the relevant multiplier, tick, margin, commission, settlement and broker-access terms.",
+        "rationale": "The current official source corrects the prior launch premise to postponed. That is a material fact update, but it removes rather than supplies a time-sensitive traffic window, and no safe calculator handoff exists."
+      }
+    },
+    "HR-20261005-03": {
+      "sources": [
+        {
+          "publisher": "CME Group",
+          "url": "https://www.cmegroup.com/solutions/market-access/globex/develop-to-globex/technology-roadmap.html",
+          "source_type": "official_technology_roadmap",
+          "published_at": "checked 2026-10-05",
+          "freshness_role": "lists New CME Group Dollar Index (DXC) with an October 5 2026 production date",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass_nonduplicate_but_not_actionable",
+        "decision_gate": "observation_single_source_no_independent_demand_signal_and_no_verified_existing_futures_specification_calculator",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "An independent reliable impact or heat source, a public attributable non-directional calculation request, and verified coverage of DXC contract/tick/margin/settlement inputs by an existing calculator.",
+        "rationale": "The listing date is real and current, but a single official source and a generic currency-strength surface do not establish a safe or useful futures-calculation journey."
+      }
+    }
+  }
+}
