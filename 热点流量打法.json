@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-05T22:00:00+08:00",
+  "updated_at": "2026-10-06T22:02:44+08:00",
   "last_scan": {
-    "scan_date": "2026-10-05",
+    "scan_date": "2026-10-06",
     "selected_count": 0,
     "playbook_ready_count": 0,
     "content_package_count": 0,
-    "note": "No item passed the current dated-fact, independent-source, novelty and natural search-to-calculator gates. The October 7 FOMC-minutes clock still has no attributable non-directional calculation demand beyond the existing generic fixed-risk path. CME's current technology roadmap marks Compute Futures postponed, removing the prior launch-day premise; DXC has only a single-source listing fact and no verified existing-calculator handoff. No playbook was created or refreshed."
+    "note": "No item passed the current dated-fact, independent-source, novelty and natural search-to-calculator gates. The October 7 FOMC-minutes event is now one day away and remains backed by Federal Reserve and AP timing evidence, but the current public discussion retained by this scan is still calendar/directional rather than an attributable non-directional calculation request; this is only a clock delta against the existing FOMC fixed-risk path. BLS September CPI is scheduled for October 14, outside the seven-day forward window, and RBNZ's updated October review is October 28. No playbook was created or refreshed."
   },
   "items": {
     "HR-20260930-01": {
