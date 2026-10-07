@@ -1,11 +1,11 @@
 {
   "_last_scan": {
-    "scan_date": "2026-10-06",
+    "scan_date": "2026-10-07",
     "selected_count": 0,
     "content_package_count": 0,
     "platform_draft_count": 0,
     "status": "no_qualified_topic",
-    "note": "No candidate passed all gates; no playbook or review package was generated, and all historical drafts remain awaiting_human_review. FOMC minutes are one day away but still have only a clock delta and no attributable non-directional demand delta; BLS September CPI (October 14) and RBNZ's October review (October 28) are outside the seven-day forward window."
+    "note": "No candidate passed all gates; no playbook or review package was generated, and all historical drafts remain awaiting_human_review. At the 22:02 Asia/Shanghai scan, FOMC minutes had not yet published and still had only a clock delta with no attributable non-directional demand delta."
   },
   "HR-20260930-01": {
     "content_status": "review_ready",

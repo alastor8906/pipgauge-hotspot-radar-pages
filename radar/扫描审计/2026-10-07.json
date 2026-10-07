@@ -1,0 +1,92 @@
+{
+  "scan_date": "2026-10-07",
+  "generated_at": "2026-10-07T22:02:31+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-07T22:02:31+08:00",
+      "source_count": 3,
+      "note": "复核 Federal Reserve monetary-policy page、FOMC minutes FAQ 与 BLS 2026 release schedule；日期和发布窗口只取公开英文一手页。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "partial",
+      "checked_at": "2026-10-07T22:02:31+08:00",
+      "source_count": 1,
+      "note": "保留 AP 10 月 1 日对本周 FOMC minutes 的独立日程确认。没有保留新的、可验证的事件专属非方向性计算需求。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-10-07T22:02:31+08:00",
+      "source_count": 2,
+      "note": "公开 ForexFactory 日历与 r/Daytrading 当日市场日历帖显示 FOMC minutes 注意力，但均为日历、催化剂或方向性语境，未形成可归属的 fixed-risk、pip/tick value、margin、quantity、cost 或 portfolio-risk 问题。BabyPips 未保留合格事件专属信号。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-07T22:02:31+08:00",
+      "source_count": 0,
+      "note": "公开可验证索引未出现可保留的当期非方向性计算需求；动态、登录墙、截图和不可稳定复核材料均不计入证据。"
+    }
+  ],
+  "candidates": {
+    "HR-20261007-01": {
+      "sources": [
+        {
+          "publisher": "Federal Reserve Board",
+          "url": "https://www.federalreserve.gov/monetarypolicy.htm",
+          "source_type": "official_current_meeting_calendar",
+          "published_at": "checked 2026-10-07",
+          "freshness_role": "lists October 7 as the FOMC minutes release date for the September 15-16 meeting",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/04ce7f968db2fe696f582452503dc0d2",
+          "source_type": "independent_english_week_ahead_news",
+          "published_at": "2026-10-01; checked 2026-10-07",
+          "freshness_role": "independently identifies Wednesday's FOMC minutes as a current-week event",
+          "reliable": true
+        },
+        {
+          "publisher": "ForexFactory",
+          "url": "https://www.forexfactory.com/calendar?day=oct7.2026&event=146528",
+          "source_type": "public_event_calendar_heat_signal_insufficient",
+          "published_at": "checked 2026-10-07",
+          "freshness_role": "shows public calendar attention but is not used as factual confirmation or a calculation-demand signal",
+          "reliable": false
+        },
+        {
+          "publisher": "Reddit r/Daytrading",
+          "url": "https://www.reddit.com/r/Daytrading/comments/1wzgqdl/market_intelligence_107/",
+          "source_type": "public_event_awareness_discussion_insufficient",
+          "published_at": "2026-10-07; checked 2026-10-07",
+          "freshness_role": "shows current event awareness but is a calendar/catalyst item rather than an attributable non-directional calculation request",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_existing_fomc_fixed_risk_path_has_only_clock_delta_before_release_and_no_attributable_non_directional_search_or_example_delta",
+        "duplicate_of": [
+          "HR-20260817-01",
+          "HR-20260820-01",
+          "HR-20261003-01",
+          "HR-20261004-01",
+          "HR-20261005-01",
+          "HR-20261006-01"
+        ],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "After the minutes publish, an independently verifiable fact change plus a public attributable non-directional calculation question or replacement numeric example tied to that fact. Any qualified work must refresh the existing FOMC article rather than create another generic event-risk shape.",
+        "rationale": "At the scan timestamp the minutes had not published. Source-checked public material remains calendar or directional discussion. One clock delta is not sufficient to recreate an existing fixed-risk explanation or invent a traffic playbook."
+      }
+    }
+  }
+}
