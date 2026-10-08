@@ -1,0 +1,93 @@
+{
+  "scan_date": "2026-10-08",
+  "generated_at": "2026-10-08T22:03:02+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-08T22:03:02+08:00",
+      "source_count": 4,
+      "note": "复核 Federal Reserve 9 月 15–16 日 minutes、BLS 2026 日程与 CPI 日程、FTMO Trading Updates archive；只将可公开核验的日期和数字作为事实。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-10-08T22:03:02+08:00",
+      "source_count": 1,
+      "note": "Reuters 10 月 7 日发布后报道独立核验 minutes 讨论与已发布状态；没有保留新的、可验证的事件专属非方向性计算需求。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-10-08T22:03:02+08:00",
+      "source_count": 2,
+      "note": "公开 Reddit 时间戳与市场日历帖子显示 FOMC 注意力，但分别是回测数据卫生和方向/催化剂语境，未形成可归属的 fixed-risk、pip/tick value、margin、quantity、cost 或 portfolio-risk 问题。ForexFactory、BabyPips 未保留合格事件专属信号。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-08T22:03:02+08:00",
+      "source_count": 0,
+      "note": "公开可验证索引未出现可保留的当期非方向性计算需求；动态、登录墙、截图和不可稳定复核材料均不计入证据。"
+    }
+  ],
+  "candidates": {
+    "HR-20261008-01": {
+      "sources": [
+        {
+          "publisher": "Federal Reserve Board",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm",
+          "source_type": "official_published_fomc_minutes",
+          "published_at": "2026-10-07; checked 2026-10-08",
+          "freshness_role": "published minutes record the September 15-16 meeting and the 3.75%-4.00% target range",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.streetinsider.com/Reuters/Fed%2Bminutes%2Bshow%2Bsome%2Bofficials%2Bwant%2Bto%2Bprepare%2Bfor%2Bmarket%2Bstress/27161382.html",
+          "source_type": "independent_english_post_release_news",
+          "published_at": "2026-10-07 16:13 EDT; checked 2026-10-08",
+          "freshness_role": "independently reports post-release minutes discussion of preparing for Treasury-market stress",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/algotradingcrypto",
+          "url": "https://www.reddit.com/r/algotradingcrypto/comments/1wzysw0/fomc_minutes_and_crypto_bot_backtests_need_the/",
+          "source_type": "public_timestamp_discussion_insufficient",
+          "published_at": "2026-10-08; checked 2026-10-08",
+          "freshness_role": "shows discussion of publication timestamp hygiene, not a supported existing calculator journey",
+          "reliable": false
+        },
+        {
+          "publisher": "Reddit r/MortgageBrokerRates",
+          "url": "https://www.reddit.com/r/MortgageBrokerRates/comments/1wy8psd/mortgage_market_week_ahead_october_5_to_october_9/",
+          "source_type": "public_event_awareness_discussion_insufficient",
+          "published_at": "2026-10-05; checked 2026-10-08",
+          "freshness_role": "shows event attention but is rate-direction context rather than an attributable non-directional calculation request",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_post_release_fact_without_verified_non_directional_search_to_calculator_path",
+        "duplicate_of": [
+          "HR-20260817-01",
+          "HR-20260820-01",
+          "HR-20261003-01",
+          "HR-20261004-01",
+          "HR-20261005-01",
+          "HR-20261006-01",
+          "HR-20261007-01"
+        ],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "An independently verifiable new fact or correction plus a public English query explicitly tying that fact to a non-directional pip-value, fixed-risk, margin, cost, quantity or portfolio-heat calculation. Any qualified work must refresh an existing FOMC article rather than create a generic duplicate.",
+        "rationale": "The published minutes and Reuters report create a real factual delta, but retained public material remains policy/yield/FX direction or backtest-timestamp discussion. No natural retail search-to-existing-calculator journey, replacement teaching number, or non-directional calculation request was verified. The calculator-fit hard gate therefore fails; no playbook or package is allowed."
+      }
+    }
+  }
+}
