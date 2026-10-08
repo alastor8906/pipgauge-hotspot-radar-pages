@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-07T22:02:31+08:00",
+  "updated_at": "2026-10-08T22:03:02+08:00",
   "last_scan": {
-    "scan_date": "2026-10-07",
+    "scan_date": "2026-10-08",
     "selected_count": 0,
     "playbook_ready_count": 0,
     "content_package_count": 0,
-    "note": "No item passed the current dated-fact, independent-source, novelty and natural search-to-calculator gates. At the 2026-10-07 22:02 Asia/Shanghai scan, the FOMC-minutes release remained ahead at 14:00 ET. Federal Reserve and AP timing evidence plus public calendar attention do not establish an attributable non-directional calculation request; this is only a clock delta against the existing FOMC fixed-risk path. No playbook was created or refreshed."
+    "note": "No item passed the current dated-fact, independent-source, novelty and natural search-to-calculator gates. At the 2026-10-08 22:03 Asia/Shanghai scan, published FOMC minutes and Reuters supplied a factual delta, but public material remained direction-led or concerned backtest timestamps rather than an attributable non-directional calculation request. FTMO's October 8 Futures update archive entry lacked stably verifiable rule text and an independent calculation-demand signal. No playbook was created or refreshed."
   },
   "items": {
     "HR-20260930-01": {
