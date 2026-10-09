@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-08T22:03:02+08:00",
+  "updated_at": "2026-10-09T22:04:16+08:00",
   "last_scan": {
-    "scan_date": "2026-10-08",
+    "scan_date": "2026-10-09",
     "selected_count": 0,
     "playbook_ready_count": 0,
     "content_package_count": 0,
-    "note": "No item passed the current dated-fact, independent-source, novelty and natural search-to-calculator gates. At the 2026-10-08 22:03 Asia/Shanghai scan, published FOMC minutes and Reuters supplied a factual delta, but public material remained direction-led or concerned backtest timestamps rather than an attributable non-directional calculation request. FTMO's October 8 Futures update archive entry lacked stably verifiable rule text and an independent calculation-demand signal. No playbook was created or refreshed."
+    "note": "No item passed the current dated-fact, independent-source, novelty and natural search-to-calculator gates. At the 2026-10-09 22:04 Asia/Shanghai scan, the Federal Reserve's October 7 minutes and AP's independent report remained fresh but public material was policy/yield/direction-led rather than an attributable non-directional calculation request. BLS's October 14 CPI calendar remained only a calendar fact, and FTMO's October 8 Futures archive entry lacked stably verifiable changed rule text and an independent calculation-demand signal. No playbook was created or refreshed."
   },
   "items": {
     "HR-20260930-01": {

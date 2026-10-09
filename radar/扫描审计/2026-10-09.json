@@ -1,0 +1,94 @@
+{
+  "scan_date": "2026-10-09",
+  "generated_at": "2026-10-09T22:04:16+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-09T22:04:16+08:00",
+      "source_count": 4,
+      "note": "复核 Federal Reserve 9 月 15–16 日 minutes、BLS 2026/10 月与 CPI 发布日程、FTMO Trading Updates archive；只将可公开核验的日期和数字作为事实。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-10-09T22:04:16+08:00",
+      "source_count": 1,
+      "note": "AP 10 月 7 日同日英文报道独立核验 minutes 的已发布政策事实；没有保留新的、可验证的事件专属非方向性计算需求。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-10-09T22:04:16+08:00",
+      "source_count": 2,
+      "note": "公开 Reddit 讨论显示 FOMC 注意力，但为利率、收益率和方向语境，未形成可归属的 fixed-risk、pip/tick value、margin、quantity、cost 或 portfolio-risk 问题。ForexFactory、BabyPips 未保留合格事件专属信号。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-09T22:04:16+08:00",
+      "source_count": 0,
+      "note": "公开可验证索引未出现可保留的当期非方向性计算需求；动态、登录墙、截图和不可稳定复核材料均不计入证据。"
+    }
+  ],
+  "candidates": {
+    "HR-20261009-01": {
+      "sources": [
+        {
+          "publisher": "Federal Reserve Board",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
+          "source_type": "official_published_fomc_minutes",
+          "published_at": "2026-10-07; checked 2026-10-09",
+          "freshness_role": "officially records publication of the September 15-16 FOMC minutes within the 72-hour window",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/b7ed20e31e1a6fa5da6d78e5fe35b0c3",
+          "source_type": "independent_english_post_release_news",
+          "published_at": "2026-10-07; checked 2026-10-09",
+          "freshness_role": "independently reports the minutes' policy discussion after publication",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/StockMarket",
+          "url": "https://www.reddit.com/r/StockMarket/comments/1x0r2ut/fed_minutes_say_more_hikes_are_coming_but_gave/",
+          "source_type": "public_directional_discussion_insufficient",
+          "published_at": "2026-10-08; checked 2026-10-09",
+          "freshness_role": "shows current discussion but not a supported non-directional calculator request",
+          "reliable": false
+        },
+        {
+          "publisher": "Reddit r/MortgageBrokerRates",
+          "url": "https://www.reddit.com/r/MortgageBrokerRates/comments/1x0t4yq/mortgage_market_update_thursday_october_8_2026/",
+          "source_type": "public_directional_discussion_insufficient",
+          "published_at": "2026-10-08; checked 2026-10-09",
+          "freshness_role": "shows rates/yields attention rather than an attributable non-directional calculation request",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_fresh_fact_without_verified_non_directional_search_to_calculator_path",
+        "duplicate_of": [
+          "HR-20260817-01",
+          "HR-20260820-01",
+          "HR-20261003-01",
+          "HR-20261004-01",
+          "HR-20261005-01",
+          "HR-20261006-01",
+          "HR-20261007-01",
+          "HR-20261008-01"
+        ],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "An independently verifiable new fact or correction plus a public English query explicitly tying that fact to a non-directional pip-value, fixed-risk, margin, cost, quantity or portfolio-heat calculation. Any qualified work must refresh an existing FOMC article rather than create a generic duplicate.",
+        "rationale": "The minutes and AP report remain fresh, but retained public material is policy/yield/FX-direction commentary. No natural retail search-to-existing-calculator journey, replacement teaching number, or non-directional calculation request was verified. The calculator-fit hard gate therefore fails; no playbook or package is allowed."
+      }
+    }
+  }
+}
