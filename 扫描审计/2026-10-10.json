@@ -1,0 +1,110 @@
+{
+  "scan_date": "2026-10-10",
+  "generated_at": "2026-10-10T22:07:58+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-10T22:07:58+08:00",
+      "source_count": 3,
+      "note": "复核 FTMO 10 月 8 日 CFD Trading Update、BLS 2026 release schedule 与 Federal Reserve 9 月 FOMC minutes；仅把可公开核验的日期、适用 cohort 与公式定义作为事实。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-10-10T22:07:58+08:00",
+      "source_count": 1,
+      "note": "BabyPips 的 9 月 15 日英文 explainer 独立解释 FTMO 1-Step Best Day Rule 与 Positive Days’ Profit 算术，作为官方产品规则的独立影响/计算语境来源；不替代 FTMO 条款。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "complete",
+      "checked_at": "2026-10-10T22:07:58+08:00",
+      "source_count": 3,
+      "note": "保留 BabyPips 规则计算语境、公开 r/propfirm 一致性话题与 ForexFactory 索引作热度覆盖。CPI 保留的公开讨论为 general calendar/direction/size-down 语境，未形成可归属计算需求。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-10T22:07:58+08:00",
+      "source_count": 0,
+      "note": "公开可验证索引未保留合格的 FTMO 10 月 12 日或 CPI 事件专属非方向性计算需求；动态、登录墙、截图和不可稳定复核材料不计入。"
+    }
+  ],
+  "candidates": {
+    "HR-20261010-01": {
+      "sources": [
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/en/blog/trading-updates/trading-update-8-oct-2026/",
+          "source_type": "official_dated_cfd_product_rule_update",
+          "published_at": "2026-10-08; checked 2026-10-10",
+          "freshness_role": "Officially records the October 12 09:00 GMT+3 effective time, affected new-order cohort and Best Day-to-Consistency denominator change within the 72-hour window.",
+          "reliable": true
+        },
+        {
+          "publisher": "BabyPips",
+          "url": "https://www.babypips.com/trading/prop-firm-consistency-rule-best-day-limit",
+          "source_type": "independent_public_rule_calculation_explainer",
+          "published_at": "2026-09-15; checked 2026-10-10",
+          "freshness_role": "Independently explains the FTMO 1-Step 50% Best Day / Positive Days’ Profit calculation and a worked daily-P&L example; supports the public calculation-demand path, not current FTMO terms.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/propfirm",
+          "url": "https://www.reddit.com/r/propfirm/comments/1tbyah7/the_prop_firm_rule_that_actually_killed_your/",
+          "source_type": "public_general_consistency_discussion_heat_only",
+          "published_at": "2026-05-13; checked 2026-10-10",
+          "freshness_role": "General public discussion confirms rule-calculation vocabulary but is not counted as fact verification or as a fresh event signal.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass",
+        "decision_gate": "selected_official_product_rule_plus_independent_calculation_context_with_time_bounded_existing_tool_handoff",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "reopen_trigger": "Recheck immediately if FTMO changes the effective time, new-order cohort, percentage, formula, eligibility or Trading Objectives language. After the October 12 cutover, reopen only for a current official rule change plus public non-directional calculation demand; do not reuse the countdown headline.",
+        "rationale": "This is a distinct CFD 1-Step denominator-change journey, not a recurrence of the September FTMO Futures daily-loss packages. The dated official product rule supplies the 72-hour fact and concrete window; BabyPips independently establishes why Best Day / consistency arithmetic is a public calculation question. The natural bridge is PositionMath Consistency Rule Calculator, while no market-direction, account-purchase, contract-specification or execution claim is needed."
+      }
+    },
+    "HR-20261010-02": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/schedule/2026/home.htm",
+          "source_type": "official_release_calendar",
+          "published_at": "calendar checked 2026-10-10",
+          "freshness_role": "Officially schedules September 2026 CPI for October 14 at 08:30 ET, inside the seven-day window.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/HollowPointTrading",
+          "url": "https://www.reddit.com/r/HollowPointTrading/comments/1wywin8/scheduled_cpi_release_versus_market_reaction/",
+          "source_type": "public_calendar_discussion_insufficient",
+          "published_at": "2026-10-06; checked 2026-10-10",
+          "freshness_role": "Shows general event-risk discussion but not an attributable non-directional calculator request.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_calendar_fact_without_second_reliable_source_or_distinct_non_directional_search_to_calculator_path",
+        "duplicate_of": ["HR-20261009-02", "HR-20261008-03"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "A published BLS CPI result plus independent reliable reporting and a public English query explicitly tied to non-directional pip value, fixed-risk, margin, cost, quantity or portfolio-heat arithmetic. Any qualifying content must first evaluate refresh targets rather than create another generic macro-risk article.",
+        "rationale": "A nearer calendar does not supply a new calculation journey. Retained public material is direction, avoidance or broad size-down discussion, and the fact layer has only one reliable publisher. The hard evidence and novelty gates fail, so no playbook or package is allowed."
+      }
+    }
+  }
+}
