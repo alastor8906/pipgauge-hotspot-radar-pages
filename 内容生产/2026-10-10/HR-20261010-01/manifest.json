@@ -1,0 +1,20 @@
+{
+  "candidate_id": "HR-20261010-01",
+  "scan_date": "2026-10-10",
+  "primary_site": "PositionMath",
+  "topic": "FTMO 1-Step Rule Switch: Calculate the Best-Day Ratio Before the October 12 Cutover",
+  "execution_mode": "new",
+  "refresh_target": null,
+  "package_summary": "当期审核快照：以 FTMO 10 月 8 日公告的 10 月 12 日 1-Step rule switch 为钩子，对比 Positive Days’ Profit 与 total-profit 分母。示例只说明 USD 2,000 Best Day 在 USD 3,000 与 USD 2,200 分母下分别为 66.7% 与 90.9%；不声称新规则百分比、pass/fail、账户建议或市场方向。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "pre_cutover_rule_verification_window",
+  "time_status_label": "仅在 2026-10-12 09:00 GMT+3 切换前使用倒计时；cutover 后或规则、cohort、percentage、eligibility 变更时必须重新核验或停用。",
+  "documents": [
+    {"id": "facts", "label": "事实与论点", "file": "00-事实与论点.md", "platform": "internal", "kind": "editorial brief", "status_label": "已整理"},
+    {"id": "medium", "label": "Medium", "file": "01-Medium.md", "platform": "medium", "kind": "long-form draft", "status_label": "待人工审核"},
+    {"id": "reddit", "label": "Reddit", "file": "02-Reddit.md", "platform": "reddit", "kind": "native discussion draft", "status_label": "待人工审核"},
+    {"id": "x", "label": "X", "file": "03-X.md", "platform": "x", "kind": "short thread draft", "status_label": "待人工审核"},
+    {"id": "review", "label": "审核清单", "file": "04-人工审核.md", "platform": "internal", "kind": "human gate", "status_label": "必须完成"}
+  ]
+}

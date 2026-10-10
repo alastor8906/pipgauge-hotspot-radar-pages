@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-10-09T22:06:52+08:00",
-  "latest_scan_date": "2026-10-09",
+  "generated_at": "2026-10-10T22:09:39+08:00",
+  "latest_scan_date": "2026-10-10",
   "available_dates": [
+    "2026-10-10",
     "2026-10-09",
     "2026-10-08",
     "2026-10-07",
@@ -81,8 +82,265 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-10-10",
+      "generated_at": "2026-10-10T22:09:39+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 76,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 1,
+        "observation": 1,
+        "discarded": 1,
+        "total": 3,
+        "selected_average": 95.0,
+        "all_selected_pass_gate": true,
+        "content_ready": 1,
+        "playbook_ready": 1
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-10-10",
+          "candidate_id": "HR-20261010-01",
+          "status": "selected",
+          "topic": "FTMO 1-Step Rule Switch: Calculate the Best-Day Ratio Before the October 12 Cutover",
+          "primary_site": "PositionMath",
+          "freshness": 25,
+          "traffic_potential": 22,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 8,
+          "total_score": 95,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Consistency Rule",
+            "Prop Firm Simulator",
+            "Position Size"
+          ],
+          "reason": "FTMO's dated October 8 CFD update says new 1-Step orders from October 12 09:00 GMT+3 move from the Best Day Rule to a Consistency rule that uses total profit, including losing days. BabyPips independently explains the 1-Step 50% Best Day calculation and why a best-day denominator is a practical calculation issue. This is a distinct CFD 1-Step rule-change path, not the earlier FTMO Futures daily-loss content; it supports one dated rule-reading calculation package without a firm recommendation or market call.",
+          "content_status": "review_ready",
+          "content_label": "FTMO 1-Step October 12 consistency-rule switch 审核包待人工审核",
+          "content_url": "../内容生产/2026-10-10/HR-20261010-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-10-11T19:00:00-04:00",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "new",
+            "urgency": "high",
+            "publish_deadline": "2026-10-11T19:00:00-04:00",
+            "traffic_hook": "FTMO's dated October 8 CFD update says that new 1-Step FTMO Challenge orders created on or after October 12, 2026 at 09:00 GMT+3 move from the Best Day Rule to the Consistency rule. The immediate user task is to calculate how one strong day is measured before choosing or interpreting the correct new-order rule—not to predict a market or recommend a challenge.",
+            "traffic_window": "Use the rule-switch frame from October 10 through the October 12 09:00 GMT+3 cutover, then replace the deadline language with a current-rule verification note. Stop immediately if FTMO changes the date, affected order cohort, formula, percentage, eligibility or product wording, or when the cutover search discussion no longer supports this exact denominator question.",
+            "search_intents": [
+              "FTMO 1 Step Consistency Rule October 12 2026",
+              "FTMO Best Day Rule vs Consistency Rule",
+              "FTMO 1 Step 50% consistency calculation",
+              "FTMO consistency rule best day total profit including losing days",
+              "how to calculate FTMO best day ratio"
+            ],
+            "traffic_angle": "Borrow the verified October 12 1-Step rule switch to show the one numerical difference readers will search: with daily P&L of -500, +2000, -300 and +1000 USD, the old Best Day denominator is positive-days profit of USD 3000, so USD 2000 / USD 3000 = 66.7%; the announced Consistency denominator is total profit of USD 2200, so USD 2000 / USD 2200 = 90.9%. The examples only illustrate definitions and do not state the post-cutover percentage, a pass/fail outcome, a trade size, or a market view.",
+            "calculator_bridge": "After the official order-date and rule definition, PositionMath Consistency Rule Calculator is the primary place to enter the reader's verified program percentage and daily P&L distribution; PositionMath Prop Firm Simulator can cross-check the account-rule context. PipGauge is not forced into this rule-specific explanation; its Position Size tool is relevant only if a reader separately has a verified risk budget and stop, never as proof of the FTMO rule. Neither tool interprets eligibility, confirms terms, recommends an account or guarantees a result.",
+            "example_scenario": "Teaching-only daily P&L sequence: Day 1 -USD 500, Day 2 +USD 2,000, Day 3 -USD 300, Day 4 +USD 1,000. Best Day is USD 2,000. Existing Best Day denominator: positive-days profit USD 3,000, ratio 66.7%. Announced Consistency denominator: total profit USD 2,200, ratio 90.9%. The current official 1-Step percentage and order cohort must be rechecked; the numbers are not a recommendation, target or forecast.",
+            "distribution_order": [
+              "new PositionMath dated rule-reading explainer",
+              "Medium source-linked explanation of the two denominators",
+              "X self-contained ratio-comparison thread",
+              "Reddit native calculation discussion without a first-round link"
+            ],
+            "link_placement": "Lead with the official effective date, affected new-order cohort, formula definitions and the worked denominator comparison. Only after that may Medium place one natural PositionMath calculator link. Do not include a link, UTM parameter, affiliate language or product pitch in the initial Reddit post; the X thread must remain understandable without a link.",
+            "expiry_condition": "Retire the countdown framing at the October 12 cutover, on any official update or mismatch in the live Trading Objectives page, if the exact rule percentage/cohort cannot be rechecked, or when public search/discussion leaves this denominator question. Do not recycle the USD 2,000 / 3,000 / 2,200 teaching values as FTMO terms or evergreen performance advice.",
+            "editorial_boundary": "Do not rank, endorse or disparage FTMO or any prop firm; do not recommend a purchase, account type, position size or strategy; do not predict FX, CFD or other market direction; do not label the teaching sequence a pass/fail test; and do not use the prior Best Day percentage as an assertion about the post-cutover rule unless the live official terms independently confirm it. The official rulebook is authoritative and can vary by order date, plan, account stage, eligibility and current terms.",
+            "refresh_target": null,
+            "refresh_signals": {
+              "fact_delta": true,
+              "search_delta": true,
+              "example_delta": true,
+              "window_delta": true
+            },
+            "refresh_updates": [],
+            "content_mainline": "Create one dated CFD 1-Step denominator explainer distinct from the September FTMO Futures daily-loss packages. Its only job is to compare positive-days profit with total-profit calculation mechanics around the October 12 rule switch; it must not become a generic prop-firm comparison or a second daily-loss article.",
+            "body_material": [
+              "FTMO October 8, 2026 CFD Trading Update: October 12 09:00 GMT+3 effective time, new-order cohort and denominator change",
+              "BabyPips September 15 explanation of FTMO 1-Step 50% Best Day Rule and its worked positive-days-profit arithmetic",
+              "teaching sequence -500, +2000, -300, +1000 USD",
+              "old denominator USD 3000 and announced new denominator USD 2200",
+              "October 11 19:00 ET human-review deadline / October 12 official-rule recheck stop gate"
+            ],
+            "product_bridge": "PositionMath turns a reader-verified program percentage and daily P&L distribution into transparent consistency arithmetic after the dated rule explanation; it does not validate FTMO terms, determine eligibility, select a program, recommend a trade or promise a result.",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "FTMO",
+                "url": "https://ftmo.com/en/blog/trading-updates/trading-update-8-oct-2026/",
+                "source_type": "official_dated_cfd_product_rule_update",
+                "published_at": "2026-10-08; checked 2026-10-10",
+                "freshness_role": "Officially records the October 12 09:00 GMT+3 effective time, affected new-order cohort and Best Day-to-Consistency denominator change within the 72-hour window.",
+                "reliable": true
+              },
+              {
+                "publisher": "BabyPips",
+                "url": "https://www.babypips.com/trading/prop-firm-consistency-rule-best-day-limit",
+                "source_type": "independent_public_rule_calculation_explainer",
+                "published_at": "2026-09-15; checked 2026-10-10",
+                "freshness_role": "Independently explains the FTMO 1-Step 50% Best Day / Positive Days’ Profit calculation and a worked daily-P&L example; supports the public calculation-demand path, not current FTMO terms.",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit r/propfirm",
+                "url": "https://www.reddit.com/r/propfirm/comments/1tbyah7/the_prop_firm_rule_that_actually_killed_your/",
+                "source_type": "public_general_consistency_discussion_heat_only",
+                "published_at": "2026-05-13; checked 2026-10-10",
+                "freshness_role": "General public discussion confirms rule-calculation vocabulary but is not counted as fact verification or as a fresh event signal.",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass",
+              "decision_gate": "selected_official_product_rule_plus_independent_calculation_context_with_time_bounded_existing_tool_handoff",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": true,
+                "window_delta": true
+              },
+              "reopen_trigger": "Recheck immediately if FTMO changes the effective time, new-order cohort, percentage, formula, eligibility or Trading Objectives language. After the October 12 cutover, reopen only for a current official rule change plus public non-directional calculation demand; do not reuse the countdown headline.",
+              "rationale": "This is a distinct CFD 1-Step denominator-change journey, not a recurrence of the September FTMO Futures daily-loss packages. The dated official product rule supplies the 72-hour fact and concrete window; BabyPips independently establishes why Best Day / consistency arithmetic is a public calculation question. The natural bridge is PositionMath Consistency Rule Calculator, while no market-direction, account-purchase, contract-specification or execution claim is needed."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-10-10",
+          "candidate_id": "HR-20261010-02",
+          "status": "observation",
+          "topic": "October 14 U.S. CPI Is a Verified Calendar Event but Not Yet a Distinct Calculator Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 21,
+          "calculator_fit": 20,
+          "evidence_quality": 12,
+          "actionability": 4,
+          "total_score": 82,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Margin",
+            "P&L"
+          ],
+          "reason": "BLS schedules September CPI for October 14 at 08:30 ET and public posts show calendar attention, but the retained material is generic size-down or directional commentary rather than an attributable event-specific calculation request. It also lacks a second reliable independent fact or impact source under the hard gate. A generic fixed-risk table would repeat historical CPI/FOMC content; reopen only on a published result plus a verified non-directional search query and refresh signals.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/schedule/2026/home.htm",
+                "source_type": "official_release_calendar",
+                "published_at": "calendar checked 2026-10-10",
+                "freshness_role": "Officially schedules September 2026 CPI for October 14 at 08:30 ET, inside the seven-day window.",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit r/HollowPointTrading",
+                "url": "https://www.reddit.com/r/HollowPointTrading/comments/1wywin8/scheduled_cpi_release_versus_market_reaction/",
+                "source_type": "public_calendar_discussion_insufficient",
+                "published_at": "2026-10-06; checked 2026-10-10",
+                "freshness_role": "Shows general event-risk discussion but not an attributable non-directional calculator request.",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_calendar_fact_without_second_reliable_source_or_distinct_non_directional_search_to_calculator_path",
+              "duplicate_of": [
+                "HR-20261009-02",
+                "HR-20261008-03"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "A published BLS CPI result plus independent reliable reporting and a public English query explicitly tied to non-directional pip value, fixed-risk, margin, cost, quantity or portfolio-heat arithmetic. Any qualifying content must first evaluate refresh targets rather than create another generic macro-risk article.",
+              "rationale": "A nearer calendar does not supply a new calculation journey. Retained public material is direction, avoidance or broad size-down discussion, and the fact layer has only one reliable publisher. The hard evidence and novelty gates fail, so no playbook or package is allowed."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-10-10",
+          "candidate_id": "HR-20261010-03",
+          "status": "discarded",
+          "topic": "Directional Macro Calls Crypto Hype Politics Sports Entertainment and Unverifiable Social Material",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 60,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "CPI/FOMC/FX/equity direction calls, price targets, generic lot-size opinions without a dated fact, broker or prop-firm purchase promotion, political/sports/entertainment material, login-wall pages, screenshots and unverifiable social posts were excluded. They do not establish a fact-led non-directional calculation journey."
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-10-10T22:07:58+08:00",
+          "source_count": 3,
+          "note": "复核 FTMO 10 月 8 日 CFD Trading Update、BLS 2026 release schedule 与 Federal Reserve 9 月 FOMC minutes；仅把可公开核验的日期、适用 cohort 与公式定义作为事实。"
+        },
+        {
+          "channel": "独立可靠英文来源",
+          "status": "complete",
+          "checked_at": "2026-10-10T22:07:58+08:00",
+          "source_count": 1,
+          "note": "BabyPips 的 9 月 15 日英文 explainer 独立解释 FTMO 1-Step Best Day Rule 与 Positive Days’ Profit 算术，作为官方产品规则的独立影响/计算语境来源；不替代 FTMO 条款。"
+        },
+        {
+          "channel": "Reddit / ForexFactory / BabyPips",
+          "status": "complete",
+          "checked_at": "2026-10-10T22:07:58+08:00",
+          "source_count": 3,
+          "note": "保留 BabyPips 规则计算语境、公开 r/propfirm 一致性话题与 ForexFactory 索引作热度覆盖。CPI 保留的公开讨论为 general calendar/direction/size-down 语境，未形成可归属计算需求。"
+        },
+        {
+          "channel": "X / Quora",
+          "status": "limited",
+          "checked_at": "2026-10-10T22:07:58+08:00",
+          "source_count": 0,
+          "note": "公开可验证索引未保留合格的 FTMO 10 月 12 日或 CPI 事件专属非方向性计算需求；动态、登录墙、截图和不可稳定复核材料不计入。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-10-10_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-10-10_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-10-10"
+      }
+    },
+    {
       "scan_date": "2026-10-09",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 75,
@@ -293,7 +551,7 @@
     },
     {
       "scan_date": "2026-10-08",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 74,
@@ -480,7 +738,7 @@
     },
     {
       "scan_date": "2026-10-07",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 73,
@@ -644,7 +902,7 @@
     },
     {
       "scan_date": "2026-10-06",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 72,
@@ -807,7 +1065,7 @@
     },
     {
       "scan_date": "2026-10-05",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 71,
@@ -1074,7 +1332,7 @@
     },
     {
       "scan_date": "2026-10-04",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 70,
@@ -1300,7 +1558,7 @@
     },
     {
       "scan_date": "2026-10-03",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 69,
@@ -1523,7 +1781,7 @@
     },
     {
       "scan_date": "2026-10-02",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 68,
@@ -1806,7 +2064,7 @@
     },
     {
       "scan_date": "2026-10-01",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 67,
@@ -2085,7 +2343,7 @@
     },
     {
       "scan_date": "2026-09-30",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 66,
@@ -2495,7 +2753,7 @@
     },
     {
       "scan_date": "2026-09-29",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 65,
@@ -2819,7 +3077,7 @@
     },
     {
       "scan_date": "2026-09-28",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 64,
@@ -3104,7 +3362,7 @@
     },
     {
       "scan_date": "2026-09-27",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 63,
@@ -3454,7 +3712,7 @@
     },
     {
       "scan_date": "2026-09-26",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 62,
@@ -3663,7 +3921,7 @@
     },
     {
       "scan_date": "2026-09-25",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 61,
@@ -3943,7 +4201,7 @@
     },
     {
       "scan_date": "2026-09-24",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 60,
@@ -4223,7 +4481,7 @@
     },
     {
       "scan_date": "2026-09-23",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 59,
@@ -4461,7 +4719,7 @@
     },
     {
       "scan_date": "2026-09-22",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 58,
@@ -4750,7 +5008,7 @@
     },
     {
       "scan_date": "2026-09-21",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 57,
@@ -4972,7 +5230,7 @@
     },
     {
       "scan_date": "2026-09-20",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 56,
@@ -5257,7 +5515,7 @@
     },
     {
       "scan_date": "2026-09-19",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 55,
@@ -5532,7 +5790,7 @@
     },
     {
       "scan_date": "2026-09-18",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 54,
@@ -5814,7 +6072,7 @@
     },
     {
       "scan_date": "2026-09-17",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 53,
@@ -6159,7 +6417,7 @@
     },
     {
       "scan_date": "2026-09-16",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 52,
@@ -6449,7 +6707,7 @@
     },
     {
       "scan_date": "2026-09-15",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 51,
@@ -6663,7 +6921,7 @@
     },
     {
       "scan_date": "2026-09-14",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 50,
@@ -6867,7 +7125,7 @@
     },
     {
       "scan_date": "2026-09-13",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 49,
@@ -7072,7 +7330,7 @@
     },
     {
       "scan_date": "2026-09-12",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 48,
@@ -7258,7 +7516,7 @@
     },
     {
       "scan_date": "2026-09-11",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 47,
@@ -7475,7 +7733,7 @@
     },
     {
       "scan_date": "2026-09-10",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 46,
@@ -7761,7 +8019,7 @@
     },
     {
       "scan_date": "2026-09-09",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 45,
@@ -8041,7 +8299,7 @@
     },
     {
       "scan_date": "2026-09-08",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 44,
@@ -8370,7 +8628,7 @@
     },
     {
       "scan_date": "2026-09-07",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 43,
@@ -8672,7 +8930,7 @@
     },
     {
       "scan_date": "2026-09-06",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 42,
@@ -8988,7 +9246,7 @@
     },
     {
       "scan_date": "2026-09-05",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 41,
@@ -9310,7 +9568,7 @@
     },
     {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -9623,7 +9881,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -9934,7 +10192,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -10265,7 +10523,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -10603,7 +10861,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -10996,7 +11254,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -11406,7 +11664,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -11878,7 +12136,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -12223,7 +12481,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -12568,7 +12826,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -13020,7 +13278,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -13433,7 +13691,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -13665,7 +13923,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -14110,7 +14368,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -14485,7 +14743,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -14877,7 +15135,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -15253,7 +15511,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -15577,7 +15835,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -15960,7 +16218,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -16301,7 +16559,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -16676,7 +16934,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -17064,7 +17322,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -17409,7 +17667,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -17737,7 +17995,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -18049,7 +18307,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -18370,7 +18628,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -18731,7 +18989,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -19084,7 +19342,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -19528,7 +19786,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -20037,7 +20295,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -20507,7 +20765,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -21050,7 +21308,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -21322,7 +21580,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -21635,7 +21893,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -22070,7 +22328,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -22584,7 +22842,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -23093,7 +23351,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -23561,7 +23819,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -23975,7 +24233,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -24374,7 +24632,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-10-09T22:06:52+08:00",
+      "generated_at": "2026-10-10T22:09:39+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -24813,10 +25071,10 @@
       }
     }
   ],
-  "scan_date": "2026-10-09",
+  "scan_date": "2026-10-10",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 75,
+    "day": 76,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -24824,110 +25082,141 @@
     "mode": "topic_traffic_playbooks_and_content_drafts"
   },
   "stats": {
-    "selected": 0,
+    "selected": 1,
     "observation": 1,
-    "discarded": 3,
-    "total": 4,
-    "selected_average": 0,
+    "discarded": 1,
+    "total": 3,
+    "selected_average": 95.0,
     "all_selected_pass_gate": true,
-    "content_ready": 0,
-    "playbook_ready": 0
+    "content_ready": 1,
+    "playbook_ready": 1
   },
   "candidates": [
     {
-      "scan_date": "2026-10-09",
-      "candidate_id": "HR-20261009-01",
-      "status": "observation",
-      "topic": "FOMC Minutes Remain a Direction-Led Discussion Rather Than a New Search-to-Calculator Journey",
-      "primary_site": "PipGauge",
-      "freshness": 24,
-      "traffic_potential": 23,
+      "scan_date": "2026-10-10",
+      "candidate_id": "HR-20261010-01",
+      "status": "selected",
+      "topic": "FTMO 1-Step Rule Switch: Calculate the Best-Day Ratio Before the October 12 Cutover",
+      "primary_site": "PositionMath",
+      "freshness": 25,
+      "traffic_potential": 22,
       "calculator_fit": 25,
       "evidence_quality": 15,
-      "actionability": 4,
-      "total_score": 91,
-      "hard_gate": false,
+      "actionability": 8,
+      "total_score": 95,
+      "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
-        "Pip Value",
-        "Position Size",
-        "Margin",
-        "P&L",
-        "Spread Cost"
+        "Consistency Rule",
+        "Prop Firm Simulator",
+        "Position Size"
       ],
-      "reason": "The Federal Reserve's October 7 minutes and AP's independent report remain fresh, but the retained October 8-9 discussion is about policy, yields and market direction rather than a verifiable event-specific fixed-risk, pip-value, margin, cost, quantity or portfolio-heat request. The generic FOMC risk path is already covered; no refresh, playbook or package is justified.",
+      "reason": "FTMO's dated October 8 CFD update says new 1-Step orders from October 12 09:00 GMT+3 move from the Best Day Rule to a Consistency rule that uses total profit, including losing days. BabyPips independently explains the 1-Step 50% Best Day calculation and why a best-day denominator is a practical calculation issue. This is a distinct CFD 1-Step rule-change path, not the earlier FTMO Futures daily-loss content; it supports one dated rule-reading calculation package without a firm recommendation or market call.",
+      "content_status": "review_ready",
+      "content_label": "FTMO 1-Step October 12 consistency-rule switch 审核包待人工审核",
+      "content_url": "../内容生产/2026-10-10/HR-20261010-01/index.html",
+      "content_format": "Medium / Reddit / X",
+      "deadline": "2026-10-11T19:00:00-04:00",
+      "traffic_playbook": {
+        "playbook_status": "ready",
+        "execution_mode": "new",
+        "urgency": "high",
+        "publish_deadline": "2026-10-11T19:00:00-04:00",
+        "traffic_hook": "FTMO's dated October 8 CFD update says that new 1-Step FTMO Challenge orders created on or after October 12, 2026 at 09:00 GMT+3 move from the Best Day Rule to the Consistency rule. The immediate user task is to calculate how one strong day is measured before choosing or interpreting the correct new-order rule—not to predict a market or recommend a challenge.",
+        "traffic_window": "Use the rule-switch frame from October 10 through the October 12 09:00 GMT+3 cutover, then replace the deadline language with a current-rule verification note. Stop immediately if FTMO changes the date, affected order cohort, formula, percentage, eligibility or product wording, or when the cutover search discussion no longer supports this exact denominator question.",
+        "search_intents": [
+          "FTMO 1 Step Consistency Rule October 12 2026",
+          "FTMO Best Day Rule vs Consistency Rule",
+          "FTMO 1 Step 50% consistency calculation",
+          "FTMO consistency rule best day total profit including losing days",
+          "how to calculate FTMO best day ratio"
+        ],
+        "traffic_angle": "Borrow the verified October 12 1-Step rule switch to show the one numerical difference readers will search: with daily P&L of -500, +2000, -300 and +1000 USD, the old Best Day denominator is positive-days profit of USD 3000, so USD 2000 / USD 3000 = 66.7%; the announced Consistency denominator is total profit of USD 2200, so USD 2000 / USD 2200 = 90.9%. The examples only illustrate definitions and do not state the post-cutover percentage, a pass/fail outcome, a trade size, or a market view.",
+        "calculator_bridge": "After the official order-date and rule definition, PositionMath Consistency Rule Calculator is the primary place to enter the reader's verified program percentage and daily P&L distribution; PositionMath Prop Firm Simulator can cross-check the account-rule context. PipGauge is not forced into this rule-specific explanation; its Position Size tool is relevant only if a reader separately has a verified risk budget and stop, never as proof of the FTMO rule. Neither tool interprets eligibility, confirms terms, recommends an account or guarantees a result.",
+        "example_scenario": "Teaching-only daily P&L sequence: Day 1 -USD 500, Day 2 +USD 2,000, Day 3 -USD 300, Day 4 +USD 1,000. Best Day is USD 2,000. Existing Best Day denominator: positive-days profit USD 3,000, ratio 66.7%. Announced Consistency denominator: total profit USD 2,200, ratio 90.9%. The current official 1-Step percentage and order cohort must be rechecked; the numbers are not a recommendation, target or forecast.",
+        "distribution_order": [
+          "new PositionMath dated rule-reading explainer",
+          "Medium source-linked explanation of the two denominators",
+          "X self-contained ratio-comparison thread",
+          "Reddit native calculation discussion without a first-round link"
+        ],
+        "link_placement": "Lead with the official effective date, affected new-order cohort, formula definitions and the worked denominator comparison. Only after that may Medium place one natural PositionMath calculator link. Do not include a link, UTM parameter, affiliate language or product pitch in the initial Reddit post; the X thread must remain understandable without a link.",
+        "expiry_condition": "Retire the countdown framing at the October 12 cutover, on any official update or mismatch in the live Trading Objectives page, if the exact rule percentage/cohort cannot be rechecked, or when public search/discussion leaves this denominator question. Do not recycle the USD 2,000 / 3,000 / 2,200 teaching values as FTMO terms or evergreen performance advice.",
+        "editorial_boundary": "Do not rank, endorse or disparage FTMO or any prop firm; do not recommend a purchase, account type, position size or strategy; do not predict FX, CFD or other market direction; do not label the teaching sequence a pass/fail test; and do not use the prior Best Day percentage as an assertion about the post-cutover rule unless the live official terms independently confirm it. The official rulebook is authoritative and can vary by order date, plan, account stage, eligibility and current terms.",
+        "refresh_target": null,
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "refresh_updates": [],
+        "content_mainline": "Create one dated CFD 1-Step denominator explainer distinct from the September FTMO Futures daily-loss packages. Its only job is to compare positive-days profit with total-profit calculation mechanics around the October 12 rule switch; it must not become a generic prop-firm comparison or a second daily-loss article.",
+        "body_material": [
+          "FTMO October 8, 2026 CFD Trading Update: October 12 09:00 GMT+3 effective time, new-order cohort and denominator change",
+          "BabyPips September 15 explanation of FTMO 1-Step 50% Best Day Rule and its worked positive-days-profit arithmetic",
+          "teaching sequence -500, +2000, -300, +1000 USD",
+          "old denominator USD 3000 and announced new denominator USD 2200",
+          "October 11 19:00 ET human-review deadline / October 12 official-rule recheck stop gate"
+        ],
+        "product_bridge": "PositionMath turns a reader-verified program percentage and daily P&L distribution into transparent consistency arithmetic after the dated rule explanation; it does not validate FTMO terms, determine eligibility, select a program, recommend a trade or promise a result.",
+        "product_bridge_type": "existing"
+      },
       "scan_audit": {
         "sources": [
           {
-            "publisher": "Federal Reserve Board",
-            "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
-            "source_type": "official_published_fomc_minutes",
-            "published_at": "2026-10-07; checked 2026-10-09",
-            "freshness_role": "officially records publication of the September 15-16 FOMC minutes within the 72-hour window",
+            "publisher": "FTMO",
+            "url": "https://ftmo.com/en/blog/trading-updates/trading-update-8-oct-2026/",
+            "source_type": "official_dated_cfd_product_rule_update",
+            "published_at": "2026-10-08; checked 2026-10-10",
+            "freshness_role": "Officially records the October 12 09:00 GMT+3 effective time, affected new-order cohort and Best Day-to-Consistency denominator change within the 72-hour window.",
             "reliable": true
           },
           {
-            "publisher": "Associated Press",
-            "url": "https://apnews.com/article/b7ed20e31e1a6fa5da6d78e5fe35b0c3",
-            "source_type": "independent_english_post_release_news",
-            "published_at": "2026-10-07; checked 2026-10-09",
-            "freshness_role": "independently reports the minutes' policy discussion after publication",
+            "publisher": "BabyPips",
+            "url": "https://www.babypips.com/trading/prop-firm-consistency-rule-best-day-limit",
+            "source_type": "independent_public_rule_calculation_explainer",
+            "published_at": "2026-09-15; checked 2026-10-10",
+            "freshness_role": "Independently explains the FTMO 1-Step 50% Best Day / Positive Days’ Profit calculation and a worked daily-P&L example; supports the public calculation-demand path, not current FTMO terms.",
             "reliable": true
           },
           {
-            "publisher": "Reddit r/StockMarket",
-            "url": "https://www.reddit.com/r/StockMarket/comments/1x0r2ut/fed_minutes_say_more_hikes_are_coming_but_gave/",
-            "source_type": "public_directional_discussion_insufficient",
-            "published_at": "2026-10-08; checked 2026-10-09",
-            "freshness_role": "shows current discussion but not a supported non-directional calculator request",
-            "reliable": false
-          },
-          {
-            "publisher": "Reddit r/MortgageBrokerRates",
-            "url": "https://www.reddit.com/r/MortgageBrokerRates/comments/1x0t4yq/mortgage_market_update_thursday_october_8_2026/",
-            "source_type": "public_directional_discussion_insufficient",
-            "published_at": "2026-10-08; checked 2026-10-09",
-            "freshness_role": "shows rates/yields attention rather than an attributable non-directional calculation request",
+            "publisher": "Reddit r/propfirm",
+            "url": "https://www.reddit.com/r/propfirm/comments/1tbyah7/the_prop_firm_rule_that_actually_killed_your/",
+            "source_type": "public_general_consistency_discussion_heat_only",
+            "published_at": "2026-05-13; checked 2026-10-10",
+            "freshness_role": "General public discussion confirms rule-calculation vocabulary but is not counted as fact verification or as a fresh event signal.",
             "reliable": false
           }
         ],
         "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_fresh_fact_without_verified_non_directional_search_to_calculator_path",
-          "duplicate_of": [
-            "HR-20260817-01",
-            "HR-20260820-01",
-            "HR-20261003-01",
-            "HR-20261004-01",
-            "HR-20261005-01",
-            "HR-20261006-01",
-            "HR-20261007-01",
-            "HR-20261008-01"
-          ],
+          "novelty_gate": "pass",
+          "decision_gate": "selected_official_product_rule_plus_independent_calculation_context_with_time_bounded_existing_tool_handoff",
+          "duplicate_of": [],
           "refresh_signals": {
             "fact_delta": true,
-            "search_delta": false,
-            "example_delta": false,
+            "search_delta": true,
+            "example_delta": true,
             "window_delta": true
           },
-          "reopen_trigger": "An independently verifiable new fact or correction plus a public English query explicitly tying that fact to a non-directional pip-value, fixed-risk, margin, cost, quantity or portfolio-heat calculation. Any qualified work must refresh an existing FOMC article rather than create a generic duplicate.",
-          "rationale": "The minutes and AP report remain fresh, but retained public material is policy/yield/FX-direction commentary. No natural retail search-to-existing-calculator journey, replacement teaching number, or non-directional calculation request was verified. The calculator-fit hard gate therefore fails; no playbook or package is allowed."
+          "reopen_trigger": "Recheck immediately if FTMO changes the effective time, new-order cohort, percentage, formula, eligibility or Trading Objectives language. After the October 12 cutover, reopen only for a current official rule change plus public non-directional calculation demand; do not reuse the countdown headline.",
+          "rationale": "This is a distinct CFD 1-Step denominator-change journey, not a recurrence of the September FTMO Futures daily-loss packages. The dated official product rule supplies the 72-hour fact and concrete window; BabyPips independently establishes why Best Day / consistency arithmetic is a public calculation question. The natural bridge is PositionMath Consistency Rule Calculator, while no market-direction, account-purchase, contract-specification or execution claim is needed."
         }
       }
     },
     {
-      "scan_date": "2026-10-09",
-      "candidate_id": "HR-20261009-02",
-      "status": "discarded",
-      "topic": "October 14 US CPI Calendar Is Not Yet a Verified Non-Directional Calculator Demand",
+      "scan_date": "2026-10-10",
+      "candidate_id": "HR-20261010-02",
+      "status": "observation",
+      "topic": "October 14 U.S. CPI Is a Verified Calendar Event but Not Yet a Distinct Calculator Journey",
       "primary_site": "PipGauge",
-      "freshness": 24,
-      "traffic_potential": 20,
-      "calculator_fit": 18,
-      "evidence_quality": 8,
+      "freshness": 25,
+      "traffic_potential": 21,
+      "calculator_fit": 20,
+      "evidence_quality": 12,
       "actionability": 4,
-      "total_score": 74,
+      "total_score": 82,
       "hard_gate": false,
       "reliable_sources": 1,
       "fresh_signal": true,
@@ -24937,35 +25226,49 @@
         "Margin",
         "P&L"
       ],
-      "reason": "BLS confirms the September CPI release is due October 14 at 08:30 ET, inside the forward window. A calendar alone does not establish a current, event-specific calculation question or a second independent reliable fact/impact source; do not manufacture a pre-CPI fixed-risk refresh."
+      "reason": "BLS schedules September CPI for October 14 at 08:30 ET and public posts show calendar attention, but the retained material is generic size-down or directional commentary rather than an attributable event-specific calculation request. It also lacks a second reliable independent fact or impact source under the hard gate. A generic fixed-risk table would repeat historical CPI/FOMC content; reopen only on a published result plus a verified non-directional search query and refresh signals.",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "U.S. Bureau of Labor Statistics",
+            "url": "https://www.bls.gov/schedule/2026/home.htm",
+            "source_type": "official_release_calendar",
+            "published_at": "calendar checked 2026-10-10",
+            "freshness_role": "Officially schedules September 2026 CPI for October 14 at 08:30 ET, inside the seven-day window.",
+            "reliable": true
+          },
+          {
+            "publisher": "Reddit r/HollowPointTrading",
+            "url": "https://www.reddit.com/r/HollowPointTrading/comments/1wywin8/scheduled_cpi_release_versus_market_reaction/",
+            "source_type": "public_calendar_discussion_insufficient",
+            "published_at": "2026-10-06; checked 2026-10-10",
+            "freshness_role": "Shows general event-risk discussion but not an attributable non-directional calculator request.",
+            "reliable": false
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "observation_calendar_fact_without_second_reliable_source_or_distinct_non_directional_search_to_calculator_path",
+          "duplicate_of": [
+            "HR-20261009-02",
+            "HR-20261008-03"
+          ],
+          "refresh_signals": {
+            "fact_delta": false,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": true
+          },
+          "reopen_trigger": "A published BLS CPI result plus independent reliable reporting and a public English query explicitly tied to non-directional pip value, fixed-risk, margin, cost, quantity or portfolio-heat arithmetic. Any qualifying content must first evaluate refresh targets rather than create another generic macro-risk article.",
+          "rationale": "A nearer calendar does not supply a new calculation journey. Retained public material is direction, avoidance or broad size-down discussion, and the fact layer has only one reliable publisher. The hard evidence and novelty gates fail, so no playbook or package is allowed."
+        }
+      }
     },
     {
-      "scan_date": "2026-10-09",
-      "candidate_id": "HR-20261009-03",
+      "scan_date": "2026-10-10",
+      "candidate_id": "HR-20261010-03",
       "status": "discarded",
-      "topic": "FTMO October 8 Futures Update Has No Stably Verifiable New Rule-to-Calculator Demand Path",
-      "primary_site": "PositionMath",
-      "freshness": 24,
-      "traffic_potential": 17,
-      "calculator_fit": 20,
-      "evidence_quality": 8,
-      "actionability": 3,
-      "total_score": 72,
-      "hard_gate": false,
-      "reliable_sources": 1,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Daily Loss Limit",
-        "Position Size",
-        "Prop Firm Simulator"
-      ],
-      "reason": "FTMO's public archive still identifies the October 8 Futures Trading Update, but the body has no stably verified dated rule parameter in this scan and there is no independent current public calculation-demand signal. Do not infer a rule change or recycle launch terms."
-    },
-    {
-      "scan_date": "2026-10-09",
-      "candidate_id": "HR-20261009-04",
-      "status": "discarded",
-      "topic": "Directional Calls Generic Sizing Commentary Crypto Hype Politics Sports Entertainment and Unverifiable Social Material",
+      "topic": "Directional Macro Calls Crypto Hype Politics Sports Entertainment and Unverifiable Social Material",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 25,
@@ -24979,47 +25282,48 @@
       "calculator_mapping": [
         "P&L"
       ],
-      "reason": "Direction forecasts and trade calls around FOMC, FX, equities, commodities and crypto; generic sizing opinions without a dated fact; political, sports and entertainment material; login-wall pages; screenshots; and unverifiable social posts were excluded. None formed a current source-checked, non-directional demand path into an existing calculator."
+      "reason": "CPI/FOMC/FX/equity direction calls, price targets, generic lot-size opinions without a dated fact, broker or prop-firm purchase promotion, political/sports/entertainment material, login-wall pages, screenshots and unverifiable social posts were excluded. They do not establish a fact-led non-directional calculation journey."
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-10-09T22:04:16+08:00",
-      "source_count": 4,
-      "note": "复核 Federal Reserve 9 月 15–16 日 minutes、BLS 2026/10 月与 CPI 发布日程、FTMO Trading Updates archive；只将可公开核验的日期和数字作为事实。"
+      "checked_at": "2026-10-10T22:07:58+08:00",
+      "source_count": 3,
+      "note": "复核 FTMO 10 月 8 日 CFD Trading Update、BLS 2026 release schedule 与 Federal Reserve 9 月 FOMC minutes；仅把可公开核验的日期、适用 cohort 与公式定义作为事实。"
     },
     {
       "channel": "独立可靠英文来源",
       "status": "complete",
-      "checked_at": "2026-10-09T22:04:16+08:00",
+      "checked_at": "2026-10-10T22:07:58+08:00",
       "source_count": 1,
-      "note": "AP 10 月 7 日同日英文报道独立核验 minutes 的已发布政策事实；没有保留新的、可验证的事件专属非方向性计算需求。"
+      "note": "BabyPips 的 9 月 15 日英文 explainer 独立解释 FTMO 1-Step Best Day Rule 与 Positive Days’ Profit 算术，作为官方产品规则的独立影响/计算语境来源；不替代 FTMO 条款。"
     },
     {
       "channel": "Reddit / ForexFactory / BabyPips",
-      "status": "checked_no_material_signal",
-      "checked_at": "2026-10-09T22:04:16+08:00",
-      "source_count": 2,
-      "note": "公开 Reddit 讨论显示 FOMC 注意力，但为利率、收益率和方向语境，未形成可归属的 fixed-risk、pip/tick value、margin、quantity、cost 或 portfolio-risk 问题。ForexFactory、BabyPips 未保留合格事件专属信号。"
+      "status": "complete",
+      "checked_at": "2026-10-10T22:07:58+08:00",
+      "source_count": 3,
+      "note": "保留 BabyPips 规则计算语境、公开 r/propfirm 一致性话题与 ForexFactory 索引作热度覆盖。CPI 保留的公开讨论为 general calendar/direction/size-down 语境，未形成可归属计算需求。"
     },
     {
       "channel": "X / Quora",
       "status": "limited",
-      "checked_at": "2026-10-09T22:04:16+08:00",
+      "checked_at": "2026-10-10T22:07:58+08:00",
       "source_count": 0,
-      "note": "公开可验证索引未出现可保留的当期非方向性计算需求；动态、登录墙、截图和不可稳定复核材料均不计入证据。"
+      "note": "公开可验证索引未保留合格的 FTMO 10 月 12 日或 CPI 事件专属非方向性计算需求；动态、登录墙、截图和不可稳定复核材料不计入。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-10-09_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-10-09_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-10-10_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-10-10_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
-    "traffic_playbooks": "../热点流量打法.json"
+    "traffic_playbooks": "../热点流量打法.json",
+    "content_root": "../内容生产/2026-10-10"
   },
   "radar_model": "v2-content-first",
   "editorial_policy": {

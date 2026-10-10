@@ -1,11 +1,18 @@
 {
   "_last_scan": {
-    "scan_date": "2026-10-09",
-    "selected_count": 0,
-    "content_package_count": 0,
-    "platform_draft_count": 0,
-    "status": "no_qualified_topic",
-    "note": "No candidate passed all gates; no playbook or review package was generated, and all historical drafts remain awaiting_human_review. At the 22:04 Asia/Shanghai scan, the October 7 FOMC minutes remained direction-led in retained public discussion; the October 14 CPI release remained only a calendar fact; and the FTMO October 8 archive entry still supplied no stably verifiable changed rule text or independent calculation-demand signal."
+    "scan_date": "2026-10-10",
+    "selected_count": 1,
+    "content_package_count": 1,
+    "platform_draft_count": 3,
+    "status": "review_ready",
+    "note": "One dated official-product-rule candidate passed: FTMO's October 8 CFD update moves new 1-Step orders from the Best Day denominator to a Consistency denominator on October 12 at 09:00 GMT+3. A single source-linked, non-directional PositionMath rule-reading package was generated and remains awaiting_human_review. October 14 CPI remains observation only; no post, comment, message, email or social-account action occurred."
+  },
+  "HR-20261010-01": {
+    "content_status": "review_ready",
+    "content_label": "FTMO 1-Step October 12 consistency-rule switch 审核包待人工审核",
+    "content_url": "../内容生产/2026-10-10/HR-20261010-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-10-11T19:00:00-04:00"
   },
   "HR-20260930-01": {
     "content_status": "review_ready",
