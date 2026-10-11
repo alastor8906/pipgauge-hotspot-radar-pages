@@ -1,0 +1,143 @@
+{
+  "scan_date": "2026-10-11",
+  "generated_at": "2026-10-11T22:02:16+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-11T22:02:16+08:00",
+      "source_count": 3,
+      "note": "复核 FTMO 10 月 8 日 CFD update、CME Group 2026 Columbus Day schedule 与 BLS 2026 release schedule；只保留可公开核验的 effective date、market-calendar 与 release-time 事实。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-10-11T22:02:16+08:00",
+      "source_count": 2,
+      "note": "BabyPips 的既有公开规则算术仍只用于确认 FTMO 计算语境；Kiplinger 独立说明 Columbus Day 的美国股票/债券市场时段差异。两者均不证明 retail CFD 的具体条款。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-10-11T22:02:16+08:00",
+      "source_count": 2,
+      "note": "公开 r/propfirm 与 r/PropFirmTester 讨论只显示 general consistency-rule vocabulary；没有 FTMO 10 月 12 日 cohort 的新公式、独立事实或可归属的 calculator query。ForexFactory 与 BabyPips 索引未保留 CPI/holiday 专属数值需求。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-11T22:02:16+08:00",
+      "source_count": 0,
+      "note": "公开可验证索引未出现当期合格的 FTMO、Columbus Day 或 CPI 非方向性计算需求；动态、登录墙、截图和不可稳定复核材料均不计入。"
+    }
+  ],
+  "candidates": {
+    "HR-20261011-01": {
+      "sources": [
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/en/blog/trading-updates/trading-update-8-oct-2026/",
+          "source_type": "official_dated_cfd_product_rule_update",
+          "published_at": "2026-10-08; checked 2026-10-11",
+          "freshness_role": "Still records the October 12 09:00 cutover, affected new-order cohort and denominator change, but is the same official event already selected on October 10.",
+          "reliable": true
+        },
+        {
+          "publisher": "BabyPips",
+          "url": "https://www.babypips.com/trading/prop-firm-consistency-rule-best-day-limit",
+          "source_type": "independent_public_rule_calculation_explainer",
+          "published_at": "2026-09-15; checked 2026-10-11",
+          "freshness_role": "Still explains the existing Best Day calculation context but supplies no new October 11 fact, query or numeric example.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/PropFirmTester",
+          "url": "https://www.reddit.com/r/PropFirmTester/comments/1w3fjx2/how_do_you_stay_under_the_consistency_rule_on_a/",
+          "source_type": "public_general_consistency_discussion_heat_only",
+          "published_at": "2026-08-31; checked 2026-10-11",
+          "freshness_role": "Shows general consistency vocabulary, not an FTMO October 12 fact or a new attributable calculator request.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_duplicate_of_current_dated_package_no_new_refresh_signal",
+        "duplicate_of": ["HR-20261010-01"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "A dated official change to the effective time, cohort, formula, percentage, eligibility or Trading Objectives wording plus a distinct public non-directional calculation query. Any qualified change must refresh HR-20261010-01 rather than create a second article.",
+        "rationale": "The exact FTMO fact, order-date question, denominator arithmetic and cutover window were selected and packaged on October 10. Calendar proximity alone is not a refresh signal, so no second playbook or review package is permitted."
+      }
+    },
+    "HR-20261011-02": {
+      "sources": [
+        {
+          "publisher": "CME Group",
+          "url": "https://www.cmegroup.com/trading-hours.html?redirect=/trading_hours/index",
+          "source_type": "official_holiday_trading_schedule",
+          "published_at": "2026 schedule; checked 2026-10-11",
+          "freshness_role": "Records Columbus Day on October 12 and product-specific holiday schedules; it warns schedules can change and does not establish retail CFD terms.",
+          "reliable": true
+        },
+        {
+          "publisher": "Kiplinger",
+          "url": "https://www.kiplinger.com/investing/stocks/is-the-stock-market-closed-on-columbus-day",
+          "source_type": "independent_english_market_hours_reporting",
+          "published_at": "2026-10-08; checked 2026-10-11",
+          "freshness_role": "Independently reports the October 12 U.S. stock-market-open/bond-market-closed distinction, without asserting broker or CFD hours.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_verified_schedule_without_event_specific_search_to_calculator_path",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "A dated, official broker or prop-firm product-hours, margin or contract-rule update plus an attributable public non-directional question that needs a PipGauge calculation. Verify the exact provider specification before any content.",
+        "rationale": "The holiday is real and imminent, but no verifiable current retail calculation question was found. Session information alone is not a natural calculator bridge, and extrapolating CME or cash-market schedules to CFD products would be unsafe."
+      }
+    },
+    "HR-20261011-03": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/schedule/2026/home.htm",
+          "source_type": "official_release_calendar",
+          "published_at": "calendar checked 2026-10-11",
+          "freshness_role": "Officially schedules September 2026 CPI for October 14 at 08:30 ET within the seven-day window.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/HollowPointTrading",
+          "url": "https://www.reddit.com/r/HollowPointTrading/comments/1wywin8/scheduled_cpi_release_versus_market_reaction/",
+          "source_type": "public_calendar_discussion_insufficient",
+          "published_at": "2026-10-06; checked 2026-10-11",
+          "freshness_role": "Shows calendar/reaction attention but not an attributable non-directional calculator request.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_calendar_fact_without_second_reliable_source_or_distinct_non_directional_search_to_calculator_path",
+        "duplicate_of": ["HR-20261010-02", "HR-20261009-02"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "A published BLS result plus independent reliable reporting and a public English query explicitly tied to non-directional pip value, fixed risk, margin, cost, quantity or portfolio-heat arithmetic. Evaluate only as a refresh of existing macro content.",
+        "rationale": "The same calendar remains valid but no new calculation journey or second reliable impact source was verified. A nearer date alone does not clear either the evidence or novelty gate."
+      }
+    }
+  }
+}

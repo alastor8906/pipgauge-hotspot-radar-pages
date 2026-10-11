@@ -1,11 +1,11 @@
 {
   "_last_scan": {
-    "scan_date": "2026-10-10",
-    "selected_count": 1,
-    "content_package_count": 1,
-    "platform_draft_count": 3,
-    "status": "review_ready",
-    "note": "One dated official-product-rule candidate passed: FTMO's October 8 CFD update moves new 1-Step orders from the Best Day denominator to a Consistency denominator on October 12 at 09:00 GMT+3. A single source-linked, non-directional PositionMath rule-reading package was generated and remains awaiting_human_review. October 14 CPI remains observation only; no post, comment, message, email or social-account action occurred."
+    "scan_date": "2026-10-11",
+    "selected_count": 0,
+    "content_package_count": 0,
+    "platform_draft_count": 0,
+    "status": "zero_output",
+    "note": "No new content package: the October 12 FTMO 1-Step cutover is already covered by HR-20261010-01 and has no refresh delta; Columbus Day schedules and the October 14 CPI calendar have no verified event-specific non-directional calculator journey. No post, comment, message, email or social-account action occurred."
   },
   "HR-20261010-01": {
     "content_status": "review_ready",
