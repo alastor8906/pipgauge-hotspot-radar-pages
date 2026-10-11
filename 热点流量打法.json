@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-10T22:07:58+08:00",
+  "updated_at": "2026-10-11T22:02:16+08:00",
   "last_scan": {
-    "scan_date": "2026-10-10",
-    "selected_count": 1,
-    "playbook_ready_count": 1,
-    "content_package_count": 1,
-    "note": "FTMO's dated October 8 CFD update provides a time-bounded, verifiable 1-Step rule-change path: new orders from October 12 09:00 GMT+3 move from Best Day to a Consistency denominator that includes losing days. The official dated rule and BabyPips' independent explanation of the 1-Step 50% Best Day calculation support a single PositionMath rule-reading package. The October 14 CPI remains observation only: the calendar and generic size-down discussion do not create a distinct, attributable search-to-calculator path."
+    "scan_date": "2026-10-11",
+    "selected_count": 0,
+    "playbook_ready_count": 0,
+    "content_package_count": 0,
+    "note": "Zero-output scan: the October 12 FTMO 1-Step denominator cutover remains covered by yesterday's HR-20261010-01 package and has no new fact, search, example or window delta; Columbus Day schedules and the October 14 CPI calendar have no verified event-specific, non-directional search-to-calculator path. No playbook or content package was generated."
   },
   "items": {
     "HR-20261010-01": {
