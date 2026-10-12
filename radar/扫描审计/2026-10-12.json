@@ -1,0 +1,151 @@
+{
+  "scan_date": "2026-10-12",
+  "generated_at": "2026-10-12T22:03:32+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-12T22:03:32+08:00",
+      "source_count": 5,
+      "note": "复核 FTMO 10 月 8 日 CFD/Futures updates、BLS 2026 release schedule 与当前 CPI release、CME Clearing Columbus Day OTC advisory 及 FXCM EU margin-update 页面；只保留公开可核验的 effective date、release time、clearing scope 与产品特定页面事实。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-10-12T22:03:32+08:00",
+      "source_count": 3,
+      "note": "Reuters 公开转载确认市场将本周 CPI 作为近期焦点；Kiplinger 独立说明 Columbus Day 股债市场时段；BabyPips 保留为 FTMO 规则算术的独立语境。三者均不用于外推 retail CFD 条款或方向结论。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-10-12T22:03:32+08:00",
+      "source_count": 3,
+      "note": "公开 r/propfirm、r/PropFirmTester 与日历类讨论显示 general rule、payout、drawdown 或 direction vocabulary；没有 FTMO cohort 的新规则事实，也没有 CPI/holiday 专属且可归属的非方向性 calculator query。ForexFactory/BabyPips 索引未保留合格新信号。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-12T22:03:32+08:00",
+      "source_count": 0,
+      "note": "公开可验证索引未出现本期合格的 FTMO、CPI 或 Columbus Day 非方向性计算需求；动态、登录墙、截图和不可稳定复核材料均不计入。"
+    }
+  ],
+  "candidates": {
+    "HR-20261012-01": {
+      "sources": [
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/en/blog/trading-updates/trading-update-8-oct-2026/",
+          "source_type": "official_dated_cfd_product_rule_update",
+          "published_at": "2026-10-08; checked 2026-10-12",
+          "freshness_role": "Still identifies the October 12 09:00 GMT+3 affected new-order cohort and denominator change; no live-terms amendment was found on the cutover date.",
+          "reliable": true
+        },
+        {
+          "publisher": "BabyPips",
+          "url": "https://www.babypips.com/trading/prop-firm-consistency-rule-best-day-limit",
+          "source_type": "independent_public_rule_calculation_explainer",
+          "published_at": "2026-09-15; checked 2026-10-12",
+          "freshness_role": "Retains independent calculation context but supplies no October 12 fact, query, replacement example or new window.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/PropFirmTester",
+          "url": "https://www.reddit.com/r/PropFirmTester/comments/1x3dciy/beginner_advice/",
+          "source_type": "public_general_prop_discussion_heat_only",
+          "published_at": "2026-10-12; checked 2026-10-12",
+          "freshness_role": "Shows general plan-selection and drawdown discussion, not an FTMO October 12 cohort fact or attributable new calculator request.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_duplicate_of_existing_dated_package_no_new_refresh_signal",
+        "duplicate_of": ["HR-20261010-01"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "A dated official change to the effective time, cohort, formula, percentage, eligibility or Trading Objectives wording plus a distinct public non-directional calculation query. Any qualified change must refresh HR-20261010-01 rather than create a second article.",
+        "rationale": "The cutover date arriving is not itself a new fact, query, example or window. The exact rule-reading arithmetic and pre-cutover traffic path were selected and packaged on October 10; no repeat package is permitted."
+      }
+    },
+    "HR-20261012-02": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/schedule/2026/home.htm",
+          "source_type": "official_release_calendar",
+          "published_at": "calendar checked 2026-10-12",
+          "freshness_role": "Officially schedules September 2026 CPI for October 14 at 08:30 ET within the forward window.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://uk.marketscreener.com/news/dollar-steady-near-18-month-high-as-mideast-conflict-us-inflation-in-focus-ce785ddcdf8bf72d",
+          "source_type": "independent_reliable_market_reporting_public_reprint",
+          "published_at": "2026-10-12; checked 2026-10-12",
+          "freshness_role": "Independently reports that investors are focused on key U.S. inflation data later this week, but its angle is market direction rather than a calculator task.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/wallstreet",
+          "url": "https://www.reddit.com/r/wallstreet/comments/1x35i6i/week_ahead_preview_oct_1216_2026_us_cpi_inflation/",
+          "source_type": "public_calendar_and_direction_discussion_heat_only",
+          "published_at": "2026-10-11; checked 2026-10-12",
+          "freshness_role": "Shows pre-release calendar attention but the retained language is direction-led and not a non-directional calculation query.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_verified_calendar_and_attention_without_event_specific_non_directional_calculator_path",
+        "duplicate_of": ["HR-20261011-03", "HR-20261010-02", "HR-20261009-02"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "A published BLS result plus independent reliable reporting and a public English query explicitly tied to non-directional pip value, fixed risk, margin, cost, quantity or portfolio-heat arithmetic. Evaluate only as a refresh of existing macro content.",
+        "rationale": "A second reliable source now confirms imminent market attention, but neither it nor public discussion supplies the required calculator journey. A nearer release date does not become a refresh signal or license a generic sizing article."
+      }
+    },
+    "HR-20261012-03": {
+      "sources": [
+        {
+          "publisher": "CME Group",
+          "url": "https://www.cmegroup.com/tools-information/holiday-calendar/files/2026/otc-columbus-day-2026.pdf",
+          "source_type": "official_otc_clearing_holiday_advisory",
+          "published_at": "2026 advisory; checked 2026-10-12",
+          "freshness_role": "Records October 12 OTC clearing submission, settlement and reporting treatment; it is not a retail broker or CFD specification.",
+          "reliable": true
+        },
+        {
+          "publisher": "Kiplinger",
+          "url": "https://www.kiplinger.com/investing/stocks/is-the-stock-market-closed-on-columbus-day",
+          "source_type": "independent_english_market_hours_reporting",
+          "published_at": "2026-10-08; checked 2026-10-12",
+          "freshness_role": "Independently reports the stock-market-open/bond-market-closed distinction, without asserting retail FX or CFD terms.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_verified_schedule_without_event_specific_retail_calculator_path",
+        "duplicate_of": ["HR-20261011-02"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "A dated, official broker or prop-firm product-hours, margin or contract-rule update plus an attributable public non-directional question that needs a PipGauge calculation. Verify the exact provider specification before any content.",
+        "rationale": "The specific clearing and cash-market facts remain verifiable, but no retail calculation demand was found and their scopes cannot safely be generalized. The date passing does not create an article window."
+      }
+    }
+  }
+}

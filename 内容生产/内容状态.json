@@ -1,11 +1,11 @@
 {
   "_last_scan": {
-    "scan_date": "2026-10-11",
+    "scan_date": "2026-10-12",
     "selected_count": 0,
     "content_package_count": 0,
     "platform_draft_count": 0,
     "status": "zero_output",
-    "note": "No new content package: the October 12 FTMO 1-Step cutover is already covered by HR-20261010-01 and has no refresh delta; Columbus Day schedules and the October 14 CPI calendar have no verified event-specific non-directional calculator journey. No post, comment, message, email or social-account action occurred."
+    "note": "No new content package: FTMO's October 12 1-Step cohort cutover is already covered by HR-20261010-01 and has no refresh delta; October 14 CPI attention remains direction-led without a verified event-specific non-directional calculator journey, and Columbus Day clearing/cash-market schedules cannot be generalized to retail terms. No post, comment, message, email or social-account action occurred."
   },
   "HR-20261010-01": {
     "content_status": "review_ready",
