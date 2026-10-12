@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-11T22:02:16+08:00",
+  "updated_at": "2026-10-12T22:03:32+08:00",
   "last_scan": {
-    "scan_date": "2026-10-11",
+    "scan_date": "2026-10-12",
     "selected_count": 0,
     "playbook_ready_count": 0,
     "content_package_count": 0,
-    "note": "Zero-output scan: the October 12 FTMO 1-Step denominator cutover remains covered by yesterday's HR-20261010-01 package and has no new fact, search, example or window delta; Columbus Day schedules and the October 14 CPI calendar have no verified event-specific, non-directional search-to-calculator path. No playbook or content package was generated."
+    "note": "Zero-output scan: FTMO's October 12 1-Step cohort cutover remains covered by HR-20261010-01 and no new official formula, search query, example or post-cutover window was verified. The October 14 CPI calendar has two reliable sources but no attributable non-directional calculator query; Columbus Day clearing and cash-market schedules cannot safely be generalized to retail terms. No playbook or content package was generated."
   },
   "items": {
     "HR-20261010-01": {
