@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-10-12T22:07:32+08:00",
-  "latest_scan_date": "2026-10-12",
+  "generated_at": "2026-10-13T22:09:09+08:00",
+  "latest_scan_date": "2026-10-13",
   "available_dates": [
+    "2026-10-13",
     "2026-10-12",
     "2026-10-11",
     "2026-10-10",
@@ -84,8 +85,224 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-10-13",
+      "generated_at": "2026-10-13T22:09:09+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 79,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 0,
+        "observation": 2,
+        "discarded": 1,
+        "total": 3,
+        "selected_average": 0,
+        "all_selected_pass_gate": true,
+        "content_ready": 0,
+        "playbook_ready": 0
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-10-13",
+          "candidate_id": "HR-20261013-01",
+          "status": "observation",
+          "topic": "October 14 U.S. CPI Has Verified Attention but No Attributable Non-Directional Calculator Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 24,
+          "calculator_fit": 20,
+          "evidence_quality": 15,
+          "actionability": 4,
+          "total_score": 88,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Margin",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "BLS confirms the October 14 08:30 ET CPI release and Reuters independently identifies inflation data as a near-term market focus; current Reddit calendar posts corroborate attention. Retained search/discussion is still price, yield or FX direction-led, with no attributable event-specific fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query. A generic pre-CPI sizing table would duplicate prior macro packages.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/news.release/cpi.htm",
+                "source_type": "official_current_release_page",
+                "published_at": "current page checked 2026-10-13",
+                "freshness_role": "Officially schedules September 2026 CPI for October 14 at 08:30 ET, within the forward window.",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://uk.marketscreener.com/news/dollar-steady-near-18-month-high-as-mideast-conflict-us-inflation-in-focus-ce785ddcdf8bf72d",
+                "source_type": "independent_reliable_market_reporting_public_reprint",
+                "published_at": "2026-10-12; checked 2026-10-13",
+                "freshness_role": "Independently reports that investors are focused on key U.S. inflation data this week, but its reporting is direction-led rather than a calculator task.",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit r/wallstreet",
+                "url": "https://www.reddit.com/r/wallstreet/comments/1x35i6i/week_ahead_preview_oct_1216_2026_us_cpi_inflation/",
+                "source_type": "public_calendar_attention_heat_only",
+                "published_at": "2026-10-11; checked 2026-10-13",
+                "freshness_role": "Shows current event attention, but retained wording is inflation/yield/price-direction led and not a non-directional calculation request.",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_verified_calendar_and_attention_without_event_specific_non_directional_calculator_path",
+              "duplicate_of": [
+                "HR-20261012-02",
+                "HR-20261011-03",
+                "HR-20261010-02"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": false
+              },
+              "reopen_trigger": "A published BLS result plus independent reliable reporting and a public English query explicitly tied to non-directional pip value, fixed risk, margin, cost, quantity or portfolio-heat arithmetic. Evaluate only as a refresh of existing macro content.",
+              "rationale": "The calendar and attention remain verified, but neither current discussion nor the reliable sources supplies the required reader-specific calculator journey. A nearer release clock is not a refresh signal and does not license generic sizing content."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-10-13",
+          "candidate_id": "HR-20261013-02",
+          "status": "observation",
+          "topic": "The5ers Futures FAQ Timestamp Does Not Establish a New Rule-Math Traffic Window",
+          "primary_site": "PositionMath",
+          "freshness": 25,
+          "traffic_potential": 16,
+          "calculator_fit": 25,
+          "evidence_quality": 9,
+          "actionability": 4,
+          "total_score": 79,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Consistency Rule",
+            "Daily Loss Limit",
+            "Prop Firm Simulator"
+          ],
+          "reason": "The5ers' official Futures FAQ is dated October 12 and currently displays a 40% one-trade consistency ceiling, 4% EOD maximum loss and 6%/4% targets. However, no official changelog, prior-version comparison or independent current public query verifies that those terms changed on October 12 or creates a new calculation-demand window. Existing forum references are generic or earlier; do not turn a page timestamp into a rule-change article.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "The5ers",
+                "url": "https://the5ers.com/futures-faqs/what-are-the-general-rules-for-the-futures-program/",
+                "source_type": "official_dated_current_futures_rule_faq",
+                "published_at": "last update October 12, 2026; checked 2026-10-13",
+                "freshness_role": "Current page exposes 6%/4% targets, 4% EOD loss and a 40% one-trade consistency ceiling, but includes no changelog, before/after text or effective cohort.",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit r/propfirm",
+                "url": "https://www.reddit.com/r/propfirm/comments/1uw9yng/the_best_prop_firm_with_clear_rules/",
+                "source_type": "public_general_consistency_discussion_heat_only",
+                "published_at": "2026-10-01; checked 2026-10-13",
+                "freshness_role": "Shows broad rule-reading vocabulary but predates the October 12 page timestamp and cannot establish a The5ers rule change or current calculator query.",
+                "reliable": false
+              },
+              {
+                "publisher": "BabyPips",
+                "url": "https://www.babypips.com/trading/prop-firm-consistency-rule-best-day-limit",
+                "source_type": "independent_evergreen_consistency_calculation_explainer",
+                "published_at": "2026-09-15; checked 2026-10-13",
+                "freshness_role": "Confirms generic consistency arithmetic exists, but does not validate The5ers terms, a October 12 change, a current demand query or a traffic window.",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_dated_page_timestamp_without_verifiable_rule_delta_or_current_demand",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": false
+              },
+              "reopen_trigger": "A dated The5ers changelog or comparable official rule revision naming the changed percentage, loss limit, target, eligibility or effective cohort, plus an independent public non-directional consistency/headroom calculation request. Assess any qualifying item against existing prop-rule content for refresh before new creation.",
+              "rationale": "A page-level last-update timestamp is not evidence that any displayed field changed on that date. Without a verified delta, independent impact signal and a current calculation journey, the rule fields remain slow-watch information rather than a hotspot."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-10-13",
+          "candidate_id": "HR-20261013-03",
+          "status": "discarded",
+          "topic": "Directional CPI Forecasts Out-of-Window Central-Bank Calendars Crypto Hype Politics Sports and Unverifiable Social Commentary",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 60,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L"
+          ],
+          "reason": "U.S. and China CPI forecasts, FX/equity/commodity price targets, signals, generic lot-size opinions without a dated fact, prop-firm purchase promotion, political/sports/entertainment material, login-wall pages, screenshots and unverifiable social posts were excluded. The RBNZ October 28 decision is outside the seven-day forward window. None formed a current fact-led, non-directional search-to-calculator journey."
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-10-13T22:07:46+08:00",
+          "source_count": 4,
+          "note": "复核 BLS current CPI release、The5ers Futures general-rules/instruments FAQs 与 RBNZ OCR dates；只保留可公开核验的 release time、page timestamp、规则字段、合约规格和前瞻窗口事实。"
+        },
+        {
+          "channel": "独立可靠英文来源",
+          "status": "complete",
+          "checked_at": "2026-10-13T22:07:46+08:00",
+          "source_count": 1,
+          "note": "Reuters 10 月 12 日公开转载独立确认本周美国通胀数据是近期市场关注点；不将其方向性市场报道解释为计算需求。"
+        },
+        {
+          "channel": "Reddit / ForexFactory / BabyPips",
+          "status": "checked_no_material_signal",
+          "checked_at": "2026-10-13T22:07:46+08:00",
+          "source_count": 3,
+          "note": "公开 CPI 日历与 prop consistency 讨论证明一般注意力或词汇，不证明 The5ers 条款变更，也没有可归属、事件专属的非方向性 calculator query。ForexFactory/BabyPips 索引未保留合格新信号。"
+        },
+        {
+          "channel": "X / Quora",
+          "status": "limited",
+          "checked_at": "2026-10-13T22:07:46+08:00",
+          "source_count": 0,
+          "note": "公开可验证索引未出现本期合格的 CPI 或 The5ers 非方向性计算需求；动态、登录墙、截图和不可稳定复核材料均不计入。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-10-13_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-10-13_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json"
+      }
+    },
+    {
       "scan_date": "2026-10-12",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 78,
@@ -357,7 +574,7 @@
     },
     {
       "scan_date": "2026-10-11",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 77,
@@ -618,7 +835,7 @@
     },
     {
       "scan_date": "2026-10-10",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 76,
@@ -875,7 +1092,7 @@
     },
     {
       "scan_date": "2026-10-09",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 75,
@@ -1086,7 +1303,7 @@
     },
     {
       "scan_date": "2026-10-08",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 74,
@@ -1273,7 +1490,7 @@
     },
     {
       "scan_date": "2026-10-07",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 73,
@@ -1437,7 +1654,7 @@
     },
     {
       "scan_date": "2026-10-06",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 72,
@@ -1600,7 +1817,7 @@
     },
     {
       "scan_date": "2026-10-05",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 71,
@@ -1867,7 +2084,7 @@
     },
     {
       "scan_date": "2026-10-04",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 70,
@@ -2093,7 +2310,7 @@
     },
     {
       "scan_date": "2026-10-03",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 69,
@@ -2316,7 +2533,7 @@
     },
     {
       "scan_date": "2026-10-02",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 68,
@@ -2599,7 +2816,7 @@
     },
     {
       "scan_date": "2026-10-01",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 67,
@@ -2878,7 +3095,7 @@
     },
     {
       "scan_date": "2026-09-30",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 66,
@@ -3288,7 +3505,7 @@
     },
     {
       "scan_date": "2026-09-29",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 65,
@@ -3612,7 +3829,7 @@
     },
     {
       "scan_date": "2026-09-28",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 64,
@@ -3897,7 +4114,7 @@
     },
     {
       "scan_date": "2026-09-27",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 63,
@@ -4247,7 +4464,7 @@
     },
     {
       "scan_date": "2026-09-26",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 62,
@@ -4456,7 +4673,7 @@
     },
     {
       "scan_date": "2026-09-25",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 61,
@@ -4736,7 +4953,7 @@
     },
     {
       "scan_date": "2026-09-24",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 60,
@@ -5016,7 +5233,7 @@
     },
     {
       "scan_date": "2026-09-23",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 59,
@@ -5254,7 +5471,7 @@
     },
     {
       "scan_date": "2026-09-22",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 58,
@@ -5543,7 +5760,7 @@
     },
     {
       "scan_date": "2026-09-21",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 57,
@@ -5765,7 +5982,7 @@
     },
     {
       "scan_date": "2026-09-20",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 56,
@@ -6050,7 +6267,7 @@
     },
     {
       "scan_date": "2026-09-19",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 55,
@@ -6325,7 +6542,7 @@
     },
     {
       "scan_date": "2026-09-18",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 54,
@@ -6607,7 +6824,7 @@
     },
     {
       "scan_date": "2026-09-17",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 53,
@@ -6952,7 +7169,7 @@
     },
     {
       "scan_date": "2026-09-16",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 52,
@@ -7242,7 +7459,7 @@
     },
     {
       "scan_date": "2026-09-15",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 51,
@@ -7456,7 +7673,7 @@
     },
     {
       "scan_date": "2026-09-14",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 50,
@@ -7660,7 +7877,7 @@
     },
     {
       "scan_date": "2026-09-13",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 49,
@@ -7865,7 +8082,7 @@
     },
     {
       "scan_date": "2026-09-12",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 48,
@@ -8051,7 +8268,7 @@
     },
     {
       "scan_date": "2026-09-11",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 47,
@@ -8268,7 +8485,7 @@
     },
     {
       "scan_date": "2026-09-10",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 46,
@@ -8554,7 +8771,7 @@
     },
     {
       "scan_date": "2026-09-09",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 45,
@@ -8834,7 +9051,7 @@
     },
     {
       "scan_date": "2026-09-08",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 44,
@@ -9163,7 +9380,7 @@
     },
     {
       "scan_date": "2026-09-07",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 43,
@@ -9465,7 +9682,7 @@
     },
     {
       "scan_date": "2026-09-06",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 42,
@@ -9781,7 +9998,7 @@
     },
     {
       "scan_date": "2026-09-05",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 41,
@@ -10103,7 +10320,7 @@
     },
     {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -10416,7 +10633,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -10727,7 +10944,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -11058,7 +11275,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -11396,7 +11613,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -11789,7 +12006,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -12199,7 +12416,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -12671,7 +12888,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -13016,7 +13233,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -13361,7 +13578,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -13813,7 +14030,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -14226,7 +14443,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -14458,7 +14675,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -14903,7 +15120,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -15278,7 +15495,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -15670,7 +15887,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -16046,7 +16263,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -16370,7 +16587,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -16753,7 +16970,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -17094,7 +17311,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -17469,7 +17686,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -17857,7 +18074,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -18202,7 +18419,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -18530,7 +18747,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -18842,7 +19059,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -19163,7 +19380,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -19524,7 +19741,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -19877,7 +20094,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -20321,7 +20538,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -20830,7 +21047,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -21300,7 +21517,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -21843,7 +22060,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -22115,7 +22332,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -22428,7 +22645,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -22863,7 +23080,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -23377,7 +23594,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -23886,7 +24103,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -24354,7 +24571,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -24768,7 +24985,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -25167,7 +25384,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-10-12T22:07:32+08:00",
+      "generated_at": "2026-10-13T22:09:09+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -25606,10 +25823,10 @@
       }
     }
   ],
-  "scan_date": "2026-10-12",
+  "scan_date": "2026-10-13",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 78,
+    "day": 79,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -25618,9 +25835,9 @@
   },
   "stats": {
     "selected": 0,
-    "observation": 3,
+    "observation": 2,
     "discarded": 1,
-    "total": 4,
+    "total": 3,
     "selected_average": 0,
     "all_selected_pass_gate": true,
     "content_ready": 0,
@@ -25628,81 +25845,17 @@
   },
   "candidates": [
     {
-      "scan_date": "2026-10-12",
-      "candidate_id": "HR-20261012-01",
+      "scan_date": "2026-10-13",
+      "candidate_id": "HR-20261013-01",
       "status": "observation",
-      "topic": "FTMO 1-Step Cutover Is an Existing Rule-Reading Package Rather Than a Fresh Calculator Journey",
-      "primary_site": "PositionMath",
-      "freshness": 25,
-      "traffic_potential": 22,
-      "calculator_fit": 25,
-      "evidence_quality": 15,
-      "actionability": 3,
-      "total_score": 90,
-      "hard_gate": false,
-      "reliable_sources": 2,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Consistency Rule",
-        "Prop Firm Simulator"
-      ],
-      "reason": "FTMO's October 8 dated update remains the authoritative source for the October 12 09:00 GMT+3 cohort switch, and BabyPips remains an independent calculation-context source. The cutover itself supplies no new official formula, percentage, search query, replacement example or traffic window after HR-20261010-01; do not duplicate the package.",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "FTMO",
-            "url": "https://ftmo.com/en/blog/trading-updates/trading-update-8-oct-2026/",
-            "source_type": "official_dated_cfd_product_rule_update",
-            "published_at": "2026-10-08; checked 2026-10-12",
-            "freshness_role": "Still identifies the October 12 09:00 GMT+3 affected new-order cohort and denominator change; no live-terms amendment was found on the cutover date.",
-            "reliable": true
-          },
-          {
-            "publisher": "BabyPips",
-            "url": "https://www.babypips.com/trading/prop-firm-consistency-rule-best-day-limit",
-            "source_type": "independent_public_rule_calculation_explainer",
-            "published_at": "2026-09-15; checked 2026-10-12",
-            "freshness_role": "Retains independent calculation context but supplies no October 12 fact, query, replacement example or new window.",
-            "reliable": true
-          },
-          {
-            "publisher": "Reddit r/PropFirmTester",
-            "url": "https://www.reddit.com/r/PropFirmTester/comments/1x3dciy/beginner_advice/",
-            "source_type": "public_general_prop_discussion_heat_only",
-            "published_at": "2026-10-12; checked 2026-10-12",
-            "freshness_role": "Shows general plan-selection and drawdown discussion, not an FTMO October 12 cohort fact or attributable new calculator request.",
-            "reliable": false
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_duplicate_of_existing_dated_package_no_new_refresh_signal",
-          "duplicate_of": [
-            "HR-20261010-01"
-          ],
-          "refresh_signals": {
-            "fact_delta": false,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": false
-          },
-          "reopen_trigger": "A dated official change to the effective time, cohort, formula, percentage, eligibility or Trading Objectives wording plus a distinct public non-directional calculation query. Any qualified change must refresh HR-20261010-01 rather than create a second article.",
-          "rationale": "The cutover date arriving is not itself a new fact, query, example or window. The exact rule-reading arithmetic and pre-cutover traffic path were selected and packaged on October 10; no repeat package is permitted."
-        }
-      }
-    },
-    {
-      "scan_date": "2026-10-12",
-      "candidate_id": "HR-20261012-02",
-      "status": "observation",
-      "topic": "October 14 U.S. CPI Has Calendar Attention but No Verified Non-Directional Calculator Journey",
+      "topic": "October 14 U.S. CPI Has Verified Attention but No Attributable Non-Directional Calculator Journey",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 23,
+      "traffic_potential": 24,
       "calculator_fit": 20,
       "evidence_quality": 15,
       "actionability": 4,
-      "total_score": 87,
+      "total_score": 88,
       "hard_gate": false,
       "reliable_sources": 2,
       "fresh_signal": true,
@@ -25710,33 +25863,34 @@
         "Pip Value",
         "Position Size",
         "Margin",
-        "P&L"
+        "P&L",
+        "Spread Cost"
       ],
-      "reason": "BLS confirms the October 14 08:30 ET release and Reuters' October 12 market report independently identifies it as a near-term focus, but retained public discussion is direction- and calendar-led. No attributable current English query asks for event-specific fixed-risk, pip-value, margin, cost, quantity or portfolio-heat arithmetic; generic macro sizing would repeat historical content.",
+      "reason": "BLS confirms the October 14 08:30 ET CPI release and Reuters independently identifies inflation data as a near-term market focus; current Reddit calendar posts corroborate attention. Retained search/discussion is still price, yield or FX direction-led, with no attributable event-specific fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query. A generic pre-CPI sizing table would duplicate prior macro packages.",
       "scan_audit": {
         "sources": [
           {
             "publisher": "U.S. Bureau of Labor Statistics",
-            "url": "https://www.bls.gov/schedule/2026/home.htm",
-            "source_type": "official_release_calendar",
-            "published_at": "calendar checked 2026-10-12",
-            "freshness_role": "Officially schedules September 2026 CPI for October 14 at 08:30 ET within the forward window.",
+            "url": "https://www.bls.gov/news.release/cpi.htm",
+            "source_type": "official_current_release_page",
+            "published_at": "current page checked 2026-10-13",
+            "freshness_role": "Officially schedules September 2026 CPI for October 14 at 08:30 ET, within the forward window.",
             "reliable": true
           },
           {
             "publisher": "Reuters",
             "url": "https://uk.marketscreener.com/news/dollar-steady-near-18-month-high-as-mideast-conflict-us-inflation-in-focus-ce785ddcdf8bf72d",
             "source_type": "independent_reliable_market_reporting_public_reprint",
-            "published_at": "2026-10-12; checked 2026-10-12",
-            "freshness_role": "Independently reports that investors are focused on key U.S. inflation data later this week, but its angle is market direction rather than a calculator task.",
+            "published_at": "2026-10-12; checked 2026-10-13",
+            "freshness_role": "Independently reports that investors are focused on key U.S. inflation data this week, but its reporting is direction-led rather than a calculator task.",
             "reliable": true
           },
           {
             "publisher": "Reddit r/wallstreet",
             "url": "https://www.reddit.com/r/wallstreet/comments/1x35i6i/week_ahead_preview_oct_1216_2026_us_cpi_inflation/",
-            "source_type": "public_calendar_and_direction_discussion_heat_only",
-            "published_at": "2026-10-11; checked 2026-10-12",
-            "freshness_role": "Shows pre-release calendar attention but the retained language is direction-led and not a non-directional calculation query.",
+            "source_type": "public_calendar_attention_heat_only",
+            "published_at": "2026-10-11; checked 2026-10-13",
+            "freshness_role": "Shows current event attention, but retained wording is inflation/yield/price-direction led and not a non-directional calculation request.",
             "reliable": false
           }
         ],
@@ -25744,9 +25898,9 @@
           "novelty_gate": "fail",
           "decision_gate": "observation_verified_calendar_and_attention_without_event_specific_non_directional_calculator_path",
           "duplicate_of": [
+            "HR-20261012-02",
             "HR-20261011-03",
-            "HR-20261010-02",
-            "HR-20261009-02"
+            "HR-20261010-02"
           ],
           "refresh_signals": {
             "fact_delta": false,
@@ -25755,71 +25909,78 @@
             "window_delta": false
           },
           "reopen_trigger": "A published BLS result plus independent reliable reporting and a public English query explicitly tied to non-directional pip value, fixed risk, margin, cost, quantity or portfolio-heat arithmetic. Evaluate only as a refresh of existing macro content.",
-          "rationale": "A second reliable source now confirms imminent market attention, but neither it nor public discussion supplies the required calculator journey. A nearer release date does not become a refresh signal or license a generic sizing article."
+          "rationale": "The calendar and attention remain verified, but neither current discussion nor the reliable sources supplies the required reader-specific calculator journey. A nearer release clock is not a refresh signal and does not license generic sizing content."
         }
       }
     },
     {
-      "scan_date": "2026-10-12",
-      "candidate_id": "HR-20261012-03",
+      "scan_date": "2026-10-13",
+      "candidate_id": "HR-20261013-02",
       "status": "observation",
-      "topic": "Columbus Day OTC FX Settlement Schedules Are Verifiable but Not a Retail Calculator Demand",
-      "primary_site": "PipGauge",
+      "topic": "The5ers Futures FAQ Timestamp Does Not Establish a New Rule-Math Traffic Window",
+      "primary_site": "PositionMath",
       "freshness": 25,
-      "traffic_potential": 18,
-      "calculator_fit": 8,
-      "evidence_quality": 15,
-      "actionability": 2,
-      "total_score": 68,
+      "traffic_potential": 16,
+      "calculator_fit": 25,
+      "evidence_quality": 9,
+      "actionability": 4,
+      "total_score": 79,
       "hard_gate": false,
-      "reliable_sources": 2,
+      "reliable_sources": 1,
       "fresh_signal": true,
       "calculator_mapping": [
-        "Margin",
-        "Forex Session Clock"
+        "Consistency Rule",
+        "Daily Loss Limit",
+        "Prop Firm Simulator"
       ],
-      "reason": "CME's dated OTC clearing advisory and Kiplinger's independent stock/bond-hours report establish the holiday mechanics, but neither establishes retail broker or CFD terms and no attributable public non-directional PipGauge calculation query was found. Do not generalize clearing schedules into a retail margin or session claim.",
+      "reason": "The5ers' official Futures FAQ is dated October 12 and currently displays a 40% one-trade consistency ceiling, 4% EOD maximum loss and 6%/4% targets. However, no official changelog, prior-version comparison or independent current public query verifies that those terms changed on October 12 or creates a new calculation-demand window. Existing forum references are generic or earlier; do not turn a page timestamp into a rule-change article.",
       "scan_audit": {
         "sources": [
           {
-            "publisher": "CME Group",
-            "url": "https://www.cmegroup.com/tools-information/holiday-calendar/files/2026/otc-columbus-day-2026.pdf",
-            "source_type": "official_otc_clearing_holiday_advisory",
-            "published_at": "2026 advisory; checked 2026-10-12",
-            "freshness_role": "Records October 12 OTC clearing submission, settlement and reporting treatment; it is not a retail broker or CFD specification.",
+            "publisher": "The5ers",
+            "url": "https://the5ers.com/futures-faqs/what-are-the-general-rules-for-the-futures-program/",
+            "source_type": "official_dated_current_futures_rule_faq",
+            "published_at": "last update October 12, 2026; checked 2026-10-13",
+            "freshness_role": "Current page exposes 6%/4% targets, 4% EOD loss and a 40% one-trade consistency ceiling, but includes no changelog, before/after text or effective cohort.",
             "reliable": true
           },
           {
-            "publisher": "Kiplinger",
-            "url": "https://www.kiplinger.com/investing/stocks/is-the-stock-market-closed-on-columbus-day",
-            "source_type": "independent_english_market_hours_reporting",
-            "published_at": "2026-10-08; checked 2026-10-12",
-            "freshness_role": "Independently reports the stock-market-open/bond-market-closed distinction, without asserting retail FX or CFD terms.",
-            "reliable": true
+            "publisher": "Reddit r/propfirm",
+            "url": "https://www.reddit.com/r/propfirm/comments/1uw9yng/the_best_prop_firm_with_clear_rules/",
+            "source_type": "public_general_consistency_discussion_heat_only",
+            "published_at": "2026-10-01; checked 2026-10-13",
+            "freshness_role": "Shows broad rule-reading vocabulary but predates the October 12 page timestamp and cannot establish a The5ers rule change or current calculator query.",
+            "reliable": false
+          },
+          {
+            "publisher": "BabyPips",
+            "url": "https://www.babypips.com/trading/prop-firm-consistency-rule-best-day-limit",
+            "source_type": "independent_evergreen_consistency_calculation_explainer",
+            "published_at": "2026-09-15; checked 2026-10-13",
+            "freshness_role": "Confirms generic consistency arithmetic exists, but does not validate The5ers terms, a October 12 change, a current demand query or a traffic window.",
+            "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_verified_schedule_without_event_specific_retail_calculator_path",
-          "duplicate_of": [
-            "HR-20261011-02"
-          ],
+          "decision_gate": "observation_dated_page_timestamp_without_verifiable_rule_delta_or_current_demand",
+          "duplicate_of": [],
           "refresh_signals": {
             "fact_delta": false,
             "search_delta": false,
             "example_delta": false,
             "window_delta": false
           },
-          "reopen_trigger": "A dated, official broker or prop-firm product-hours, margin or contract-rule update plus an attributable public non-directional question that needs a PipGauge calculation. Verify the exact provider specification before any content.",
-          "rationale": "The specific clearing and cash-market facts remain verifiable, but no retail calculation demand was found and their scopes cannot safely be generalized. The date passing does not create an article window."
+          "reopen_trigger": "A dated The5ers changelog or comparable official rule revision naming the changed percentage, loss limit, target, eligibility or effective cohort, plus an independent public non-directional consistency/headroom calculation request. Assess any qualifying item against existing prop-rule content for refresh before new creation.",
+          "rationale": "A page-level last-update timestamp is not evidence that any displayed field changed on that date. Without a verified delta, independent impact signal and a current calculation journey, the rule fields remain slow-watch information rather than a hotspot."
         }
       }
     },
     {
-      "scan_date": "2026-10-12",
-      "candidate_id": "HR-20261012-04",
+      "scan_date": "2026-10-13",
+      "candidate_id": "HR-20261013-03",
       "status": "discarded",
-      "topic": "Directional Macro Calls Oil Conflict Headlines Crypto Hype Politics Sports Entertainment and Unverifiable Social Material",
+      "topic": "Directional CPI Forecasts Out-of-Window Central-Bank Calendars Crypto Hype Politics Sports and Unverifiable Social Commentary",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 25,
@@ -25833,43 +25994,43 @@
       "calculator_mapping": [
         "P&L"
       ],
-      "reason": "Direction forecasts and trade calls around CPI, oil, FX, equities, metals and crypto; political conflict commentary without a product-specific numeric mechanism; generic size-down opinions without a dated fact; broker or prop-firm purchase promotion; sports/entertainment; login-wall pages; screenshots and unverifiable social posts were excluded. None established a current fact-led, non-directional search-to-calculator journey."
+      "reason": "U.S. and China CPI forecasts, FX/equity/commodity price targets, signals, generic lot-size opinions without a dated fact, prop-firm purchase promotion, political/sports/entertainment material, login-wall pages, screenshots and unverifiable social posts were excluded. The RBNZ October 28 decision is outside the seven-day forward window. None formed a current fact-led, non-directional search-to-calculator journey."
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-10-12T22:03:32+08:00",
-      "source_count": 5,
-      "note": "复核 FTMO 10 月 8 日 CFD/Futures updates、BLS 2026 release schedule 与当前 CPI release、CME Clearing Columbus Day OTC advisory 及 FXCM EU margin-update 页面；只保留公开可核验的 effective date、release time、clearing scope 与产品特定页面事实。"
+      "checked_at": "2026-10-13T22:07:46+08:00",
+      "source_count": 4,
+      "note": "复核 BLS current CPI release、The5ers Futures general-rules/instruments FAQs 与 RBNZ OCR dates；只保留可公开核验的 release time、page timestamp、规则字段、合约规格和前瞻窗口事实。"
     },
     {
       "channel": "独立可靠英文来源",
       "status": "complete",
-      "checked_at": "2026-10-12T22:03:32+08:00",
-      "source_count": 3,
-      "note": "Reuters 公开转载确认市场将本周 CPI 作为近期焦点；Kiplinger 独立说明 Columbus Day 股债市场时段；BabyPips 保留为 FTMO 规则算术的独立语境。三者均不用于外推 retail CFD 条款或方向结论。"
+      "checked_at": "2026-10-13T22:07:46+08:00",
+      "source_count": 1,
+      "note": "Reuters 10 月 12 日公开转载独立确认本周美国通胀数据是近期市场关注点；不将其方向性市场报道解释为计算需求。"
     },
     {
       "channel": "Reddit / ForexFactory / BabyPips",
       "status": "checked_no_material_signal",
-      "checked_at": "2026-10-12T22:03:32+08:00",
+      "checked_at": "2026-10-13T22:07:46+08:00",
       "source_count": 3,
-      "note": "公开 r/propfirm、r/PropFirmTester 与日历类讨论显示 general rule、payout、drawdown 或 direction vocabulary；没有 FTMO cohort 的新规则事实，也没有 CPI/holiday 专属且可归属的非方向性 calculator query。ForexFactory/BabyPips 索引未保留合格新信号。"
+      "note": "公开 CPI 日历与 prop consistency 讨论证明一般注意力或词汇，不证明 The5ers 条款变更，也没有可归属、事件专属的非方向性 calculator query。ForexFactory/BabyPips 索引未保留合格新信号。"
     },
     {
       "channel": "X / Quora",
       "status": "limited",
-      "checked_at": "2026-10-12T22:03:32+08:00",
+      "checked_at": "2026-10-13T22:07:46+08:00",
       "source_count": 0,
-      "note": "公开可验证索引未出现本期合格的 FTMO、CPI 或 Columbus Day 非方向性计算需求；动态、登录墙、截图和不可稳定复核材料均不计入。"
+      "note": "公开可验证索引未出现本期合格的 CPI 或 The5ers 非方向性计算需求；动态、登录墙、截图和不可稳定复核材料均不计入。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-10-12_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-10-12_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-10-13_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-10-13_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",

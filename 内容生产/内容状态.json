@@ -1,11 +1,11 @@
 {
   "_last_scan": {
-    "scan_date": "2026-10-12",
+    "scan_date": "2026-10-13",
     "selected_count": 0,
     "content_package_count": 0,
     "platform_draft_count": 0,
     "status": "zero_output",
-    "note": "No new content package: FTMO's October 12 1-Step cohort cutover is already covered by HR-20261010-01 and has no refresh delta; October 14 CPI attention remains direction-led without a verified event-specific non-directional calculator journey, and Columbus Day clearing/cash-market schedules cannot be generalized to retail terms. No post, comment, message, email or social-account action occurred."
+    "note": "No new content package: October 14 U.S. CPI discussion remains calendar- and direction-led without a verified event-specific non-directional calculator journey; The5ers' October 12 Futures FAQ provides a current timestamp but no verifiable new rule delta or attributable current calculator demand. No post, comment, message, email or social-account action occurred."
   },
   "HR-20261010-01": {
     "content_status": "review_ready",
