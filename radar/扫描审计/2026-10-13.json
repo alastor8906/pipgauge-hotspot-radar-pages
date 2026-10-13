@@ -1,0 +1,118 @@
+{
+  "scan_date": "2026-10-13",
+  "generated_at": "2026-10-13T22:07:46+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-13T22:07:46+08:00",
+      "source_count": 4,
+      "note": "复核 BLS current CPI release、The5ers Futures general-rules/instruments FAQs 与 RBNZ OCR dates；只保留可公开核验的 release time、page timestamp、规则字段、合约规格和前瞻窗口事实。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-10-13T22:07:46+08:00",
+      "source_count": 1,
+      "note": "Reuters 10 月 12 日公开转载独立确认本周美国通胀数据是近期市场关注点；不将其方向性市场报道解释为计算需求。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "checked_no_material_signal",
+      "checked_at": "2026-10-13T22:07:46+08:00",
+      "source_count": 3,
+      "note": "公开 CPI 日历与 prop consistency 讨论证明一般注意力或词汇，不证明 The5ers 条款变更，也没有可归属、事件专属的非方向性 calculator query。ForexFactory/BabyPips 索引未保留合格新信号。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-13T22:07:46+08:00",
+      "source_count": 0,
+      "note": "公开可验证索引未出现本期合格的 CPI 或 The5ers 非方向性计算需求；动态、登录墙、截图和不可稳定复核材料均不计入。"
+    }
+  ],
+  "candidates": {
+    "HR-20261013-01": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/news.release/cpi.htm",
+          "source_type": "official_current_release_page",
+          "published_at": "current page checked 2026-10-13",
+          "freshness_role": "Officially schedules September 2026 CPI for October 14 at 08:30 ET, within the forward window.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://uk.marketscreener.com/news/dollar-steady-near-18-month-high-as-mideast-conflict-us-inflation-in-focus-ce785ddcdf8bf72d",
+          "source_type": "independent_reliable_market_reporting_public_reprint",
+          "published_at": "2026-10-12; checked 2026-10-13",
+          "freshness_role": "Independently reports that investors are focused on key U.S. inflation data this week, but its reporting is direction-led rather than a calculator task.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/wallstreet",
+          "url": "https://www.reddit.com/r/wallstreet/comments/1x35i6i/week_ahead_preview_oct_1216_2026_us_cpi_inflation/",
+          "source_type": "public_calendar_attention_heat_only",
+          "published_at": "2026-10-11; checked 2026-10-13",
+          "freshness_role": "Shows current event attention, but retained wording is inflation/yield/price-direction led and not a non-directional calculation request.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_verified_calendar_and_attention_without_event_specific_non_directional_calculator_path",
+        "duplicate_of": ["HR-20261012-02", "HR-20261011-03", "HR-20261010-02"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "A published BLS result plus independent reliable reporting and a public English query explicitly tied to non-directional pip value, fixed risk, margin, cost, quantity or portfolio-heat arithmetic. Evaluate only as a refresh of existing macro content.",
+        "rationale": "The calendar and attention remain verified, but neither current discussion nor the reliable sources supplies the required reader-specific calculator journey. A nearer release clock is not a refresh signal and does not license generic sizing content."
+      }
+    },
+    "HR-20261013-02": {
+      "sources": [
+        {
+          "publisher": "The5ers",
+          "url": "https://the5ers.com/futures-faqs/what-are-the-general-rules-for-the-futures-program/",
+          "source_type": "official_dated_current_futures_rule_faq",
+          "published_at": "last update October 12, 2026; checked 2026-10-13",
+          "freshness_role": "Current page exposes 6%/4% targets, 4% EOD loss and a 40% one-trade consistency ceiling, but includes no changelog, before/after text or effective cohort.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/propfirm",
+          "url": "https://www.reddit.com/r/propfirm/comments/1uw9yng/the_best_prop_firm_with_clear_rules/",
+          "source_type": "public_general_consistency_discussion_heat_only",
+          "published_at": "2026-10-01; checked 2026-10-13",
+          "freshness_role": "Shows broad rule-reading vocabulary but predates the October 12 page timestamp and cannot establish a The5ers rule change or current calculator query.",
+          "reliable": false
+        },
+        {
+          "publisher": "BabyPips",
+          "url": "https://www.babypips.com/trading/prop-firm-consistency-rule-best-day-limit",
+          "source_type": "independent_evergreen_consistency_calculation_explainer",
+          "published_at": "2026-09-15; checked 2026-10-13",
+          "freshness_role": "Confirms generic consistency arithmetic exists, but does not validate The5ers terms, a October 12 change, a current demand query or a traffic window.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_dated_page_timestamp_without_verifiable_rule_delta_or_current_demand",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "A dated The5ers changelog or comparable official rule revision naming the changed percentage, loss limit, target, eligibility or effective cohort, plus an independent public non-directional consistency/headroom calculation request. Assess any qualifying item against existing prop-rule content for refresh before new creation.",
+        "rationale": "A page-level last-update timestamp is not evidence that any displayed field changed on that date. Without a verified delta, independent impact signal and a current calculation journey, the rule fields remain slow-watch information rather than a hotspot."
+      }
+    }
+  }
+}

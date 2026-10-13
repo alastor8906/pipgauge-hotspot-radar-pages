@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-12T22:03:32+08:00",
+  "updated_at": "2026-10-13T22:07:46+08:00",
   "last_scan": {
-    "scan_date": "2026-10-12",
+    "scan_date": "2026-10-13",
     "selected_count": 0,
     "playbook_ready_count": 0,
     "content_package_count": 0,
-    "note": "Zero-output scan: FTMO's October 12 1-Step cohort cutover remains covered by HR-20261010-01 and no new official formula, search query, example or post-cutover window was verified. The October 14 CPI calendar has two reliable sources but no attributable non-directional calculator query; Columbus Day clearing and cash-market schedules cannot safely be generalized to retail terms. No playbook or content package was generated."
+    "note": "Zero-output scan: the October 14 U.S. CPI release is verified and actively discussed, but retained public attention remains calendar- or direction-led rather than an attributable non-directional calculator request. The5ers' October 12 Futures FAQ timestamp exposes current 40% consistency, 4% EOD-loss and target fields without a verifiable rule delta or current calculation-demand signal. No playbook or content package was generated."
   },
   "items": {
     "HR-20261010-01": {
