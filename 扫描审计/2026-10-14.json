@@ -1,0 +1,126 @@
+{
+  "scan_date": "2026-10-14",
+  "generated_at": "2026-10-14T22:02:23+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-14T22:02:23+08:00",
+      "source_count": 3,
+      "note": "复核 FTMO 8 October Trading Update 与 current Trading Objectives，确认 12 October 09:00 GMT+3 cutover、new/legacy cohort、50% total-profit definition 与官方 worked example；复核 BLS September CPI release 的 published result。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-10-14T22:02:23+08:00",
+      "source_count": 2,
+      "note": "PropFirmsInsider 12 October 独立记录 FTMO 的 announcement/effective/cohort distinction；Reuters 14 October 的公开转载交叉报道 CPI result。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "partial",
+      "checked_at": "2026-10-14T22:02:23+08:00",
+      "source_count": 3,
+      "note": "公开 r/propfirm 讨论显示 current FTMO 1-Step 50% / order-date 核对语境；公开 CPI Reddit 和 ForexFactory 仅显示结果/方向注意力，未提供合格 non-directional calculation query。社区内容只用作热度，不确认事实。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-14T22:02:23+08:00",
+      "source_count": 0,
+      "note": "公开可稳定验证索引未出现能将 CPI 结果转换为 PipGauge 非方向性计算任务的新信号；动态流、登录墙、截图和不可稳定复核材料均不计入。"
+    }
+  ],
+  "candidates": {
+    "HR-20261014-01": {
+      "sources": [
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/en/trading-updates/",
+          "source_type": "official_dated_trading_update",
+          "published_at": "2026-10-08; checked 2026-10-14",
+          "freshness_role": "Dates the 12 October 09:00 GMT+3 replacement, identifies new-order and merged-account cohorts, and distinguishes the legacy positive-days-profit denominator from the new total-profit denominator.",
+          "reliable": true
+        },
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/en/trading-objectives/",
+          "source_type": "official_current_rulebook",
+          "published_at": "current page checked 2026-10-14",
+          "freshness_role": "Current 1-Step text confirms the new cohort, 50% threshold, total-profit definition, no-breach treatment and the official USD 6,000 / 10,000 / 12,000 example.",
+          "reliable": true
+        },
+        {
+          "publisher": "PropFirmsInsider",
+          "url": "https://www.propfirmsinsider.com/guides/prop-firm-rule-changes-in-q4-2026-the5ers-ftmo-fundednext-fundingpips-and-ftm",
+          "source_type": "independent_dated_industry_rule_change_tracker",
+          "published_at": "2026-10-12; checked 2026-10-14",
+          "freshness_role": "Independently records FTMO's October 8 announcement, October 12 effective date and new-versus-existing cohort distinction; used as independent impact corroboration under the official-product-rule policy.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/propfirm",
+          "url": "https://www.reddit.com/r/propfirm/comments/1x49sr9/ftmo/",
+          "source_type": "public_current_rule_checking_discussion_heat_only",
+          "published_at": "2026-10-13; checked 2026-10-14",
+          "freshness_role": "Shows current public wording around 12 October orders, the 50% total-profit ratio and the legacy cohort; never used to confirm terms or endorse a firm.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass",
+        "decision_gate": "selected_refresh_official_rule_now_live_with_independent_cohort_corroboration_and_current_rule_checking_path",
+        "duplicate_of": ["HR-20261010-01"],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "reopen_trigger": "Recheck immediately if FTMO changes the product, order/merge cohort, percentage, total-profit definition or no-breach language; otherwise retire the post-cutover frame after 2026-10-15 and preserve the package only as a dated review snapshot.",
+        "rationale": "The prior package correctly covered a future cutover. The now-live official objectives page supplies a current cohort and 50% calculation path, while independent dated documentation and public discussion establish a narrow post-cutover verification window. Refreshing the prior package prevents a second same-structure prop-rule article."
+      }
+    },
+    "HR-20261014-02": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm",
+          "source_type": "official_published_economic_release",
+          "published_at": "2026-10-14 08:30 ET; checked 2026-10-14",
+          "freshness_role": "Published September CPI: 0.6% seasonally adjusted month over month and 3.7% over 12 months, versus 0.4% and 3.4% in August.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.marketscreener.com/news/us-consumer-prices-accelerate-in-september-on-costlier-gasoline-core-cpi-firmer-ce785dd2df88f027",
+          "source_type": "independent_reliable_result_reporting_public_reprint",
+          "published_at": "2026-10-14 08:42 EDT; checked 2026-10-14",
+          "freshness_role": "Independently reports 0.6% month-over-month and 3.7% year-over-year CPI, with the result-day attention context; not treated as a calculator query.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/thewallstreet",
+          "url": "https://www.reddit.com/r/thewallstreet/comments/1x5pc0l/daily_discussion_october_14_2026/",
+          "source_type": "public_result_day_attention_heat_only",
+          "published_at": "2026-10-14; checked 2026-10-14",
+          "freshness_role": "Shows immediate result-day attention but retained discussion is macro, policy and price-reaction led, not a non-directional calculator task.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_verified_result_without_attributable_non_directional_calculator_path",
+        "duplicate_of": ["HR-20261013-01", "HR-20261012-02", "HR-20261010-02"],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "A current public English query expressly connecting the released CPI result to non-directional pip value, fixed risk, margin, cost, quantity or portfolio-heat arithmetic, plus an editorial refresh audit against an existing macro package.",
+        "rationale": "The release result supplies a real fact and a real result-day window, but it does not itself establish that a reader needs a PipGauge calculation. Current public attention remains prediction and reaction-led. Inventing a generic fixed-risk table would fabricate the demand path and repeat existing macro packaging."
+      }
+    }
+  }
+}
