@@ -1,14 +1,64 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-13T22:07:46+08:00",
+  "updated_at": "2026-10-14T22:02:23+08:00",
   "last_scan": {
-    "scan_date": "2026-10-13",
-    "selected_count": 0,
-    "playbook_ready_count": 0,
-    "content_package_count": 0,
-    "note": "Zero-output scan: the October 14 U.S. CPI release is verified and actively discussed, but retained public attention remains calendar- or direction-led rather than an attributable non-directional calculator request. The5ers' October 12 Futures FAQ timestamp exposes current 40% consistency, 4% EOD-loss and target fields without a verifiable rule delta or current calculation-demand signal. No playbook or content package was generated."
+    "scan_date": "2026-10-14",
+    "selected_count": 1,
+    "playbook_ready_count": 1,
+    "content_package_count": 1,
+    "note": "One refresh playbook and review package: FTMO's current 1-Step Objectives now show the post-October 12 cohort, 50% Best Day-to-total-profit condition and official worked example. The CPI result is fact-verified but remains observation because current public attention does not establish an attributable non-directional calculator journey."
   },
   "items": {
+    "HR-20261014-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-10-15T19:00:00-04:00",
+      "traffic_hook": "FTMO's October 12 1-Step cutover is now live. Its current Trading Objectives page says the new order/merged-account cohort uses a Consistency rule: Best Day may be no more than 50% of total closed profit, including losing days. The immediate reader task is to identify the correct order cohort and calculate the current denominator—not to forecast a market or choose a challenge.",
+      "traffic_window": "Refresh during the narrow October 14-15 post-cutover verification window. Replace all pre-cutover or countdown wording immediately. Stop the current-event frame if FTMO changes the affected product, order/merge cohort, percentage, total-profit definition or no-breach wording, or when public discussion no longer concerns this exact cohort-and-ratio check.",
+      "search_intents": [
+        "FTMO 1 Step consistency rule after October 12 2026",
+        "FTMO 1 Step 50% total profit calculation",
+        "FTMO order before October 12 Best Day Rule",
+        "FTMO best day 6000 total profit needed",
+        "FTMO consistency rule total profit including losing days"
+      ],
+      "traffic_angle": "Borrow the verified post-cutover current-rule hook, then answer one readable numerical check from FTMO's live example: closed P&L of +USD 6,000, -USD 2,000, +USD 4,000 and +USD 2,000 makes total profit USD 10,000; USD 6,000 / USD 10,000 = 60%. If the confirmed 1-Step new-cohort threshold is 50% and Best Day stays USD 6,000, USD 6,000 / 0.50 = USD 12,000 total profit. The official news brings readers in; the cohort check and denominator arithmetic provide the answer. It does not say to trade, target profit, buy an account, or expect a payout.",
+      "calculator_bridge": "After readers verify the specific product, order/merge date, live official percentage and closed daily P&L, PositionMath Consistency Rule Calculator can make Best Day ÷ total-profit arithmetic transparent; Prop Firm Simulator can cross-check account-rule context. PositionMath does not validate FTMO terms, determine eligibility, recommend an account, instruct additional trading or guarantee a result. PipGauge is not forced into this rule-specific explanation.",
+      "example_scenario": "Use FTMO's current official teaching example only: closed daily P&L +USD 6,000, -USD 2,000, +USD 4,000, +USD 2,000; total profit USD 10,000; Best Day USD 6,000; ratio 60%. With the current new-cohort 50% condition and an unchanged USD 6,000 Best Day, required total profit is USD 12,000. Do not recast this as a trading target, actual reader account, pass/fail outcome, forecast, or advice to generate additional profit.",
+      "distribution_order": [
+        "refresh the existing PositionMath FTMO 1-Step explainer HR-20261010-01 rather than create a second article",
+        "Medium current-rule verification note with official sources and arithmetic",
+        "X self-contained cohort-and-ratio thread",
+        "Reddit native rule-verification discussion without a first-round link"
+      ],
+      "link_placement": "Lead with the live effective cohort, the official 50% rule, closed-P&L definition and USD 6,000 / 10,000 / 12,000 arithmetic. Only after that may Medium place one natural PositionMath calculator link. Do not include a link, UTM parameter, affiliate language or product pitch in the initial Reddit post; the X thread must be complete without a link.",
+      "expiry_condition": "Retire the post-cutover headline after October 15, on any FTMO update or mismatch between the current Objectives page and the October 8 update, if order/merge cohort or percentage cannot be verified, or when public search/discussion leaves this exact ratio. Do not recycle the official USD 6,000 / 10,000 / 12,000 example as evergreen performance advice.",
+      "editorial_boundary": "Do not rank, endorse or disparage FTMO or any prop firm; do not recommend a purchase, account type, position size, strategy or extra trading; do not predict FX, CFD or any market direction; do not call the ratio a breach; and do not apply 50% total profit to old orders, 2-Step, Instant or an unverified plan. The current official rulebook is authoritative.",
+      "refresh_target": "HR-20261010-01",
+      "refresh_signals": {
+        "fact_delta": true,
+        "search_delta": true,
+        "example_delta": true,
+        "window_delta": true
+      },
+      "refresh_updates": [
+        "replace the pre-cutover title and all future-tense language in HR-20261010-01 with the post-cutover current-rule verification title",
+        "replace the announced-only denominator comparison with the current official 1-Step cohort, 50% threshold, total-profit definition and no-breach language",
+        "replace the USD 2,000 / 3,000 / 2,200 teaching sequence with FTMO's current USD 6,000 / 10,000 / 12,000 official example",
+        "replace the October 11 deadline with the October 14-15 post-cutover verification window and expiry gate"
+      ],
+      "content_mainline": "Refresh the October 10 FTMO 1-Step explainer into one post-cutover cohort-and-50%-ratio verification note. It must remain distinct from daily-loss material and must not expand into a prop-firm comparison, purchase funnel, payout claim or market commentary.",
+      "body_material": [
+        "FTMO October 8 Trading Update: 12 October 09:00 GMT+3 cutover and new-versus-legacy cohort",
+        "FTMO current Trading Objectives: 50% total-profit consistency, closed-P&L definition, no-breach treatment and USD 6,000 / 10,000 / 12,000 example",
+        "PropFirmsInsider October 12 independent announcement/effective/cohort record",
+        "public October 13 r/propfirm rule-checking wording as heat only",
+        "October 14-15 verification deadline and current-term stop gate"
+      ],
+      "product_bridge": "PositionMath offers transparent consistency arithmetic after a reader has independently verified the rule inputs; it does not identify a reader's cohort, interpret changing terms, select a firm, recommend a trade or promise qualification.",
+      "product_bridge_type": "existing"
+    },
     "HR-20261010-01": {
       "playbook_status": "ready",
       "execution_mode": "new",

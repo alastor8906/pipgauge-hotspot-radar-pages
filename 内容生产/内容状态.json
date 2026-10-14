@@ -1,11 +1,20 @@
 {
   "_last_scan": {
-    "scan_date": "2026-10-13",
-    "selected_count": 0,
-    "content_package_count": 0,
-    "platform_draft_count": 0,
-    "status": "zero_output",
-    "note": "No new content package: October 14 U.S. CPI discussion remains calendar- and direction-led without a verified event-specific non-directional calculator journey; The5ers' October 12 Futures FAQ provides a current timestamp but no verifiable new rule delta or attributable current calculator demand. No post, comment, message, email or social-account action occurred."
+    "scan_date": "2026-10-14",
+    "selected_count": 1,
+    "content_package_count": 1,
+    "platform_draft_count": 3,
+    "status": "review_ready",
+    "note": "One refresh review package was generated for the post-cutover FTMO 1-Step Consistency rule: official current terms now establish the new cohort, 50% threshold and total-profit denominator; all drafts remain awaiting_human_review. September U.S. CPI was retained as observation because result-day attention did not yield an attributable non-directional calculator journey. No post, comment, message, email or social-account action occurred."
+  },
+  "HR-20261014-01": {
+    "content_status": "review_ready",
+    "content_label": "FTMO 1-Step 50% total-profit consistency 生效后刷新审核包待人工审核",
+    "content_url": "../内容生产/2026-10-14/HR-20261014-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-10-15T19:00:00-04:00",
+    "review_state": "awaiting_human_review",
+    "refresh_target": "HR-20261010-01"
   },
   "HR-20261010-01": {
     "content_status": "review_ready",
