@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-14T22:02:23+08:00",
+  "updated_at": "2026-10-15T22:02:42+08:00",
   "last_scan": {
-    "scan_date": "2026-10-14",
-    "selected_count": 1,
-    "playbook_ready_count": 1,
-    "content_package_count": 1,
-    "note": "One refresh playbook and review package: FTMO's current 1-Step Objectives now show the post-October 12 cohort, 50% Best Day-to-total-profit condition and official worked example. The CPI result is fact-verified but remains observation because current public attention does not establish an attributable non-directional calculator journey."
+    "scan_date": "2026-10-15",
+    "selected_count": 0,
+    "playbook_ready_count": 0,
+    "content_package_count": 0,
+    "note": "Zero-output gate held. September U.S. PPI is fact-verified by BLS and AP but public attention remains direction-led rather than an attributable non-directional PipGauge calculation task. FTMO's post-cutover 1-Step ratio path remains covered by HR-20261014-01; no second qualified refresh delta was verified. No new playbook or content package was created."
   },
   "items": {
     "HR-20261014-01": {
