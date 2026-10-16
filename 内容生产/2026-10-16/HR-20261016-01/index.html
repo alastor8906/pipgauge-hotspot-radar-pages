@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FTMO HK50 Holiday Closure: Refresh the Contract-Exposure Check Before October 19 · 内容审核包</title>
+  <link rel="stylesheet" href="../../package.css">
+</head>
+<body>
+  <header class="package-header">
+    <a href="../../../radar/">返回热点雷达</a>
+    <span>HR-20261016-01</span>
+  </header>
+  <main class="package-shell">
+    <section class="package-hero">
+      <div class="package-kicker"><span>PipGauge</span><span>2026-10-16</span></div>
+      <h1>FTMO HK50 Holiday Closure: Refresh the Contract-Exposure Check Before October 19</h1>
+      <p>当期审核快照：以 FTMO 10 月 8 日更新所列 10 月 19 日 HK50.cash 全天关闭为钩子，刷新既有节假日时段/指数 CFD 敞口稿。只演示读者已核验的数量 × 计划点数 × 每点价值，不预测 HK50、不假定合约点值，也不建议开、平或持仓。</p>
+      <div class="state-grid">
+        <div><span>流水线状态</span><strong>三平台草稿已生成</strong></div>
+        <div><span>当前停点</span><strong>等待人工审核</strong></div>
+        <div><span>时效处理</span><strong>仅在 2026-10-16 至 10-18、FTMO 当前更新仍写明 HK50.cash 于 10 月 19 日全天关闭时使用；关闭开始、日程/标的/时区变更或无法核验读者合约规格时必须停用或重审。</strong></div>
+      </div>
+    </section>
+
+    <section class="platform-strip" aria-label="平台草稿快速入口"><button type="button" class="platform-tab" data-target="medium">Medium<span>草稿完成</span></button><button type="button" class="platform-tab" data-target="reddit">Reddit<span>草稿完成</span></button><button type="button" class="platform-tab" data-target="x">X<span>草稿完成</span></button></section>
+
+    <section class="review-layout">
+      <aside>
+        <p>审核顺序</p>
+        <nav class="doc-tabs"><button type="button" class="doc-tab is-active" data-target="facts">事实与论点</button><button type="button" class="doc-tab" data-target="medium">Medium</button><button type="button" class="doc-tab" data-target="reddit">Reddit</button><button type="button" class="doc-tab" data-target="x">X</button><button type="button" class="doc-tab" data-target="review">审核清单</button></nav>
+        <div class="stop-note"><strong>不会自动发布</strong><span>审核通过后，才由人决定是否复制到平台。</span></div>
+      </aside>
+      <div class="documents"><article id="facts" class="document-panel is-active">
+      <header><span>editorial brief</span><strong>已整理</strong></header>
+      <div class="markdown-body"><h1>事实与论点 — FTMO HK50 10 月 19 日关闭前的合约敞口核验</h1>
+<h2>可核验事实</h2>
+<ul>
+<li><a href="https://ftmo.com/en/blog/trading-updates/trading-update-8-oct-2026/" target="_blank" rel="noopener">FTMO 的 8 October 2026 CFD Trading Update</a> 写明：因 Chung Yeung Festival，<code>HK50.cash</code> <strong>将在 2026 年 10 月 19 日（周一）全天关闭</strong>。该更新说明，文中的时间一律为 MetaTrader platform time（GMT+3）。这是 firm-specific 时段的唯一权威来源。</li>
+<li><a href="https://www.info.gov.hk/gia/general/202505/16/P2025051300353p.htm" target="_blank" rel="noopener">香港政府 2026 general holidays notice</a> 列出 10 月 19 日（周一）为 Chung Yeung Festival 翌日的 general holiday。它只确认日期，不确认 FTMO 合同、点值、账户资格或交易时段。</li>
+<li><a href="https://www.hfm.com/int/en/trading-instruments/trading-hours" target="_blank" rel="noopener">HFM 的 October 2026 trading schedule</a> 也把 10 月 19 日列为 Chung Yeung Festival，并将其自身的 HK50 标为 Closed。它用于独立的市场时段影响核验；不能替代 FTMO 的产品更新，也不代表所有 broker 或 CFD 条件。</li>
+</ul>
+<h2>当期刷新判断</h2>
+<p>刷新 <code>HR-20260906-01</code>（FTMO Labor Day / US100 early-close exposure check），不产生第二篇“假日时段 + 指数 CFD 敞口”同构文章。</p>
+<ul>
+<li><code>fact_delta=true</code>：旧稿是 9 月 7 日 US100.cash 提前收盘；本期是有日期的 10 月 19 日 <code>HK50.cash</code> 全天关闭。</li>
+<li><code>search_delta=true</code>：当前查询对象是 <code>FTMO HK50 / Chung Yeung / October 19 / hours</code>，而非 US100 / Labor Day。</li>
+<li><code>example_delta=true</code>：旧稿的 <code>0.50 × 30 × USD 1</code> 改为 HK50 的变量公式 <code>0.20 × 25 × reader-verified currency per point</code>；不把教学条件写成 FTMO 的点值。</li>
+<li><code>window_delta=true</code>：只在 10 月 16–18 日的关闭前窗口使用，10 月 19 日开始立即撤去“before closure”时态。</li>
+</ul>
+<h2>核心论点与计算承接</h2>
+<p>新闻钩子回答的是：FTMO 当前更新是否列出 HK50.cash 的 10 月 19 日关闭、读者的源时区是什么。可计算问题仅在读者<strong>自行确认</strong>实际 symbol、platform、账户币种和 contract specification 后出现：</p>
+<p><code>planned price exposure = quantity × planned point distance × reader-verified currency per point</code></p>
+<p>教学表达式：<code>0.20 contract × 25 planned points × reader-verified currency per point</code>。若某位读者的<strong>自己的</strong>平台规格明确是 USD 2/point，算术才是 USD 10；USD 2 不属于 FTMO 新闻、也不是 HK50 的通用点值。结果未含 spread、commission、financing、slippage、gaps、minimum size、margin call 或任何执行结果。</p>
+<p>在事实和公式后，PipGauge 的 Position Size、P&amp;L、Margin 与 Broker Contract Specifications 可用于核验读者输入。它们不决定 FTMO 规则、不能验证读者归属、不会供给合约点值，不建议开/平/持仓，也不保证成交。</p>
+<h2>编辑边界</h2>
+<p>不预测 HK50、香港股票、中国数据、货币、波动、流动性、点差或成交；不称关闭必然带来任何成本或市场结果；不比较、推荐或贬低 firm；不把另一 broker 的 schedule 当作 FTMO 条款；不假定任何点值、杠杆、保证金、账户币种或最低手数。Reddit 初帖不含链接，X 主线程离开链接也能读，三份平台草稿统一停在 <code>awaiting_human_review</code>。</p></div>
+    </article><article id="medium" class="document-panel">
+      <header><span>long-form draft</span><strong>待人工审核</strong></header>
+      <div class="markdown-body"><h1>FTMO Lists HK50.cash as Closed on October 19. Verify the Contract Inputs Before You Calculate Exposure</h1>
+<p>FTMO’s October 8 CFD trading update lists <code>HK50.cash</code> as closed for the whole day on Monday, October 19, for Chung Yeung Festival. The update says its times use MetaTrader platform time (GMT+3).</p>
+<p>That is a schedule-verification question first. It is not an HK50 forecast, a reason to place a trade, or evidence that every broker uses the same hours.</p>
+<h2>Confirm the schedule before doing any math</h2>
+<p>Hong Kong’s <a href="https://www.info.gov.hk/gia/general/202505/16/P2025051300353p.htm" target="_blank" rel="noopener">2026 general-holiday notice</a> confirms October 19 as the day following Chung Yeung Festival. An independent <a href="https://www.hfm.com/int/en/trading-instruments/trading-hours" target="_blank" rel="noopener">October market-hours schedule from HFM</a> also marks its HK50 as closed that day.</p>
+<p>Those sources confirm the date and a market-hours impact. FTMO’s own <a href="https://ftmo.com/en/blog/trading-updates/trading-update-8-oct-2026/" target="_blank" rel="noopener">October 8 update</a> remains the source for whether this specific <code>HK50.cash</code> schedule applies to a reader. A different firm, platform, account, symbol, or contract can have different terms.</p>
+<h2>The calculation is variable by design</h2>
+<p>After checking the exact symbol and contract specification, planned price exposure can be expressed as:</p>
+<p><code>quantity × planned point distance × currency value per point</code></p>
+<p>Here is a deliberately conditional teaching example:</p>
+<div class="table-wrap"><table><thead><tr><th>Input</th><th>Teaching value</th></tr></thead><tbody><tr><td>Quantity</td><td>0.20 contract</td></tr><tr><td>Planned point distance</td><td>25 points</td></tr><tr><td>Point value</td><td>reader-verified</td></tr><tr><td>Planned price exposure</td><td><code>0.20 × 25 × reader-verified value</code></td></tr></tbody></table></div>
+<p>If a reader’s own specification says one point is USD 2, the arithmetic is USD 10: <code>0.20 × 25 × 2</code>. That USD 2 is not an FTMO term, a live quote, or a universal HK50 contract value. It is only an example of how the formula changes once the specification has been verified.</p>
+<p>The calculation also does not include spread, commission, financing, slippage, gaps, minimum-size rules, margin calls, or an execution outcome. A holiday schedule alone does not establish any of those conditions.</p>
+<h2>A short verification sequence</h2>
+<ol>
+<li>Open the current FTMO update and confirm the date, symbol and GMT+3 platform-time wording.</li>
+<li>Confirm the reader’s actual firm, account, platform and <code>HK50.cash</code> contract specification.</li>
+<li>Record the planned quantity, planned point distance and account-currency point value.</li>
+<li>Multiply those inputs; keep the result separate from costs and execution assumptions.</li>
+</ol>
+<p>Only after those checks, <a href="https://pipgauge.com/" target="_blank" rel="noopener">PipGauge</a> can help make position-size, P&amp;L and margin inputs transparent. It does not decide whether the FTMO schedule applies, supply a point value, recommend opening/closing/holding a position, or guarantee an order fill.</p>
+<p>This is a narrow pre-closure note for October 16–18. It should be retired when the October 19 closed session begins, if FTMO changes the schedule, or when the exact product and contract inputs cannot be verified.</p>
+<p>Sources: <a href="https://ftmo.com/en/blog/trading-updates/trading-update-8-oct-2026/" target="_blank" rel="noopener">FTMO CFD Trading Update, 8 October 2026</a>; <a href="https://www.info.gov.hk/gia/general/202505/16/P2025051300353p.htm" target="_blank" rel="noopener">Hong Kong 2026 general holidays</a>; <a href="https://www.hfm.com/int/en/trading-instruments/trading-hours" target="_blank" rel="noopener">HFM October 2026 trading schedule</a>.</p></div>
+    </article><article id="reddit" class="document-panel">
+      <header><span>native discussion draft</span><strong>待人工审核</strong></header>
+      <div class="markdown-body"><h1>FTMO lists HK50.cash as closed Oct 19 — how are you checking the contract inputs before an altered session?</h1>
+<p>FTMO’s Oct 8 update lists <code>HK50.cash</code> as closed for the whole day on Monday, Oct 19, for Chung Yeung Festival, using MetaTrader platform time (GMT+3). The useful first step seems to be checking the exact firm, symbol and platform rather than assuming another broker’s holiday hours apply.</p>
+<p>For anyone who has verified their own contract specification, the neutral exposure arithmetic is:</p>
+<p><code>quantity × planned point distance × currency value per point</code></p>
+<p>For example, <code>0.20 × 25 × reader-verified value</code>. If a platform’s own specification says USD 2 per point, that conditional example is USD 10 before any costs. The USD 2 is not a claim about FTMO or a universal HK50 point value.</p>
+<p>No market call here, and a closure notice does not prove anything about spreads, liquidity, slippage, or what to do with a position. Curious about the process: do you keep a saved contract-specification check for indices before holiday sessions, and what fields do you verify besides symbol, timezone, point value and account currency?</p></div>
+    </article><article id="x" class="document-panel">
+      <header><span>short thread draft</span><strong>待人工审核</strong></header>
+      <div class="markdown-body"><h1>FTMO lists HK50.cash as closed for the whole day on Oct 19 for Chung Yeung Festival. The useful task is schedule + contract verification, not an HK50 market call. 🧵</h1>
+<p>1/ FTMO’s Oct 8 update says <code>HK50.cash</code> is scheduled to be closed all day Monday, Oct 19. Its update uses MetaTrader platform time (GMT+3). Check the live source, your firm, exact symbol and platform first.</p>
+<p>2/ A holiday date does not supply a contract value. Planned price exposure is simply: quantity × planned point distance × your verified currency value per point.</p>
+<p>3/ Teaching only: 0.20 contract × 25 planned points × reader-verified point value. If your own specification says USD 2/point, that conditional arithmetic is USD 10 before costs. USD 2 is not an FTMO claim or universal HK50 value.</p>
+<p>4/ Keep spread, commission, financing, slippage, gaps, margin and execution separate. A closure notice does not prove any of those outcomes.</p>
+<p>5/ No price forecast and no instruction to open, close or hold. The pre-closure framing expires when the Oct 19 closed session begins or if FTMO changes the schedule.</p></div>
+    </article><article id="review" class="document-panel">
+      <header><span>human gate</span><strong>必须完成</strong></header>
+      <div class="markdown-body"><h1>人工审核清单</h1>
+<ul>
+<li>[ ] 重新打开 FTMO 的 8 October update，确认仍写明 <code>HK50.cash</code>、Monday 19 October、closed whole day 与 MetaTrader platform time（GMT+3）。页面若已更正、删除或与草稿矛盾，停止，不发布。</li>
+<li>[ ] 重新打开香港政府 general-holiday notice，确认 2026-10-19 日期；它只能核验假日日期，不能被写成 FTMO 条款来源。</li>
+<li>[ ] 重新打开 HFM October schedule，确认其 HK50 Closed 行仍存在；它只能作独立市场时段影响核验，不能外推到 FTMO 或所有 broker。</li>
+<li>[ ] 标题和首段只能写“FTMO lists/schedules HK50.cash as closed”，不能写成所有 HK50 市场、所有账户或所有 broker 必然关闭。</li>
+<li>[ ] 核验 Medium 的时态仍处于 10 月 16–18；10 月 19 日关闭开始后删除或改写所有 “before closure” 表述。</li>
+<li>[ ] 只保留变量公式 <code>quantity × planned point distance × reader-verified currency per point</code>。USD 2 示例必须保留为 conditional teaching input，绝不能写成 FTMO 或通用 HK50 点值。</li>
+<li>[ ] 删除任何市场方向、价格预测、波动/流动性/点差/滑点断言、交易指令、firm 排名、购买暗示、收益承诺、账户资格或成交保证。</li>
+<li>[ ] Medium 的 PipGauge 链接必须在来源、公式和限制之后；必须保留工具不验证时段/规格、不供给点值且不推荐交易的说明。</li>
+<li>[ ] Reddit 初帖不得含链接、UTM、affiliate 或产品推销；问题只讨论核验流程。X 每条离开链接仍可理解。</li>
+<li>[ ] 三个平台均为 <code>awaiting_human_review</code>。不得自动发布、评论、点赞、关注、私信、发邮件或操作账号。</li>
+</ul>
+<h2>刷新动作</h2>
+<p>本包刷新 <code>HR-20260906-01</code>，不是第二篇同构内容。替换旧稿的：</p>
+<ol>
+<li><code>Labor Day / September 7 / US100.cash / early close</code> → <code>Chung Yeung Festival / October 19 / HK50.cash / whole-day closure</code>。</li>
+<li><code>0.50 contract × 30 points × hypothetical USD 1</code> → <code>0.20 contract × 25 planned points × reader-verified currency per point</code>，仅以 USD 2 作条件示范。</li>
+<li>旧 September 7 deadline → October 16–18 pre-closure verification window，October 19 开始时停止新闻钩子。</li>
+<li>保留 source-time、firm/platform/symbol 差异、合约规格核验、无行情判断和无执行保证的边界。</li>
+</ol></div>
+    </article></div>
+    </section>
+  </main>
+  <script>
+    const activate = (id) => {
+      document.querySelectorAll('.doc-tab').forEach((button) => button.classList.toggle('is-active', button.dataset.target === id));
+      document.querySelectorAll('.document-panel').forEach((panel) => panel.classList.toggle('is-active', panel.id === id));
+      history.replaceState(null, '', '#' + id);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    document.querySelectorAll('[data-target]').forEach((button) => button.addEventListener('click', () => activate(button.dataset.target)));
+    const initial = location.hash.slice(1);
+    if (initial && document.getElementById(initial)) activate(initial);
+  </script>
+</body>
+</html>

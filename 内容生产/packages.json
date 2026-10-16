@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T14:03:37.113Z",
+  "generated_at": "2026-10-16T14:09:40.017Z",
   "endpoint": "multi_platform_drafts_awaiting_human_review",
   "supported_platforms": [
     "medium",
@@ -7,6 +7,41 @@
     "x"
   ],
   "packages": [
+    {
+      "candidate_id": "HR-20261016-01",
+      "scan_date": "2026-10-16",
+      "primary_site": "PipGauge",
+      "topic": "FTMO HK50 Holiday Closure: Refresh the Contract-Exposure Check Before October 19",
+      "package_summary": "当期审核快照：以 FTMO 10 月 8 日更新所列 10 月 19 日 HK50.cash 全天关闭为钩子，刷新既有节假日时段/指数 CFD 敞口稿。只演示读者已核验的数量 × 计划点数 × 每点价值，不预测 HK50、不假定合约点值，也不建议开、平或持仓。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "pre_holiday_firm_schedule_verification_window",
+      "time_status_label": "仅在 2026-10-16 至 10-18、FTMO 当前更新仍写明 HK50.cash 于 10 月 19 日全天关闭时使用；关闭开始、日程/标的/时区变更或无法核验读者合约规格时必须停用或重审。",
+      "url": "../内容生产/2026-10-16/HR-20261016-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-10-16/HR-20261016-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-10-16/HR-20261016-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-10-16/HR-20261016-01/index.html#x"
+        }
+      ]
+    },
     {
       "candidate_id": "HR-20261014-01",
       "scan_date": "2026-10-14",

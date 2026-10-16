@@ -1,14 +1,59 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-15T22:02:42+08:00",
+  "updated_at": "2026-10-16T22:03:22+08:00",
   "last_scan": {
-    "scan_date": "2026-10-15",
-    "selected_count": 0,
-    "playbook_ready_count": 0,
-    "content_package_count": 0,
-    "note": "Zero-output gate held. September U.S. PPI is fact-verified by BLS and AP but public attention remains direction-led rather than an attributable non-directional PipGauge calculation task. FTMO's post-cutover 1-Step ratio path remains covered by HR-20261014-01; no second qualified refresh delta was verified. No new playbook or content package was created."
+    "scan_date": "2026-10-16",
+    "selected_count": 1,
+    "playbook_ready_count": 1,
+    "content_package_count": 1,
+    "note": "One PipGauge refresh is ready: FTMO's dated October 8 update schedules HK50.cash closed on October 19. Hong Kong's official holiday notice and HFM's independent current October schedule corroborate the date and market-hours impact. The package refreshes HR-20260906-01's holiday-hours exposure framework; all three drafts remain awaiting_human_review and no social action occurred."
   },
   "items": {
+    "HR-20261016-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-10-18T18:00:00+08:00",
+      "traffic_hook": "FTMO's dated 8 October CFD Trading Update says HK50.cash is scheduled to be closed for the whole day on Monday, 19 October for Chung Yeung Festival. Hong Kong's official holiday notice confirms the public-holiday date, while HFM's current October schedule independently marks its HK50 as closed. The live user task is to verify the firm-specific time and calculate their own planned contract exposure before an altered session—not to forecast HK50 or advise a trade.",
+      "traffic_window": "Refresh from October 16 through October 18, before the named October 19 closure starts. Remove the pre-closure framing at the start of the closed session, on any FTMO schedule correction, if the reader is using another firm/platform/symbol, or when the exact HK50-hours query no longer has current public relevance.",
+      "search_intents": [
+        "FTMO HK50 trading hours October 19 2026",
+        "FTMO HK50 closed Chung Yeung Festival",
+        "HK50 CFD point value position size",
+        "how to calculate HK50 CFD exposure before holiday closure",
+        "FTMO holiday trading hours GMT+3"
+      ],
+      "traffic_angle": "Use the verified firm-specific HK50.cash closure as the news hook, then answer one narrow numerical question: once the reader has confirmed the correct symbol and contract specification, what is the planned monetary exposure of quantity × planned point distance × reader-verified currency per point? Use a transparent teaching expression of 0.20 contract × 25 planned points × reader-verified currency per point. Do not turn the holiday into a volatility, spread, liquidity, price-direction or execution claim; do not invent a default HK50 point value.",
+      "calculator_bridge": "After stating FTMO's source timezone, named symbol and closure date, PipGauge Position Size and P&L calculators can verify the reader's quantity and planned point distance using their own confirmed point value and account currency. PipGauge Margin and Broker Contract Specifications are separate checks for the reader's actual platform. The calculators do not determine FTMO hours, validate a contract specification, advise opening/closing/holding, or guarantee a fill.",
+      "example_scenario": "Teaching only: 0.20 contract × 25 planned points × reader-verified currency per point. If, and only if, a reader's own platform specification says the value is USD 2 per point, the arithmetic would be USD 10 before spread, commission, financing, slippage, gaps, minimum-size limits or liquidation terms. USD 2 is an illustrative conditional input, not an FTMO term, HK50 market quote or universal contract value.",
+      "distribution_order": [
+        "refresh the existing PipGauge holiday-hours exposure explainer HR-20260906-01; do not publish a second same-shape holiday article",
+        "Medium source-time and contract-exposure verification note",
+        "X self-contained HK50-hours and variable-exposure thread",
+        "Reddit native verification-process discussion without a first-round link"
+      ],
+      "link_placement": "Lead with the official date, named HK50.cash symbol, source timezone, conditional formula and contract-specification warning. Only after the useful method may Medium place one natural PipGauge verification link. Initial Reddit copy contains no link, UTM, affiliate text or product pitch; the X thread must remain complete without a click.",
+      "expiry_condition": "Retire the October 19 pre-closure hook when the named closed session begins, if FTMO changes or removes the schedule, or if the symbol, platform, account currency or point value cannot be independently verified. Do not reuse the example as evidence of universal broker hours, an HK50 price outlook, wider spreads, thin liquidity or execution quality.",
+      "editorial_boundary": "Do not predict or discuss HK50, Hong Kong equities, China data, FX or any market direction. Do not tell readers to open, close, hold or size a position; compare or endorse firms; claim a universal HK50 point value; infer FTMO terms from another broker; or promise a fill. The article only explains how to check current firm-specific hours and calculate a reader-verified planned exposure.",
+      "refresh_target": "HR-20260906-01",
+      "refresh_signals": {"fact_delta": true, "search_delta": true, "example_delta": true, "window_delta": true},
+      "refresh_updates": [
+        "replace Labor Day, September 7, US100.cash and early-close language in HR-20260906-01 with Chung Yeung Festival, October 19, HK50.cash and whole-day closure wording",
+        "replace the old US100 0.50 × 30 × hypothetical USD 1 example with the conditional HK50 0.20 × 25 × reader-verified currency-per-point formula",
+        "replace the September 7 expiry with the October 16-18 pre-closure window and October 19 stop gate",
+        "retain the source-time, symbol-specification, no-market-call and no-universal-hours boundaries"
+      ],
+      "content_mainline": "Refresh the existing holiday-hours exposure explainer into one FTMO HK50 October 19 schedule-verification note: current firm-specific hours first, then variable contract-exposure arithmetic. It must not become an index outlook, a firm comparison, an execution-cost claim or a second holiday-hours article.",
+      "body_material": [
+        "FTMO October 8 CFD Trading Update: HK50.cash closed whole day Monday October 19; MetaTrader platform time GMT+3",
+        "Hong Kong Government 2026 general-holiday notice: October 19 date",
+        "HFM October 2026 schedule: independent HK50 closed market-hours impact",
+        "0.20 contract × 25 planned points × reader-verified currency per point, with a clearly conditional USD 2 illustration",
+        "October 16-18 publication window, October 19 stop gate, and platform-specific contract verification"
+      ],
+      "product_bridge": "PipGauge verifies reader-supplied position, point-value, P&L and margin inputs after the source-time schedule is explained. It does not decide whether the FTMO schedule applies to a reader, supply a contract value, predict HK50 or guarantee execution.",
+      "product_bridge_type": "existing"
+    },
     "HR-20261014-01": {
       "playbook_status": "ready",
       "execution_mode": "refresh",
