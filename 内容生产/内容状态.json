@@ -1,11 +1,20 @@
 {
   "_last_scan": {
-    "scan_date": "2026-10-14",
+    "scan_date": "2026-10-16",
     "selected_count": 1,
     "content_package_count": 1,
     "platform_draft_count": 3,
     "status": "review_ready",
-    "note": "One refresh review package was generated for the post-cutover FTMO 1-Step Consistency rule: official current terms now establish the new cohort, 50% threshold and total-profit denominator; all drafts remain awaiting_human_review. September U.S. CPI was retained as observation because result-day attention did not yield an attributable non-directional calculator journey. No post, comment, message, email or social-account action occurred."
+    "note": "One PipGauge refresh review package was generated for FTMO's October 19 HK50.cash whole-day closure. The package updates HR-20260906-01's holiday-hours exposure framework with source-time and reader-verified point-value arithmetic; all drafts remain awaiting_human_review. No post, comment, message, email or social-account action occurred."
+  },
+  "HR-20261016-01": {
+    "content_status": "review_ready",
+    "content_label": "FTMO HK50 10月19日假日关闭敞口核验刷新审核包待人工审核",
+    "content_url": "../内容生产/2026-10-16/HR-20261016-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-10-18T18:00:00+08:00",
+    "review_state": "awaiting_human_review",
+    "refresh_target": "HR-20260906-01"
   },
   "HR-20261014-01": {
     "content_status": "review_ready",
