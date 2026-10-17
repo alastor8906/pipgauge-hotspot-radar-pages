@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FTMO Europe DST Week: Verify the Daily-Loss Reset Before October 26 · 内容审核包</title>
+  <link rel="stylesheet" href="../../package.css">
+</head>
+<body>
+  <header class="package-header">
+    <a href="../../../radar/">返回热点雷达</a>
+    <span>HR-20261017-01</span>
+  </header>
+  <main class="package-shell">
+    <section class="package-hero">
+      <div class="package-kicker"><span>PipGauge</span><span>2026-10-17</span></div>
+      <h1>FTMO Europe DST Week: Verify the Daily-Loss Reset Before October 26</h1>
+      <p>当期审核快照：以 FTMO 10 月 15 日公告所列 Europe/US DST mismatch 为钩子，解释 10 月 26 日至 11 月 1 日 Prague midnight 与 MetaTrader midnight 的 1 小时到 2 小时偏移。只教读者核验 Account MetriX reset countdown，并将日亏损边界与本地/平台午夜分开；不预测市场、不计算美元损失、不建议交易。</p>
+      <div class="state-grid">
+        <div><span>流水线状态</span><strong>三平台草稿已生成</strong></div>
+        <div><span>当前停点</span><strong>等待人工审核</strong></div>
+        <div><span>时效处理</span><strong>仅在 2026-10-17 至 10-24、FTMO 当前更新仍保留 10 月 26 日至 11 月 1 日 Prague/MetaTrader 2 小时偏移和 Account MetriX reset-countdown 指引时使用；10 月 25 日需复核，11 月 1 日后、日期/产品/时区/倒计时不符或读者账户不适用时必须停用或重审。</strong></div>
+      </div>
+    </section>
+
+    <section class="platform-strip" aria-label="平台草稿快速入口"><button type="button" class="platform-tab" data-target="medium">Medium<span>草稿完成</span></button><button type="button" class="platform-tab" data-target="reddit">Reddit<span>草稿完成</span></button><button type="button" class="platform-tab" data-target="x">X<span>草稿完成</span></button></section>
+
+    <section class="review-layout">
+      <aside>
+        <p>审核顺序</p>
+        <nav class="doc-tabs"><button type="button" class="doc-tab is-active" data-target="facts">事实与论点</button><button type="button" class="doc-tab" data-target="medium">Medium</button><button type="button" class="doc-tab" data-target="reddit">Reddit</button><button type="button" class="doc-tab" data-target="x">X</button><button type="button" class="doc-tab" data-target="review">审核清单</button></nav>
+        <div class="stop-note"><strong>不会自动发布</strong><span>审核通过后，才由人决定是否复制到平台。</span></div>
+      </aside>
+      <div class="documents"><article id="facts" class="document-panel is-active">
+      <header><span>editorial brief</span><strong>已整理</strong></header>
+      <div class="markdown-body"><h1>事实与论点底稿</h1>
+<h2>可核验事实</h2>
+<ul>
+<li><a href="https://ftmo.com/en/blog/trading-updates/trading-update-15-oct-2026/" target="_blank" rel="noopener">FTMO 的 2026-10-15 CFD Trading Update</a> 是 firm-specific 事实锚点。它说欧洲夏令时于 10 月 25 日结束；<strong>2026-10-26 至 2026-11-01</strong>，Prague midnight 与 MetaTrader midnight 相差 <strong>2 小时</strong>，而通常相差 <strong>1 小时</strong>。同一页说 Max Daily Loss 按 Prague time 监控、daily drawdown 在 midnight reset，并要求不确定 reset 时间的用户查看 Account MetriX 的 Today’s permitted loss countdown。这个页面是唯一能确认 FTMO 产品、时段与 reset 表述的来源。</li>
+<li><a href="https://www.ice.com/publicdocs/endex/circulars/E26004_attach_2.pdf" target="_blank" rel="noopener">ICE 的 2026 DST timetable</a> 独立列出欧洲于 10 月 25 日回到 CET、美国于 11 月 1 日回到 EST。它只能核验跨区换时顺序，不能替代 FTMO 的平台、账户、条款、时区或 reset 判断。</li>
+<li><a href="https://propdatalab.com/prop-firm-daily-reset-clock/" target="_blank" rel="noopener">PropDataLab 的 reset-clock explainer</a>（10 月 11 日更新）把 FTMO Prague reset 在 10 月 25–31 日的转换列作公开 rule-reading 问题。它是独立 discovery/impact 线索，不能替代 FTMO 当期条款。</li>
+<li><a href="https://www.reddit.com/r/Daytrading/comments/1x2j66p/your_ea_does_not_know_when_your_prop_firms_day_ends/" target="_blank" rel="noopener">r/Daytrading 的公开 server-clock 讨论</a> 只提供当前“firm day / server clock / DST”的措辞与困惑类型；它不证明 FTMO 条款、用户产品或具体 reset time。</li>
+</ul>
+<h2>新稿判断</h2>
+<p>本包为 <code>new</code>，不 refresh 旧稿。</p>
+<ul>
+<li><code>HR-20260918-01</code> 是 FTMO Futures 50K Pro Daily Loss headroom，核心是 day-level USD boundary 与 reader-verified USD/point。</li>
+<li>本包的事实、查询、数字和窗口不同：CFD Trading Update 的 Prague / MetaTrader clock mismatch、<code>1 hour → 2 hours</code>、Account MetriX countdown、10 月 26 日至 11 月 1 日。</li>
+<li>同样使用 Daily Loss Limit 计算器不足以构成重复；不得反过来把本包扩展成 generic FTMO/Futures/daily-loss guide。</li>
+</ul>
+<h2>数字骨架与边界</h2>
+<p>唯一可直接使用的 official 数字是时间关系，而不是美元额度：</p>
+<div class="table-wrap"><table><thead><tr><th>FTMO 所述时期</th><th>Prague midnight 与 MetaTrader midnight 的差距</th><th>读者动作</th></tr></thead><tbody><tr><td>通常</td><td>1 hour</td><td>不假定自己的 local/platform clock 就是 reset；记录 Account MetriX countdown。</td></tr><tr><td>2026-10-26 至 2026-11-01</td><td>2 hours</td><td>重新核验当前官方更新、适用产品、platform display 和 Account MetriX countdown。</td></tr></tbody></table></div>
+<p><code>1 hour</code> 与 <code>2 hours</code> 不是通用 broker 值、用户本地 reset 时刻、交易时段建议或美元风险估计。没有当日账户、开放 P&amp;L、commission、plan、产品、适用地区和 live countdown，不能计算或声称某个 breach 结果。</p>
+<p>PipGauge Forex Session Clock 可帮助读者把已核验的 Prague、platform 与 local display 分开看；PipGauge Daily Loss Limit 可帮助把读者输入的日边界同仓位风险分开。PipGauge Position Size 只有在读者另外确认 balance、open P&amp;L、contract value 和 stop 后才相关。所有工具都不决定 FTMO reset、不解释资格、不证明合规，也不保证不会 breach。</p>
+<p>所有平台草稿均为 <code>awaiting_human_review</code>。Reddit 首轮不放链接；X 主线程独立可读；不得发布、评论、私信或操作任何社交账号。</p></div>
+    </article><article id="medium" class="document-panel">
+      <header><span>long-form draft</span><strong>待人工审核</strong></header>
+      <div class="markdown-body"><h1>FTMO’s Europe DST Week: Verify Your Daily-Loss Reset Before October 26</h1>
+<p>FTMO’s October 15 trading update flags a timekeeping change that is easy to misread as a trading issue. It is not a market outlook and it is not a reason to take, hold, or close a position. It is a calendar-and-rule check: during the Europe/US daylight-saving mismatch, the clock on a platform may not mark the same boundary as the one that matters for a daily-loss rule.</p>
+<p>FTMO says Europe leaves Summer Time on October 25. From October 26 through November 1, its CFD update says Prague midnight and MetaTrader midnight will be two hours apart, rather than the usual one hour. The same update says Max Daily Loss is monitored on Prague time and the daily drawdown resets at midnight. For an account-specific answer, FTMO directs users to the countdown shown when hovering over Today’s permitted loss in Account MetriX.</p>
+<h2>The useful number is a clock difference, not a loss estimate</h2>
+<div class="table-wrap"><table><thead><tr><th>Period in FTMO’s update</th><th>Prague midnight vs. MetaTrader midnight</th></tr></thead><tbody><tr><td>Usual relationship</td><td>1 hour</td></tr><tr><td>October 26 to November 1, 2026</td><td>2 hours</td></tr></tbody></table></div>
+<p>Those are timing facts, not a universal broker offset, a local reset time, or a dollar-risk calculation. The <a href="https://www.ice.com/publicdocs/endex/circulars/E26004_attach_2.pdf" target="_blank" rel="noopener">ICE 2026 daylight-saving timetable</a> independently confirms the underlying sequence: Europe changes on October 25 and the United States on November 1. But ICE does not define FTMO’s account rule. FTMO’s current update and the reader’s own Account MetriX countdown remain the relevant checks.</p>
+<h2>A verification sequence that does not assume a clock</h2>
+<ol>
+<li>Open the current <a href="https://ftmo.com/en/blog/trading-updates/trading-update-15-oct-2026/" target="_blank" rel="noopener">FTMO October 15 trading update</a> and confirm that its dates, product, platform wording and reset guidance still apply to the account in question.</li>
+<li>In the affected account, inspect Account MetriX’s live reset countdown. Record the date and time displayed rather than inferring it from a phone, local computer, or a generic MT4/MT5 convention.</li>
+<li>Compare three labels separately: Prague time, the platform display, and local time. During October 26–November 1, the official 1-hour-to-2-hour change is a reason to recheck, not a shortcut for declaring a reset time.</li>
+<li>Keep the clock check distinct from any risk number. A Daily Loss Limit is a day-level boundary; it is not an automatically available per-trade budget, and a reset time does not erase open P&amp;L, commissions, product terms, or other account conditions.</li>
+</ol>
+<p>After the official timing and the account’s countdown are verified, PipGauge’s Forex Session Clock can help make the three clock displays legible, and its Daily Loss Limit tool can keep a reader-entered day boundary separate from position-size arithmetic. The tools do not establish FTMO terms, decide whether a reader is covered by this update, or guarantee compliance.</p>
+<p><a href="https://propdatalab.com/prop-firm-daily-reset-clock/" target="_blank" rel="noopener">PropDataLab’s reset-clock explainer</a> shows why this is a current public rule-reading question, but it is not the rulebook. The only responsible use of the DST hook is to check the live official wording and an account-specific countdown before relying on any day boundary.</p>
+<p>This is a verification note, not a firm comparison, purchase recommendation, market forecast, trade signal, or claim that a clock difference creates a predictable trading result. Recheck the framing on October 25 and retire it after November 1 unless a newer official update creates a new, dated reset-time question.</p>
+<p><em>Draft status: awaiting_human_review. Do not publish until a human has rechecked the live FTMO update, the applicable account view, and every timing statement.</em></p></div>
+    </article><article id="reddit" class="document-panel">
+      <header><span>native discussion draft</span><strong>待人工审核</strong></header>
+      <div class="markdown-body"><h1>Reddit draft — native discussion, no first-round link</h1>
+<p><strong>Title:</strong> During a DST week, which clock do you use for a prop firm’s daily-loss reset?</p>
+<p>One rule-reading issue seems worth checking before the Europe/US clock mismatch next week: a platform midnight, local midnight, and the firm’s risk-day boundary may not be the same thing.</p>
+<p>FTMO’s current update says that for October 26 through November 1, Prague midnight and MetaTrader midnight will be two hours apart rather than the usual one. It also says its Max Daily Loss is monitored on Prague time and points people to the reset countdown in Account MetriX.</p>
+<p>For me, the useful check would be:</p>
+<ol>
+<li>confirm the current firm update and the exact product/account;</li>
+<li>note the Account MetriX countdown;</li>
+<li>compare that countdown with the platform display and my local clock;</li>
+<li>keep that timing check separate from any assumption about how much risk is available for a new trade.</li>
+</ol>
+<p>The 1-hour-to-2-hour change is not a dollar-loss calculation, a universal broker rule, or a claim that a reset makes a position safe. It is just a reminder not to infer a risk-day boundary from the wrong clock.</p>
+<p>If you have dealt with a DST week at a prop firm, what account-specific display do you treat as authoritative when the platform and local clocks do not line up?</p>
+<p>Draft status: <code>awaiting_human_review</code>. First Reddit post intentionally has no link.</p></div>
+    </article><article id="x" class="document-panel">
+      <header><span>short thread draft</span><strong>待人工审核</strong></header>
+      <div class="markdown-body"><h1>X thread draft</h1>
+<h2>Post 1/5</h2>
+<p>FTMO’s Europe DST update is a clock-check issue, not a market call. Before October 26, do not assume local midnight, platform midnight and a daily-loss reset are the same boundary.</p>
+<h2>Post 2/5</h2>
+<p>FTMO says that from Oct 26 to Nov 1, Prague midnight and MetaTrader midnight are 2 hours apart, versus the usual 1 hour. Its Max Daily Loss is monitored on Prague time.</p>
+<h2>Post 3/5</h2>
+<p>The only safe account-specific check is the live Account MetriX reset countdown. The 1h → 2h change is not a USD risk estimate, a universal broker offset or a local reset-time promise.</p>
+<h2>Post 4/5</h2>
+<p>Verification sequence:</p>
+<p>current official update → correct product/account → Account MetriX countdown → platform display → local clock.</p>
+<p>Keep that clock check separate from day-loss headroom and position sizing.</p>
+<h2>Post 5/5</h2>
+<p>A daily-loss boundary is not a trade instruction, and a clock reset does not erase open P&amp;L, commissions or current terms. Recheck the official wording on Oct 25; retire this event frame after Nov 1.</p>
+<p>Draft status: <code>awaiting_human_review</code>.</p></div>
+    </article><article id="review" class="document-panel">
+      <header><span>human gate</span><strong>必须完成</strong></header>
+      <div class="markdown-body"><h1>人工审核清单</h1>
+<p>状态：<code>awaiting_human_review</code>。本包不得自动发布、发帖、评论、私信或操作账户。</p>
+<h2>事实与数字复核</h2>
+<ul>
+<li>[ ] 重新打开 <a href="https://ftmo.com/en/blog/trading-updates/trading-update-15-oct-2026/" target="_blank" rel="noopener">FTMO 2026-10-15 Trading Update</a>，确认 Europe DST date、10 月 26 日至 11 月 1 日窗口、Prague/MetaTrader <code>1 hour → 2 hours</code> 表述、适用 platform、Max Daily Loss monitoring 和 Account MetriX countdown 指引仍在当前页面。任一项变化即停用或重写。</li>
+<li>[ ] 确认 1 小时和 2 小时只被表述为 FTMO 页面所述的相对 clock offset；不得变成读者当地 reset 时刻、普适 broker 时间、美元损失、点值、交易建议或 breach 判断。</li>
+<li>[ ] 重新打开 <a href="https://www.ice.com/publicdocs/endex/circulars/E26004_attach_2.pdf" target="_blank" rel="noopener">ICE 2026 DST timetable</a>，只用它交叉确认 Europe 10 月 25 日 / US 11 月 1 日的换时顺序；不得将 ICE 市场时间表写成 FTMO 条款。</li>
+<li>[ ] 重新打开 <a href="https://propdatalab.com/prop-firm-daily-reset-clock/" target="_blank" rel="noopener">PropDataLab reset-clock explainer</a>，只将其称为独立 discovery/impact 语境；Reddit 仅是公开讨论信号，不得作为事实来源。</li>
+<li>[ ] 人工在适用账户中核对 Account MetriX countdown；若无法看到、产品/账户不适用、倒计时与文稿冲突或会泄露个人账户信息，则不发布账户级表述。</li>
+</ul>
+<h2>时效与边界</h2>
+<ul>
+<li>[ ] 本期为 <code>new</code>，而非 <code>refresh</code>：它不能复用或改写 HR-20260918-01 的 FTMO Futures 50K Pro daily-loss-headroom 主线，也不能与 10 月的 1-Step consistency-rule 包混同。</li>
+<li>[ ] 审核 deadline 是 2026-10-24 18:00 Asia/Shanghai。10 月 25 日须再次核验 official update；10 月 26 日至 11 月 1 日期间若引用仍有效，必须把时态改为正在发生并重新确认；11 月 1 日后不得继续使用 pre-change headline。</li>
+<li>[ ] 不写市场预测、交易信号、暂停/开仓/平仓/持仓建议、firm 排名、购买建议、收益承诺、普遍合规保证，或关于 spread、slippage、liquidity、execution 的推断。</li>
+</ul>
+<h2>平台边界</h2>
+<ul>
+<li>[ ] Medium 在任何工具链接前先给 official dates、clock distinction 和 Account MetriX 核验方法；人工确认后最多放一个自然的 PipGauge verification link。</li>
+<li>[ ] Reddit 首轮不带链接、UTM 或促销措辞；保留原生问题，不把社区评论当事实。</li>
+<li>[ ] X 的五帖主线即使没有链接也能读懂；不写方向预测、交易信号、账户购买建议、firm 排名或保证性语言。</li>
+<li>[ ] 所有内容保持 <code>awaiting_human_review</code>，不自动复制到 Medium、Reddit、X 或任何账户。</li>
+</ul></div>
+    </article></div>
+    </section>
+  </main>
+  <script>
+    const activate = (id) => {
+      document.querySelectorAll('.doc-tab').forEach((button) => button.classList.toggle('is-active', button.dataset.target === id));
+      document.querySelectorAll('.document-panel').forEach((panel) => panel.classList.toggle('is-active', panel.id === id));
+      history.replaceState(null, '', '#' + id);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    document.querySelectorAll('[data-target]').forEach((button) => button.addEventListener('click', () => activate(button.dataset.target)));
+    const initial = location.hash.slice(1);
+    if (initial && document.getElementById(initial)) activate(initial);
+  </script>
+</body>
+</html>

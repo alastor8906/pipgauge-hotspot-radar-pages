@@ -1,4 +1,13 @@
 {
+  "HR-20261017-01": {
+    "content_status": "review_ready",
+    "content_label": "FTMO Europe DST daily-loss reset-time 核验审核包待人工审核",
+    "content_url": "../内容生产/2026-10-17/HR-20261017-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-10-24T18:00:00+08:00",
+    "review_state": "awaiting_human_review",
+    "refresh_target": null
+  },
   "_last_scan": {
     "scan_date": "2026-10-16",
     "selected_count": 1,

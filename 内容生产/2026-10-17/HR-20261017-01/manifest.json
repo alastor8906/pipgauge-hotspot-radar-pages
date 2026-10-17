@@ -1,0 +1,55 @@
+{
+  "candidate_id": "HR-20261017-01",
+  "scan_date": "2026-10-17",
+  "primary_site": "PipGauge",
+  "topic": "FTMO Europe DST Week: Verify the Daily-Loss Reset Before October 26",
+  "execution_mode": "new",
+  "refresh_target": null,
+  "package_summary": "当期审核快照：以 FTMO 10 月 15 日公告所列 Europe/US DST mismatch 为钩子，解释 10 月 26 日至 11 月 1 日 Prague midnight 与 MetaTrader midnight 的 1 小时到 2 小时偏移。只教读者核验 Account MetriX reset countdown，并将日亏损边界与本地/平台午夜分开；不预测市场、不计算美元损失、不建议交易。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "pre_dst_firm_reset_verification_window",
+  "time_status_label": "仅在 2026-10-17 至 10-24、FTMO 当前更新仍保留 10 月 26 日至 11 月 1 日 Prague/MetaTrader 2 小时偏移和 Account MetriX reset-countdown 指引时使用；10 月 25 日需复核，11 月 1 日后、日期/产品/时区/倒计时不符或读者账户不适用时必须停用或重审。",
+  "documents": [
+    {
+      "id": "facts",
+      "label": "事实与论点",
+      "file": "00-事实与论点.md",
+      "platform": "internal",
+      "kind": "editorial brief",
+      "status_label": "已整理"
+    },
+    {
+      "id": "medium",
+      "label": "Medium",
+      "file": "01-Medium.md",
+      "platform": "medium",
+      "kind": "long-form draft",
+      "status_label": "待人工审核"
+    },
+    {
+      "id": "reddit",
+      "label": "Reddit",
+      "file": "02-Reddit.md",
+      "platform": "reddit",
+      "kind": "native discussion draft",
+      "status_label": "待人工审核"
+    },
+    {
+      "id": "x",
+      "label": "X",
+      "file": "03-X.md",
+      "platform": "x",
+      "kind": "short thread draft",
+      "status_label": "待人工审核"
+    },
+    {
+      "id": "review",
+      "label": "审核清单",
+      "file": "04-人工审核.md",
+      "platform": "internal",
+      "kind": "human gate",
+      "status_label": "必须完成"
+    }
+  ]
+}
