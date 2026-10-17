@@ -1,0 +1,121 @@
+{
+  "scan_date": "2026-10-17",
+  "generated_at": "2026-10-17T22:02:21+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-17T22:02:21+08:00",
+      "source_count": 3,
+      "note": "覆盖 FTMO 15 October CFD update 的 DST、平台时段与 Max Daily Loss reset 说明；Federal Reserve 16 October G.17 result；ICE 2026 DST timetable。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-10-17T22:02:21+08:00",
+      "source_count": 3,
+      "note": "ICE 独立核验 Europe/US DST one-week mismatch；PropDataLab 独立说明 FTMO reset-clock query；Reuters 的工业产出报道交叉核验结果。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "partial",
+      "checked_at": "2026-10-17T22:02:21+08:00",
+      "source_count": 2,
+      "note": "10 October public r/Daytrading server-clock/DST post 提供当期 rule-reading wording；ForexFactory reset material主要是旧期次，未作为当前事实或核心热度。未保留工业产出对应的非方向性计算查询。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-17T22:02:21+08:00",
+      "source_count": 0,
+      "note": "没有保留可稳定核验、可把本期 DST rule change 或 industrial-production result 转为现有计算器任务的新公开信号；Quora robots/login 限制、动态流和截图不计入。"
+    }
+  ],
+  "candidates": {
+    "HR-20261017-01": {
+      "sources": [
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/en/blog/trading-updates/trading-update-15-oct-2026/",
+          "source_type": "official_dated_cfd_trading_update",
+          "published_at": "2026-10-15 09:06 UTC; checked 2026-10-17",
+          "freshness_role": "States Europe DST ends 25 October; from 26 October through 1 November Prague midnight and MetaTrader midnight are two hours apart rather than the usual one; Max Daily Loss is monitored on Prague time and daily drawdown resets at midnight. Directs account-specific reset verification to Account MetriX countdown.",
+          "reliable": true
+        },
+        {
+          "publisher": "Intercontinental Exchange",
+          "url": "https://www.ice.com/publicdocs/endex/circulars/E26004_attach_2.pdf",
+          "source_type": "official_2026_dst_timetable",
+          "published_at": "2026 DST timetable; checked 2026-10-17",
+          "freshness_role": "Independently lists Europe moving to CET on 25 October and the United States to EST on 1 November, establishing the temporary clock mismatch. It does not assert FTMO platform or account terms.",
+          "reliable": true
+        },
+        {
+          "publisher": "PropDataLab",
+          "url": "https://propdatalab.com/prop-firm-daily-reset-clock/",
+          "source_type": "independent_dated_reset_time_discovery",
+          "published_at": "2026-10-11; checked 2026-10-17",
+          "freshness_role": "Independently identifies FTMO Prague-reset timing moving for the 25-31 October clock-mismatch week; impact/discovery only, not an FTMO rule source.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/Daytrading",
+          "url": "https://www.reddit.com/r/Daytrading/comments/1x2j66p/your_ea_does_not_know_when_your_prop_firms_day_ends/",
+          "source_type": "public_recent_rule_reading_heat_only",
+          "published_at": "2026-10-10; checked 2026-10-17",
+          "freshness_role": "Provides current public wording around server clock, firm reset time and daylight-saving changes; it does not prove FTMO terms or a reader's reset time.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass_new",
+        "decision_gate": "selected_new_verified_firm_specific_dst_reset_clock_with_natural_existing_tool_path",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "reopen_trigger": "If FTMO changes the dates, platforms, reset definition or Account MetriX countdown, rebuild the source check. After 1 November, reopen only on a new dated firm-specific clock/reset change plus a public non-directional reset-time query.",
+        "rationale": "This is a dated, product-specific clock/reset issue with a readable official 1-hour-to-2-hour delta, not a generic daily-loss article. The reader verifies Account MetriX and may use existing time/risk tools to keep clocks and day boundaries separate. No market direction, contract value, trade instruction or compliance guarantee is claimed."
+      }
+    },
+    "HR-20261017-02": {
+      "sources": [
+        {
+          "publisher": "Federal Reserve Board",
+          "url": "https://www.federalreserve.gov/releases/G17/",
+          "source_type": "official_published_statistical_release",
+          "published_at": "2026-10-16; checked 2026-10-17",
+          "freshness_role": "Published the September industrial-production and capacity-utilization release on 16 October.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.boursorama.com/bourse/actualites/usa-la-production-industrielle-augmente-plus-que-prevu-en-septembre-3e1b88675db371e30ad48eb7d8a7e2ee",
+          "source_type": "independent_reliable_result_reporting",
+          "published_at": "2026-10-16; checked 2026-10-17",
+          "freshness_role": "Independently reports the published U.S. industrial-production result; used to corroborate the fact and result-day attention, not as a calculator query.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_verified_result_without_attributable_non_directional_calculator_path",
+        "duplicate_of": [
+          "HR-20261015-01",
+          "HR-20261016-02"
+        ],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "A current public English query expressly connecting the published industrial-production result to non-directional pip value, fixed risk, margin, cost, quantity or portfolio-heat arithmetic, followed by a refresh audit against an existing macro package.",
+        "rationale": "The result is timely and independently verified, but macro policy and market-direction discussion does not establish a PipGauge calculation journey. A generic post-release position-size example would be manufactured demand and duplicate existing macro risk material."
+      }
+    }
+  }
+}
