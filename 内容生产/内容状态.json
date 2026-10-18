@@ -9,12 +9,12 @@
     "refresh_target": null
   },
   "_last_scan": {
-    "scan_date": "2026-10-16",
-    "selected_count": 1,
-    "content_package_count": 1,
-    "platform_draft_count": 3,
-    "status": "review_ready",
-    "note": "One PipGauge refresh review package was generated for FTMO's October 19 HK50.cash whole-day closure. The package updates HR-20260906-01's holiday-hours exposure framework with source-time and reader-verified point-value arithmetic; all drafts remain awaiting_human_review. No post, comment, message, email or social-account action occurred."
+    "scan_date": "2026-10-18",
+    "selected_count": 0,
+    "content_package_count": 0,
+    "platform_draft_count": 0,
+    "status": "zero_output",
+    "note": "Zero-output gate held: no selected item passed freshness, dual-source, natural calculator-fit and novelty requirements together. No 2026-10-18 review package, Medium, Reddit or X draft was created; no post, comment, message, email or social-account action occurred."
   },
   "HR-20261016-01": {
     "content_status": "review_ready",

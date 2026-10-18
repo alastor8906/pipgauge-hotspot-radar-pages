@@ -1,14 +1,59 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-16T22:03:22+08:00",
+  "updated_at": "2026-10-18T22:04:28+08:00",
   "last_scan": {
-    "scan_date": "2026-10-16",
-    "selected_count": 1,
-    "playbook_ready_count": 1,
-    "content_package_count": 1,
-    "note": "One PipGauge refresh is ready: FTMO's dated October 8 update schedules HK50.cash closed on October 19. Hong Kong's official holiday notice and HFM's independent current October schedule corroborate the date and market-hours impact. The package refreshes HR-20260906-01's holiday-hours exposure framework; all three drafts remain awaiting_human_review and no social action occurred."
+    "scan_date": "2026-10-18",
+    "selected_count": 0,
+    "playbook_ready_count": 0,
+    "content_package_count": 0,
+    "note": "Zero-output gate held. FTMO Instant has a strong existing rule-to-calculation path, but its October 12 launch is outside the default 72-hour event window and no public timestamp safely demonstrates a current attributable calculator-query window. China’s October 19 national-economy release is imminent but remains direction-led rather than a non-directional calculation journey. The October 17 FTMO DST package has no second refresh delta. No playbook, content package, platform draft or social action was created."
   },
   "items": {
+    "HR-20261017-01": {
+      "playbook_status": "ready",
+      "execution_mode": "new",
+      "urgency": "high",
+      "publish_deadline": "2026-10-24T18:00:00+08:00",
+      "traffic_hook": "FTMO's dated 15 October CFD Trading Update says that, for 26 October through 1 November, Max Daily Loss is still monitored on Prague time and resets at Prague midnight, but the gap between Prague midnight and MetaTrader midnight becomes two hours rather than the usual one. The immediate reader task is to verify the current Account MetriX reset countdown and reconcile a day-level loss boundary with the correct clock—not to predict a market or advise a trade.",
+      "traffic_window": "Use the dated announcement and rule-check framing from 17 October through 24 October, then recheck it against FTMO's live update on 25 October before publishing any in-window wording. Retire this pre-change hook after 1 November, immediately on any change to FTMO's stated dates, affected platform, reset definition or timezone, or if the reader cannot verify their own Account MetriX countdown.",
+      "search_intents": [
+        "FTMO daily loss reset time October 2026",
+        "FTMO Prague midnight MetaTrader offset October 26",
+        "FTMO maximum daily loss daylight saving reset",
+        "FTMO Account MetriX reset countdown DST",
+        "prop firm daily loss reset time daylight saving"
+      ],
+      "traffic_angle": "Lead with the verified one-week DST mismatch, not a generic prop-firm risk lecture. Answer the single number readers need to recognize: FTMO says the Prague-midnight versus MetaTrader-midnight difference is two hours from 26 October to 1 November, instead of the usual one hour. Use that 1-hour-to-2-hour change to explain why local midnight, server midnight and a day-loss reset must not be assumed to coincide; the reader checks Account MetriX's live countdown before relying on any date boundary. Do not estimate a breach, tell a reader to hold/close/open, or claim a clock shift changes market liquidity or results.",
+      "calculator_bridge": "After the dated FTMO notice and a reader's own Account MetriX countdown are checked, PipGauge Forex Session Clock can make the Prague/platform/local-time comparison explicit, while PipGauge Daily Loss Limit can keep a reader-entered day boundary distinct from position sizing. Position Size is only a separate planned-risk check after the reader has independently confirmed current balance, open P&L, commissions, program and contract inputs. None of these tools determines FTMO's reset, validates eligibility, converts an unverified server time into a rule, or guarantees that a limit will not be breached.",
+      "example_scenario": "Teaching only: FTMO's dated notice says the Prague-midnight versus MetaTrader-midnight offset is normally 1 hour and becomes 2 hours during 26 October-1 November. The usable calculation is not a USD loss estimate: record the live Account MetriX countdown, compare it with the displayed platform clock and local clock, and treat any one-hour mismatch as a prompt to recheck the official countdown. The two numbers are official timing context, not a universal broker offset, local reset time, trade signal or rule for another FTMO product.",
+      "distribution_order": [
+        "new PipGauge dated reset-time verification explainer",
+        "Medium fact-and-method note after human verification of the live FTMO update",
+        "X self-contained one-hour-versus-two-hour reset-check thread",
+        "Reddit native clock-verification discussion without a first-round link"
+      ],
+      "link_placement": "Lead with the date range, Prague/MetaTrader distinction, Account MetriX countdown check and 1-hour-to-2-hour numerical change. Only after that useful method may Medium place one natural PipGauge verification link. Initial Reddit copy contains no link, UTM, affiliate text or product pitch; the X thread must remain complete without a click.",
+      "expiry_condition": "Stop using the pre-change headline after 1 November, if FTMO corrects the dates or reset wording, if the reader's product/platform does not show the cited timing, or if Account MetriX's live countdown conflicts with the draft. Do not reuse the DST numbers as generic prop-firm terms or as evidence about fills, volatility, spreads, execution quality or account outcomes.",
+      "editorial_boundary": "Do not predict FX, CFD, index, equity or any market direction; tell readers to trade, pause, hold, close, size or buy an account; rank firms; infer terms for another FTMO product or another firm; claim a local reset time without the reader's live Account MetriX check; or treat the 1-hour/2-hour offset as a dollar-loss calculation. FTMO's current applicable terms and the reader's own account display are authoritative.",
+      "refresh_target": null,
+      "refresh_signals": {
+        "fact_delta": true,
+        "search_delta": true,
+        "example_delta": true,
+        "window_delta": true
+      },
+      "refresh_updates": [],
+      "content_mainline": "Create one dated reset-time verification explainer, distinct from the September FTMO Futures daily-loss-headroom package and the October FTMO 1-Step consistency packages. Its only job is to use the current Europe/US DST mismatch to teach a reader to verify the Account MetriX reset countdown before treating a day-loss boundary as active; it must not become a prop-firm comparison, a trading recommendation or a generic daily-loss article.",
+      "body_material": [
+        "FTMO 15 October 2026 CFD Trading Update: Europe DST on October 25; affected October 26-November 1 window; Prague/MetaTrader midnight offset changes from one hour to two; Max Daily Loss monitored on Prague time and daily drawdown reset at midnight",
+        "ICE 2026 DST timetable: Europe changes October 25 and the United States November 1, creating the one-week clock mismatch",
+        "PropDataLab 11 October reset-clock explanation as independent current discovery context",
+        "public October 10 prop-firm server-clock discussion as wording/heat only, never as an FTMO rule source",
+        "the reader's live Account MetriX countdown is the final account-specific verification point"
+      ],
+      "product_bridge": "PipGauge makes the verified clocks and a reader-entered day-loss boundary easier to separate; it does not establish FTMO's reset time, calculate eligibility, supply an account balance, make a trading decision or guarantee compliance.",
+      "product_bridge_type": "existing"
+    },
     "HR-20261016-01": {
       "playbook_status": "ready",
       "execution_mode": "refresh",
