@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-17T22:02:21+08:00",
+  "updated_at": "2026-10-18T22:04:28+08:00",
   "last_scan": {
-    "scan_date": "2026-10-17",
-    "selected_count": 1,
-    "playbook_ready_count": 1,
-    "content_package_count": 1,
-    "note": "One PipGauge new item is ready: FTMO's dated October 15 update says the October 26-November 1 Europe/US DST mismatch makes Prague midnight and MetaTrader midnight two hours apart rather than the usual one. ICE's 2026 DST timetable and PropDataLab independently corroborate the clock-gap/reset-check context. The package tells readers to verify Account MetriX's countdown and separate their daily-loss boundary from an assumed local or platform midnight; all three drafts remain awaiting_human_review and no social action occurred."
+    "scan_date": "2026-10-18",
+    "selected_count": 0,
+    "playbook_ready_count": 0,
+    "content_package_count": 0,
+    "note": "Zero-output gate held. FTMO Instant has a strong existing rule-to-calculation path, but its October 12 launch is outside the default 72-hour event window and no public timestamp safely demonstrates a current attributable calculator-query window. China’s October 19 national-economy release is imminent but remains direction-led rather than a non-directional calculation journey. The October 17 FTMO DST package has no second refresh delta. No playbook, content package, platform draft or social action was created."
   },
   "items": {
     "HR-20261017-01": {
