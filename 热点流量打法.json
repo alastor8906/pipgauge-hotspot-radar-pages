@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-18T22:04:28+08:00",
+  "updated_at": "2026-10-19T22:02:42+08:00",
   "last_scan": {
-    "scan_date": "2026-10-18",
+    "scan_date": "2026-10-19",
     "selected_count": 0,
     "playbook_ready_count": 0,
     "content_package_count": 0,
-    "note": "Zero-output gate held. FTMO Instant has a strong existing rule-to-calculation path, but its October 12 launch is outside the default 72-hour event window and no public timestamp safely demonstrates a current attributable calculator-query window. China’s October 19 national-economy release is imminent but remains direction-led rather than a non-directional calculation journey. The October 17 FTMO DST package has no second refresh delta. No playbook, content package, platform draft or social action was created."
+    "note": "Zero-output gate held. China's October 19 Q3 GDP result has NBS, AP and Reuters fact confirmation plus public attention, but the attributable discussion remains growth/policy/direction-led rather than a non-directional calculator journey. Bank Indonesia's October 20-21 meeting is timely but has no verified USD/IDR calculation demand. The October 17 FTMO DST package has no second refresh delta. No playbook, content package, platform draft or social action was created."
   },
   "items": {
     "HR-20261017-01": {
