@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-19T22:02:42+08:00",
+  "updated_at": "2026-10-20T22:06:41+08:00",
   "last_scan": {
-    "scan_date": "2026-10-19",
+    "scan_date": "2026-10-20",
     "selected_count": 0,
     "playbook_ready_count": 0,
     "content_package_count": 0,
-    "note": "Zero-output gate held. China's October 19 Q3 GDP result has NBS, AP and Reuters fact confirmation plus public attention, but the attributable discussion remains growth/policy/direction-led rather than a non-directional calculator journey. Bank Indonesia's October 20-21 meeting is timely but has no verified USD/IDR calculation demand. The October 17 FTMO DST package has no second refresh delta. No playbook, content package, platform draft or social action was created."
+    "note": "Zero-output gate held. Bank Indonesia's October 20-21 meeting is live but has no verified public English USD/IDR calculation journey. FTMO's October 15 Europe DST trading-hours and reset-time facts remain owned by HR-20261017-01 and have no second refresh delta. BLS's October 20 state-employment release has no natural non-directional calculator demand. No playbook, content package, platform draft or social action was created."
   },
   "items": {
     "HR-20261017-01": {

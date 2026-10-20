@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-10-19T22:03:35+08:00",
-  "latest_scan_date": "2026-10-19",
+  "generated_at": "2026-10-20T22:13:30+08:00",
+  "latest_scan_date": "2026-10-20",
   "available_dates": [
+    "2026-10-20",
     "2026-10-19",
     "2026-10-18",
     "2026-10-17",
@@ -91,8 +92,235 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-10-20",
+      "generated_at": "2026-10-20T22:13:30+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 86,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 0,
+        "observation": 3,
+        "discarded": 0,
+        "total": 3,
+        "selected_average": 0,
+        "all_selected_pass_gate": true,
+        "content_ready": 0,
+        "playbook_ready": 0
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-10-20",
+          "candidate_id": "HR-20261020-02",
+          "status": "observation",
+          "topic": "FTMO Europe DST Trading-Hours Shift Is an Existing Package Without a Second Refresh Delta",
+          "primary_site": "PipGauge",
+          "freshness": 24,
+          "traffic_potential": 22,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 7,
+          "total_score": 93,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Forex Session Clock",
+            "Daily Loss Limit",
+            "Position Size"
+          ],
+          "reason": "FTMO's October 15 update and an independent October 16 rule-reading summary still describe the October 26-November 1 European-instrument schedule and Prague/MetaTrader mismatch. HR-20261017-01 already owns the same dated update, clock verification sequence and window; no new official term, public query, replacement example or second window was verified on October 20.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "FTMO",
+                "url": "https://ftmo.com/en/blog/trading-updates/trading-update-15-oct-2026/",
+                "source_type": "official_dated_product_and_schedule_update",
+                "published_at": "2026-10-15",
+                "freshness_role": "Official source for the 26 October-1 November European-instrument trade-hours shift, Prague/MetaTrader 1-hour-to-2-hour offset and Account MetriX reset-countdown instruction.",
+                "reliable": true
+              },
+              {
+                "publisher": "GTR",
+                "url": "https://note.com/grace_revolution/n/ne8282385f5d2?hl=en",
+                "source_type": "independent_public_rule_reading_context",
+                "published_at": "2026-10-16",
+                "freshness_role": "Independent public summary frames the DST reset-clock verification issue; it does not replace FTMO terms or establish a new fact, query, example or window.",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_existing_package_without_second_refresh_delta",
+              "duplicate_of": [
+                "HR-20261017-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": false
+              },
+              "reopen_trigger": "Reopen only if a new official revision, an attributable current public query with a distinct calculation object, a verifiable replacement example or a separate dated window yields at least two refresh signals; otherwise retain the existing package without extending it.",
+              "rationale": "The active facts are strong, but no second refresh signal exists after HR-20261017-01. Splitting one FTMO update into a separate index-hours article would create duplicate, same-shape content."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-10-20",
+          "candidate_id": "HR-20261020-01",
+          "status": "observation",
+          "topic": "Bank Indonesia October 20-21 Meeting Is Live but Still Has No Verified USD/IDR Calculator Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 16,
+          "calculator_fit": 19,
+          "evidence_quality": 15,
+          "actionability": 4,
+          "total_score": 79,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Margin",
+            "Currency Converter"
+          ],
+          "reason": "Bank Indonesia's official calendar and J Trust Bank's October 19 public update confirm the live meeting and October 21 decision window. No current, attributable public English query ties this event to non-directional USD/IDR fixed-risk, pip-value, margin, cost or quantity arithmetic; do not turn a rate calendar into manufactured calculator demand.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Bank Indonesia",
+                "url": "https://www.bi.go.id/en/publikasi/Kalender/Default.aspx",
+                "source_type": "official_dated_meeting_calendar",
+                "published_at": "2026 calendar; checked 2026-10-20",
+                "freshness_role": "Official calendar identifies the live 20-21 October Board of Governors meeting, with a decision window on 21 October.",
+                "reliable": true
+              },
+              {
+                "publisher": "J Trust Bank",
+                "url": "https://www.jtrustbank.co.id/id/market_update/market-update-19-oct-2026",
+                "source_type": "independent_public_market_calendar_context",
+                "published_at": "2026-10-19",
+                "freshness_role": "Independent current public market update confirms the 20-21 October meeting and identifies 21 October as the result date; it does not establish the result or retail trading terms.",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_live_rate_meeting_without_verified_usdidr_calculation_demand",
+              "duplicate_of": [
+                "HR-20261019-02"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "After the decision, obtain an official result plus an independent reliable result source and a current public English fixed-risk, pip-value, margin, cost or quantity query specific to the event; first audit whether an existing rate-decision explainer should refresh.",
+              "rationale": "The event is now live, but the sole change versus the prior scan is its time state. No attributable non-directional calculator question was verified, so a USD/IDR example would manufacture demand."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-10-20",
+          "candidate_id": "HR-20261020-03",
+          "status": "observation",
+          "topic": "U.S. September State Employment Release Is Fresh but Not a Search-to-Calculator Topic",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 10,
+          "calculator_fit": 10,
+          "evidence_quality": 15,
+          "actionability": 3,
+          "total_score": 63,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Margin",
+            "P&L"
+          ],
+          "reason": "BLS released September state employment data on October 20. The event is fresh, but no independent current public English evidence establishes a non-directional calculation demand; a generic FX or index sizing table would manufacture a traffic path.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/schedule/2026/home.htm",
+                "source_type": "official_dated_release_schedule",
+                "published_at": "2026-10-20 10:00 Eastern Time",
+                "freshness_role": "Official schedule identifies the September State Employment and Unemployment release on the scan date.",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_fresh_macro_release_without_independent_or_calculator_demand_evidence",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Obtain an independent reliable result source and a current publicly verifiable English query expressly linking this result to non-directional pip value, fixed risk, margin, cost, quantity or portfolio-heat arithmetic, then audit any existing macro content for refresh.",
+              "rationale": "Freshness alone cannot establish a search-to-calculator journey. No independent public demand signal was retained and a generic sizing table would fabricate relevance."
+            }
+          }
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-10-20T22:06:41+08:00",
+          "source_count": 3,
+          "note": "覆盖 Bank Indonesia 10 月 20-21 日 Board of Governors meeting calendar、FTMO 10 月 15 日 Europe DST / trading-hours update，以及 BLS 10 月 20 日 state-employment release schedule。"
+        },
+        {
+          "channel": "独立可靠英文来源",
+          "status": "complete",
+          "checked_at": "2026-10-20T22:06:41+08:00",
+          "source_count": 2,
+          "note": "J Trust Bank 的 10 月 19 日公开市场更新交叉 Bank Indonesia meeting/result window；GTR 的 10 月 16 日公开 rule-reading summary 交叉 FTMO DST 话题的外部注意力。两者均不替代各自官方规则或统计事实。"
+        },
+        {
+          "channel": "Reddit / ForexFactory / BabyPips",
+          "status": "partial",
+          "checked_at": "2026-10-20T22:06:41+08:00",
+          "source_count": 0,
+          "note": "复核公开可访问索引；未保存同时满足当前性和自然 PipGauge/PositionMath calculator bridge 的 Bank Indonesia、FTMO DST 或 BLS state-employment 讨论。"
+        },
+        {
+          "channel": "X / Quora",
+          "status": "limited",
+          "checked_at": "2026-10-20T22:06:41+08:00",
+          "source_count": 0,
+          "note": "无稳定可核验、同时满足当前性和自然计算器桥接的公开信号；登录墙、动态流、截图、预测和不可验证材料未计入。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-10-20_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-10-20_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json"
+      }
+    },
+    {
       "scan_date": "2026-10-19",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 85,
@@ -308,7 +536,7 @@
     },
     {
       "scan_date": "2026-10-18",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 84,
@@ -522,7 +750,7 @@
     },
     {
       "scan_date": "2026-10-17",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 83,
@@ -790,7 +1018,7 @@
     },
     {
       "scan_date": "2026-10-16",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 82,
@@ -1096,7 +1324,7 @@
     },
     {
       "scan_date": "2026-10-15",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 81,
@@ -1307,7 +1535,7 @@
     },
     {
       "scan_date": "2026-10-14",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 80,
@@ -1590,7 +1818,7 @@
     },
     {
       "scan_date": "2026-10-13",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 79,
@@ -1806,7 +2034,7 @@
     },
     {
       "scan_date": "2026-10-12",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 78,
@@ -2078,7 +2306,7 @@
     },
     {
       "scan_date": "2026-10-11",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 77,
@@ -2339,7 +2567,7 @@
     },
     {
       "scan_date": "2026-10-10",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 76,
@@ -2596,7 +2824,7 @@
     },
     {
       "scan_date": "2026-10-09",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 75,
@@ -2807,7 +3035,7 @@
     },
     {
       "scan_date": "2026-10-08",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 74,
@@ -2994,7 +3222,7 @@
     },
     {
       "scan_date": "2026-10-07",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 73,
@@ -3158,7 +3386,7 @@
     },
     {
       "scan_date": "2026-10-06",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 72,
@@ -3321,7 +3549,7 @@
     },
     {
       "scan_date": "2026-10-05",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 71,
@@ -3588,7 +3816,7 @@
     },
     {
       "scan_date": "2026-10-04",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 70,
@@ -3814,7 +4042,7 @@
     },
     {
       "scan_date": "2026-10-03",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 69,
@@ -4037,7 +4265,7 @@
     },
     {
       "scan_date": "2026-10-02",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 68,
@@ -4320,7 +4548,7 @@
     },
     {
       "scan_date": "2026-10-01",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 67,
@@ -4599,7 +4827,7 @@
     },
     {
       "scan_date": "2026-09-30",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 66,
@@ -5009,7 +5237,7 @@
     },
     {
       "scan_date": "2026-09-29",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 65,
@@ -5333,7 +5561,7 @@
     },
     {
       "scan_date": "2026-09-28",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 64,
@@ -5618,7 +5846,7 @@
     },
     {
       "scan_date": "2026-09-27",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 63,
@@ -5968,7 +6196,7 @@
     },
     {
       "scan_date": "2026-09-26",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 62,
@@ -6177,7 +6405,7 @@
     },
     {
       "scan_date": "2026-09-25",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 61,
@@ -6457,7 +6685,7 @@
     },
     {
       "scan_date": "2026-09-24",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 60,
@@ -6737,7 +6965,7 @@
     },
     {
       "scan_date": "2026-09-23",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 59,
@@ -6975,7 +7203,7 @@
     },
     {
       "scan_date": "2026-09-22",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 58,
@@ -7264,7 +7492,7 @@
     },
     {
       "scan_date": "2026-09-21",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 57,
@@ -7486,7 +7714,7 @@
     },
     {
       "scan_date": "2026-09-20",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 56,
@@ -7771,7 +7999,7 @@
     },
     {
       "scan_date": "2026-09-19",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 55,
@@ -8046,7 +8274,7 @@
     },
     {
       "scan_date": "2026-09-18",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 54,
@@ -8328,7 +8556,7 @@
     },
     {
       "scan_date": "2026-09-17",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 53,
@@ -8673,7 +8901,7 @@
     },
     {
       "scan_date": "2026-09-16",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 52,
@@ -8963,7 +9191,7 @@
     },
     {
       "scan_date": "2026-09-15",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 51,
@@ -9177,7 +9405,7 @@
     },
     {
       "scan_date": "2026-09-14",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 50,
@@ -9381,7 +9609,7 @@
     },
     {
       "scan_date": "2026-09-13",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 49,
@@ -9586,7 +9814,7 @@
     },
     {
       "scan_date": "2026-09-12",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 48,
@@ -9772,7 +10000,7 @@
     },
     {
       "scan_date": "2026-09-11",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 47,
@@ -9989,7 +10217,7 @@
     },
     {
       "scan_date": "2026-09-10",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 46,
@@ -10275,7 +10503,7 @@
     },
     {
       "scan_date": "2026-09-09",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 45,
@@ -10555,7 +10783,7 @@
     },
     {
       "scan_date": "2026-09-08",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 44,
@@ -10884,7 +11112,7 @@
     },
     {
       "scan_date": "2026-09-07",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 43,
@@ -11186,7 +11414,7 @@
     },
     {
       "scan_date": "2026-09-06",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 42,
@@ -11502,7 +11730,7 @@
     },
     {
       "scan_date": "2026-09-05",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 41,
@@ -11824,7 +12052,7 @@
     },
     {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -12137,7 +12365,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -12448,7 +12676,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -12779,7 +13007,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -13117,7 +13345,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -13510,7 +13738,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -13920,7 +14148,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -14392,7 +14620,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -14737,7 +14965,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -15082,7 +15310,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -15534,7 +15762,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -15947,7 +16175,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -16179,7 +16407,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -16624,7 +16852,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -16999,7 +17227,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -17391,7 +17619,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -17767,7 +17995,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -18091,7 +18319,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -18474,7 +18702,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -18815,7 +19043,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -19190,7 +19418,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -19578,7 +19806,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -19923,7 +20151,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -20251,7 +20479,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -20563,7 +20791,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -20884,7 +21112,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -21245,7 +21473,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -21598,7 +21826,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -22042,7 +22270,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -22551,7 +22779,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -23021,7 +23249,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -23564,7 +23792,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -23836,7 +24064,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -24149,7 +24377,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -24584,7 +24812,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -25098,7 +25326,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -25607,7 +25835,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -26075,7 +26303,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -26489,7 +26717,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -26888,7 +27116,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-10-19T22:03:35+08:00",
+      "generated_at": "2026-10-20T22:13:30+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -27327,10 +27555,10 @@
       }
     }
   ],
-  "scan_date": "2026-10-19",
+  "scan_date": "2026-10-20",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 85,
+    "day": 86,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -27339,8 +27567,8 @@
   },
   "stats": {
     "selected": 0,
-    "observation": 2,
-    "discarded": 1,
+    "observation": 3,
+    "discarded": 0,
     "total": 3,
     "selected_average": 0,
     "all_selected_pass_gate": true,
@@ -27349,112 +27577,73 @@
   },
   "candidates": [
     {
-      "scan_date": "2026-10-19",
-      "candidate_id": "HR-20261019-03",
-      "status": "discarded",
-      "topic": "FTMO Europe DST Reset Clock Remains an Existing Package Without a New Refresh Delta",
+      "scan_date": "2026-10-20",
+      "candidate_id": "HR-20261020-02",
+      "status": "observation",
+      "topic": "FTMO Europe DST Trading-Hours Shift Is an Existing Package Without a Second Refresh Delta",
       "primary_site": "PipGauge",
-      "freshness": 22,
-      "traffic_potential": 20,
+      "freshness": 24,
+      "traffic_potential": 22,
       "calculator_fit": 25,
       "evidence_quality": 15,
       "actionability": 7,
-      "total_score": 89,
+      "total_score": 93,
       "hard_gate": false,
-      "reliable_sources": 3,
-      "fresh_signal": false,
-      "calculator_mapping": [
-        "Forex Session Clock",
-        "Daily Loss Limit"
-      ],
-      "reason": "HR-20261017-01 already owns FTMO's October 26-November 1 Prague/MetaTrader 1-hour-to-2-hour change, Account MetriX countdown check and traffic window. The October 19 scan found no new dated official fact, query, replacement example or window delta; a second package would duplicate active content."
-    },
-    {
-      "scan_date": "2026-10-19",
-      "candidate_id": "HR-20261019-01",
-      "status": "observation",
-      "topic": "China Q3 GDP Result Has Verified Attention but No Attributable Non-Directional Calculator Journey",
-      "primary_site": "PipGauge",
-      "freshness": 25,
-      "traffic_potential": 22,
-      "calculator_fit": 14,
-      "evidence_quality": 15,
-      "actionability": 4,
-      "total_score": 80,
-      "hard_gate": false,
-      "reliable_sources": 3,
+      "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
-        "Pip Value",
-        "Position Size",
-        "Margin",
-        "P&L",
-        "Currency Converter"
+        "Forex Session Clock",
+        "Daily Loss Limit",
+        "Position Size"
       ],
-      "reason": "NBS published Q3 GDP at 4.5% year on year and first-three-quarter GDP at 4.6%; AP and Reuters independently covered the result and current Reddit confirms attention. Retained public English discussion is growth/policy/stimulus and market-direction led, not an event-specific request for non-directional pip value, fixed risk, margin, cost, quantity or portfolio heat arithmetic. A generic CNH/FX risk table would manufacture demand and duplicate macro templates.",
+      "reason": "FTMO's October 15 update and an independent October 16 rule-reading summary still describe the October 26-November 1 European-instrument schedule and Prague/MetaTrader mismatch. HR-20261017-01 already owns the same dated update, clock verification sequence and window; no new official term, public query, replacement example or second window was verified on October 20.",
       "scan_audit": {
         "sources": [
           {
-            "publisher": "National Bureau of Statistics of China",
-            "url": "https://www.stats.gov.cn/english/PressRelease/202610/t20261019_1965619.html",
-            "source_type": "official_dated_economic_release",
-            "published_at": "2026-10-19 10:00 China Standard Time",
-            "freshness_role": "Primary official result: Q3 GDP 4.5% year on year and first-three-quarter GDP 4.6% year on year; also reports September activity data.",
+            "publisher": "FTMO",
+            "url": "https://ftmo.com/en/blog/trading-updates/trading-update-15-oct-2026/",
+            "source_type": "official_dated_product_and_schedule_update",
+            "published_at": "2026-10-15",
+            "freshness_role": "Official source for the 26 October-1 November European-instrument trade-hours shift, Prague/MetaTrader 1-hour-to-2-hour offset and Account MetriX reset-countdown instruction.",
             "reliable": true
           },
           {
-            "publisher": "Associated Press",
-            "url": "https://apnews.com/article/71354a055a412ef13e4e2edad070b4a5",
-            "source_type": "independent_reliable_english_result_coverage",
-            "published_at": "2026-10-19",
-            "freshness_role": "Independent same-day report on Q3 GDP 4.5% and the growth-policy context.",
+            "publisher": "GTR",
+            "url": "https://note.com/grace_revolution/n/ne8282385f5d2?hl=en",
+            "source_type": "independent_public_rule_reading_context",
+            "published_at": "2026-10-16",
+            "freshness_role": "Independent public summary frames the DST reset-clock verification issue; it does not replace FTMO terms or establish a new fact, query, example or window.",
             "reliable": true
-          },
-          {
-            "publisher": "Reuters",
-            "url": "https://in.marketscreener.com/news/china-s-economic-growth-accelerates-to-4-5-in-third-quarter-ce785cdad181fe21",
-            "source_type": "independent_reliable_english_result_coverage_republished",
-            "published_at": "2026-10-19",
-            "freshness_role": "Reuters same-day result coverage, accessed through a MarketScreener republication; cross-checks 4.5% actual, 4.4% poll forecast and 4.3% Q2 comparison.",
-            "reliable": true
-          },
-          {
-            "publisher": "Reddit r/Economics",
-            "url": "https://www.reddit.com/r/Economics/comments/1x9q2j9/chinas_economy_grows_45_percent_in_third_quarter/",
-            "source_type": "public_current_heat_only",
-            "published_at": "2026-10-19",
-            "freshness_role": "Current attention signal; discussion is direction, growth and policy-led rather than a non-directional calculation request.",
-            "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_result_with_verified_attention_but_no_attributable_non_directional_calculator_journey",
+          "decision_gate": "observation_existing_package_without_second_refresh_delta",
           "duplicate_of": [
-            "HR-20261018-02"
+            "HR-20261017-01"
           ],
           "refresh_signals": {
-            "fact_delta": true,
+            "fact_delta": false,
             "search_delta": false,
             "example_delta": false,
-            "window_delta": true
+            "window_delta": false
           },
-          "reopen_trigger": "A current publicly verifiable English query expressly connecting this dated result to non-directional pip value, fixed risk, margin, cost, quantity or portfolio-heat arithmetic, then a refresh audit against existing macro content.",
-          "rationale": "The result, recentness and independent fact sources are strong, but discussion interest does not establish a natural calculator task. A generic FX/CNH sizing example would manufacture demand and duplicate macro-risk templates."
+          "reopen_trigger": "Reopen only if a new official revision, an attributable current public query with a distinct calculation object, a verifiable replacement example or a separate dated window yields at least two refresh signals; otherwise retain the existing package without extending it.",
+          "rationale": "The active facts are strong, but no second refresh signal exists after HR-20261017-01. Splitting one FTMO update into a separate index-hours article would create duplicate, same-shape content."
         }
       }
     },
     {
-      "scan_date": "2026-10-19",
-      "candidate_id": "HR-20261019-02",
+      "scan_date": "2026-10-20",
+      "candidate_id": "HR-20261020-01",
       "status": "observation",
-      "topic": "Bank Indonesia October 20-21 Meeting Is Timely but Has No Verified USDIDR Calculation Demand",
+      "topic": "Bank Indonesia October 20-21 Meeting Is Live but Still Has No Verified USD/IDR Calculator Journey",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 15,
+      "traffic_potential": 16,
       "calculator_fit": 19,
       "evidence_quality": 15,
-      "actionability": 5,
+      "actionability": 4,
       "total_score": 79,
       "hard_gate": false,
       "reliable_sources": 2,
@@ -27465,15 +27654,15 @@
         "Margin",
         "Currency Converter"
       ],
-      "reason": "Bank Indonesia's official calendar and a current independent public market update confirm the October 20-21 meeting/result window. PipGauge can support reader-entered USD/IDR math, but no attributable current public English event-specific fixed-risk, pip-value, margin, cost or quantity query was verified; do not turn a rate calendar into fabricated calculator demand.",
+      "reason": "Bank Indonesia's official calendar and J Trust Bank's October 19 public update confirm the live meeting and October 21 decision window. No current, attributable public English query ties this event to non-directional USD/IDR fixed-risk, pip-value, margin, cost or quantity arithmetic; do not turn a rate calendar into manufactured calculator demand.",
       "scan_audit": {
         "sources": [
           {
             "publisher": "Bank Indonesia",
             "url": "https://www.bi.go.id/en/publikasi/Kalender/Default.aspx",
             "source_type": "official_dated_meeting_calendar",
-            "published_at": "2026 calendar; checked 2026-10-19",
-            "freshness_role": "Official calendar identifies the 20-21 October Board of Governors meeting, inside the seven-day forward window.",
+            "published_at": "2026 calendar; checked 2026-10-20",
+            "freshness_role": "Official calendar identifies the live 20-21 October Board of Governors meeting, with a decision window on 21 October.",
             "reliable": true
           },
           {
@@ -27481,13 +27670,63 @@
             "url": "https://www.jtrustbank.co.id/id/market_update/market-update-19-oct-2026",
             "source_type": "independent_public_market_calendar_context",
             "published_at": "2026-10-19",
-            "freshness_role": "Independent current public market update states that the BI meeting runs 20-21 October and its result is due 21 October; it does not establish any result or official rule.",
+            "freshness_role": "Independent current public market update confirms the 20-21 October meeting and identifies 21 October as the result date; it does not establish the result or retail trading terms.",
             "reliable": true
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_imminent_rate_meeting_without_verified_usdidr_calculation_demand",
+          "decision_gate": "observation_live_rate_meeting_without_verified_usdidr_calculation_demand",
+          "duplicate_of": [
+            "HR-20261019-02"
+          ],
+          "refresh_signals": {
+            "fact_delta": false,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": true
+          },
+          "reopen_trigger": "After the decision, obtain an official result plus an independent reliable result source and a current public English fixed-risk, pip-value, margin, cost or quantity query specific to the event; first audit whether an existing rate-decision explainer should refresh.",
+          "rationale": "The event is now live, but the sole change versus the prior scan is its time state. No attributable non-directional calculator question was verified, so a USD/IDR example would manufacture demand."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-10-20",
+      "candidate_id": "HR-20261020-03",
+      "status": "observation",
+      "topic": "U.S. September State Employment Release Is Fresh but Not a Search-to-Calculator Topic",
+      "primary_site": "PipGauge",
+      "freshness": 25,
+      "traffic_potential": 10,
+      "calculator_fit": 10,
+      "evidence_quality": 15,
+      "actionability": 3,
+      "total_score": 63,
+      "hard_gate": false,
+      "reliable_sources": 1,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Pip Value",
+        "Position Size",
+        "Margin",
+        "P&L"
+      ],
+      "reason": "BLS released September state employment data on October 20. The event is fresh, but no independent current public English evidence establishes a non-directional calculation demand; a generic FX or index sizing table would manufacture a traffic path.",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "U.S. Bureau of Labor Statistics",
+            "url": "https://www.bls.gov/schedule/2026/home.htm",
+            "source_type": "official_dated_release_schedule",
+            "published_at": "2026-10-20 10:00 Eastern Time",
+            "freshness_role": "Official schedule identifies the September State Employment and Unemployment release on the scan date.",
+            "reliable": true
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "observation_fresh_macro_release_without_independent_or_calculator_demand_evidence",
           "duplicate_of": [],
           "refresh_signals": {
             "fact_delta": true,
@@ -27495,8 +27734,8 @@
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "After the decision, obtain an official result plus an independent reliable result source and a current public English fixed-risk, pip-value, margin, cost or quantity query specific to the event; first audit whether an existing rate-decision explainer should refresh.",
-          "rationale": "The calendar is timely and USD/IDR tools exist, but no verified evidence shows that readers are currently seeking this event's non-directional calculator workflow."
+          "reopen_trigger": "Obtain an independent reliable result source and a current publicly verifiable English query expressly linking this result to non-directional pip value, fixed risk, margin, cost, quantity or portfolio-heat arithmetic, then audit any existing macro content for refresh.",
+          "rationale": "Freshness alone cannot establish a search-to-calculator journey. No independent public demand signal was retained and a generic sizing table would fabricate relevance."
         }
       }
     }
@@ -27505,46 +27744,46 @@
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-10-19T22:02:42+08:00",
+      "checked_at": "2026-10-20T22:06:41+08:00",
       "source_count": 3,
-      "note": "覆盖 NBS 10 月 19 日 national-economy result、Bank Indonesia 10 月 20–21 日 Board of Governors meeting calendar，以及已入选 FTMO 10 月 15 日 DST update 的无新增 delta 复核。"
+      "note": "覆盖 Bank Indonesia 10 月 20-21 日 Board of Governors meeting calendar、FTMO 10 月 15 日 Europe DST / trading-hours update，以及 BLS 10 月 20 日 state-employment release schedule。"
     },
     {
       "channel": "独立可靠英文来源",
       "status": "complete",
-      "checked_at": "2026-10-19T22:02:42+08:00",
-      "source_count": 4,
-      "note": "AP 与 Reuters（MarketScreener 转载）独立交叉 NBS 的 Q3 GDP result；J Trust Bank 的公开市场更新交叉 BI meeting/result window。未把转载媒体或银行市场更新当作官方利率/统计定义来源。"
+      "checked_at": "2026-10-20T22:06:41+08:00",
+      "source_count": 2,
+      "note": "J Trust Bank 的 10 月 19 日公开市场更新交叉 Bank Indonesia meeting/result window；GTR 的 10 月 16 日公开 rule-reading summary 交叉 FTMO DST 话题的外部注意力。两者均不替代各自官方规则或统计事实。"
     },
     {
       "channel": "Reddit / ForexFactory / BabyPips",
       "status": "partial",
-      "checked_at": "2026-10-19T22:02:42+08:00",
-      "source_count": 1,
-      "note": "保存当日 China GDP 公开 Reddit attention 作热度/措辞信号；内容是增长、刺激和价格方向，未出现事件专属非方向性 calculator query。未保存 BI meeting 的合格 calculator-demand signal。"
+      "checked_at": "2026-10-20T22:06:41+08:00",
+      "source_count": 0,
+      "note": "复核公开可访问索引；未保存同时满足当前性和自然 PipGauge/PositionMath calculator bridge 的 Bank Indonesia、FTMO DST 或 BLS state-employment 讨论。"
     },
     {
       "channel": "X / Quora",
       "status": "limited",
-      "checked_at": "2026-10-19T22:02:42+08:00",
+      "checked_at": "2026-10-20T22:06:41+08:00",
       "source_count": 0,
-      "note": "无稳定可核验、同时满足当前性和自然 PipGauge/PositionMath bridge 的公开信号；登录墙、动态流、截图、预测和不可验证材料未计入。"
+      "note": "无稳定可核验、同时满足当前性和自然计算器桥接的公开信号；登录墙、动态流、截图、预测和不可验证材料未计入。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-10-19_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-10-19_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-10-20_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-10-20_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
     "traffic_playbooks": "../热点流量打法.json"
   },
-  "radar_model": "v2-content-first",
+  "radar_model": "v3-calculator-bridge",
   "editorial_policy": {
-    "content_share": "80-90%",
-    "product_share": "10-20%",
-    "product_bridge_optional": true,
+    "calculator_bridge_required": true,
+    "primary_site": "PipGauge",
+    "secondary_site": "PositionMath",
     "supported_platforms": [
       "medium",
       "reddit",

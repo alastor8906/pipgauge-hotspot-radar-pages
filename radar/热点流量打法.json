@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-18T22:04:28+08:00",
+  "updated_at": "2026-10-20T22:06:41+08:00",
   "last_scan": {
-    "scan_date": "2026-10-18",
+    "scan_date": "2026-10-20",
     "selected_count": 0,
     "playbook_ready_count": 0,
     "content_package_count": 0,
-    "note": "Zero-output gate held. FTMO Instant has a strong existing rule-to-calculation path, but its October 12 launch is outside the default 72-hour event window and no public timestamp safely demonstrates a current attributable calculator-query window. China’s October 19 national-economy release is imminent but remains direction-led rather than a non-directional calculation journey. The October 17 FTMO DST package has no second refresh delta. No playbook, content package, platform draft or social action was created."
+    "note": "Zero-output gate held. Bank Indonesia's October 20-21 meeting is live but has no verified public English USD/IDR calculation journey. FTMO's October 15 Europe DST trading-hours and reset-time facts remain owned by HR-20261017-01 and have no second refresh delta. BLS's October 20 state-employment release has no natural non-directional calculator demand. No playbook, content package, platform draft or social action was created."
   },
   "items": {
     "HR-20261017-01": {

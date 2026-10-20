@@ -11,6 +11,13 @@ const state = {
 };
 
 const scoreModels = {
+  "v3-calculator-bridge": [
+    ["新鲜度", "freshness", 25],
+    ["流量", "traffic_potential", 25],
+    ["计算器贴合", "calculator_fit", 25],
+    ["证据", "evidence_quality", 15],
+    ["可执行", "actionability", 10],
+  ],
   "v2-content-first": [
     ["新鲜度", "freshness", 20],
     ["流量", "traffic_potential", 30],
@@ -73,7 +80,9 @@ function asList(value) {
 }
 
 function scoringVersion() {
-  return state.data?.scoring_version === "v2-content-first"
+  return state.data?.radar_model === "v3-calculator-bridge"
+    ? "v3-calculator-bridge"
+    : state.data?.scoring_version === "v2-content-first"
     ? "v2-content-first"
     : "v1-legacy";
 }
@@ -185,7 +194,7 @@ function playbookCard(candidate, index) {
       </div>
 
       <div class="playbook-lead">
-        <span>内容主线 · 正文 80%–90%</span>
+        <span>借势角度 · 可计算问题</span>
         <strong>${escapeHtml(contentMainline)}</strong>
       </div>
 
@@ -215,7 +224,7 @@ function playbookCard(candidate, index) {
 
       <div class="product-bridge ${escapeHtml(bridge.type)}">
         <div class="product-bridge-head">
-          <span>产品承接 · 全文 10%–20% · 可选</span>
+          <span>计算器承接 · 正式入选必需</span>
           <b>${escapeHtml(bridge.label)}</b>
         </div>
         <p>${escapeHtml(bridge.text)}</p>
@@ -406,7 +415,7 @@ function topicCard(candidate, index) {
         <strong>${escapeHtml(contentDirection)}</strong>
       </div>` : ""}
       <div class="product-note">
-        <span class="product-note-label">可选产品承接 · ${escapeHtml(bridge.label)}</span>
+        <span class="product-note-label">计算器承接 · ${escapeHtml(bridge.label)}</span>
         ${bridge.type === "existing" && chips
           ? `<div class="mapping-list">${chips}</div>`
           : `<p>${escapeHtml(bridge.text)}</p>`}
