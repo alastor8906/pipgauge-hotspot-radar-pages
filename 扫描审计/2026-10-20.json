@@ -1,0 +1,127 @@
+{
+  "scan_date": "2026-10-20",
+  "generated_at": "2026-10-20T22:06:41+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-20T22:06:41+08:00",
+      "source_count": 3,
+      "note": "覆盖 Bank Indonesia 10 月 20-21 日 Board of Governors meeting calendar、FTMO 10 月 15 日 Europe DST / trading-hours update，以及 BLS 10 月 20 日 state-employment release schedule。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-10-20T22:06:41+08:00",
+      "source_count": 2,
+      "note": "J Trust Bank 的 10 月 19 日公开市场更新交叉 Bank Indonesia meeting/result window；GTR 的 10 月 16 日公开 rule-reading summary 交叉 FTMO DST 话题的外部注意力。两者均不替代各自官方规则或统计事实。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "partial",
+      "checked_at": "2026-10-20T22:06:41+08:00",
+      "source_count": 0,
+      "note": "复核公开可访问索引；未保存同时满足当前性和自然 PipGauge/PositionMath calculator bridge 的 Bank Indonesia、FTMO DST 或 BLS state-employment 讨论。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-20T22:06:41+08:00",
+      "source_count": 0,
+      "note": "无稳定可核验、同时满足当前性和自然计算器桥接的公开信号；登录墙、动态流、截图、预测和不可验证材料未计入。"
+    }
+  ],
+  "candidates": {
+    "HR-20261020-01": {
+      "sources": [
+        {
+          "publisher": "Bank Indonesia",
+          "url": "https://www.bi.go.id/en/publikasi/Kalender/Default.aspx",
+          "source_type": "official_dated_meeting_calendar",
+          "published_at": "2026 calendar; checked 2026-10-20",
+          "freshness_role": "Official calendar identifies the live 20-21 October Board of Governors meeting, with a decision window on 21 October.",
+          "reliable": true
+        },
+        {
+          "publisher": "J Trust Bank",
+          "url": "https://www.jtrustbank.co.id/id/market_update/market-update-19-oct-2026",
+          "source_type": "independent_public_market_calendar_context",
+          "published_at": "2026-10-19",
+          "freshness_role": "Independent current public market update confirms the 20-21 October meeting and identifies 21 October as the result date; it does not establish the result or retail trading terms.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_live_rate_meeting_without_verified_usdidr_calculation_demand",
+        "duplicate_of": ["HR-20261019-02"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "After the decision, obtain an official result plus an independent reliable result source and a current public English fixed-risk, pip-value, margin, cost or quantity query specific to the event; first audit whether an existing rate-decision explainer should refresh.",
+        "rationale": "The event is now live, but the sole change versus the prior scan is its time state. No attributable non-directional calculator question was verified, so a USD/IDR example would manufacture demand."
+      }
+    },
+    "HR-20261020-02": {
+      "sources": [
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/en/blog/trading-updates/trading-update-15-oct-2026/",
+          "source_type": "official_dated_product_and_schedule_update",
+          "published_at": "2026-10-15",
+          "freshness_role": "Official source for the 26 October-1 November European-instrument trade-hours shift, Prague/MetaTrader 1-hour-to-2-hour offset and Account MetriX reset-countdown instruction.",
+          "reliable": true
+        },
+        {
+          "publisher": "GTR",
+          "url": "https://note.com/grace_revolution/n/ne8282385f5d2?hl=en",
+          "source_type": "independent_public_rule_reading_context",
+          "published_at": "2026-10-16",
+          "freshness_role": "Independent public summary frames the DST reset-clock verification issue; it does not replace FTMO terms or establish a new fact, query, example or window.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_existing_package_without_second_refresh_delta",
+        "duplicate_of": ["HR-20261017-01"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "Reopen only if a new official revision, an attributable current public query with a distinct calculation object, a verifiable replacement example or a separate dated window yields at least two refresh signals; otherwise retain the existing package without extending it.",
+        "rationale": "The active facts are strong, but no second refresh signal exists after HR-20261017-01. Splitting one FTMO update into a separate index-hours article would create duplicate, same-shape content."
+      }
+    },
+    "HR-20261020-03": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/schedule/2026/home.htm",
+          "source_type": "official_dated_release_schedule",
+          "published_at": "2026-10-20 10:00 Eastern Time",
+          "freshness_role": "Official schedule identifies the September State Employment and Unemployment release on the scan date.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_fresh_macro_release_without_independent_or_calculator_demand_evidence",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "Obtain an independent reliable result source and a current publicly verifiable English query expressly linking this result to non-directional pip value, fixed risk, margin, cost, quantity or portfolio-heat arithmetic, then audit any existing macro content for refresh.",
+        "rationale": "Freshness alone cannot establish a search-to-calculator journey. No independent public demand signal was retained and a generic sizing table would fabricate relevance."
+      }
+    }
+  }
+}
