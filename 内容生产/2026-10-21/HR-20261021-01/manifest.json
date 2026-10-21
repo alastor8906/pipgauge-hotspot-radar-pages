@@ -1,0 +1,20 @@
+{
+  "candidate_id": "HR-20261021-01",
+  "scan_date": "2026-10-21",
+  "primary_site": "PipGauge",
+  "topic": "FOREX.com Japan Adds Weekend US Index CFDs: Verify Point Value Before the First Saturday Session",
+  "execution_mode": "new",
+  "refresh_target": null,
+  "package_summary": "当期审核快照：以 FOREX.com Japan 10 月 21 日推出 US SP 500 与 US Tech 100 CFD 周末交易为钩子，解释周六 17:00 JST 开始的新增时段，并将读者带到“已核验合约规格后的计划点值敞口”这一窄问题。只用变量公式，不预测指数、不假定点值、不鼓励周末交易。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "pre_first_saturday_weekend_cfd_verification_window",
+  "time_status_label": "仅在 2026-10-21 至首个周末时段开始前（2026-10-24 17:00 JST）、且 StoneX 公告与 FOREX.com Japan 平台条款仍可核验时使用；时段开始、产品/时区/规格变更、或无法核验读者实际合约时必须停用或重审。",
+  "documents": [
+    {"id": "facts", "label": "事实与论点", "file": "00-事实与论点.md", "platform": "internal", "kind": "editorial brief", "status_label": "已整理"},
+    {"id": "medium", "label": "Medium", "file": "01-Medium.md", "platform": "medium", "kind": "long-form draft", "status_label": "待人工审核"},
+    {"id": "reddit", "label": "Reddit", "file": "02-Reddit.md", "platform": "reddit", "kind": "native discussion draft", "status_label": "待人工审核"},
+    {"id": "x", "label": "X", "file": "03-X.md", "platform": "x", "kind": "short thread draft", "status_label": "待人工审核"},
+    {"id": "review", "label": "审核清单", "file": "04-人工审核.md", "platform": "internal", "kind": "human gate", "status_label": "必须完成"}
+  ]
+}
