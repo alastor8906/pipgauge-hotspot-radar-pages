@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-10-20T22:13:30+08:00",
-  "latest_scan_date": "2026-10-20",
+  "generated_at": "2026-10-21T22:04:29+08:00",
+  "latest_scan_date": "2026-10-21",
   "available_dates": [
+    "2026-10-21",
     "2026-10-20",
     "2026-10-19",
     "2026-10-18",
@@ -92,8 +93,311 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-10-21",
+      "generated_at": "2026-10-21T22:04:29+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 87,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 1,
+        "observation": 2,
+        "discarded": 0,
+        "total": 3,
+        "selected_average": 97.0,
+        "all_selected_pass_gate": true,
+        "content_ready": 1,
+        "playbook_ready": 1
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-10-21",
+          "candidate_id": "HR-20261021-01",
+          "status": "selected",
+          "topic": "FOREX.com Japan Adds Weekend US Index CFDs: Verify Point Value Before the First Saturday Session",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 23,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 9,
+          "total_score": 97,
+          "hard_gate": true,
+          "reliable_sources": 3,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "NAS100 Point Value",
+            "Position Size",
+            "P&L",
+            "Margin",
+            "Broker Contract Specifications"
+          ],
+          "reason": "StoneX's dated October 21 announcement launches Japan weekend trading for US SP 500 and US Tech 100 CFDs with a Saturday 17:00 JST session; Finance Magnates and FX News Group independently report the launch, while FOREX.com's FAQ establishes 7-Day-product reference-market and wider-weekend-spread caveats. The distinct user journey is to verify exact contract inputs before converting a reader-planned point distance into conditional account-currency exposure; it does not predict an index or assume a point value.",
+          "content_status": "review_ready",
+          "content_label": "FOREX.com Japan 周末 US 指数 CFD 规格核验审核包待人工审核",
+          "content_url": "../内容生产/2026-10-21/HR-20261021-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-10-24T17:00:00+09:00",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "new",
+            "urgency": "high",
+            "publish_deadline": "2026-10-24T17:00:00+09:00",
+            "traffic_hook": "StoneX announced on October 21 that FOREX.com Japan will offer weekend trading in US SP 500 and US Tech 100 CFDs; its annex lists the first Saturday session as 17:00 JST to 06:00 the next day. Finance Magnates and FX News Group independently covered the same launch. The hook is the newly available, named 7-Day CFD session and the need to verify the exact product before using it—not a view on either index, Japan, or the next market open.",
+            "traffic_window": "Publish after human verification on October 21-24, before the first Saturday session begins at 17:00 JST on October 24. Retire the first-session wording as that session starts, on any official product/hour/region correction, or whenever the reader cannot verify the exact platform Market Information Sheet and contract inputs.",
+            "search_intents": [
+              "FOREX.com Japan weekend trading US Tech 100 2026",
+              "FOREX.com Japan weekend US SP 500 CFD hours",
+              "US Tech 100 CFD point value JPY",
+              "US SP 500 CFD planned point exposure calculator",
+              "7-Day index CFD weekend spread contract specification"
+            ],
+            "traffic_angle": "Borrow the new Saturday 17:00 JST product window to answer one narrow calculation question: after confirming the reader's own 7-Day symbol and Market Information Sheet, what is the account-currency exposure of a planned point distance? Use 0.10 contract × 40 planned points × reader-verified JPY per point; if that reader's own sheet says JPY 500/point, the conditional arithmetic is JPY 2,000 before costs. JPY 500 is not a FOREX.com term, live quote, universal point value or market prediction.",
+            "calculator_bridge": "Lead with the official Japan product/time window and FOREX.com's 7-Day reference-market caveat, then show the variable formula. PipGauge NAS100 Point Value, Position Size, P&L, Margin and Broker Contract Specifications help verify reader-entered symbol, quantity, point value and planned distance after the product sheet is checked. They do not establish service eligibility, provide the broker's contract value, interpret the weekend price, recommend a trade or guarantee a fill. PositionMath is not the primary bridge.",
+            "example_scenario": "Teaching only: 0.10 contract × 40 planned points × reader-verified JPY per point. If the reader's own confirmed product sheet states JPY 500 per point, that conditional arithmetic is JPY 2,000 before spread, commission, financing, slippage, gaps, minimum size, margin calls or execution. JPY 500 is not asserted as a FOREX.com or universal US-index-CFD specification.",
+            "distribution_order": [
+              "new PipGauge Japan weekend-index product-specification note",
+              "Medium dated fact-and-variable-exposure explainer",
+              "X self-contained Saturday-session verification thread",
+              "Reddit native contract-check process discussion without a first-round link"
+            ],
+            "link_placement": "Give the named product, Saturday JST time, 7-Day product distinction, variable formula and cost/execution limits before a single natural PipGauge verification link. Initial Reddit copy contains no link, UTM, affiliate text or pitch; the X thread remains understandable without a click.",
+            "expiry_condition": "Stop the first-Saturday framing at 17:00 JST on October 24, if StoneX/FOREX.com changes the product, timing, region or FAQ language, or if a reader cannot verify their exact Market Information Sheet. Do not reuse the 0.10/40/JPY-500 teaching arithmetic as an index forecast, a universal specification, a weekend-cost estimate or evergreen product claim.",
+            "editorial_boundary": "Do not predict the S&P 500, Nasdaq, Japan, JPY, a Monday open, a gap, volatility, liquidity, spreads, costs, profitability or any market move. Do not recommend FOREX.com, weekend trading, opening/closing/holding a position or a product/account. Do not conflate 7-Day CFDs with futures, ETFs, cash indices or another broker's contract; do not present reader-verified teaching inputs as official terms or execution evidence.",
+            "refresh_target": null,
+            "refresh_signals": {
+              "fact_delta": true,
+              "search_delta": true,
+              "example_delta": true,
+              "window_delta": true
+            },
+            "refresh_updates": [],
+            "content_mainline": "Create one dated FOREX.com Japan first-Saturday product-specification explainer. It captures a specific search/discussion object and turns it into reader-verified point-value exposure arithmetic, without becoming a generic weekend-trading or index-market article.",
+            "body_material": [
+              "StoneX October 21 announcement: Japan US SP 500 / US Tech 100 CFDs, Saturday 17:00-06:00 JST and daily 06:00-07:00 maintenance",
+              "Finance Magnates and FX News Group independent same-day launch coverage",
+              "FOREX.com 7-Day index FAQ: alternative reference markets, potential wider weekend spreads and Market Information Sheet verification",
+              "0.10 contract × 40 planned points × reader-verified JPY per point; conditional JPY 500 example only",
+              "October 24 17:00 JST expiry and immediate official-detail-change stop gate"
+            ],
+            "product_bridge": "PipGauge exposes the reader's verified NAS100 / index-CFD point-value, planned size, P&L and margin inputs after the official product facts and contract specification are checked. It does not validate account eligibility, the announced session, a broker specification, a price or a trade decision.",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "StoneX",
+                "url": "https://www.stonex.com/en-us/media-room/press-releases/forex-com-launches-the-first-weekend-trading-service-in-japan-for-us-sp-500-and-us-tech-100-cfds/",
+                "source_type": "official_dated_product_launch_and_hours",
+                "published_at": "2026-10-21",
+                "freshness_role": "Official source for the Japan product launch, named US SP 500 / US Tech 100 CFDs, Saturday 17:00-06:00 JST session and daily maintenance break.",
+                "reliable": true
+              },
+              {
+                "publisher": "Finance Magnates",
+                "url": "https://www.financemagnates.com/forex/forexcom-lets-japanese-clients-trade-us-stock-indices-on-weekends/",
+                "source_type": "independent_english_launch_impact_coverage",
+                "published_at": "2026-10-21",
+                "freshness_role": "Independent same-day report confirms the Japan customer scope, named products and Saturday 17:00 Tokyo-time opening; it supplies launch/discovery context, not individual product terms.",
+                "reliable": true
+              },
+              {
+                "publisher": "FX News Group",
+                "url": "https://fxnewsgroup.com/forex-news/retail-forex/forex-com-launches-weekend-trading-for-us-sp-500-and-us-tech-100-cfds-in-japan/",
+                "source_type": "independent_english_launch_coverage",
+                "published_at": "2026-10-21",
+                "freshness_role": "Independent same-day launch coverage confirms the current public discovery window; it does not replace the official schedule or contract specification.",
+                "reliable": true
+              },
+              {
+                "publisher": "FOREX.com",
+                "url": "https://mc-5dc23f93-43d0-491b-9a0f-708421-cm.azurewebsites.net/en/help-and-support/indices/",
+                "source_type": "official_product_faq",
+                "published_at": "checked 2026-10-21",
+                "freshness_role": "Official 7-Day product context: alternative reference markets when futures are closed, possible wider weekend spreads and Market Information Sheet verification. Same corporate source family; supplemental only and not counted as an independent reliable publisher.",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass",
+              "decision_gate": "selected_new_dated_product_launch_with_verified_specification_calculator_journey",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": true,
+                "window_delta": true
+              },
+              "reopen_trigger": "After the October 24 first-session gate, reopen only on a new dated official product/rule/hours revision plus a distinct current calculation question; do not mechanically refresh generic weekend-CFD content.",
+              "rationale": "The official announcement plus two independent same-day English reports creates a new, specific product-discovery path. The reader's natural task is contract/specification verification followed by variable point-value exposure, not an index prediction or generic weekend-trading article."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-10-21",
+          "candidate_id": "HR-20261021-02",
+          "status": "observation",
+          "topic": "Bank Indonesia Holds 5.75 Percent but the USDIDR Calculator Journey Is Still Unverified",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 23,
+          "calculator_fit": 19,
+          "evidence_quality": 15,
+          "actionability": 6,
+          "total_score": 88,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Margin",
+            "Currency Converter"
+          ],
+          "reason": "Bank Indonesia's October 21 release holds the BI-Rate at 5.75% and raises the Deposit Facility to 5.00%; Reuters independently reports the decision. The fact and post-result window are current, but retained English public attention is policy, rupiah and equity direction rather than an attributable non-directional USDIDR fixed-risk, pip-value, margin, cost or quantity request. A generic sizing grid would fabricate traffic and duplicate prior central-bank templates.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Bank Indonesia",
+                "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2823326.aspx",
+                "source_type": "official_dated_rate_decision",
+                "published_at": "2026-10-21",
+                "freshness_role": "Official result: BI-Rate held at 5.75%, Lending Facility 6.50% and Deposit Facility raised to 5.00%.",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.marketscreener.com/news/indonesia-s-central-bank-keeps-main-rate-unchanged-hikes-deposit-facility-rate-ce785cd8de80f722",
+                "source_type": "independent_reliable_english_result_coverage",
+                "published_at": "2026-10-21",
+                "freshness_role": "Independent same-day result coverage, syndicated by MarketScreener; confirms the hold and deposit-facility increase.",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_post_result_without_verified_usdidr_non_directional_calculation_demand",
+              "duplicate_of": [
+                "HR-20261020-01",
+                "HR-20261019-02"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Obtain a current public English event-specific fixed-risk, pip-value, margin, cost or quantity query that does not fabricate demand; first audit adjacent central-bank and FX content for a true refresh.",
+              "rationale": "The outcome and result window are real, but no current attributable non-directional calculator journey was retained. The visible currency/equity attention is direction and policy interpretation, which cannot be recast as a generic USD/IDR sizing post."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-10-21",
+          "candidate_id": "HR-20261021-03",
+          "status": "observation",
+          "topic": "UK September CPI Release Is Current but Not a New GBP Calculator Path",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 19,
+          "calculator_fit": 16,
+          "evidence_quality": 15,
+          "actionability": 5,
+          "total_score": 80,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "ONS published UK September CPI on October 21 and an official dataset revision is current, but no independent reliable English result/impact source plus current non-directional GBP calculator intent was retained. The accessible signals remain inflation and GBP direction discussion; no new search, example or window beyond generic macro content warrants a refresh.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Office for National Statistics",
+                "url": "https://www.ons.gov.uk/releases/consumerpriceinflationukseptember2026",
+                "source_type": "official_dated_statistical_release",
+                "published_at": "2026-10-21 07:00 BST",
+                "freshness_role": "Official release identifies the current UK September CPI publication date.",
+                "reliable": true
+              },
+              {
+                "publisher": "Office for National Statistics",
+                "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/datasets/consumerpriceinflation",
+                "source_type": "official_dated_dataset_notice",
+                "published_at": "2026-10-21",
+                "freshness_role": "Same-day notice says table labels were updated and underlying series unchanged; it cannot serve as an independent result or a new numeric content trigger.",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_current_official_release_without_independent_impact_or_gbp_calculation_demand",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Obtain an independent reliable English impact/result source and a current publicly verifiable event-specific non-directional GBP size/pip/margin/cost question, then evaluate whether an existing GBP macro piece should refresh.",
+              "rationale": "ONS freshness alone cannot establish a search-to-calculator path. The accompanying dataset notice explicitly does not change the underlying series, and no safe, attributable GBP calculation demand was retained."
+            }
+          }
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-10-21T22:02:10+08:00",
+          "source_count": 4,
+          "note": "覆盖 StoneX / FOREX.com Japan weekend-US-index launch announcement、FOREX.com 7-Day index FAQ、Bank Indonesia October 21 result，以及 ONS UK September CPI release/dataset notice。"
+        },
+        {
+          "channel": "独立可靠英文来源",
+          "status": "complete",
+          "checked_at": "2026-10-21T22:02:10+08:00",
+          "source_count": 3,
+          "note": "Finance Magnates 与 FX News Group 独立报道 FOREX.com Japan launch；Reuters 的 MarketScreener syndication 交叉 Bank Indonesia result。ONS CPI 未保留满足内容门槛的独立结果/影响来源。"
+        },
+        {
+          "channel": "Reddit / ForexFactory / BabyPips",
+          "status": "partial",
+          "checked_at": "2026-10-21T22:02:10+08:00",
+          "source_count": 0,
+          "note": "复核公开可访问索引。保留最近 general weekend/prop-rule wording 只作范围检查；未将其当作 FOREX.com Japan terms，且未保存 Bank Indonesia 或 UK CPI 事件专属 non-directional calculator demand。"
+        },
+        {
+          "channel": "X / Quora",
+          "status": "limited",
+          "checked_at": "2026-10-21T22:02:10+08:00",
+          "source_count": 0,
+          "note": "无稳定、公开、可核验且同时满足当前性和自然 calculator bridge 的信号；登录墙、动态流、截图、预测与不可验证材料未计入。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-10-21_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-10-21_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-10-21"
+      }
+    },
+    {
       "scan_date": "2026-10-20",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 86,
@@ -320,7 +624,7 @@
     },
     {
       "scan_date": "2026-10-19",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 85,
@@ -536,7 +840,7 @@
     },
     {
       "scan_date": "2026-10-18",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 84,
@@ -750,7 +1054,7 @@
     },
     {
       "scan_date": "2026-10-17",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 83,
@@ -1018,7 +1322,7 @@
     },
     {
       "scan_date": "2026-10-16",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 82,
@@ -1324,7 +1628,7 @@
     },
     {
       "scan_date": "2026-10-15",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 81,
@@ -1535,7 +1839,7 @@
     },
     {
       "scan_date": "2026-10-14",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 80,
@@ -1818,7 +2122,7 @@
     },
     {
       "scan_date": "2026-10-13",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 79,
@@ -2034,7 +2338,7 @@
     },
     {
       "scan_date": "2026-10-12",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 78,
@@ -2306,7 +2610,7 @@
     },
     {
       "scan_date": "2026-10-11",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 77,
@@ -2567,7 +2871,7 @@
     },
     {
       "scan_date": "2026-10-10",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 76,
@@ -2824,7 +3128,7 @@
     },
     {
       "scan_date": "2026-10-09",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 75,
@@ -3035,7 +3339,7 @@
     },
     {
       "scan_date": "2026-10-08",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 74,
@@ -3222,7 +3526,7 @@
     },
     {
       "scan_date": "2026-10-07",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 73,
@@ -3386,7 +3690,7 @@
     },
     {
       "scan_date": "2026-10-06",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 72,
@@ -3549,7 +3853,7 @@
     },
     {
       "scan_date": "2026-10-05",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 71,
@@ -3816,7 +4120,7 @@
     },
     {
       "scan_date": "2026-10-04",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 70,
@@ -4042,7 +4346,7 @@
     },
     {
       "scan_date": "2026-10-03",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 69,
@@ -4265,7 +4569,7 @@
     },
     {
       "scan_date": "2026-10-02",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 68,
@@ -4548,7 +4852,7 @@
     },
     {
       "scan_date": "2026-10-01",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 67,
@@ -4827,7 +5131,7 @@
     },
     {
       "scan_date": "2026-09-30",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 66,
@@ -5237,7 +5541,7 @@
     },
     {
       "scan_date": "2026-09-29",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 65,
@@ -5561,7 +5865,7 @@
     },
     {
       "scan_date": "2026-09-28",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 64,
@@ -5846,7 +6150,7 @@
     },
     {
       "scan_date": "2026-09-27",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 63,
@@ -6196,7 +6500,7 @@
     },
     {
       "scan_date": "2026-09-26",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 62,
@@ -6405,7 +6709,7 @@
     },
     {
       "scan_date": "2026-09-25",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 61,
@@ -6685,7 +6989,7 @@
     },
     {
       "scan_date": "2026-09-24",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 60,
@@ -6965,7 +7269,7 @@
     },
     {
       "scan_date": "2026-09-23",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 59,
@@ -7203,7 +7507,7 @@
     },
     {
       "scan_date": "2026-09-22",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 58,
@@ -7492,7 +7796,7 @@
     },
     {
       "scan_date": "2026-09-21",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 57,
@@ -7714,7 +8018,7 @@
     },
     {
       "scan_date": "2026-09-20",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 56,
@@ -7999,7 +8303,7 @@
     },
     {
       "scan_date": "2026-09-19",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 55,
@@ -8274,7 +8578,7 @@
     },
     {
       "scan_date": "2026-09-18",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 54,
@@ -8556,7 +8860,7 @@
     },
     {
       "scan_date": "2026-09-17",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 53,
@@ -8901,7 +9205,7 @@
     },
     {
       "scan_date": "2026-09-16",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 52,
@@ -9191,7 +9495,7 @@
     },
     {
       "scan_date": "2026-09-15",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 51,
@@ -9405,7 +9709,7 @@
     },
     {
       "scan_date": "2026-09-14",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 50,
@@ -9609,7 +9913,7 @@
     },
     {
       "scan_date": "2026-09-13",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 49,
@@ -9814,7 +10118,7 @@
     },
     {
       "scan_date": "2026-09-12",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 48,
@@ -10000,7 +10304,7 @@
     },
     {
       "scan_date": "2026-09-11",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 47,
@@ -10217,7 +10521,7 @@
     },
     {
       "scan_date": "2026-09-10",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 46,
@@ -10503,7 +10807,7 @@
     },
     {
       "scan_date": "2026-09-09",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 45,
@@ -10783,7 +11087,7 @@
     },
     {
       "scan_date": "2026-09-08",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 44,
@@ -11112,7 +11416,7 @@
     },
     {
       "scan_date": "2026-09-07",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 43,
@@ -11414,7 +11718,7 @@
     },
     {
       "scan_date": "2026-09-06",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 42,
@@ -11730,7 +12034,7 @@
     },
     {
       "scan_date": "2026-09-05",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 41,
@@ -12052,7 +12356,7 @@
     },
     {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -12365,7 +12669,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -12676,7 +12980,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -13007,7 +13311,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -13345,7 +13649,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -13738,7 +14042,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -14148,7 +14452,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -14620,7 +14924,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -14965,7 +15269,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -15310,7 +15614,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -15762,7 +16066,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -16175,7 +16479,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -16407,7 +16711,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -16852,7 +17156,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -17227,7 +17531,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -17619,7 +17923,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -17995,7 +18299,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -18319,7 +18623,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -18702,7 +19006,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -19043,7 +19347,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -19418,7 +19722,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -19806,7 +20110,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -20151,7 +20455,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -20479,7 +20783,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -20791,7 +21095,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -21112,7 +21416,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -21473,7 +21777,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -21826,7 +22130,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -22270,7 +22574,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -22779,7 +23083,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -23249,7 +23553,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -23792,7 +24096,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -24064,7 +24368,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -24377,7 +24681,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -24812,7 +25116,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -25326,7 +25630,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -25835,7 +26139,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -26303,7 +26607,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -26717,7 +27021,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -27116,7 +27420,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-10-20T22:13:30+08:00",
+      "generated_at": "2026-10-21T22:04:29+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -27555,10 +27859,10 @@
       }
     }
   ],
-  "scan_date": "2026-10-20",
+  "scan_date": "2026-10-21",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 86,
+    "day": 87,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -27566,85 +27870,151 @@
     "mode": "topic_traffic_playbooks_and_content_drafts"
   },
   "stats": {
-    "selected": 0,
-    "observation": 3,
+    "selected": 1,
+    "observation": 2,
     "discarded": 0,
     "total": 3,
-    "selected_average": 0,
+    "selected_average": 97.0,
     "all_selected_pass_gate": true,
-    "content_ready": 0,
-    "playbook_ready": 0
+    "content_ready": 1,
+    "playbook_ready": 1
   },
   "candidates": [
     {
-      "scan_date": "2026-10-20",
-      "candidate_id": "HR-20261020-02",
-      "status": "observation",
-      "topic": "FTMO Europe DST Trading-Hours Shift Is an Existing Package Without a Second Refresh Delta",
+      "scan_date": "2026-10-21",
+      "candidate_id": "HR-20261021-01",
+      "status": "selected",
+      "topic": "FOREX.com Japan Adds Weekend US Index CFDs: Verify Point Value Before the First Saturday Session",
       "primary_site": "PipGauge",
-      "freshness": 24,
-      "traffic_potential": 22,
+      "freshness": 25,
+      "traffic_potential": 23,
       "calculator_fit": 25,
       "evidence_quality": 15,
-      "actionability": 7,
-      "total_score": 93,
-      "hard_gate": false,
-      "reliable_sources": 2,
+      "actionability": 9,
+      "total_score": 97,
+      "hard_gate": true,
+      "reliable_sources": 3,
       "fresh_signal": true,
       "calculator_mapping": [
-        "Forex Session Clock",
-        "Daily Loss Limit",
-        "Position Size"
+        "NAS100 Point Value",
+        "Position Size",
+        "P&L",
+        "Margin",
+        "Broker Contract Specifications"
       ],
-      "reason": "FTMO's October 15 update and an independent October 16 rule-reading summary still describe the October 26-November 1 European-instrument schedule and Prague/MetaTrader mismatch. HR-20261017-01 already owns the same dated update, clock verification sequence and window; no new official term, public query, replacement example or second window was verified on October 20.",
+      "reason": "StoneX's dated October 21 announcement launches Japan weekend trading for US SP 500 and US Tech 100 CFDs with a Saturday 17:00 JST session; Finance Magnates and FX News Group independently report the launch, while FOREX.com's FAQ establishes 7-Day-product reference-market and wider-weekend-spread caveats. The distinct user journey is to verify exact contract inputs before converting a reader-planned point distance into conditional account-currency exposure; it does not predict an index or assume a point value.",
+      "content_status": "review_ready",
+      "content_label": "FOREX.com Japan 周末 US 指数 CFD 规格核验审核包待人工审核",
+      "content_url": "../内容生产/2026-10-21/HR-20261021-01/index.html",
+      "content_format": "Medium / Reddit / X",
+      "deadline": "2026-10-24T17:00:00+09:00",
+      "traffic_playbook": {
+        "playbook_status": "ready",
+        "execution_mode": "new",
+        "urgency": "high",
+        "publish_deadline": "2026-10-24T17:00:00+09:00",
+        "traffic_hook": "StoneX announced on October 21 that FOREX.com Japan will offer weekend trading in US SP 500 and US Tech 100 CFDs; its annex lists the first Saturday session as 17:00 JST to 06:00 the next day. Finance Magnates and FX News Group independently covered the same launch. The hook is the newly available, named 7-Day CFD session and the need to verify the exact product before using it—not a view on either index, Japan, or the next market open.",
+        "traffic_window": "Publish after human verification on October 21-24, before the first Saturday session begins at 17:00 JST on October 24. Retire the first-session wording as that session starts, on any official product/hour/region correction, or whenever the reader cannot verify the exact platform Market Information Sheet and contract inputs.",
+        "search_intents": [
+          "FOREX.com Japan weekend trading US Tech 100 2026",
+          "FOREX.com Japan weekend US SP 500 CFD hours",
+          "US Tech 100 CFD point value JPY",
+          "US SP 500 CFD planned point exposure calculator",
+          "7-Day index CFD weekend spread contract specification"
+        ],
+        "traffic_angle": "Borrow the new Saturday 17:00 JST product window to answer one narrow calculation question: after confirming the reader's own 7-Day symbol and Market Information Sheet, what is the account-currency exposure of a planned point distance? Use 0.10 contract × 40 planned points × reader-verified JPY per point; if that reader's own sheet says JPY 500/point, the conditional arithmetic is JPY 2,000 before costs. JPY 500 is not a FOREX.com term, live quote, universal point value or market prediction.",
+        "calculator_bridge": "Lead with the official Japan product/time window and FOREX.com's 7-Day reference-market caveat, then show the variable formula. PipGauge NAS100 Point Value, Position Size, P&L, Margin and Broker Contract Specifications help verify reader-entered symbol, quantity, point value and planned distance after the product sheet is checked. They do not establish service eligibility, provide the broker's contract value, interpret the weekend price, recommend a trade or guarantee a fill. PositionMath is not the primary bridge.",
+        "example_scenario": "Teaching only: 0.10 contract × 40 planned points × reader-verified JPY per point. If the reader's own confirmed product sheet states JPY 500 per point, that conditional arithmetic is JPY 2,000 before spread, commission, financing, slippage, gaps, minimum size, margin calls or execution. JPY 500 is not asserted as a FOREX.com or universal US-index-CFD specification.",
+        "distribution_order": [
+          "new PipGauge Japan weekend-index product-specification note",
+          "Medium dated fact-and-variable-exposure explainer",
+          "X self-contained Saturday-session verification thread",
+          "Reddit native contract-check process discussion without a first-round link"
+        ],
+        "link_placement": "Give the named product, Saturday JST time, 7-Day product distinction, variable formula and cost/execution limits before a single natural PipGauge verification link. Initial Reddit copy contains no link, UTM, affiliate text or pitch; the X thread remains understandable without a click.",
+        "expiry_condition": "Stop the first-Saturday framing at 17:00 JST on October 24, if StoneX/FOREX.com changes the product, timing, region or FAQ language, or if a reader cannot verify their exact Market Information Sheet. Do not reuse the 0.10/40/JPY-500 teaching arithmetic as an index forecast, a universal specification, a weekend-cost estimate or evergreen product claim.",
+        "editorial_boundary": "Do not predict the S&P 500, Nasdaq, Japan, JPY, a Monday open, a gap, volatility, liquidity, spreads, costs, profitability or any market move. Do not recommend FOREX.com, weekend trading, opening/closing/holding a position or a product/account. Do not conflate 7-Day CFDs with futures, ETFs, cash indices or another broker's contract; do not present reader-verified teaching inputs as official terms or execution evidence.",
+        "refresh_target": null,
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "refresh_updates": [],
+        "content_mainline": "Create one dated FOREX.com Japan first-Saturday product-specification explainer. It captures a specific search/discussion object and turns it into reader-verified point-value exposure arithmetic, without becoming a generic weekend-trading or index-market article.",
+        "body_material": [
+          "StoneX October 21 announcement: Japan US SP 500 / US Tech 100 CFDs, Saturday 17:00-06:00 JST and daily 06:00-07:00 maintenance",
+          "Finance Magnates and FX News Group independent same-day launch coverage",
+          "FOREX.com 7-Day index FAQ: alternative reference markets, potential wider weekend spreads and Market Information Sheet verification",
+          "0.10 contract × 40 planned points × reader-verified JPY per point; conditional JPY 500 example only",
+          "October 24 17:00 JST expiry and immediate official-detail-change stop gate"
+        ],
+        "product_bridge": "PipGauge exposes the reader's verified NAS100 / index-CFD point-value, planned size, P&L and margin inputs after the official product facts and contract specification are checked. It does not validate account eligibility, the announced session, a broker specification, a price or a trade decision.",
+        "product_bridge_type": "existing"
+      },
       "scan_audit": {
         "sources": [
           {
-            "publisher": "FTMO",
-            "url": "https://ftmo.com/en/blog/trading-updates/trading-update-15-oct-2026/",
-            "source_type": "official_dated_product_and_schedule_update",
-            "published_at": "2026-10-15",
-            "freshness_role": "Official source for the 26 October-1 November European-instrument trade-hours shift, Prague/MetaTrader 1-hour-to-2-hour offset and Account MetriX reset-countdown instruction.",
+            "publisher": "StoneX",
+            "url": "https://www.stonex.com/en-us/media-room/press-releases/forex-com-launches-the-first-weekend-trading-service-in-japan-for-us-sp-500-and-us-tech-100-cfds/",
+            "source_type": "official_dated_product_launch_and_hours",
+            "published_at": "2026-10-21",
+            "freshness_role": "Official source for the Japan product launch, named US SP 500 / US Tech 100 CFDs, Saturday 17:00-06:00 JST session and daily maintenance break.",
             "reliable": true
           },
           {
-            "publisher": "GTR",
-            "url": "https://note.com/grace_revolution/n/ne8282385f5d2?hl=en",
-            "source_type": "independent_public_rule_reading_context",
-            "published_at": "2026-10-16",
-            "freshness_role": "Independent public summary frames the DST reset-clock verification issue; it does not replace FTMO terms or establish a new fact, query, example or window.",
+            "publisher": "Finance Magnates",
+            "url": "https://www.financemagnates.com/forex/forexcom-lets-japanese-clients-trade-us-stock-indices-on-weekends/",
+            "source_type": "independent_english_launch_impact_coverage",
+            "published_at": "2026-10-21",
+            "freshness_role": "Independent same-day report confirms the Japan customer scope, named products and Saturday 17:00 Tokyo-time opening; it supplies launch/discovery context, not individual product terms.",
             "reliable": true
+          },
+          {
+            "publisher": "FX News Group",
+            "url": "https://fxnewsgroup.com/forex-news/retail-forex/forex-com-launches-weekend-trading-for-us-sp-500-and-us-tech-100-cfds-in-japan/",
+            "source_type": "independent_english_launch_coverage",
+            "published_at": "2026-10-21",
+            "freshness_role": "Independent same-day launch coverage confirms the current public discovery window; it does not replace the official schedule or contract specification.",
+            "reliable": true
+          },
+          {
+            "publisher": "FOREX.com",
+            "url": "https://mc-5dc23f93-43d0-491b-9a0f-708421-cm.azurewebsites.net/en/help-and-support/indices/",
+            "source_type": "official_product_faq",
+            "published_at": "checked 2026-10-21",
+            "freshness_role": "Official 7-Day product context: alternative reference markets when futures are closed, possible wider weekend spreads and Market Information Sheet verification. Same corporate source family; supplemental only and not counted as an independent reliable publisher.",
+            "reliable": false
           }
         ],
         "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_existing_package_without_second_refresh_delta",
-          "duplicate_of": [
-            "HR-20261017-01"
-          ],
+          "novelty_gate": "pass",
+          "decision_gate": "selected_new_dated_product_launch_with_verified_specification_calculator_journey",
+          "duplicate_of": [],
           "refresh_signals": {
-            "fact_delta": false,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": false
+            "fact_delta": true,
+            "search_delta": true,
+            "example_delta": true,
+            "window_delta": true
           },
-          "reopen_trigger": "Reopen only if a new official revision, an attributable current public query with a distinct calculation object, a verifiable replacement example or a separate dated window yields at least two refresh signals; otherwise retain the existing package without extending it.",
-          "rationale": "The active facts are strong, but no second refresh signal exists after HR-20261017-01. Splitting one FTMO update into a separate index-hours article would create duplicate, same-shape content."
+          "reopen_trigger": "After the October 24 first-session gate, reopen only on a new dated official product/rule/hours revision plus a distinct current calculation question; do not mechanically refresh generic weekend-CFD content.",
+          "rationale": "The official announcement plus two independent same-day English reports creates a new, specific product-discovery path. The reader's natural task is contract/specification verification followed by variable point-value exposure, not an index prediction or generic weekend-trading article."
         }
       }
     },
     {
-      "scan_date": "2026-10-20",
-      "candidate_id": "HR-20261020-01",
+      "scan_date": "2026-10-21",
+      "candidate_id": "HR-20261021-02",
       "status": "observation",
-      "topic": "Bank Indonesia October 20-21 Meeting Is Live but Still Has No Verified USD/IDR Calculator Journey",
+      "topic": "Bank Indonesia Holds 5.75 Percent but the USDIDR Calculator Journey Is Still Unverified",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 16,
+      "traffic_potential": 23,
       "calculator_fit": 19,
       "evidence_quality": 15,
-      "actionability": 4,
-      "total_score": 79,
+      "actionability": 6,
+      "total_score": 88,
       "hard_gate": false,
       "reliable_sources": 2,
       "fresh_signal": true,
@@ -27654,88 +28024,97 @@
         "Margin",
         "Currency Converter"
       ],
-      "reason": "Bank Indonesia's official calendar and J Trust Bank's October 19 public update confirm the live meeting and October 21 decision window. No current, attributable public English query ties this event to non-directional USD/IDR fixed-risk, pip-value, margin, cost or quantity arithmetic; do not turn a rate calendar into manufactured calculator demand.",
+      "reason": "Bank Indonesia's October 21 release holds the BI-Rate at 5.75% and raises the Deposit Facility to 5.00%; Reuters independently reports the decision. The fact and post-result window are current, but retained English public attention is policy, rupiah and equity direction rather than an attributable non-directional USDIDR fixed-risk, pip-value, margin, cost or quantity request. A generic sizing grid would fabricate traffic and duplicate prior central-bank templates.",
       "scan_audit": {
         "sources": [
           {
             "publisher": "Bank Indonesia",
-            "url": "https://www.bi.go.id/en/publikasi/Kalender/Default.aspx",
-            "source_type": "official_dated_meeting_calendar",
-            "published_at": "2026 calendar; checked 2026-10-20",
-            "freshness_role": "Official calendar identifies the live 20-21 October Board of Governors meeting, with a decision window on 21 October.",
+            "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2823326.aspx",
+            "source_type": "official_dated_rate_decision",
+            "published_at": "2026-10-21",
+            "freshness_role": "Official result: BI-Rate held at 5.75%, Lending Facility 6.50% and Deposit Facility raised to 5.00%.",
             "reliable": true
           },
           {
-            "publisher": "J Trust Bank",
-            "url": "https://www.jtrustbank.co.id/id/market_update/market-update-19-oct-2026",
-            "source_type": "independent_public_market_calendar_context",
-            "published_at": "2026-10-19",
-            "freshness_role": "Independent current public market update confirms the 20-21 October meeting and identifies 21 October as the result date; it does not establish the result or retail trading terms.",
+            "publisher": "Reuters",
+            "url": "https://www.marketscreener.com/news/indonesia-s-central-bank-keeps-main-rate-unchanged-hikes-deposit-facility-rate-ce785cd8de80f722",
+            "source_type": "independent_reliable_english_result_coverage",
+            "published_at": "2026-10-21",
+            "freshness_role": "Independent same-day result coverage, syndicated by MarketScreener; confirms the hold and deposit-facility increase.",
             "reliable": true
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_live_rate_meeting_without_verified_usdidr_calculation_demand",
+          "decision_gate": "observation_post_result_without_verified_usdidr_non_directional_calculation_demand",
           "duplicate_of": [
+            "HR-20261020-01",
             "HR-20261019-02"
           ],
-          "refresh_signals": {
-            "fact_delta": false,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": true
-          },
-          "reopen_trigger": "After the decision, obtain an official result plus an independent reliable result source and a current public English fixed-risk, pip-value, margin, cost or quantity query specific to the event; first audit whether an existing rate-decision explainer should refresh.",
-          "rationale": "The event is now live, but the sole change versus the prior scan is its time state. No attributable non-directional calculator question was verified, so a USD/IDR example would manufacture demand."
-        }
-      }
-    },
-    {
-      "scan_date": "2026-10-20",
-      "candidate_id": "HR-20261020-03",
-      "status": "observation",
-      "topic": "U.S. September State Employment Release Is Fresh but Not a Search-to-Calculator Topic",
-      "primary_site": "PipGauge",
-      "freshness": 25,
-      "traffic_potential": 10,
-      "calculator_fit": 10,
-      "evidence_quality": 15,
-      "actionability": 3,
-      "total_score": 63,
-      "hard_gate": false,
-      "reliable_sources": 1,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Pip Value",
-        "Position Size",
-        "Margin",
-        "P&L"
-      ],
-      "reason": "BLS released September state employment data on October 20. The event is fresh, but no independent current public English evidence establishes a non-directional calculation demand; a generic FX or index sizing table would manufacture a traffic path.",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "U.S. Bureau of Labor Statistics",
-            "url": "https://www.bls.gov/schedule/2026/home.htm",
-            "source_type": "official_dated_release_schedule",
-            "published_at": "2026-10-20 10:00 Eastern Time",
-            "freshness_role": "Official schedule identifies the September State Employment and Unemployment release on the scan date.",
-            "reliable": true
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_fresh_macro_release_without_independent_or_calculator_demand_evidence",
-          "duplicate_of": [],
           "refresh_signals": {
             "fact_delta": true,
             "search_delta": false,
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "Obtain an independent reliable result source and a current publicly verifiable English query expressly linking this result to non-directional pip value, fixed risk, margin, cost, quantity or portfolio-heat arithmetic, then audit any existing macro content for refresh.",
-          "rationale": "Freshness alone cannot establish a search-to-calculator journey. No independent public demand signal was retained and a generic sizing table would fabricate relevance."
+          "reopen_trigger": "Obtain a current public English event-specific fixed-risk, pip-value, margin, cost or quantity query that does not fabricate demand; first audit adjacent central-bank and FX content for a true refresh.",
+          "rationale": "The outcome and result window are real, but no current attributable non-directional calculator journey was retained. The visible currency/equity attention is direction and policy interpretation, which cannot be recast as a generic USD/IDR sizing post."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-10-21",
+      "candidate_id": "HR-20261021-03",
+      "status": "observation",
+      "topic": "UK September CPI Release Is Current but Not a New GBP Calculator Path",
+      "primary_site": "PipGauge",
+      "freshness": 25,
+      "traffic_potential": 19,
+      "calculator_fit": 16,
+      "evidence_quality": 15,
+      "actionability": 5,
+      "total_score": 80,
+      "hard_gate": false,
+      "reliable_sources": 1,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Pip Value",
+        "Position Size",
+        "P&L",
+        "Spread Cost"
+      ],
+      "reason": "ONS published UK September CPI on October 21 and an official dataset revision is current, but no independent reliable English result/impact source plus current non-directional GBP calculator intent was retained. The accessible signals remain inflation and GBP direction discussion; no new search, example or window beyond generic macro content warrants a refresh.",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "Office for National Statistics",
+            "url": "https://www.ons.gov.uk/releases/consumerpriceinflationukseptember2026",
+            "source_type": "official_dated_statistical_release",
+            "published_at": "2026-10-21 07:00 BST",
+            "freshness_role": "Official release identifies the current UK September CPI publication date.",
+            "reliable": true
+          },
+          {
+            "publisher": "Office for National Statistics",
+            "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/datasets/consumerpriceinflation",
+            "source_type": "official_dated_dataset_notice",
+            "published_at": "2026-10-21",
+            "freshness_role": "Same-day notice says table labels were updated and underlying series unchanged; it cannot serve as an independent result or a new numeric content trigger.",
+            "reliable": true
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "observation_current_official_release_without_independent_impact_or_gbp_calculation_demand",
+          "duplicate_of": [],
+          "refresh_signals": {
+            "fact_delta": false,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": true
+          },
+          "reopen_trigger": "Obtain an independent reliable English impact/result source and a current publicly verifiable event-specific non-directional GBP size/pip/margin/cost question, then evaluate whether an existing GBP macro piece should refresh.",
+          "rationale": "ONS freshness alone cannot establish a search-to-calculator path. The accompanying dataset notice explicitly does not change the underlying series, and no safe, attributable GBP calculation demand was retained."
         }
       }
     }
@@ -27744,40 +28123,41 @@
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-10-20T22:06:41+08:00",
-      "source_count": 3,
-      "note": "覆盖 Bank Indonesia 10 月 20-21 日 Board of Governors meeting calendar、FTMO 10 月 15 日 Europe DST / trading-hours update，以及 BLS 10 月 20 日 state-employment release schedule。"
+      "checked_at": "2026-10-21T22:02:10+08:00",
+      "source_count": 4,
+      "note": "覆盖 StoneX / FOREX.com Japan weekend-US-index launch announcement、FOREX.com 7-Day index FAQ、Bank Indonesia October 21 result，以及 ONS UK September CPI release/dataset notice。"
     },
     {
       "channel": "独立可靠英文来源",
       "status": "complete",
-      "checked_at": "2026-10-20T22:06:41+08:00",
-      "source_count": 2,
-      "note": "J Trust Bank 的 10 月 19 日公开市场更新交叉 Bank Indonesia meeting/result window；GTR 的 10 月 16 日公开 rule-reading summary 交叉 FTMO DST 话题的外部注意力。两者均不替代各自官方规则或统计事实。"
+      "checked_at": "2026-10-21T22:02:10+08:00",
+      "source_count": 3,
+      "note": "Finance Magnates 与 FX News Group 独立报道 FOREX.com Japan launch；Reuters 的 MarketScreener syndication 交叉 Bank Indonesia result。ONS CPI 未保留满足内容门槛的独立结果/影响来源。"
     },
     {
       "channel": "Reddit / ForexFactory / BabyPips",
       "status": "partial",
-      "checked_at": "2026-10-20T22:06:41+08:00",
+      "checked_at": "2026-10-21T22:02:10+08:00",
       "source_count": 0,
-      "note": "复核公开可访问索引；未保存同时满足当前性和自然 PipGauge/PositionMath calculator bridge 的 Bank Indonesia、FTMO DST 或 BLS state-employment 讨论。"
+      "note": "复核公开可访问索引。保留最近 general weekend/prop-rule wording 只作范围检查；未将其当作 FOREX.com Japan terms，且未保存 Bank Indonesia 或 UK CPI 事件专属 non-directional calculator demand。"
     },
     {
       "channel": "X / Quora",
       "status": "limited",
-      "checked_at": "2026-10-20T22:06:41+08:00",
+      "checked_at": "2026-10-21T22:02:10+08:00",
       "source_count": 0,
-      "note": "无稳定可核验、同时满足当前性和自然计算器桥接的公开信号；登录墙、动态流、截图、预测和不可验证材料未计入。"
+      "note": "无稳定、公开、可核验且同时满足当前性和自然 calculator bridge 的信号；登录墙、动态流、截图、预测与不可验证材料未计入。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-10-20_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-10-20_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-10-21_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-10-21_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
-    "traffic_playbooks": "../热点流量打法.json"
+    "traffic_playbooks": "../热点流量打法.json",
+    "content_root": "../内容生产/2026-10-21"
   },
   "radar_model": "v3-calculator-bridge",
   "editorial_policy": {

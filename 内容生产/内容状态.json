@@ -386,5 +386,12 @@
     "content_url": "../内容生产/2026-09-05/HR-20260905-01/index.html",
     "content_format": "Medium / Reddit / X",
     "deadline": "2026-09-06T12:00:00-04:00"
+  },
+  "HR-20261021-01": {
+    "content_status": "review_ready",
+    "content_label": "FOREX.com Japan 周末 US 指数 CFD 规格核验审核包待人工审核",
+    "content_url": "../内容生产/2026-10-21/HR-20261021-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-10-24T17:00:00+09:00"
   }
 }
