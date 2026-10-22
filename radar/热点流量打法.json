@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-21T22:02:10+08:00",
+  "updated_at": "2026-10-22T22:00:00+08:00",
   "last_scan": {
-    "scan_date": "2026-10-21",
-    "selected_count": 1,
-    "playbook_ready_count": 1,
-    "content_package_count": 1,
-    "note": "HR-20261021-01 is a new, dated FOREX.com Japan US SP 500 / US Tech 100 weekend-CFD product-specification path. StoneX's official announcement, Finance Magnates and FX News Group independently verify the launch; the content stops at reader-verified point-value exposure and contains no market prediction or trading instruction. Bank Indonesia and UK CPI remain observations because no attributable non-directional calculator journey was verified."
+    "scan_date": "2026-10-22",
+    "selected_count": 0,
+    "playbook_ready_count": 0,
+    "content_package_count": 0,
+    "note": "Zero-output gate held. FundingPips' current On-Demand 100% cycle has a dated independent before/after signal but no dated or versioned official effective notice, so it remains an observation. HR-20261021-01 retains the FOREX.com Japan first-Saturday window; no new fact, query, example or window delta supports a duplicate refresh. No traffic playbook or content package was generated."
   },
   "items": {
     "HR-20261021-01": {
