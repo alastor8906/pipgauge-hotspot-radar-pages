@@ -1,0 +1,120 @@
+{
+  "scan_date": "2026-10-22",
+  "generated_at": "2026-10-22T22:00:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-22T22:00:00+08:00",
+      "source_count": 2,
+      "note": "覆盖 FundingPips current Legacy Rules 的 On Demand 100% / 35% / seven-day / 1% terms，以及 StoneX / FOREX.com Japan dated weekend-US-index announcement 的 active first-Saturday window。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-10-22T22:00:00+08:00",
+      "source_count": 4,
+      "note": "覆盖 ProprietaryTrading.com October 21 FundingPips before/after report、PropRuleGuard October change log，以及 Finance Magnates 和 FX News Group 对 FOREX.com Japan launch 的独立报道。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "partial",
+      "checked_at": "2026-10-22T22:00:00+08:00",
+      "source_count": 1,
+      "note": "公开 Reddit 索引含一条当日 FundingPips calendar-label dispute，只作为争议/措辞信号；它不可核验、不能确认规则事实，也未提供可归属的非方向性 calculator demand。ForexFactory 与 BabyPips 没有保留合格事件专属信号。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-22T22:00:00+08:00",
+      "source_count": 0,
+      "note": "没有稳定、公开、可核验且同时满足当前性和自然 calculator bridge 的信号；登录墙、动态流、截图、方向预测与不可验证材料未计入。"
+    }
+  ],
+  "candidates": {
+    "HR-20261022-01": {
+      "sources": [
+        {
+          "publisher": "FundingPips",
+          "url": "https://help.fundingpips.com/hc/en-us/articles/51307058233361-FundingPips-Legacy-Rules",
+          "source_type": "official_current_product_rules_undated",
+          "published_at": "checked 2026-10-22; page has no change date, version or effective time for this switch",
+          "freshness_role": "Official current source for the displayed On Demand 100% conditions, but its lack of dated/versioned change metadata prevents it from proving a timely official rule event.",
+          "reliable": true
+        },
+        {
+          "publisher": "ProprietaryTrading.com",
+          "url": "https://proprietarytrading.com/article/fundingpips-on-demand-100-percent-split-replaces-monthly-cycle",
+          "source_type": "independent_english_dated_rule_change_coverage",
+          "published_at": "2026-10-21",
+          "freshness_role": "Independent dated before/after report says the current help pages were read as edited on October 21 and distinguishes the old Monthly and current On Demand cycles; it does not replace an official effective notice.",
+          "reliable": true
+        },
+        {
+          "publisher": "PropRuleGuard",
+          "url": "https://propruleguard.com/rule-changes/2026-10",
+          "source_type": "independent_rule_tracker_heat_and_discovery",
+          "published_at": "2026-10-20",
+          "freshness_role": "Independent dated discovery signal for the claimed switch; recorded as supplemental tracker evidence, not as a reliable official rule authority.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_undated_official_product_rule_page_and_no_attributable_calculator_traffic_path",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "Require a FundingPips dated/versioned announcement, changelog or effective-time statement plus a current public model-specific non-directional rule-calculation question; then audit adjacent prop-rule material for refresh before any new package.",
+        "rationale": "The official page validates current parameters and independent dated sources identify a discovery window, but official-product-rule policy expressly holds an undated/unversioned official page at observation. A 35% or seven-day formula alone is not evidence of a current search-to-calculator journey."
+      }
+    },
+    "HR-20261022-02": {
+      "sources": [
+        {
+          "publisher": "StoneX",
+          "url": "https://www.stonex.com/en-us/media-room/press-releases/forex-com-launches-the-first-weekend-trading-service-in-japan-for-us-sp-500-and-us-tech-100-cfds/",
+          "source_type": "official_dated_product_launch_and_hours",
+          "published_at": "2026-10-21",
+          "freshness_role": "Still-current official source for the Japan product launch and first Saturday 17:00 JST session; it contains no October 22 revision.",
+          "reliable": true
+        },
+        {
+          "publisher": "Finance Magnates",
+          "url": "https://www.financemagnates.com/forex/forexcom-lets-japanese-clients-trade-us-stock-indices-on-weekends/",
+          "source_type": "independent_english_launch_impact_coverage",
+          "published_at": "2026-10-21",
+          "freshness_role": "Independent launch discovery coverage; no distinct October 22 search or fact update was found.",
+          "reliable": true
+        },
+        {
+          "publisher": "FX News Group",
+          "url": "https://fxnewsgroup.com/forex-news/retail-forex/forex-com-launches-weekend-trading-for-us-sp-500-and-us-tech-100-cfds-in-japan/",
+          "source_type": "independent_english_launch_coverage",
+          "published_at": "2026-10-21",
+          "freshness_role": "Independent launch coverage; no new dated terms or calculation question beyond HR-20261021-01 was retained.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "duplicate",
+        "duplicate_of": [
+          "HR-20261021-01"
+        ],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "After a new dated official product, hours, region or rule revision plus a distinct current calculation question, re-evaluate refresh. Do not treat the unchanged October 24 first-Saturday window as a second window delta.",
+        "rationale": "The valid active window belongs to yesterday's selected package. It would be duplicate content to restate the same 7-Day product, exact-contract verification route and conditional point-value expression without a second qualified delta."
+      }
+    }
+  }
+}

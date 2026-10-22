@@ -1,14 +1,37 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-20T22:06:41+08:00",
+  "updated_at": "2026-10-22T22:00:00+08:00",
   "last_scan": {
-    "scan_date": "2026-10-20",
+    "scan_date": "2026-10-22",
     "selected_count": 0,
     "playbook_ready_count": 0,
     "content_package_count": 0,
-    "note": "Zero-output gate held. Bank Indonesia's October 20-21 meeting is live but has no verified public English USD/IDR calculation journey. FTMO's October 15 Europe DST trading-hours and reset-time facts remain owned by HR-20261017-01 and have no second refresh delta. BLS's October 20 state-employment release has no natural non-directional calculator demand. No playbook, content package, platform draft or social action was created."
+    "note": "Zero-output gate held. FundingPips' current On-Demand 100% cycle has a dated independent before/after signal but no dated or versioned official effective notice, so it remains an observation. HR-20261021-01 retains the FOREX.com Japan first-Saturday window; no new fact, query, example or window delta supports a duplicate refresh. No traffic playbook or content package was generated."
   },
   "items": {
+    "HR-20261021-01": {
+      "playbook_status": "ready",
+      "execution_mode": "new",
+      "urgency": "high",
+      "publish_deadline": "2026-10-24T17:00:00+09:00",
+      "traffic_hook": "StoneX announced on October 21 that FOREX.com Japan will offer weekend trading in US SP 500 and US Tech 100 CFDs; its annex lists the first Saturday session as 17:00 JST to 06:00 the next day. Finance Magnates and FX News Group independently covered the same launch. The hook is the newly available, named 7-Day CFD session and the need to verify the exact product before using it—not a view on either index, Japan, or the next market open.",
+      "traffic_window": "Publish after human verification on October 21-24, before the first Saturday session begins at 17:00 JST on October 24. Retire the first-session wording as that session starts, on any official product/hour/region correction, or whenever the reader cannot verify the exact platform Market Information Sheet and contract inputs.",
+      "search_intents": ["FOREX.com Japan weekend trading US Tech 100 2026", "FOREX.com Japan weekend US SP 500 CFD hours", "US Tech 100 CFD point value JPY", "US SP 500 CFD planned point exposure calculator", "7-Day index CFD weekend spread contract specification"],
+      "traffic_angle": "Borrow the new Saturday 17:00 JST product window to answer one narrow calculation question: after confirming the reader's own 7-Day symbol and Market Information Sheet, what is the account-currency exposure of a planned point distance? Use 0.10 contract × 40 planned points × reader-verified JPY per point; if that reader's own sheet says JPY 500/point, the conditional arithmetic is JPY 2,000 before costs. JPY 500 is not a FOREX.com term, live quote, universal point value or market prediction.",
+      "calculator_bridge": "Lead with the official Japan product/time window and FOREX.com's 7-Day reference-market caveat, then show the variable formula. PipGauge NAS100 Point Value, Position Size, P&L, Margin and Broker Contract Specifications help verify reader-entered symbol, quantity, point value and planned distance after the product sheet is checked. They do not establish service eligibility, provide the broker's contract value, interpret the weekend price, recommend a trade or guarantee a fill. PositionMath is not the primary bridge.",
+      "example_scenario": "Teaching only: 0.10 contract × 40 planned points × reader-verified JPY per point. If the reader's own confirmed product sheet states JPY 500 per point, that conditional arithmetic is JPY 2,000 before spread, commission, financing, slippage, gaps, minimum size, margin calls or execution. JPY 500 is not asserted as a FOREX.com or universal US-index-CFD specification.",
+      "distribution_order": ["new PipGauge Japan weekend-index product-specification note", "Medium dated fact-and-variable-exposure explainer", "X self-contained Saturday-session verification thread", "Reddit native contract-check process discussion without a first-round link"],
+      "link_placement": "Give the named product, Saturday JST time, 7-Day product distinction, variable formula and cost/execution limits before a single natural PipGauge verification link. Initial Reddit copy contains no link, UTM, affiliate text or pitch; the X thread remains understandable without a click.",
+      "expiry_condition": "Stop the first-Saturday framing at 17:00 JST on October 24, if StoneX/FOREX.com changes the product, timing, region or FAQ language, or if a reader cannot verify their exact Market Information Sheet. Do not reuse the 0.10/40/JPY-500 teaching arithmetic as an index forecast, a universal specification, a weekend-cost estimate or evergreen product claim.",
+      "editorial_boundary": "Do not predict the S&P 500, Nasdaq, Japan, JPY, a Monday open, a gap, volatility, liquidity, spreads, costs, profitability or any market move. Do not recommend FOREX.com, weekend trading, opening/closing/holding a position or a product/account. Do not conflate 7-Day CFDs with futures, ETFs, cash indices or another broker's contract; do not present reader-verified teaching inputs as official terms or execution evidence.",
+      "refresh_target": null,
+      "refresh_signals": {"fact_delta": true, "search_delta": true, "example_delta": true, "window_delta": true},
+      "refresh_updates": [],
+      "content_mainline": "Create one dated FOREX.com Japan first-Saturday product-specification explainer. It captures a specific search/discussion object and turns it into reader-verified point-value exposure arithmetic, without becoming a generic weekend-trading or index-market article.",
+      "body_material": ["StoneX October 21 announcement: Japan US SP 500 / US Tech 100 CFDs, Saturday 17:00-06:00 JST and daily 06:00-07:00 maintenance", "Finance Magnates and FX News Group independent same-day launch coverage", "FOREX.com 7-Day index FAQ: alternative reference markets, potential wider weekend spreads and Market Information Sheet verification", "0.10 contract × 40 planned points × reader-verified JPY per point; conditional JPY 500 example only", "October 24 17:00 JST expiry and immediate official-detail-change stop gate"],
+      "product_bridge": "PipGauge exposes the reader's verified NAS100 / index-CFD point-value, planned size, P&L and margin inputs after the official product facts and contract specification are checked. It does not validate account eligibility, the announced session, a broker specification, a price or a trade decision.",
+      "product_bridge_type": "existing"
+    },
     "HR-20261017-01": {
       "playbook_status": "ready",
       "execution_mode": "new",
