@@ -1,14 +1,37 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-22T22:00:00+08:00",
+  "updated_at": "2026-10-23T22:05:19+08:00",
   "last_scan": {
-    "scan_date": "2026-10-22",
-    "selected_count": 0,
-    "playbook_ready_count": 0,
-    "content_package_count": 0,
-    "note": "Zero-output gate held. FundingPips' current On-Demand 100% cycle has a dated independent before/after signal but no dated or versioned official effective notice, so it remains an observation. HR-20261021-01 retains the FOREX.com Japan first-Saturday window; no new fact, query, example or window delta supports a duplicate refresh. No traffic playbook or content package was generated."
+    "scan_date": "2026-10-23",
+    "selected_count": 1,
+    "playbook_ready_count": 1,
+    "content_package_count": 1,
+    "note": "HR-20261023-01 refreshes HR-20261017-01 rather than creating a second DST article. FTMO's dated October 22 CFD update adds the October 24 all-platform maintenance checkpoint and named affected-symbol context while retaining the October 26-November 1 reset-clock fact; the current search path is to verify the live Account MetriX countdown before the Saturday interruption and transition week. U.S. flash PMI lacks an attributable non-directional calculator path, and the active FOREX.com Japan first-Saturday window has no second refresh delta."
   },
   "items": {
+    "HR-20261023-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-10-24T08:00:00+03:00",
+      "traffic_hook": "FTMO's dated October 22 CFD Trading Update adds a scheduled Saturday, October 24 08:00-12:00 MetaTrader-time (GMT+3) maintenance window for MT4, MT5, TradingView and cTrader, then identifies the October 26-November 1 European-session and Prague-reset transition. The immediate reader question is which clock and account display still defines the risk-day boundary around a platform interruption and DST week—not what any market will do.",
+      "traffic_window": "Publish only after human rechecks on October 23 or before 08:00 GMT+3 on October 24. The maintenance-specific hook expires as the window starts; the updated reset-clock section may remain only through November 1 and only while FTMO's live October 22 wording, applicable product and Account MetriX countdown agree. Retire immediately on an official correction, a different affected platform/product or an unavailable/contradictory account countdown.",
+      "search_intents": ["FTMO maintenance October 24 2026", "FTMO MT5 maintenance Saturday October 24", "FTMO daily loss reset time October 26 2026", "FTMO Prague midnight MetaTrader offset DST", "FTMO Account MetriX reset countdown"],
+      "traffic_angle": "Borrow the newly dated Saturday maintenance checkpoint and the named transition-week platform context to answer a narrow, readable timing problem: FTMO lists 08:00-12:00 GMT+3 on October 24 as unavailable, then says Prague midnight and MetaTrader midnight are 2 hours apart from October 26 through November 1 rather than the usual 1. Demonstrate the three checkpoints—maintenance window, platform clock and live Account MetriX countdown—before introducing any tool. This refresh is not a claim about an outage outcome, a market move or a trading response.",
+      "calculator_bridge": "After the reader verifies the current official update, exact account/product and Account MetriX countdown, PipGauge Forex Session Clock can display the reader-verified Prague/platform/local labels; PipGauge Daily Loss Limit can keep a reader-entered daily boundary separate from planned trade risk. Position Size remains a distinct later calculation only after balance, open P&L, contract value and stop inputs are independently verified. The calculators do not establish FTMO terms, determine reset time, diagnose an outage, validate eligibility or prevent a breach.",
+      "example_scenario": "Teaching only: FTMO's October 22 update lists Saturday 24 October 08:00-12:00 GMT+3 maintenance and says the Prague/MetaTrader-midnight gap is 2 hours for 26 October-1 November instead of the usual 1 hour. The useful worksheet has three labels: the displayed platform time, Prague time and the live Account MetriX countdown. No dollar-loss, point-value or position-size number is inferred from those timing facts.",
+      "distribution_order": ["refresh the existing PipGauge FTMO DST reset-time verification explainer (HR-20261017-01) with the October 22 facts and title", "Medium current fact-and-method refresh after human verification", "X self-contained maintenance-to-reset-clock thread", "Reddit native clock-verification question without a first-round link"],
+      "link_placement": "Give the October 24 time, affected platforms, 1-hour-to-2-hour timing change and Account MetriX verification sequence before one natural PipGauge link. The first Reddit post carries no link, UTM, affiliate text or pitch. The X main thread must be complete without a click.",
+      "expiry_condition": "Stop the Saturday-maintenance hook at 08:00 GMT+3 on October 24; stop the DST framing after November 1; and stop immediately if FTMO changes the dates, maintenance/platform scope, reset wording or affected products, or if an account-specific countdown cannot be verified. Do not recycle these timing numbers as generic prop-firm terms, market-volatility evidence or execution-cost claims.",
+      "editorial_boundary": "Do not predict FX, CFD, index, equity or other market direction; tell readers to trade, pause, hold, close, size or buy an account; claim the maintenance caused a result; infer terms for another FTMO product or firm; claim a local reset time without the reader's live Account MetriX check; turn the one-hour/two-hour offset into a dollar-loss estimate; or promise compliance, access or order execution.",
+      "refresh_target": "HR-20261017-01",
+      "refresh_signals": {"fact_delta": true, "search_delta": true, "example_delta": true, "window_delta": true},
+      "refresh_updates": ["Replace the October 15-only headline with the October 22 maintenance-to-reset-clock title.", "Replace the old fact block with the October 24 08:00-12:00 GMT+3 all-platform maintenance detail, named MT4/MT5 European-session context, and October 22 official source.", "Replace the old pre-change deadline with the October 24 08:00 GMT+3 maintenance start; retain the November 1 DST expiry.", "Keep the Account MetriX countdown as the only account-specific reset check; do not turn the refresh into an outage complaint, execution claim or generic daily-loss article."],
+      "content_mainline": "Refresh HR-20261017-01 only. The current audit package is a replacement snapshot, not a second same-shape article: it uses FTMO's newly dated October 22 maintenance fact to bring readers to a verified Account MetriX reset countdown before the October 26 transition week.",
+      "body_material": ["FTMO October 22 2026 CFD Trading Update: all-platform Saturday maintenance, 08:00-12:00 MetaTrader time (GMT+3)", "FTMO October 22 update: October 26-November 1 named European-symbol hours and Prague-midnight versus MetaTrader-midnight 2-hour reset gap", "FindBestProp October 23 independent update roundup as public discovery/impact context only", "Current public Reddit FTMO platform-outage discussion as heat wording only, never as an outage fact or account-result source", "three-label verification: official update, Account MetriX countdown, platform/local display; no inferred dollar risk"],
+      "product_bridge": "PipGauge helps readers separate verified clock labels and a reader-entered daily-loss boundary from later position sizing. It does not verify an FTMO account, infer a reset, supply contract inputs, determine service availability or make a trading decision.",
+      "product_bridge_type": "existing"
+    },
     "HR-20261021-01": {
       "playbook_status": "ready",
       "execution_mode": "new",

@@ -1,0 +1,141 @@
+{
+  "scan_date": "2026-10-23",
+  "generated_at": "2026-10-23T22:05:19+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-23T22:05:19+08:00",
+      "source_count": 3,
+      "note": "覆盖 FTMO 22 October CFD Trading Update 的 Saturday maintenance、affected platforms、Europe/US DST transition、Prague-time Max Daily Loss reset 与 Account MetriX countdown；复查 StoneX/FOREX.com Japan active first-Saturday window；覆盖当日 U.S. flash PMI 公共日历窗口。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-10-23T22:05:19+08:00",
+      "source_count": 3,
+      "note": "覆盖 FindBestProp 对新 FTMO update 的独立 dated rule-check、公开经济日历对 PMI 当前窗口的交叉发现，以及 Finance Magnates/FX News Group 对 FOREX.com Japan 原始 launch 的持续复查。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "partial",
+      "checked_at": "2026-10-23T22:05:19+08:00",
+      "source_count": 1,
+      "note": "公开 Reddit 有近期 FTMO platform/daily-loss 措辞，严格仅作热度信号；未保留可验证、当前、事件专属 non-directional PMI calculator demand。ForexFactory 与 BabyPips 没有保留合格新增信号。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-23T22:05:19+08:00",
+      "source_count": 0,
+      "note": "没有稳定、公开、可核验且同时满足当前性和自然 calculator bridge 的新增信号；登录墙、动态流、截图、方向预测与不可验证材料未计入。"
+    }
+  ],
+  "candidates": {
+    "HR-20261023-01": {
+      "sources": [
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/en/blog/trading-updates/trading-update-22-oct-2026/",
+          "source_type": "official_dated_cfd_trading_update",
+          "published_at": "2026-10-22",
+          "freshness_role": "Primary dated source for the October 24 08:00-12:00 GMT+3 maintenance, named platforms, transition-week hours, Prague-time daily-loss reset, two-hour offset and Account MetriX countdown instruction.",
+          "reliable": true
+        },
+        {
+          "publisher": "FindBestProp",
+          "url": "https://www.findbestprop.com/blog/ftmo-clock-blue-guardian-split-earn2trade-both50-october-23-2026",
+          "source_type": "independent_dated_rule_check_and_public_impact_context",
+          "published_at": "2026-10-23",
+          "freshness_role": "Independent public rule-check that records the October 22 FTMO CFD note, October 24 maintenance and October 26-November 1 timing sequence. Commercial links are not used as rule authority; FTMO remains authoritative for terms.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/PropFirmTester",
+          "url": "https://www.reddit.com/r/PropFirmTester/comments/1xakswc/ftmo_server_down_now/",
+          "source_type": "public_discussion_heat_only",
+          "published_at": "2026-10-21 to 2026-10-23 discussion activity",
+          "freshness_role": "Current public wording around platform access, position management and daily-loss concern; not a source for maintenance facts, FTMO terms, user losses or outcomes.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass_refresh",
+        "decision_gate": "selected_refresh",
+        "duplicate_of": ["HR-20261017-01"],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "reopen_trigger": "No reopening required while the current refresh window holds. Stop the maintenance hook at 08:00 GMT+3 October 24; stop the DST hook after November 1. Re-audit only after a new dated official FTMO revision and a distinct calculator question.",
+        "rationale": "The October 22 official update is within 72 hours and adds a discrete Saturday maintenance fact, affected platform scope and named transition context not contained in the October 15-only package. The new maintenance query object, replacement timing worksheet and deadline satisfy all four refresh-signal categories. The natural bridge is verification of a reader's Account MetriX countdown with clock labels—not market direction or an account-result claim."
+      }
+    },
+    "HR-20261023-02": {
+      "sources": [
+        {
+          "publisher": "TradingCharts",
+          "url": "https://forex.tradingcharts.com/economic_calendar/2026-10-23.html?code=USD",
+          "source_type": "public_english_economic_calendar",
+          "published_at": "2026-10-23",
+          "freshness_role": "Public current calendar confirmation of the October 23 flash-PMI window; it does not establish a calculator intent.",
+          "reliable": true
+        },
+        {
+          "publisher": "Kiplinger",
+          "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+          "source_type": "independent_english_calendar_coverage",
+          "published_at": "2026-10-16",
+          "freshness_role": "Independent English calendar coverage identifies the October 23 U.S. flash-PMI release window; it does not establish a calculator intent.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_no_attributable_calculator_traffic_path",
+        "duplicate_of": [],
+        "refresh_signals": {"fact_delta": true, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "Require a verifiable public event-specific, non-directional fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query; then compare it with historical macro packages before selecting refresh or new.",
+        "rationale": "The macro event is recent and independently discoverable, but observed public attention is direction/policy-led. Generic sizing arithmetic would be invented rather than demanded by the event."
+      }
+    },
+    "HR-20261023-03": {
+      "sources": [
+        {
+          "publisher": "StoneX",
+          "url": "https://www.stonex.com/en-us/media-room/press-releases/forex-com-launches-the-first-weekend-trading-service-in-japan-for-us-sp-500-and-us-tech-100-cfds/",
+          "source_type": "official_dated_product_launch_and_hours",
+          "published_at": "2026-10-21",
+          "freshness_role": "Still-current official source for the October 24 first-Saturday session; it contains no October 23 revision.",
+          "reliable": true
+        },
+        {
+          "publisher": "Finance Magnates",
+          "url": "https://www.financemagnates.com/forex/forexcom-lets-japanese-clients-trade-us-stock-indices-on-weekends/",
+          "source_type": "independent_english_launch_coverage",
+          "published_at": "2026-10-21",
+          "freshness_role": "Independent launch coverage; no new October 23 search or fact delta was retained.",
+          "reliable": true
+        },
+        {
+          "publisher": "FX News Group",
+          "url": "https://fxnewsgroup.com/forex-news/retail-forex/forex-com-launches-weekend-trading-for-us-sp-500-and-us-tech-100-cfds-in-japan/",
+          "source_type": "independent_english_launch_coverage",
+          "published_at": "2026-10-21",
+          "freshness_role": "Independent launch coverage; it does not add a new product fact or calculation question on October 23.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "duplicate",
+        "duplicate_of": ["HR-20261021-01"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": false},
+        "reopen_trigger": "After a new dated official product, hours, region or rule revision plus a distinct current calculation question, re-evaluate refresh. Do not treat the unchanged October 24 first-Saturday window as a second window delta.",
+        "rationale": "The active launch window belongs to HR-20261021-01. Restating the exact product/specification route would be duplicate content."
+      }
+    }
+  }
+}
