@@ -1,0 +1,28 @@
+{
+  "scan_date": "2026-10-24",
+  "generated_at": "2026-10-24T22:05:00+08:00",
+  "coverage": [
+    {"channel":"官方与一手来源","status":"complete","checked_at":"2026-10-24T22:05:00+08:00","source_count":4,"note":"覆盖 Federal Reserve 10 月 27–28 日 FOMC calendar、ECB 10 月 28–29 日 monetary-policy calendar，以及已过期的 FOREX.com Japan first-Saturday 与 FTMO maintenance windows 的去重复核。"},
+    {"channel":"独立可靠英文来源","status":"complete","checked_at":"2026-10-24T22:05:00+08:00","source_count":2,"note":"覆盖 Reuters 10 月 20 日 FOMC poll/report 与 Reuters 10 月 23 日 ECB preview；它们确认当前公共关注和日程，不被用作方向、结果或计算器需求事实。"},
+    {"channel":"Reddit / ForexFactory / BabyPips","status":"partial","checked_at":"2026-10-24T22:05:00+08:00","source_count":2,"note":"公开 Reddit 可见 FOMC/EURUSD 讨论，严格只作方向性关注的反证；未保留任何事件专属、non-directional calculator demand。ForexFactory 与 BabyPips 无合格新增信号。"},
+    {"channel":"X / Quora","status":"limited","checked_at":"2026-10-24T22:05:00+08:00","source_count":0,"note":"没有稳定、公开、可核验且同时满足当前性和自然 calculator bridge 的信号；登录墙、动态流、截图、预测与不可验证材料未计入。"}
+  ],
+  "candidates": {
+    "HR-20261024-01": {
+      "sources": [
+        {"publisher":"Federal Reserve Board","url":"https://www.federalreserve.gov/monetarypolicy.htm","source_type":"official_current_monetary_policy_calendar","published_at":"2026-10-07 (current calendar; upcoming event 2026-10-27 to 2026-10-28)","freshness_role":"Official source for the imminent October 27–28 two-day FOMC meeting and press conference window.","reliable":true},
+        {"publisher":"Reuters","url":"https://www.marketscreener.com/news/fed-to-skip-october-but-raise-rates-again-in-december-nearly-all-economists-say-ce785cd8db88f22d","source_type":"independent_dated_english_meeting_preview","published_at":"2026-10-20","freshness_role":"Independent current reporting that identifies the October 27–28 meeting as the active policy window; not used for a market forecast or calculator-demand claim.","reliable":true},
+        {"publisher":"Reddit r/investing","url":"https://www.reddit.com/r/investing/comments/1x8rtgh/federal_reserve_october_and_december_meetings/","source_type":"public_discussion_heat_directional_only","published_at":"2026-10-18 to 2026-10-24 discussion activity","freshness_role":"Shows current meeting attention but is direction/rate-path oriented and is not evidence of any fact, trade outcome or calculator need.","reliable":false}
+      ],
+      "decision": {"novelty_gate":"fail","decision_gate":"observation_no_attributable_calculator_traffic_path","duplicate_of":["HR-20260913-01","HR-20260914-01","HR-20260915-01","HR-20260916-01","HR-20261003-01"],"refresh_signals":{"fact_delta":false,"search_delta":false,"example_delta":false,"window_delta":true},"reopen_trigger":"Require an official decision/result or a verifiable public event-specific, non-directional fixed-risk, pip-value, margin, cost, quantity or portfolio-heat question; then audit at least two refresh signals against the historical FOMC packages.","rationale":"The meeting is within the future-seven-day window and independently confirmed, but the observable search/discussion object remains policy and price direction. The only new signal is a calendar window; a generic FOMC sizing table would duplicate prior material and invent a calculator journey."}
+    },
+    "HR-20261024-02": {
+      "sources": [
+        {"publisher":"European Central Bank","url":"https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.SG.html","source_type":"official_current_governing_council_calendar","published_at":"2026-09-30 (current calendar; upcoming event 2026-10-28 to 2026-10-29)","freshness_role":"Official source for the October 28–29 Governing Council monetary-policy meeting and October 29 press conference.","reliable":true},
+        {"publisher":"Reuters","url":"https://d2233.cms.socastsrm.com/2026/10/22/ready-for-a-french-test-five-questions-for-the-ecb/","source_type":"independent_dated_english_meeting_preview","published_at":"2026-10-23","freshness_role":"Independent current meeting preview; it confirms attention but is not used for a rate forecast or calculator-demand claim.","reliable":true},
+        {"publisher":"Reddit r/Forexstrategy","url":"https://www.reddit.com/r/Forexstrategy/comments/1xdmey9/eurusd_market_outlook_i_was_looking_for_an_upward/","source_type":"public_discussion_heat_directional_only","published_at":"2026-10-23 to 2026-10-24 discussion activity","freshness_role":"Shows public awareness of the Fed/ECB week but is a directional EUR/USD discussion, not calculator-demand evidence.","reliable":false}
+      ],
+      "decision": {"novelty_gate":"fail","decision_gate":"observation_no_attributable_calculator_traffic_path","duplicate_of":[],"refresh_signals":{"fact_delta":false,"search_delta":false,"example_delta":false,"window_delta":true},"reopen_trigger":"Require a verified official result/rule change plus a current public, event-specific non-directional EUR calculation query; then compare fact, search, example and window deltas with historical macro-risk packages before any refresh or new package.","rationale":"The event and public attention are real, but current material is about macro and EUR/USD direction. A generic pip-value or position-size handoff would not answer a demonstrated current question, so no traffic playbook is justified."}
+    }
+  }
+}
