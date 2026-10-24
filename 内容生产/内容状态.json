@@ -18,12 +18,12 @@
     "refresh_target": null
   },
   "_last_scan": {
-    "scan_date": "2026-10-23",
-    "selected_count": 1,
-    "content_package_count": 1,
-    "platform_draft_count": 3,
-    "status": "review_ready_refresh",
-    "note": "HR-20261023-01 is a current review snapshot that refreshes HR-20261017-01 rather than creating a second DST article. It replaces the October 15-only framing with FTMO's dated October 22 Saturday 24 October maintenance checkpoint and current reset-clock context. One Medium, one Reddit and one X draft are awaiting_human_review. No post, comment, message, email or social-account action occurred."
+    "scan_date": "2026-10-24",
+    "selected_count": 0,
+    "content_package_count": 0,
+    "platform_draft_count": 0,
+    "status": "no_qualified_topics",
+    "note": "No 2026-10-24 content package was created. FOMC and ECB calendar attention did not establish an attributable non-directional calculator journey, and the prior short-window FOREX.com Japan and FTMO maintenance hooks had expired. No post, comment, message, email or social-account action occurred."
   },
   "HR-20261016-01": {
     "content_status": "review_ready",

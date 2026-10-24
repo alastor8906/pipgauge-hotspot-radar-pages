@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-23T22:05:19+08:00",
+  "updated_at": "2026-10-24T22:05:00+08:00",
   "last_scan": {
-    "scan_date": "2026-10-23",
-    "selected_count": 1,
-    "playbook_ready_count": 1,
-    "content_package_count": 1,
-    "note": "HR-20261023-01 refreshes HR-20261017-01 rather than creating a second DST article. FTMO's dated October 22 CFD update adds the October 24 all-platform maintenance checkpoint and named affected-symbol context while retaining the October 26-November 1 reset-clock fact; the current search path is to verify the live Account MetriX countdown before the Saturday interruption and transition week. U.S. flash PMI lacks an attributable non-directional calculator path, and the active FOREX.com Japan first-Saturday window has no second refresh delta."
+    "scan_date": "2026-10-24",
+    "selected_count": 0,
+    "playbook_ready_count": 0,
+    "content_package_count": 0,
+    "note": "No traffic playbook was created. The October 27-28 FOMC and October 28-29 ECB meetings are timely and independently sourced, but retained public attention is direction-led and supplies no attributable non-directional calculator journey. The October 21 FOREX.com Japan first-Saturday and October 23 FTMO maintenance hooks have expired without a new dated official delta."
   },
   "items": {
     "HR-20261023-01": {
