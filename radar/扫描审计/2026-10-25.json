@@ -1,0 +1,92 @@
+{
+  "scan_date": "2026-10-25",
+  "generated_at": "2026-10-25T22:05:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-25T22:05:00+08:00",
+      "source_count": 3,
+      "note": "覆盖 Federal Reserve 10 月 27-28 日 FOMC calendar、ECB 10 月 28-29 日 monetary-policy calendar，以及 Hola Prime 10 月 21 日带署名的 Rulebook launch 公告。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-10-25T22:05:00+08:00",
+      "source_count": 3,
+      "note": "覆盖 Reuters 10 月 20 日 FOMC reporting、Reuters 10 月 23 日 ECB preview 和 ProprietaryTrading.com 10 月 22 日 Hola Prime rule-reading analysis。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "partial",
+      "checked_at": "2026-10-25T22:05:00+08:00",
+      "source_count": 0,
+      "note": "复查公开索引；未保留任何同时满足近期性、可核验性和事件专属非方向性 calculator demand 的新信号。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-25T22:05:00+08:00",
+      "source_count": 0,
+      "note": "没有稳定、公开且可核验的合格信号；登录墙、动态流、截图、预测与不可验证材料未计入。"
+    }
+  ],
+  "candidates": {
+    "HR-20261025-01": {
+      "sources": [
+        {
+          "publisher": "Federal Reserve Board",
+          "url": "https://www.federalreserve.gov/monetarypolicy.htm",
+          "source_type": "official_current_monetary_policy_calendar",
+          "published_at": "2026-10-07 (current calendar; upcoming event 2026-10-27 to 2026-10-28)",
+          "freshness_role": "Official source for the imminent two-day FOMC meeting and press-conference window.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.marketscreener.com/news/fed-to-skip-october-but-raise-rates-again-in-december-nearly-all-economists-say-ce785cd8db88f22d",
+          "source_type": "independent_dated_english_meeting_preview",
+          "published_at": "2026-10-20",
+          "freshness_role": "Independent current reporting that confirms the active October 27-28 meeting window; not used for a market forecast or calculator-demand claim.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_no_attributable_calculator_traffic_path",
+        "duplicate_of": ["HR-20261024-01", "HR-20260913-01", "HR-20261003-01"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "Require an official decision/result or a verifiable current, event-specific non-directional fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query; then audit at least two refresh signals against historical FOMC packages.",
+        "rationale": "The meeting is imminent and independently confirmed, but retained public attention is rate-path and market-direction led. The calendar is the only refresh signal; a generic sizing table would invent a traffic path."
+      }
+    },
+    "HR-20261025-02": {
+      "sources": [
+        {
+          "publisher": "European Central Bank",
+          "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.SG.html",
+          "source_type": "official_current_governing_council_calendar",
+          "published_at": "2026-09-30 (current calendar; upcoming event 2026-10-28 to 2026-10-29)",
+          "freshness_role": "Official source for the October 28-29 Governing Council meeting and October 29 press conference.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://d2233.cms.socastsrm.com/2026/10/22/ready-for-a-french-test-five-questions-for-the-ecb/",
+          "source_type": "independent_dated_english_meeting_preview",
+          "published_at": "2026-10-23",
+          "freshness_role": "Independent current reporting that confirms the current meeting window; not used for a rate forecast or calculator-demand claim.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_no_attributable_calculator_traffic_path",
+        "duplicate_of": ["HR-20261024-02"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "Require a verified official result or rule change plus a current public, event-specific non-directional EUR calculation query; then compare fact, search, example and window deltas with historical macro-risk packages.",
+        "rationale": "The calendar remains timely, but observable English discussion is policy and EUR/USD direction. It supplies no attributable calculation question, and a generic PipGauge handoff would manufacture demand."
+      }
+    }
+  }
+}
