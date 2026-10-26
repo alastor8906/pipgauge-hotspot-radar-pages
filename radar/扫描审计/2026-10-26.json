@@ -1,0 +1,120 @@
+{
+  "scan_date": "2026-10-26",
+  "generated_at": "2026-10-26T22:05:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-26T22:05:00+08:00",
+      "source_count": 3,
+      "note": "覆盖 Federal Reserve 10 月 27-28 日 FOMC calendar、ECB 10 月 28-29 日 Governing Council calendar，以及 FundingPips 当前 restricted-news / weekend-holding help page。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-10-26T22:05:00+08:00",
+      "source_count": 2,
+      "note": "覆盖 Reuters 10 月 26 日 FOMC coverage 和 Reuters 10 月 26 日 ECB preview；均只用于事件窗口与宏观关注确认，不用于方向或计算需求主张。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "partial",
+      "checked_at": "2026-10-26T22:05:00+08:00",
+      "source_count": 1,
+      "note": "保留一条公开 FundingPips calendar-classification discussion，且仅作热度/措辞信号。未保留同时满足近期性、事实可核验和事件专属非方向计算需求的新材料。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-26T22:05:00+08:00",
+      "source_count": 0,
+      "note": "没有稳定、公开且可核验的合格信号；动态流、登录墙、截图、预测与不可验证材料未计入。"
+    }
+  ],
+  "candidates": {
+    "HR-20261026-01": {
+      "sources": [
+        {
+          "publisher": "Federal Reserve Board",
+          "url": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar",
+          "source_type": "official_current_fomc_calendar",
+          "published_at": "2026-10 (current calendar; upcoming event 2026-10-27 to 2026-10-28)",
+          "freshness_role": "Official source for the imminent two-day FOMC meeting.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.marketscreener.com/news/fed-to-hit-pause-on-rate-hikes-but-maybe-not-for-long-ce785cdcd881f527",
+          "source_type": "independent_dated_english_meeting_coverage",
+          "published_at": "2026-10-26",
+          "freshness_role": "Independent current English coverage confirming active attention to the October 27-28 meeting; not used for a direction or calculator-demand claim.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_no_attributable_calculator_traffic_path",
+        "duplicate_of": ["HR-20261025-01", "HR-20261024-01", "HR-20260913-01", "HR-20261003-01"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "Require an official decision/result or a verifiable current, event-specific non-directional fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query; then audit at least two refresh signals against historical FOMC packages.",
+        "rationale": "The window is now within 48 hours and independent current reporting is available, but retained public attention remains rate-path and market-direction led. The calendar countdown is the sole refresh signal; a generic sizing table would invent a traffic path."
+      }
+    },
+    "HR-20261026-02": {
+      "sources": [
+        {
+          "publisher": "European Central Bank",
+          "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.SG.html",
+          "source_type": "official_current_governing_council_calendar",
+          "published_at": "2026-09-30 (current calendar; upcoming event 2026-10-28 to 2026-10-29)",
+          "freshness_role": "Official source for the October 29 monetary-policy decision and press conference.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.investing.com/news/economy-news/ready-for-a-french-test-five-questions-for-the-ecb-4971518",
+          "source_type": "independent_dated_english_meeting_preview",
+          "published_at": "2026-10-26",
+          "freshness_role": "Independent current English preview confirming the active October meeting window; not used for a direction or calculator-demand claim.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_no_attributable_calculator_traffic_path",
+        "duplicate_of": ["HR-20261025-02", "HR-20261024-02"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "Require a verified official decision or rule change plus a current public, event-specific non-directional EUR calculation query; then compare fact, search, example and window deltas with historical macro-risk packages.",
+        "rationale": "Reuters has refreshed the ECB preview, but that does not create a calculation question. Retained English attention is rates, energy and EUR direction; only the approaching calendar window has changed."
+      }
+    },
+    "HR-20261026-03": {
+      "sources": [
+        {
+          "publisher": "FundingPips",
+          "url": "https://help.fundingpips.com/hc/en-us/articles/34504137479441-News-Trading-Weekend-Holding",
+          "source_type": "official_current_rule_help_page_without_versioned_change_date",
+          "published_at": "undated current page (retrieved 2026-10-26)",
+          "freshness_role": "Current official wording for restricted-news, speech and calendar policies, but not a dated source for the alleged calendar-label change.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/Forex",
+          "url": "https://www.reddit.com/r/Forex/comments/1xci54s/funding_pips_changed_news_to_red_folder/",
+          "source_type": "public_community_heat_and_wording_signal",
+          "published_at": "2026-10-22",
+          "freshness_role": "Concrete community wording about an alleged dashboard versus ForexFactory classification difference; never used as rule fact or independent reliable source.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_missing_dated_official_product_rule_delta",
+        "duplicate_of": ["HR-20261022-01"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": false},
+        "reopen_trigger": "Require a publicly accessible dated/versioned FundingPips announcement or change-log that identifies the effective classification or timing rule, plus a current model-specific non-directional rule-calculation query; then evaluate refresh against HR-20261022-01.",
+        "rationale": "The community post is specific enough to retain as a watch signal, but it is outside the normal 72-hour window and cannot establish a company rule. The current official page lacks a publication date, version and effective time for the alleged change."
+      }
+    }
+  }
+}
