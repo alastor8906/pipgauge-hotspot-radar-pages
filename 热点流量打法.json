@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-26T22:05:00+08:00",
+  "updated_at": "2026-10-27T22:03:00+08:00",
   "last_scan": {
-    "scan_date": "2026-10-26",
+    "scan_date": "2026-10-27",
     "selected_count": 0,
     "playbook_ready_count": 0,
     "content_package_count": 0,
-    "note": "No traffic playbook was created. FOMC (October 27-28) and ECB (October 29) have current official/Reuters confirmation, but only the calendar window changed and retained public attention remains direction-led. FundingPips' calendar-classification complaint has no dated or versioned official rule delta, so it remains observation only."
+    "note": "No traffic playbook was created. FOMC (October 27-28) has begun and ECB (October 29) remains current, but the retained attention is still direction-led rather than a verifiable non-directional calculator journey. Topstep's current FOMC Tier-1 rule page is a useful rule-reading watch item, yet is undated and its public question signal is outside 72 hours; it cannot support a dated product-rule playbook."
   },
   "items": {
     "HR-20261023-01": {
