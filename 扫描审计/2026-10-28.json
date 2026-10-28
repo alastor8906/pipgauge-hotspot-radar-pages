@@ -1,0 +1,128 @@
+{
+  "scan_date": "2026-10-28",
+  "generated_at": "2026-10-28T22:00:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-28T22:00:00+08:00",
+      "source_count": 4,
+      "note": "覆盖 RBNZ October 28 dated OCR release、Federal Reserve October calendar、ECB Governing Council calendar 和 FundingPips current help page；FundingPips page 未标注本轮变更的 publication/version/effective date。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-10-28T22:00:00+08:00",
+      "source_count": 3,
+      "note": "覆盖 Reuters October 28 RBNZ result coverage、Reuters October 28 FOMC coverage 与 Reuters October 26 ECB preview；它们只用于事件事实和时效，不用于方向或 calculator-demand 主张。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "partial",
+      "checked_at": "2026-10-28T22:00:00+08:00",
+      "source_count": 2,
+      "note": "保留 BabyPips October 28 RBNZ analysis 作同日讨论/措辞信号；FundingPips Reddit complaint 发布于 October 22，超默认 72 小时，只作过期争议线索。没有保留任何同时满足近期性、可核验性和事件专属非方向性 calculator demand 的新信号。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-28T22:00:00+08:00",
+      "source_count": 0,
+      "note": "没有稳定、公开且可核验的合格信号；动态流、登录墙、截图、预测与不可验证材料未计入。"
+    }
+  ],
+  "candidates": {
+    "HR-20261028-01": {
+      "sources": [
+        {
+          "publisher": "Reserve Bank of New Zealand",
+          "url": "https://www.rbnz.govt.nz/news-and-events/news/2026/10/ocr-held-at-2-75-percent",
+          "source_type": "official_dated_monetary_policy_review_release",
+          "published_at": "2026-10-28",
+          "freshness_role": "Official same-day result: the MPC voted 4-3 to hold the OCR at 2.75 percent.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.streetinsider.com/Reuters/Dollar%2Bsteady%2Bahead%2Bof%2BFed%2Bdecision%2C%2Bkiwi%2Bswoons%2Bafter%C2%A0RBNZ%2Bholds/27243005.html",
+          "source_type": "independent_dated_english_result_coverage",
+          "published_at": "2026-10-28",
+          "freshness_role": "Independent same-day English coverage of the unexpected hold and the public market-attention context; not used for a direction or calculator-demand claim.",
+          "reliable": true
+        },
+        {
+          "publisher": "BabyPips",
+          "url": "https://www.babypips.com/analysis/headline-rbnz-rate-statement-shock-breaking-down-surprise-hold-2026-10-28",
+          "source_type": "public_same_day_trading_discussion_signal",
+          "published_at": "2026-10-28",
+          "freshness_role": "Same-day public discussion signal confirming attention to the policy surprise; not used as a fact source or evidence of a calculator query.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_no_attributable_calculator_traffic_path",
+        "duplicate_of": ["HR-20260902-01", "HR-20260831-01"],
+        "refresh_signals": {"fact_delta": true, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "Require a public, verifiable, current and event-specific NZD fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query; then reassess refresh signals and expire the prior RBNZ framing rather than creating a parallel article.",
+        "rationale": "The dated hold, 4-3 split and current result window are genuine deltas. The retained English attention is policy surprise and NZD direction, not an attributable non-directional calculator journey. Reusing September's generic sizing table would invent demand."
+      }
+    },
+    "HR-20261028-02": {
+      "sources": [
+        {
+          "publisher": "Federal Reserve Board",
+          "url": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar",
+          "source_type": "official_current_fomc_calendar",
+          "published_at": "2026-10 (current calendar; statement and press conference due 2026-10-28)",
+          "freshness_role": "Official source for the same-day FOMC decision window.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.investing.com/news/economy-news/fed-likely-to-go-into-waitandsee-mode-on-rates-4978243",
+          "source_type": "independent_dated_english_meeting_coverage",
+          "published_at": "2026-10-28",
+          "freshness_role": "Independent current English coverage confirming same-day attention; not used for a direction or calculator-demand claim.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_no_attributable_calculator_traffic_path",
+        "duplicate_of": ["HR-20261027-01", "HR-20261026-01", "HR-20260913-01", "HR-20261003-01"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "Require an official decision/result or a verifiable current, event-specific non-directional fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query; then audit at least two refresh signals against historical FOMC packages.",
+        "rationale": "The decision-day calendar window is timely, but retained attention is rate path, inflation and market direction. It supplies no natural calculation path and only a window delta."
+      }
+    },
+    "HR-20261028-03": {
+      "sources": [
+        {
+          "publisher": "European Central Bank",
+          "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.SG.html",
+          "source_type": "official_current_governing_council_calendar",
+          "published_at": "2026-09-30 (current calendar; upcoming event 2026-10-28 to 2026-10-29)",
+          "freshness_role": "Official source for the October 29 monetary-policy decision and press conference.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.investing.com/news/economy-news/ready-for-a-french-test-five-questions-for-the-ecb-4971518",
+          "source_type": "independent_dated_english_meeting_preview",
+          "published_at": "2026-10-26",
+          "freshness_role": "Independent current English preview confirming the active October meeting window; not used for a rate forecast or calculator-demand claim.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_no_attributable_calculator_traffic_path",
+        "duplicate_of": ["HR-20261027-02", "HR-20261026-02"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "Require a verified official decision or rule change plus a current public, event-specific non-directional EUR calculation query; then compare fact, search, example and window deltas with historical macro-risk packages.",
+        "rationale": "The approaching decision and Reuters preview do not create a calculation question. Retained English attention is policy, energy, French bonds and EUR direction; only the calendar window changed."
+      }
+    }
+  }
+}
