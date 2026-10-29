@@ -1,0 +1,142 @@
+{
+  "scan_date": "2026-10-29",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-29T22:00:00+08:00",
+      "source_count": 5,
+      "note": "覆盖 Federal Reserve October 28 meeting page 与 implementation note（同一发布主体）、RBNZ October 28 dated OCR release、ECB October 29 weekly schedule，以及 FTMO October 22 dated trading update；同时复查 The5ers October 19 FAQ，因超 72 小时只作淘汰记录。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-10-29T22:00:00+08:00",
+      "source_count": 3,
+      "note": "覆盖 Reuters October 28 FOMC result coverage、Reuters October 28 RBNZ coverage 与 Reuters October 29 ECB preview。FOMC 官方两页同主体，未伪计为两个独立来源；没有用论坛替代任何结果事实。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "partial",
+      "checked_at": "2026-10-29T22:00:00+08:00",
+      "source_count": 3,
+      "note": "复查公开 Reddit、ForexFactory 与 BabyPips 索引。可访问材料为方向讨论、泛化 leverage/prop 评论或过期 The5ers 讨论；未保留任何同时满足近期性、可核验性和事件专属非方向性 calculator demand 的新信号。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-29T22:00:00+08:00",
+      "source_count": 0,
+      "note": "没有稳定、公开且可核验的合格信号；动态流、登录墙、截图、预测和不可验证材料未计入。"
+    }
+  ],
+  "candidates": {
+    "HR-20261029-01": {
+      "sources": [
+        {
+          "publisher": "Federal Reserve Board",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20261028.htm",
+          "source_type": "official_dated_fomc_result_page",
+          "published_at": "2026-10-28",
+          "freshness_role": "Official meeting page records the October 27-28 meeting and October 28 statement release.",
+          "reliable": true
+        },
+        {
+          "publisher": "Federal Reserve Board",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a1.htm",
+          "source_type": "official_dated_implementation_note",
+          "published_at": "2026-10-28",
+          "freshness_role": "Official implementation note gives the 3.75-4.00 percent range and October 29 effective date; same publisher, so it does not increase independent-source count.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.investing.com/news/economy-news/fed-holds-rates-steady-as-it-awaits-accumulation-of-more-information-4980411",
+          "source_type": "independent_dated_english_result_coverage",
+          "published_at": "2026-10-28",
+          "freshness_role": "Independent English coverage confirms the 10-2 hold at the 3.75-4.00 percent range; it is not used for a direction or calculator-demand claim.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_no_attributable_calculator_traffic_path",
+        "duplicate_of": ["HR-20261028-02", "HR-20261027-01", "HR-20261026-01", "HR-20260913-01", "HR-20261003-01"],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "Require a public, verifiable, current and FOMC-result-specific fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query, then reassess at least two refresh signals against the prior FOMC packages.",
+        "rationale": "Official and Reuters result sources establish a real, timely macro fact, but no retained public signal establishes a non-directional calculator journey. A generic rate-event sizing grid would be demand fabrication."
+      }
+    },
+    "HR-20261029-02": {
+      "sources": [
+        {
+          "publisher": "European Central Bank",
+          "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html",
+          "source_type": "official_current_governing_council_schedule",
+          "published_at": "2026-10-29",
+          "freshness_role": "Official schedule lists October 29 monetary-policy decisions at 14:15 CET and the 14:45 CET press conference.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://live.euronext.com/en/financial-news/ecb-keep-rates-steady-investors-focus-french-bonds-lagardes-future",
+          "source_type": "independent_dated_english_meeting_preview",
+          "published_at": "2026-10-29",
+          "freshness_role": "Independent current English coverage establishes the active decision-day attention; it is not used for a rate forecast or calculator-demand claim.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_no_attributable_calculator_traffic_path",
+        "duplicate_of": ["HR-20261028-03", "HR-20261027-02", "HR-20261026-02", "HR-20260723-02"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "Require an official result or dated rule change plus a current public, event-specific EUR fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query; then compare all refresh deltas with historical ECB packages.",
+        "rationale": "The decision-day clock is timely and cross-verified, but retained attention is policy, French bonds, EUR direction and leadership news—not an attributable non-directional calculation question."
+      }
+    },
+    "HR-20261029-03": {
+      "sources": [
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/au/trading-updates/",
+          "source_type": "official_dated_trading_update",
+          "published_at": "2026-10-22",
+          "freshness_role": "Existing official update remains relevant to the October 26-November 1 DST/reset window, but it is older than 72 hours and already covered by HR-20261023-01.",
+          "reliable": true
+        },
+        {
+          "publisher": "FindBestProp",
+          "url": "https://findbestprop.com/ftmo-trading-update-october-22-2026/",
+          "source_type": "independent_dated_public_impact_context",
+          "published_at": "2026-10-23",
+          "freshness_role": "Existing independent context for the October 22 update; not a new fact or current calculator-demand signal.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_duplicate_no_refresh_delta",
+        "duplicate_of": ["HR-20261023-01", "HR-20261017-01"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "Require a dated/versioned FTMO correction with applicable-account scope or a distinct current public calculator query. Refresh HR-20261023-01 rather than create a parallel DST/daily-loss package.",
+        "rationale": "The prior refresh owns the same official timing facts, three-label verification method and expiry date. The mere passage through the unchanged transition week is not a new content trigger."
+      }
+    }
+  }
+}
