@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-27T22:03:00+08:00",
+  "updated_at": "2026-10-29T22:00:00+08:00",
   "last_scan": {
-    "scan_date": "2026-10-27",
+    "scan_date": "2026-10-29",
     "selected_count": 0,
     "playbook_ready_count": 0,
     "content_package_count": 0,
-    "note": "No traffic playbook was created. FOMC (October 27-28) has begun and ECB (October 29) remains current, but the retained attention is still direction-led rather than a verifiable non-directional calculator journey. Topstep's current FOMC Tier-1 rule page is a useful rule-reading watch item, yet is undated and its public question signal is outside 72 hours; it cannot support a dated product-rule playbook."
+    "note": "No traffic playbook was created. The October 28 FOMC result and October 29 ECB decision window are timely but retained attention remains policy- and direction-led rather than a verifiable event-specific non-directional calculator journey. FTMO's active DST reset week has no new refresh delta beyond HR-20261023-01, and The5ers' dated FAQ is outside the 72-hour window."
   },
   "items": {
     "HR-20261023-01": {

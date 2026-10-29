@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-10-28T22:07:42+08:00",
-  "latest_scan_date": "2026-10-28",
+  "generated_at": "2026-10-29T22:09:14+08:00",
+  "latest_scan_date": "2026-10-29",
   "available_dates": [
+    "2026-10-29",
     "2026-10-28",
     "2026-10-27",
     "2026-10-26",
@@ -100,8 +101,282 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-10-29",
+      "generated_at": "2026-10-29T22:09:14+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 95,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 0,
+        "observation": 3,
+        "discarded": 1,
+        "total": 4,
+        "selected_average": 0,
+        "all_selected_pass_gate": true,
+        "content_ready": 0,
+        "playbook_ready": 0
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-10-29",
+          "candidate_id": "HR-20261029-01",
+          "status": "observation",
+          "topic": "FOMC October 28 Result Has No Attributable Non-Directional Calculator Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 23,
+          "calculator_fit": 15,
+          "evidence_quality": 15,
+          "actionability": 13,
+          "total_score": 91,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Forex Position Size",
+            "Pip Value",
+            "Margin",
+            "Risk Reward"
+          ],
+          "reason": "The October 28 official result and Reuters' independent result coverage are fresh, but retained public attention is policy/market-direction led; no current result-specific fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query was verified. Relative to historical FOMC packages only fact and window deltas exist, so no playbook or content package is created.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Federal Reserve Board",
+                "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20261028.htm",
+                "source_type": "official_dated_fomc_result_page",
+                "published_at": "2026-10-28",
+                "freshness_role": "Official meeting page records the October 27-28 meeting and October 28 statement release.",
+                "reliable": true
+              },
+              {
+                "publisher": "Federal Reserve Board",
+                "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a1.htm",
+                "source_type": "official_dated_implementation_note",
+                "published_at": "2026-10-28",
+                "freshness_role": "Official implementation note gives the 3.75-4.00 percent range and October 29 effective date; same publisher, so it does not increase independent-source count.",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.investing.com/news/economy-news/fed-holds-rates-steady-as-it-awaits-accumulation-of-more-information-4980411",
+                "source_type": "independent_dated_english_result_coverage",
+                "published_at": "2026-10-28",
+                "freshness_role": "Independent English coverage confirms the 10-2 hold at the 3.75-4.00 percent range; it is not used for a direction or calculator-demand claim.",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_no_attributable_calculator_traffic_path",
+              "duplicate_of": [
+                "HR-20261028-02",
+                "HR-20261027-01",
+                "HR-20261026-01",
+                "HR-20260913-01",
+                "HR-20261003-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Require a public, verifiable, current and FOMC-result-specific fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query, then reassess at least two refresh signals against the prior FOMC packages.",
+              "rationale": "Official and Reuters result sources establish a real, timely macro fact, but no retained public signal establishes a non-directional calculator journey. A generic rate-event sizing grid would be demand fabrication."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-10-29",
+          "candidate_id": "HR-20261029-02",
+          "status": "observation",
+          "topic": "ECB October 29 Decision Window Has No Natural EUR Calculator Handoff",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 22,
+          "calculator_fit": 15,
+          "evidence_quality": 15,
+          "actionability": 12,
+          "total_score": 89,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Forex Position Size",
+            "Pip Value",
+            "Margin",
+            "Risk Reward"
+          ],
+          "reason": "ECB's current schedule and Reuters' October 29 English preview independently establish the decision-day window, but accessible attention is policy, French bonds, EUR direction and leadership news rather than a public event-specific non-directional calculation question. Only the window changed from the previous ECB watch.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "European Central Bank",
+                "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html",
+                "source_type": "official_current_governing_council_schedule",
+                "published_at": "2026-10-29",
+                "freshness_role": "Official schedule lists October 29 monetary-policy decisions at 14:15 CET and the 14:45 CET press conference.",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://live.euronext.com/en/financial-news/ecb-keep-rates-steady-investors-focus-french-bonds-lagardes-future",
+                "source_type": "independent_dated_english_meeting_preview",
+                "published_at": "2026-10-29",
+                "freshness_role": "Independent current English coverage establishes the active decision-day attention; it is not used for a rate forecast or calculator-demand claim.",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_no_attributable_calculator_traffic_path",
+              "duplicate_of": [
+                "HR-20261028-03",
+                "HR-20261027-02",
+                "HR-20261026-02",
+                "HR-20260723-02"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Require an official result or dated rule change plus a current public, event-specific EUR fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query; then compare all refresh deltas with historical ECB packages.",
+              "rationale": "The decision-day clock is timely and cross-verified, but retained attention is policy, French bonds, EUR direction and leadership news—not an attributable non-directional calculation question."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-10-29",
+          "candidate_id": "HR-20261029-03",
+          "status": "observation",
+          "topic": "FTMO DST Reset Week Remains Active but Has No New Refresh Delta",
+          "primary_site": "PipGauge",
+          "freshness": 19,
+          "traffic_potential": 21,
+          "calculator_fit": 23,
+          "evidence_quality": 14,
+          "actionability": 8,
+          "total_score": 85,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": false,
+          "calculator_mapping": [
+            "Forex Session Clock",
+            "Daily Loss Limit",
+            "Position Size"
+          ],
+          "reason": "HR-20261023-01 already owns FTMO's October 22 reset-clock facts, Account MetriX countdown check and November 1 expiry. Today adds no dated fact, distinct search wording, replacement example or new window; preserve it as a hold and do not create a second same-shape DST article.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "FTMO",
+                "url": "https://ftmo.com/au/trading-updates/",
+                "source_type": "official_dated_trading_update",
+                "published_at": "2026-10-22",
+                "freshness_role": "Existing official update remains relevant to the October 26-November 1 DST/reset window, but it is older than 72 hours and already covered by HR-20261023-01.",
+                "reliable": true
+              },
+              {
+                "publisher": "FindBestProp",
+                "url": "https://findbestprop.com/ftmo-trading-update-october-22-2026/",
+                "source_type": "independent_dated_public_impact_context",
+                "published_at": "2026-10-23",
+                "freshness_role": "Existing independent context for the October 22 update; not a new fact or current calculator-demand signal.",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_duplicate_no_refresh_delta",
+              "duplicate_of": [
+                "HR-20261023-01",
+                "HR-20261017-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": false
+              },
+              "reopen_trigger": "Require a dated/versioned FTMO correction with applicable-account scope or a distinct current public calculator query. Refresh HR-20261023-01 rather than create a parallel DST/daily-loss package.",
+              "rationale": "The prior refresh owns the same official timing facts, three-label verification method and expiry date. The mere passage through the unchanged transition week is not a new content trigger."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-10-29",
+          "candidate_id": "HR-20261029-04",
+          "status": "discarded",
+          "topic": "The5ers Consistency FAQ and Old Prop-Firm Discussion Are Not a Current Product-Rule Trigger",
+          "primary_site": "PipGauge",
+          "freshness": 8,
+          "traffic_potential": 16,
+          "calculator_fit": 23,
+          "evidence_quality": 10,
+          "actionability": 7,
+          "total_score": 64,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": false,
+          "calculator_mapping": [
+            "Position Size",
+            "Risk Reward"
+          ],
+          "reason": "The5ers' last-dated FAQ update is October 19 and indexed Reddit/ForexFactory discussion is old or opinion-led. Without a current dated/versioned official rule delta, independent current impact source and attributable calculation demand, it fails freshness and product-rule gates; no payout-planning or purchase-promotional content is generated."
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-10-29T22:00:00+08:00",
+          "source_count": 5,
+          "note": "覆盖 Federal Reserve October 28 meeting page 与 implementation note（同一发布主体）、RBNZ October 28 dated OCR release、ECB October 29 weekly schedule，以及 FTMO October 22 dated trading update；同时复查 The5ers October 19 FAQ，因超 72 小时只作淘汰记录。"
+        },
+        {
+          "channel": "独立可靠英文来源",
+          "status": "complete",
+          "checked_at": "2026-10-29T22:00:00+08:00",
+          "source_count": 3,
+          "note": "覆盖 Reuters October 28 FOMC result coverage、Reuters October 28 RBNZ coverage 与 Reuters October 29 ECB preview。FOMC 官方两页同主体，未伪计为两个独立来源；没有用论坛替代任何结果事实。"
+        },
+        {
+          "channel": "Reddit / ForexFactory / BabyPips",
+          "status": "partial",
+          "checked_at": "2026-10-29T22:00:00+08:00",
+          "source_count": 3,
+          "note": "复查公开 Reddit、ForexFactory 与 BabyPips 索引。可访问材料为方向讨论、泛化 leverage/prop 评论或过期 The5ers 讨论；未保留任何同时满足近期性、可核验性和事件专属非方向性 calculator demand 的新信号。"
+        },
+        {
+          "channel": "X / Quora",
+          "status": "limited",
+          "checked_at": "2026-10-29T22:00:00+08:00",
+          "source_count": 0,
+          "note": "没有稳定、公开且可核验的合格信号；动态流、登录墙、截图、预测和不可验证材料未计入。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-10-29_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-10-29_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json"
+      }
+    },
+    {
       "scan_date": "2026-10-28",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 94,
@@ -375,7 +650,7 @@
     },
     {
       "scan_date": "2026-10-27",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 93,
@@ -650,7 +925,7 @@
     },
     {
       "scan_date": "2026-10-26",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 92,
@@ -894,7 +1169,7 @@
     },
     {
       "scan_date": "2026-10-25",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 91,
@@ -1101,7 +1376,7 @@
     },
     {
       "scan_date": "2026-10-24",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 90,
@@ -1322,7 +1597,7 @@
     },
     {
       "scan_date": "2026-10-23",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 89,
@@ -1653,7 +1928,7 @@
     },
     {
       "scan_date": "2026-10-22",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 88,
@@ -1869,7 +2144,7 @@
     },
     {
       "scan_date": "2026-10-21",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 87,
@@ -2172,7 +2447,7 @@
     },
     {
       "scan_date": "2026-10-20",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 86,
@@ -2399,7 +2674,7 @@
     },
     {
       "scan_date": "2026-10-19",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 85,
@@ -2615,7 +2890,7 @@
     },
     {
       "scan_date": "2026-10-18",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 84,
@@ -2829,7 +3104,7 @@
     },
     {
       "scan_date": "2026-10-17",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 83,
@@ -3097,7 +3372,7 @@
     },
     {
       "scan_date": "2026-10-16",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 82,
@@ -3403,7 +3678,7 @@
     },
     {
       "scan_date": "2026-10-15",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 81,
@@ -3614,7 +3889,7 @@
     },
     {
       "scan_date": "2026-10-14",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 80,
@@ -3897,7 +4172,7 @@
     },
     {
       "scan_date": "2026-10-13",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 79,
@@ -4113,7 +4388,7 @@
     },
     {
       "scan_date": "2026-10-12",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 78,
@@ -4385,7 +4660,7 @@
     },
     {
       "scan_date": "2026-10-11",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 77,
@@ -4646,7 +4921,7 @@
     },
     {
       "scan_date": "2026-10-10",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 76,
@@ -4903,7 +5178,7 @@
     },
     {
       "scan_date": "2026-10-09",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 75,
@@ -5114,7 +5389,7 @@
     },
     {
       "scan_date": "2026-10-08",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 74,
@@ -5301,7 +5576,7 @@
     },
     {
       "scan_date": "2026-10-07",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 73,
@@ -5465,7 +5740,7 @@
     },
     {
       "scan_date": "2026-10-06",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 72,
@@ -5628,7 +5903,7 @@
     },
     {
       "scan_date": "2026-10-05",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 71,
@@ -5895,7 +6170,7 @@
     },
     {
       "scan_date": "2026-10-04",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 70,
@@ -6121,7 +6396,7 @@
     },
     {
       "scan_date": "2026-10-03",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 69,
@@ -6344,7 +6619,7 @@
     },
     {
       "scan_date": "2026-10-02",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 68,
@@ -6627,7 +6902,7 @@
     },
     {
       "scan_date": "2026-10-01",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 67,
@@ -6906,7 +7181,7 @@
     },
     {
       "scan_date": "2026-09-30",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 66,
@@ -7316,7 +7591,7 @@
     },
     {
       "scan_date": "2026-09-29",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 65,
@@ -7640,7 +7915,7 @@
     },
     {
       "scan_date": "2026-09-28",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 64,
@@ -7925,7 +8200,7 @@
     },
     {
       "scan_date": "2026-09-27",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 63,
@@ -8275,7 +8550,7 @@
     },
     {
       "scan_date": "2026-09-26",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 62,
@@ -8484,7 +8759,7 @@
     },
     {
       "scan_date": "2026-09-25",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 61,
@@ -8764,7 +9039,7 @@
     },
     {
       "scan_date": "2026-09-24",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 60,
@@ -9044,7 +9319,7 @@
     },
     {
       "scan_date": "2026-09-23",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 59,
@@ -9282,7 +9557,7 @@
     },
     {
       "scan_date": "2026-09-22",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 58,
@@ -9571,7 +9846,7 @@
     },
     {
       "scan_date": "2026-09-21",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 57,
@@ -9793,7 +10068,7 @@
     },
     {
       "scan_date": "2026-09-20",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 56,
@@ -10078,7 +10353,7 @@
     },
     {
       "scan_date": "2026-09-19",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 55,
@@ -10353,7 +10628,7 @@
     },
     {
       "scan_date": "2026-09-18",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 54,
@@ -10635,7 +10910,7 @@
     },
     {
       "scan_date": "2026-09-17",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 53,
@@ -10980,7 +11255,7 @@
     },
     {
       "scan_date": "2026-09-16",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 52,
@@ -11270,7 +11545,7 @@
     },
     {
       "scan_date": "2026-09-15",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 51,
@@ -11484,7 +11759,7 @@
     },
     {
       "scan_date": "2026-09-14",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 50,
@@ -11688,7 +11963,7 @@
     },
     {
       "scan_date": "2026-09-13",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 49,
@@ -11893,7 +12168,7 @@
     },
     {
       "scan_date": "2026-09-12",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 48,
@@ -12079,7 +12354,7 @@
     },
     {
       "scan_date": "2026-09-11",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 47,
@@ -12296,7 +12571,7 @@
     },
     {
       "scan_date": "2026-09-10",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 46,
@@ -12582,7 +12857,7 @@
     },
     {
       "scan_date": "2026-09-09",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 45,
@@ -12862,7 +13137,7 @@
     },
     {
       "scan_date": "2026-09-08",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 44,
@@ -13191,7 +13466,7 @@
     },
     {
       "scan_date": "2026-09-07",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 43,
@@ -13493,7 +13768,7 @@
     },
     {
       "scan_date": "2026-09-06",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 42,
@@ -13809,7 +14084,7 @@
     },
     {
       "scan_date": "2026-09-05",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 41,
@@ -14131,7 +14406,7 @@
     },
     {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -14444,7 +14719,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -14755,7 +15030,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -15086,7 +15361,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -15424,7 +15699,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -15817,7 +16092,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -16227,7 +16502,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -16699,7 +16974,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -17044,7 +17319,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -17389,7 +17664,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -17841,7 +18116,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -18254,7 +18529,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -18486,7 +18761,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -18931,7 +19206,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -19306,7 +19581,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -19698,7 +19973,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -20074,7 +20349,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -20398,7 +20673,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -20781,7 +21056,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -21122,7 +21397,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -21497,7 +21772,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -21885,7 +22160,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -22230,7 +22505,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -22558,7 +22833,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -22870,7 +23145,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -23191,7 +23466,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -23552,7 +23827,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -23905,7 +24180,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -24349,7 +24624,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -24858,7 +25133,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -25328,7 +25603,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -25871,7 +26146,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -26143,7 +26418,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -26456,7 +26731,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -26891,7 +27166,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -27405,7 +27680,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -27914,7 +28189,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -28382,7 +28657,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -28796,7 +29071,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -29195,7 +29470,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-10-28T22:07:42+08:00",
+      "generated_at": "2026-10-29T22:09:14+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -29634,10 +29909,10 @@
       }
     }
   ],
-  "scan_date": "2026-10-28",
+  "scan_date": "2026-10-29",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 94,
+    "day": 95,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -29656,60 +29931,63 @@
   },
   "candidates": [
     {
-      "scan_date": "2026-10-28",
-      "candidate_id": "HR-20261028-01",
+      "scan_date": "2026-10-29",
+      "candidate_id": "HR-20261029-01",
       "status": "observation",
-      "topic": "RBNZ Holds OCR at 2.75% in a Split Vote but Has No Attributable NZD Calculator Journey",
+      "topic": "FOMC October 28 Result Has No Attributable Non-Directional Calculator Journey",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 23,
-      "calculator_fit": 22,
+      "calculator_fit": 15,
       "evidence_quality": 15,
-      "actionability": 6,
+      "actionability": 13,
       "total_score": 91,
-      "hard_gate": false,
+      "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
+        "Forex Position Size",
         "Pip Value",
-        "Position Size",
-        "P&L",
-        "Spread Cost"
+        "Margin",
+        "Risk Reward"
       ],
-      "reason": "RBNZ's dated October 28 release records a 4-3 decision to hold OCR at 2.75%, and Reuters independently reports the unexpected hold and NZD reaction. BabyPips confirms same-day trading discussion, but the retained attention is the policy surprise and currency direction; no current public event-specific fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query was verified. The result is a fact and window delta from HR-20260902-01, not permission to recycle its generic NZD/USD sizing table.",
+      "reason": "The October 28 official result and Reuters' independent result coverage are fresh, but retained public attention is policy/market-direction led; no current result-specific fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query was verified. Relative to historical FOMC packages only fact and window deltas exist, so no playbook or content package is created.",
       "scan_audit": {
         "sources": [
           {
-            "publisher": "Reserve Bank of New Zealand",
-            "url": "https://www.rbnz.govt.nz/news-and-events/news/2026/10/ocr-held-at-2-75-percent",
-            "source_type": "official_dated_monetary_policy_review_release",
+            "publisher": "Federal Reserve Board",
+            "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20261028.htm",
+            "source_type": "official_dated_fomc_result_page",
             "published_at": "2026-10-28",
-            "freshness_role": "Official same-day result: the MPC voted 4-3 to hold the OCR at 2.75 percent.",
+            "freshness_role": "Official meeting page records the October 27-28 meeting and October 28 statement release.",
+            "reliable": true
+          },
+          {
+            "publisher": "Federal Reserve Board",
+            "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a1.htm",
+            "source_type": "official_dated_implementation_note",
+            "published_at": "2026-10-28",
+            "freshness_role": "Official implementation note gives the 3.75-4.00 percent range and October 29 effective date; same publisher, so it does not increase independent-source count.",
             "reliable": true
           },
           {
             "publisher": "Reuters",
-            "url": "https://www.streetinsider.com/Reuters/Dollar%2Bsteady%2Bahead%2Bof%2BFed%2Bdecision%2C%2Bkiwi%2Bswoons%2Bafter%C2%A0RBNZ%2Bholds/27243005.html",
+            "url": "https://www.investing.com/news/economy-news/fed-holds-rates-steady-as-it-awaits-accumulation-of-more-information-4980411",
             "source_type": "independent_dated_english_result_coverage",
             "published_at": "2026-10-28",
-            "freshness_role": "Independent same-day English coverage of the unexpected hold and the public market-attention context; not used for a direction or calculator-demand claim.",
+            "freshness_role": "Independent English coverage confirms the 10-2 hold at the 3.75-4.00 percent range; it is not used for a direction or calculator-demand claim.",
             "reliable": true
-          },
-          {
-            "publisher": "BabyPips",
-            "url": "https://www.babypips.com/analysis/headline-rbnz-rate-statement-shock-breaking-down-surprise-hold-2026-10-28",
-            "source_type": "public_same_day_trading_discussion_signal",
-            "published_at": "2026-10-28",
-            "freshness_role": "Same-day public discussion signal confirming attention to the policy surprise; not used as a fact source or evidence of a calculator query.",
-            "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
           "decision_gate": "observation_no_attributable_calculator_traffic_path",
           "duplicate_of": [
-            "HR-20260902-01",
-            "HR-20260831-01"
+            "HR-20261028-02",
+            "HR-20261027-01",
+            "HR-20261026-01",
+            "HR-20260913-01",
+            "HR-20261003-01"
           ],
           "refresh_signals": {
             "fact_delta": true,
@@ -29717,112 +29995,49 @@
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "Require a public, verifiable, current and event-specific NZD fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query; then reassess refresh signals and expire the prior RBNZ framing rather than creating a parallel article.",
-          "rationale": "The dated hold, 4-3 split and current result window are genuine deltas. The retained English attention is policy surprise and NZD direction, not an attributable non-directional calculator journey. Reusing September's generic sizing table would invent demand."
+          "reopen_trigger": "Require a public, verifiable, current and FOMC-result-specific fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query, then reassess at least two refresh signals against the prior FOMC packages.",
+          "rationale": "Official and Reuters result sources establish a real, timely macro fact, but no retained public signal establishes a non-directional calculator journey. A generic rate-event sizing grid would be demand fabrication."
         }
       }
     },
     {
-      "scan_date": "2026-10-28",
-      "candidate_id": "HR-20261028-02",
+      "scan_date": "2026-10-29",
+      "candidate_id": "HR-20261029-02",
       "status": "observation",
-      "topic": "FOMC October 28 Decision Is Timely but Still Has No Attributable Non-Directional Calculator Journey",
-      "primary_site": "PipGauge",
-      "freshness": 25,
-      "traffic_potential": 23,
-      "calculator_fit": 22,
-      "evidence_quality": 15,
-      "actionability": 6,
-      "total_score": 91,
-      "hard_gate": false,
-      "reliable_sources": 2,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Pip Value",
-        "Position Size",
-        "Margin",
-        "P&L",
-        "Spread Cost"
-      ],
-      "reason": "Federal Reserve's current calendar and Reuters' October 28 English coverage independently confirm the same-day decision window. Retained public English attention is rate-path, inflation and market-direction led rather than a verified event-specific request to calculate fixed risk, pip value, margin, cost, quantity or portfolio heat. A generic FOMC sizing table would manufacture demand and duplicate historical FOMC packages.",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "Federal Reserve Board",
-            "url": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar",
-            "source_type": "official_current_fomc_calendar",
-            "published_at": "2026-10 (current calendar; statement and press conference due 2026-10-28)",
-            "freshness_role": "Official source for the same-day FOMC decision window.",
-            "reliable": true
-          },
-          {
-            "publisher": "Reuters",
-            "url": "https://www.investing.com/news/economy-news/fed-likely-to-go-into-waitandsee-mode-on-rates-4978243",
-            "source_type": "independent_dated_english_meeting_coverage",
-            "published_at": "2026-10-28",
-            "freshness_role": "Independent current English coverage confirming same-day attention; not used for a direction or calculator-demand claim.",
-            "reliable": true
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_no_attributable_calculator_traffic_path",
-          "duplicate_of": [
-            "HR-20261027-01",
-            "HR-20261026-01",
-            "HR-20260913-01",
-            "HR-20261003-01"
-          ],
-          "refresh_signals": {
-            "fact_delta": false,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": true
-          },
-          "reopen_trigger": "Require an official decision/result or a verifiable current, event-specific non-directional fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query; then audit at least two refresh signals against historical FOMC packages.",
-          "rationale": "The decision-day calendar window is timely, but retained attention is rate path, inflation and market direction. It supplies no natural calculation path and only a window delta."
-        }
-      }
-    },
-    {
-      "scan_date": "2026-10-28",
-      "candidate_id": "HR-20261028-03",
-      "status": "observation",
-      "topic": "ECB October 29 Decision Remains Fresh but Has No Natural EUR Calculator Handoff",
+      "topic": "ECB October 29 Decision Window Has No Natural EUR Calculator Handoff",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 22,
-      "calculator_fit": 21,
+      "calculator_fit": 15,
       "evidence_quality": 15,
-      "actionability": 6,
+      "actionability": 12,
       "total_score": 89,
-      "hard_gate": false,
+      "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
+        "Forex Position Size",
         "Pip Value",
-        "Position Size",
         "Margin",
-        "P&L",
-        "Spread Cost"
+        "Risk Reward"
       ],
-      "reason": "The ECB Governing Council calendar and Reuters' October 26 preview independently confirm the October 29 decision and press-conference window. Current accessible attention remains policy, energy, French bonds and EUR direction; no event-specific public non-directional calculation question was verified. Only the calendar window changed from HR-20261027-02, so an EUR sizing page would fabricate traffic.",
+      "reason": "ECB's current schedule and Reuters' October 29 English preview independently establish the decision-day window, but accessible attention is policy, French bonds, EUR direction and leadership news rather than a public event-specific non-directional calculation question. Only the window changed from the previous ECB watch.",
       "scan_audit": {
         "sources": [
           {
             "publisher": "European Central Bank",
-            "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.SG.html",
-            "source_type": "official_current_governing_council_calendar",
-            "published_at": "2026-09-30 (current calendar; upcoming event 2026-10-28 to 2026-10-29)",
-            "freshness_role": "Official source for the October 29 monetary-policy decision and press conference.",
+            "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html",
+            "source_type": "official_current_governing_council_schedule",
+            "published_at": "2026-10-29",
+            "freshness_role": "Official schedule lists October 29 monetary-policy decisions at 14:15 CET and the 14:45 CET press conference.",
             "reliable": true
           },
           {
             "publisher": "Reuters",
-            "url": "https://www.investing.com/news/economy-news/ready-for-a-french-test-five-questions-for-the-ecb-4971518",
+            "url": "https://live.euronext.com/en/financial-news/ecb-keep-rates-steady-investors-focus-french-bonds-lagardes-future",
             "source_type": "independent_dated_english_meeting_preview",
-            "published_at": "2026-10-26",
-            "freshness_role": "Independent current English preview confirming the active October meeting window; not used for a rate forecast or calculator-demand claim.",
+            "published_at": "2026-10-29",
+            "freshness_role": "Independent current English coverage establishes the active decision-day attention; it is not used for a rate forecast or calculator-demand claim.",
             "reliable": true
           }
         ],
@@ -29830,8 +30045,10 @@
           "novelty_gate": "fail",
           "decision_gate": "observation_no_attributable_calculator_traffic_path",
           "duplicate_of": [
+            "HR-20261028-03",
             "HR-20261027-02",
-            "HR-20261026-02"
+            "HR-20261026-02",
+            "HR-20260723-02"
           ],
           "refresh_signals": {
             "fact_delta": false,
@@ -29839,67 +30056,125 @@
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "Require a verified official decision or rule change plus a current public, event-specific non-directional EUR calculation query; then compare fact, search, example and window deltas with historical macro-risk packages.",
-          "rationale": "The approaching decision and Reuters preview do not create a calculation question. Retained English attention is policy, energy, French bonds and EUR direction; only the calendar window changed."
+          "reopen_trigger": "Require an official result or dated rule change plus a current public, event-specific EUR fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query; then compare all refresh deltas with historical ECB packages.",
+          "rationale": "The decision-day clock is timely and cross-verified, but retained attention is policy, French bonds, EUR direction and leadership news—not an attributable non-directional calculation question."
         }
       }
     },
     {
-      "scan_date": "2026-10-28",
-      "candidate_id": "HR-20261028-04",
-      "status": "discarded",
-      "topic": "Directional Macro Calls Crypto Hype Politics Sports Entertainment Login-Wall Material and Expired Static Product Hooks",
+      "scan_date": "2026-10-29",
+      "candidate_id": "HR-20261029-03",
+      "status": "observation",
+      "topic": "FTMO DST Reset Week Remains Active but Has No New Refresh Delta",
       "primary_site": "PipGauge",
-      "freshness": 25,
-      "traffic_potential": 24,
-      "calculator_fit": 3,
-      "evidence_quality": 5,
-      "actionability": 2,
-      "total_score": 59,
+      "freshness": 19,
+      "traffic_potential": 21,
+      "calculator_fit": 23,
+      "evidence_quality": 14,
+      "actionability": 8,
+      "total_score": 85,
+      "hard_gate": true,
+      "reliable_sources": 2,
+      "fresh_signal": false,
+      "calculator_mapping": [
+        "Forex Session Clock",
+        "Daily Loss Limit",
+        "Position Size"
+      ],
+      "reason": "HR-20261023-01 already owns FTMO's October 22 reset-clock facts, Account MetriX countdown check and November 1 expiry. Today adds no dated fact, distinct search wording, replacement example or new window; preserve it as a hold and do not create a second same-shape DST article.",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "FTMO",
+            "url": "https://ftmo.com/au/trading-updates/",
+            "source_type": "official_dated_trading_update",
+            "published_at": "2026-10-22",
+            "freshness_role": "Existing official update remains relevant to the October 26-November 1 DST/reset window, but it is older than 72 hours and already covered by HR-20261023-01.",
+            "reliable": true
+          },
+          {
+            "publisher": "FindBestProp",
+            "url": "https://findbestprop.com/ftmo-trading-update-october-22-2026/",
+            "source_type": "independent_dated_public_impact_context",
+            "published_at": "2026-10-23",
+            "freshness_role": "Existing independent context for the October 22 update; not a new fact or current calculator-demand signal.",
+            "reliable": true
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "observation_duplicate_no_refresh_delta",
+          "duplicate_of": [
+            "HR-20261023-01",
+            "HR-20261017-01"
+          ],
+          "refresh_signals": {
+            "fact_delta": false,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": false
+          },
+          "reopen_trigger": "Require a dated/versioned FTMO correction with applicable-account scope or a distinct current public calculator query. Refresh HR-20261023-01 rather than create a parallel DST/daily-loss package.",
+          "rationale": "The prior refresh owns the same official timing facts, three-label verification method and expiry date. The mere passage through the unchanged transition week is not a new content trigger."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-10-29",
+      "candidate_id": "HR-20261029-04",
+      "status": "discarded",
+      "topic": "The5ers Consistency FAQ and Old Prop-Firm Discussion Are Not a Current Product-Rule Trigger",
+      "primary_site": "PipGauge",
+      "freshness": 8,
+      "traffic_potential": 16,
+      "calculator_fit": 23,
+      "evidence_quality": 10,
+      "actionability": 7,
+      "total_score": 64,
       "hard_gate": false,
       "reliable_sources": 0,
-      "fresh_signal": true,
+      "fresh_signal": false,
       "calculator_mapping": [
-        "P&L",
-        "Margin"
+        "Position Size",
+        "Risk Reward"
       ],
-      "reason": "Excluded direction calls, price targets, trading signals, generic leverage commentary, pure crypto promotion, political debate, sports, entertainment, login-wall pages, screenshots and unverifiable social claims. Also excluded FundingPips' October 22 Reddit complaint and undated current help-page language: no dated official rule delta or current verified model-specific calculation demand was available. None supplied a new fact-led non-directional calculator journey."
+      "reason": "The5ers' last-dated FAQ update is October 19 and indexed Reddit/ForexFactory discussion is old or opinion-led. Without a current dated/versioned official rule delta, independent current impact source and attributable calculation demand, it fails freshness and product-rule gates; no payout-planning or purchase-promotional content is generated."
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-10-28T22:00:00+08:00",
-      "source_count": 4,
-      "note": "覆盖 RBNZ October 28 dated OCR release、Federal Reserve October calendar、ECB Governing Council calendar 和 FundingPips current help page；FundingPips page 未标注本轮变更的 publication/version/effective date。"
+      "checked_at": "2026-10-29T22:00:00+08:00",
+      "source_count": 5,
+      "note": "覆盖 Federal Reserve October 28 meeting page 与 implementation note（同一发布主体）、RBNZ October 28 dated OCR release、ECB October 29 weekly schedule，以及 FTMO October 22 dated trading update；同时复查 The5ers October 19 FAQ，因超 72 小时只作淘汰记录。"
     },
     {
       "channel": "独立可靠英文来源",
       "status": "complete",
-      "checked_at": "2026-10-28T22:00:00+08:00",
+      "checked_at": "2026-10-29T22:00:00+08:00",
       "source_count": 3,
-      "note": "覆盖 Reuters October 28 RBNZ result coverage、Reuters October 28 FOMC coverage 与 Reuters October 26 ECB preview；它们只用于事件事实和时效，不用于方向或 calculator-demand 主张。"
+      "note": "覆盖 Reuters October 28 FOMC result coverage、Reuters October 28 RBNZ coverage 与 Reuters October 29 ECB preview。FOMC 官方两页同主体，未伪计为两个独立来源；没有用论坛替代任何结果事实。"
     },
     {
       "channel": "Reddit / ForexFactory / BabyPips",
       "status": "partial",
-      "checked_at": "2026-10-28T22:00:00+08:00",
-      "source_count": 2,
-      "note": "保留 BabyPips October 28 RBNZ analysis 作同日讨论/措辞信号；FundingPips Reddit complaint 发布于 October 22，超默认 72 小时，只作过期争议线索。没有保留任何同时满足近期性、可核验性和事件专属非方向性 calculator demand 的新信号。"
+      "checked_at": "2026-10-29T22:00:00+08:00",
+      "source_count": 3,
+      "note": "复查公开 Reddit、ForexFactory 与 BabyPips 索引。可访问材料为方向讨论、泛化 leverage/prop 评论或过期 The5ers 讨论；未保留任何同时满足近期性、可核验性和事件专属非方向性 calculator demand 的新信号。"
     },
     {
       "channel": "X / Quora",
       "status": "limited",
-      "checked_at": "2026-10-28T22:00:00+08:00",
+      "checked_at": "2026-10-29T22:00:00+08:00",
       "source_count": 0,
-      "note": "没有稳定、公开且可核验的合格信号；动态流、登录墙、截图、预测与不可验证材料未计入。"
+      "note": "没有稳定、公开且可核验的合格信号；动态流、登录墙、截图、预测和不可验证材料未计入。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-10-28_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-10-28_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-10-29_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-10-29_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
