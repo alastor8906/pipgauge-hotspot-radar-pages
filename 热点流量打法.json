@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-29T22:00:00+08:00",
+  "updated_at": "2026-10-30T22:00:00+08:00",
   "last_scan": {
-    "scan_date": "2026-10-29",
+    "scan_date": "2026-10-30",
     "selected_count": 0,
     "playbook_ready_count": 0,
     "content_package_count": 0,
-    "note": "No traffic playbook was created. The October 28 FOMC result and October 29 ECB decision window are timely but retained attention remains policy- and direction-led rather than a verifiable event-specific non-directional calculator journey. FTMO's active DST reset week has no new refresh delta beyond HR-20261023-01, and The5ers' dated FAQ is outside the 72-hour window."
+    "note": "No traffic playbook was created. BOJ's October 30 1.25% 8-1 decision and ECB's October 29 unchanged-rate result are timely and independently verifiable, but retained public attention is policy- and direction-led rather than a verifiable event-specific non-directional calculator journey. FTMO's active DST reset week still has no new refresh delta beyond HR-20261023-01; a generic margin discussion has no dated product-rule fact."
   },
   "items": {
     "HR-20261023-01": {
