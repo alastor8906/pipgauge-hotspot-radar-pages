@@ -1,0 +1,20 @@
+{
+  "candidate_id": "HR-20261031-01",
+  "scan_date": "2026-10-31",
+  "primary_site": "PipGauge",
+  "topic": "FTMO US DST Reset: Verify the Maintenance Window and Daily-Loss Clock Before November 2",
+  "execution_mode": "refresh",
+  "refresh_target": "HR-20261023-01",
+  "package_summary": "当期审核快照：刷新 HR-20261023-01，不创建第二篇同构 DST 文章。以 FTMO 10 月 29 日新增/延长的 10 月 31 日与 11 月 1 日维护窗口、美国 DST platform-clock change 和 11 月 2 日恢复 1-hour Prague/MetaTrader relation 为钩子，更新官方页、适用账户、Account MetriX countdown、platform/local display 的核验流程。只使用可读时间数字，不预测市场、outage 结果、点值或账户结论。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "weekend_maintenance_and_us_dst_reset_verification_window",
+  "time_status_label": "维护钩子仅可用于 2026-10-31 至 2026-11-01 10:00 MetaTrader time (GMT+3)；11 月 2 日 reset 语言仅可在 FTMO 当前 29 October update、适用账户与 Account MetriX live countdown 均重新核验时使用。维护结束、官方更正、产品不适用或 countdown 冲突即停用或重审。",
+  "documents": [
+    {"id": "facts", "label": "事实与论点", "file": "00-事实与论点.md", "platform": "internal", "kind": "editorial brief", "status_label": "已整理"},
+    {"id": "medium", "label": "Medium", "file": "01-Medium.md", "platform": "medium", "kind": "long-form refresh draft", "status_label": "待人工审核"},
+    {"id": "reddit", "label": "Reddit", "file": "02-Reddit.md", "platform": "reddit", "kind": "native discussion refresh draft", "status_label": "待人工审核"},
+    {"id": "x", "label": "X", "file": "03-X.md", "platform": "x", "kind": "short thread refresh draft", "status_label": "待人工审核"},
+    {"id": "review", "label": "审核清单", "file": "04-人工审核.md", "platform": "internal", "kind": "human gate", "status_label": "必须完成"}
+  ]
+}

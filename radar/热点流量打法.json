@@ -1,14 +1,64 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-29T22:00:00+08:00",
+  "updated_at": "2026-10-31T22:00:00+08:00",
   "last_scan": {
-    "scan_date": "2026-10-29",
-    "selected_count": 0,
-    "playbook_ready_count": 0,
-    "content_package_count": 0,
-    "note": "No traffic playbook was created. The October 28 FOMC result and October 29 ECB decision window are timely but retained attention remains policy- and direction-led rather than a verifiable event-specific non-directional calculator journey. FTMO's active DST reset week has no new refresh delta beyond HR-20261023-01, and The5ers' dated FAQ is outside the 72-hour window."
+    "scan_date": "2026-10-31",
+    "selected_count": 1,
+    "playbook_ready_count": 1,
+    "content_package_count": 1,
+    "note": "FTMO's dated October 29 CFD update supplies a qualifying refresh of HR-20261023-01: current October 31/November 1 maintenance windows, a US-DST platform-clock change and the November 2 return to a 1-hour Prague/MetaTrader offset. Official facts and an independent public change tracker support a reader-verified clock/daily-boundary journey. FOMC-result attention remains direction-led; a crypto CFD service interruption is excluded."
   },
   "items": {
+    "HR-20261031-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-11-01T07:00:00+03:00",
+      "traffic_hook": "FTMO's dated October 29 CFD update expands the immediate weekend checkpoint: MT4, MT5, TradingView and cTrader are listed for Saturday 31 October 08:00-18:00 and Sunday 1 November 07:00-10:00 in MetaTrader time. The same update moves the reader's clock question to US DST ending on 1 November and says the usual 1-hour Prague/MetaTrader relationship returns on 2 November. The demand path is to verify which displayed countdown defines the account's daily-loss boundary—not to predict a market or recommend an account.",
+      "traffic_window": "Use the maintenance hook only through Sunday 1 November 10:00 MetaTrader time (GMT+3). From 2 November, retain only a freshly checked reset-verification note while FTMO's live October 29 wording, applicable product and Account MetriX countdown agree. Retire immediately on a changed official date, time, platform, product, reset wording or conflicting/unavailable account countdown.",
+      "search_intents": [
+        "FTMO maintenance October 31 2026",
+        "FTMO Sunday maintenance November 1 2026",
+        "FTMO daily loss reset November 2 2026",
+        "FTMO Account MetriX reset countdown",
+        "FTMO MetaTrader time DST November 2026"
+      ],
+      "traffic_angle": "Borrow the verified extended weekend-maintenance and US-DST hook to answer one current calculation-adjacent question: which of three labels should a reader check before treating a daily boundary as active? Demonstrate the readable official sequence—31 Oct 08:00-18:00, 1 Nov 07:00-10:00, then the 2 Nov return to a 1-hour Prague/MetaTrader gap—alongside the live Account MetriX countdown. Those times are a verification worksheet, not a dollar-loss estimate, outage prediction, market forecast or instruction to trade.",
+      "calculator_bridge": "After the reader confirms the live official update, their applicable account and Account MetriX countdown, PipGauge Forex Session Clock can show reader-verified Prague, platform and local labels side by side; PipGauge Daily Loss Limit can keep a reader-entered daily boundary separate from later risk planning. Position Size only follows after balance, open P&L, contract value, costs and planned stop are separately verified. The calculators do not establish FTMO terms, validate eligibility, determine a reset, diagnose maintenance, supply contract inputs or guarantee compliance.",
+      "example_scenario": "Teaching-only clock worksheet: FTMO's official update lists 31 Oct 08:00-18:00 and 1 Nov 07:00-10:00 in MetaTrader time, says the US DST platform change occurs at 09:00 back to 08:00 on 1 Nov, and says the Prague/MetaTrader gap returns to 1 hour from 2 Nov. Record official window → platform/local display → live Account MetriX countdown. No position size, dollar loss, point value, execution result or breach conclusion is inferred.",
+      "distribution_order": [
+        "refresh the existing PipGauge FTMO DST/reset-clock explainer HR-20261023-01 with the October 29 facts and title",
+        "Medium current fact-and-verification refresh after human review",
+        "X self-contained maintenance-to-reset-clock thread",
+        "Reddit native clock-verification question without a first-round link"
+      ],
+      "link_placement": "Give official dates/times, the platform-clock change, the November 2 1-hour relation and the Account MetriX verification sequence before one natural PipGauge link. The initial Reddit post has no link, UTM, affiliate text or pitch. The X main thread must be complete without a click.",
+      "expiry_condition": "Stop the maintenance hook at 10:00 MetaTrader time on 1 November; stop the US-DST headline after the 2 November verification checkpoint unless the live official wording is still explicitly checked; stop immediately on any official correction, a different affected platform/product, missing account applicability or countdown conflict. Do not recycle the clock values as generic prop-firm rules, market-volatility evidence, execution-cost claims or evergreen daily-loss advice.",
+      "editorial_boundary": "Do not predict FX, CFDs, indices, equities or other markets; tell readers to trade, pause, hold, close, size or buy an account; claim a maintenance outcome; infer terms for another FTMO product or firm; state a reader-local reset time without their live Account MetriX check; convert the timing facts into dollar loss, point value, spread, slippage, fill, access or breach claims; or promise compliance.",
+      "refresh_target": "HR-20261023-01",
+      "refresh_signals": {
+        "fact_delta": true,
+        "search_delta": true,
+        "example_delta": true,
+        "window_delta": true
+      },
+      "refresh_updates": [
+        "Replace the October 24 Saturday-maintenance title and lead with the October 29 update's October 31 and November 1 windows.",
+        "Replace the old Europe-DST 2-hour timing block with the official US-DST platform change and November 2 return to a 1-hour Prague/MetaTrader relationship.",
+        "Replace the expired October 24 deadline with Sunday 1 November 10:00 MetaTrader time, then require a live recheck for any November 2 reset wording.",
+        "Keep Account MetriX countdown as the only account-specific reset check; do not make it an outage, trade, daily-loss availability or execution article."
+      ],
+      "content_mainline": "Refresh HR-20261023-01 only. This current audit snapshot replaces its expired October 24 maintenance/DST facts with the October 29 extended-maintenance and US-DST verification sequence; it does not create a parallel prop-firm or DST article.",
+      "body_material": [
+        "FTMO 29 October 2026 CFD Trading Update: Saturday 31 October 08:00-18:00 and Sunday 1 November 07:00-10:00 MetaTrader-time maintenance for MT4, MT5, TradingView and cTrader",
+        "FTMO 29 October update: US DST platform clock 09:00 back to 08:00 on 1 November; Prague/MetaTrader offset returns to 1 hour from 2 November; Account MetriX countdown is the account-specific reset check",
+        "Prop Firm Compare 30 October independent public change log as discovery/impact context only",
+        "three-label worksheet: official update, platform/local display, live Account MetriX countdown; no inferred dollar risk",
+        "Sunday 1 November 10:00 MetaTrader-time maintenance expiry and immediate official-change stop gate"
+      ],
+      "product_bridge": "PipGauge helps readers separate verified clock labels and a reader-entered daily-loss boundary from later sizing. It does not verify an FTMO account, infer a reset, supply contract inputs, determine service availability or make a trading decision.",
+      "product_bridge_type": "existing"
+    },
     "HR-20261023-01": {
       "playbook_status": "ready",
       "execution_mode": "refresh",
