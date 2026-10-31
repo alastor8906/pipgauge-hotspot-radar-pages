@@ -1,0 +1,102 @@
+{
+  "scan_date": "2026-10-31",
+  "generated_at": "2026-10-31T22:00:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-31T22:00:00+08:00",
+      "source_count": 3,
+      "note": "覆盖 FTMO 10 月 29 日 dated CFD Trading Update、Federal Reserve 10 月 28 日 meeting/result page 和 OANDA 10 月 31 日 temporary CFD crypto notice。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-10-31T22:00:00+08:00",
+      "source_count": 2,
+      "note": "覆盖 Prop Firm Compare 10 月 30 日 FTMO 公开 change log 和 Reuters 10 月 28 日 FOMC result coverage。Prop Firm Compare 仅用于 FTMO update 的独立公开发现/影响语境；FTMO 规则仍以官方页为准。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "partial",
+      "checked_at": "2026-10-31T22:00:00+08:00",
+      "source_count": 3,
+      "note": "复查公开索引与近期讨论。没有稳定、可验证且 FOMC-result-specific 的非方向 calculator query；保留 FTMO maintenance/reset 的公开规则发现对象，不把论坛或搜索摘要当规则事实。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-31T22:00:00+08:00",
+      "source_count": 0,
+      "note": "没有稳定、公开且可核验的合格信号；动态流、登录墙、截图、预测与不可验证材料未计入。"
+    }
+  ],
+  "candidates": {
+    "HR-20261031-01": {
+      "sources": [
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/en/blog/trading-updates/trading-update-29-oct-2026/",
+          "source_type": "official_dated_cfd_trading_update",
+          "published_at": "2026-10-29",
+          "freshness_role": "Official fact source for the October 31 08:00-18:00 and November 1 07:00-10:00 MetaTrader-time maintenance windows, the November 1 US-DST platform-clock change, and the November 2 return to the usual 1-hour Prague/MetaTrader offset.",
+          "reliable": true
+        },
+        {
+          "publisher": "Prop Firm Compare",
+          "url": "https://propfirm.compare/updates/ftmo",
+          "source_type": "independent_dated_public_change_tracking_and_impact_context",
+          "published_at": "2026-10-30",
+          "freshness_role": "Independent public tracker records the expanded Saturday window, added Sunday maintenance, and revised US-DST/reset wording; it supports current discovery/impact, not FTMO account terms.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass",
+        "decision_gate": "selected_refresh_official_rule_change_with_current_calculator_path",
+        "duplicate_of": ["HR-20261023-01", "HR-20261017-01"],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "reopen_trigger": "If FTMO publishes a further dated correction with a different platform, account scope, maintenance time, clock/reset relationship or Account MetriX instruction, refresh this one existing content line only after source and traffic-path review.",
+        "rationale": "The October 29 dated update replaces the prior October 22 Europe-DST framing with new current maintenance facts and a US-DST/November 2 reset checkpoint. The natural calculation journey is a reader-verified clock and daily-boundary separation; no market view, contract specification, trade or account purchase claim is required. This is a refresh, never a parallel DST article."
+      }
+    },
+    "HR-20261031-02": {
+      "sources": [
+        {
+          "publisher": "Federal Reserve Board",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20261028.htm",
+          "source_type": "official_dated_fomc_result_page",
+          "published_at": "2026-10-28",
+          "freshness_role": "Official result source retained for the recent October meeting; not evidence of a calculator-demand query.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.investing.com/news/economy-news/fed-holds-rates-steady-as-it-awaits-accumulation-of-more-information-4980411",
+          "source_type": "independent_dated_english_result_coverage",
+          "published_at": "2026-10-28",
+          "freshness_role": "Independent current English confirmation of the result and attention window; not used for a direction or calculator-demand claim.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_no_attributable_calculator_traffic_path",
+        "duplicate_of": ["HR-20261029-01", "HR-20261028-02", "HR-20260913-01", "HR-20261003-01"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "Require a public, verifiable, current and FOMC-result-specific non-directional fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query, then reassess at least two refresh signals against the prior FOMC packages.",
+        "rationale": "The result remains fresh but attention is policy- and market-direction led. Generic macro sizing would invent a search-to-calculator path and duplicate historical FOMC material."
+      }
+    }
+  }
+}

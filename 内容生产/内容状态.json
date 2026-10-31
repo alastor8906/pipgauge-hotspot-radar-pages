@@ -402,5 +402,12 @@
     "content_url": "../内容生产/2026-10-21/HR-20261021-01/index.html",
     "content_format": "Medium / Reddit / X",
     "deadline": "2026-10-24T17:00:00+09:00"
+  },
+  "HR-20261031-01": {
+    "content_status": "review_ready",
+    "content_label": "FTMO US DST reset / maintenance 刷新审核包待人工审核",
+    "content_url": "../内容生产/2026-10-31/HR-20261031-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-11-01T07:00:00+03:00"
   }
 }

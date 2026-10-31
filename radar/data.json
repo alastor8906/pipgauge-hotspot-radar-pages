@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-10-30T22:08:07+08:00",
-  "latest_scan_date": "2026-10-30",
+  "generated_at": "2026-10-31T22:06:25+08:00",
+  "latest_scan_date": "2026-10-31",
   "available_dates": [
+    "2026-10-31",
     "2026-10-30",
     "2026-10-29",
     "2026-10-28",
@@ -102,8 +103,270 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-10-31",
+      "generated_at": "2026-10-31T22:06:25+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 97,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 1,
+        "observation": 1,
+        "discarded": 1,
+        "total": 3,
+        "selected_average": 97.0,
+        "all_selected_pass_gate": true,
+        "content_ready": 1,
+        "playbook_ready": 1
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-10-31",
+          "candidate_id": "HR-20261031-01",
+          "status": "selected",
+          "topic": "FTMO US DST Reset: Verify the Maintenance Window and Daily-Loss Clock Before November 2",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 23,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 9,
+          "total_score": 97,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Forex Session Clock",
+            "Daily Loss Limit",
+            "Position Size"
+          ],
+          "reason": "FTMO's dated October 29 CFD update extends all-platform maintenance to October 31 08:00-18:00 and adds November 1 07:00-10:00 in MetaTrader time, then says the Prague/MetaTrader gap returns to one hour from November 2 after US DST ends. Prop Firm Compare independently records the dated change and its expanded maintenance/reset wording. This is a refresh of HR-20261023-01, not a second DST article: it supplies a new official fact, current search object, replacement timing example and live weekend window for a reader-verified Account MetriX clock check, without a market call or account recommendation.",
+          "content_status": "review_ready",
+          "content_label": "FTMO US DST reset / maintenance 刷新审核包待人工审核",
+          "content_url": "../内容生产/2026-10-31/HR-20261031-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-11-01T07:00:00+03:00",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "refresh",
+            "urgency": "high",
+            "publish_deadline": "2026-11-01T07:00:00+03:00",
+            "traffic_hook": "FTMO's dated October 29 CFD update expands the immediate weekend checkpoint: MT4, MT5, TradingView and cTrader are listed for Saturday 31 October 08:00-18:00 and Sunday 1 November 07:00-10:00 in MetaTrader time. The same update moves the reader's clock question to US DST ending on 1 November and says the usual 1-hour Prague/MetaTrader relationship returns on 2 November. The demand path is to verify which displayed countdown defines the account's daily-loss boundary—not to predict a market or recommend an account.",
+            "traffic_window": "Use the maintenance hook only through Sunday 1 November 10:00 MetaTrader time (GMT+3). From 2 November, retain only a freshly checked reset-verification note while FTMO's live October 29 wording, applicable product and Account MetriX countdown agree. Retire immediately on a changed official date, time, platform, product, reset wording or conflicting/unavailable account countdown.",
+            "search_intents": [
+              "FTMO maintenance October 31 2026",
+              "FTMO Sunday maintenance November 1 2026",
+              "FTMO daily loss reset November 2 2026",
+              "FTMO Account MetriX reset countdown",
+              "FTMO MetaTrader time DST November 2026"
+            ],
+            "traffic_angle": "Borrow the verified extended weekend-maintenance and US-DST hook to answer one current calculation-adjacent question: which of three labels should a reader check before treating a daily boundary as active? Demonstrate the readable official sequence—31 Oct 08:00-18:00, 1 Nov 07:00-10:00, then the 2 Nov return to a 1-hour Prague/MetaTrader gap—alongside the live Account MetriX countdown. Those times are a verification worksheet, not a dollar-loss estimate, outage prediction, market forecast or instruction to trade.",
+            "calculator_bridge": "After the reader confirms the live official update, their applicable account and Account MetriX countdown, PipGauge Forex Session Clock can show reader-verified Prague, platform and local labels side by side; PipGauge Daily Loss Limit can keep a reader-entered daily boundary separate from later risk planning. Position Size only follows after balance, open P&L, contract value, costs and planned stop are separately verified. The calculators do not establish FTMO terms, validate eligibility, determine a reset, diagnose maintenance, supply contract inputs or guarantee compliance.",
+            "example_scenario": "Teaching-only clock worksheet: FTMO's official update lists 31 Oct 08:00-18:00 and 1 Nov 07:00-10:00 in MetaTrader time, says the US DST platform change occurs at 09:00 back to 08:00 on 1 Nov, and says the Prague/MetaTrader gap returns to 1 hour from 2 Nov. Record official window → platform/local display → live Account MetriX countdown. No position size, dollar loss, point value, execution result or breach conclusion is inferred.",
+            "distribution_order": [
+              "refresh the existing PipGauge FTMO DST/reset-clock explainer HR-20261023-01 with the October 29 facts and title",
+              "Medium current fact-and-verification refresh after human review",
+              "X self-contained maintenance-to-reset-clock thread",
+              "Reddit native clock-verification question without a first-round link"
+            ],
+            "link_placement": "Give official dates/times, the platform-clock change, the November 2 1-hour relation and the Account MetriX verification sequence before one natural PipGauge link. The initial Reddit post has no link, UTM, affiliate text or pitch. The X main thread must be complete without a click.",
+            "expiry_condition": "Stop the maintenance hook at 10:00 MetaTrader time on 1 November; stop the US-DST headline after the 2 November verification checkpoint unless the live official wording is still explicitly checked; stop immediately on any official correction, a different affected platform/product, missing account applicability or countdown conflict. Do not recycle the clock values as generic prop-firm rules, market-volatility evidence, execution-cost claims or evergreen daily-loss advice.",
+            "editorial_boundary": "Do not predict FX, CFDs, indices, equities or other markets; tell readers to trade, pause, hold, close, size or buy an account; claim a maintenance outcome; infer terms for another FTMO product or firm; state a reader-local reset time without their live Account MetriX check; convert the timing facts into dollar loss, point value, spread, slippage, fill, access or breach claims; or promise compliance.",
+            "refresh_target": "HR-20261023-01",
+            "refresh_signals": {
+              "fact_delta": true,
+              "search_delta": true,
+              "example_delta": true,
+              "window_delta": true
+            },
+            "refresh_updates": [
+              "Replace the October 24 Saturday-maintenance title and lead with the October 29 update's October 31 and November 1 windows.",
+              "Replace the old Europe-DST 2-hour timing block with the official US-DST platform change and November 2 return to a 1-hour Prague/MetaTrader relationship.",
+              "Replace the expired October 24 deadline with Sunday 1 November 10:00 MetaTrader time, then require a live recheck for any November 2 reset wording.",
+              "Keep Account MetriX countdown as the only account-specific reset check; do not make it an outage, trade, daily-loss availability or execution article."
+            ],
+            "content_mainline": "Refresh HR-20261023-01 only. This current audit snapshot replaces its expired October 24 maintenance/DST facts with the October 29 extended-maintenance and US-DST verification sequence; it does not create a parallel prop-firm or DST article.",
+            "body_material": [
+              "FTMO 29 October 2026 CFD Trading Update: Saturday 31 October 08:00-18:00 and Sunday 1 November 07:00-10:00 MetaTrader-time maintenance for MT4, MT5, TradingView and cTrader",
+              "FTMO 29 October update: US DST platform clock 09:00 back to 08:00 on 1 November; Prague/MetaTrader offset returns to 1 hour from 2 November; Account MetriX countdown is the account-specific reset check",
+              "Prop Firm Compare 30 October independent public change log as discovery/impact context only",
+              "three-label worksheet: official update, platform/local display, live Account MetriX countdown; no inferred dollar risk",
+              "Sunday 1 November 10:00 MetaTrader-time maintenance expiry and immediate official-change stop gate"
+            ],
+            "product_bridge": "PipGauge helps readers separate verified clock labels and a reader-entered daily-loss boundary from later sizing. It does not verify an FTMO account, infer a reset, supply contract inputs, determine service availability or make a trading decision.",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "FTMO",
+                "url": "https://ftmo.com/en/blog/trading-updates/trading-update-29-oct-2026/",
+                "source_type": "official_dated_cfd_trading_update",
+                "published_at": "2026-10-29",
+                "freshness_role": "Official fact source for the October 31 08:00-18:00 and November 1 07:00-10:00 MetaTrader-time maintenance windows, the November 1 US-DST platform-clock change, and the November 2 return to the usual 1-hour Prague/MetaTrader offset.",
+                "reliable": true
+              },
+              {
+                "publisher": "Prop Firm Compare",
+                "url": "https://propfirm.compare/updates/ftmo",
+                "source_type": "independent_dated_public_change_tracking_and_impact_context",
+                "published_at": "2026-10-30",
+                "freshness_role": "Independent public tracker records the expanded Saturday window, added Sunday maintenance, and revised US-DST/reset wording; it supports current discovery/impact, not FTMO account terms.",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass",
+              "decision_gate": "selected_refresh_official_rule_change_with_current_calculator_path",
+              "duplicate_of": [
+                "HR-20261023-01",
+                "HR-20261017-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": true,
+                "window_delta": true
+              },
+              "reopen_trigger": "If FTMO publishes a further dated correction with a different platform, account scope, maintenance time, clock/reset relationship or Account MetriX instruction, refresh this one existing content line only after source and traffic-path review.",
+              "rationale": "The October 29 dated update replaces the prior October 22 Europe-DST framing with new current maintenance facts and a US-DST/November 2 reset checkpoint. The natural calculation journey is a reader-verified clock and daily-boundary separation; no market view, contract specification, trade or account purchase claim is required. This is a refresh, never a parallel DST article."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-10-31",
+          "candidate_id": "HR-20261031-02",
+          "status": "observation",
+          "topic": "FOMC October Result Remains a Direction-Led Discussion Rather Than a New Calculator Journey",
+          "primary_site": "PipGauge",
+          "freshness": 24,
+          "traffic_potential": 22,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 4,
+          "total_score": 90,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Margin",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "The Federal Reserve's October 28 result and Reuters coverage remain timely and independently verifiable, but no current public event-specific non-directional fixed-risk, pip-value, margin, cost, quantity or portfolio-heat demand was retained. It remains a duplicate of prior FOMC risk packages; proximity to the result alone does not justify a refresh.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Federal Reserve Board",
+                "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20261028.htm",
+                "source_type": "official_dated_fomc_result_page",
+                "published_at": "2026-10-28",
+                "freshness_role": "Official result source retained for the recent October meeting; not evidence of a calculator-demand query.",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.investing.com/news/economy-news/fed-holds-rates-steady-as-it-awaits-accumulation-of-more-information-4980411",
+                "source_type": "independent_dated_english_result_coverage",
+                "published_at": "2026-10-28",
+                "freshness_role": "Independent current English confirmation of the result and attention window; not used for a direction or calculator-demand claim.",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_no_attributable_calculator_traffic_path",
+              "duplicate_of": [
+                "HR-20261029-01",
+                "HR-20261028-02",
+                "HR-20260913-01",
+                "HR-20261003-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Require a public, verifiable, current and FOMC-result-specific non-directional fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query, then reassess at least two refresh signals against the prior FOMC packages.",
+              "rationale": "The result remains fresh but attention is policy- and market-direction led. Generic macro sizing would invent a search-to-calculator path and duplicate historical FOMC material."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-10-31",
+          "candidate_id": "HR-20261031-03",
+          "status": "discarded",
+          "topic": "OANDA Temporary CFD Crypto Interruption Is Not a Safe PipGauge or PositionMath Traffic Bridge",
+          "primary_site": "PositionMath",
+          "freshness": 25,
+          "traffic_potential": 18,
+          "calculator_fit": 8,
+          "evidence_quality": 10,
+          "actionability": 3,
+          "total_score": 64,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Margin",
+            "Position Size",
+            "P&L"
+          ],
+          "reason": "OANDA's dated October 31 temporary CFD-crypto interruption is verifiable, but the scope is crypto and the notice does not create a natural existing-calculator handoff without converting a service interruption into a trading or execution claim. Pure crypto and outage-driven traffic are excluded."
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-10-31T22:00:00+08:00",
+          "source_count": 3,
+          "note": "覆盖 FTMO 10 月 29 日 dated CFD Trading Update、Federal Reserve 10 月 28 日 meeting/result page 和 OANDA 10 月 31 日 temporary CFD crypto notice。"
+        },
+        {
+          "channel": "独立可靠英文来源",
+          "status": "complete",
+          "checked_at": "2026-10-31T22:00:00+08:00",
+          "source_count": 2,
+          "note": "覆盖 Prop Firm Compare 10 月 30 日 FTMO 公开 change log 和 Reuters 10 月 28 日 FOMC result coverage。Prop Firm Compare 仅用于 FTMO update 的独立公开发现/影响语境；FTMO 规则仍以官方页为准。"
+        },
+        {
+          "channel": "Reddit / ForexFactory / BabyPips",
+          "status": "partial",
+          "checked_at": "2026-10-31T22:00:00+08:00",
+          "source_count": 3,
+          "note": "复查公开索引与近期讨论。没有稳定、可验证且 FOMC-result-specific 的非方向 calculator query；保留 FTMO maintenance/reset 的公开规则发现对象，不把论坛或搜索摘要当规则事实。"
+        },
+        {
+          "channel": "X / Quora",
+          "status": "limited",
+          "checked_at": "2026-10-31T22:00:00+08:00",
+          "source_count": 0,
+          "note": "没有稳定、公开且可核验的合格信号；动态流、登录墙、截图、预测与不可验证材料未计入。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-10-31_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-10-31_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-10-31"
+      }
+    },
+    {
       "scan_date": "2026-10-30",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 96,
@@ -367,7 +630,7 @@
     },
     {
       "scan_date": "2026-10-29",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 95,
@@ -641,7 +904,7 @@
     },
     {
       "scan_date": "2026-10-28",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 94,
@@ -915,7 +1178,7 @@
     },
     {
       "scan_date": "2026-10-27",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 93,
@@ -1190,7 +1453,7 @@
     },
     {
       "scan_date": "2026-10-26",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 92,
@@ -1434,7 +1697,7 @@
     },
     {
       "scan_date": "2026-10-25",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 91,
@@ -1641,7 +1904,7 @@
     },
     {
       "scan_date": "2026-10-24",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 90,
@@ -1862,7 +2125,7 @@
     },
     {
       "scan_date": "2026-10-23",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 89,
@@ -2193,7 +2456,7 @@
     },
     {
       "scan_date": "2026-10-22",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 88,
@@ -2409,7 +2672,7 @@
     },
     {
       "scan_date": "2026-10-21",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 87,
@@ -2712,7 +2975,7 @@
     },
     {
       "scan_date": "2026-10-20",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 86,
@@ -2939,7 +3202,7 @@
     },
     {
       "scan_date": "2026-10-19",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 85,
@@ -3155,7 +3418,7 @@
     },
     {
       "scan_date": "2026-10-18",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 84,
@@ -3369,7 +3632,7 @@
     },
     {
       "scan_date": "2026-10-17",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 83,
@@ -3637,7 +3900,7 @@
     },
     {
       "scan_date": "2026-10-16",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 82,
@@ -3943,7 +4206,7 @@
     },
     {
       "scan_date": "2026-10-15",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 81,
@@ -4154,7 +4417,7 @@
     },
     {
       "scan_date": "2026-10-14",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 80,
@@ -4437,7 +4700,7 @@
     },
     {
       "scan_date": "2026-10-13",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 79,
@@ -4653,7 +4916,7 @@
     },
     {
       "scan_date": "2026-10-12",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 78,
@@ -4925,7 +5188,7 @@
     },
     {
       "scan_date": "2026-10-11",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 77,
@@ -5186,7 +5449,7 @@
     },
     {
       "scan_date": "2026-10-10",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 76,
@@ -5443,7 +5706,7 @@
     },
     {
       "scan_date": "2026-10-09",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 75,
@@ -5654,7 +5917,7 @@
     },
     {
       "scan_date": "2026-10-08",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 74,
@@ -5841,7 +6104,7 @@
     },
     {
       "scan_date": "2026-10-07",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 73,
@@ -6005,7 +6268,7 @@
     },
     {
       "scan_date": "2026-10-06",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 72,
@@ -6168,7 +6431,7 @@
     },
     {
       "scan_date": "2026-10-05",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 71,
@@ -6435,7 +6698,7 @@
     },
     {
       "scan_date": "2026-10-04",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 70,
@@ -6661,7 +6924,7 @@
     },
     {
       "scan_date": "2026-10-03",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 69,
@@ -6884,7 +7147,7 @@
     },
     {
       "scan_date": "2026-10-02",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 68,
@@ -7167,7 +7430,7 @@
     },
     {
       "scan_date": "2026-10-01",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 67,
@@ -7446,7 +7709,7 @@
     },
     {
       "scan_date": "2026-09-30",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 66,
@@ -7856,7 +8119,7 @@
     },
     {
       "scan_date": "2026-09-29",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 65,
@@ -8180,7 +8443,7 @@
     },
     {
       "scan_date": "2026-09-28",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 64,
@@ -8465,7 +8728,7 @@
     },
     {
       "scan_date": "2026-09-27",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 63,
@@ -8815,7 +9078,7 @@
     },
     {
       "scan_date": "2026-09-26",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 62,
@@ -9024,7 +9287,7 @@
     },
     {
       "scan_date": "2026-09-25",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 61,
@@ -9304,7 +9567,7 @@
     },
     {
       "scan_date": "2026-09-24",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 60,
@@ -9584,7 +9847,7 @@
     },
     {
       "scan_date": "2026-09-23",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 59,
@@ -9822,7 +10085,7 @@
     },
     {
       "scan_date": "2026-09-22",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 58,
@@ -10111,7 +10374,7 @@
     },
     {
       "scan_date": "2026-09-21",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 57,
@@ -10333,7 +10596,7 @@
     },
     {
       "scan_date": "2026-09-20",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 56,
@@ -10618,7 +10881,7 @@
     },
     {
       "scan_date": "2026-09-19",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 55,
@@ -10893,7 +11156,7 @@
     },
     {
       "scan_date": "2026-09-18",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 54,
@@ -11175,7 +11438,7 @@
     },
     {
       "scan_date": "2026-09-17",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 53,
@@ -11520,7 +11783,7 @@
     },
     {
       "scan_date": "2026-09-16",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 52,
@@ -11810,7 +12073,7 @@
     },
     {
       "scan_date": "2026-09-15",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 51,
@@ -12024,7 +12287,7 @@
     },
     {
       "scan_date": "2026-09-14",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 50,
@@ -12228,7 +12491,7 @@
     },
     {
       "scan_date": "2026-09-13",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 49,
@@ -12433,7 +12696,7 @@
     },
     {
       "scan_date": "2026-09-12",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 48,
@@ -12619,7 +12882,7 @@
     },
     {
       "scan_date": "2026-09-11",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 47,
@@ -12836,7 +13099,7 @@
     },
     {
       "scan_date": "2026-09-10",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 46,
@@ -13122,7 +13385,7 @@
     },
     {
       "scan_date": "2026-09-09",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 45,
@@ -13402,7 +13665,7 @@
     },
     {
       "scan_date": "2026-09-08",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 44,
@@ -13731,7 +13994,7 @@
     },
     {
       "scan_date": "2026-09-07",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 43,
@@ -14033,7 +14296,7 @@
     },
     {
       "scan_date": "2026-09-06",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 42,
@@ -14349,7 +14612,7 @@
     },
     {
       "scan_date": "2026-09-05",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 41,
@@ -14671,7 +14934,7 @@
     },
     {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -14984,7 +15247,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -15295,7 +15558,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -15626,7 +15889,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -15964,7 +16227,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -16357,7 +16620,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -16767,7 +17030,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -17239,7 +17502,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -17584,7 +17847,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -17929,7 +18192,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -18381,7 +18644,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -18794,7 +19057,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -19026,7 +19289,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -19471,7 +19734,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -19846,7 +20109,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -20238,7 +20501,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -20614,7 +20877,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -20938,7 +21201,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -21321,7 +21584,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -21662,7 +21925,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -22037,7 +22300,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -22425,7 +22688,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -22770,7 +23033,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -23098,7 +23361,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -23410,7 +23673,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -23731,7 +23994,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -24092,7 +24355,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -24445,7 +24708,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -24889,7 +25152,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -25398,7 +25661,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -25868,7 +26131,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -26411,7 +26674,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -26683,7 +26946,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -26996,7 +27259,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -27431,7 +27694,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -27945,7 +28208,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -28454,7 +28717,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -28922,7 +29185,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -29336,7 +29599,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -29735,7 +29998,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-10-30T22:08:07+08:00",
+      "generated_at": "2026-10-31T22:06:25+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -30174,10 +30437,10 @@
       }
     }
   ],
-  "scan_date": "2026-10-30",
+  "scan_date": "2026-10-31",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 96,
+    "day": 97,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -30185,255 +30448,253 @@
     "mode": "topic_traffic_playbooks_and_content_drafts"
   },
   "stats": {
-    "selected": 0,
-    "observation": 3,
+    "selected": 1,
+    "observation": 1,
     "discarded": 1,
-    "total": 4,
-    "selected_average": 0,
+    "total": 3,
+    "selected_average": 97.0,
     "all_selected_pass_gate": true,
-    "content_ready": 0,
-    "playbook_ready": 0
+    "content_ready": 1,
+    "playbook_ready": 1
   },
   "candidates": [
     {
-      "scan_date": "2026-10-30",
-      "candidate_id": "HR-20261030-01",
-      "status": "observation",
-      "topic": "BOJ October 30 Hold at 1.25% Has No Attributable Non-Directional USDJPY Calculator Journey",
+      "scan_date": "2026-10-31",
+      "candidate_id": "HR-20261031-01",
+      "status": "selected",
+      "topic": "FTMO US DST Reset: Verify the Maintenance Window and Daily-Loss Clock Before November 2",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 23,
-      "calculator_fit": 15,
+      "calculator_fit": 25,
       "evidence_quality": 15,
-      "actionability": 7,
-      "total_score": 85,
+      "actionability": 9,
+      "total_score": 97,
       "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
-      "calculator_mapping": [
-        "Forex Position Size",
-        "Pip Value",
-        "Margin",
-        "Risk Reward"
-      ],
-      "reason": "The BOJ's dated policy statement and Reuters' independent English result coverage verify the October 30 1.25% hold and 8-1 vote. Public attention is the policy path and USDJPY direction, not a current event-specific fixed-risk, pip-value, margin, cost, quantity or portfolio-heat question. Relative to historical BOJ packages, the fact and window changed but no verified search or example delta creates a natural calculator journey.",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "Bank of Japan",
-            "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
-            "source_type": "official_dated_monetary_policy_statement",
-            "published_at": "2026-10-30",
-            "freshness_role": "Official English statement records the October 29-30 meeting decision to maintain the short-term policy-rate target at around 1.25 percent.",
-            "reliable": true
-          },
-          {
-            "publisher": "Reuters",
-            "url": "https://www.aol.com/articles/boj-keeps-interest-rates-steady-031548000.html",
-            "source_type": "independent_dated_english_result_coverage",
-            "published_at": "2026-10-30",
-            "freshness_role": "Independent English coverage confirms the 1.25 percent hold and 8-1 vote; it is not used for a USDJPY direction or calculator-demand claim.",
-            "reliable": true
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_no_attributable_calculator_traffic_path",
-          "duplicate_of": [
-            "HR-20260828-01",
-            "HR-20260827-02",
-            "HR-20260731-01"
-          ],
-          "refresh_signals": {
-            "fact_delta": true,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": true
-          },
-          "reopen_trigger": "Require a public, verifiable, current and BOJ-result-specific fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query, then reassess at least two refresh signals against the prior BOJ packages.",
-          "rationale": "The official result and Reuters coverage establish a timely macro fact, but no retained public signal establishes a non-directional calculator journey. A generic USDJPY sizing grid would fabricate demand."
-        }
-      }
-    },
-    {
-      "scan_date": "2026-10-30",
-      "candidate_id": "HR-20261030-02",
-      "status": "observation",
-      "topic": "ECB October 29 Result Is Fresh but Has No Natural EUR Calculator Handoff",
-      "primary_site": "PipGauge",
-      "freshness": 25,
-      "traffic_potential": 22,
-      "calculator_fit": 15,
-      "evidence_quality": 15,
-      "actionability": 7,
-      "total_score": 84,
-      "hard_gate": true,
-      "reliable_sources": 2,
-      "fresh_signal": true,
-      "calculator_mapping": [
-        "Forex Position Size",
-        "Pip Value",
-        "Margin",
-        "Risk Reward"
-      ],
-      "reason": "The ECB's October 29 monetary-policy decision and Reuters' independent post-decision coverage verify that rates were unchanged. Today's accessible attention is inflation, policy path and EUR direction rather than an event-specific non-directional calculation query. The result provides fact and window deltas versus the pre-decision watch, but no verified search or example delta to justify a refresh.",
-      "scan_audit": {
-        "sources": [
-          {
-            "publisher": "European Central Bank",
-            "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
-            "source_type": "official_dated_monetary_policy_decision",
-            "published_at": "2026-10-29",
-            "freshness_role": "Official decision says the Governing Council kept the three key ECB interest rates unchanged on October 29.",
-            "reliable": true
-          },
-          {
-            "publisher": "Reuters",
-            "url": "https://live.euronext.com/en/financial-news/ecb-policymakers-bring-rate-hike-debate-open",
-            "source_type": "independent_dated_english_post_decision_coverage",
-            "published_at": "2026-10-30",
-            "freshness_role": "Independent current English coverage records post-decision policy attention; it is not used for a rate forecast or calculator-demand claim.",
-            "reliable": true
-          }
-        ],
-        "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_no_attributable_calculator_traffic_path",
-          "duplicate_of": [
-            "HR-20261029-02",
-            "HR-20261028-03",
-            "HR-20260723-02"
-          ],
-          "refresh_signals": {
-            "fact_delta": true,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": true
-          },
-          "reopen_trigger": "Require a current public, ECB-result-specific EUR fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query and at least two refresh signals; if satisfied, refresh the existing ECB material rather than creating a parallel article.",
-          "rationale": "The result is fresh and independently verified, but retained attention remains policy, inflation and EUR-direction led rather than a verifiable non-directional calculation question."
-        }
-      }
-    },
-    {
-      "scan_date": "2026-10-30",
-      "candidate_id": "HR-20261030-03",
-      "status": "observation",
-      "topic": "FTMO DST Reset Week Remains Active but Has No New Refresh Delta",
-      "primary_site": "PipGauge",
-      "freshness": 18,
-      "traffic_potential": 21,
-      "calculator_fit": 23,
-      "evidence_quality": 14,
-      "actionability": 7,
-      "total_score": 83,
-      "hard_gate": true,
-      "reliable_sources": 2,
-      "fresh_signal": false,
       "calculator_mapping": [
         "Forex Session Clock",
         "Daily Loss Limit",
         "Position Size"
       ],
-      "reason": "HR-20261023-01 already owns FTMO's October 22 reset-clock facts, Account MetriX countdown check and November 1 expiry. Entering the unchanged DST week adds no dated fact, distinct search wording, replacement example or new window; preserve it as a hold and do not create a second same-shape DST article.",
+      "reason": "FTMO's dated October 29 CFD update extends all-platform maintenance to October 31 08:00-18:00 and adds November 1 07:00-10:00 in MetaTrader time, then says the Prague/MetaTrader gap returns to one hour from November 2 after US DST ends. Prop Firm Compare independently records the dated change and its expanded maintenance/reset wording. This is a refresh of HR-20261023-01, not a second DST article: it supplies a new official fact, current search object, replacement timing example and live weekend window for a reader-verified Account MetriX clock check, without a market call or account recommendation.",
+      "content_status": "review_ready",
+      "content_label": "FTMO US DST reset / maintenance 刷新审核包待人工审核",
+      "content_url": "../内容生产/2026-10-31/HR-20261031-01/index.html",
+      "content_format": "Medium / Reddit / X",
+      "deadline": "2026-11-01T07:00:00+03:00",
+      "traffic_playbook": {
+        "playbook_status": "ready",
+        "execution_mode": "refresh",
+        "urgency": "high",
+        "publish_deadline": "2026-11-01T07:00:00+03:00",
+        "traffic_hook": "FTMO's dated October 29 CFD update expands the immediate weekend checkpoint: MT4, MT5, TradingView and cTrader are listed for Saturday 31 October 08:00-18:00 and Sunday 1 November 07:00-10:00 in MetaTrader time. The same update moves the reader's clock question to US DST ending on 1 November and says the usual 1-hour Prague/MetaTrader relationship returns on 2 November. The demand path is to verify which displayed countdown defines the account's daily-loss boundary—not to predict a market or recommend an account.",
+        "traffic_window": "Use the maintenance hook only through Sunday 1 November 10:00 MetaTrader time (GMT+3). From 2 November, retain only a freshly checked reset-verification note while FTMO's live October 29 wording, applicable product and Account MetriX countdown agree. Retire immediately on a changed official date, time, platform, product, reset wording or conflicting/unavailable account countdown.",
+        "search_intents": [
+          "FTMO maintenance October 31 2026",
+          "FTMO Sunday maintenance November 1 2026",
+          "FTMO daily loss reset November 2 2026",
+          "FTMO Account MetriX reset countdown",
+          "FTMO MetaTrader time DST November 2026"
+        ],
+        "traffic_angle": "Borrow the verified extended weekend-maintenance and US-DST hook to answer one current calculation-adjacent question: which of three labels should a reader check before treating a daily boundary as active? Demonstrate the readable official sequence—31 Oct 08:00-18:00, 1 Nov 07:00-10:00, then the 2 Nov return to a 1-hour Prague/MetaTrader gap—alongside the live Account MetriX countdown. Those times are a verification worksheet, not a dollar-loss estimate, outage prediction, market forecast or instruction to trade.",
+        "calculator_bridge": "After the reader confirms the live official update, their applicable account and Account MetriX countdown, PipGauge Forex Session Clock can show reader-verified Prague, platform and local labels side by side; PipGauge Daily Loss Limit can keep a reader-entered daily boundary separate from later risk planning. Position Size only follows after balance, open P&L, contract value, costs and planned stop are separately verified. The calculators do not establish FTMO terms, validate eligibility, determine a reset, diagnose maintenance, supply contract inputs or guarantee compliance.",
+        "example_scenario": "Teaching-only clock worksheet: FTMO's official update lists 31 Oct 08:00-18:00 and 1 Nov 07:00-10:00 in MetaTrader time, says the US DST platform change occurs at 09:00 back to 08:00 on 1 Nov, and says the Prague/MetaTrader gap returns to 1 hour from 2 Nov. Record official window → platform/local display → live Account MetriX countdown. No position size, dollar loss, point value, execution result or breach conclusion is inferred.",
+        "distribution_order": [
+          "refresh the existing PipGauge FTMO DST/reset-clock explainer HR-20261023-01 with the October 29 facts and title",
+          "Medium current fact-and-verification refresh after human review",
+          "X self-contained maintenance-to-reset-clock thread",
+          "Reddit native clock-verification question without a first-round link"
+        ],
+        "link_placement": "Give official dates/times, the platform-clock change, the November 2 1-hour relation and the Account MetriX verification sequence before one natural PipGauge link. The initial Reddit post has no link, UTM, affiliate text or pitch. The X main thread must be complete without a click.",
+        "expiry_condition": "Stop the maintenance hook at 10:00 MetaTrader time on 1 November; stop the US-DST headline after the 2 November verification checkpoint unless the live official wording is still explicitly checked; stop immediately on any official correction, a different affected platform/product, missing account applicability or countdown conflict. Do not recycle the clock values as generic prop-firm rules, market-volatility evidence, execution-cost claims or evergreen daily-loss advice.",
+        "editorial_boundary": "Do not predict FX, CFDs, indices, equities or other markets; tell readers to trade, pause, hold, close, size or buy an account; claim a maintenance outcome; infer terms for another FTMO product or firm; state a reader-local reset time without their live Account MetriX check; convert the timing facts into dollar loss, point value, spread, slippage, fill, access or breach claims; or promise compliance.",
+        "refresh_target": "HR-20261023-01",
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "refresh_updates": [
+          "Replace the October 24 Saturday-maintenance title and lead with the October 29 update's October 31 and November 1 windows.",
+          "Replace the old Europe-DST 2-hour timing block with the official US-DST platform change and November 2 return to a 1-hour Prague/MetaTrader relationship.",
+          "Replace the expired October 24 deadline with Sunday 1 November 10:00 MetaTrader time, then require a live recheck for any November 2 reset wording.",
+          "Keep Account MetriX countdown as the only account-specific reset check; do not make it an outage, trade, daily-loss availability or execution article."
+        ],
+        "content_mainline": "Refresh HR-20261023-01 only. This current audit snapshot replaces its expired October 24 maintenance/DST facts with the October 29 extended-maintenance and US-DST verification sequence; it does not create a parallel prop-firm or DST article.",
+        "body_material": [
+          "FTMO 29 October 2026 CFD Trading Update: Saturday 31 October 08:00-18:00 and Sunday 1 November 07:00-10:00 MetaTrader-time maintenance for MT4, MT5, TradingView and cTrader",
+          "FTMO 29 October update: US DST platform clock 09:00 back to 08:00 on 1 November; Prague/MetaTrader offset returns to 1 hour from 2 November; Account MetriX countdown is the account-specific reset check",
+          "Prop Firm Compare 30 October independent public change log as discovery/impact context only",
+          "three-label worksheet: official update, platform/local display, live Account MetriX countdown; no inferred dollar risk",
+          "Sunday 1 November 10:00 MetaTrader-time maintenance expiry and immediate official-change stop gate"
+        ],
+        "product_bridge": "PipGauge helps readers separate verified clock labels and a reader-entered daily-loss boundary from later sizing. It does not verify an FTMO account, infer a reset, supply contract inputs, determine service availability or make a trading decision.",
+        "product_bridge_type": "existing"
+      },
       "scan_audit": {
         "sources": [
           {
             "publisher": "FTMO",
-            "url": "https://ftmo.com/au/trading-updates/",
-            "source_type": "official_dated_trading_update",
-            "published_at": "2026-10-22",
-            "freshness_role": "Existing official update remains relevant to the October 26-November 1 DST/reset window, but it is older than 72 hours and already covered by HR-20261023-01.",
+            "url": "https://ftmo.com/en/blog/trading-updates/trading-update-29-oct-2026/",
+            "source_type": "official_dated_cfd_trading_update",
+            "published_at": "2026-10-29",
+            "freshness_role": "Official fact source for the October 31 08:00-18:00 and November 1 07:00-10:00 MetaTrader-time maintenance windows, the November 1 US-DST platform-clock change, and the November 2 return to the usual 1-hour Prague/MetaTrader offset.",
             "reliable": true
           },
           {
-            "publisher": "FindBestProp",
-            "url": "https://www.findbestprop.com/blog/ftmo-clock-blue-guardian-split-earn2trade-both50-october-23-2026",
-            "source_type": "independent_dated_public_impact_context",
-            "published_at": "2026-10-23",
-            "freshness_role": "Existing independent context for the October 22 update; not a new fact or current calculator-demand signal.",
+            "publisher": "Prop Firm Compare",
+            "url": "https://propfirm.compare/updates/ftmo",
+            "source_type": "independent_dated_public_change_tracking_and_impact_context",
+            "published_at": "2026-10-30",
+            "freshness_role": "Independent public tracker records the expanded Saturday window, added Sunday maintenance, and revised US-DST/reset wording; it supports current discovery/impact, not FTMO account terms.",
             "reliable": true
           }
         ],
         "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_duplicate_no_refresh_delta",
+          "novelty_gate": "pass",
+          "decision_gate": "selected_refresh_official_rule_change_with_current_calculator_path",
           "duplicate_of": [
             "HR-20261023-01",
             "HR-20261017-01"
           ],
           "refresh_signals": {
-            "fact_delta": false,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": false
+            "fact_delta": true,
+            "search_delta": true,
+            "example_delta": true,
+            "window_delta": true
           },
-          "reopen_trigger": "Require a dated/versioned FTMO correction with applicable-account scope or a distinct current public calculator query. Refresh HR-20261023-01 rather than create a parallel DST/daily-loss package.",
-          "rationale": "The prior refresh owns the same official timing facts, three-label verification method and expiry date. The mere passage through the unchanged transition week is not a new content trigger."
+          "reopen_trigger": "If FTMO publishes a further dated correction with a different platform, account scope, maintenance time, clock/reset relationship or Account MetriX instruction, refresh this one existing content line only after source and traffic-path review.",
+          "rationale": "The October 29 dated update replaces the prior October 22 Europe-DST framing with new current maintenance facts and a US-DST/November 2 reset checkpoint. The natural calculation journey is a reader-verified clock and daily-boundary separation; no market view, contract specification, trade or account purchase claim is required. This is a refresh, never a parallel DST article."
         }
       }
     },
     {
-      "scan_date": "2026-10-30",
-      "candidate_id": "HR-20261030-04",
-      "status": "discarded",
-      "topic": "Generic Margin-Requirement Discussion Is Not a Dated Product-Rule or Event Trigger",
-      "primary_site": "PositionMath",
-      "freshness": 18,
-      "traffic_potential": 17,
+      "scan_date": "2026-10-31",
+      "candidate_id": "HR-20261031-02",
+      "status": "observation",
+      "topic": "FOMC October Result Remains a Direction-Led Discussion Rather Than a New Calculator Journey",
+      "primary_site": "PipGauge",
+      "freshness": 24,
+      "traffic_potential": 22,
       "calculator_fit": 25,
-      "evidence_quality": 7,
+      "evidence_quality": 15,
       "actionability": 4,
-      "total_score": 71,
+      "total_score": 90,
+      "hard_gate": true,
+      "reliable_sources": 2,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Pip Value",
+        "Position Size",
+        "Margin",
+        "P&L",
+        "Spread Cost"
+      ],
+      "reason": "The Federal Reserve's October 28 result and Reuters coverage remain timely and independently verifiable, but no current public event-specific non-directional fixed-risk, pip-value, margin, cost, quantity or portfolio-heat demand was retained. It remains a duplicate of prior FOMC risk packages; proximity to the result alone does not justify a refresh.",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "Federal Reserve Board",
+            "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20261028.htm",
+            "source_type": "official_dated_fomc_result_page",
+            "published_at": "2026-10-28",
+            "freshness_role": "Official result source retained for the recent October meeting; not evidence of a calculator-demand query.",
+            "reliable": true
+          },
+          {
+            "publisher": "Reuters",
+            "url": "https://www.investing.com/news/economy-news/fed-holds-rates-steady-as-it-awaits-accumulation-of-more-information-4980411",
+            "source_type": "independent_dated_english_result_coverage",
+            "published_at": "2026-10-28",
+            "freshness_role": "Independent current English confirmation of the result and attention window; not used for a direction or calculator-demand claim.",
+            "reliable": true
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "observation_no_attributable_calculator_traffic_path",
+          "duplicate_of": [
+            "HR-20261029-01",
+            "HR-20261028-02",
+            "HR-20260913-01",
+            "HR-20261003-01"
+          ],
+          "refresh_signals": {
+            "fact_delta": false,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": true
+          },
+          "reopen_trigger": "Require a public, verifiable, current and FOMC-result-specific non-directional fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query, then reassess at least two refresh signals against the prior FOMC packages.",
+          "rationale": "The result remains fresh but attention is policy- and market-direction led. Generic macro sizing would invent a search-to-calculator path and duplicate historical FOMC material."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-10-31",
+      "candidate_id": "HR-20261031-03",
+      "status": "discarded",
+      "topic": "OANDA Temporary CFD Crypto Interruption Is Not a Safe PipGauge or PositionMath Traffic Bridge",
+      "primary_site": "PositionMath",
+      "freshness": 25,
+      "traffic_potential": 18,
+      "calculator_fit": 8,
+      "evidence_quality": 10,
+      "actionability": 3,
+      "total_score": 64,
       "hard_gate": false,
-      "reliable_sources": 0,
+      "reliable_sources": 1,
       "fresh_signal": true,
       "calculator_mapping": [
         "Margin",
         "Position Size",
-        "Stop Loss/Take Profit"
+        "P&L"
       ],
-      "reason": "A recent public discussion about changing margin requirements is a generic calculation topic, but it names no current dated official broker, exchange or prop-firm rule change and supplies no independently verifiable event-specific fact. It cannot be converted into a news-led calculator page or a product comparison."
+      "reason": "OANDA's dated October 31 temporary CFD-crypto interruption is verifiable, but the scope is crypto and the notice does not create a natural existing-calculator handoff without converting a service interruption into a trading or execution claim. Pure crypto and outage-driven traffic are excluded."
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-10-30T22:00:00+08:00",
-      "source_count": 4,
-      "note": "覆盖 BOJ 10 月 30 日 statement、ECB 10 月 29 日 monetary-policy decision、FTMO 10 月 22 日 trading update，以及公开经济日历。FTMO 是旧但仍在窗口内的重复核验，不被当作新事实。"
+      "checked_at": "2026-10-31T22:00:00+08:00",
+      "source_count": 3,
+      "note": "覆盖 FTMO 10 月 29 日 dated CFD Trading Update、Federal Reserve 10 月 28 日 meeting/result page 和 OANDA 10 月 31 日 temporary CFD crypto notice。"
     },
     {
       "channel": "独立可靠英文来源",
       "status": "complete",
-      "checked_at": "2026-10-30T22:00:00+08:00",
+      "checked_at": "2026-10-31T22:00:00+08:00",
       "source_count": 2,
-      "note": "覆盖 Reuters 10 月 30 日 BOJ 结果报道及 Reuters 10 月 30 日 ECB 决策后续报道。每个宏观事实均由不同发布主体交叉核验；没有用论坛代替结果事实。"
+      "note": "覆盖 Prop Firm Compare 10 月 30 日 FTMO 公开 change log 和 Reuters 10 月 28 日 FOMC result coverage。Prop Firm Compare 仅用于 FTMO update 的独立公开发现/影响语境；FTMO 规则仍以官方页为准。"
     },
     {
       "channel": "Reddit / ForexFactory / BabyPips",
       "status": "partial",
-      "checked_at": "2026-10-30T22:00:00+08:00",
+      "checked_at": "2026-10-31T22:00:00+08:00",
       "source_count": 3,
-      "note": "复查公开 BabyPips、ForexFactory 与 Reddit 索引。可访问材料为方向讨论、日历或泛化 margin 问题；未保留任何同时满足近期性、可核验性和事件专属非方向 calculator demand 的新信号。"
+      "note": "复查公开索引与近期讨论。没有稳定、可验证且 FOMC-result-specific 的非方向 calculator query；保留 FTMO maintenance/reset 的公开规则发现对象，不把论坛或搜索摘要当规则事实。"
     },
     {
       "channel": "X / Quora",
       "status": "limited",
-      "checked_at": "2026-10-30T22:00:00+08:00",
+      "checked_at": "2026-10-31T22:00:00+08:00",
       "source_count": 0,
-      "note": "没有稳定、公开且可核验的合格信号；动态流、登录墙、截图、预测和不可验证材料未计入。"
+      "note": "没有稳定、公开且可核验的合格信号；动态流、登录墙、截图、预测与不可验证材料未计入。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-10-30_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-10-30_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-10-31_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-10-31_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
-    "traffic_playbooks": "../热点流量打法.json"
+    "traffic_playbooks": "../热点流量打法.json",
+    "content_root": "../内容生产/2026-10-31"
   },
   "radar_model": "v3-calculator-bridge",
   "editorial_policy": {
