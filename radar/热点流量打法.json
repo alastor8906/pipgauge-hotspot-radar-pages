@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-31T22:00:00+08:00",
+  "updated_at": "2026-11-01T22:00:00+08:00",
   "last_scan": {
-    "scan_date": "2026-10-31",
-    "selected_count": 1,
-    "playbook_ready_count": 1,
-    "content_package_count": 1,
-    "note": "FTMO's dated October 29 CFD update supplies a qualifying refresh of HR-20261023-01: current October 31/November 1 maintenance windows, a US-DST platform-clock change and the November 2 return to a 1-hour Prague/MetaTrader offset. Official facts and an independent public change tracker support a reader-verified clock/daily-boundary journey. FOMC-result attention remains direction-led; a crypto CFD service interruption is excluded."
+    "scan_date": "2026-11-01",
+    "selected_count": 0,
+    "playbook_ready_count": 0,
+    "content_package_count": 0,
+    "note": "No qualifying topic. FTMO's October 29 US-DST/maintenance update remains verifiable but its Sunday maintenance window has ended and creates no second refresh delta. RBA's November 3 and Bank of England's November 5 decision windows are current official calendar facts, yet neither has a dual-reliable-source, event-specific non-directional calculator journey. No playbook card or content package was created."
   },
   "items": {
     "HR-20261031-01": {
