@@ -1,0 +1,151 @@
+{
+  "scan_date": "2026-11-01",
+  "generated_at": "2026-11-01T22:00:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-11-01T22:00:00+08:00",
+      "source_count": 6,
+      "note": "覆盖 FTMO 29 October CFD update、RBA cash-rate overview 和 board schedule、Bank of England November MPC/MPR schedules、Federal Reserve November/FOMC calendars。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "partial",
+      "checked_at": "2026-11-01T22:00:00+08:00",
+      "source_count": 1,
+      "note": "复查 Prop Firm Compare 的 FTMO public change record；未发现 RBA 或 BoE current-event 的第二独立可靠英文事实源可与官方日程组成双源。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "partial",
+      "checked_at": "2026-11-01T22:00:00+08:00",
+      "source_count": 4,
+      "note": "复查公开索引与 Forex Factory November calendar。未保留可验证、事件专属且非方向的 calculator query；日历只作热度/时间语境。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-11-01T22:00:00+08:00",
+      "source_count": 0,
+      "note": "没有稳定、公开且可核验的合格信号；动态流、登录墙、截图、预测与不可验证材料未计入。"
+    }
+  ],
+  "candidates": {
+    "HR-20261101-01": {
+      "sources": [
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/en/blog/trading-updates/trading-update-29-oct-2026/",
+          "source_type": "official_dated_cfd_trading_update",
+          "published_at": "2026-10-29",
+          "freshness_role": "Existing official source: its Sunday 1 November 07:00-10:00 MetaTrader-time maintenance and US-DST/reset wording are checked as expired/current verification context, not a new event.",
+          "reliable": true
+        },
+        {
+          "publisher": "Prop Firm Compare",
+          "url": "https://propfirm.compare/updates/ftmo",
+          "source_type": "independent_public_change_tracking_and_impact_context",
+          "published_at": "2026-10-30",
+          "freshness_role": "Existing independent public record confirms the prior update's discovery context; it does not establish a new FTMO term or a new traffic window.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_expired_refresh_window_no_new_delta",
+        "duplicate_of": ["HR-20261031-01", "HR-20261023-01", "HR-20261017-01"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": false
+        },
+        "reopen_trigger": "Reopen only for a newly dated FTMO correction or change to platform, product, maintenance timing, clock/reset relationship or Account MetriX instruction, then require at least two refresh signals and a current traffic path.",
+        "rationale": "The already-selected weekend maintenance window has ended. Repeating the calendar date or DST fact would be a same-shape article with no new reader task."
+      }
+    },
+    "HR-20261101-02": {
+      "sources": [
+        {
+          "publisher": "Reserve Bank of Australia",
+          "url": "https://www.rba.gov.au/cash-rate-target-overview.html",
+          "source_type": "official_current_cash_rate_and_next_update",
+          "published_at": "2026-11-01",
+          "freshness_role": "Official page states a 4.60% target and next update at 14:30 AEDT on 3 November 2026.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reserve Bank of Australia",
+          "url": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html",
+          "source_type": "official_meeting_schedule",
+          "published_at": "2026-11-01",
+          "freshness_role": "Official schedule shows the 2-3 November Monetary Policy Board meeting; same publisher, so it is corroboration not an independent second reliable source.",
+          "reliable": true
+        },
+        {
+          "publisher": "Forex Factory",
+          "url": "https://www.forexfactory.com/calendar?month=nov.2026",
+          "source_type": "public_calendar_heat_context",
+          "published_at": "2026-11-01",
+          "freshness_role": "Public timing/attention context only; not used to establish RBA policy facts.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_single_reliable_publisher_no_attributable_calculator_traffic_path",
+        "duplicate_of": ["HR-20260929-01", "HR-20260930-01"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "Require a second independent reliable English fact source and a public, current, RBA-result-specific non-directional fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query; then reassess against prior RBA packages.",
+        "rationale": "A decision calendar is timely but does not by itself establish a search-to-calculator journey. Generic AUD/USD sizing would manufacture demand and repeat prior RBA content."
+      }
+    },
+    "HR-20261101-03": {
+      "sources": [
+        {
+          "publisher": "Bank of England",
+          "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
+          "source_type": "official_mpc_schedule",
+          "published_at": "2026-11-01",
+          "freshness_role": "Official schedule confirms the 5 November 2026 MPC summary and minutes release.",
+          "reliable": true
+        },
+        {
+          "publisher": "Bank of England",
+          "url": "https://www.bankofengland.co.uk/monetary-policy-report/2026/november-2026",
+          "source_type": "official_mpr_publication_notice",
+          "published_at": "2026-11-01",
+          "freshness_role": "Official notice confirms the 5 November 2026 Monetary Policy Report; same publisher, so it is not an independent second reliable source.",
+          "reliable": true
+        },
+        {
+          "publisher": "Forex Factory",
+          "url": "https://www.forexfactory.com/calendar?month=nov.2026",
+          "source_type": "public_calendar_heat_context",
+          "published_at": "2026-11-01",
+          "freshness_role": "Public timing/attention context only; not used to establish BoE policy facts.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_single_reliable_publisher_no_attributable_calculator_traffic_path",
+        "duplicate_of": ["HR-20260724-02", "HR-20260806-01"],
+        "refresh_signals": {
+          "fact_delta": false,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "Require a second independent reliable English fact source and a public, current, BoE-result-specific non-directional fixed-risk, pip-value, margin, cost, quantity or portfolio-heat query, then reassess against prior BoE packages.",
+        "rationale": "The current calendar window is not a license to republish generic GBP position sizing. No attributable calculator demand or fresh replacement example was verified."
+      }
+    }
+  }
+}
