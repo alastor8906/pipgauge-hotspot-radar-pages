@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-01T22:00:00+08:00",
+  "updated_at": "2026-11-02T22:02:26+08:00",
   "last_scan": {
-    "scan_date": "2026-11-01",
+    "scan_date": "2026-11-02",
     "selected_count": 0,
     "playbook_ready_count": 0,
     "content_package_count": 0,
-    "note": "No qualifying topic. FTMO's October 29 US-DST/maintenance update remains verifiable but its Sunday maintenance window has ended and creates no second refresh delta. RBA's November 3 and Bank of England's November 5 decision windows are current official calendar facts, yet neither has a dual-reliable-source, event-specific non-directional calculator journey. No playbook card or content package was created."
+    "note": "No qualifying topic. FTMO's October 29 US-DST/maintenance update is now fully expired as a traffic window. RBA November 3 and Bank of England November 5 have independent factual coverage, but public attention remains rate-path and currency-direction led rather than an attributable non-directional calculator journey. No playbook card or content package was created."
   },
   "items": {
     "HR-20261031-01": {
