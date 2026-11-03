@@ -1,0 +1,20 @@
+{
+  "candidate_id": "HR-20261103-01",
+  "scan_date": "2026-11-03",
+  "primary_site": "PipGauge",
+  "topic": "FTMO's November 3 Event Notice: Check Total Planned Stop Risk Before Reacting",
+  "execution_mode": "new",
+  "refresh_target": null,
+  "package_summary": "当期审核快照：借 FTMO 11 月 2 日、针对 11 月 3 日事件的官方风险提示，演示如何把读者已定义的计划止损风险相加。内容不讨论政治或结果，不预测市场，也不构成交易指令。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "short_lived_event_notice_window",
+  "time_status_label": "仅在 FTMO 2 November notice 仍适用且截至 4 November 12:00 ET 的结果/反应窗口内使用；官方更正、更新、产品不适用或窗口结束即停用。",
+  "documents": [
+    {"id": "facts", "label": "事实与论点", "file": "00-事实与论点.md", "platform": "internal", "kind": "editorial brief", "status_label": "已整理"},
+    {"id": "medium", "label": "Medium", "file": "01-Medium.md", "platform": "medium", "kind": "long-form draft", "status_label": "待人工审核"},
+    {"id": "reddit", "label": "Reddit", "file": "02-Reddit.md", "platform": "reddit", "kind": "native discussion draft", "status_label": "待人工审核"},
+    {"id": "x", "label": "X", "file": "03-X.md", "platform": "x", "kind": "short thread draft", "status_label": "待人工审核"},
+    {"id": "review", "label": "审核清单", "file": "04-人工审核.md", "platform": "internal", "kind": "human gate", "status_label": "必须完成"}
+  ]
+}
