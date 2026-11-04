@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-03T22:00:00+08:00",
+  "updated_at": "2026-11-04T22:00:00+08:00",
   "last_scan": {
-    "scan_date": "2026-11-03",
-    "selected_count": 1,
-    "playbook_ready_count": 1,
-    "content_package_count": 1,
-    "note": "One current firm-specific, non-directional calculator path qualified: FTMO's dated November 2 event notice asks readers to check open positions, position size and risk per trade before November 3. The selected playbook converts that into reader-entered planned-stop portfolio-heat arithmetic without discussing politics, predicting a market, asserting fills or giving a trade instruction. RBA and BoE remain observation-only because their public attention is direction/rate-path led rather than a distinct calculator journey."
+    "scan_date": "2026-11-04",
+    "selected_count": 0,
+    "playbook_ready_count": 0,
+    "content_package_count": 0,
+    "note": "No current calculator-bridge topic qualified. The prior FTMO November 3 event notice passed its stated short-window expiry without a new official delta; BoE November 5 and the November 6 U.S. jobs calendar remain direction/calendar led and have no attributable non-directional calculator journey. No playbook or content package was generated."
   },
   "items": {
     "HR-20261103-01": {
