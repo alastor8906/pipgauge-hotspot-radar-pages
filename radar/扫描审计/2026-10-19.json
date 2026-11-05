@@ -1,0 +1,118 @@
+{
+  "scan_date": "2026-10-19",
+  "generated_at": "2026-10-19T22:02:42+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-10-19T22:02:42+08:00",
+      "source_count": 3,
+      "note": "覆盖 NBS 10 月 19 日 national-economy result、Bank Indonesia 10 月 20–21 日 Board of Governors meeting calendar，以及已入选 FTMO 10 月 15 日 DST update 的无新增 delta 复核。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-10-19T22:02:42+08:00",
+      "source_count": 4,
+      "note": "AP 与 Reuters（MarketScreener 转载）独立交叉 NBS 的 Q3 GDP result；J Trust Bank 的公开市场更新交叉 BI meeting/result window。未把转载媒体或银行市场更新当作官方利率/统计定义来源。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "partial",
+      "checked_at": "2026-10-19T22:02:42+08:00",
+      "source_count": 1,
+      "note": "保存当日 China GDP 公开 Reddit attention 作热度/措辞信号；内容是增长、刺激和价格方向，未出现事件专属非方向性 calculator query。未保存 BI meeting 的合格 calculator-demand signal。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-10-19T22:02:42+08:00",
+      "source_count": 0,
+      "note": "无稳定可核验、同时满足当前性和自然 PipGauge/PositionMath bridge 的公开信号；登录墙、动态流、截图、预测和不可验证材料未计入。"
+    }
+  ],
+  "candidates": {
+    "HR-20261019-01": {
+      "sources": [
+        {
+          "publisher": "National Bureau of Statistics of China",
+          "url": "https://www.stats.gov.cn/english/PressRelease/202610/t20261019_1965619.html",
+          "source_type": "official_dated_economic_release",
+          "published_at": "2026-10-19 10:00 China Standard Time",
+          "freshness_role": "Primary official result: Q3 GDP 4.5% year on year and first-three-quarter GDP 4.6% year on year; also reports September activity data.",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/71354a055a412ef13e4e2edad070b4a5",
+          "source_type": "independent_reliable_english_result_coverage",
+          "published_at": "2026-10-19",
+          "freshness_role": "Independent same-day report on Q3 GDP 4.5% and the growth-policy context.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://in.marketscreener.com/news/china-s-economic-growth-accelerates-to-4-5-in-third-quarter-ce785cdad181fe21",
+          "source_type": "independent_reliable_english_result_coverage_republished",
+          "published_at": "2026-10-19",
+          "freshness_role": "Reuters same-day result coverage, accessed through a MarketScreener republication; cross-checks 4.5% actual, 4.4% poll forecast and 4.3% Q2 comparison.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/Economics",
+          "url": "https://www.reddit.com/r/Economics/comments/1x9q2j9/chinas_economy_grows_45_percent_in_third_quarter/",
+          "source_type": "public_current_heat_only",
+          "published_at": "2026-10-19",
+          "freshness_role": "Current attention signal; discussion is direction, growth and policy-led rather than a non-directional calculation request.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_result_with_verified_attention_but_no_attributable_non_directional_calculator_journey",
+        "duplicate_of": ["HR-20261018-02"],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "A current publicly verifiable English query expressly connecting this dated result to non-directional pip value, fixed risk, margin, cost, quantity or portfolio-heat arithmetic, then a refresh audit against existing macro content.",
+        "rationale": "The result, recentness and independent fact sources are strong, but discussion interest does not establish a natural calculator task. A generic FX/CNH sizing example would manufacture demand and duplicate macro-risk templates."
+      }
+    },
+    "HR-20261019-02": {
+      "sources": [
+        {
+          "publisher": "Bank Indonesia",
+          "url": "https://www.bi.go.id/en/publikasi/Kalender/Default.aspx",
+          "source_type": "official_dated_meeting_calendar",
+          "published_at": "2026 calendar; checked 2026-10-19",
+          "freshness_role": "Official calendar identifies the 20-21 October Board of Governors meeting, inside the seven-day forward window.",
+          "reliable": true
+        },
+        {
+          "publisher": "J Trust Bank",
+          "url": "https://www.jtrustbank.co.id/id/market_update/market-update-19-oct-2026",
+          "source_type": "independent_public_market_calendar_context",
+          "published_at": "2026-10-19",
+          "freshness_role": "Independent current public market update states that the BI meeting runs 20-21 October and its result is due 21 October; it does not establish any result or official rule.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_imminent_rate_meeting_without_verified_usdidr_calculation_demand",
+        "duplicate_of": [],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": false,
+          "example_delta": false,
+          "window_delta": true
+        },
+        "reopen_trigger": "After the decision, obtain an official result plus an independent reliable result source and a current public English fixed-risk, pip-value, margin, cost or quantity query specific to the event; first audit whether an existing rate-decision explainer should refresh.",
+        "rationale": "The calendar is timely and USD/IDR tools exist, but no verified evidence shows that readers are currently seeking this event's non-directional calculator workflow."
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "scan_date": "2026-11-03",
+  "generated_at": "2026-11-03T22:00:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-11-03T22:00:00+08:00",
+      "source_count": 6,
+      "note": "覆盖 FTMO 2 November CFD/Futures Trading Update、USAGov midterm election page、RBA 3 November decision/SMP、BoE MPC dates 与 BLS November release schedule。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-11-03T22:00:00+08:00",
+      "source_count": 3,
+      "note": "覆盖 USAGov 对 2026 midterm 的独立政府事实、Reuters 的 RBA result coverage（经 MarketScreener 转载）及 Reuters 2 November BoE preview。不会把这些材料用于价格、方向、点差或成交主张。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "partial",
+      "checked_at": "2026-11-03T22:00:00+08:00",
+      "source_count": 4,
+      "note": "检查公开索引、ForexFactory 的 RBA 结果页及 BabyPips 日报。RBA 讨论仍以 AUD/政策方向为主；FTMO 事件的可用信号是其官方面向交易者的当日风险提示和公开 prop-calendar 发现语境，而非把论坛评论当作事实。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-11-03T22:00:00+08:00",
+      "source_count": 0,
+      "note": "没有保留稳定、公开、可归属且非方向性的候选信号；动态流、登录墙、截图、预测和不可验证材料不计入。"
+    }
+  ],
+  "candidates": {
+    "HR-20261103-01": {
+      "sources": [
+        {
+          "publisher": "FTMO",
+          "url": "https://ftmo.com/au/blog/trading-updates/trading-update-2-nov-2026/",
+          "source_type": "official_dated_cfd_trading_update",
+          "published_at": "2026-11-02",
+          "freshness_role": "Dated, current firm update names 3 November 2026 and directs readers to check open positions, position size and risk per trade; it also warns that order fills may differ in fast markets. It is not used to assert that any market will move, that a fill will differ, or that any account should trade.",
+          "reliable": true
+        },
+        {
+          "publisher": "USAGov",
+          "url": "https://www.usa.gov/midterm-elections",
+          "source_type": "independent_government_event_context",
+          "published_at": "2026-10-29",
+          "freshness_role": "Independent government page confirms that the next U.S. midterm elections are in November 2026; it verifies event context only and is not a market, broker, prop-firm or trading source.",
+          "reliable": true
+        },
+        {
+          "publisher": "Kairotick",
+          "url": "https://kairotick.com/today/",
+          "source_type": "public_prop_trader_calendar_discovery_context",
+          "published_at": "2026-11-02",
+          "freshness_role": "Public updated calendar provides discovery context that prop-trader audiences are following the current high-impact week. It is not used to verify FTMO scope, event facts, market conditions or any calculation output.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass",
+        "decision_gate": "selected_current_firm_specific_risk_budget_path",
+        "duplicate_of": [],
+        "refresh_signals": {"fact_delta": true, "search_delta": true, "example_delta": true, "window_delta": true},
+        "reopen_trigger": "No refresh after the result-count window. Reopen only if FTMO publishes a new dated, applicable update or a distinct verified rule/calculation query; otherwise retire the event framing.",
+        "rationale": "This is not election commentary: a dated FTMO notice creates a short, firm-specific and non-directional reader task—add reader-entered planned stop losses across open positions before reacting to a fast market. The natural bridge is PipGauge Portfolio Heat plus Pip Value/Position Size, with transparent hypothetical inputs and no prediction, execution assertion or trade instruction. No materially similar FTMO election package exists in the ledger."
+      }
+    },
+    "HR-20261103-02": {
+      "sources": [
+        {
+          "publisher": "Reserve Bank of Australia",
+          "url": "https://www.rba.gov.au/news/",
+          "source_type": "official_dated_monetary_policy_decision",
+          "published_at": "2026-11-03",
+          "freshness_role": "Official announcement records a 25bp increase to a 4.85% cash-rate target and a 6-3 vote.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://www.marketscreener.com/news/australia-s-central-bank-hikes-rates-to-18-year-high-in-a-split-vote-ce785fd9dc8aff21/",
+          "source_type": "independent_dated_english_result_coverage",
+          "published_at": "2026-11-03",
+          "freshness_role": "Independent English coverage confirms the result and vote context. It is not used to forecast AUD/USD, policy, volatility or an execution outcome.",
+          "reliable": true
+        },
+        {
+          "publisher": "Forex Factory",
+          "url": "https://www.forexfactory.com/news/1434531-rba-statement-on-monetary-policy-november-2026?reset=1",
+          "source_type": "public_result_discussion_heat_context",
+          "published_at": "2026-11-03",
+          "freshness_role": "Public result-day page demonstrates current attention, but retained comments are direction/volatility led and are not evidence of a calculator request or policy fact.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_result_has_no_distinct_non_directional_calculator_journey",
+        "duplicate_of": ["HR-20260929-01", "HR-20260930-01", "HR-20261102-02"],
+        "refresh_signals": {"fact_delta": true, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "Require an attributable public RBA-result-specific fixed-risk, pip-value, margin, cost, quantity or portfolio-heat question and at least one additional refresh signal; then refresh the existing RBA article rather than make a parallel AUD/USD sizing post.",
+        "rationale": "The new 4.85% result meets factual freshness, but current public attention remains about AUD direction and rate-path interpretation. Reusing another generic 20/40/80-pip grid would invent a calculator journey."
+      }
+    },
+    "HR-20261103-03": {
+      "sources": [
+        {
+          "publisher": "Bank of England",
+          "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
+          "source_type": "official_mpc_schedule",
+          "published_at": "2026-11-03",
+          "freshness_role": "Official schedule continues to confirm the 5 November 2026 MPC summary, minutes and Monetary Policy Report release.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reuters",
+          "url": "https://live.euronext.com/en/financial-news/bank-england-poised-raise-rates-may-push-back-bets-more",
+          "source_type": "independent_dated_english_preview_coverage",
+          "published_at": "2026-11-02",
+          "freshness_role": "Independent preview maintains current attention but is not used for a result, GBP, volatility or trade claim.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_no_attributable_calculator_traffic_path",
+        "duplicate_of": ["HR-20260724-02", "HR-20260806-01", "HR-20261102-03"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "Require a public, current, verifiable BoE-result-specific non-directional calculation question plus at least one other refresh signal, then refresh existing BoE content only.",
+        "rationale": "The remaining attention is still rates and GBP direction; the schedule alone is not a reason to mint another fixed-risk article."
+      }
+    }
+  }
+}

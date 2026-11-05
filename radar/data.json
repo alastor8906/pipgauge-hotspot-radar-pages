@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-11-04T22:04:38+08:00",
-  "latest_scan_date": "2026-11-04",
+  "generated_at": "2026-11-05T22:07:06+08:00",
+  "latest_scan_date": "2026-11-05",
   "available_dates": [
+    "2026-11-05",
     "2026-11-04",
     "2026-11-03",
     "2026-11-02",
@@ -107,8 +108,240 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-11-05",
+      "generated_at": "2026-11-05T22:07:06+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 102,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 0,
+        "observation": 3,
+        "discarded": 0,
+        "total": 3,
+        "selected_average": 0,
+        "all_selected_pass_gate": true,
+        "content_ready": 0,
+        "playbook_ready": 0
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-11-05",
+          "candidate_id": "HR-20261105-01",
+          "status": "observation",
+          "topic": "Bank of England Raises Bank Rate to 4% but Still Has No New GBP Calculator Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 5,
+          "total_score": 95,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Margin",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "The Bank of England's November 5 Monetary Policy Report and AP independently verify the 25bp increase from 3.75% to 4% and the 8-1 vote. Public Reddit/ForexFactory discovery remains rate-path, mortgage or GBP-direction discussion rather than an attributable non-directional pip-value, fixed-risk, margin, cost, quantity or portfolio-heat request. Against HR-20260730-01 and later BoE observations, the result creates fact_delta and window_delta only; do not refresh a generic GBP/USD sizing table.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Bank of England",
+                "url": "https://www.bankofengland.co.uk/monetary-policy-report/2026/november-2026",
+                "source_type": "official_dated_monetary_policy_report",
+                "published_at": "2026-11-05",
+                "freshness_role": "Official report states the MPC voted 8-1 to increase Bank Rate 25bp to 4% at the meeting ending 4 November.",
+                "reliable": true
+              },
+              {
+                "publisher": "Associated Press",
+                "url": "https://apnews.com/article/britain-economy-interest-rates-dce506792fe3b452ec4c3982147286f3",
+                "source_type": "independent_dated_english_result_coverage",
+                "published_at": "2026-11-05",
+                "freshness_role": "Independent same-day result coverage confirms the 25bp increase from 3.75% to 4% and the unexpected unanimous decision to increase.",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit public index",
+                "url": "https://www.reddit.com/r/unitedkingdom/comments/1xo940f/uk_interest_rates_bank_of_england_expected_to/",
+                "source_type": "public_discussion_discovery_only",
+                "published_at": "2026-11-05",
+                "freshness_role": "Shows current public attention, but retained threads are rate, mortgage and GBP-direction discussion rather than calculator demand.",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_result_fact_without_attributable_non_directional_calculator_traffic_path",
+              "duplicate_of": [
+                "HR-20260724-11",
+                "HR-20260730-01",
+                "HR-20260917-02",
+                "HR-20261104-02"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Require an attributable public BoE-result-specific fixed-risk, pip-value, margin, cost, quantity or portfolio-heat request plus another refresh signal; refresh existing BoE material rather than make a duplicate.",
+              "rationale": "The rate result is real and current, but it changes neither the retained reader calculation nor a safely replaceable numerical teaching example. A generic GBP sizing table would manufacture demand and invite forecast framing."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-11-05",
+          "candidate_id": "HR-20261105-02",
+          "status": "observation",
+          "topic": "The5ers Daily Pause Page Is Newly Dated but Lacks Independent Rule-Specific Demand",
+          "primary_site": "PositionMath",
+          "freshness": 24,
+          "traffic_potential": 18,
+          "calculator_fit": 25,
+          "evidence_quality": 10,
+          "actionability": 6,
+          "total_score": 83,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Daily Loss Limit",
+            "Position Size",
+            "Prop Firm Simulator"
+          ],
+          "reason": "The5ers' FAQ is marked last update November 2 and says Daily Pause closes open trades and uses the higher of balance or equity at 00:00 GMT+3. The rule could support reader-entered daily-loss arithmetic, but no independent current public source or attributable query about this dated update was verified. Do not turn one firm FAQ into a purchase-oriented or generic prop-risk traffic post.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "The5ers",
+                "url": "https://the5ers.com/faqs/how-does-the-daily-pause-work/",
+                "source_type": "official_dated_product_rule_faq",
+                "published_at": "2026-11-02",
+                "freshness_role": "Official FAQ is labelled last update November 2 and describes the Daily Pause scope, closure effect and balance-versus-equity reference at 00:00 GMT+3.",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_single_official_rule_source_without_independent_current_impact_or_rule_specific_demand",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": false
+              },
+              "reopen_trigger": "Require a dated/versioned official difference, independent public impact or discussion signal, and a verified question about balance-versus-equity Daily Pause arithmetic before reconsidering.",
+              "rationale": "A single official FAQ can establish a product fact but cannot by itself establish the current demand and traffic window required for a publication-quality calculator bridge."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-11-05",
+          "candidate_id": "HR-20261105-03",
+          "status": "observation",
+          "topic": "October U.S. Employment Situation Is Still a Future Calendar Item",
+          "primary_site": "PipGauge",
+          "freshness": 24,
+          "traffic_potential": 22,
+          "calculator_fit": 15,
+          "evidence_quality": 7,
+          "actionability": 4,
+          "total_score": 72,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Margin",
+            "Spread Cost"
+          ],
+          "reason": "BLS confirms the October Employment Situation for November 6 at 08:30 ET, but no official result, independent result coverage or event-specific non-directional calculator demand exists at the scan cutoff. A pre-result payroll lot-size article would duplicate HR-20260905-01 and invite forecast framing.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm",
+                "source_type": "official_future_release_schedule",
+                "published_at": "2026-11-03",
+                "freshness_role": "Official schedule lists the October Employment Situation at 08:30 ET on November 6, not a result.",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_future_calendar_without_result_or_calculator_demand",
+              "duplicate_of": [
+                "HR-20260905-01",
+                "HR-20261104-03"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Wait for the BLS result, independent English result coverage and a public result-specific non-directional calculator question; then refresh the existing payroll content only.",
+              "rationale": "A release clock does not establish a result-led reader task. Generic lot-size content would repeat the old payroll fixed-risk path and risk becoming a forecast wrapper."
+            }
+          }
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-11-05T22:04:00+08:00",
+          "source_count": 3,
+          "note": "覆盖 Bank of England 5 November Monetary Policy Report、The5ers 2 November dated Daily Pause FAQ 与 BLS November release schedule；未把一手材料用于市场方向或执行主张。"
+        },
+        {
+          "channel": "独立可靠英文来源",
+          "status": "complete",
+          "checked_at": "2026-11-05T22:04:00+08:00",
+          "source_count": 1,
+          "note": "AP 同日独立确认 BoE 将 Bank Rate 上调 25bp 至 4%；只用于结果事实交叉核验。"
+        },
+        {
+          "channel": "Reddit / ForexFactory / BabyPips",
+          "status": "partial",
+          "checked_at": "2026-11-05T22:04:00+08:00",
+          "source_count": 3,
+          "note": "复查公开索引与讨论发现信号；BoE 话题为利率、抵押贷款或 GBP 方向，prop-firm 话题为泛化 daily-loss、购买、payout 或投诉，未发现可归属非方向性计算问题。"
+        },
+        {
+          "channel": "X / Quora",
+          "status": "limited",
+          "checked_at": "2026-11-05T22:04:00+08:00",
+          "source_count": 0,
+          "note": "没有保留稳定、公开、可归属且非方向性的候选信号；登录墙、动态流、截图和不可验证材料不计入。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-11-05_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-11-05_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json"
+      }
+    },
+    {
       "scan_date": "2026-11-04",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 101,
@@ -364,7 +597,7 @@
     },
     {
       "scan_date": "2026-11-03",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 100,
@@ -695,7 +928,7 @@
     },
     {
       "scan_date": "2026-11-02",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 99,
@@ -969,7 +1202,7 @@
     },
     {
       "scan_date": "2026-11-01",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 98,
@@ -1226,7 +1459,7 @@
     },
     {
       "scan_date": "2026-10-31",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 97,
@@ -1488,7 +1721,7 @@
     },
     {
       "scan_date": "2026-10-30",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 96,
@@ -1752,7 +1985,7 @@
     },
     {
       "scan_date": "2026-10-29",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 95,
@@ -2026,7 +2259,7 @@
     },
     {
       "scan_date": "2026-10-28",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 94,
@@ -2300,7 +2533,7 @@
     },
     {
       "scan_date": "2026-10-27",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 93,
@@ -2575,7 +2808,7 @@
     },
     {
       "scan_date": "2026-10-26",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 92,
@@ -2819,7 +3052,7 @@
     },
     {
       "scan_date": "2026-10-25",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 91,
@@ -3026,7 +3259,7 @@
     },
     {
       "scan_date": "2026-10-24",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 90,
@@ -3247,7 +3480,7 @@
     },
     {
       "scan_date": "2026-10-23",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 89,
@@ -3578,7 +3811,7 @@
     },
     {
       "scan_date": "2026-10-22",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 88,
@@ -3794,7 +4027,7 @@
     },
     {
       "scan_date": "2026-10-21",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 87,
@@ -4097,7 +4330,7 @@
     },
     {
       "scan_date": "2026-10-20",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 86,
@@ -4324,7 +4557,7 @@
     },
     {
       "scan_date": "2026-10-19",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 85,
@@ -4540,7 +4773,7 @@
     },
     {
       "scan_date": "2026-10-18",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 84,
@@ -4754,7 +4987,7 @@
     },
     {
       "scan_date": "2026-10-17",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 83,
@@ -5022,7 +5255,7 @@
     },
     {
       "scan_date": "2026-10-16",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 82,
@@ -5328,7 +5561,7 @@
     },
     {
       "scan_date": "2026-10-15",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 81,
@@ -5539,7 +5772,7 @@
     },
     {
       "scan_date": "2026-10-14",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 80,
@@ -5822,7 +6055,7 @@
     },
     {
       "scan_date": "2026-10-13",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 79,
@@ -6038,7 +6271,7 @@
     },
     {
       "scan_date": "2026-10-12",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 78,
@@ -6310,7 +6543,7 @@
     },
     {
       "scan_date": "2026-10-11",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 77,
@@ -6571,7 +6804,7 @@
     },
     {
       "scan_date": "2026-10-10",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 76,
@@ -6828,7 +7061,7 @@
     },
     {
       "scan_date": "2026-10-09",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 75,
@@ -7039,7 +7272,7 @@
     },
     {
       "scan_date": "2026-10-08",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 74,
@@ -7226,7 +7459,7 @@
     },
     {
       "scan_date": "2026-10-07",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 73,
@@ -7390,7 +7623,7 @@
     },
     {
       "scan_date": "2026-10-06",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 72,
@@ -7553,7 +7786,7 @@
     },
     {
       "scan_date": "2026-10-05",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 71,
@@ -7820,7 +8053,7 @@
     },
     {
       "scan_date": "2026-10-04",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 70,
@@ -8046,7 +8279,7 @@
     },
     {
       "scan_date": "2026-10-03",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 69,
@@ -8269,7 +8502,7 @@
     },
     {
       "scan_date": "2026-10-02",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 68,
@@ -8552,7 +8785,7 @@
     },
     {
       "scan_date": "2026-10-01",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 67,
@@ -8831,7 +9064,7 @@
     },
     {
       "scan_date": "2026-09-30",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 66,
@@ -9241,7 +9474,7 @@
     },
     {
       "scan_date": "2026-09-29",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 65,
@@ -9565,7 +9798,7 @@
     },
     {
       "scan_date": "2026-09-28",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 64,
@@ -9850,7 +10083,7 @@
     },
     {
       "scan_date": "2026-09-27",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 63,
@@ -10200,7 +10433,7 @@
     },
     {
       "scan_date": "2026-09-26",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 62,
@@ -10409,7 +10642,7 @@
     },
     {
       "scan_date": "2026-09-25",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 61,
@@ -10689,7 +10922,7 @@
     },
     {
       "scan_date": "2026-09-24",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 60,
@@ -10969,7 +11202,7 @@
     },
     {
       "scan_date": "2026-09-23",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 59,
@@ -11207,7 +11440,7 @@
     },
     {
       "scan_date": "2026-09-22",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 58,
@@ -11496,7 +11729,7 @@
     },
     {
       "scan_date": "2026-09-21",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 57,
@@ -11718,7 +11951,7 @@
     },
     {
       "scan_date": "2026-09-20",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 56,
@@ -12003,7 +12236,7 @@
     },
     {
       "scan_date": "2026-09-19",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 55,
@@ -12278,7 +12511,7 @@
     },
     {
       "scan_date": "2026-09-18",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 54,
@@ -12560,7 +12793,7 @@
     },
     {
       "scan_date": "2026-09-17",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 53,
@@ -12905,7 +13138,7 @@
     },
     {
       "scan_date": "2026-09-16",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 52,
@@ -13195,7 +13428,7 @@
     },
     {
       "scan_date": "2026-09-15",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 51,
@@ -13409,7 +13642,7 @@
     },
     {
       "scan_date": "2026-09-14",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 50,
@@ -13613,7 +13846,7 @@
     },
     {
       "scan_date": "2026-09-13",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 49,
@@ -13818,7 +14051,7 @@
     },
     {
       "scan_date": "2026-09-12",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 48,
@@ -14004,7 +14237,7 @@
     },
     {
       "scan_date": "2026-09-11",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 47,
@@ -14221,7 +14454,7 @@
     },
     {
       "scan_date": "2026-09-10",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 46,
@@ -14507,7 +14740,7 @@
     },
     {
       "scan_date": "2026-09-09",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 45,
@@ -14787,7 +15020,7 @@
     },
     {
       "scan_date": "2026-09-08",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 44,
@@ -15116,7 +15349,7 @@
     },
     {
       "scan_date": "2026-09-07",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 43,
@@ -15418,7 +15651,7 @@
     },
     {
       "scan_date": "2026-09-06",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 42,
@@ -15734,7 +15967,7 @@
     },
     {
       "scan_date": "2026-09-05",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 41,
@@ -16056,7 +16289,7 @@
     },
     {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -16369,7 +16602,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -16680,7 +16913,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -17011,7 +17244,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -17349,7 +17582,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -17742,7 +17975,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -18152,7 +18385,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -18624,7 +18857,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -18969,7 +19202,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -19314,7 +19547,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -19766,7 +19999,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -20179,7 +20412,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -20411,7 +20644,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -20856,7 +21089,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -21231,7 +21464,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -21623,7 +21856,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -21999,7 +22232,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -22323,7 +22556,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -22706,7 +22939,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -23047,7 +23280,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -23422,7 +23655,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -23810,7 +24043,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -24155,7 +24388,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -24483,7 +24716,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -24795,7 +25028,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -25116,7 +25349,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -25477,7 +25710,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -25830,7 +26063,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -26274,7 +26507,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -26783,7 +27016,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -27253,7 +27486,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -27796,7 +28029,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -28068,7 +28301,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -28381,7 +28614,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -28816,7 +29049,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -29330,7 +29563,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -29839,7 +30072,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -30307,7 +30540,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -30721,7 +30954,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -31120,7 +31353,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-11-04T22:04:38+08:00",
+      "generated_at": "2026-11-05T22:07:06+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -31559,10 +31792,10 @@
       }
     }
   ],
-  "scan_date": "2026-11-04",
+  "scan_date": "2026-11-05",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 101,
+    "day": 102,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -31572,8 +31805,8 @@
   "stats": {
     "selected": 0,
     "observation": 3,
-    "discarded": 1,
-    "total": 4,
+    "discarded": 0,
+    "total": 3,
     "selected_average": 0,
     "all_selected_pass_gate": true,
     "content_ready": 0,
@@ -31581,17 +31814,17 @@
   },
   "candidates": [
     {
-      "scan_date": "2026-11-04",
-      "candidate_id": "HR-20261104-02",
+      "scan_date": "2026-11-05",
+      "candidate_id": "HR-20261105-01",
       "status": "observation",
-      "topic": "Bank of England November 5 Window Has No Attributable Non-Directional Calculator Journey",
+      "topic": "Bank of England Raises Bank Rate to 4% but Still Has No New GBP Calculator Journey",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 22,
-      "calculator_fit": 15,
+      "traffic_potential": 25,
+      "calculator_fit": 25,
       "evidence_quality": 15,
-      "actionability": 3,
-      "total_score": 80,
+      "actionability": 5,
+      "total_score": 95,
       "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
@@ -31599,117 +31832,116 @@
         "Pip Value",
         "Position Size",
         "Margin",
-        "Risk Reward"
+        "P&L",
+        "Spread Cost"
       ],
-      "reason": "Bank of England's official events calendar and Reuters' independent preview confirm the imminent 5 November window, but retained public attention remains Bank Rate and GBP-direction led. Against existing BoE content only the window changes, not an attributable fixed-risk, pip-value, margin, cost, quantity or portfolio-heat request.",
+      "reason": "The Bank of England's November 5 Monetary Policy Report and AP independently verify the 25bp increase from 3.75% to 4% and the 8-1 vote. Public Reddit/ForexFactory discovery remains rate-path, mortgage or GBP-direction discussion rather than an attributable non-directional pip-value, fixed-risk, margin, cost, quantity or portfolio-heat request. Against HR-20260730-01 and later BoE observations, the result creates fact_delta and window_delta only; do not refresh a generic GBP/USD sizing table.",
       "scan_audit": {
         "sources": [
           {
             "publisher": "Bank of England",
-            "url": "https://www.bankofengland.co.uk/events/upcoming-events",
-            "source_type": "official_dated_events_calendar",
-            "published_at": "2026-11-04",
-            "freshness_role": "Official page lists the 5 November 2026 12:00 Monetary Policy Summary/minutes and Monetary Policy Report window.",
+            "url": "https://www.bankofengland.co.uk/monetary-policy-report/2026/november-2026",
+            "source_type": "official_dated_monetary_policy_report",
+            "published_at": "2026-11-05",
+            "freshness_role": "Official report states the MPC voted 8-1 to increase Bank Rate 25bp to 4% at the meeting ending 4 November.",
             "reliable": true
           },
           {
-            "publisher": "Reuters",
-            "url": "https://live.euronext.com/en/financial-news/bank-england-poised-raise-rates-may-push-back-bets-more",
-            "source_type": "independent_dated_english_preview_coverage",
-            "published_at": "2026-11-02",
-            "freshness_role": "Independent preview confirms current attention to the MPC window but is not used for a Bank Rate, GBP, volatility or trade assertion.",
+            "publisher": "Associated Press",
+            "url": "https://apnews.com/article/britain-economy-interest-rates-dce506792fe3b452ec4c3982147286f3",
+            "source_type": "independent_dated_english_result_coverage",
+            "published_at": "2026-11-05",
+            "freshness_role": "Independent same-day result coverage confirms the 25bp increase from 3.75% to 4% and the unexpected unanimous decision to increase.",
             "reliable": true
+          },
+          {
+            "publisher": "Reddit public index",
+            "url": "https://www.reddit.com/r/unitedkingdom/comments/1xo940f/uk_interest_rates_bank_of_england_expected_to/",
+            "source_type": "public_discussion_discovery_only",
+            "published_at": "2026-11-05",
+            "freshness_role": "Shows current public attention, but retained threads are rate, mortgage and GBP-direction discussion rather than calculator demand.",
+            "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_no_attributable_non_directional_calculator_traffic_path",
+          "decision_gate": "observation_result_fact_without_attributable_non_directional_calculator_traffic_path",
           "duplicate_of": [
-            "HR-20260724-02",
-            "HR-20260806-01",
-            "HR-20261103-03"
+            "HR-20260724-11",
+            "HR-20260730-01",
+            "HR-20260917-02",
+            "HR-20261104-02"
           ],
           "refresh_signals": {
-            "fact_delta": false,
+            "fact_delta": true,
             "search_delta": false,
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "Require an attributable public BoE-result-specific fixed-risk, pip-value, margin, cost, quantity or portfolio-heat question plus another refresh signal; refresh rather than duplicate prior BoE content.",
-          "rationale": "The calendar remains timely and independently sourced, but all retained public attention is direction or rate-path led; a generic GBP sizing grid would manufacture demand."
+          "reopen_trigger": "Require an attributable public BoE-result-specific fixed-risk, pip-value, margin, cost, quantity or portfolio-heat request plus another refresh signal; refresh existing BoE material rather than make a duplicate.",
+          "rationale": "The rate result is real and current, but it changes neither the retained reader calculation nor a safely replaceable numerical teaching example. A generic GBP sizing table would manufacture demand and invite forecast framing."
         }
       }
     },
     {
-      "scan_date": "2026-11-04",
-      "candidate_id": "HR-20261104-01",
+      "scan_date": "2026-11-05",
+      "candidate_id": "HR-20261105-02",
       "status": "observation",
-      "topic": "FTMO November 3 Event Notice Is Expired Without a New Calculator Refresh Delta",
-      "primary_site": "PipGauge",
-      "freshness": 14,
-      "traffic_potential": 17,
-      "calculator_fit": 24,
-      "evidence_quality": 15,
-      "actionability": 8,
-      "total_score": 78,
-      "hard_gate": true,
-      "reliable_sources": 2,
-      "fresh_signal": false,
+      "topic": "The5ers Daily Pause Page Is Newly Dated but Lacks Independent Rule-Specific Demand",
+      "primary_site": "PositionMath",
+      "freshness": 24,
+      "traffic_potential": 18,
+      "calculator_fit": 25,
+      "evidence_quality": 10,
+      "actionability": 6,
+      "total_score": 83,
+      "hard_gate": false,
+      "reliable_sources": 1,
+      "fresh_signal": true,
       "calculator_mapping": [
-        "Portfolio Heat",
-        "Pip Value",
+        "Daily Loss Limit",
         "Position Size",
-        "Daily Loss Limit"
+        "Prop Firm Simulator"
       ],
-      "reason": "FTMO's dated November 2 event notice and USAGov context remain verifiable, but its named November 3 event and HR-20261103-01's November 4 ET result/reaction window are over. No new official correction, search object, teaching input or traffic window exists; preserve as a hold rather than repackage planned-stop arithmetic.",
+      "reason": "The5ers' FAQ is marked last update November 2 and says Daily Pause closes open trades and uses the higher of balance or equity at 00:00 GMT+3. The rule could support reader-entered daily-loss arithmetic, but no independent current public source or attributable query about this dated update was verified. Do not turn one firm FAQ into a purchase-oriented or generic prop-risk traffic post.",
       "scan_audit": {
         "sources": [
           {
-            "publisher": "FTMO",
-            "url": "https://ftmo.com/au/blog/trading-updates/trading-update-2-nov-2026/",
-            "source_type": "official_dated_event_notice",
+            "publisher": "The5ers",
+            "url": "https://the5ers.com/faqs/how-does-the-daily-pause-work/",
+            "source_type": "official_dated_product_rule_faq",
             "published_at": "2026-11-02",
-            "freshness_role": "The dated notice remains verifiable but its named 3 November event and the prior package's 4 November ET reaction window have expired; no new dated correction or rule scope was found.",
-            "reliable": true
-          },
-          {
-            "publisher": "USAGov",
-            "url": "https://www.usa.gov/midterm-elections",
-            "source_type": "independent_government_event_context",
-            "published_at": "2026-10-29",
-            "freshness_role": "Independent event context only; it does not create a current calculator request, market claim or FTMO rule fact.",
+            "freshness_role": "Official FAQ is labelled last update November 2 and describes the Daily Pause scope, closure effect and balance-versus-equity reference at 00:00 GMT+3.",
             "reliable": true
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_expired_event_window_no_new_delta",
-          "duplicate_of": [
-            "HR-20261103-01"
-          ],
+          "decision_gate": "observation_single_official_rule_source_without_independent_current_impact_or_rule_specific_demand",
+          "duplicate_of": [],
           "refresh_signals": {
-            "fact_delta": false,
+            "fact_delta": true,
             "search_delta": false,
             "example_delta": false,
             "window_delta": false
           },
-          "reopen_trigger": "Reopen only on a new dated FTMO update with explicit applicable scope or a distinct, attributable non-directional rule/calculation query.",
-          "rationale": "The existing event package owns the temporary planned-stop-risk path. Extending it after expiry would create stale, duplicate traffic content."
+          "reopen_trigger": "Require a dated/versioned official difference, independent public impact or discussion signal, and a verified question about balance-versus-equity Daily Pause arithmetic before reconsidering.",
+          "rationale": "A single official FAQ can establish a product fact but cannot by itself establish the current demand and traffic window required for a publication-quality calculator bridge."
         }
       }
     },
     {
-      "scan_date": "2026-11-04",
-      "candidate_id": "HR-20261104-03",
+      "scan_date": "2026-11-05",
+      "candidate_id": "HR-20261105-03",
       "status": "observation",
-      "topic": "November 6 U.S. Employment Situation Is Still a Future Calendar Item",
+      "topic": "October U.S. Employment Situation Is Still a Future Calendar Item",
       "primary_site": "PipGauge",
-      "freshness": 23,
-      "traffic_potential": 21,
+      "freshness": 24,
+      "traffic_potential": 22,
       "calculator_fit": 15,
       "evidence_quality": 7,
       "actionability": 4,
-      "total_score": 70,
+      "total_score": 72,
       "hard_gate": false,
       "reliable_sources": 1,
       "fresh_signal": true,
@@ -31719,15 +31951,15 @@
         "Margin",
         "Spread Cost"
       ],
-      "reason": "The BLS calendar confirms the future Employment Situation release but no official result, independent result coverage or event-specific non-directional calculator demand exists. A generic pre-payroll lot-size post would duplicate prior payroll material and invite forecast framing.",
+      "reason": "BLS confirms the October Employment Situation for November 6 at 08:30 ET, but no official result, independent result coverage or event-specific non-directional calculator demand exists at the scan cutoff. A pre-result payroll lot-size article would duplicate HR-20260905-01 and invite forecast framing.",
       "scan_audit": {
         "sources": [
           {
             "publisher": "U.S. Bureau of Labor Statistics",
-            "url": "https://www.bls.gov/schedule/2026/11_sched.htm",
+            "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm",
             "source_type": "official_future_release_schedule",
-            "published_at": "2026-11-04",
-            "freshness_role": "Official calendar confirms a future 6 November Employment Situation release, not a result.",
+            "published_at": "2026-11-03",
+            "freshness_role": "Official schedule lists the October Employment Situation at 08:30 ET on November 6, not a result.",
             "reliable": true
           }
         ],
@@ -31735,9 +31967,8 @@
           "novelty_gate": "fail",
           "decision_gate": "observation_future_calendar_without_result_or_calculator_demand",
           "duplicate_of": [
-            "HR-20260810-01",
             "HR-20260905-01",
-            "HR-20261103-04"
+            "HR-20261104-03"
           ],
           "refresh_signals": {
             "fact_delta": false,
@@ -31745,68 +31976,46 @@
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "Wait for BLS result, independent English result coverage and a public result-specific non-directional calculator question; then refresh existing payroll content only.",
-          "rationale": "A future calendar item cannot support a result-led calculator post and the scan retained no event-specific calculation demand."
+          "reopen_trigger": "Wait for the BLS result, independent English result coverage and a public result-specific non-directional calculator question; then refresh the existing payroll content only.",
+          "rationale": "A release clock does not establish a result-led reader task. Generic lot-size content would repeat the old payroll fixed-risk path and risk becoming a forecast wrapper."
         }
       }
-    },
-    {
-      "scan_date": "2026-11-04",
-      "candidate_id": "HR-20261104-04",
-      "status": "discarded",
-      "topic": "Generic Prop-Firm Change Summaries and Complaints Are Not a Current Rule Trigger",
-      "primary_site": "PositionMath",
-      "freshness": 10,
-      "traffic_potential": 16,
-      "calculator_fit": 24,
-      "evidence_quality": 7,
-      "actionability": 0,
-      "total_score": 57,
-      "hard_gate": false,
-      "reliable_sources": 0,
-      "fresh_signal": false,
-      "calculator_mapping": [
-        "Prop Firm Simulator",
-        "Daily Loss Limit",
-        "Position Size"
-      ],
-      "reason": "Recent accessible summaries mostly recap October changes or generic complaints and do not supply a current dated/versioned official firm rule delta plus independent impact evidence and a non-directional calculator question. Do not convert purchase, KYC, payout or complaint traffic into calculator content."
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-11-04T22:00:00+08:00",
+      "checked_at": "2026-11-05T22:04:00+08:00",
       "source_count": 3,
-      "note": "覆盖 FTMO 2 November dated Trading Update、Bank of England 5 November events calendar 与 BLS November release schedule；未将任何一手材料用于市场方向或执行主张。"
+      "note": "覆盖 Bank of England 5 November Monetary Policy Report、The5ers 2 November dated Daily Pause FAQ 与 BLS November release schedule；未把一手材料用于市场方向或执行主张。"
     },
     {
       "channel": "独立可靠英文来源",
       "status": "complete",
-      "checked_at": "2026-11-04T22:00:00+08:00",
+      "checked_at": "2026-11-05T22:04:00+08:00",
       "source_count": 1,
-      "note": "复查 Reuters 2 November Bank of England preview（经 Euronext 公开转载）；它只用于独立确认 5 November 窗口与公开注意力。"
+      "note": "AP 同日独立确认 BoE 将 Bank Rate 上调 25bp 至 4%；只用于结果事实交叉核验。"
     },
     {
       "channel": "Reddit / ForexFactory / BabyPips",
       "status": "partial",
-      "checked_at": "2026-11-04T22:00:00+08:00",
+      "checked_at": "2026-11-05T22:04:00+08:00",
       "source_count": 3,
-      "note": "复查公开日历/索引和公开讨论发现信号；保留注意力以方向、预测或泛化规则为主，未发现可归属的非方向计算问题。"
+      "note": "复查公开索引与讨论发现信号；BoE 话题为利率、抵押贷款或 GBP 方向，prop-firm 话题为泛化 daily-loss、购买、payout 或投诉，未发现可归属非方向性计算问题。"
     },
     {
       "channel": "X / Quora",
       "status": "limited",
-      "checked_at": "2026-11-04T22:00:00+08:00",
+      "checked_at": "2026-11-05T22:04:00+08:00",
       "source_count": 0,
       "note": "没有保留稳定、公开、可归属且非方向性的候选信号；登录墙、动态流、截图和不可验证材料不计入。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-11-04_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-11-04_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-11-05_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-11-05_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
