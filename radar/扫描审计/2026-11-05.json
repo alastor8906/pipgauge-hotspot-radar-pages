@@ -1,0 +1,112 @@
+{
+  "scan_date": "2026-11-05",
+  "generated_at": "2026-11-05T22:04:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-11-05T22:04:00+08:00",
+      "source_count": 3,
+      "note": "覆盖 Bank of England 5 November Monetary Policy Report、The5ers 2 November dated Daily Pause FAQ 与 BLS November release schedule；未把一手材料用于市场方向或执行主张。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-11-05T22:04:00+08:00",
+      "source_count": 1,
+      "note": "AP 同日独立确认 BoE 将 Bank Rate 上调 25bp 至 4%；只用于结果事实交叉核验。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "partial",
+      "checked_at": "2026-11-05T22:04:00+08:00",
+      "source_count": 3,
+      "note": "复查公开索引与讨论发现信号；BoE 话题为利率、抵押贷款或 GBP 方向，prop-firm 话题为泛化 daily-loss、购买、payout 或投诉，未发现可归属非方向性计算问题。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-11-05T22:04:00+08:00",
+      "source_count": 0,
+      "note": "没有保留稳定、公开、可归属且非方向性的候选信号；登录墙、动态流、截图和不可验证材料不计入。"
+    }
+  ],
+  "candidates": {
+    "HR-20261105-01": {
+      "sources": [
+        {
+          "publisher": "Bank of England",
+          "url": "https://www.bankofengland.co.uk/monetary-policy-report/2026/november-2026",
+          "source_type": "official_dated_monetary_policy_report",
+          "published_at": "2026-11-05",
+          "freshness_role": "Official report states the MPC voted 8-1 to increase Bank Rate 25bp to 4% at the meeting ending 4 November.",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/britain-economy-interest-rates-dce506792fe3b452ec4c3982147286f3",
+          "source_type": "independent_dated_english_result_coverage",
+          "published_at": "2026-11-05",
+          "freshness_role": "Independent same-day result coverage confirms the 25bp increase from 3.75% to 4% and the unexpected unanimous decision to increase.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit public index",
+          "url": "https://www.reddit.com/r/unitedkingdom/comments/1xo940f/uk_interest_rates_bank_of_england_expected_to/",
+          "source_type": "public_discussion_discovery_only",
+          "published_at": "2026-11-05",
+          "freshness_role": "Shows current public attention, but retained threads are rate, mortgage and GBP-direction discussion rather than calculator demand.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_result_fact_without_attributable_non_directional_calculator_traffic_path",
+        "duplicate_of": ["HR-20260724-11", "HR-20260730-01", "HR-20260917-02", "HR-20261104-02"],
+        "refresh_signals": {"fact_delta": true, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "Require an attributable public BoE-result-specific fixed-risk, pip-value, margin, cost, quantity or portfolio-heat request plus another refresh signal; refresh existing BoE material rather than make a duplicate.",
+        "rationale": "The rate result is real and current, but it changes neither the retained reader calculation nor a safely replaceable numerical teaching example. A generic GBP sizing table would manufacture demand and invite forecast framing."
+      }
+    },
+    "HR-20261105-02": {
+      "sources": [
+        {
+          "publisher": "The5ers",
+          "url": "https://the5ers.com/faqs/how-does-the-daily-pause-work/",
+          "source_type": "official_dated_product_rule_faq",
+          "published_at": "2026-11-02",
+          "freshness_role": "Official FAQ is labelled last update November 2 and describes the Daily Pause scope, closure effect and balance-versus-equity reference at 00:00 GMT+3.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_single_official_rule_source_without_independent_current_impact_or_rule_specific_demand",
+        "duplicate_of": [],
+        "refresh_signals": {"fact_delta": true, "search_delta": false, "example_delta": false, "window_delta": false},
+        "reopen_trigger": "Require a dated/versioned official difference, independent public impact or discussion signal, and a verified question about balance-versus-equity Daily Pause arithmetic before reconsidering.",
+        "rationale": "A single official FAQ can establish a product fact but cannot by itself establish the current demand and traffic window required for a publication-quality calculator bridge."
+      }
+    },
+    "HR-20261105-03": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm",
+          "source_type": "official_future_release_schedule",
+          "published_at": "2026-11-03",
+          "freshness_role": "Official schedule lists the October Employment Situation at 08:30 ET on November 6, not a result.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_future_calendar_without_result_or_calculator_demand",
+        "duplicate_of": ["HR-20260905-01", "HR-20261104-03"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "Wait for the BLS result, independent English result coverage and a public result-specific non-directional calculator question; then refresh the existing payroll content only.",
+        "rationale": "A release clock does not establish a result-led reader task. Generic lot-size content would repeat the old payroll fixed-risk path and risk becoming a forecast wrapper."
+      }
+    }
+  }
+}

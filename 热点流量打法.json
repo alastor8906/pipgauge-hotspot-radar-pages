@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-04T22:00:00+08:00",
+  "updated_at": "2026-11-05T22:04:00+08:00",
   "last_scan": {
-    "scan_date": "2026-11-04",
+    "scan_date": "2026-11-05",
     "selected_count": 0,
     "playbook_ready_count": 0,
     "content_package_count": 0,
-    "note": "No current calculator-bridge topic qualified. The prior FTMO November 3 event notice passed its stated short-window expiry without a new official delta; BoE November 5 and the November 6 U.S. jobs calendar remain direction/calendar led and have no attributable non-directional calculator journey. No playbook or content package was generated."
+    "note": "No current calculator-bridge topic qualified. Bank of England's November 5 25bp increase to 4% is independently verified but creates only fact/window deltas, not an attributable non-directional calculator journey; The5ers' dated Daily Pause FAQ lacks independent current rule-specific demand, and November 6 U.S. jobs remains a future calendar item. No playbook or content package was generated."
   },
   "items": {
     "HR-20261103-01": {

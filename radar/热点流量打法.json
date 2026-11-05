@@ -1,14 +1,59 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-02T22:02:26+08:00",
+  "updated_at": "2026-11-05T22:04:00+08:00",
   "last_scan": {
-    "scan_date": "2026-11-02",
+    "scan_date": "2026-11-05",
     "selected_count": 0,
     "playbook_ready_count": 0,
     "content_package_count": 0,
-    "note": "No qualifying topic. FTMO's October 29 US-DST/maintenance update is now fully expired as a traffic window. RBA November 3 and Bank of England November 5 have independent factual coverage, but public attention remains rate-path and currency-direction led rather than an attributable non-directional calculator journey. No playbook card or content package was created."
+    "note": "No current calculator-bridge topic qualified. Bank of England's November 5 25bp increase to 4% is independently verified but creates only fact/window deltas, not an attributable non-directional calculator journey; The5ers' dated Daily Pause FAQ lacks independent current rule-specific demand, and November 6 U.S. jobs remains a future calendar item. No playbook or content package was generated."
   },
   "items": {
+    "HR-20261103-01": {
+      "playbook_status": "ready",
+      "execution_mode": "new",
+      "urgency": "high",
+      "publish_deadline": "2026-11-04T12:00:00-05:00",
+      "traffic_hook": "FTMO's dated 2 November CFD Trading Update names the 3 November U.S. midterm event and tells traders to check open positions, position size and risk per trade. USAGov independently confirms the November 2026 midterm context, while a public prop-trader calendar provides discovery context. The hook is FTMO's current risk-management notice and the reader's arithmetic task—not politics, an election result, a price forecast or a trade recommendation.",
+      "traffic_window": "Publish only after a human rechecks the live FTMO update and while its 3 November wording remains applicable. The event-specific title expires at 12:00 ET on 4 November, or earlier on an FTMO correction, a new firm update, an expired result/reaction window, unclear product applicability or no explicit reader-entered risk inputs.",
+      "search_intents": [
+        "FTMO November 3 2026 trading update",
+        "FTMO open position risk calculator",
+        "how to calculate total stop loss risk across forex positions",
+        "portfolio heat before news event",
+        "FTMO position size risk per trade"
+      ],
+      "traffic_angle": "Borrow the dated FTMO event-risk notice to answer one numerical question a reader can check before reacting: how much planned stop loss is already open across positions? Use only readable teaching inputs: USD 120 + USD 80 + USD 100 planned stop risk = USD 300; compared with a reader-chosen USD 1,000 daily-risk ceiling, USD 300 / USD 1,000 = 30%. These are neither FTMO terms nor an observed event cost, forecast, fill, recommendation or instruction to change a trade.",
+      "calculator_bridge": "Explain the addition first, then have the reader enter their own already-defined planned losses in PipGauge Portfolio Heat. PipGauge Pip Value and Position Size independently recheck the per-position inputs using the reader's currency, contract convention and planned stop; Daily Loss Limit is a separate reader-entered ceiling check. PositionMath is a secondary generic cross-check only. None of the tools verifies FTMO applicability, predicts a result, estimates event volatility/slippage or guarantees a stop fill.",
+      "example_scenario": "Teaching only: three existing plans have USD 120, USD 80 and USD 100 maximum planned price loss if their own stops are reached, before spread, commission, slippage, gaps, financing or correlated-move effects. Total planned stop risk is USD 300. With a separately reader-chosen USD 1,000 daily-risk ceiling, planned usage is 30%. The USD 1,000 is not an FTMO rule; every risk input, pair, contract value, account currency and ceiling must be independently verified.",
+      "distribution_order": [
+        "new PipGauge event-notice-to-portfolio-heat explainer",
+        "Medium source-linked method draft after human review",
+        "X self-contained planned-stop-risk thread",
+        "Reddit native process question without a first-round link"
+      ],
+      "link_placement": "Give the dated FTMO notice, formula, USD 120 + 80 + 100 = 300 calculation, 30% illustration and input limitations before one natural PipGauge Portfolio Heat link. The initial Reddit post has no link, UTM, affiliate text or pitch. The X main thread must remain complete without a click.",
+      "expiry_condition": "Stop using the November 3 event frame after 4 November 12:00 ET, on any FTMO correction or later update, when the notice no longer applies to the reader's product/account, or when the only remaining hook is generic volatility. Do not recycle the USD 120/80/100 or USD 1,000 figures as firm rules, expected losses, event-volatility estimates or evergreen advice.",
+      "editorial_boundary": "Do not discuss candidates, parties, vote results, policy outcomes or political opinions. Do not predict FX, indices, commodities, equities, rates, volatility, spreads, liquidity, slippage, profitability or a market move; tell anyone to open, close, hold, reduce or increase a position; present a planned stop as a guaranteed fill; infer FTMO account rules; or imply that the example applies to every product, broker, prop firm or account.",
+      "refresh_target": null,
+      "refresh_signals": {
+        "fact_delta": true,
+        "search_delta": true,
+        "example_delta": true,
+        "window_delta": true
+      },
+      "refresh_updates": [],
+      "content_mainline": "Create one short-lived FTMO event-notice explainer that turns the firm's current instruction to review open positions, position size and risk per trade into transparent planned-stop portfolio-heat addition. It must not become election commentary, a directional market article or an instruction to trade.",
+      "body_material": [
+        "FTMO 2 November 2026 CFD Trading Update and its open-position / position-size / risk-per-trade wording",
+        "USAGov November 2026 midterm confirmation as independent event context only",
+        "USD 120 + USD 80 + USD 100 = USD 300 planned-stop-risk teaching arithmetic",
+        "USD 300 divided by reader-chosen USD 1,000 daily-risk ceiling = 30% illustrative usage",
+        "4 November 12:00 ET expiry and immediate official-update stop gate"
+      ],
+      "product_bridge": "PipGauge adds reader-entered planned stop risk and independently checks the underlying pip-value/position-size inputs; it does not interpret politics, validate FTMO terms, estimate event conditions, choose a position or guarantee execution.",
+      "product_bridge_type": "existing"
+    },
     "HR-20261031-01": {
       "playbook_status": "ready",
       "execution_mode": "refresh",
