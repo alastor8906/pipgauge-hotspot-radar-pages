@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FTMO Futures Growth Rule Change: Verify 100K and 150K Drawdown Math for New Evaluations · 内容审核包</title>
+  <link rel="stylesheet" href="../../package.css">
+</head>
+<body>
+  <header class="package-header">
+    <a href="../../../radar/">返回热点雷达</a>
+    <span>HR-20261106-02</span>
+  </header>
+  <main class="package-shell">
+    <section class="package-hero">
+      <div class="package-kicker"><span>PipGauge</span><span>2026-11-06</span></div>
+      <h1>FTMO Futures Growth Rule Change: Verify 100K and 150K Drawdown Math for New Evaluations</h1>
+      <p>当期审核快照：核对 FTMO Futures 在 5 November 对新建 Growth 100K/150K Evaluations 的 maximum-drawdown 与 qualifying-day minimum 变更。内容不比较、推荐或购买账户，也不预测 futures 市场。</p>
+      <div class="state-grid">
+        <div><span>流水线状态</span><strong>三平台草稿已生成</strong></div>
+        <div><span>当前停点</span><strong>等待人工审核</strong></div>
+        <div><span>时效处理</span><strong>仅在 FTMO 5 November update、正确 cohort/phase 和 7 November 12:00 ET 短窗口内使用；更正、后续规则更新或适用性不清即停用。</strong></div>
+      </div>
+    </section>
+
+    <section class="platform-strip" aria-label="平台草稿快速入口"><button type="button" class="platform-tab" data-target="medium">Medium<span>草稿完成</span></button><button type="button" class="platform-tab" data-target="reddit">Reddit<span>草稿完成</span></button><button type="button" class="platform-tab" data-target="x">X<span>草稿完成</span></button></section>
+
+    <section class="review-layout">
+      <aside>
+        <p>审核顺序</p>
+        <nav class="doc-tabs"><button type="button" class="doc-tab is-active" data-target="facts">事实与论点</button><button type="button" class="doc-tab" data-target="medium">Medium</button><button type="button" class="doc-tab" data-target="reddit">Reddit</button><button type="button" class="doc-tab" data-target="x">X</button><button type="button" class="doc-tab" data-target="review">审核清单</button></nav>
+        <div class="stop-note"><strong>不会自动发布</strong><span>审核通过后，才由人决定是否复制到平台。</span></div>
+      </aside>
+      <div class="documents"><article id="facts" class="document-panel is-active">
+      <header><span>editorial brief</span><strong>已整理</strong></header>
+      <div class="markdown-body"><h1>事实与论点底稿</h1>
+<h2>可核验事实</h2>
+<ul>
+<li><a href="https://ftmo.com/en/futures/blog/trading-updates/futures-trading-update-5-nov-2026/" target="_blank" rel="noopener">FTMO Futures Trading Update — 5 November 2026</a> 是规则事实唯一锚点。它说，从 <strong>5 November 04:30 ET</strong> 起创建的 <strong>new Evaluations</strong> 适用新值；此前创建的 Evaluations 及其通向的 Sim-Funded/Live Accounts 保持旧值。</li>
+<li>同一官方更新列出 Growth 100K：Maximum Drawdown (EOD Trailing) <strong>USD 3,500 → USD 3,000</strong>；Payout Eligibility 的 4 Qualifying Days minimum daily P&amp;L <strong>USD 250 → USD 300</strong>。Growth 150K：<strong>USD 5,000 → USD 4,500</strong>；<strong>USD 300 → USD 450</strong>。</li>
+<li><a href="https://www.findbestprop.com/blog/ftmo-growth-drawdown-topstep-labs-november-6-2026" target="_blank" rel="noopener">FindBestProp 的 6 November independent change record</a> 独立记录 5 November cutoff 和同一 100K/150K 前后值；它用于交叉验证当前变更和发现窗口，FTMO 官方规则仍优先。</li>
+<li><a href="https://www.reddit.com/r/PropFirmTester/comments/1xmkad1/3_x_150k_ftmo_accounts/" target="_blank" rel="noopener">公开 Reddit 150K payout/rules thread</a> 于 3 November 讨论 FTMO Futures 150K accounts、payout cap 和重要规则。它仅是独立的 rule-reading demand/措辞来源；不证明 FTMO 数值、适用性、资格、产品质量或 payout。</li>
+</ul>
+<h2>去重与新稿判断</h2>
+<p>历史 <code>HR-20260918-01</code> 是 FTMO Futures formal launch 后的 <strong>50K Pro</strong> Daily Loss Limit 规则核验。它不是本期的 Growth 100K/150K EOD trailing maximum-drawdown / qualifying-day cohort。</p>
+<ul>
+<li><code>fact_delta=true</code>：有日期的新一手 rule update 和新 cohort cutoff。</li>
+<li><code>search_delta=true</code>：当前检索对象为 Growth 100K/150K 的新值与 new Evaluation 时间边界，不是 50K Pro daily loss。</li>
+<li><code>example_delta=true</code>：新教学数是 <code>4 × 300 = 1,200</code> 与 <code>4 × 450 = 1,800</code>，不能写回 50K Pro 页面。</li>
+<li><code>window_delta=true</code>：规则刚生效的 5–7 November 核验窗口。</li>
+</ul>
+<p>因此为 <code>new</code>，而不是用不兼容 plan/phase 数字误覆写旧稿；不创建任何账户比较、购买或 payout 预测内容。</p>
+<h2>数字骨架与边界</h2>
+<div class="table-wrap"><table><thead><tr><th>New-Evaluation cohort</th><th>Maximum Drawdown (EOD Trailing)</th><th>Minimum daily P&amp;L</th><th>Minimum arithmetic for exactly 4 qualifying days</th></tr></thead><tbody><tr><td>Growth 100K</td><td>USD 3,000</td><td>USD 300</td><td>4 × 300 = USD 1,200</td></tr><tr><td>Growth 150K</td><td>USD 4,500</td><td>USD 450</td><td>4 × 450 = USD 1,800</td></tr></tbody></table></div>
+<p>最后一列只是最小数的算术，<strong>不</strong>确认 payout eligibility、不覆盖官方其他条件，也不表示一笔交易、单日仓位、实际 drawdown floor、合约点值、交易成本、收入或 payout。Maximum Drawdown 是 plan/account rule boundary，而不是任何单笔风险额度。</p>
+<p>先核对 creation timestamp、Growth plan、account size、phase、current official rules 和 account state；随后才可将读者已输入的账户值与 planned stop 用于 PipGauge Challenge Simulator/Daily Loss Limit 的预算整理。PositionMath Trailing Drawdown / Prop Firm Simulator 仅作为辅助交叉检查。任何工具都不认证 FTMO 条款、账户资格、payout 或执行。</p>
+<p>所有平台草稿均为 <code>awaiting_human_review</code>。Reddit 首轮无链接；X 主线程独立可读；不得发布、评论、私信或操作账号。</p></div>
+    </article><article id="medium" class="document-panel">
+      <header><span>long-form draft</span><strong>待人工审核</strong></header>
+      <div class="markdown-body"><h1>FTMO Futures Changed Growth 100K and 150K Rules. Verify the Cohort Before Doing Any Math.</h1>
+<p>FTMO’s November 5 Futures update changes two numbers for Growth 100K and 150K accounts created as new Evaluations on or after 04:30 ET that day. It does not say that every existing account changes, and it does not turn a maximum-drawdown figure into a per-trade risk allowance.</p>
+<p>For the affected new-evaluation cohort, FTMO lists:</p>
+<div class="table-wrap"><table><thead><tr><th>Growth plan</th><th>Maximum Drawdown (EOD Trailing)</th><th>Qualifying-day minimum daily P&amp;L</th></tr></thead><tbody><tr><td>100K</td><td>USD 3,500 → USD 3,000</td><td>USD 250 → USD 300</td></tr><tr><td>150K</td><td>USD 5,000 → USD 4,500</td><td>USD 300 → USD 450</td></tr></tbody></table></div>
+<p>The official update also says Evaluations created before the cutoff, along with the Sim-Funded and Live Accounts they lead to, retain the current values. That makes the creation time, exact plan, account size and phase more important than a headline number.</p>
+<h2>One transparent arithmetic check</h2>
+<p>The payout-eligibility wording refers to four qualifying days with a minimum daily P&amp;L. If, and only if, four days each meet the stated minimum exactly, the arithmetic is:</p>
+<ul>
+<li>Growth 100K: 4 × USD 300 = USD 1,200</li>
+<li>Growth 150K: 4 × USD 450 = USD 1,800</li>
+</ul>
+<p>This is not a payout forecast or a statement of eligibility. It does not replace any other official requirement. It also does not tell someone what to trade, how much to risk, what a contract is worth or where an EOD trailing floor will be for a particular account state.</p>
+<h2>Keep rule boundaries separate from trade inputs</h2>
+<p>A clean checking sequence is:</p>
+<ol>
+<li>Confirm the FTMO new-Evaluation creation time and the exact Growth plan, size and phase.</li>
+<li>Record the current official Maximum Drawdown and qualifying-day values without converting either into a single-trade allowance.</li>
+<li>Keep balance, high-water mark, open P&amp;L, commissions and planned stop inputs as separate reader-entered values.</li>
+<li>Use a calculator only to organize those inputs after the rule is confirmed.</li>
+</ol>
+<p>PipGauge’s Challenge Simulator and Daily Loss Limit tools can help a reader structure their own risk-budget inputs. A <a href="https://positionmath.com/" target="_blank" rel="noopener">PositionMath Trailing Drawdown check</a> can be a secondary cross-check. Neither tool verifies FTMO eligibility, contract value, payout qualification, live account state or execution.</p>
+<p>This dated rule-change frame expires at 12:00 ET on November 7, on an FTMO correction or later rule update, or when the reader is not in the new-evaluation cohort.</p>
+<p><em>Draft status: awaiting_human_review. Rule-reading and educational arithmetic only; not a firm endorsement, purchase recommendation, trading instruction or payout promise.</em></p></div>
+    </article><article id="reddit" class="document-panel">
+      <header><span>native discussion draft</span><strong>待人工审核</strong></header>
+      <div class="markdown-body"><h1>Draft title</h1>
+<p>FTMO Futures Growth 100K/150K rule change: what should be checked before using the new drawdown numbers?</p>
+<h1>Draft body</h1>
+<p>FTMO’s November 5 Futures update says that new Growth Evaluations created on or after 04:30 ET use different Maximum Drawdown and qualifying-day minimum values. It also says older Evaluations and the Sim-Funded/Live Accounts they lead to keep the current values.</p>
+<p>For the affected new-evaluation cohort:</p>
+<ul>
+<li>Growth 100K: EOD trailing Maximum Drawdown changes from USD 3,500 to USD 3,000; qualifying-day minimum from USD 250 to USD 300.</li>
+<li>Growth 150K: USD 5,000 to USD 4,500; qualifying-day minimum from USD 300 to USD 450.</li>
+</ul>
+<p>One narrow arithmetic check: four qualifying days exactly at the new stated minimum would total USD 1,200 for 100K (4 × 300) or USD 1,800 for 150K (4 × 450).</p>
+<p>That does not establish payout eligibility, a trade size, a contract point value or an actual trailing floor. It is also not a reason to treat the USD 3,000/4,500 maximum-drawdown amounts as a per-trade allowance.</p>
+<p>What I would verify before doing any account math is the creation timestamp, exact plan, account size, phase and current official rule text. Then I would keep balance/high-water mark, open P&amp;L, costs and planned stop inputs separate rather than turning a rule headline into a position-size recommendation.</p>
+<p>What plan/phase details have you seen people miss when they read a prop-firm rule update?</p>
+<p><em>Draft status: awaiting_human_review. First-round Reddit draft intentionally contains no link, tracking parameter, affiliate text or purchase pitch.</em></p></div>
+    </article><article id="x" class="document-panel">
+      <header><span>short thread draft</span><strong>待人工审核</strong></header>
+      <div class="markdown-body"><h1>X thread draft</h1>
+<p><strong>1/4</strong></p>
+<p>FTMO Futures changed Growth 100K/150K requirements for new Evaluations created on or after 5 Nov, 04:30 ET.</p>
+<p>First check: creation time, exact plan, account size and phase. A headline number may not apply to an older cohort.</p>
+<p><strong>2/4</strong></p>
+<p>The published changes:</p>
+<p>100K: EOD trailing Maximum Drawdown USD 3,500 → USD 3,000; qualifying-day minimum USD 250 → USD 300.</p>
+<p>150K: USD 5,000 → USD 4,500; USD 300 → USD 450.</p>
+<p><strong>3/4</strong></p>
+<p>One narrow arithmetic check:</p>
+<p>4 qualifying days at the stated minimum = 100K: 4 × 300 = USD 1,200 150K: 4 × 450 = USD 1,800</p>
+<p>That is not a payout forecast or eligibility confirmation.</p>
+<p><strong>4/4</strong></p>
+<p>Maximum Drawdown is an account-rule boundary, not a per-trade allowance. Keep balance, high-water mark, open P&amp;L, costs, contract value and planned stop as separate verified inputs.</p>
+<p>No firm comparison, account recommendation, futures call or execution claim follows from this rule update.</p>
+<p><em>Draft status: awaiting_human_review.</em></p></div>
+    </article><article id="review" class="document-panel">
+      <header><span>human gate</span><strong>必须完成</strong></header>
+      <div class="markdown-body"><h1>人工审核清单</h1>
+<h2>范围、cohort 与去重</h2>
+<ul>
+<li>[ ] 这是 <code>HR-20261106-02</code> 的 <code>new</code> 审核快照，范围仅限 FTMO Futures <strong>Growth 100K/150K new Evaluations</strong>；不得与旧 <code>HR-20260918-01</code> 的 50K Pro daily-loss 内容混写或覆写。</li>
+<li>[ ] 任何标题和正文都必须写明 5 November 04:30 ET、new Evaluation、Growth、100K/150K 和 phase/account applicability；不得暗示旧 Evaluation、Sim-Funded 或 Live Account 自动改变。</li>
+<li>[ ] 不得写 account comparison、purchase recommendation、affiliate text、payout promise、futures direction、contract-value assumption 或 trading instruction。</li>
+</ul>
+<h2>事实与算术复核</h2>
+<ul>
+<li>[ ] 打开 <a href="https://ftmo.com/en/futures/blog/trading-updates/futures-trading-update-5-nov-2026/" target="_blank" rel="noopener">FTMO 5 November Futures update</a>，逐项确认 cutoff 和 cohort exclusion。</li>
+<li>[ ] 确认 Growth 100K 是 USD 3,500 → 3,000、USD 250 → 300；Growth 150K 是 USD 5,000 → 4,500、USD 300 → 450。</li>
+<li>[ ] 核算且只称其为教学算术：4 × 300 = 1,200；4 × 450 = 1,800。</li>
+<li>[ ] 确保 <code>Maximum Drawdown</code> 从未被写成单笔 risk limit、可花费金额、contract point value、实际 floor、收益或 payout 预测。</li>
+<li>[ ] 如提及 <a href="https://www.reddit.com/r/PropFirmTester/comments/1xmkad1/3_x_150k_ftmo_accounts/" target="_blank" rel="noopener">公开 Reddit thread</a>，只能称为 public rule-reading demand；不能以其证明 FTMO 数字或条款。</li>
+</ul>
+<h2>平台与停用闸门</h2>
+<ul>
+<li>[ ] Medium 先给 cohort、事实、算术与边界，之后至多一个自然的 calculator cross-check link；不得保留过期时态。</li>
+<li>[ ] Reddit 首轮无链接、tracking parameter、affiliate 或硬导流。</li>
+<li>[ ] X 不点击链接也完整可读；不得添加 firm comparison、购买或市场预测。</li>
+<li>[ ] 三份平台稿均保持 <code>awaiting_human_review</code>，审核通过前不发布、不评论、不私信、不操作账号。</li>
+<li>[ ] 7 November 12:00 ET、FTMO 更正/新 update、cohort/phase 不清或产品不适用时立即停止本标题与草稿；任何后续更新必须重新通过来源、新鲜度、独立 demand、桥接和去重门槛。</li>
+</ul></div>
+    </article></div>
+    </section>
+  </main>
+  <script>
+    const activate = (id) => {
+      document.querySelectorAll('.doc-tab').forEach((button) => button.classList.toggle('is-active', button.dataset.target === id));
+      document.querySelectorAll('.document-panel').forEach((panel) => panel.classList.toggle('is-active', panel.id === id));
+      history.replaceState(null, '', '#' + id);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    document.querySelectorAll('[data-target]').forEach((button) => button.addEventListener('click', () => activate(button.dataset.target)));
+    const initial = location.hash.slice(1);
+    if (initial && document.getElementById(initial)) activate(initial);
+  </script>
+</body>
+</html>

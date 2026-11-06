@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-11-05T22:07:06+08:00",
-  "latest_scan_date": "2026-11-05",
+  "generated_at": "2026-11-06T22:15:34+08:00",
+  "latest_scan_date": "2026-11-06",
   "available_dates": [
+    "2026-11-06",
     "2026-11-05",
     "2026-11-04",
     "2026-11-03",
@@ -108,8 +109,434 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-11-06",
+      "generated_at": "2026-11-06T22:15:34+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 103,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 2,
+        "observation": 2,
+        "discarded": 1,
+        "total": 5,
+        "selected_average": 98.5,
+        "all_selected_pass_gate": true,
+        "content_ready": 2,
+        "playbook_ready": 2
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-11-06",
+          "candidate_id": "HR-20261106-01",
+          "status": "selected",
+          "topic": "U.S. Payrolls Added 165000: Refresh the Fixed-Risk Check After the October Report",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 25,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 10,
+          "total_score": 100,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L",
+            "Spread Cost"
+          ],
+          "reason": "BLS's November 6 Employment Situation reports October payrolls +165000 and unemployment 4.1%; AP independently confirms both figures and the 65000 consensus comparison. ForexFactory's result page records the current actual and active comments as discovery only. All four refresh signals replace the prior August payroll snapshot in HR-20260905-01 without predicting the dollar, EUR/USD, rates or volatility.",
+          "content_status": "review_ready",
+          "content_label": "美国10月就业结果固定风险刷新审核包待人工审核",
+          "content_url": "../内容生产/2026-11-06/HR-20261106-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-11-07T12:00:00-05:00",
+          "review_state": "awaiting_human_review",
+          "refresh_target": "HR-20260905-01",
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "refresh",
+            "urgency": "high",
+            "publish_deadline": "2026-11-07T12:00:00-05:00",
+            "traffic_hook": "BLS has published October payroll growth of 165,000 and unemployment at 4.1%; AP independently reported the same result and the 65,000 consensus comparison. ForexFactory's public result page supplies current FX-audience discovery wording. The hook is the completed result and a reader's fixed-risk check, never a claim about the dollar, EUR/USD, rates or volatility.",
+            "traffic_window": "Update the existing payroll fixed-risk page only after a human rechecks BLS and AP. Use the result-led title through 7 November 12:00 ET, then retire it; stop earlier on a BLS correction or a later independently verified fact that changes the reader question.",
+            "search_intents": [
+              "October 2026 jobs report 165000 forex risk",
+              "payrolls 165K position size calculator",
+              "EURUSD fixed risk after jobs report",
+              "EURUSD pip value 30 pip stop",
+              "how many lots EURUSD for 50 dollar risk"
+            ],
+            "traffic_angle": "Borrow the released +165,000 / 4.1% / 65,000-consensus fact set to answer one non-directional question: with a USD 10,000 teaching account, USD 50 maximum planned price risk, and an explicitly approximate USD 10-per-pip EUR/USD USD-account input, what size corresponds to a 30, 60 or 90-pip planned stop? The readable answer is about 0.16, 0.08 or 0.05 standard lot before costs. It is risk-budget arithmetic, not a payroll-move estimate or forecast.",
+            "calculator_bridge": "Give the result facts and formula first. PipGauge Pip Value verifies the reader's actual EUR/USD/account/contract pip value; PipGauge Position Size verifies reader-entered USD risk and planned stop. P&L or Spread Cost are separate hypothetical checks only. These tools do not interpret payrolls, forecast markets or guarantee a stop fill.",
+            "example_scenario": "Teaching only: USD 10,000 account; USD 50 maximum planned price risk; EUR/USD in a USD account at an approximate USD 10 per pip per standard lot. A 30/60/90-pip planned stop maps to about 0.16/0.08/0.05 standard lot before commission, spread, slippage, gaps, minimum size or platform rules. No input is a live quote, expected move or trade instruction.",
+            "distribution_order": [
+              "refresh existing payroll fixed-risk article HR-20260905-01",
+              "Medium dated post-report fixed-risk refresh",
+              "X self-contained payroll-risk thread",
+              "Reddit native process discussion without a first-round link"
+            ],
+            "link_placement": "State the released data, formula, three readable sizes and plan-versus-fill limit before one PipGauge verification link. Do not put a link, tracking parameter or product pitch in the initial Reddit post; the X thread remains independently readable.",
+            "expiry_condition": "Stop using this October-result frame at 7 November 12:00 ET, on a BLS correction, or if later independently verified information creates a different calculation question. Do not recycle 30/60/90 pips as an expected payroll move or evergreen commentary.",
+            "editorial_boundary": "Do not predict EUR/USD, the dollar, the Fed, interest rates, volatility, profitability or a market move. Do not recommend a position, say a planned stop is a guaranteed fill, or present assumed pip value, spread or costs as observed event execution data.",
+            "refresh_target": "HR-20260905-01",
+            "refresh_signals": {
+              "fact_delta": true,
+              "search_delta": true,
+              "example_delta": true,
+              "window_delta": true
+            },
+            "refresh_updates": [
+              "replace the August +162,000 / 4.1% / +55,000 revisions fact block with October +165,000 / 4.1% and the AP-noted 65,000 consensus comparison",
+              "replace all September time language with the 6 November published-result / 7 November expiry window",
+              "replace the 20/40/80-pip USD 50 teaching table with 30/60/90 pips, explicitly not an expected move",
+              "retain the non-directional and plan-versus-fill boundaries"
+            ],
+            "content_mainline": "Refresh the existing payroll fixed-risk article into a dated October-result check using published +165,000 / 4.1% facts and transparent USD 50 30/60/90-pip arithmetic; do not create another payroll article.",
+            "body_material": [
+              "BLS 6 November Employment Situation: +165,000 and 4.1%",
+              "AP independent same-day result coverage and 65,000 consensus comparison",
+              "ForexFactory result page as discovery only",
+              "USD 50 risk at 30/60/90 pips",
+              "7 November 12:00 ET expiry and correction stop gate"
+            ],
+            "product_bridge": "PipGauge verifies EUR/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret payrolls, forecast a currency move or guarantee execution.",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "U.S. Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/news.release/empsit.htm",
+                "source_type": "official_dated_employment_situation_result",
+                "published_at": "2026-11-06",
+                "freshness_role": "Official October result reports total nonfarm payroll employment increased 165,000 and unemployment rate 4.1 percent.",
+                "reliable": true
+              },
+              {
+                "publisher": "Associated Press",
+                "url": "https://apnews.com/article/jobs-inflation-paycheck-salary-employment-746ee02db33d0372980f815ada33d8d3",
+                "source_type": "independent_dated_english_result_coverage",
+                "published_at": "2026-11-06",
+                "freshness_role": "Independent same-day coverage confirms 165,000 jobs, 4.1 percent unemployment and the 65,000 expected figure.",
+                "reliable": true
+              },
+              {
+                "publisher": "ForexFactory",
+                "url": "https://www.forexfactory.com/calendar/66-us-non-farm-employment-change",
+                "source_type": "public_calendar_discussion_discovery_only",
+                "published_at": "2026-11-06",
+                "freshness_role": "Public result page records 165K actual, 65K forecast and current comments; used only as FX-audience discovery signal.",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass",
+              "decision_gate": "selected_refresh_four_deltas_with_result_fact_independent_confirmation_and_current_discovery",
+              "duplicate_of": [
+                "HR-20260905-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": true,
+                "window_delta": true
+              },
+              "reopen_trigger": "Reassess only on a BLS correction or a later independently verified fact that creates a different non-directional calculation question.",
+              "rationale": "The October result, updated search object, replacement teaching table and short result window satisfy the refresh gate. Refresh the existing payroll fixed-risk material; do not create another payroll-shaped article or forecast market direction."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-11-06",
+          "candidate_id": "HR-20261106-02",
+          "status": "selected",
+          "topic": "FTMO Futures Growth Rule Change: Verify 100K and 150K Drawdown Math for New Evaluations",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 23,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 9,
+          "total_score": 97,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Challenge Simulator",
+            "Daily Loss Limit",
+            "Position Size",
+            "Prop Firm Simulator",
+            "Trailing Drawdown"
+          ],
+          "reason": "FTMO's dated November 5 Futures update changes Growth 100K maximum drawdown from USD 3500 to USD 3000 and its qualifying-day minimum from USD 250 to USD 300; Growth 150K changes from USD 5000 to USD 4500 and USD 300 to USD 450. FindBestProp independently records the same date, cohort and values; a current public Reddit 150K payout-rule thread supplies demand wording only. This is a distinct Growth 100K/150K cohort from the earlier 50K Pro package, so it warrants one plan-specific verification note rather than a misleading overwrite.",
+          "content_status": "review_ready",
+          "content_label": "FTMO Futures Growth 100K/150K规则核验审核包待人工审核",
+          "content_url": "../内容生产/2026-11-06/HR-20261106-02/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-11-07T12:00:00-05:00",
+          "review_state": "awaiting_human_review",
+          "refresh_target": null,
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "new",
+            "urgency": "high",
+            "publish_deadline": "2026-11-07T12:00:00-05:00",
+            "traffic_hook": "FTMO's dated 5 November Futures update changes Growth 100K and 150K requirements for new Evaluations from 04:30 ET: 100K maximum drawdown 3,500 to 3,000 and qualifying-day minimum 250 to 300; 150K 5,000 to 4,500 and 300 to 450. A current public 150K payout/rules thread supplies independent rule-reading demand. The hook is a cohort-specific verification task, not a firm recommendation, payout promise or futures call.",
+            "traffic_window": "Publish only after a human rechecks the FTMO notice, correct plan, account size, phase and creation time. Use the change-led title through 7 November 12:00 ET; stop immediately on a correction, later FTMO rule update, uncertain cohort applicability or loss of a reader-entered calculation path.",
+            "search_intents": [
+              "FTMO Futures Growth 100K 3000 drawdown",
+              "FTMO Futures Growth 150K 4500 drawdown",
+              "FTMO qualifying day 300 450 calculator",
+              "FTMO futures new evaluation rules November 5",
+              "FTMO Growth trailing drawdown risk check"
+            ],
+            "traffic_angle": "Borrow the exact new-rule numbers to answer two readable checks: four qualifying days exactly at the stated daily minimum sum to USD 1,200 for Growth 100K (4 × 300) or USD 1,800 for Growth 150K (4 × 450); and the published maximum-drawdown amount is a cohort-level account boundary, not a single-trade allowance. Readers then enter their own account state and planned stop inputs; no contract point value is assumed.",
+            "calculator_bridge": "Lead with the creation-time/cohort test and the two simple minimum-total calculations. PipGauge Challenge Simulator and Daily Loss Limit are used only to organize reader-entered budget inputs; PositionMath Trailing Drawdown and Prop Firm Simulator provide a secondary cross-check for trailing-rule inputs. Neither site validates FTMO eligibility, terms, account status, payout qualification or execution.",
+            "example_scenario": "Teaching only: a new Growth 100K Evaluation subject to the current USD 3,000 EOD trailing maximum drawdown and USD 300 qualifying-day minimum, or a new Growth 150K subject to USD 4,500 and USD 450. Exactly four qualifying days at the stated minima total USD 1,200 or USD 1,800. This does not establish payout eligibility, actual drawdown floor, trade size, contract value, costs, result or any recommended action.",
+            "distribution_order": [
+              "new PipGauge cohort-verification explainer",
+              "Medium source-linked rules-and-arithmetic draft",
+              "X self-contained change-and-boundary thread",
+              "Reddit native rule-reading question without a first-round link"
+            ],
+            "link_placement": "Give the dated FTMO notice, new-evaluation cutoff, 100K/150K before-and-after numbers, four-day arithmetic and rule-versus-trade boundary before one natural calculator link. The first Reddit post has no link, tracking code, affiliate text or purchase pitch; the X thread stays complete without a click.",
+            "expiry_condition": "Stop using this change-led frame after 7 November 12:00 ET, on any FTMO correction or later rule update, when the reader is not in the new-evaluation cohort, or when only generic prop-firm commentary remains. Do not treat USD 3,000/4,500 or USD 1,200/1,800 as a trade-risk recommendation or guaranteed payout path.",
+            "editorial_boundary": "Do not compare or endorse prop firms, recommend an account purchase, predict futures prices, tell readers to trade, call maximum drawdown a per-trade limit, assume a contract point value, promise a payout or stop fill, or treat Reddit as a rule source. State that all plan, phase, account-date and current official-rule inputs must be verified.",
+            "refresh_target": null,
+            "refresh_signals": {
+              "fact_delta": true,
+              "search_delta": true,
+              "example_delta": true,
+              "window_delta": true
+            },
+            "refresh_updates": [],
+            "content_mainline": "Create one dated Growth 100K/150K cohort-verification note using official before/after drawdown and qualifying-day amounts plus four-day minimum arithmetic; do not overwrite the older 50K Pro daily-loss content or produce a purchase comparison.",
+            "body_material": [
+              "FTMO 5 November 2026 Futures Trading Update",
+              "new-Evaluation 04:30 ET cohort boundary",
+              "Growth 100K 3500-to-3000 and 250-to-300",
+              "Growth 150K 5000-to-4500 and 300-to-450",
+              "4 × 300 = 1200 and 4 × 450 = 1800 teaching arithmetic",
+              "7 November 12:00 ET expiry / official-correction stop gate"
+            ],
+            "product_bridge": "PipGauge organizes reader-entered challenge and risk-budget inputs after the official-rule explanation; PositionMath provides a trailing-drawdown cross-check. Neither tool replaces the current FTMO rulebook or makes an eligibility, trade or payout decision.",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "FTMO",
+                "url": "https://ftmo.com/en/futures/blog/trading-updates/futures-trading-update-5-nov-2026/",
+                "source_type": "official_dated_product_rule_update",
+                "published_at": "2026-11-05",
+                "freshness_role": "Official dated update fixes the new-evaluation cohort and changes Growth 100K/150K maximum drawdown and qualifying-day minimum amounts.",
+                "reliable": true
+              },
+              {
+                "publisher": "FindBestProp",
+                "url": "https://www.findbestprop.com/blog/ftmo-growth-drawdown-topstep-labs-november-6-2026",
+                "source_type": "independent_dated_english_industry_change_tracking",
+                "published_at": "2026-11-06",
+                "freshness_role": "Independent dated tracker records the same November 5 cutoff and 100K/150K before-and-after values; official FTMO terms remain controlling.",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit",
+                "url": "https://www.reddit.com/r/PropFirmTester/comments/1xmkad1/3_x_150k_ftmo_accounts/",
+                "source_type": "public_rule_reading_discussion_discovery_only",
+                "published_at": "2026-11-03",
+                "freshness_role": "Current public 150K payout/rules discussion provides independent demand and query wording but does not verify any FTMO term.",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass",
+              "decision_gate": "selected_new_distinct_growth_cohort_with_official_fact_and_independent_current_rule_reading_demand",
+              "duplicate_of": [
+                "HR-20260918-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": true,
+                "window_delta": true
+              },
+              "reopen_trigger": "Reassess if FTMO corrects the update, changes objectives, clarifies cohort/phase scope, or a later official update changes the reader task.",
+              "rationale": "The old selected package was a 50K Pro daily-loss route. New Growth 100K/150K EOD trailing-drawdown and qualifying-day values cannot be inserted into that page without confusing cohorts; a narrowly scoped new verification note is safer than an artificial refresh."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-11-06",
+          "candidate_id": "HR-20261106-03",
+          "status": "observation",
+          "topic": "Canada October Labour Force Survey Is a Fresh Data Watch Without a Verified Calculator Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 17,
+          "calculator_fit": 16,
+          "evidence_quality": 10,
+          "actionability": 6,
+          "total_score": 74,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "P&L"
+          ],
+          "reason": "Statistics Canada’s scheduled October Labour Force Survey is current, but accessible English sources did not yield a contemporaneous official result plus an independent result report and public non-directional USD/CAD calculation demand at scan time. Do not manufacture a CAD sizing article from a calendar or direction commentary.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Statistics Canada",
+                "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/261009/dq261009a-eng.htm",
+                "source_type": "official_release_schedule_context",
+                "published_at": "2026-10-09",
+                "freshness_role": "Official September release says the next LFS release for October data is November 6, but is not retained as an October result fact.",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_missing_current_official_result_independent_result_coverage_and_attributable_non_directional_calculator_demand",
+              "duplicate_of": [
+                "HR-20260903-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Require an official October result, independent English result coverage and an attributable public USD/CAD fixed-risk/pip-value/margin/cost/quantity request before considering a refresh.",
+              "rationale": "Calendar timeliness and direction-led attention do not create a natural calculator journey."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-11-06",
+          "candidate_id": "HR-20261106-04",
+          "status": "observation",
+          "topic": "FTMO November 7 Maintenance Is an Operational Notice Without a Natural Calculator Handoff",
+          "primary_site": "PipGauge",
+          "freshness": 24,
+          "traffic_potential": 17,
+          "calculator_fit": 15,
+          "evidence_quality": 12,
+          "actionability": 5,
+          "total_score": 73,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Forex Session Clock",
+            "Daily Loss Limit"
+          ],
+          "reason": "FTMO's November 5 update lists a November 7 supporting-systems maintenance window, but the notice has no independently verified current discovery signal or specific risk-input calculation. Account-access availability is not a reason to create generic daily-loss content.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "FTMO",
+                "url": "https://ftmo.com/en/futures/blog/trading-updates/futures-trading-update-5-nov-2026/",
+                "source_type": "official_dated_operational_notice",
+                "published_at": "2026-11-05",
+                "freshness_role": "Official notice lists a 7 November supporting-systems maintenance interval.",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_operational_notice_without_independent_current_demand_or_specific_calculator_task",
+              "duplicate_of": [
+                "HR-20261031-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": false
+              },
+              "reopen_trigger": "Require a dated rule or clock delta and public attributable calculation demand; service access alone is not a calculator topic.",
+              "rationale": "A maintenance interval should not be recast as generic loss-limit content."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-11-06",
+          "candidate_id": "HR-20261106-05",
+          "status": "discarded",
+          "topic": "Directional Macro Calls Crypto Hype Politics Sports Entertainment and Unverifiable Social Material",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 24,
+          "calculator_fit": 3,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 59,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L",
+            "Margin"
+          ],
+          "reason": "Excluded payroll and CAD direction calls, price targets, trade signals, midterm commentary, generic leverage posts, pure crypto promotion, sports and entertainment, login-wall pages, screenshots and unverified social claims. None supplied a new fact-led non-directional calculator journey."
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-11-06T22:08:00+08:00",
+          "source_count": 3,
+          "note": "覆盖 BLS 6 November Employment Situation、FTMO 5 November Futures Trading Update 与 Statistics Canada Labour Force Survey release context；一手来源只核验事实/条款，不用于方向或执行主张。"
+        },
+        {
+          "channel": "独立可靠英文来源",
+          "status": "complete",
+          "checked_at": "2026-11-06T22:08:00+08:00",
+          "source_count": 1,
+          "note": "AP 同日独立确认美国 October payroll result；未把预览、转引或社区帖子计为独立事实源。"
+        },
+        {
+          "channel": "Reddit / ForexFactory / BabyPips",
+          "status": "partial",
+          "checked_at": "2026-11-06T22:08:00+08:00",
+          "source_count": 2,
+          "note": "ForexFactory payroll result page 和公开 Reddit FTMO 150K rule-reading thread 仅作当前发现/措辞信号，不能替代官方事实。BabyPips 未保留本期稳定、候选专属信号。"
+        },
+        {
+          "channel": "X / Quora",
+          "status": "limited",
+          "checked_at": "2026-11-06T22:08:00+08:00",
+          "source_count": 0,
+          "note": "没有保留稳定、公开、可归属且非方向性的候选信号；登录墙、动态流、截图和不可验证材料不计入。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-11-06_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-11-06_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-11-06"
+      }
+    },
+    {
       "scan_date": "2026-11-05",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 102,
@@ -341,7 +768,7 @@
     },
     {
       "scan_date": "2026-11-04",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 101,
@@ -597,7 +1024,7 @@
     },
     {
       "scan_date": "2026-11-03",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 100,
@@ -928,7 +1355,7 @@
     },
     {
       "scan_date": "2026-11-02",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 99,
@@ -1202,7 +1629,7 @@
     },
     {
       "scan_date": "2026-11-01",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 98,
@@ -1459,7 +1886,7 @@
     },
     {
       "scan_date": "2026-10-31",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 97,
@@ -1721,7 +2148,7 @@
     },
     {
       "scan_date": "2026-10-30",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 96,
@@ -1985,7 +2412,7 @@
     },
     {
       "scan_date": "2026-10-29",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 95,
@@ -2259,7 +2686,7 @@
     },
     {
       "scan_date": "2026-10-28",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 94,
@@ -2533,7 +2960,7 @@
     },
     {
       "scan_date": "2026-10-27",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 93,
@@ -2808,7 +3235,7 @@
     },
     {
       "scan_date": "2026-10-26",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 92,
@@ -3052,7 +3479,7 @@
     },
     {
       "scan_date": "2026-10-25",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 91,
@@ -3259,7 +3686,7 @@
     },
     {
       "scan_date": "2026-10-24",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 90,
@@ -3480,7 +3907,7 @@
     },
     {
       "scan_date": "2026-10-23",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 89,
@@ -3811,7 +4238,7 @@
     },
     {
       "scan_date": "2026-10-22",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 88,
@@ -4027,7 +4454,7 @@
     },
     {
       "scan_date": "2026-10-21",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 87,
@@ -4330,7 +4757,7 @@
     },
     {
       "scan_date": "2026-10-20",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 86,
@@ -4557,7 +4984,7 @@
     },
     {
       "scan_date": "2026-10-19",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 85,
@@ -4773,7 +5200,7 @@
     },
     {
       "scan_date": "2026-10-18",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 84,
@@ -4987,7 +5414,7 @@
     },
     {
       "scan_date": "2026-10-17",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 83,
@@ -5255,7 +5682,7 @@
     },
     {
       "scan_date": "2026-10-16",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 82,
@@ -5561,7 +5988,7 @@
     },
     {
       "scan_date": "2026-10-15",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 81,
@@ -5772,7 +6199,7 @@
     },
     {
       "scan_date": "2026-10-14",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 80,
@@ -6055,7 +6482,7 @@
     },
     {
       "scan_date": "2026-10-13",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 79,
@@ -6271,7 +6698,7 @@
     },
     {
       "scan_date": "2026-10-12",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 78,
@@ -6543,7 +6970,7 @@
     },
     {
       "scan_date": "2026-10-11",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 77,
@@ -6804,7 +7231,7 @@
     },
     {
       "scan_date": "2026-10-10",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 76,
@@ -7061,7 +7488,7 @@
     },
     {
       "scan_date": "2026-10-09",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 75,
@@ -7272,7 +7699,7 @@
     },
     {
       "scan_date": "2026-10-08",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 74,
@@ -7459,7 +7886,7 @@
     },
     {
       "scan_date": "2026-10-07",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 73,
@@ -7623,7 +8050,7 @@
     },
     {
       "scan_date": "2026-10-06",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 72,
@@ -7786,7 +8213,7 @@
     },
     {
       "scan_date": "2026-10-05",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 71,
@@ -8053,7 +8480,7 @@
     },
     {
       "scan_date": "2026-10-04",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 70,
@@ -8279,7 +8706,7 @@
     },
     {
       "scan_date": "2026-10-03",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 69,
@@ -8502,7 +8929,7 @@
     },
     {
       "scan_date": "2026-10-02",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 68,
@@ -8785,7 +9212,7 @@
     },
     {
       "scan_date": "2026-10-01",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 67,
@@ -9064,7 +9491,7 @@
     },
     {
       "scan_date": "2026-09-30",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 66,
@@ -9474,7 +9901,7 @@
     },
     {
       "scan_date": "2026-09-29",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 65,
@@ -9798,7 +10225,7 @@
     },
     {
       "scan_date": "2026-09-28",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 64,
@@ -10083,7 +10510,7 @@
     },
     {
       "scan_date": "2026-09-27",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 63,
@@ -10433,7 +10860,7 @@
     },
     {
       "scan_date": "2026-09-26",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 62,
@@ -10642,7 +11069,7 @@
     },
     {
       "scan_date": "2026-09-25",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 61,
@@ -10922,7 +11349,7 @@
     },
     {
       "scan_date": "2026-09-24",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 60,
@@ -11202,7 +11629,7 @@
     },
     {
       "scan_date": "2026-09-23",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 59,
@@ -11440,7 +11867,7 @@
     },
     {
       "scan_date": "2026-09-22",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 58,
@@ -11729,7 +12156,7 @@
     },
     {
       "scan_date": "2026-09-21",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 57,
@@ -11951,7 +12378,7 @@
     },
     {
       "scan_date": "2026-09-20",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 56,
@@ -12236,7 +12663,7 @@
     },
     {
       "scan_date": "2026-09-19",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 55,
@@ -12511,7 +12938,7 @@
     },
     {
       "scan_date": "2026-09-18",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 54,
@@ -12793,7 +13220,7 @@
     },
     {
       "scan_date": "2026-09-17",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 53,
@@ -13138,7 +13565,7 @@
     },
     {
       "scan_date": "2026-09-16",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 52,
@@ -13428,7 +13855,7 @@
     },
     {
       "scan_date": "2026-09-15",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 51,
@@ -13642,7 +14069,7 @@
     },
     {
       "scan_date": "2026-09-14",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 50,
@@ -13846,7 +14273,7 @@
     },
     {
       "scan_date": "2026-09-13",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 49,
@@ -14051,7 +14478,7 @@
     },
     {
       "scan_date": "2026-09-12",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 48,
@@ -14237,7 +14664,7 @@
     },
     {
       "scan_date": "2026-09-11",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 47,
@@ -14454,7 +14881,7 @@
     },
     {
       "scan_date": "2026-09-10",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 46,
@@ -14740,7 +15167,7 @@
     },
     {
       "scan_date": "2026-09-09",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 45,
@@ -15020,7 +15447,7 @@
     },
     {
       "scan_date": "2026-09-08",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 44,
@@ -15349,7 +15776,7 @@
     },
     {
       "scan_date": "2026-09-07",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 43,
@@ -15651,7 +16078,7 @@
     },
     {
       "scan_date": "2026-09-06",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 42,
@@ -15967,7 +16394,7 @@
     },
     {
       "scan_date": "2026-09-05",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 41,
@@ -16289,7 +16716,7 @@
     },
     {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -16602,7 +17029,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -16913,7 +17340,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -17244,7 +17671,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -17582,7 +18009,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -17975,7 +18402,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -18385,7 +18812,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -18857,7 +19284,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -19202,7 +19629,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -19547,7 +19974,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -19999,7 +20426,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -20412,7 +20839,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -20644,7 +21071,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -21089,7 +21516,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -21464,7 +21891,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -21856,7 +22283,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -22232,7 +22659,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -22556,7 +22983,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -22939,7 +23366,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -23280,7 +23707,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -23655,7 +24082,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -24043,7 +24470,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -24388,7 +24815,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -24716,7 +25143,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -25028,7 +25455,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -25349,7 +25776,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -25710,7 +26137,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -26063,7 +26490,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -26507,7 +26934,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -27016,7 +27443,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -27486,7 +27913,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -28029,7 +28456,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -28301,7 +28728,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -28614,7 +29041,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -29049,7 +29476,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -29563,7 +29990,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -30072,7 +30499,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -30540,7 +30967,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -30954,7 +31381,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -31353,7 +31780,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-11-05T22:07:06+08:00",
+      "generated_at": "2026-11-06T22:15:34+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -31792,10 +32219,10 @@
       }
     }
   ],
-  "scan_date": "2026-11-05",
+  "scan_date": "2026-11-06",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 102,
+    "day": 103,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -31803,172 +32230,296 @@
     "mode": "topic_traffic_playbooks_and_content_drafts"
   },
   "stats": {
-    "selected": 0,
-    "observation": 3,
-    "discarded": 0,
-    "total": 3,
-    "selected_average": 0,
+    "selected": 2,
+    "observation": 2,
+    "discarded": 1,
+    "total": 5,
+    "selected_average": 98.5,
     "all_selected_pass_gate": true,
-    "content_ready": 0,
-    "playbook_ready": 0
+    "content_ready": 2,
+    "playbook_ready": 2
   },
   "candidates": [
     {
-      "scan_date": "2026-11-05",
-      "candidate_id": "HR-20261105-01",
-      "status": "observation",
-      "topic": "Bank of England Raises Bank Rate to 4% but Still Has No New GBP Calculator Journey",
+      "scan_date": "2026-11-06",
+      "candidate_id": "HR-20261106-01",
+      "status": "selected",
+      "topic": "U.S. Payrolls Added 165000: Refresh the Fixed-Risk Check After the October Report",
       "primary_site": "PipGauge",
       "freshness": 25,
       "traffic_potential": 25,
       "calculator_fit": 25,
       "evidence_quality": 15,
-      "actionability": 5,
-      "total_score": 95,
+      "actionability": 10,
+      "total_score": 100,
       "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
         "Pip Value",
         "Position Size",
-        "Margin",
         "P&L",
         "Spread Cost"
       ],
-      "reason": "The Bank of England's November 5 Monetary Policy Report and AP independently verify the 25bp increase from 3.75% to 4% and the 8-1 vote. Public Reddit/ForexFactory discovery remains rate-path, mortgage or GBP-direction discussion rather than an attributable non-directional pip-value, fixed-risk, margin, cost, quantity or portfolio-heat request. Against HR-20260730-01 and later BoE observations, the result creates fact_delta and window_delta only; do not refresh a generic GBP/USD sizing table.",
+      "reason": "BLS's November 6 Employment Situation reports October payrolls +165000 and unemployment 4.1%; AP independently confirms both figures and the 65000 consensus comparison. ForexFactory's result page records the current actual and active comments as discovery only. All four refresh signals replace the prior August payroll snapshot in HR-20260905-01 without predicting the dollar, EUR/USD, rates or volatility.",
+      "content_status": "review_ready",
+      "content_label": "美国10月就业结果固定风险刷新审核包待人工审核",
+      "content_url": "../内容生产/2026-11-06/HR-20261106-01/index.html",
+      "content_format": "Medium / Reddit / X",
+      "deadline": "2026-11-07T12:00:00-05:00",
+      "review_state": "awaiting_human_review",
+      "refresh_target": "HR-20260905-01",
+      "traffic_playbook": {
+        "playbook_status": "ready",
+        "execution_mode": "refresh",
+        "urgency": "high",
+        "publish_deadline": "2026-11-07T12:00:00-05:00",
+        "traffic_hook": "BLS has published October payroll growth of 165,000 and unemployment at 4.1%; AP independently reported the same result and the 65,000 consensus comparison. ForexFactory's public result page supplies current FX-audience discovery wording. The hook is the completed result and a reader's fixed-risk check, never a claim about the dollar, EUR/USD, rates or volatility.",
+        "traffic_window": "Update the existing payroll fixed-risk page only after a human rechecks BLS and AP. Use the result-led title through 7 November 12:00 ET, then retire it; stop earlier on a BLS correction or a later independently verified fact that changes the reader question.",
+        "search_intents": [
+          "October 2026 jobs report 165000 forex risk",
+          "payrolls 165K position size calculator",
+          "EURUSD fixed risk after jobs report",
+          "EURUSD pip value 30 pip stop",
+          "how many lots EURUSD for 50 dollar risk"
+        ],
+        "traffic_angle": "Borrow the released +165,000 / 4.1% / 65,000-consensus fact set to answer one non-directional question: with a USD 10,000 teaching account, USD 50 maximum planned price risk, and an explicitly approximate USD 10-per-pip EUR/USD USD-account input, what size corresponds to a 30, 60 or 90-pip planned stop? The readable answer is about 0.16, 0.08 or 0.05 standard lot before costs. It is risk-budget arithmetic, not a payroll-move estimate or forecast.",
+        "calculator_bridge": "Give the result facts and formula first. PipGauge Pip Value verifies the reader's actual EUR/USD/account/contract pip value; PipGauge Position Size verifies reader-entered USD risk and planned stop. P&L or Spread Cost are separate hypothetical checks only. These tools do not interpret payrolls, forecast markets or guarantee a stop fill.",
+        "example_scenario": "Teaching only: USD 10,000 account; USD 50 maximum planned price risk; EUR/USD in a USD account at an approximate USD 10 per pip per standard lot. A 30/60/90-pip planned stop maps to about 0.16/0.08/0.05 standard lot before commission, spread, slippage, gaps, minimum size or platform rules. No input is a live quote, expected move or trade instruction.",
+        "distribution_order": [
+          "refresh existing payroll fixed-risk article HR-20260905-01",
+          "Medium dated post-report fixed-risk refresh",
+          "X self-contained payroll-risk thread",
+          "Reddit native process discussion without a first-round link"
+        ],
+        "link_placement": "State the released data, formula, three readable sizes and plan-versus-fill limit before one PipGauge verification link. Do not put a link, tracking parameter or product pitch in the initial Reddit post; the X thread remains independently readable.",
+        "expiry_condition": "Stop using this October-result frame at 7 November 12:00 ET, on a BLS correction, or if later independently verified information creates a different calculation question. Do not recycle 30/60/90 pips as an expected payroll move or evergreen commentary.",
+        "editorial_boundary": "Do not predict EUR/USD, the dollar, the Fed, interest rates, volatility, profitability or a market move. Do not recommend a position, say a planned stop is a guaranteed fill, or present assumed pip value, spread or costs as observed event execution data.",
+        "refresh_target": "HR-20260905-01",
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "refresh_updates": [
+          "replace the August +162,000 / 4.1% / +55,000 revisions fact block with October +165,000 / 4.1% and the AP-noted 65,000 consensus comparison",
+          "replace all September time language with the 6 November published-result / 7 November expiry window",
+          "replace the 20/40/80-pip USD 50 teaching table with 30/60/90 pips, explicitly not an expected move",
+          "retain the non-directional and plan-versus-fill boundaries"
+        ],
+        "content_mainline": "Refresh the existing payroll fixed-risk article into a dated October-result check using published +165,000 / 4.1% facts and transparent USD 50 30/60/90-pip arithmetic; do not create another payroll article.",
+        "body_material": [
+          "BLS 6 November Employment Situation: +165,000 and 4.1%",
+          "AP independent same-day result coverage and 65,000 consensus comparison",
+          "ForexFactory result page as discovery only",
+          "USD 50 risk at 30/60/90 pips",
+          "7 November 12:00 ET expiry and correction stop gate"
+        ],
+        "product_bridge": "PipGauge verifies EUR/USD pip value and fixed-risk size after the fact-led explanation; it does not interpret payrolls, forecast a currency move or guarantee execution.",
+        "product_bridge_type": "existing"
+      },
       "scan_audit": {
         "sources": [
           {
-            "publisher": "Bank of England",
-            "url": "https://www.bankofengland.co.uk/monetary-policy-report/2026/november-2026",
-            "source_type": "official_dated_monetary_policy_report",
-            "published_at": "2026-11-05",
-            "freshness_role": "Official report states the MPC voted 8-1 to increase Bank Rate 25bp to 4% at the meeting ending 4 November.",
+            "publisher": "U.S. Bureau of Labor Statistics",
+            "url": "https://www.bls.gov/news.release/empsit.htm",
+            "source_type": "official_dated_employment_situation_result",
+            "published_at": "2026-11-06",
+            "freshness_role": "Official October result reports total nonfarm payroll employment increased 165,000 and unemployment rate 4.1 percent.",
             "reliable": true
           },
           {
             "publisher": "Associated Press",
-            "url": "https://apnews.com/article/britain-economy-interest-rates-dce506792fe3b452ec4c3982147286f3",
+            "url": "https://apnews.com/article/jobs-inflation-paycheck-salary-employment-746ee02db33d0372980f815ada33d8d3",
             "source_type": "independent_dated_english_result_coverage",
-            "published_at": "2026-11-05",
-            "freshness_role": "Independent same-day result coverage confirms the 25bp increase from 3.75% to 4% and the unexpected unanimous decision to increase.",
+            "published_at": "2026-11-06",
+            "freshness_role": "Independent same-day coverage confirms 165,000 jobs, 4.1 percent unemployment and the 65,000 expected figure.",
             "reliable": true
           },
           {
-            "publisher": "Reddit public index",
-            "url": "https://www.reddit.com/r/unitedkingdom/comments/1xo940f/uk_interest_rates_bank_of_england_expected_to/",
-            "source_type": "public_discussion_discovery_only",
-            "published_at": "2026-11-05",
-            "freshness_role": "Shows current public attention, but retained threads are rate, mortgage and GBP-direction discussion rather than calculator demand.",
+            "publisher": "ForexFactory",
+            "url": "https://www.forexfactory.com/calendar/66-us-non-farm-employment-change",
+            "source_type": "public_calendar_discussion_discovery_only",
+            "published_at": "2026-11-06",
+            "freshness_role": "Public result page records 165K actual, 65K forecast and current comments; used only as FX-audience discovery signal.",
             "reliable": false
           }
         ],
         "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_result_fact_without_attributable_non_directional_calculator_traffic_path",
+          "novelty_gate": "pass",
+          "decision_gate": "selected_refresh_four_deltas_with_result_fact_independent_confirmation_and_current_discovery",
           "duplicate_of": [
-            "HR-20260724-11",
-            "HR-20260730-01",
-            "HR-20260917-02",
-            "HR-20261104-02"
+            "HR-20260905-01"
           ],
           "refresh_signals": {
             "fact_delta": true,
-            "search_delta": false,
-            "example_delta": false,
+            "search_delta": true,
+            "example_delta": true,
             "window_delta": true
           },
-          "reopen_trigger": "Require an attributable public BoE-result-specific fixed-risk, pip-value, margin, cost, quantity or portfolio-heat request plus another refresh signal; refresh existing BoE material rather than make a duplicate.",
-          "rationale": "The rate result is real and current, but it changes neither the retained reader calculation nor a safely replaceable numerical teaching example. A generic GBP sizing table would manufacture demand and invite forecast framing."
+          "reopen_trigger": "Reassess only on a BLS correction or a later independently verified fact that creates a different non-directional calculation question.",
+          "rationale": "The October result, updated search object, replacement teaching table and short result window satisfy the refresh gate. Refresh the existing payroll fixed-risk material; do not create another payroll-shaped article or forecast market direction."
         }
       }
     },
     {
-      "scan_date": "2026-11-05",
-      "candidate_id": "HR-20261105-02",
-      "status": "observation",
-      "topic": "The5ers Daily Pause Page Is Newly Dated but Lacks Independent Rule-Specific Demand",
-      "primary_site": "PositionMath",
-      "freshness": 24,
-      "traffic_potential": 18,
+      "scan_date": "2026-11-06",
+      "candidate_id": "HR-20261106-02",
+      "status": "selected",
+      "topic": "FTMO Futures Growth Rule Change: Verify 100K and 150K Drawdown Math for New Evaluations",
+      "primary_site": "PipGauge",
+      "freshness": 25,
+      "traffic_potential": 23,
       "calculator_fit": 25,
-      "evidence_quality": 10,
-      "actionability": 6,
-      "total_score": 83,
-      "hard_gate": false,
-      "reliable_sources": 1,
+      "evidence_quality": 15,
+      "actionability": 9,
+      "total_score": 97,
+      "hard_gate": true,
+      "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
+        "Challenge Simulator",
         "Daily Loss Limit",
         "Position Size",
-        "Prop Firm Simulator"
+        "Prop Firm Simulator",
+        "Trailing Drawdown"
       ],
-      "reason": "The5ers' FAQ is marked last update November 2 and says Daily Pause closes open trades and uses the higher of balance or equity at 00:00 GMT+3. The rule could support reader-entered daily-loss arithmetic, but no independent current public source or attributable query about this dated update was verified. Do not turn one firm FAQ into a purchase-oriented or generic prop-risk traffic post.",
+      "reason": "FTMO's dated November 5 Futures update changes Growth 100K maximum drawdown from USD 3500 to USD 3000 and its qualifying-day minimum from USD 250 to USD 300; Growth 150K changes from USD 5000 to USD 4500 and USD 300 to USD 450. FindBestProp independently records the same date, cohort and values; a current public Reddit 150K payout-rule thread supplies demand wording only. This is a distinct Growth 100K/150K cohort from the earlier 50K Pro package, so it warrants one plan-specific verification note rather than a misleading overwrite.",
+      "content_status": "review_ready",
+      "content_label": "FTMO Futures Growth 100K/150K规则核验审核包待人工审核",
+      "content_url": "../内容生产/2026-11-06/HR-20261106-02/index.html",
+      "content_format": "Medium / Reddit / X",
+      "deadline": "2026-11-07T12:00:00-05:00",
+      "review_state": "awaiting_human_review",
+      "refresh_target": null,
+      "traffic_playbook": {
+        "playbook_status": "ready",
+        "execution_mode": "new",
+        "urgency": "high",
+        "publish_deadline": "2026-11-07T12:00:00-05:00",
+        "traffic_hook": "FTMO's dated 5 November Futures update changes Growth 100K and 150K requirements for new Evaluations from 04:30 ET: 100K maximum drawdown 3,500 to 3,000 and qualifying-day minimum 250 to 300; 150K 5,000 to 4,500 and 300 to 450. A current public 150K payout/rules thread supplies independent rule-reading demand. The hook is a cohort-specific verification task, not a firm recommendation, payout promise or futures call.",
+        "traffic_window": "Publish only after a human rechecks the FTMO notice, correct plan, account size, phase and creation time. Use the change-led title through 7 November 12:00 ET; stop immediately on a correction, later FTMO rule update, uncertain cohort applicability or loss of a reader-entered calculation path.",
+        "search_intents": [
+          "FTMO Futures Growth 100K 3000 drawdown",
+          "FTMO Futures Growth 150K 4500 drawdown",
+          "FTMO qualifying day 300 450 calculator",
+          "FTMO futures new evaluation rules November 5",
+          "FTMO Growth trailing drawdown risk check"
+        ],
+        "traffic_angle": "Borrow the exact new-rule numbers to answer two readable checks: four qualifying days exactly at the stated daily minimum sum to USD 1,200 for Growth 100K (4 × 300) or USD 1,800 for Growth 150K (4 × 450); and the published maximum-drawdown amount is a cohort-level account boundary, not a single-trade allowance. Readers then enter their own account state and planned stop inputs; no contract point value is assumed.",
+        "calculator_bridge": "Lead with the creation-time/cohort test and the two simple minimum-total calculations. PipGauge Challenge Simulator and Daily Loss Limit are used only to organize reader-entered budget inputs; PositionMath Trailing Drawdown and Prop Firm Simulator provide a secondary cross-check for trailing-rule inputs. Neither site validates FTMO eligibility, terms, account status, payout qualification or execution.",
+        "example_scenario": "Teaching only: a new Growth 100K Evaluation subject to the current USD 3,000 EOD trailing maximum drawdown and USD 300 qualifying-day minimum, or a new Growth 150K subject to USD 4,500 and USD 450. Exactly four qualifying days at the stated minima total USD 1,200 or USD 1,800. This does not establish payout eligibility, actual drawdown floor, trade size, contract value, costs, result or any recommended action.",
+        "distribution_order": [
+          "new PipGauge cohort-verification explainer",
+          "Medium source-linked rules-and-arithmetic draft",
+          "X self-contained change-and-boundary thread",
+          "Reddit native rule-reading question without a first-round link"
+        ],
+        "link_placement": "Give the dated FTMO notice, new-evaluation cutoff, 100K/150K before-and-after numbers, four-day arithmetic and rule-versus-trade boundary before one natural calculator link. The first Reddit post has no link, tracking code, affiliate text or purchase pitch; the X thread stays complete without a click.",
+        "expiry_condition": "Stop using this change-led frame after 7 November 12:00 ET, on any FTMO correction or later rule update, when the reader is not in the new-evaluation cohort, or when only generic prop-firm commentary remains. Do not treat USD 3,000/4,500 or USD 1,200/1,800 as a trade-risk recommendation or guaranteed payout path.",
+        "editorial_boundary": "Do not compare or endorse prop firms, recommend an account purchase, predict futures prices, tell readers to trade, call maximum drawdown a per-trade limit, assume a contract point value, promise a payout or stop fill, or treat Reddit as a rule source. State that all plan, phase, account-date and current official-rule inputs must be verified.",
+        "refresh_target": null,
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "refresh_updates": [],
+        "content_mainline": "Create one dated Growth 100K/150K cohort-verification note using official before/after drawdown and qualifying-day amounts plus four-day minimum arithmetic; do not overwrite the older 50K Pro daily-loss content or produce a purchase comparison.",
+        "body_material": [
+          "FTMO 5 November 2026 Futures Trading Update",
+          "new-Evaluation 04:30 ET cohort boundary",
+          "Growth 100K 3500-to-3000 and 250-to-300",
+          "Growth 150K 5000-to-4500 and 300-to-450",
+          "4 × 300 = 1200 and 4 × 450 = 1800 teaching arithmetic",
+          "7 November 12:00 ET expiry / official-correction stop gate"
+        ],
+        "product_bridge": "PipGauge organizes reader-entered challenge and risk-budget inputs after the official-rule explanation; PositionMath provides a trailing-drawdown cross-check. Neither tool replaces the current FTMO rulebook or makes an eligibility, trade or payout decision.",
+        "product_bridge_type": "existing"
+      },
       "scan_audit": {
         "sources": [
           {
-            "publisher": "The5ers",
-            "url": "https://the5ers.com/faqs/how-does-the-daily-pause-work/",
-            "source_type": "official_dated_product_rule_faq",
-            "published_at": "2026-11-02",
-            "freshness_role": "Official FAQ is labelled last update November 2 and describes the Daily Pause scope, closure effect and balance-versus-equity reference at 00:00 GMT+3.",
+            "publisher": "FTMO",
+            "url": "https://ftmo.com/en/futures/blog/trading-updates/futures-trading-update-5-nov-2026/",
+            "source_type": "official_dated_product_rule_update",
+            "published_at": "2026-11-05",
+            "freshness_role": "Official dated update fixes the new-evaluation cohort and changes Growth 100K/150K maximum drawdown and qualifying-day minimum amounts.",
             "reliable": true
+          },
+          {
+            "publisher": "FindBestProp",
+            "url": "https://www.findbestprop.com/blog/ftmo-growth-drawdown-topstep-labs-november-6-2026",
+            "source_type": "independent_dated_english_industry_change_tracking",
+            "published_at": "2026-11-06",
+            "freshness_role": "Independent dated tracker records the same November 5 cutoff and 100K/150K before-and-after values; official FTMO terms remain controlling.",
+            "reliable": true
+          },
+          {
+            "publisher": "Reddit",
+            "url": "https://www.reddit.com/r/PropFirmTester/comments/1xmkad1/3_x_150k_ftmo_accounts/",
+            "source_type": "public_rule_reading_discussion_discovery_only",
+            "published_at": "2026-11-03",
+            "freshness_role": "Current public 150K payout/rules discussion provides independent demand and query wording but does not verify any FTMO term.",
+            "reliable": false
           }
         ],
         "decision": {
-          "novelty_gate": "fail",
-          "decision_gate": "observation_single_official_rule_source_without_independent_current_impact_or_rule_specific_demand",
-          "duplicate_of": [],
+          "novelty_gate": "pass",
+          "decision_gate": "selected_new_distinct_growth_cohort_with_official_fact_and_independent_current_rule_reading_demand",
+          "duplicate_of": [
+            "HR-20260918-01"
+          ],
           "refresh_signals": {
             "fact_delta": true,
-            "search_delta": false,
-            "example_delta": false,
-            "window_delta": false
+            "search_delta": true,
+            "example_delta": true,
+            "window_delta": true
           },
-          "reopen_trigger": "Require a dated/versioned official difference, independent public impact or discussion signal, and a verified question about balance-versus-equity Daily Pause arithmetic before reconsidering.",
-          "rationale": "A single official FAQ can establish a product fact but cannot by itself establish the current demand and traffic window required for a publication-quality calculator bridge."
+          "reopen_trigger": "Reassess if FTMO corrects the update, changes objectives, clarifies cohort/phase scope, or a later official update changes the reader task.",
+          "rationale": "The old selected package was a 50K Pro daily-loss route. New Growth 100K/150K EOD trailing-drawdown and qualifying-day values cannot be inserted into that page without confusing cohorts; a narrowly scoped new verification note is safer than an artificial refresh."
         }
       }
     },
     {
-      "scan_date": "2026-11-05",
-      "candidate_id": "HR-20261105-03",
+      "scan_date": "2026-11-06",
+      "candidate_id": "HR-20261106-03",
       "status": "observation",
-      "topic": "October U.S. Employment Situation Is Still a Future Calendar Item",
+      "topic": "Canada October Labour Force Survey Is a Fresh Data Watch Without a Verified Calculator Journey",
       "primary_site": "PipGauge",
-      "freshness": 24,
-      "traffic_potential": 22,
-      "calculator_fit": 15,
-      "evidence_quality": 7,
-      "actionability": 4,
-      "total_score": 72,
+      "freshness": 25,
+      "traffic_potential": 17,
+      "calculator_fit": 16,
+      "evidence_quality": 10,
+      "actionability": 6,
+      "total_score": 74,
       "hard_gate": false,
       "reliable_sources": 1,
       "fresh_signal": true,
       "calculator_mapping": [
         "Pip Value",
         "Position Size",
-        "Margin",
-        "Spread Cost"
+        "P&L"
       ],
-      "reason": "BLS confirms the October Employment Situation for November 6 at 08:30 ET, but no official result, independent result coverage or event-specific non-directional calculator demand exists at the scan cutoff. A pre-result payroll lot-size article would duplicate HR-20260905-01 and invite forecast framing.",
+      "reason": "Statistics Canada’s scheduled October Labour Force Survey is current, but accessible English sources did not yield a contemporaneous official result plus an independent result report and public non-directional USD/CAD calculation demand at scan time. Do not manufacture a CAD sizing article from a calendar or direction commentary.",
       "scan_audit": {
         "sources": [
           {
-            "publisher": "U.S. Bureau of Labor Statistics",
-            "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm",
-            "source_type": "official_future_release_schedule",
-            "published_at": "2026-11-03",
-            "freshness_role": "Official schedule lists the October Employment Situation at 08:30 ET on November 6, not a result.",
+            "publisher": "Statistics Canada",
+            "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/261009/dq261009a-eng.htm",
+            "source_type": "official_release_schedule_context",
+            "published_at": "2026-10-09",
+            "freshness_role": "Official September release says the next LFS release for October data is November 6, but is not retained as an October result fact.",
             "reliable": true
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_future_calendar_without_result_or_calculator_demand",
+          "decision_gate": "observation_missing_current_official_result_independent_result_coverage_and_attributable_non_directional_calculator_demand",
           "duplicate_of": [
-            "HR-20260905-01",
-            "HR-20261104-03"
+            "HR-20260903-01"
           ],
           "refresh_signals": {
             "fact_delta": false,
@@ -31976,50 +32527,120 @@
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "Wait for the BLS result, independent English result coverage and a public result-specific non-directional calculator question; then refresh the existing payroll content only.",
-          "rationale": "A release clock does not establish a result-led reader task. Generic lot-size content would repeat the old payroll fixed-risk path and risk becoming a forecast wrapper."
+          "reopen_trigger": "Require an official October result, independent English result coverage and an attributable public USD/CAD fixed-risk/pip-value/margin/cost/quantity request before considering a refresh.",
+          "rationale": "Calendar timeliness and direction-led attention do not create a natural calculator journey."
         }
       }
+    },
+    {
+      "scan_date": "2026-11-06",
+      "candidate_id": "HR-20261106-04",
+      "status": "observation",
+      "topic": "FTMO November 7 Maintenance Is an Operational Notice Without a Natural Calculator Handoff",
+      "primary_site": "PipGauge",
+      "freshness": 24,
+      "traffic_potential": 17,
+      "calculator_fit": 15,
+      "evidence_quality": 12,
+      "actionability": 5,
+      "total_score": 73,
+      "hard_gate": false,
+      "reliable_sources": 1,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "Forex Session Clock",
+        "Daily Loss Limit"
+      ],
+      "reason": "FTMO's November 5 update lists a November 7 supporting-systems maintenance window, but the notice has no independently verified current discovery signal or specific risk-input calculation. Account-access availability is not a reason to create generic daily-loss content.",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "FTMO",
+            "url": "https://ftmo.com/en/futures/blog/trading-updates/futures-trading-update-5-nov-2026/",
+            "source_type": "official_dated_operational_notice",
+            "published_at": "2026-11-05",
+            "freshness_role": "Official notice lists a 7 November supporting-systems maintenance interval.",
+            "reliable": true
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "observation_operational_notice_without_independent_current_demand_or_specific_calculator_task",
+          "duplicate_of": [
+            "HR-20261031-01"
+          ],
+          "refresh_signals": {
+            "fact_delta": true,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": false
+          },
+          "reopen_trigger": "Require a dated rule or clock delta and public attributable calculation demand; service access alone is not a calculator topic.",
+          "rationale": "A maintenance interval should not be recast as generic loss-limit content."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-11-06",
+      "candidate_id": "HR-20261106-05",
+      "status": "discarded",
+      "topic": "Directional Macro Calls Crypto Hype Politics Sports Entertainment and Unverifiable Social Material",
+      "primary_site": "PipGauge",
+      "freshness": 25,
+      "traffic_potential": 24,
+      "calculator_fit": 3,
+      "evidence_quality": 5,
+      "actionability": 2,
+      "total_score": 59,
+      "hard_gate": false,
+      "reliable_sources": 0,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "P&L",
+        "Margin"
+      ],
+      "reason": "Excluded payroll and CAD direction calls, price targets, trade signals, midterm commentary, generic leverage posts, pure crypto promotion, sports and entertainment, login-wall pages, screenshots and unverified social claims. None supplied a new fact-led non-directional calculator journey."
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-11-05T22:04:00+08:00",
+      "checked_at": "2026-11-06T22:08:00+08:00",
       "source_count": 3,
-      "note": "覆盖 Bank of England 5 November Monetary Policy Report、The5ers 2 November dated Daily Pause FAQ 与 BLS November release schedule；未把一手材料用于市场方向或执行主张。"
+      "note": "覆盖 BLS 6 November Employment Situation、FTMO 5 November Futures Trading Update 与 Statistics Canada Labour Force Survey release context；一手来源只核验事实/条款，不用于方向或执行主张。"
     },
     {
       "channel": "独立可靠英文来源",
       "status": "complete",
-      "checked_at": "2026-11-05T22:04:00+08:00",
+      "checked_at": "2026-11-06T22:08:00+08:00",
       "source_count": 1,
-      "note": "AP 同日独立确认 BoE 将 Bank Rate 上调 25bp 至 4%；只用于结果事实交叉核验。"
+      "note": "AP 同日独立确认美国 October payroll result；未把预览、转引或社区帖子计为独立事实源。"
     },
     {
       "channel": "Reddit / ForexFactory / BabyPips",
       "status": "partial",
-      "checked_at": "2026-11-05T22:04:00+08:00",
-      "source_count": 3,
-      "note": "复查公开索引与讨论发现信号；BoE 话题为利率、抵押贷款或 GBP 方向，prop-firm 话题为泛化 daily-loss、购买、payout 或投诉，未发现可归属非方向性计算问题。"
+      "checked_at": "2026-11-06T22:08:00+08:00",
+      "source_count": 2,
+      "note": "ForexFactory payroll result page 和公开 Reddit FTMO 150K rule-reading thread 仅作当前发现/措辞信号，不能替代官方事实。BabyPips 未保留本期稳定、候选专属信号。"
     },
     {
       "channel": "X / Quora",
       "status": "limited",
-      "checked_at": "2026-11-05T22:04:00+08:00",
+      "checked_at": "2026-11-06T22:08:00+08:00",
       "source_count": 0,
       "note": "没有保留稳定、公开、可归属且非方向性的候选信号；登录墙、动态流、截图和不可验证材料不计入。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-11-05_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-11-05_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-11-06_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-11-06_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
-    "traffic_playbooks": "../热点流量打法.json"
+    "traffic_playbooks": "../热点流量打法.json",
+    "content_root": "../内容生产/2026-11-06"
   },
   "radar_model": "v3-calculator-bridge",
   "editorial_policy": {

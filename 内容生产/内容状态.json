@@ -1,4 +1,22 @@
 {
+  "HR-20261106-01": {
+    "content_status": "review_ready",
+    "content_label": "美国10月就业结果固定风险刷新审核包待人工审核",
+    "content_url": "../内容生产/2026-11-06/HR-20261106-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-11-07T12:00:00-05:00",
+    "review_state": "awaiting_human_review",
+    "refresh_target": "HR-20260905-01"
+  },
+  "HR-20261106-02": {
+    "content_status": "review_ready",
+    "content_label": "FTMO Futures Growth 100K/150K规则核验审核包待人工审核",
+    "content_url": "../内容生产/2026-11-06/HR-20261106-02/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-11-07T12:00:00-05:00",
+    "review_state": "awaiting_human_review",
+    "refresh_target": null
+  },
   "HR-20261103-01": {
     "content_status": "review_ready",
     "content_label": "FTMO 11月3日事件提醒与计划止损总风险审核包待人工审核",
@@ -27,12 +45,12 @@
     "refresh_target": null
   },
   "_last_scan": {
-    "scan_date": "2026-11-05",
-    "selected_count": 0,
-    "content_package_count": 0,
-    "platform_draft_count": 0,
-    "status": "zero_output_no_qualified_calculator_bridge",
-    "note": "No 2026-11-05 content package was created. BoE's verified 4% result lacked a new attributable non-directional calculator journey, The5ers' dated Daily Pause FAQ lacked independent current rule-specific demand, and U.S. jobs remained a future calendar item. No post, comment, message, email or social-account action occurred."
+    "scan_date": "2026-11-06",
+    "selected_count": 2,
+    "content_package_count": 2,
+    "platform_draft_count": 6,
+    "status": "review_ready_awaiting_human_review",
+    "note": "Created two 2026-11-06 review packages only: a refresh of the verified U.S. October payroll fixed-risk snapshot and a new FTMO Futures Growth 100K/150K cohort-rule verification note. Every Medium/Reddit/X draft is awaiting_human_review. No post, comment, message, email or social-account action occurred."
   },
   "HR-20261016-01": {
     "content_status": "review_ready",

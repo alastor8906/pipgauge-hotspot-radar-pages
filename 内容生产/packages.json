@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T14:07:54.498Z",
+  "generated_at": "2026-11-06T14:15:37.128Z",
   "endpoint": "multi_platform_drafts_awaiting_human_review",
   "supported_platforms": [
     "medium",
@@ -7,6 +7,76 @@
     "x"
   ],
   "packages": [
+    {
+      "candidate_id": "HR-20261106-01",
+      "scan_date": "2026-11-06",
+      "primary_site": "PipGauge",
+      "topic": "U.S. Payrolls Added 165000: Refresh the Fixed-Risk Check After the October Report",
+      "package_summary": "当期审核快照：用 BLS 已发布的 10 月就业结果更新既有 payroll fixed-risk 稿。内容只演示读者输入的计划风险、计划止损与 pip value 的关系；不预测美元、EUR/USD、利率或波动。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "short_lived_post_report_refresh",
+      "time_status_label": "仅在 7 November 12:00 ET 前且 BLS 数据未更正时使用；更正、后续独立事实或窗口结束即停用。",
+      "url": "../内容生产/2026-11-06/HR-20261106-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-11-06/HR-20261106-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-11-06/HR-20261106-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-11-06/HR-20261106-01/index.html#x"
+        }
+      ]
+    },
+    {
+      "candidate_id": "HR-20261106-02",
+      "scan_date": "2026-11-06",
+      "primary_site": "PipGauge",
+      "topic": "FTMO Futures Growth Rule Change: Verify 100K and 150K Drawdown Math for New Evaluations",
+      "package_summary": "当期审核快照：核对 FTMO Futures 在 5 November 对新建 Growth 100K/150K Evaluations 的 maximum-drawdown 与 qualifying-day minimum 变更。内容不比较、推荐或购买账户，也不预测 futures 市场。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "short_lived_dated_rule_change_window",
+      "time_status_label": "仅在 FTMO 5 November update、正确 cohort/phase 和 7 November 12:00 ET 短窗口内使用；更正、后续规则更新或适用性不清即停用。",
+      "url": "../内容生产/2026-11-06/HR-20261106-02/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-11-06/HR-20261106-02/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-11-06/HR-20261106-02/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-11-06/HR-20261106-02/index.html#x"
+        }
+      ]
+    },
     {
       "candidate_id": "HR-20261103-01",
       "scan_date": "2026-11-03",
@@ -1307,7 +1377,7 @@
       "scan_date": "2026-07-30",
       "primary_site": "PipGauge",
       "topic": "BoE Holds at 3.75% in a 6–3 Vote: Recalculate GBP/USD Event Risk",
-      "package_summary": "刷新 HR-20260724-11：以 3.75%、7–2→6–3 为新闻钩子，用固定 $100 风险下的三档仓位解释风险关系，并以真实计算器截图核验 50-pip 场景。",
+      "package_summary": "刷新 HR-20260724-11：用正式的 3.75%、6–3 与三名委员主张 4% 替换会前时态，不创建第二篇同构文章。",
       "package_status": "review_ready",
       "review_state": "awaiting_human_review",
       "time_status": "decision_recap_window",
