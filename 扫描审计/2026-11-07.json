@@ -1,0 +1,40 @@
+{
+  "scan_date": "2026-11-07",
+  "generated_at": "2026-11-07T22:03:00+08:00",
+  "coverage": [
+    {"channel": "官方与一手来源", "status": "complete", "checked_at": "2026-11-07T22:03:00+08:00", "source_count": 2, "note": "覆盖 Statistics Canada 6 November Labour Force Survey 和 FTMO 5 November dated maintenance update；一手来源只核验结果、日期和运营范围，不用于方向或执行主张。"},
+    {"channel": "独立可靠英文来源", "status": "complete", "checked_at": "2026-11-07T22:03:00+08:00", "source_count": 2, "note": "Reuters 的加拿大就业结果报道完成独立交叉核验；CityNews 用于交叉发现但不向入选项额外增加可靠发布主体。Topstep 第三方摘要未以官方规则核验，未入选。"},
+    {"channel": "Reddit / ForexFactory / BabyPips", "status": "partial", "checked_at": "2026-11-07T22:03:00+08:00", "source_count": 1, "note": "ForexFactory 的公开 CAD result page 被保留为 current FX discovery / query wording；Reddit 结果讨论多为政治或生活成本评论，BabyPips 未保留稳定、候选专属的非方向信号。社区材料不核验事实。"},
+    {"channel": "X / Quora", "status": "limited", "checked_at": "2026-11-07T22:03:00+08:00", "source_count": 0, "note": "未保留稳定、公开、可归属且非方向性的候选信号；动态流、登录墙、截图和不可验证材料不计入。"}
+  ],
+  "candidates": {
+    "HR-20261107-01": {
+      "sources": [
+        {"publisher": "Statistics Canada", "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/261106/dq261106a-eng.htm", "source_type": "official_dated_labour_force_result", "published_at": "2026-11-06", "freshness_role": "Official October result reports employment little changed at -4,700 and unemployment rate 6.7 percent.", "reliable": true},
+        {"publisher": "Reuters", "url": "https://au.marketscreener.com/news/canada-s-unemployment-rate-reaches-six-month-high-ce785fd2d88ff324", "source_type": "independent_dated_english_result_coverage", "published_at": "2026-11-06", "freshness_role": "Independent report confirms net -4,700 jobs and 6.7 percent unemployment in October.", "reliable": true},
+        {"publisher": "ForexFactory", "url": "https://www.forexfactory.com/calendar?day=nov6.2026&event=149200", "source_type": "public_calendar_result_discovery_only", "published_at": "2026-11-06", "freshness_role": "Public FX result page displays CAD Employment Change actual -4.7K, forecast 14.6K, previous -68.3K and unemployment 6.7 percent; used only for current discovery and query wording.", "reliable": false}
+      ],
+      "decision": {
+        "novelty_gate": "pass",
+        "decision_gate": "selected_refresh_official_and_independent_result_with_current_fx_discovery_and_four_refresh_deltas",
+        "duplicate_of": ["HR-20260903-01"],
+        "refresh_signals": {"fact_delta": true, "search_delta": true, "example_delta": true, "window_delta": true},
+        "reopen_trigger": "Reassess only on a Statistics Canada correction or a later independently verified fact that creates a different non-directional calculation question.",
+        "rationale": "The completed Canada October result, updated CAD jobs search object, replacement USD 75 / 25-50-75-pip teaching table and 6-8 November discovery window satisfy the refresh gate. Refresh the existing USD/CAD fixed-risk material; do not create a second same-shape macro article or predict USD/CAD."
+      }
+    },
+    "HR-20261107-02": {
+      "sources": [
+        {"publisher": "FTMO", "url": "https://ftmo.com/en/blog/trading-updates/trading-update-5-nov-2026/", "source_type": "official_dated_operational_notice", "published_at": "2026-11-05", "freshness_role": "Official notice lists 7 November all-platform and cTrader maintenance intervals.", "reliable": true}
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_operational_notice_without_independent_current_demand_or_specific_calculator_task",
+        "duplicate_of": ["HR-20261106-04"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "Require a dated rule or clock delta plus public attributable calculation demand before reconsideration.",
+        "rationale": "Operational service availability alone should not be repackaged as generic daily-loss or position-size content."
+      }
+    }
+  }
+}

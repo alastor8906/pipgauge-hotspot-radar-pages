@@ -1,4 +1,13 @@
 {
+  "HR-20261107-01": {
+    "content_status": "review_ready",
+    "content_label": "加拿大10月就业结果 USD/CAD 固定风险刷新审核包待人工审核",
+    "content_url": "../内容生产/2026-11-07/HR-20261107-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-11-08T12:00:00-05:00",
+    "review_state": "awaiting_human_review",
+    "refresh_target": "HR-20260903-01"
+  },
   "HR-20261106-01": {
     "content_status": "review_ready",
     "content_label": "美国10月就业结果固定风险刷新审核包待人工审核",
@@ -45,12 +54,12 @@
     "refresh_target": null
   },
   "_last_scan": {
-    "scan_date": "2026-11-06",
-    "selected_count": 2,
-    "content_package_count": 2,
-    "platform_draft_count": 6,
+    "scan_date": "2026-11-07",
+    "selected_count": 1,
+    "content_package_count": 1,
+    "platform_draft_count": 3,
     "status": "review_ready_awaiting_human_review",
-    "note": "Created two 2026-11-06 review packages only: a refresh of the verified U.S. October payroll fixed-risk snapshot and a new FTMO Futures Growth 100K/150K cohort-rule verification note. Every Medium/Reddit/X draft is awaiting_human_review. No post, comment, message, email or social-account action occurred."
+    "note": "Created one 2026-11-07 review package only: a refresh of the verified Canada October jobs result into the existing USD/CAD fixed-risk snapshot. Every Medium/Reddit/X draft is awaiting_human_review. No post, comment, message, email or social-account action occurred."
   },
   "HR-20261016-01": {
     "content_status": "review_ready",
