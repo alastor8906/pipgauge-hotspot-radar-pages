@@ -1,6 +1,6 @@
 {
   "data_version": 3,
-  "generated_at": "2026-11-08T22:08:13+08:00",
+  "generated_at": "2026-11-08T22:14:38+08:00",
   "latest_scan_date": "2026-11-08",
   "available_dates": [
     "2026-11-08",
@@ -112,7 +112,7 @@
   "periods": [
     {
       "scan_date": "2026-11-08",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 105,
@@ -427,7 +427,7 @@
     },
     {
       "scan_date": "2026-11-07",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 104,
@@ -684,7 +684,7 @@
     },
     {
       "scan_date": "2026-11-06",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 103,
@@ -1110,7 +1110,7 @@
     },
     {
       "scan_date": "2026-11-05",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 102,
@@ -1342,7 +1342,7 @@
     },
     {
       "scan_date": "2026-11-04",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 101,
@@ -1598,7 +1598,7 @@
     },
     {
       "scan_date": "2026-11-03",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 100,
@@ -1929,7 +1929,7 @@
     },
     {
       "scan_date": "2026-11-02",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 99,
@@ -2203,7 +2203,7 @@
     },
     {
       "scan_date": "2026-11-01",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 98,
@@ -2460,7 +2460,7 @@
     },
     {
       "scan_date": "2026-10-31",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 97,
@@ -2722,7 +2722,7 @@
     },
     {
       "scan_date": "2026-10-30",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 96,
@@ -2986,7 +2986,7 @@
     },
     {
       "scan_date": "2026-10-29",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 95,
@@ -3260,7 +3260,7 @@
     },
     {
       "scan_date": "2026-10-28",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 94,
@@ -3534,7 +3534,7 @@
     },
     {
       "scan_date": "2026-10-27",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 93,
@@ -3809,7 +3809,7 @@
     },
     {
       "scan_date": "2026-10-26",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 92,
@@ -4053,7 +4053,7 @@
     },
     {
       "scan_date": "2026-10-25",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 91,
@@ -4260,7 +4260,7 @@
     },
     {
       "scan_date": "2026-10-24",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 90,
@@ -4481,7 +4481,7 @@
     },
     {
       "scan_date": "2026-10-23",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 89,
@@ -4812,7 +4812,7 @@
     },
     {
       "scan_date": "2026-10-22",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 88,
@@ -5028,7 +5028,7 @@
     },
     {
       "scan_date": "2026-10-21",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 87,
@@ -5331,7 +5331,7 @@
     },
     {
       "scan_date": "2026-10-20",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 86,
@@ -5558,7 +5558,7 @@
     },
     {
       "scan_date": "2026-10-19",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 85,
@@ -5774,7 +5774,7 @@
     },
     {
       "scan_date": "2026-10-18",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 84,
@@ -5988,7 +5988,7 @@
     },
     {
       "scan_date": "2026-10-17",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 83,
@@ -6256,7 +6256,7 @@
     },
     {
       "scan_date": "2026-10-16",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 82,
@@ -6562,7 +6562,7 @@
     },
     {
       "scan_date": "2026-10-15",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 81,
@@ -6773,7 +6773,7 @@
     },
     {
       "scan_date": "2026-10-14",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 80,
@@ -7056,7 +7056,7 @@
     },
     {
       "scan_date": "2026-10-13",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 79,
@@ -7272,7 +7272,7 @@
     },
     {
       "scan_date": "2026-10-12",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 78,
@@ -7544,7 +7544,7 @@
     },
     {
       "scan_date": "2026-10-11",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 77,
@@ -7805,7 +7805,7 @@
     },
     {
       "scan_date": "2026-10-10",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 76,
@@ -8062,7 +8062,7 @@
     },
     {
       "scan_date": "2026-10-09",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 75,
@@ -8273,7 +8273,7 @@
     },
     {
       "scan_date": "2026-10-08",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 74,
@@ -8460,7 +8460,7 @@
     },
     {
       "scan_date": "2026-10-07",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 73,
@@ -8624,7 +8624,7 @@
     },
     {
       "scan_date": "2026-10-06",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 72,
@@ -8787,7 +8787,7 @@
     },
     {
       "scan_date": "2026-10-05",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 71,
@@ -9054,7 +9054,7 @@
     },
     {
       "scan_date": "2026-10-04",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 70,
@@ -9280,7 +9280,7 @@
     },
     {
       "scan_date": "2026-10-03",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 69,
@@ -9503,7 +9503,7 @@
     },
     {
       "scan_date": "2026-10-02",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 68,
@@ -9786,7 +9786,7 @@
     },
     {
       "scan_date": "2026-10-01",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 67,
@@ -10065,7 +10065,7 @@
     },
     {
       "scan_date": "2026-09-30",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 66,
@@ -10475,7 +10475,7 @@
     },
     {
       "scan_date": "2026-09-29",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 65,
@@ -10799,7 +10799,7 @@
     },
     {
       "scan_date": "2026-09-28",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 64,
@@ -11084,7 +11084,7 @@
     },
     {
       "scan_date": "2026-09-27",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 63,
@@ -11434,7 +11434,7 @@
     },
     {
       "scan_date": "2026-09-26",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 62,
@@ -11643,7 +11643,7 @@
     },
     {
       "scan_date": "2026-09-25",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 61,
@@ -11923,7 +11923,7 @@
     },
     {
       "scan_date": "2026-09-24",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 60,
@@ -12203,7 +12203,7 @@
     },
     {
       "scan_date": "2026-09-23",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 59,
@@ -12441,7 +12441,7 @@
     },
     {
       "scan_date": "2026-09-22",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 58,
@@ -12730,7 +12730,7 @@
     },
     {
       "scan_date": "2026-09-21",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 57,
@@ -12952,7 +12952,7 @@
     },
     {
       "scan_date": "2026-09-20",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 56,
@@ -13237,7 +13237,7 @@
     },
     {
       "scan_date": "2026-09-19",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 55,
@@ -13512,7 +13512,7 @@
     },
     {
       "scan_date": "2026-09-18",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 54,
@@ -13794,7 +13794,7 @@
     },
     {
       "scan_date": "2026-09-17",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 53,
@@ -14139,7 +14139,7 @@
     },
     {
       "scan_date": "2026-09-16",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 52,
@@ -14429,7 +14429,7 @@
     },
     {
       "scan_date": "2026-09-15",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 51,
@@ -14643,7 +14643,7 @@
     },
     {
       "scan_date": "2026-09-14",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 50,
@@ -14847,7 +14847,7 @@
     },
     {
       "scan_date": "2026-09-13",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 49,
@@ -15052,7 +15052,7 @@
     },
     {
       "scan_date": "2026-09-12",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 48,
@@ -15238,7 +15238,7 @@
     },
     {
       "scan_date": "2026-09-11",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 47,
@@ -15455,7 +15455,7 @@
     },
     {
       "scan_date": "2026-09-10",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 46,
@@ -15741,7 +15741,7 @@
     },
     {
       "scan_date": "2026-09-09",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 45,
@@ -16021,7 +16021,7 @@
     },
     {
       "scan_date": "2026-09-08",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 44,
@@ -16350,7 +16350,7 @@
     },
     {
       "scan_date": "2026-09-07",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 43,
@@ -16652,7 +16652,7 @@
     },
     {
       "scan_date": "2026-09-06",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 42,
@@ -16968,7 +16968,7 @@
     },
     {
       "scan_date": "2026-09-05",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 41,
@@ -17290,7 +17290,7 @@
     },
     {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -17603,7 +17603,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -17914,7 +17914,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -18245,7 +18245,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -18583,7 +18583,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -18976,7 +18976,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -19386,7 +19386,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -19858,7 +19858,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -20203,7 +20203,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -20548,7 +20548,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -21000,7 +21000,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -21413,7 +21413,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -21645,7 +21645,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -22090,7 +22090,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -22465,7 +22465,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -22857,7 +22857,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -23233,7 +23233,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -23557,7 +23557,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -23940,7 +23940,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -24281,7 +24281,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -24656,7 +24656,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -25044,7 +25044,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -25389,7 +25389,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -25717,7 +25717,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -26029,7 +26029,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -26350,7 +26350,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -26711,7 +26711,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -27064,7 +27064,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -27508,7 +27508,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -28017,7 +28017,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -28487,7 +28487,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -29030,7 +29030,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -29302,7 +29302,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -29615,7 +29615,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -30050,7 +30050,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -30564,7 +30564,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -31073,7 +31073,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -31541,7 +31541,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -31955,7 +31955,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -32354,7 +32354,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-11-08T22:08:13+08:00",
+      "generated_at": "2026-11-08T22:14:38+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
