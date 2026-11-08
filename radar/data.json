@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-11-07T22:08:00+08:00",
-  "latest_scan_date": "2026-11-07",
+  "generated_at": "2026-11-08T22:08:13+08:00",
+  "latest_scan_date": "2026-11-08",
   "available_dates": [
+    "2026-11-08",
     "2026-11-07",
     "2026-11-06",
     "2026-11-05",
@@ -110,8 +111,323 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-11-08",
+      "generated_at": "2026-11-08T22:08:13+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 105,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 1,
+        "observation": 2,
+        "discarded": 1,
+        "total": 4,
+        "selected_average": 98.0,
+        "all_selected_pass_gate": true,
+        "content_ready": 1,
+        "playbook_ready": 1
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-11-08",
+          "candidate_id": "HR-20261108-01",
+          "status": "selected",
+          "topic": "FundingPips Labs EXP 004: Check the $750 Static-Loss Boundary Before Using the No-Daily-Loss Hook",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 24,
+          "calculator_fit": 25,
+          "evidence_quality": 15,
+          "actionability": 9,
+          "total_score": 98,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Challenge Simulator",
+            "Daily Loss Limit",
+            "Position Size",
+            "Prop Firm Simulator"
+          ],
+          "reason": "FundingPips' dated 7 November EXP 004 official rulebook defines a limited 25K Labs cohort with a 3% static USD 750 maximum loss under both the no-daily-loss and 2% USD 500 daily-loss options; BestProps independently records the launch and same rule set. The public official announcement provides current discovery wording. This is a new, model-specific rule-reading path, not a purchase, payout, trade or market-direction claim.",
+          "content_status": "review_ready",
+          "content_label": "FundingPips Labs EXP 004静态最大亏损核验审核包待人工审核",
+          "content_url": "../内容生产/2026-11-08/HR-20261108-01/index.html",
+          "content_format": "Medium / Reddit / X",
+          "deadline": "2026-11-10T12:00:00-05:00",
+          "review_state": "awaiting_human_review",
+          "refresh_target": null,
+          "traffic_playbook": {
+            "playbook_status": "ready",
+            "execution_mode": "new",
+            "urgency": "high",
+            "publish_deadline": "2026-11-10T12:00:00-05:00",
+            "traffic_hook": "FundingPips launched the dated limited Labs EXP 004 25K rulebook on 7 November. Its public-facing hook is 'no daily loss', but the same official page retains a 3% static USD 750 maximum-loss line; BestProps independently records the launch and core rule set. The traffic task is to resolve that exact rule-reading tension, not to recommend an account, predict a market or promise a payout.",
+            "traffic_window": "Publish only after a human rechecks the current EXP 004 page, availability, chosen option, price and Evaluation/Master applicability. Use the launch-led title while the limited run and dated rule set remain current, no later than 10 November 12:00 ET. Stop immediately on an official correction, price/option/rule/stage change, product removal or loss of the reader-entered calculation path.",
+            "search_intents": [
+              "FundingPips EXP 004 rules",
+              "FundingPips EXP 004 no daily loss",
+              "FundingPips 750 max loss",
+              "EXP 004 3% static drawdown",
+              "does no daily loss mean no maximum loss"
+            ],
+            "traffic_angle": "Borrow the newly launched 'no daily loss' wording to answer the immediately readable arithmetic: USD 25,000 × 3% = USD 750. Show side by side that the no-daily-loss option and the 2% / USD 500 daily-loss option both retain the USD 750 static maximum-loss line. The calculation explains two distinct account constraints; it does not compare prices, estimate a loss, prescribe trade size or predict an instrument.",
+            "calculator_bridge": "Start with the exact EXP 004 option and stage, then the official USD 750 rule boundary and the difference from the USD 500 daily line. Only after that, PipGauge Challenge Simulator and Daily Loss Limit organise reader-entered account-state and planned-risk inputs; PositionMath Prop Firm Simulator is a secondary rule-input cross-check. Neither site validates FundingPips terms, product availability, account eligibility, execution, stop fill or payout.",
+            "example_scenario": "Teaching only: a USD 25,000 EXP 004 account. 3% static maximum loss is USD 750. With the 2% daily-loss option, USD 500 and USD 750 are separate published rule lines; with the no-daily-loss option, the USD 750 static maximum-loss line remains. These are not per-trade limits, recommendations, observed costs, current account floors or expected outcomes.",
+            "distribution_order": [
+              "new PipGauge EXP 004 rule-boundary explainer",
+              "Medium source-linked limited-rule draft",
+              "X self-contained no-daily-loss-versus-static-loss thread",
+              "Reddit native rule-reading question without a first-round link"
+            ],
+            "link_placement": "Give the exact product scope, 3% × 25,000 = 750 arithmetic, two distinct loss lines and plan-versus-trade boundary before one natural calculator link. The first Reddit post has no link, tracking parameter, affiliate text, price comparison or purchase pitch; the X thread remains complete without a click.",
+            "expiry_condition": "Stop using this launch-led frame if EXP 004 is unavailable, FundingPips changes the rulebook, price, daily-loss options, account size or stage language, a correction appears, the short window ends at 10 November 12:00 ET, or only generic prop-firm commentary remains. Do not recycle USD 750 as an evergreen per-trade or product-comparison number.",
+            "editorial_boundary": "Do not compare or endorse prop firms, recommend purchase, infer product quality, predict FX/CFD/crypto prices, tell readers to trade, call USD 750 a single-trade allowance, assume a contract value, promise a stop fill or payout, or treat an official announcement as independent evidence. State that only the current official rulebook controls and that reader inputs must be verified.",
+            "refresh_target": null,
+            "refresh_signals": {
+              "fact_delta": true,
+              "search_delta": true,
+              "example_delta": true,
+              "window_delta": true
+            },
+            "refresh_updates": [],
+            "content_mainline": "Create one dated EXP 004 rule-reading note that translates the published 25K / 3% static maximum-loss line into USD 750 and distinguishes it from the optional USD 500 daily-loss line; do not create a purchase comparison or reuse the old undated FundingPips On-Demand observation.",
+            "body_material": [
+              "FundingPips EXP 004 official dated rulebook",
+              "BestProps independent 7 November launch and rule reading",
+              "official public launch announcement as discovery only",
+              "USD 25,000 × 3% = USD 750",
+              "separate no-daily-loss and 2% / USD 500 daily-loss option explanation",
+              "10 November 12:00 ET expiry and official-change stop gate"
+            ],
+            "product_bridge": "PipGauge organises reader-entered prop-risk inputs after the dated rule explanation; PositionMath supplies a secondary simulation cross-check. Neither replaces the official FundingPips rulebook or makes a purchase, eligibility, trading or payout decision.",
+            "product_bridge_type": "existing"
+          },
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "FundingPips",
+                "url": "https://help.fundingpips.com/hc/en-us/articles/52395111530897-EXP-004",
+                "source_type": "official_dated_limited_product_rulebook",
+                "published_at": "2026-11-07",
+                "freshness_role": "Official EXP 004 page gives the 25K account, 6 percent target, 3 percent static USD 750 maximum loss, daily-loss options and limited-run scope.",
+                "reliable": true
+              },
+              {
+                "publisher": "BestProps",
+                "url": "https://bestprops.com/fundingpips-consistency-rule/",
+                "source_type": "independent_dated_english_rule_change_reading",
+                "published_at": "2026-11-08",
+                "freshness_role": "Independent reading records the 7 November EXP 004 launch and the same 25K / 6 percent / 3 percent static rule set; official terms remain controlling.",
+                "reliable": true
+              },
+              {
+                "publisher": "FundingPips official public announcement",
+                "url": "https://nitter.gq/fundingpips/with_replies",
+                "source_type": "public_launch_discovery_only",
+                "published_at": "2026-11-07",
+                "freshness_role": "Official public announcement provides current launch language and public discovery only; it does not replace the rulebook.",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "pass",
+              "decision_gate": "selected_new_dated_limited_product_rule_with_independent_current_reading_and_static_loss_calculator_bridge",
+              "duplicate_of": [
+                "HR-20261022-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": true,
+                "example_delta": true,
+                "window_delta": true
+              },
+              "reopen_trigger": "Reassess only on a FundingPips correction, availability/price/option/stage change, or a later official rule update that creates a different non-directional calculation question.",
+              "rationale": "EXP 004 is a dated, limited 25K Labs product with a new query object and a transparent USD 750 static-loss arithmetic check. The prior FundingPips observation was an undated On-Demand reward-cycle path, not reusable content."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-11-08",
+          "candidate_id": "HR-20261108-03",
+          "status": "observation",
+          "topic": "AudaCity Ability One Consistency Update Has Independent Tracking but No Direct Dated Official Page Retained",
+          "primary_site": "PositionMath",
+          "freshness": 24,
+          "traffic_potential": 19,
+          "calculator_fit": 25,
+          "evidence_quality": 10,
+          "actionability": 6,
+          "total_score": 84,
+          "hard_gate": false,
+          "reliable_sources": 1,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Consistency Rule",
+            "Prop Firm Simulator",
+            "Losing Streak"
+          ],
+          "reason": "Independent trackers say Ability One accounts bought on or after 2 November have no minimum-days rule and a 50% funded-stage best-day consistency condition, but this scan did not retain an accessible dated official AudaCity source URL with the applicable wording. Keep as observation despite a natural calculator formula; do not treat a tracker as the controlling rulebook or create payout-planning content.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Backtestle",
+                "url": "https://www.backtestle.com/en/kural-degisiklikleri",
+                "source_type": "independent_dated_rule_change_tracker",
+                "published_at": "2026-11-07",
+                "freshness_role": "Tracker records an Ability One cohort and 50 percent best-day rule, but it is not the controlling firm source.",
+                "reliable": true
+              },
+              {
+                "publisher": "BestProps",
+                "url": "https://bestprops.com/rules/consistency-rule/",
+                "source_type": "independent_current_rule_reading",
+                "published_at": "2026-11-08",
+                "freshness_role": "Independent current reading describes cohort-specific Ability One consistency language without providing a retained dated official page in this scan.",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_missing_direct_dated_official_product_rule_source",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Require an accessible AudaCity official dated/versioned page, exact cohort wording and independent public impact or heat before a new/refresh decision.",
+              "rationale": "A calculator formula cannot promote tracker-reported terms into a verified product-rule claim."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-11-08",
+          "candidate_id": "HR-20261108-02",
+          "status": "observation",
+          "topic": "TX3 Funding News-Trading FAQ Is Newly Dated but Does Not Yet Show a Distinct Current Demand Path",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 18,
+          "calculator_fit": 20,
+          "evidence_quality": 13,
+          "actionability": 5,
+          "total_score": 81,
+          "hard_gate": false,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Forex Session Clock",
+            "Daily Loss Limit",
+            "Prop Firm Simulator"
+          ],
+          "reason": "TX3's 8 November FAQ says accounts without its News Trading Add-on cannot execute modify or close inside a ±5-minute red-folder window; PropTested independently reports the same broad restriction as checked 5 November. The FAQ is timely and a CPI window is upcoming, but the retained public material does not prove a distinct current user demand or a verified before/after rule delta, so do not manufacture a session-clock or daily-loss article.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "TX3 Funding",
+                "url": "https://faq.tx3funding.com/news-trading",
+                "source_type": "official_dated_faq",
+                "published_at": "2026-11-08",
+                "freshness_role": "Official FAQ states ±5-minute red-folder restrictions without the News Trading Add-on.",
+                "reliable": true
+              },
+              {
+                "publisher": "PropTested",
+                "url": "https://proptested.com/firms/tx3-funding",
+                "source_type": "independent_current_rule_reading",
+                "published_at": "2026-11-06",
+                "freshness_role": "Independent reading reports the same broad timing restriction as checked 5 November.",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_newly_dated_faq_without_verified_rule_delta_or_attributable_current_calculator_demand",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Require a dated official before/after rule change plus a current public, non-directional reader question and a clear calculator journey before reconsideration.",
+              "rationale": "The page date alone does not establish a new rule or a time-sensitive reader demand. An upcoming CPI calendar is not itself permission to manufacture a session-clock article."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-11-08",
+          "candidate_id": "HR-20261108-04",
+          "status": "discarded",
+          "topic": "Repeated Payroll CAD and FTMO Maintenance Frames Plus Directional and Unverifiable Material",
+          "primary_site": "PipGauge",
+          "freshness": 22,
+          "traffic_potential": 23,
+          "calculator_fit": 4,
+          "evidence_quality": 7,
+          "actionability": 2,
+          "total_score": 58,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L",
+            "Margin"
+          ],
+          "reason": "The 6 November U.S. payroll refresh, 6 November FTMO Growth rule note and 7 November Canada-jobs refresh already own their facts, examples and expired short windows. Repackaging them would be duplicate content. Also excluded price predictions, trade signals, politics, pure crypto promotion, sports, entertainment, login-wall pages and unverifiable social claims."
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-11-08T22:12:00+08:00",
+          "source_count": 3,
+          "note": "覆盖 FundingPips 7 November EXP 004 dated rulebook、官方公开 launch announcement mirror 与 TX3 8 November FAQ；一手来源只核验产品条款、日期、option 和阶段范围，不用于市场、购买或执行主张。"
+        },
+        {
+          "channel": "独立可靠英文来源",
+          "status": "complete",
+          "checked_at": "2026-11-08T22:12:00+08:00",
+          "source_count": 3,
+          "note": "BestProps 独立规则阅读交叉 FundingPips EXP 004；PropTested 和 Backtestle 仅用于 TX3/AudaCity 观察项的独立发现，不替代缺失的 controlling official page。"
+        },
+        {
+          "channel": "Reddit / ForexFactory / BabyPips",
+          "status": "partial",
+          "checked_at": "2026-11-08T22:12:00+08:00",
+          "source_count": 0,
+          "note": "公开索引被检查但没有保留可验证、candidate-specific、非方向性 calculator query；不将无结果、动态流或旧帖子误写为无热度。"
+        },
+        {
+          "channel": "X / Quora",
+          "status": "limited",
+          "checked_at": "2026-11-08T22:12:00+08:00",
+          "source_count": 1,
+          "note": "FundingPips 官方公开 announcement mirror 用作 launch-discovery wording；未保留 Quora 或动态/登录受限 X 材料，也不把官方宣传当独立规则事实。"
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-11-08_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-11-08_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json",
+        "content_root": "../内容生产/2026-11-08"
+      }
+    },
+    {
       "scan_date": "2026-11-07",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 104,
@@ -368,7 +684,7 @@
     },
     {
       "scan_date": "2026-11-06",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 103,
@@ -794,7 +1110,7 @@
     },
     {
       "scan_date": "2026-11-05",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 102,
@@ -1026,7 +1342,7 @@
     },
     {
       "scan_date": "2026-11-04",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 101,
@@ -1282,7 +1598,7 @@
     },
     {
       "scan_date": "2026-11-03",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 100,
@@ -1613,7 +1929,7 @@
     },
     {
       "scan_date": "2026-11-02",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 99,
@@ -1887,7 +2203,7 @@
     },
     {
       "scan_date": "2026-11-01",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 98,
@@ -2144,7 +2460,7 @@
     },
     {
       "scan_date": "2026-10-31",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 97,
@@ -2406,7 +2722,7 @@
     },
     {
       "scan_date": "2026-10-30",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 96,
@@ -2670,7 +2986,7 @@
     },
     {
       "scan_date": "2026-10-29",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 95,
@@ -2944,7 +3260,7 @@
     },
     {
       "scan_date": "2026-10-28",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 94,
@@ -3218,7 +3534,7 @@
     },
     {
       "scan_date": "2026-10-27",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 93,
@@ -3493,7 +3809,7 @@
     },
     {
       "scan_date": "2026-10-26",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 92,
@@ -3737,7 +4053,7 @@
     },
     {
       "scan_date": "2026-10-25",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 91,
@@ -3944,7 +4260,7 @@
     },
     {
       "scan_date": "2026-10-24",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 90,
@@ -4165,7 +4481,7 @@
     },
     {
       "scan_date": "2026-10-23",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 89,
@@ -4496,7 +4812,7 @@
     },
     {
       "scan_date": "2026-10-22",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 88,
@@ -4712,7 +5028,7 @@
     },
     {
       "scan_date": "2026-10-21",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 87,
@@ -5015,7 +5331,7 @@
     },
     {
       "scan_date": "2026-10-20",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 86,
@@ -5242,7 +5558,7 @@
     },
     {
       "scan_date": "2026-10-19",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 85,
@@ -5458,7 +5774,7 @@
     },
     {
       "scan_date": "2026-10-18",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 84,
@@ -5672,7 +5988,7 @@
     },
     {
       "scan_date": "2026-10-17",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 83,
@@ -5940,7 +6256,7 @@
     },
     {
       "scan_date": "2026-10-16",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 82,
@@ -6246,7 +6562,7 @@
     },
     {
       "scan_date": "2026-10-15",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 81,
@@ -6457,7 +6773,7 @@
     },
     {
       "scan_date": "2026-10-14",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 80,
@@ -6740,7 +7056,7 @@
     },
     {
       "scan_date": "2026-10-13",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 79,
@@ -6956,7 +7272,7 @@
     },
     {
       "scan_date": "2026-10-12",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 78,
@@ -7228,7 +7544,7 @@
     },
     {
       "scan_date": "2026-10-11",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 77,
@@ -7489,7 +7805,7 @@
     },
     {
       "scan_date": "2026-10-10",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 76,
@@ -7746,7 +8062,7 @@
     },
     {
       "scan_date": "2026-10-09",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 75,
@@ -7957,7 +8273,7 @@
     },
     {
       "scan_date": "2026-10-08",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 74,
@@ -8144,7 +8460,7 @@
     },
     {
       "scan_date": "2026-10-07",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 73,
@@ -8308,7 +8624,7 @@
     },
     {
       "scan_date": "2026-10-06",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 72,
@@ -8471,7 +8787,7 @@
     },
     {
       "scan_date": "2026-10-05",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 71,
@@ -8738,7 +9054,7 @@
     },
     {
       "scan_date": "2026-10-04",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 70,
@@ -8964,7 +9280,7 @@
     },
     {
       "scan_date": "2026-10-03",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 69,
@@ -9187,7 +9503,7 @@
     },
     {
       "scan_date": "2026-10-02",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 68,
@@ -9470,7 +9786,7 @@
     },
     {
       "scan_date": "2026-10-01",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 67,
@@ -9749,7 +10065,7 @@
     },
     {
       "scan_date": "2026-09-30",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 66,
@@ -10159,7 +10475,7 @@
     },
     {
       "scan_date": "2026-09-29",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 65,
@@ -10483,7 +10799,7 @@
     },
     {
       "scan_date": "2026-09-28",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 64,
@@ -10768,7 +11084,7 @@
     },
     {
       "scan_date": "2026-09-27",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 63,
@@ -11118,7 +11434,7 @@
     },
     {
       "scan_date": "2026-09-26",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 62,
@@ -11327,7 +11643,7 @@
     },
     {
       "scan_date": "2026-09-25",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 61,
@@ -11607,7 +11923,7 @@
     },
     {
       "scan_date": "2026-09-24",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 60,
@@ -11887,7 +12203,7 @@
     },
     {
       "scan_date": "2026-09-23",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 59,
@@ -12125,7 +12441,7 @@
     },
     {
       "scan_date": "2026-09-22",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 58,
@@ -12414,7 +12730,7 @@
     },
     {
       "scan_date": "2026-09-21",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 57,
@@ -12636,7 +12952,7 @@
     },
     {
       "scan_date": "2026-09-20",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 56,
@@ -12921,7 +13237,7 @@
     },
     {
       "scan_date": "2026-09-19",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 55,
@@ -13196,7 +13512,7 @@
     },
     {
       "scan_date": "2026-09-18",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 54,
@@ -13478,7 +13794,7 @@
     },
     {
       "scan_date": "2026-09-17",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 53,
@@ -13823,7 +14139,7 @@
     },
     {
       "scan_date": "2026-09-16",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 52,
@@ -14113,7 +14429,7 @@
     },
     {
       "scan_date": "2026-09-15",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 51,
@@ -14327,7 +14643,7 @@
     },
     {
       "scan_date": "2026-09-14",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 50,
@@ -14531,7 +14847,7 @@
     },
     {
       "scan_date": "2026-09-13",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 49,
@@ -14736,7 +15052,7 @@
     },
     {
       "scan_date": "2026-09-12",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 48,
@@ -14922,7 +15238,7 @@
     },
     {
       "scan_date": "2026-09-11",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 47,
@@ -15139,7 +15455,7 @@
     },
     {
       "scan_date": "2026-09-10",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 46,
@@ -15425,7 +15741,7 @@
     },
     {
       "scan_date": "2026-09-09",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 45,
@@ -15705,7 +16021,7 @@
     },
     {
       "scan_date": "2026-09-08",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 44,
@@ -16034,7 +16350,7 @@
     },
     {
       "scan_date": "2026-09-07",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 43,
@@ -16336,7 +16652,7 @@
     },
     {
       "scan_date": "2026-09-06",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 42,
@@ -16652,7 +16968,7 @@
     },
     {
       "scan_date": "2026-09-05",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 41,
@@ -16974,7 +17290,7 @@
     },
     {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -17287,7 +17603,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -17598,7 +17914,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -17929,7 +18245,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -18267,7 +18583,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -18660,7 +18976,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -19070,7 +19386,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -19542,7 +19858,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -19887,7 +20203,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -20232,7 +20548,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -20684,7 +21000,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -21097,7 +21413,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -21329,7 +21645,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -21774,7 +22090,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -22149,7 +22465,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -22541,7 +22857,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -22917,7 +23233,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -23241,7 +23557,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -23624,7 +23940,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -23965,7 +24281,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -24340,7 +24656,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -24728,7 +25044,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -25073,7 +25389,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -25401,7 +25717,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -25713,7 +26029,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -26034,7 +26350,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -26395,7 +26711,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -26748,7 +27064,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -27192,7 +27508,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -27701,7 +28017,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -28171,7 +28487,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -28714,7 +29030,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -28986,7 +29302,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -29299,7 +29615,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -29734,7 +30050,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -30248,7 +30564,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -30757,7 +31073,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -31225,7 +31541,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -31639,7 +31955,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -32038,7 +32354,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-11-07T22:08:00+08:00",
+      "generated_at": "2026-11-08T22:08:13+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -32477,10 +32793,10 @@
       }
     }
   ],
-  "scan_date": "2026-11-07",
+  "scan_date": "2026-11-08",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 104,
+    "day": 105,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -32489,126 +32805,122 @@
   },
   "stats": {
     "selected": 1,
-    "observation": 1,
+    "observation": 2,
     "discarded": 1,
-    "total": 3,
-    "selected_average": 96.0,
+    "total": 4,
+    "selected_average": 98.0,
     "all_selected_pass_gate": true,
     "content_ready": 1,
     "playbook_ready": 1
   },
   "candidates": [
     {
-      "scan_date": "2026-11-07",
-      "candidate_id": "HR-20261107-01",
+      "scan_date": "2026-11-08",
+      "candidate_id": "HR-20261108-01",
       "status": "selected",
-      "topic": "Canada October Jobs Data: Refresh the USD/CAD Fixed-Risk Check After a -4700 Result",
+      "topic": "FundingPips Labs EXP 004: Check the $750 Static-Loss Boundary Before Using the No-Daily-Loss Hook",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 22,
+      "traffic_potential": 24,
       "calculator_fit": 25,
       "evidence_quality": 15,
       "actionability": 9,
-      "total_score": 96,
+      "total_score": 98,
       "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
-        "Pip Value",
+        "Challenge Simulator",
+        "Daily Loss Limit",
         "Position Size",
-        "P&L",
-        "Spread Cost"
+        "Prop Firm Simulator"
       ],
-      "reason": "Statistics Canada released October employment at -4700 and unemployment at 6.7% on November 6; Reuters independently reported the same data, and ForexFactory's public CAD result page records the actual, forecast and prior values as current FX-audience discovery only. Refresh HR-20260903-01 rather than creating another USD/CAD fixed-risk article: all four refresh signals are present, while the teaching arithmetic stays non-directional and reader-entered.",
+      "reason": "FundingPips' dated 7 November EXP 004 official rulebook defines a limited 25K Labs cohort with a 3% static USD 750 maximum loss under both the no-daily-loss and 2% USD 500 daily-loss options; BestProps independently records the launch and same rule set. The public official announcement provides current discovery wording. This is a new, model-specific rule-reading path, not a purchase, payout, trade or market-direction claim.",
       "content_status": "review_ready",
-      "content_label": "加拿大10月就业结果 USD/CAD 固定风险刷新审核包待人工审核",
-      "content_url": "../内容生产/2026-11-07/HR-20261107-01/index.html",
+      "content_label": "FundingPips Labs EXP 004静态最大亏损核验审核包待人工审核",
+      "content_url": "../内容生产/2026-11-08/HR-20261108-01/index.html",
       "content_format": "Medium / Reddit / X",
-      "deadline": "2026-11-08T12:00:00-05:00",
+      "deadline": "2026-11-10T12:00:00-05:00",
       "review_state": "awaiting_human_review",
-      "refresh_target": "HR-20260903-01",
+      "refresh_target": null,
       "traffic_playbook": {
         "playbook_status": "ready",
-        "execution_mode": "refresh",
+        "execution_mode": "new",
         "urgency": "high",
-        "publish_deadline": "2026-11-08T12:00:00-05:00",
-        "traffic_hook": "Statistics Canada released October employment at -4,700 and unemployment at 6.7%; Reuters independently reported the same result. ForexFactory's public CAD result page supplies current FX-audience discovery wording, including the -4.7K actual, 14.6K forecast and -68.3K prior values. The hook is the completed result and a reader's fixed-risk check, never a CAD, USD/CAD, rate or volatility forecast.",
-        "traffic_window": "Refresh the existing USD/CAD fixed-risk page only after a human rechecks Statistics Canada and Reuters. Use the result-led title through 8 November 12:00 ET, then retire it; stop earlier on a Statistics Canada correction or a later independently verified fact that changes the reader question.",
+        "publish_deadline": "2026-11-10T12:00:00-05:00",
+        "traffic_hook": "FundingPips launched the dated limited Labs EXP 004 25K rulebook on 7 November. Its public-facing hook is 'no daily loss', but the same official page retains a 3% static USD 750 maximum-loss line; BestProps independently records the launch and core rule set. The traffic task is to resolve that exact rule-reading tension, not to recommend an account, predict a market or promise a payout.",
+        "traffic_window": "Publish only after a human rechecks the current EXP 004 page, availability, chosen option, price and Evaluation/Master applicability. Use the launch-led title while the limited run and dated rule set remain current, no later than 10 November 12:00 ET. Stop immediately on an official correction, price/option/rule/stage change, product removal or loss of the reader-entered calculation path.",
         "search_intents": [
-          "Canada jobs report -4700 USD CAD fixed risk",
-          "Canada unemployment 6.7 position size calculator",
-          "USDCAD pip value 25 pip stop",
-          "how many lots USDCAD for 75 dollar risk",
-          "Canada October jobs result forex risk"
+          "FundingPips EXP 004 rules",
+          "FundingPips EXP 004 no daily loss",
+          "FundingPips 750 max loss",
+          "EXP 004 3% static drawdown",
+          "does no daily loss mean no maximum loss"
         ],
-        "traffic_angle": "Borrow the released -4,700 / 6.7% fact set to answer one non-directional question: with a USD 10,000 teaching account, USD 75 maximum planned price risk, and an explicitly approximate USD 10-per-pip USD/CAD USD-account input, what size corresponds to a 25, 50 or 75-pip planned stop? The readable answer is 0.30, 0.15 or 0.10 standard lot before costs. It is risk-budget arithmetic, not a jobs-report move estimate or forecast.",
-        "calculator_bridge": "Give the result facts and formula first. PipGauge Pip Value verifies the reader's actual USD/CAD/account/contract pip value; PipGauge Position Size verifies reader-entered USD risk and planned stop. P&L or Spread Cost are separate hypothetical checks only. PositionMath is a secondary generic position-risk cross-check. These tools do not interpret Canada's jobs report, forecast markets or guarantee a stop fill.",
-        "example_scenario": "Teaching only: USD 10,000 account; USD 75 maximum planned price risk; USD/CAD in a USD account at an approximate USD 10 per pip per standard lot. A 25/50/75-pip planned stop maps to about 0.30/0.15/0.10 standard lot before commission, spread, slippage, gaps, minimum size or platform rules. No input is a live quote, expected move or trade instruction.",
+        "traffic_angle": "Borrow the newly launched 'no daily loss' wording to answer the immediately readable arithmetic: USD 25,000 × 3% = USD 750. Show side by side that the no-daily-loss option and the 2% / USD 500 daily-loss option both retain the USD 750 static maximum-loss line. The calculation explains two distinct account constraints; it does not compare prices, estimate a loss, prescribe trade size or predict an instrument.",
+        "calculator_bridge": "Start with the exact EXP 004 option and stage, then the official USD 750 rule boundary and the difference from the USD 500 daily line. Only after that, PipGauge Challenge Simulator and Daily Loss Limit organise reader-entered account-state and planned-risk inputs; PositionMath Prop Firm Simulator is a secondary rule-input cross-check. Neither site validates FundingPips terms, product availability, account eligibility, execution, stop fill or payout.",
+        "example_scenario": "Teaching only: a USD 25,000 EXP 004 account. 3% static maximum loss is USD 750. With the 2% daily-loss option, USD 500 and USD 750 are separate published rule lines; with the no-daily-loss option, the USD 750 static maximum-loss line remains. These are not per-trade limits, recommendations, observed costs, current account floors or expected outcomes.",
         "distribution_order": [
-          "refresh existing USD/CAD fixed-risk article HR-20260903-01",
-          "Medium dated post-report fixed-risk refresh",
-          "X self-contained Canada-jobs-risk thread",
-          "Reddit native process discussion without a first-round link"
+          "new PipGauge EXP 004 rule-boundary explainer",
+          "Medium source-linked limited-rule draft",
+          "X self-contained no-daily-loss-versus-static-loss thread",
+          "Reddit native rule-reading question without a first-round link"
         ],
-        "link_placement": "State the released data, formula, three readable sizes and plan-versus-fill limit before one PipGauge verification link. Do not put a link, tracking parameter or product pitch in the initial Reddit post; the X thread remains independently readable.",
-        "expiry_condition": "Stop using this October-result frame at 8 November 12:00 ET, on a Statistics Canada correction, or if later independently verified information creates a different calculation question. Do not recycle 25/50/75 pips as an expected Canada-jobs move or evergreen commentary.",
-        "editorial_boundary": "Do not predict USD/CAD, CAD, the Bank of Canada, interest rates, volatility, profitability or a market move. Do not recommend a position, say a planned stop is a guaranteed fill, or present assumed pip value, spread or costs as observed event execution data.",
-        "refresh_target": "HR-20260903-01",
+        "link_placement": "Give the exact product scope, 3% × 25,000 = 750 arithmetic, two distinct loss lines and plan-versus-trade boundary before one natural calculator link. The first Reddit post has no link, tracking parameter, affiliate text, price comparison or purchase pitch; the X thread remains complete without a click.",
+        "expiry_condition": "Stop using this launch-led frame if EXP 004 is unavailable, FundingPips changes the rulebook, price, daily-loss options, account size or stage language, a correction appears, the short window ends at 10 November 12:00 ET, or only generic prop-firm commentary remains. Do not recycle USD 750 as an evergreen per-trade or product-comparison number.",
+        "editorial_boundary": "Do not compare or endorse prop firms, recommend purchase, infer product quality, predict FX/CFD/crypto prices, tell readers to trade, call USD 750 a single-trade allowance, assume a contract value, promise a stop fill or payout, or treat an official announcement as independent evidence. State that only the current official rulebook controls and that reader inputs must be verified.",
+        "refresh_target": null,
         "refresh_signals": {
           "fact_delta": true,
           "search_delta": true,
           "example_delta": true,
           "window_delta": true
         },
-        "refresh_updates": [
-          "replace the Bank of Canada 2.25% hold fact block with Canada October employment -4,700 and unemployment 6.7%, with Reuters independent confirmation",
-          "replace all September-decision language with the 6 November published-result / 8 November expiry window",
-          "replace the USD 100 / 40-80-120-pip teaching table with USD 75 / 25-50-75 pips, explicitly not an expected move",
-          "retain the non-directional and plan-versus-fill boundaries"
-        ],
-        "content_mainline": "Refresh the existing USD/CAD fixed-risk article into a dated Canada October jobs-result check using published -4,700 / 6.7% facts and transparent USD 75 25/50/75-pip arithmetic; do not create another CAD macro article.",
+        "refresh_updates": [],
+        "content_mainline": "Create one dated EXP 004 rule-reading note that translates the published 25K / 3% static maximum-loss line into USD 750 and distinguishes it from the optional USD 500 daily-loss line; do not create a purchase comparison or reuse the old undated FundingPips On-Demand observation.",
         "body_material": [
-          "Statistics Canada 6 November Labour Force Survey: -4,700 and 6.7%",
-          "Reuters independent same-day result coverage",
-          "ForexFactory CAD result page as discovery only",
-          "USD 75 risk at 25/50/75 pips",
-          "8 November 12:00 ET expiry and correction stop gate"
+          "FundingPips EXP 004 official dated rulebook",
+          "BestProps independent 7 November launch and rule reading",
+          "official public launch announcement as discovery only",
+          "USD 25,000 × 3% = USD 750",
+          "separate no-daily-loss and 2% / USD 500 daily-loss option explanation",
+          "10 November 12:00 ET expiry and official-change stop gate"
         ],
-        "product_bridge": "PipGauge verifies USD/CAD pip value and fixed-risk size after the fact-led explanation; it does not interpret Canada jobs data, forecast a currency move or guarantee execution.",
+        "product_bridge": "PipGauge organises reader-entered prop-risk inputs after the dated rule explanation; PositionMath supplies a secondary simulation cross-check. Neither replaces the official FundingPips rulebook or makes a purchase, eligibility, trading or payout decision.",
         "product_bridge_type": "existing"
       },
       "scan_audit": {
         "sources": [
           {
-            "publisher": "Statistics Canada",
-            "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/261106/dq261106a-eng.htm",
-            "source_type": "official_dated_labour_force_result",
-            "published_at": "2026-11-06",
-            "freshness_role": "Official October result reports employment little changed at -4,700 and unemployment rate 6.7 percent.",
+            "publisher": "FundingPips",
+            "url": "https://help.fundingpips.com/hc/en-us/articles/52395111530897-EXP-004",
+            "source_type": "official_dated_limited_product_rulebook",
+            "published_at": "2026-11-07",
+            "freshness_role": "Official EXP 004 page gives the 25K account, 6 percent target, 3 percent static USD 750 maximum loss, daily-loss options and limited-run scope.",
             "reliable": true
           },
           {
-            "publisher": "Reuters",
-            "url": "https://au.marketscreener.com/news/canada-s-unemployment-rate-reaches-six-month-high-ce785fd2d88ff324",
-            "source_type": "independent_dated_english_result_coverage",
-            "published_at": "2026-11-06",
-            "freshness_role": "Independent report confirms net -4,700 jobs and 6.7 percent unemployment in October.",
+            "publisher": "BestProps",
+            "url": "https://bestprops.com/fundingpips-consistency-rule/",
+            "source_type": "independent_dated_english_rule_change_reading",
+            "published_at": "2026-11-08",
+            "freshness_role": "Independent reading records the 7 November EXP 004 launch and the same 25K / 6 percent / 3 percent static rule set; official terms remain controlling.",
             "reliable": true
           },
           {
-            "publisher": "ForexFactory",
-            "url": "https://www.forexfactory.com/calendar?day=nov6.2026&event=149200",
-            "source_type": "public_calendar_result_discovery_only",
-            "published_at": "2026-11-06",
-            "freshness_role": "Public FX result page displays CAD Employment Change actual -4.7K, forecast 14.6K, previous -68.3K and unemployment 6.7 percent; used only for current discovery and query wording.",
+            "publisher": "FundingPips official public announcement",
+            "url": "https://nitter.gq/fundingpips/with_replies",
+            "source_type": "public_launch_discovery_only",
+            "published_at": "2026-11-07",
+            "freshness_role": "Official public announcement provides current launch language and public discovery only; it does not replace the rulebook.",
             "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "pass",
-          "decision_gate": "selected_refresh_official_and_independent_result_with_current_fx_discovery_and_four_refresh_deltas",
+          "decision_gate": "selected_new_dated_limited_product_rule_with_independent_current_reading_and_static_loss_calculator_bridge",
           "duplicate_of": [
-            "HR-20260903-01"
+            "HR-20261022-01"
           ],
           "refresh_signals": {
             "fact_delta": true,
@@ -32616,120 +32928,182 @@
             "example_delta": true,
             "window_delta": true
           },
-          "reopen_trigger": "Reassess only on a Statistics Canada correction or a later independently verified fact that creates a different non-directional calculation question.",
-          "rationale": "The completed Canada October result, updated CAD jobs search object, replacement USD 75 / 25-50-75-pip teaching table and 6-8 November discovery window satisfy the refresh gate. Refresh the existing USD/CAD fixed-risk material; do not create a second same-shape macro article or predict USD/CAD."
+          "reopen_trigger": "Reassess only on a FundingPips correction, availability/price/option/stage change, or a later official rule update that creates a different non-directional calculation question.",
+          "rationale": "EXP 004 is a dated, limited 25K Labs product with a new query object and a transparent USD 750 static-loss arithmetic check. The prior FundingPips observation was an undated On-Demand reward-cycle path, not reusable content."
         }
       }
     },
     {
-      "scan_date": "2026-11-07",
-      "candidate_id": "HR-20261107-02",
+      "scan_date": "2026-11-08",
+      "candidate_id": "HR-20261108-03",
       "status": "observation",
-      "topic": "FTMO November 7 Maintenance Is Timely but Not a Calculator Traffic Path",
-      "primary_site": "PipGauge",
-      "freshness": 25,
-      "traffic_potential": 15,
-      "calculator_fit": 12,
-      "evidence_quality": 13,
-      "actionability": 3,
-      "total_score": 68,
+      "topic": "AudaCity Ability One Consistency Update Has Independent Tracking but No Direct Dated Official Page Retained",
+      "primary_site": "PositionMath",
+      "freshness": 24,
+      "traffic_potential": 19,
+      "calculator_fit": 25,
+      "evidence_quality": 10,
+      "actionability": 6,
+      "total_score": 84,
       "hard_gate": false,
       "reliable_sources": 1,
       "fresh_signal": true,
       "calculator_mapping": [
-        "Forex Session Clock",
-        "Daily Loss Limit"
+        "Consistency Rule",
+        "Prop Firm Simulator",
+        "Losing Streak"
       ],
-      "reason": "FTMO's dated November 5 update confirms all-platform and cTrader maintenance on November 7, but maintenance availability does not itself create a reader-entered quantity, pip-value, margin, cost, drawdown or portfolio-heat calculation journey. No independent current calculator-specific demand was verified; do not recast an operational notice as risk content.",
+      "reason": "Independent trackers say Ability One accounts bought on or after 2 November have no minimum-days rule and a 50% funded-stage best-day consistency condition, but this scan did not retain an accessible dated official AudaCity source URL with the applicable wording. Keep as observation despite a natural calculator formula; do not treat a tracker as the controlling rulebook or create payout-planning content.",
       "scan_audit": {
         "sources": [
           {
-            "publisher": "FTMO",
-            "url": "https://ftmo.com/en/blog/trading-updates/trading-update-5-nov-2026/",
-            "source_type": "official_dated_operational_notice",
-            "published_at": "2026-11-05",
-            "freshness_role": "Official notice lists 7 November all-platform and cTrader maintenance intervals.",
+            "publisher": "Backtestle",
+            "url": "https://www.backtestle.com/en/kural-degisiklikleri",
+            "source_type": "independent_dated_rule_change_tracker",
+            "published_at": "2026-11-07",
+            "freshness_role": "Tracker records an Ability One cohort and 50 percent best-day rule, but it is not the controlling firm source.",
             "reliable": true
+          },
+          {
+            "publisher": "BestProps",
+            "url": "https://bestprops.com/rules/consistency-rule/",
+            "source_type": "independent_current_rule_reading",
+            "published_at": "2026-11-08",
+            "freshness_role": "Independent current reading describes cohort-specific Ability One consistency language without providing a retained dated official page in this scan.",
+            "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_operational_notice_without_independent_current_demand_or_specific_calculator_task",
-          "duplicate_of": [
-            "HR-20261106-04"
-          ],
+          "decision_gate": "observation_missing_direct_dated_official_product_rule_source",
+          "duplicate_of": [],
           "refresh_signals": {
             "fact_delta": false,
             "search_delta": false,
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "Require a dated rule or clock delta plus public attributable calculation demand before reconsideration.",
-          "rationale": "Operational service availability alone should not be repackaged as generic daily-loss or position-size content."
+          "reopen_trigger": "Require an accessible AudaCity official dated/versioned page, exact cohort wording and independent public impact or heat before a new/refresh decision.",
+          "rationale": "A calculator formula cannot promote tracker-reported terms into a verified product-rule claim."
         }
       }
     },
     {
-      "scan_date": "2026-11-07",
-      "candidate_id": "HR-20261107-03",
-      "status": "discarded",
-      "topic": "Topstep Access-Policy Reports and Directional Macro Reaction Threads",
+      "scan_date": "2026-11-08",
+      "candidate_id": "HR-20261108-02",
+      "status": "observation",
+      "topic": "TX3 Funding News-Trading FAQ Is Newly Dated but Does Not Yet Show a Distinct Current Demand Path",
       "primary_site": "PipGauge",
-      "freshness": 20,
-      "traffic_potential": 19,
-      "calculator_fit": 4,
-      "evidence_quality": 9,
-      "actionability": 2,
-      "total_score": 54,
+      "freshness": 25,
+      "traffic_potential": 18,
+      "calculator_fit": 20,
+      "evidence_quality": 13,
+      "actionability": 5,
+      "total_score": 81,
       "hard_gate": false,
-      "reliable_sources": 1,
+      "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
+        "Forex Session Clock",
         "Daily Loss Limit",
-        "Position Size"
+        "Prop Firm Simulator"
       ],
-      "reason": "Fresh public discussion and third-party tracking of access-policy claims or USD/CAD reactions do not establish a dated official rule plus a natural calculation task. Excluded: account-access compliance, political commentary, market direction, price predictions, login-wall material and unverifiable social claims."
+      "reason": "TX3's 8 November FAQ says accounts without its News Trading Add-on cannot execute modify or close inside a ±5-minute red-folder window; PropTested independently reports the same broad restriction as checked 5 November. The FAQ is timely and a CPI window is upcoming, but the retained public material does not prove a distinct current user demand or a verified before/after rule delta, so do not manufacture a session-clock or daily-loss article.",
+      "scan_audit": {
+        "sources": [
+          {
+            "publisher": "TX3 Funding",
+            "url": "https://faq.tx3funding.com/news-trading",
+            "source_type": "official_dated_faq",
+            "published_at": "2026-11-08",
+            "freshness_role": "Official FAQ states ±5-minute red-folder restrictions without the News Trading Add-on.",
+            "reliable": true
+          },
+          {
+            "publisher": "PropTested",
+            "url": "https://proptested.com/firms/tx3-funding",
+            "source_type": "independent_current_rule_reading",
+            "published_at": "2026-11-06",
+            "freshness_role": "Independent reading reports the same broad timing restriction as checked 5 November.",
+            "reliable": true
+          }
+        ],
+        "decision": {
+          "novelty_gate": "fail",
+          "decision_gate": "observation_newly_dated_faq_without_verified_rule_delta_or_attributable_current_calculator_demand",
+          "duplicate_of": [],
+          "refresh_signals": {
+            "fact_delta": false,
+            "search_delta": false,
+            "example_delta": false,
+            "window_delta": true
+          },
+          "reopen_trigger": "Require a dated official before/after rule change plus a current public, non-directional reader question and a clear calculator journey before reconsideration.",
+          "rationale": "The page date alone does not establish a new rule or a time-sensitive reader demand. An upcoming CPI calendar is not itself permission to manufacture a session-clock article."
+        }
+      }
+    },
+    {
+      "scan_date": "2026-11-08",
+      "candidate_id": "HR-20261108-04",
+      "status": "discarded",
+      "topic": "Repeated Payroll CAD and FTMO Maintenance Frames Plus Directional and Unverifiable Material",
+      "primary_site": "PipGauge",
+      "freshness": 22,
+      "traffic_potential": 23,
+      "calculator_fit": 4,
+      "evidence_quality": 7,
+      "actionability": 2,
+      "total_score": 58,
+      "hard_gate": false,
+      "reliable_sources": 0,
+      "fresh_signal": true,
+      "calculator_mapping": [
+        "P&L",
+        "Margin"
+      ],
+      "reason": "The 6 November U.S. payroll refresh, 6 November FTMO Growth rule note and 7 November Canada-jobs refresh already own their facts, examples and expired short windows. Repackaging them would be duplicate content. Also excluded price predictions, trade signals, politics, pure crypto promotion, sports, entertainment, login-wall pages and unverifiable social claims."
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-11-07T22:03:00+08:00",
-      "source_count": 2,
-      "note": "覆盖 Statistics Canada 6 November Labour Force Survey 和 FTMO 5 November dated maintenance update；一手来源只核验结果、日期和运营范围，不用于方向或执行主张。"
+      "checked_at": "2026-11-08T22:12:00+08:00",
+      "source_count": 3,
+      "note": "覆盖 FundingPips 7 November EXP 004 dated rulebook、官方公开 launch announcement mirror 与 TX3 8 November FAQ；一手来源只核验产品条款、日期、option 和阶段范围，不用于市场、购买或执行主张。"
     },
     {
       "channel": "独立可靠英文来源",
       "status": "complete",
-      "checked_at": "2026-11-07T22:03:00+08:00",
-      "source_count": 2,
-      "note": "Reuters 的加拿大就业结果报道完成独立交叉核验；CityNews 用于交叉发现但不向入选项额外增加可靠发布主体。Topstep 第三方摘要未以官方规则核验，未入选。"
+      "checked_at": "2026-11-08T22:12:00+08:00",
+      "source_count": 3,
+      "note": "BestProps 独立规则阅读交叉 FundingPips EXP 004；PropTested 和 Backtestle 仅用于 TX3/AudaCity 观察项的独立发现，不替代缺失的 controlling official page。"
     },
     {
       "channel": "Reddit / ForexFactory / BabyPips",
       "status": "partial",
-      "checked_at": "2026-11-07T22:03:00+08:00",
-      "source_count": 1,
-      "note": "ForexFactory 的公开 CAD result page 被保留为 current FX discovery / query wording；Reddit 结果讨论多为政治或生活成本评论，BabyPips 未保留稳定、候选专属的非方向信号。社区材料不核验事实。"
+      "checked_at": "2026-11-08T22:12:00+08:00",
+      "source_count": 0,
+      "note": "公开索引被检查但没有保留可验证、candidate-specific、非方向性 calculator query；不将无结果、动态流或旧帖子误写为无热度。"
     },
     {
       "channel": "X / Quora",
       "status": "limited",
-      "checked_at": "2026-11-07T22:03:00+08:00",
-      "source_count": 0,
-      "note": "未保留稳定、公开、可归属且非方向性的候选信号；动态流、登录墙、截图和不可验证材料不计入。"
+      "checked_at": "2026-11-08T22:12:00+08:00",
+      "source_count": 1,
+      "note": "FundingPips 官方公开 announcement mirror 用作 launch-discovery wording；未保留 Quora 或动态/登录受限 X 材料，也不把官方宣传当独立规则事实。"
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-11-07_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-11-07_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-11-08_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-11-08_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
     "traffic_playbooks": "../热点流量打法.json",
-    "content_root": "../内容生产/2026-11-07"
+    "content_root": "../内容生产/2026-11-08"
   },
   "radar_model": "v3-calculator-bridge",
   "editorial_policy": {

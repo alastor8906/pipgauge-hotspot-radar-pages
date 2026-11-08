@@ -1,14 +1,60 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-07T22:03:00+08:00",
+  "updated_at": "2026-11-08T22:12:00+08:00",
   "last_scan": {
-    "scan_date": "2026-11-07",
+    "scan_date": "2026-11-08",
     "selected_count": 1,
     "playbook_ready_count": 1,
     "content_package_count": 1,
-    "note": "One current calculator-bridge topic qualified: a refresh of the completed Canada October jobs result into the existing USD/CAD fixed-risk page. It uses non-directional, reader-entered arithmetic and has one content package awaiting human review."
+    "note": "One current calculator-bridge topic qualified: FundingPips' dated EXP 004 limited-run rulebook supports a new static-loss-boundary explainer. It uses non-directional rule arithmetic and has one content package awaiting human review."
   },
   "items": {
+    "HR-20261108-01": {
+      "playbook_status": "ready",
+      "execution_mode": "new",
+      "urgency": "high",
+      "publish_deadline": "2026-11-10T12:00:00-05:00",
+      "traffic_hook": "FundingPips launched the dated limited Labs EXP 004 25K rulebook on 7 November. Its public-facing hook is 'no daily loss', but the same official page retains a 3% static USD 750 maximum-loss line; BestProps independently records the launch and core rule set. The traffic task is to resolve that exact rule-reading tension, not to recommend an account, predict a market or promise a payout.",
+      "traffic_window": "Publish only after a human rechecks the current EXP 004 page, availability, chosen option, price and Evaluation/Master applicability. Use the launch-led title while the limited run and dated rule set remain current, no later than 10 November 12:00 ET. Stop immediately on an official correction, price/option/rule/stage change, product removal or loss of the reader-entered calculation path.",
+      "search_intents": [
+        "FundingPips EXP 004 rules",
+        "FundingPips EXP 004 no daily loss",
+        "FundingPips 750 max loss",
+        "EXP 004 3% static drawdown",
+        "does no daily loss mean no maximum loss"
+      ],
+      "traffic_angle": "Borrow the newly launched 'no daily loss' wording to answer the immediately readable arithmetic: USD 25,000 × 3% = USD 750. Show side by side that the no-daily-loss option and the 2% / USD 500 daily-loss option both retain the USD 750 static maximum-loss line. The calculation explains two distinct account constraints; it does not compare prices, estimate a loss, prescribe trade size or predict an instrument.",
+      "calculator_bridge": "Start with the exact EXP 004 option and stage, then the official USD 750 rule boundary and the difference from the USD 500 daily line. Only after that, PipGauge Challenge Simulator and Daily Loss Limit organise reader-entered account-state and planned-risk inputs; PositionMath Prop Firm Simulator is a secondary rule-input cross-check. Neither site validates FundingPips terms, product availability, account eligibility, execution, stop fill or payout.",
+      "example_scenario": "Teaching only: a USD 25,000 EXP 004 account. 3% static maximum loss is USD 750. With the 2% daily-loss option, USD 500 and USD 750 are separate published rule lines; with the no-daily-loss option, the USD 750 static maximum-loss line remains. These are not per-trade limits, recommendations, observed costs, current account floors or expected outcomes.",
+      "distribution_order": [
+        "new PipGauge EXP 004 rule-boundary explainer",
+        "Medium source-linked limited-rule draft",
+        "X self-contained no-daily-loss-versus-static-loss thread",
+        "Reddit native rule-reading question without a first-round link"
+      ],
+      "link_placement": "Give the exact product scope, 3% × 25,000 = 750 arithmetic, two distinct loss lines and plan-versus-trade boundary before one natural calculator link. The first Reddit post has no link, tracking parameter, affiliate text, price comparison or purchase pitch; the X thread remains complete without a click.",
+      "expiry_condition": "Stop using this launch-led frame if EXP 004 is unavailable, FundingPips changes the rulebook, price, daily-loss options, account size or stage language, a correction appears, the short window ends at 10 November 12:00 ET, or only generic prop-firm commentary remains. Do not recycle USD 750 as an evergreen per-trade or product-comparison number.",
+      "editorial_boundary": "Do not compare or endorse prop firms, recommend purchase, infer product quality, predict FX/CFD/crypto prices, tell readers to trade, call USD 750 a single-trade allowance, assume a contract value, promise a stop fill or payout, or treat an official announcement as independent evidence. State that only the current official rulebook controls and that reader inputs must be verified.",
+      "refresh_target": null,
+      "refresh_signals": {
+        "fact_delta": true,
+        "search_delta": true,
+        "example_delta": true,
+        "window_delta": true
+      },
+      "refresh_updates": [],
+      "content_mainline": "Create one dated EXP 004 rule-reading note that translates the published 25K / 3% static maximum-loss line into USD 750 and distinguishes it from the optional USD 500 daily-loss line; do not create a purchase comparison or reuse the old undated FundingPips On-Demand observation.",
+      "body_material": [
+        "FundingPips EXP 004 official dated rulebook",
+        "BestProps independent 7 November launch and rule reading",
+        "official public launch announcement as discovery only",
+        "USD 25,000 × 3% = USD 750",
+        "separate no-daily-loss and 2% / USD 500 daily-loss option explanation",
+        "10 November 12:00 ET expiry and official-change stop gate"
+      ],
+      "product_bridge": "PipGauge organises reader-entered prop-risk inputs after the dated rule explanation; PositionMath supplies a secondary simulation cross-check. Neither replaces the official FundingPips rulebook or makes a purchase, eligibility, trading or payout decision.",
+      "product_bridge_type": "existing"
+    },
     "HR-20261107-01": {
       "playbook_status": "ready",
       "execution_mode": "refresh",

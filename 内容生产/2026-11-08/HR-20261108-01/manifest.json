@@ -1,0 +1,20 @@
+{
+  "candidate_id": "HR-20261108-01",
+  "scan_date": "2026-11-08",
+  "primary_site": "PipGauge",
+  "topic": "FundingPips Labs EXP 004: Check the $750 Static-Loss Boundary Before Using the No-Daily-Loss Hook",
+  "execution_mode": "new",
+  "refresh_target": null,
+  "package_summary": "当期审核快照：以 FundingPips 7 November 发布的限定 Labs EXP 004 规则和独立规则追踪为依据，解释 25K 账户的 3% 静态最大亏损 USD 750 不会因无日亏损选项而放宽。内容只演示已公开的账户边界和读者输入的计划风险；不推荐购买、交易或预测市场。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "limited_run_rule_snapshot",
+  "time_status_label": "仅在 FundingPips EXP 004 官方规则仍可访问、产品仍在售且审核人复核所有选项/阶段后使用；停售、规则/价格/适用范围变化或 10 November 12:00 ET 后停止此标题。",
+  "documents": [
+    {"id": "facts", "label": "事实与论点", "file": "00-事实与论点.md", "platform": "internal", "kind": "editorial brief", "status_label": "已整理"},
+    {"id": "medium", "label": "Medium", "file": "01-Medium.md", "platform": "medium", "kind": "long-form draft", "status_label": "待人工审核"},
+    {"id": "reddit", "label": "Reddit", "file": "02-Reddit.md", "platform": "reddit", "kind": "native discussion draft", "status_label": "待人工审核"},
+    {"id": "x", "label": "X", "file": "03-X.md", "platform": "x", "kind": "short thread draft", "status_label": "待人工审核"},
+    {"id": "review", "label": "审核清单", "file": "04-人工审核.md", "platform": "internal", "kind": "human gate", "status_label": "必须完成"}
+  ]
+}
