@@ -1,0 +1,100 @@
+{
+  "scan_date": "2026-11-09",
+  "generated_at": "2026-11-09T22:03:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-11-09T22:03:00+08:00",
+      "source_count": 3,
+      "note": "覆盖 BLS CPI home / November release schedule 与 FundingPips EXP 004 official rulebook；一手页只确认日期、规则和适用范围，不用于市场方向、购买或执行主张。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-11-09T22:03:00+08:00",
+      "source_count": 2,
+      "note": "AP 本周经济日历独立交叉 10 November CPI 发布窗口；BestProps 被用于复查 EXP 004 的独立规则阅读，但未显示新的 9 November 变化。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "partial",
+      "checked_at": "2026-11-09T22:03:00+08:00",
+      "source_count": 2,
+      "note": "检查公开 ForexFactory November calendar 与 Reddit prop-firm 索引。前者仅为日历发现；后者是泛化 daily-loss / reset-time 讨论，未保留 candidate-specific 非方向性计算需求。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-11-09T22:03:00+08:00",
+      "source_count": 0,
+      "note": "未保留稳定、公开、可归属且非方向性的候选信号；动态流、登录墙、截图和不可验证材料不计入。"
+    }
+  ],
+  "candidates": {
+    "HR-20261109-01": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/CPI/",
+          "source_type": "official_future_release_schedule",
+          "published_at": "2026-11-06",
+          "freshness_role": "BLS CPI home states that the October 2026 CPI is scheduled for 10 November 2026 at 08:30 ET; it is a release clock, not a result.",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/40dba34b39bf5bc08c71547e538e3355",
+          "source_type": "independent_dated_english_week_ahead_coverage",
+          "published_at": "2026-11-06",
+          "freshness_role": "AP independently identifies Tuesday's October CPI among the week's inflation updates; it cross-checks the window rather than supplying a result.",
+          "reliable": true
+        },
+        {
+          "publisher": "ForexFactory",
+          "url": "https://www.forexfactory.com/calendar?month=nov.2026",
+          "source_type": "public_calendar_discovery_only",
+          "published_at": "2026-11-09",
+          "freshness_role": "Public FX calendar discovery confirms the week is visible to the forex audience but supplies no CPI result or calculator-specific query.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_future_calendar_only_without_distinct_non_directional_calculator_demand",
+        "duplicate_of": ["HR-20260907-02", "HR-20260910-03", "HR-20261009-02"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "Require the published BLS result, independent reliable English result coverage, and an attributable result-specific non-directional calculator question; if passed, refresh an existing CPI/payroll item rather than create a duplicate.",
+        "rationale": "The publication clock is current and cross-checked, but a calendar does not itself create a new reader calculation task. A generic pre-CPI lot-size or fixed-risk table would duplicate existing macro content and risk becoming forecast framing."
+      }
+    },
+    "HR-20261109-02": {
+      "sources": [
+        {
+          "publisher": "FundingPips",
+          "url": "https://help.fundingpips.com/hc/en-us/articles/52395111530897-EXP-004",
+          "source_type": "official_dated_limited_product_rulebook_recheck",
+          "published_at": "2026-11-07",
+          "freshness_role": "Rechecked the same dated EXP 004 rulebook selected on 8 November; no retained official correction, option, availability or stage change was found.",
+          "reliable": true
+        },
+        {
+          "publisher": "BestProps",
+          "url": "https://bestprops.com/fundingpips-consistency-rule/",
+          "source_type": "independent_current_rule_reading_recheck",
+          "published_at": "2026-11-08",
+          "freshness_role": "Rechecked independent launch/rule reading; no separate 9 November impact or query delta was retained.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_duplicate_launch_frame_without_new_refresh_signal",
+        "duplicate_of": ["HR-20261108-01"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": false},
+        "reopen_trigger": "Require an official correction or dated/versioned rule, option, stage or availability change plus independent current impact or a different reader calculation question; refresh HR-20261108-01 if it qualifies.",
+        "rationale": "The prior day's dated launch path remains the only verified path. Repeating the USD 750 static-loss arithmetic without a new fact, query, example or window would create duplicate content."
+      }
+    }
+  }
+}

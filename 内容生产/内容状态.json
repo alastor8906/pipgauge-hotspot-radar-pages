@@ -63,12 +63,12 @@
     "refresh_target": null
   },
   "_last_scan": {
-    "scan_date": "2026-11-07",
-    "selected_count": 1,
-    "content_package_count": 1,
-    "platform_draft_count": 3,
-    "status": "review_ready_awaiting_human_review",
-    "note": "Created one 2026-11-07 review package only: a refresh of the verified Canada October jobs result into the existing USD/CAD fixed-risk snapshot. Every Medium/Reddit/X draft is awaiting_human_review. No post, comment, message, email or social-account action occurred."
+    "scan_date": "2026-11-09",
+    "selected_count": 0,
+    "content_package_count": 0,
+    "platform_draft_count": 0,
+    "status": "no_content_generated_zero_selected",
+    "note": "No 2026-11-09 review package was created: the cross-checked 10 November U.S. CPI calendar has no published result or distinct attributable non-directional calculator demand, and FundingPips EXP 004 has no new refresh signal beyond the 8 November package. No post, comment, message, email or social-account action occurred."
   },
   "HR-20261016-01": {
     "content_status": "review_ready",

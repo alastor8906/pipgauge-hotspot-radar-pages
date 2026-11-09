@@ -1,0 +1,34 @@
+{
+  "scan_date": "2026-11-08",
+  "generated_at": "2026-11-08T22:12:00+08:00",
+  "coverage": [
+    {"channel": "官方与一手来源", "status": "complete", "checked_at": "2026-11-08T22:12:00+08:00", "source_count": 3, "note": "覆盖 FundingPips 7 November EXP 004 dated rulebook、官方公开 launch announcement mirror 与 TX3 8 November FAQ；一手来源只核验产品条款、日期、option 和阶段范围，不用于市场、购买或执行主张。"},
+    {"channel": "独立可靠英文来源", "status": "complete", "checked_at": "2026-11-08T22:12:00+08:00", "source_count": 3, "note": "BestProps 独立规则阅读交叉 FundingPips EXP 004；PropTested 和 Backtestle 仅用于 TX3/AudaCity 观察项的独立发现，不替代缺失的 controlling official page。"},
+    {"channel": "Reddit / ForexFactory / BabyPips", "status": "partial", "checked_at": "2026-11-08T22:12:00+08:00", "source_count": 0, "note": "公开索引被检查但没有保留可验证、candidate-specific、非方向性 calculator query；不将无结果、动态流或旧帖子误写为无热度。"},
+    {"channel": "X / Quora", "status": "limited", "checked_at": "2026-11-08T22:12:00+08:00", "source_count": 1, "note": "FundingPips 官方公开 announcement mirror 用作 launch-discovery wording；未保留 Quora 或动态/登录受限 X 材料，也不把官方宣传当独立规则事实。"}
+  ],
+  "candidates": {
+    "HR-20261108-01": {
+      "sources": [
+        {"publisher": "FundingPips", "url": "https://help.fundingpips.com/hc/en-us/articles/52395111530897-EXP-004", "source_type": "official_dated_limited_product_rulebook", "published_at": "2026-11-07", "freshness_role": "Official EXP 004 page gives the 25K account, 6 percent target, 3 percent static USD 750 maximum loss, daily-loss options and limited-run scope.", "reliable": true},
+        {"publisher": "BestProps", "url": "https://bestprops.com/fundingpips-consistency-rule/", "source_type": "independent_dated_english_rule_change_reading", "published_at": "2026-11-08", "freshness_role": "Independent reading records the 7 November EXP 004 launch and the same 25K / 6 percent / 3 percent static rule set; official terms remain controlling.", "reliable": true},
+        {"publisher": "FundingPips official public announcement", "url": "https://nitter.gq/fundingpips/with_replies", "source_type": "public_launch_discovery_only", "published_at": "2026-11-07", "freshness_role": "Official public announcement provides current launch language and public discovery only; it does not replace the rulebook.", "reliable": false}
+      ],
+      "decision": {"novelty_gate": "pass", "decision_gate": "selected_new_dated_limited_product_rule_with_independent_current_reading_and_static_loss_calculator_bridge", "duplicate_of": ["HR-20261022-01"], "refresh_signals": {"fact_delta": true, "search_delta": true, "example_delta": true, "window_delta": true}, "reopen_trigger": "Reassess only on a FundingPips correction, availability/price/option/stage change, or a later official rule update that creates a different non-directional calculation question.", "rationale": "EXP 004 is a dated, limited 25K Labs product with a new query object and a transparent USD 750 static-loss arithmetic check. The prior FundingPips observation was an undated On-Demand reward-cycle path, not reusable content."}
+    },
+    "HR-20261108-02": {
+      "sources": [
+        {"publisher": "TX3 Funding", "url": "https://faq.tx3funding.com/news-trading", "source_type": "official_dated_faq", "published_at": "2026-11-08", "freshness_role": "Official FAQ states ±5-minute red-folder restrictions without the News Trading Add-on.", "reliable": true},
+        {"publisher": "PropTested", "url": "https://proptested.com/firms/tx3-funding", "source_type": "independent_current_rule_reading", "published_at": "2026-11-06", "freshness_role": "Independent reading reports the same broad timing restriction as checked 5 November.", "reliable": true}
+      ],
+      "decision": {"novelty_gate": "fail", "decision_gate": "observation_newly_dated_faq_without_verified_rule_delta_or_attributable_current_calculator_demand", "duplicate_of": [], "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true}, "reopen_trigger": "Require a dated official before/after rule change plus a current public, non-directional reader question and a clear calculator journey before reconsideration.", "rationale": "The page date alone does not establish a new rule or a time-sensitive reader demand. An upcoming CPI calendar is not itself permission to manufacture a session-clock article."}
+    },
+    "HR-20261108-03": {
+      "sources": [
+        {"publisher": "Backtestle", "url": "https://www.backtestle.com/en/kural-degisiklikleri", "source_type": "independent_dated_rule_change_tracker", "published_at": "2026-11-07", "freshness_role": "Tracker records an Ability One cohort and 50 percent best-day rule, but it is not the controlling firm source.", "reliable": true},
+        {"publisher": "BestProps", "url": "https://bestprops.com/rules/consistency-rule/", "source_type": "independent_current_rule_reading", "published_at": "2026-11-08", "freshness_role": "Independent current reading describes cohort-specific Ability One consistency language without providing a retained dated official page in this scan.", "reliable": false}
+      ],
+      "decision": {"novelty_gate": "fail", "decision_gate": "observation_missing_direct_dated_official_product_rule_source", "duplicate_of": [], "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true}, "reopen_trigger": "Require an accessible AudaCity official dated/versioned page, exact cohort wording and independent public impact or heat before a new/refresh decision.", "rationale": "A calculator formula cannot promote tracker-reported terms into a verified product-rule claim."}
+    }
+  }
+}

@@ -1,14 +1,83 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-06T22:08:00+08:00",
+  "updated_at": "2026-11-09T22:03:00+08:00",
   "last_scan": {
-    "scan_date": "2026-11-06",
-    "selected_count": 2,
-    "playbook_ready_count": 2,
-    "content_package_count": 2,
-    "note": "Two current calculator-bridge topics qualified: the completed U.S. October payroll result refresh and FTMO Futures' dated Growth 100K/150K rule change for new Evaluations. Both use non-directional, reader-entered calculations and have content packages awaiting human review."
+    "scan_date": "2026-11-09",
+    "selected_count": 0,
+    "playbook_ready_count": 0,
+    "content_package_count": 0,
+    "note": "No current calculator-bridge topic qualified. The 10 November U.S. CPI release is a cross-checked calendar window but has no published result or distinct attributable non-directional calculator demand; the FundingPips EXP 004 launch has no new refresh signal beyond the 8 November package. No playbook or content package was generated."
   },
   "items": {
+    "HR-20261108-01": {
+      "playbook_status": "ready",
+      "execution_mode": "new",
+      "urgency": "high",
+      "publish_deadline": "2026-11-10T12:00:00-05:00",
+      "traffic_hook": "FundingPips launched the dated limited Labs EXP 004 25K rulebook on 7 November. Its public-facing hook is 'no daily loss', but the same official page retains a 3% static USD 750 maximum-loss line; BestProps independently records the launch and core rule set. The traffic task is to resolve that exact rule-reading tension, not to recommend an account, predict a market or promise a payout.",
+      "traffic_window": "Publish only after a human rechecks the current EXP 004 page, availability, chosen option, price and Evaluation/Master applicability. Use the launch-led title while the limited run and dated rule set remain current, no later than 10 November 12:00 ET. Stop immediately on an official correction, price/option/rule/stage change, product removal or loss of the reader-entered calculation path.",
+      "search_intents": [
+        "FundingPips EXP 004 rules",
+        "FundingPips EXP 004 no daily loss",
+        "FundingPips 750 max loss",
+        "EXP 004 3% static drawdown",
+        "does no daily loss mean no maximum loss"
+      ],
+      "traffic_angle": "Borrow the newly launched 'no daily loss' wording to answer the immediately readable arithmetic: USD 25,000 × 3% = USD 750. Show side by side that the no-daily-loss option and the 2% / USD 500 daily-loss option both retain the USD 750 static maximum-loss line. The calculation explains two distinct account constraints; it does not compare prices, estimate a loss, prescribe trade size or predict an instrument.",
+      "calculator_bridge": "Start with the exact EXP 004 option and stage, then the official USD 750 rule boundary and the difference from the USD 500 daily line. Only after that, PipGauge Challenge Simulator and Daily Loss Limit organise reader-entered account-state and planned-risk inputs; PositionMath Prop Firm Simulator is a secondary rule-input cross-check. Neither site validates FundingPips terms, product availability, account eligibility, execution, stop fill or payout.",
+      "example_scenario": "Teaching only: a USD 25,000 EXP 004 account. 3% static maximum loss is USD 750. With the 2% daily-loss option, USD 500 and USD 750 are separate published rule lines; with the no-daily-loss option, the USD 750 static maximum-loss line remains. These are not per-trade limits, recommendations, observed costs, current account floors or expected outcomes.",
+      "distribution_order": [
+        "new PipGauge EXP 004 rule-boundary explainer",
+        "Medium source-linked limited-rule draft",
+        "X self-contained no-daily-loss-versus-static-loss thread",
+        "Reddit native rule-reading question without a first-round link"
+      ],
+      "link_placement": "Give the exact product scope, 3% × 25,000 = 750 arithmetic, two distinct loss lines and plan-versus-trade boundary before one natural calculator link. The first Reddit post has no link, tracking parameter, affiliate text, price comparison or purchase pitch; the X thread remains complete without a click.",
+      "expiry_condition": "Stop using this launch-led frame if EXP 004 is unavailable, FundingPips changes the rulebook, price, daily-loss options, account size or stage language, a correction appears, the short window ends at 10 November 12:00 ET, or only generic prop-firm commentary remains. Do not recycle USD 750 as an evergreen per-trade or product-comparison number.",
+      "editorial_boundary": "Do not compare or endorse prop firms, recommend purchase, infer product quality, predict FX/CFD/crypto prices, tell readers to trade, call USD 750 a single-trade allowance, assume a contract value, promise a stop fill or payout, or treat an official announcement as independent evidence. State that only the current official rulebook controls and that reader inputs must be verified.",
+      "refresh_target": null,
+      "refresh_signals": {
+        "fact_delta": true,
+        "search_delta": true,
+        "example_delta": true,
+        "window_delta": true
+      },
+      "refresh_updates": [],
+      "content_mainline": "Create one dated EXP 004 rule-reading note that translates the published 25K / 3% static maximum-loss line into USD 750 and distinguishes it from the optional USD 500 daily-loss line; do not create a purchase comparison or reuse the old undated FundingPips On-Demand observation.",
+      "body_material": [
+        "FundingPips EXP 004 official dated rulebook",
+        "BestProps independent 7 November launch and rule reading",
+        "official public launch announcement as discovery only",
+        "USD 25,000 × 3% = USD 750",
+        "separate no-daily-loss and 2% / USD 500 daily-loss option explanation",
+        "10 November 12:00 ET expiry and official-change stop gate"
+      ],
+      "product_bridge": "PipGauge organises reader-entered prop-risk inputs after the dated rule explanation; PositionMath supplies a secondary simulation cross-check. Neither replaces the official FundingPips rulebook or makes a purchase, eligibility, trading or payout decision.",
+      "product_bridge_type": "existing"
+    },
+    "HR-20261107-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-11-08T12:00:00-05:00",
+      "traffic_hook": "Statistics Canada released October employment at -4,700 and unemployment at 6.7%; Reuters independently reported the same result. ForexFactory's public CAD result page supplies current FX-audience discovery wording, including the -4.7K actual, 14.6K forecast and -68.3K prior values. The hook is the completed result and a reader's fixed-risk check, never a CAD, USD/CAD, rate or volatility forecast.",
+      "traffic_window": "Refresh the existing USD/CAD fixed-risk page only after a human rechecks Statistics Canada and Reuters. Use the result-led title through 8 November 12:00 ET, then retire it; stop earlier on a Statistics Canada correction or a later independently verified fact that changes the reader question.",
+      "search_intents": ["Canada jobs report -4700 USD CAD fixed risk", "Canada unemployment 6.7 position size calculator", "USDCAD pip value 25 pip stop", "how many lots USDCAD for 75 dollar risk", "Canada October jobs result forex risk"],
+      "traffic_angle": "Borrow the released -4,700 / 6.7% fact set to answer one non-directional question: with a USD 10,000 teaching account, USD 75 maximum planned price risk, and an explicitly approximate USD 10-per-pip USD/CAD USD-account input, what size corresponds to a 25, 50 or 75-pip planned stop? The readable answer is 0.30, 0.15 or 0.10 standard lot before costs. It is risk-budget arithmetic, not a jobs-report move estimate or forecast.",
+      "calculator_bridge": "Give the result facts and formula first. PipGauge Pip Value verifies the reader's actual USD/CAD/account/contract pip value; PipGauge Position Size verifies reader-entered USD risk and planned stop. P&L or Spread Cost are separate hypothetical checks only. PositionMath is a secondary generic position-risk cross-check. These tools do not interpret Canada's jobs report, forecast markets or guarantee a stop fill.",
+      "example_scenario": "Teaching only: USD 10,000 account; USD 75 maximum planned price risk; USD/CAD in a USD account at an approximate USD 10 per pip per standard lot. A 25/50/75-pip planned stop maps to about 0.30/0.15/0.10 standard lot before commission, spread, slippage, gaps, minimum size or platform rules. No input is a live quote, expected move or trade instruction.",
+      "distribution_order": ["refresh existing USD/CAD fixed-risk article HR-20260903-01", "Medium dated post-report fixed-risk refresh", "X self-contained Canada-jobs-risk thread", "Reddit native process discussion without a first-round link"],
+      "link_placement": "State the released data, formula, three readable sizes and plan-versus-fill limit before one PipGauge verification link. Do not put a link, tracking parameter or product pitch in the initial Reddit post; the X thread remains independently readable.",
+      "expiry_condition": "Stop using this October-result frame at 8 November 12:00 ET, on a Statistics Canada correction, or if later independently verified information creates a different calculation question. Do not recycle 25/50/75 pips as an expected Canada-jobs move or evergreen commentary.",
+      "editorial_boundary": "Do not predict USD/CAD, CAD, the Bank of Canada, interest rates, volatility, profitability or a market move. Do not recommend a position, say a planned stop is a guaranteed fill, or present assumed pip value, spread or costs as observed event execution data.",
+      "refresh_target": "HR-20260903-01",
+      "refresh_signals": {"fact_delta": true, "search_delta": true, "example_delta": true, "window_delta": true},
+      "refresh_updates": ["replace the Bank of Canada 2.25% hold fact block with Canada October employment -4,700 and unemployment 6.7%, with Reuters independent confirmation", "replace all September-decision language with the 6 November published-result / 8 November expiry window", "replace the USD 100 / 40-80-120-pip teaching table with USD 75 / 25-50-75 pips, explicitly not an expected move", "retain the non-directional and plan-versus-fill boundaries"],
+      "content_mainline": "Refresh the existing USD/CAD fixed-risk article into a dated Canada October jobs-result check using published -4,700 / 6.7% facts and transparent USD 75 25/50/75-pip arithmetic; do not create another CAD macro article.",
+      "body_material": ["Statistics Canada 6 November Labour Force Survey: -4,700 and 6.7%", "Reuters independent same-day result coverage", "ForexFactory CAD result page as discovery only", "USD 75 risk at 25/50/75 pips", "8 November 12:00 ET expiry and correction stop gate"],
+      "product_bridge": "PipGauge verifies USD/CAD pip value and fixed-risk size after the fact-led explanation; it does not interpret Canada jobs data, forecast a currency move or guarantee execution.",
+      "product_bridge_type": "existing"
+    },
     "HR-20261106-01": {
       "playbook_status": "ready",
       "execution_mode": "refresh",
