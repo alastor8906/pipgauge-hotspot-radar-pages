@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T14:14:39.846Z",
+  "generated_at": "2026-11-10T14:08:51.820Z",
   "endpoint": "multi_platform_drafts_awaiting_human_review",
   "supported_platforms": [
     "medium",
@@ -7,6 +7,41 @@
     "x"
   ],
   "packages": [
+    {
+      "candidate_id": "HR-20261110-01",
+      "scan_date": "2026-11-10",
+      "primary_site": "PipGauge",
+      "topic": "U.S. October CPI Is 0.4%: Refresh the Fixed-Risk Check After the Release",
+      "package_summary": "当期审核快照：用 BLS 已发布的 October CPI +0.4% / core +0.3% 更新既有美国结果后固定风险稿。先回答日内损失预算与计划仓位的机械关系，再提供计算器核验入口；不预测货币、贵金属、指数、利率或波动。",
+      "package_status": "review_ready",
+      "review_state": "awaiting_human_review",
+      "time_status": "short_lived_post_report_refresh",
+      "time_status_label": "仅在 11 November 12:00 ET 前且 BLS/AP 事实未更正时使用；更正、窗口结束或出现新问题即停用。",
+      "url": "../内容生产/2026-11-10/HR-20261110-01/index.html",
+      "platforms": [
+        {
+          "id": "medium",
+          "label": "Medium",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-11-10/HR-20261110-01/index.html#medium"
+        },
+        {
+          "id": "reddit",
+          "label": "Reddit",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-11-10/HR-20261110-01/index.html#reddit"
+        },
+        {
+          "id": "x",
+          "label": "X",
+          "status": "draft_ready",
+          "status_label": "待人工审核",
+          "url": "../内容生产/2026-11-10/HR-20261110-01/index.html#x"
+        }
+      ]
+    },
     {
       "candidate_id": "HR-20261108-01",
       "scan_date": "2026-11-08",

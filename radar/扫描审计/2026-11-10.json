@@ -1,0 +1,96 @@
+{
+  "scan_date": "2026-11-10",
+  "generated_at": "2026-11-10T22:00:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-11-10T22:00:00+08:00",
+      "source_count": 1,
+      "note": "覆盖 BLS October 2026 CPI 已发布结果。仅确认日期、CPI +0.4%、core +0.3%、前值和 BLS 的同比数据限制；不推导市场方向或执行成本。"
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-11-10T22:00:00+08:00",
+      "source_count": 1,
+      "note": "AP 同日独立交叉 +0.4% CPI、+0.3% core CPI 及各高于预期 0.1 个百分点。"
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "partial",
+      "checked_at": "2026-11-10T22:00:00+08:00",
+      "source_count": 2,
+      "note": "检查公开 r/PropFirms 与 r/DayTradeFutures CPI 帖子。它们仅证实当期日内损失、规模、计划止损和滑点的讨论问题；其中的历史范围、报价、回测和观点不作为事实或执行证据。"
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-11-10T22:00:00+08:00",
+      "source_count": 0,
+      "note": "未保留稳定、公开、可归属且与本次已发布 CPI 结果直接相关的非方向性计算信号；动态流、登录墙、截图和不可验证材料不计入。"
+    },
+    {
+      "channel": "官方产品规则 / 独立规则追踪",
+      "status": "partial",
+      "checked_at": "2026-11-10T22:00:00+08:00",
+      "source_count": 1,
+      "note": "复查公开 FundedTime dated tracker；最新相关条目为 2 November 或更早，未形成当期候选。没有以聚合页代替当前 firm 官方规则页。"
+    }
+  ],
+  "candidates": {
+    "HR-20261110-01": {
+      "sources": [
+        {
+          "publisher": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+          "source_type": "official_dated_economic_release",
+          "published_at": "2026-11-10",
+          "freshness_role": "Official October CPI result released at 08:30 ET: CPI-U +0.4% month over month after +0.6% in September, core +0.3%. BLS records that many 12-month changes cannot be published because October 2025 survey data were unavailable.",
+          "reliable": true
+        },
+        {
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/consumer-prices-holiday-inflation-tariffs-trump-fcd3c7766d3cdb36057f6dab19ff3a8e",
+          "source_type": "independent_dated_english_result_coverage",
+          "published_at": "2026-11-10",
+          "freshness_role": "Independent same-day coverage confirms +0.4% CPI and +0.3% core CPI and reports each was 0.1 percentage point above forecast; used for result cross-check and freshness only.",
+          "reliable": true
+        },
+        {
+          "publisher": "Reddit r/PropFirms",
+          "url": "https://www.reddit.com/r/PropFirms/comments/1xskp1l/prop_risk_numbers_3_cpi_is_at_830_et_today_on_the/",
+          "source_type": "public_same_day_discussion_signal_only",
+          "published_at": "2026-11-10",
+          "freshness_role": "Public discussion asks whether CPI-hour trading size fits a funded-account daily-loss boundary. Its backtest/range figures are not used as fact, expected move, price or execution evidence.",
+          "reliable": false
+        },
+        {
+          "publisher": "Reddit r/DayTradeFutures",
+          "url": "https://www.reddit.com/r/DayTradeFutures/comments/1xsk3ub/premarket_prep_tue_nov_10_cpi_day_indexes_flat_nq/",
+          "source_type": "public_same_day_discussion_signal_only",
+          "published_at": "2026-11-10",
+          "freshness_role": "Public CPI-day risk note discusses setting size and maximum loss in advance; quotations and claims are not used as fact or execution evidence.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass",
+        "decision_gate": "selected_refresh_post_result_with_distinct_public_daily_loss_sizing_question",
+        "duplicate_of": [
+          "HR-20261106-01",
+          "HR-20261109-01",
+          "HR-20261014-02"
+        ],
+        "refresh_signals": {
+          "fact_delta": true,
+          "search_delta": true,
+          "example_delta": true,
+          "window_delta": true
+        },
+        "reopen_trigger": "Reopen only on a BLS/AP correction or later independently verified fact that changes the calculation question. If reopened, refresh the current U.S. result-risk draft rather than create another generic CPI article.",
+        "rationale": "Unlike the prior calendar-only observation, the BLS result is published and independently reported. Current public discussion contains an attributable non-directional daily-loss/size question. The reader-facing arithmetic is deliberately separated from CPI reaction and uses declared teaching variables; it refreshes the existing U.S. post-result risk draft instead of duplicating the macro path."
+      }
+    }
+  }
+}

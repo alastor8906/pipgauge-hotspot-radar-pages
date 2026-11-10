@@ -1,4 +1,13 @@
 {
+  "HR-20261110-01": {
+    "content_status": "review_ready",
+    "content_label": "美国10月CPI结果后固定风险刷新审核包待人工审核",
+    "content_url": "../内容生产/2026-11-10/HR-20261110-01/index.html",
+    "content_format": "Medium / Reddit / X",
+    "deadline": "2026-11-11T12:00:00-05:00",
+    "review_state": "awaiting_human_review",
+    "refresh_target": "HR-20261106-01"
+  },
   "HR-20261108-01": {
     "content_status": "review_ready",
     "content_label": "FundingPips Labs EXP 004静态最大亏损核验审核包待人工审核",
@@ -63,12 +72,12 @@
     "refresh_target": null
   },
   "_last_scan": {
-    "scan_date": "2026-11-09",
-    "selected_count": 0,
-    "content_package_count": 0,
-    "platform_draft_count": 0,
-    "status": "no_content_generated_zero_selected",
-    "note": "No 2026-11-09 review package was created: the cross-checked 10 November U.S. CPI calendar has no published result or distinct attributable non-directional calculator demand, and FundingPips EXP 004 has no new refresh signal beyond the 8 November package. No post, comment, message, email or social-account action occurred."
+    "scan_date": "2026-11-10",
+    "selected_count": 1,
+    "content_package_count": 1,
+    "platform_draft_count": 3,
+    "status": "review_package_generated_awaiting_human_review",
+    "note": "One 2026-11-10 refresh package was generated for the published October CPI result: BLS/AP confirm the result and a public prop-firm discussion supplies a specific daily-loss sizing question. It refreshes HR-20261106-01 rather than creating a second generic CPI article. No post, comment, message, email or social-account action occurred."
   },
   "HR-20261016-01": {
     "content_status": "review_ready",
