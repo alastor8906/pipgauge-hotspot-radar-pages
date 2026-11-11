@@ -1,14 +1,110 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-09T22:03:00+08:00",
+  "updated_at": "2026-11-11T22:15:00+08:00",
   "last_scan": {
-    "scan_date": "2026-11-09",
-    "selected_count": 0,
-    "playbook_ready_count": 0,
-    "content_package_count": 0,
-    "note": "No current calculator-bridge topic qualified. The 10 November U.S. CPI release is a cross-checked calendar window but has no published result or distinct attributable non-directional calculator demand; the FundingPips EXP 004 launch has no new refresh signal beyond the 8 November package. No playbook or content package was generated."
+    "scan_date": "2026-11-11",
+    "selected_count": 1,
+    "playbook_ready_count": 1,
+    "content_package_count": 1,
+    "note": "One new dated product-rule playbook qualified: Goat Funded Trader’s official 10 November news-window per-trade retained-profit cap now distinguishes 3% accounts purchased on or after the effective date from earlier 1% accounts, and BestProps independently records the current change. HR-20261111-01 is a local three-platform package awaiting_human_review; no social action occurred."
   },
   "items": {
+    "HR-20261111-01": {
+      "playbook_status": "ready",
+      "execution_mode": "new",
+      "urgency": "high",
+      "publish_deadline": "2026-11-13T17:00:00-05:00",
+      "traffic_hook": "Goat Funded Trader’s 10 November rule update changes the high-impact-news-window retained-profit cap per qualifying trade to 3% of initial balance for accounts purchased on or after 10 November 2026, while earlier purchases retain 1%. BestProps independently records the change. The hook is the purchase-date cohort and what a 3% versus 1% cap means in dollars—not whether to trade news or where a market will go.",
+      "traffic_window": "Publish only after a human rechecks the current Goat official help article, the original purchase date, model and phase scope. Use the rule-change title through 13 November 17:00 ET; stop earlier on an official correction, a changed percentage/window/cohort/scope, an inaccessible source, or loss of the reader’s calculation path.",
+      "search_intents": [
+        "Goat Funded Trader 3% news profit cap",
+        "Goat Funded Trader 1% vs 3% news trading",
+        "Goat Funded Trader news trading purchase date",
+        "Goat Funded Trader 100k news profit limit",
+        "news trade profit cap per trade prop firm"
+      ],
+      "traffic_angle": "Borrow the newly dated 3%-versus-1% wording to answer the exact account-cohort arithmetic: on the official USD 100,000 example, 3% is USD 3,000 and 1% is USD 1,000 per qualifying trade. A USD 4,500 qualifying profit leaves USD 1,500 or USD 3,500 above the applicable ceiling. State that the purchase date, initial balance, one-trade scope and news-window timing control; the figures are rule math, not a price target, risk budget, payout or expected result.",
+      "calculator_bridge": "First establish the official cohort and retained-profit-cap arithmetic. Then PipGauge Risk/Reward and Position Size distinguish the reader’s own planned price risk and planned reward from the firm’s profit ceiling; Challenge Simulator organises reader-entered account constraints. PositionMath Prop Firm Simulator is a secondary cross-check. Neither site validates Goat’s terms, purchase date, event classification, eligibility, execution, profit deduction or payout.",
+      "example_scenario": "Teaching only, using Goat’s published example: USD 100,000 initial balance. Accounts purchased on or after 10 November: 3% × USD 100,000 = USD 3,000; earlier accounts: 1% = USD 1,000. For a USD 4,500 qualifying-news-window trade, the official example says USD 1,500 / USD 3,500 is above the respective ceiling. Separately, a reader may model USD 500 planned price risk and USD 500 / USD 1,000 / USD 1,500 at 1R/2R/3R; this does not forecast price, recommend a ratio or guarantee fills.",
+      "distribution_order": [
+        "new PipGauge purchase-date cohort rule explainer",
+        "Medium dated rule-reading draft",
+        "X self-contained 3%-versus-1% calculation thread",
+        "Reddit native rule-verification question without a first-round link"
+      ],
+      "link_placement": "Give the effective date, original-purchase-date test, one-trade scope, 3%/1% arithmetic and plan-versus-rule distinction before one natural PipGauge link. Do not put a link, tracking parameter, affiliate language or purchase pitch in the initial Reddit post; the X thread remains independently readable.",
+      "expiry_condition": "Stop using this new-rule frame at 13 November 17:00 ET, upon any official change to the cohort, percentage, event window, account phase or deduction treatment, if the official page becomes unverifiable, or if only generic news-trading commentary remains. Do not recycle the USD 3,000 / USD 1,000 figures as an evergreen profit target, payout cap, loss limit or trade recommendation.",
+      "editorial_boundary": "Do not recommend buying or trading a Goat account, trading news, evading a rule, or using any particular risk/reward ratio. Do not predict FX, CFD, metals, indices, crypto, rates or volatility; do not promise a stop fill, profit, account compliance or payout. State that the current official agreement and dashboard control and keep retained-profit cap, planned risk, daily loss and payout rules separate.",
+      "refresh_target": null,
+      "refresh_signals": {
+        "fact_delta": true,
+        "search_delta": true,
+        "example_delta": true,
+        "window_delta": true
+      },
+      "refresh_updates": [],
+      "content_mainline": "Create one dated Goat news-window rule note that distinguishes new-account 3% from earlier-account 1% retained-profit caps using the official USD 100,000 example, then separates that cap from reader-entered position risk. Do not create a firm comparison, purchase guide, market call or generic news-trading article.",
+      "body_material": [
+        "Goat Funded Trader official help article updated 10 November 2026",
+        "BestProps independent current patch-note confirmation",
+        "purchase-date cohort and five-minute high-impact-news window",
+        "USD 100,000 × 3% = USD 3,000; USD 100,000 × 1% = USD 1,000",
+        "official USD 4,500 example and excess-profit treatment",
+        "13 November 17:00 ET expiry and official-change stop gate"
+      ],
+      "product_bridge": "PipGauge separates reader-entered planned risk/reward, position size and challenge constraints after the official Goat cohort rule is explained; PositionMath supplies a secondary prop-risk cross-check. Neither calculator replaces the current official rulebook or makes an account, trade, eligibility or payout decision.",
+      "product_bridge_type": "existing"
+    },
+    "HR-20261110-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-11-11T12:00:00-05:00",
+      "traffic_hook": "BLS has published October CPI at +0.4% month over month and core CPI at +0.3%; AP independently reports both results and that each was 0.1 percentage point above forecast. A same-day public prop-firm discussion asks whether CPI-hour size should fit a daily-loss boundary. The hook is the completed report plus that risk-budget question, never a USD, EUR/USD, gold, index, rate or volatility call.",
+      "traffic_window": "Refresh the existing U.S. post-report fixed-risk page only after a human rechecks BLS and AP. Use the result-led title through 11 November 12:00 ET, then retire it; stop earlier on a BLS correction, a material AP correction, or a later independently verified fact that changes the reader question.",
+      "search_intents": [
+        "October 2026 CPI 0.4 forex risk",
+        "CPI result funded account daily loss limit",
+        "CPI day EURUSD position size calculator",
+        "EURUSD pip value 25 pip stop",
+        "how many lots EURUSD for 50 dollar risk"
+      ],
+      "traffic_angle": "Borrow the published +0.4% headline / +0.3% core fact set to answer one non-directional question visible in current discussion: if a USD 10,000 teaching account caps planned price risk at USD 50, what size corresponds to a 25-, 50- or 75-pip planned EUR/USD stop? With an explicitly approximate USD 10-per-pip USD-account teaching input, the readable answers are 0.20, 0.10 and about 0.06 standard lot before costs. The CPI figures are news facts; the stop inputs are reader-chosen teaching variables, not an observed or expected CPI range.",
+      "calculator_bridge": "Give the released facts, formula, three readable sizes and the planned-risk-versus-filled-loss limit first. PipGauge Pip Value verifies the reader's actual pair, account currency and contract convention; PipGauge Position Size checks reader-entered planned risk and stop. PipGauge Daily Loss Limit is a separate account-rule check. Spread Cost is hypothetical only. These calculators do not interpret CPI, verify a prop-firm rule, forecast markets or guarantee a stop fill.",
+      "example_scenario": "Teaching only: USD 10,000 account; USD 50 maximum planned price risk; EUR/USD in a USD account at an approximate USD 10 per pip per standard lot. A 25/50/75-pip planned stop maps to about 0.20/0.10/about 0.06 standard lot before commission, spread, slippage, gaps, minimum size or platform rules. No input is a live quote, actual CPI-hour range or trade instruction.",
+      "distribution_order": [
+        "refresh existing U.S. result-risk article HR-20261106-01",
+        "Medium dated post-CPI fixed-risk refresh",
+        "X self-contained CPI-risk thread",
+        "Reddit native process question without a first-round link"
+      ],
+      "link_placement": "State the released data, formula, three readable sizes and plan-versus-fill limit before one PipGauge verification link. Do not put a link, tracking parameter or product pitch in the initial Reddit post; the X thread remains independently readable.",
+      "expiry_condition": "Stop using this October-result frame at 11 November 12:00 ET, on a BLS or AP correction, if a firm-rule claim cannot be rechecked, or if later independently verified information creates a different calculation question. Do not recycle the 25/50/75-pip grid as an observed CPI move, an execution-cost observation or evergreen commentary.",
+      "editorial_boundary": "Do not predict EUR/USD, the dollar, gold, indices, the Fed, interest rates, volatility, profitability or a market move. Do not recommend a position, say a planned stop is a guaranteed fill, claim a prop-firm daily-loss rule, or present assumed pip value, spread, commission or slippage as observed event execution data.",
+      "refresh_target": "HR-20261106-01",
+      "refresh_signals": {
+        "fact_delta": true,
+        "search_delta": true,
+        "example_delta": true,
+        "window_delta": true
+      },
+      "refresh_updates": [
+        "replace the October payroll +165,000 / 4.1% fact block with BLS October CPI +0.4% month over month and core CPI +0.3%, with AP's independent result and forecast-comparison context",
+        "replace the 6-7 November payroll time language with the 10-11 November CPI result window and BLS/AP correction gate",
+        "replace the USD 50 / 30-60-90-pip teaching grid with USD 50 / 25-50-75 pips; state explicitly that the stops are not an actual or expected CPI-hour range",
+        "retain the non-directional, plan-versus-fill and reader-verification boundaries; add a separate daily-loss-limit check rather than asserting any firm rule"
+      ],
+      "content_mainline": "Refresh the existing U.S. result-risk draft into a dated October-CPI check using published +0.4% / +0.3% facts and transparent USD 50 25/50/75-pip arithmetic; do not create a second generic CPI article.",
+      "body_material": [
+        "BLS 10 November Consumer Price Index: +0.4% all items and +0.3% core month over month",
+        "AP independent same-day result coverage and 0.1 percentage-point forecast comparison",
+        "public r/PropFirms daily-loss sizing discussion as heat only, not market or execution evidence",
+        "USD 50 risk at 25/50/75 pips",
+        "11 November 12:00 ET expiry and source-correction stop gate"
+      ],
+      "product_bridge": "PipGauge verifies reader-entered EUR/USD pip value, fixed-risk size and a separate daily-loss budget after the fact-led explanation; it does not interpret CPI, forecast a currency move, validate firm terms or guarantee execution.",
+      "product_bridge_type": "existing"
+    },
     "HR-20261108-01": {
       "playbook_status": "ready",
       "execution_mode": "new",

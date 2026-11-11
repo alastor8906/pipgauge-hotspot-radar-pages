@@ -1,14 +1,64 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-08T22:12:00+08:00",
+  "updated_at": "2026-11-10T22:00:00+08:00",
   "last_scan": {
-    "scan_date": "2026-11-08",
+    "scan_date": "2026-11-10",
     "selected_count": 1,
     "playbook_ready_count": 1,
     "content_package_count": 1,
-    "note": "One current calculator-bridge topic qualified: FundingPips' dated EXP 004 limited-run rulebook supports a new static-loss-boundary explainer. It uses non-directional rule arithmetic and has one content package awaiting human review."
+    "note": "One refresh qualified: BLS and AP independently verify the published October CPI result, while a public same-day prop-firm discussion supplies a specific daily-loss sizing question. HR-20261110-01 refreshes the existing U.S. result-risk draft rather than creating a second generic CPI article. One local three-platform package remains awaiting_human_review; no social action occurred."
   },
   "items": {
+    "HR-20261110-01": {
+      "playbook_status": "ready",
+      "execution_mode": "refresh",
+      "urgency": "high",
+      "publish_deadline": "2026-11-11T12:00:00-05:00",
+      "traffic_hook": "BLS has published October CPI at +0.4% month over month and core CPI at +0.3%; AP independently reports both results and that each was 0.1 percentage point above forecast. A same-day public prop-firm discussion asks whether CPI-hour size should fit a daily-loss boundary. The hook is the completed report plus that risk-budget question, never a USD, EUR/USD, gold, index, rate or volatility call.",
+      "traffic_window": "Refresh the existing U.S. post-report fixed-risk page only after a human rechecks BLS and AP. Use the result-led title through 11 November 12:00 ET, then retire it; stop earlier on a BLS correction, a material AP correction, or a later independently verified fact that changes the reader question.",
+      "search_intents": [
+        "October 2026 CPI 0.4 forex risk",
+        "CPI result funded account daily loss limit",
+        "CPI day EURUSD position size calculator",
+        "EURUSD pip value 25 pip stop",
+        "how many lots EURUSD for 50 dollar risk"
+      ],
+      "traffic_angle": "Borrow the published +0.4% headline / +0.3% core fact set to answer one non-directional question visible in current discussion: if a USD 10,000 teaching account caps planned price risk at USD 50, what size corresponds to a 25-, 50- or 75-pip planned EUR/USD stop? With an explicitly approximate USD 10-per-pip USD-account teaching input, the readable answers are 0.20, 0.10 and about 0.06 standard lot before costs. The CPI figures are news facts; the stop inputs are reader-chosen teaching variables, not an observed or expected CPI range.",
+      "calculator_bridge": "Give the released facts, formula, three readable sizes and the planned-risk-versus-filled-loss limit first. PipGauge Pip Value verifies the reader's actual pair, account currency and contract convention; PipGauge Position Size checks reader-entered planned risk and stop. PipGauge Daily Loss Limit is a separate account-rule check. Spread Cost is hypothetical only. These calculators do not interpret CPI, verify a prop-firm rule, forecast markets or guarantee a stop fill.",
+      "example_scenario": "Teaching only: USD 10,000 account; USD 50 maximum planned price risk; EUR/USD in a USD account at an approximate USD 10 per pip per standard lot. A 25/50/75-pip planned stop maps to about 0.20/0.10/about 0.06 standard lot before commission, spread, slippage, gaps, minimum size or platform rules. No input is a live quote, actual CPI-hour range or trade instruction.",
+      "distribution_order": [
+        "refresh existing U.S. result-risk article HR-20261106-01",
+        "Medium dated post-CPI fixed-risk refresh",
+        "X self-contained CPI-risk thread",
+        "Reddit native process question without a first-round link"
+      ],
+      "link_placement": "State the released data, formula, three readable sizes and plan-versus-fill limit before one PipGauge verification link. Do not put a link, tracking parameter or product pitch in the initial Reddit post; the X thread remains independently readable.",
+      "expiry_condition": "Stop using this October-result frame at 11 November 12:00 ET, on a BLS or AP correction, if a firm-rule claim cannot be rechecked, or if later independently verified information creates a different calculation question. Do not recycle the 25/50/75-pip grid as an observed CPI move, an execution-cost observation or evergreen commentary.",
+      "editorial_boundary": "Do not predict EUR/USD, the dollar, gold, indices, the Fed, interest rates, volatility, profitability or a market move. Do not recommend a position, say a planned stop is a guaranteed fill, claim a prop-firm daily-loss rule, or present assumed pip value, spread, commission or slippage as observed event execution data.",
+      "refresh_target": "HR-20261106-01",
+      "refresh_signals": {
+        "fact_delta": true,
+        "search_delta": true,
+        "example_delta": true,
+        "window_delta": true
+      },
+      "refresh_updates": [
+        "replace the October payroll +165,000 / 4.1% fact block with BLS October CPI +0.4% month over month and core CPI +0.3%, with AP's independent result and forecast-comparison context",
+        "replace the 6-7 November payroll time language with the 10-11 November CPI result window and BLS/AP correction gate",
+        "replace the USD 50 / 30-60-90-pip teaching grid with USD 50 / 25-50-75 pips; state explicitly that the stops are not an actual or expected CPI-hour range",
+        "retain the non-directional, plan-versus-fill and reader-verification boundaries; add a separate daily-loss-limit check rather than asserting any firm rule"
+      ],
+      "content_mainline": "Refresh the existing U.S. result-risk draft into a dated October-CPI check using published +0.4% / +0.3% facts and transparent USD 50 25/50/75-pip arithmetic; do not create a second generic CPI article.",
+      "body_material": [
+        "BLS 10 November Consumer Price Index: +0.4% all items and +0.3% core month over month",
+        "AP independent same-day result coverage and 0.1 percentage-point forecast comparison",
+        "public r/PropFirms daily-loss sizing discussion as heat only, not market or execution evidence",
+        "USD 50 risk at 25/50/75 pips",
+        "11 November 12:00 ET expiry and source-correction stop gate"
+      ],
+      "product_bridge": "PipGauge verifies reader-entered EUR/USD pip value, fixed-risk size and a separate daily-loss budget after the fact-led explanation; it does not interpret CPI, forecast a currency move, validate firm terms or guarantee execution.",
+      "product_bridge_type": "existing"
+    },
     "HR-20261108-01": {
       "playbook_status": "ready",
       "execution_mode": "new",

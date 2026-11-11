@@ -1,0 +1,20 @@
+{
+  "candidate_id": "HR-20261111-01",
+  "scan_date": "2026-11-11",
+  "primary_site": "PipGauge",
+  "topic": "Goat Funded Trader’s 3% News-Profit Cap: Check the Purchase-Date Cohort Before You Count a News Trade",
+  "execution_mode": "new",
+  "refresh_target": null,
+  "package_summary": "当期审核快照：用 Goat Funded Trader 于 10 November 更新的新闻窗口利润上限，解释新购账户 3% 与旧账户 1% 的购买日期分层。先给出账户本金乘数、每笔规则和已实现利润的区别，再承接 PipGauge 的 reader-entered risk/reward 与 prop-risk 核验；不建议购买、交易或新闻押注。",
+  "package_status": "review_ready",
+  "review_state": "awaiting_human_review",
+  "time_status": "short_lived_rule_change",
+  "time_status_label": "仅在 13 November 17:00 ET 前且官方规则、适用阶段与购买日期分层未变时使用；规则更正、窗口结束或无法复核即停用。",
+  "documents": [
+    {"id": "facts", "label": "事实与论点", "file": "00-事实与论点.md", "platform": "internal", "kind": "editorial brief", "status_label": "已整理"},
+    {"id": "medium", "label": "Medium", "file": "01-Medium.md", "platform": "medium", "kind": "long-form draft", "status_label": "待人工审核"},
+    {"id": "reddit", "label": "Reddit", "file": "02-Reddit.md", "platform": "reddit", "kind": "native discussion draft", "status_label": "待人工审核"},
+    {"id": "x", "label": "X", "file": "03-X.md", "platform": "x", "kind": "short thread draft", "status_label": "待人工审核"},
+    {"id": "review", "label": "审核清单", "file": "04-人工审核.md", "platform": "internal", "kind": "human gate", "status_label": "必须完成"}
+  ]
+}

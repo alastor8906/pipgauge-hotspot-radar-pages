@@ -1,0 +1,127 @@
+{
+  "scan_date": "2026-11-11",
+  "generated_at": "2026-11-11T22:15:00+08:00",
+  "coverage": [
+    {
+      "channel": "官方与一手来源",
+      "status": "complete",
+      "checked_at": "2026-11-11T22:15:00+08:00",
+      "source_count": 3,
+      "note": "覆盖 Goat Funded Trader 10 November dated news-trading rule, Destatis 11 November final CPI result, and BOJ 12 November CGPI schedule. Official pages establish only their stated rules, dates and figures; they are not used for market direction, purchase, execution or payout claims."
+    },
+    {
+      "channel": "独立可靠英文来源",
+      "status": "complete",
+      "checked_at": "2026-11-11T22:15:00+08:00",
+      "source_count": 1,
+      "note": "BestProps independently records the Goat Funded Trader 10 November purchase-date cohort and profit-cap change. It supplies the independent impact/discovery side permitted for a dated official product rule, but does not replace the official rulebook. No second reliable English final-Germany-CPI report was retained."
+    },
+    {
+      "channel": "Reddit / ForexFactory / BabyPips",
+      "status": "partial",
+      "checked_at": "2026-11-11T22:15:00+08:00",
+      "source_count": 2,
+      "note": "Checked public prop-firm / risk discussion and ForexFactory calendar. The calendar confirms public event visibility only; generic risk, R:R and direction discussion is not elevated into a candidate-specific Goat, EUR or JPY calculation-demand fact."
+    },
+    {
+      "channel": "X / Quora",
+      "status": "limited",
+      "checked_at": "2026-11-11T22:15:00+08:00",
+      "source_count": 0,
+      "note": "No stable, public, attributable non-directional candidate signal was retained. Dynamic feeds, login walls, screenshots and unverified claims are not counted."
+    },
+    {
+      "channel": "公开产品规则追踪",
+      "status": "complete",
+      "checked_at": "2026-11-11T22:15:00+08:00",
+      "source_count": 2,
+      "note": "Rechecked current dated industry trackers. Goat’s 10 November official change has an independent dated record; other surfaced trackers were stale, generic, unsupported by an official dated change, or lacked a natural reader calculation path."
+    }
+  ],
+  "candidates": {
+    "HR-20261111-01": {
+      "sources": [
+        {
+          "publisher": "Goat Funded Trader",
+          "url": "https://help.goatfundedtrader.com/en/articles/10742084-is-news-trading-allowed",
+          "source_type": "official_dated_product_rule",
+          "published_at": "2026-11-10",
+          "freshness_role": "Official help centre updated 10 November: high-impact-news-window profit cap is 3% of initial balance per trade for accounts purchased on or after 10 November 2026 and 1% for earlier purchases; scope and treatment are stated on the page.",
+          "reliable": true
+        },
+        {
+          "publisher": "BestProps",
+          "url": "https://bestprops.com/rules/patch-notes/",
+          "source_type": "independent_dated_product_impact_and_discovery",
+          "published_at": "2026-11-11",
+          "freshness_role": "Independent current patch board records the effective 10 November Goat change, purchase-date cohort, 3%/1% caps, five-minute window and two-phase scope; it is impact/discovery confirmation and does not replace the official rule.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "pass",
+        "decision_gate": "selected_new_dated_product_rule_with_purchase_date_calculation_path",
+        "duplicate_of": [],
+        "refresh_signals": {"fact_delta": true, "search_delta": true, "example_delta": true, "window_delta": true},
+        "reopen_trigger": "Reopen only on an official correction or a later dated change to the purchase-date cohort, percentage, event window, phase scope or excess-profit treatment. Refresh this package rather than create a second generic Goat news-trading article.",
+        "rationale": "The official product rule is dated and specific; an independent current rule tracker confirms its reader-facing impact. The 3% versus 1% purchase-date distinction turns an immediate search question into transparent balance-percentage arithmetic. PipGauge is used only after the rule explanation to separate reader-entered planned risk/reward from a retained-profit cap."
+      }
+    },
+    "HR-20261111-02": {
+      "sources": [
+        {
+          "publisher": "Federal Statistical Office of Germany (Destatis)",
+          "url": "https://www.destatis.de/EN/Press/2026/11/PE26_392_611.html",
+          "source_type": "official_dated_final_economic_release",
+          "published_at": "2026-11-11",
+          "freshness_role": "Official final October CPI confirms 2.8% year over year and -0.2% month over month; it confirms the previously released preliminary result.",
+          "reliable": true
+        },
+        {
+          "publisher": "ForexFactory",
+          "url": "https://www.forexfactory.com/calendar?range=nov11.2026-nov13.2026",
+          "source_type": "public_calendar_discovery_only",
+          "published_at": "2026-11-11",
+          "freshness_role": "Public FX calendar is discovery context only and is not counted as an independent reliable final-result source or evidence of a specific calculation query.",
+          "reliable": false
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_single_reliable_final_fact_without_non_directional_calculator_demand",
+        "duplicate_of": [],
+        "refresh_signals": {"fact_delta": true, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "Require a second independent reliable English report plus a current attributable EUR fixed-risk, pip-value, margin, cost, quantity or portfolio-heat question; then assess any existing EUR macro item for refresh before writing.",
+        "rationale": "A final CPI confirmation is fresh, but one official result and a calendar do not satisfy the macro double-source gate. No distinct non-directional reader calculation journey was verified, so a generic EUR/USD sizing table would fabricate demand."
+      }
+    },
+    "HR-20261111-03": {
+      "sources": [
+        {
+          "publisher": "Bank of Japan",
+          "url": "https://www.boj.or.jp/en/about/calendar/index.htm",
+          "source_type": "official_future_release_schedule",
+          "published_at": "2026-11-06",
+          "freshness_role": "Official schedule lists the October Corporate Goods Price Index for 12 November 2026 at 08:50 JST; this is a release clock, not a result.",
+          "reliable": true
+        },
+        {
+          "publisher": "Bank of Japan",
+          "url": "https://www.boj.or.jp/en/statistics/pi/cgpi_release/cgpi2609.pdf",
+          "source_type": "official_prior_release_schedule_reference",
+          "published_at": "2026-10-13",
+          "freshness_role": "The September report also names 12 November as the next monthly report; same publisher does not count as an independent second source.",
+          "reliable": true
+        }
+      ],
+      "decision": {
+        "novelty_gate": "fail",
+        "decision_gate": "observation_future_schedule_without_independent_result_or_calculation_demand",
+        "duplicate_of": ["HR-20260916-03", "HR-20260917-04"],
+        "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true},
+        "reopen_trigger": "Require a published BOJ result, independently reliable English cross-check and attributable non-directional USD/JPY calculator question. If passed, refresh a relevant existing USD/JPY event-risk item rather than create a calendar-only duplicate.",
+        "rationale": "Both retained sources are the same publisher and only establish timing. The scan found no result or distinct reader calculation task, so the future release cannot support a prebuilt USD/JPY risk article."
+      }
+    }
+  }
+}
