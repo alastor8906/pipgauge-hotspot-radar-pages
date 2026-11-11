@@ -33784,9 +33784,9 @@
             "HR-20260917-04"
           ],
           "refresh_signals": {
-            "fact_delta": false,
-            "search_delta": false,
-            "example_delta": false,
+            "fact_delta": true,
+            "search_delta": true,
+            "example_delta": true,
             "window_delta": true
           },
           "reopen_trigger": "Require a published BOJ result, independently reliable English cross-check and attributable non-directional USD/JPY calculator question. If passed, refresh a relevant existing USD/JPY event-risk item rather than create a calendar-only duplicate.",
@@ -33808,7 +33808,7 @@
       "total_score": 48,
       "hard_gate": false,
       "reliable_sources": 0,
-      "fresh_signal": true,
+      "fresh_signal": false,
       "calculator_mapping": [
         "P&L",
         "Daily Loss Limit"
