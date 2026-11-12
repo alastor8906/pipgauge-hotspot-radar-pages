@@ -1,14 +1,60 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-10T22:00:00+08:00",
+  "updated_at": "2026-11-12T22:02:13+08:00",
   "last_scan": {
-    "scan_date": "2026-11-10",
-    "selected_count": 1,
-    "playbook_ready_count": 1,
-    "content_package_count": 1,
-    "note": "One refresh qualified: BLS and AP independently verify the published October CPI result, while a public same-day prop-firm discussion supplies a specific daily-loss sizing question. HR-20261110-01 refreshes the existing U.S. result-risk draft rather than creating a second generic CPI article. One local three-platform package remains awaiting_human_review; no social action occurred."
+    "scan_date": "2026-11-12",
+    "selected_count": 0,
+    "playbook_ready_count": 0,
+    "content_package_count": 0,
+    "note": "No item qualified. UK GDP had official and Reuters confirmation but no attributable non-directional GBP calculation journey; TopstepX’s credential alignment had no calculation bridge; and the 13 November U.S. PPI remained only a calendar window overlapping the 10 November CPI refresh. No playbook or content package was generated, and no social action occurred."
   },
   "items": {
+    "HR-20261111-01": {
+      "playbook_status": "ready",
+      "execution_mode": "new",
+      "urgency": "high",
+      "publish_deadline": "2026-11-13T17:00:00-05:00",
+      "traffic_hook": "Goat Funded Trader’s 10 November rule update changes the high-impact-news-window retained-profit cap per qualifying trade to 3% of initial balance for accounts purchased on or after 10 November 2026, while earlier purchases retain 1%. BestProps independently records the change. The hook is the purchase-date cohort and what a 3% versus 1% cap means in dollars—not whether to trade news or where a market will go.",
+      "traffic_window": "Publish only after a human rechecks the current Goat official help article, the original purchase date, model and phase scope. Use the rule-change title through 13 November 17:00 ET; stop earlier on an official correction, a changed percentage/window/cohort/scope, an inaccessible source, or loss of the reader’s calculation path.",
+      "search_intents": [
+        "Goat Funded Trader 3% news profit cap",
+        "Goat Funded Trader 1% vs 3% news trading",
+        "Goat Funded Trader news trading purchase date",
+        "Goat Funded Trader 100k news profit limit",
+        "news trade profit cap per trade prop firm"
+      ],
+      "traffic_angle": "Borrow the newly dated 3%-versus-1% wording to answer the exact account-cohort arithmetic: on the official USD 100,000 example, 3% is USD 3,000 and 1% is USD 1,000 per qualifying trade. A USD 4,500 qualifying profit leaves USD 1,500 or USD 3,500 above the applicable ceiling. State that the purchase date, initial balance, one-trade scope and news-window timing control; the figures are rule math, not a price target, risk budget, payout or expected result.",
+      "calculator_bridge": "First establish the official cohort and retained-profit-cap arithmetic. Then PipGauge Risk/Reward and Position Size distinguish the reader’s own planned price risk and planned reward from the firm’s profit ceiling; Challenge Simulator organises reader-entered account constraints. PositionMath Prop Firm Simulator is a secondary cross-check. Neither site validates Goat’s terms, purchase date, event classification, eligibility, execution, profit deduction or payout.",
+      "example_scenario": "Teaching only, using Goat’s published example: USD 100,000 initial balance. Accounts purchased on or after 10 November: 3% × USD 100,000 = USD 3,000; earlier accounts: 1% = USD 1,000. For a USD 4,500 qualifying-news-window trade, the official example says USD 1,500 / USD 3,500 is above the respective ceiling. Separately, a reader may model USD 500 planned price risk and USD 500 / USD 1,000 / USD 1,500 at 1R/2R/3R; this does not forecast price, recommend a ratio or guarantee fills.",
+      "distribution_order": [
+        "new PipGauge purchase-date cohort rule explainer",
+        "Medium dated rule-reading draft",
+        "X self-contained 3%-versus-1% calculation thread",
+        "Reddit native rule-verification question without a first-round link"
+      ],
+      "link_placement": "Give the effective date, original-purchase-date test, one-trade scope, 3%/1% arithmetic and plan-versus-rule distinction before one natural PipGauge link. Do not put a link, tracking parameter, affiliate language or purchase pitch in the initial Reddit post; the X thread remains independently readable.",
+      "expiry_condition": "Stop using this new-rule frame at 13 November 17:00 ET, upon any official change to the cohort, percentage, event window, account phase or deduction treatment, if the official page becomes unverifiable, or if only generic news-trading commentary remains. Do not recycle the USD 3,000 / USD 1,000 figures as an evergreen profit target, payout cap, loss limit or trade recommendation.",
+      "editorial_boundary": "Do not recommend buying or trading a Goat account, trading news, evading a rule, or using any particular risk/reward ratio. Do not predict FX, CFD, metals, indices, crypto, rates or volatility; do not promise a stop fill, profit, account compliance or payout. State that the current official agreement and dashboard control and keep retained-profit cap, planned risk, daily loss and payout rules separate.",
+      "refresh_target": null,
+      "refresh_signals": {
+        "fact_delta": true,
+        "search_delta": true,
+        "example_delta": true,
+        "window_delta": true
+      },
+      "refresh_updates": [],
+      "content_mainline": "Create one dated Goat news-window rule note that distinguishes new-account 3% from earlier-account 1% retained-profit caps using the official USD 100,000 example, then separates that cap from reader-entered position risk. Do not create a firm comparison, purchase guide, market call or generic news-trading article.",
+      "body_material": [
+        "Goat Funded Trader official help article updated 10 November 2026",
+        "BestProps independent current patch-note confirmation",
+        "purchase-date cohort and five-minute high-impact-news window",
+        "USD 100,000 × 3% = USD 3,000; USD 100,000 × 1% = USD 1,000",
+        "official USD 4,500 example and excess-profit treatment",
+        "13 November 17:00 ET expiry and official-change stop gate"
+      ],
+      "product_bridge": "PipGauge separates reader-entered planned risk/reward, position size and challenge constraints after the official Goat cohort rule is explained; PositionMath supplies a secondary prop-risk cross-check. Neither calculator replaces the current official rulebook or makes an account, trade, eligibility or payout decision.",
+      "product_bridge_type": "existing"
+    },
     "HR-20261110-01": {
       "playbook_status": "ready",
       "execution_mode": "refresh",

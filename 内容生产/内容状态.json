@@ -81,12 +81,12 @@
     "refresh_target": null
   },
   "_last_scan": {
-    "scan_date": "2026-11-10",
-    "selected_count": 1,
-    "content_package_count": 1,
-    "platform_draft_count": 3,
-    "status": "review_package_generated_awaiting_human_review",
-    "note": "One 2026-11-10 refresh package was generated for the published October CPI result: BLS/AP confirm the result and a public prop-firm discussion supplies a specific daily-loss sizing question. It refreshes HR-20261106-01 rather than creating a second generic CPI article. No post, comment, message, email or social-account action occurred."
+    "scan_date": "2026-11-12",
+    "selected_count": 0,
+    "content_package_count": 0,
+    "platform_draft_count": 0,
+    "status": "zero_selected_no_content_package",
+    "note": "No 2026-11-12 item cleared all gates: UK GDP has no verified non-directional GBP calculation journey, TopstepX credential alignment has no calculator bridge, and 13 November PPI is calendar-only and overlaps the 10 November CPI refresh. No content package, post, comment, message, email or social-account action occurred."
   },
   "HR-20261016-01": {
     "content_status": "review_ready",

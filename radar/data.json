@@ -1,8 +1,9 @@
 {
   "data_version": 3,
-  "generated_at": "2026-11-11T22:09:53+08:00",
-  "latest_scan_date": "2026-11-11",
+  "generated_at": "2026-11-12T22:07:07+08:00",
+  "latest_scan_date": "2026-11-12",
   "available_dates": [
+    "2026-11-12",
     "2026-11-11",
     "2026-11-10",
     "2026-11-09",
@@ -114,8 +115,285 @@
   ],
   "periods": [
     {
+      "scan_date": "2026-11-12",
+      "generated_at": "2026-11-12T22:07:07+08:00",
+      "scoring_version": "v2-audited",
+      "pilot": {
+        "day": 109,
+        "total_days": 7,
+        "schedule": "22:00",
+        "timezone": "Asia/Shanghai",
+        "threshold": 72,
+        "mode": "topic_traffic_playbooks_and_content_drafts"
+      },
+      "stats": {
+        "selected": 0,
+        "observation": 3,
+        "discarded": 1,
+        "total": 4,
+        "selected_average": 0,
+        "all_selected_pass_gate": true,
+        "content_ready": 0,
+        "playbook_ready": 0
+      },
+      "candidates": [
+        {
+          "scan_date": "2026-11-12",
+          "candidate_id": "HR-20261112-03",
+          "status": "observation",
+          "topic": "U.S. October PPI Is Due 13 November but Has Only a Calendar Window",
+          "primary_site": "PipGauge",
+          "freshness": 24,
+          "traffic_potential": 21,
+          "calculator_fit": 20,
+          "evidence_quality": 15,
+          "actionability": 5,
+          "total_score": 85,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Daily Loss Limit",
+            "Spread Cost"
+          ],
+          "reason": "BLS and AP confirm the 13 November PPI release window, but no result or distinct non-directional public calculator demand exists; only window_delta is present and the generic pre-release risk path overlaps the 10 November CPI refresh.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Bureau of Labor Statistics",
+                "url": "https://www.bls.gov/web/ppi/ppi_dr.pdf",
+                "source_type": "official_future_release_schedule",
+                "published_at": "2026-10-15",
+                "freshness_role": "Official schedule says October 2026 PPI will be released 13 November 2026 at 08:30 ET; it is a clock, not a result.",
+                "reliable": true
+              },
+              {
+                "publisher": "Associated Press",
+                "url": "https://apnews.com/article/40dba34b39bf5bc08c71547e538e3355",
+                "source_type": "independent_reliable_english_week_ahead",
+                "published_at": "2026-11-06",
+                "freshness_role": "AP identifies Friday's October PPI as the week's upcoming producer-inflation report.",
+                "reliable": true
+              },
+              {
+                "publisher": "ForexFactory",
+                "url": "https://www.forexfactory.com/calendar/86-us-ppi-mm",
+                "source_type": "public_calendar_discovery_only",
+                "published_at": "2026-11-11",
+                "freshness_role": "Public calendar supports event discovery only; it is not used for the release fact, forecast, direction or a calculation-demand claim.",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_calendar_only_single_refresh_signal_overlaps_cpi",
+              "duplicate_of": [
+                "HR-20261110-01"
+              ],
+              "refresh_signals": {
+                "fact_delta": false,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Wait for the published PPI result, an independent same-day fact cross-check, and an attributable non-directional reader calculation question; then evaluate whether the 10 November CPI fixed-risk item can be refreshed rather than creating a second generic inflation article.",
+              "rationale": "Two independent sources confirm the release clock, but there is no result and no specific public demand for pip-value, sizing, margin, spread-cost or daily-loss arithmetic. The sole window signal cannot justify a duplicate pre-inflation package."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-11-12",
+          "candidate_id": "HR-20261112-01",
+          "status": "observation",
+          "topic": "UK Q3 GDP Grows 0.7% but Has No Verified GBP Calculator Journey",
+          "primary_site": "PipGauge",
+          "freshness": 25,
+          "traffic_potential": 20,
+          "calculator_fit": 16,
+          "evidence_quality": 15,
+          "actionability": 4,
+          "total_score": 80,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Pip Value",
+            "Position Size",
+            "Margin",
+            "Spread Cost"
+          ],
+          "reason": "ONS and Reuters independently confirm the fresh 0.7% Q3 result, but the retained public discussion is macro interpretation and direction-first rather than a distinct GBP calculation request; do not turn the result into a generic GBP/USD sizing table.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Office for National Statistics",
+                "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/julytoseptember2026",
+                "source_type": "official_dated_economic_release",
+                "published_at": "2026-11-12",
+                "freshness_role": "Official release says UK real GDP increased 0.7% in Q3 2026 and 0.2% in September.",
+                "reliable": true
+              },
+              {
+                "publisher": "Reuters",
+                "url": "https://www.investing.com/news/economy-news/uk-economy-grows-07-in-q3-ons-data-shows-5020475",
+                "source_type": "independent_reliable_english_news",
+                "published_at": "2026-11-12",
+                "freshness_role": "Reuters independently reports 0.7% Q3 growth from the ONS release.",
+                "reliable": true
+              },
+              {
+                "publisher": "Reddit",
+                "url": "https://www.reddit.com/r/ukpolitics/comments/1xu6z5l/uk_economy_grows_at_fastest_pace_for_more_than/",
+                "source_type": "public_discussion_discovery_only",
+                "published_at": "2026-11-12",
+                "freshness_role": "Public discussion signals broad GDP interest, not a GBP/USD position-size, pip-value, margin or cost calculation query.",
+                "reliable": false
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_no_attributable_non_directional_calculator_demand",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Require a current attributable GBP fixed-risk, pip-value, margin, cost, quantity or portfolio-heat question that is not market-direction content; then assess existing GBP macro items for refresh before writing.",
+              "rationale": "The result is fresh and independently confirmed, but public discussion is about macro interpretation and direction. A generic GBP/USD sizing table would invent a calculator journey rather than serve a demonstrated reader need."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-11-12",
+          "candidate_id": "HR-20261112-02",
+          "status": "observation",
+          "topic": "TopstepX Dashboard Login Alignment Has No Calculation Bridge",
+          "primary_site": "PositionMath",
+          "freshness": 25,
+          "traffic_potential": 17,
+          "calculator_fit": 6,
+          "evidence_quality": 15,
+          "actionability": 2,
+          "total_score": 65,
+          "hard_gate": true,
+          "reliable_sources": 2,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "Daily Loss Limit",
+            "Trailing Drawdown",
+            "Prop Firm Simulator"
+          ],
+          "reason": "Topstep's dated help-centre change and PropBench independently confirm the 12 November credential alignment, but a login migration does not create a reader-entered risk, loss-limit, margin, or sizing calculation; no calculator-led content is justified.",
+          "scan_audit": {
+            "sources": [
+              {
+                "publisher": "Topstep",
+                "url": "https://help.topstep.com/en/articles/14434175-topstepx",
+                "source_type": "official_dated_product_update",
+                "published_at": "2026-11-11",
+                "freshness_role": "Official help centre says TopstepX and Dashboard credentials become the same on 12 November 2026.",
+                "reliable": true
+              },
+              {
+                "publisher": "PropBench",
+                "url": "https://propbench.co/changes/1069",
+                "source_type": "independent_dated_product_impact_and_discovery",
+                "published_at": "2026-11-10",
+                "freshness_role": "Independent product tracker records the same 12 November credential alignment.",
+                "reliable": true
+              }
+            ],
+            "decision": {
+              "novelty_gate": "fail",
+              "decision_gate": "observation_operational_access_change_without_calculation_bridge",
+              "duplicate_of": [],
+              "refresh_signals": {
+                "fact_delta": true,
+                "search_delta": false,
+                "example_delta": false,
+                "window_delta": true
+              },
+              "reopen_trigger": "Reopen only if Topstep publishes a dated and independently corroborated change to a concrete loss-limit, margin, contract, drawdown or risk rule that creates a reader-entered calculation question.",
+              "rationale": "This is a verifiable fresh product access update, not a risk or contract-math change. It cannot naturally hand off to PipGauge or PositionMath without fabricating a feature gap or unrelated calculator use."
+            }
+          }
+        },
+        {
+          "scan_date": "2026-11-12",
+          "candidate_id": "HR-20261112-04",
+          "status": "discarded",
+          "topic": "Directional Macro Commentary and Generic Prop-Firm Discussion",
+          "primary_site": "PipGauge",
+          "freshness": 24,
+          "traffic_potential": 20,
+          "calculator_fit": 4,
+          "evidence_quality": 5,
+          "actionability": 2,
+          "total_score": 55,
+          "hard_gate": false,
+          "reliable_sources": 0,
+          "fresh_signal": true,
+          "calculator_mapping": [
+            "P&L",
+            "Daily Loss Limit"
+          ],
+          "reason": "Directional FX, stock, commodity and crypto calls; price targets; political material; generic prop-firm comparisons; login-wall pages; screenshots; and unverifiable social posts lack a candidate-specific, dual-source, calculator-led path and are excluded."
+        }
+      ],
+      "coverage": [
+        {
+          "channel": "官方与一手来源",
+          "status": "complete",
+          "checked_at": "2026-11-12T22:02:13+08:00",
+          "source_count": 3,
+          "note": "Checked ONS's 12 November UK GDP result, Topstep's dated TopstepX help-centre update, and BLS's 13 November October-PPI release schedule. These sources establish only their stated figures, access change, dates and times; they are not used for price direction, trading, execution or payout claims."
+        },
+        {
+          "channel": "独立可靠英文来源",
+          "status": "complete",
+          "checked_at": "2026-11-12T22:02:13+08:00",
+          "source_count": 3,
+          "note": "Reuters (via Investing.com) independently reports UK Q3 GDP at 0.7%; AP independently identifies the October PPI release this Friday; PropBench independently tracks the TopstepX credential change. The product tracker serves only the permitted independent-impact role and does not replace Topstep's official help centre."
+        },
+        {
+          "channel": "Reddit / ForexFactory / BabyPips",
+          "status": "partial",
+          "checked_at": "2026-11-12T22:02:13+08:00",
+          "source_count": 2,
+          "note": "Checked public Reddit indexing and ForexFactory's PPI calendar. The retained material establishes event visibility or generic prop discussion only; it does not demonstrate an attributable, non-directional calculation demand for UK GDP, Topstep credentials or PPI."
+        },
+        {
+          "channel": "X / Quora",
+          "status": "limited",
+          "checked_at": "2026-11-12T22:02:13+08:00",
+          "source_count": 0,
+          "note": "No stable public and attributable candidate-level signal was retained. Dynamic feeds, login walls, screenshots and unverified claims are not counted."
+        },
+        {
+          "channel": "公开产品规则追踪",
+          "status": "complete",
+          "checked_at": "2026-11-12T22:02:13+08:00",
+          "source_count": 1,
+          "note": "PropBench's 10 November record independently exposes TopstepX's 12 November credential alignment. The change is operational access rather than a dated risk-rule, contract-specification or loss-limit calculation event."
+        }
+      ],
+      "audit_status": "audited",
+      "links": {
+        "daily_report": "../每日报告/2026-11-12_热点雷达.md",
+        "raw_scan": "../原始扫描/2026-11-12_官方来源扫描.md",
+        "rules": "../雷达规则.md",
+        "capability_map": "../两站计算器能力地图.md",
+        "ledger": "../热点候选总表.csv",
+        "traffic_playbooks": "../热点流量打法.json"
+      }
+    },
+    {
       "scan_date": "2026-11-11",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 108,
@@ -432,7 +710,7 @@
     },
     {
       "scan_date": "2026-11-10",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 107,
@@ -658,7 +936,7 @@
     },
     {
       "scan_date": "2026-11-09",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 106,
@@ -868,7 +1146,7 @@
     },
     {
       "scan_date": "2026-11-08",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 105,
@@ -1183,7 +1461,7 @@
     },
     {
       "scan_date": "2026-11-07",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 104,
@@ -1440,7 +1718,7 @@
     },
     {
       "scan_date": "2026-11-06",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 103,
@@ -1866,7 +2144,7 @@
     },
     {
       "scan_date": "2026-11-05",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 102,
@@ -2098,7 +2376,7 @@
     },
     {
       "scan_date": "2026-11-04",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 101,
@@ -2354,7 +2632,7 @@
     },
     {
       "scan_date": "2026-11-03",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 100,
@@ -2685,7 +2963,7 @@
     },
     {
       "scan_date": "2026-11-02",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 99,
@@ -2959,7 +3237,7 @@
     },
     {
       "scan_date": "2026-11-01",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 98,
@@ -3216,7 +3494,7 @@
     },
     {
       "scan_date": "2026-10-31",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 97,
@@ -3478,7 +3756,7 @@
     },
     {
       "scan_date": "2026-10-30",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 96,
@@ -3742,7 +4020,7 @@
     },
     {
       "scan_date": "2026-10-29",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 95,
@@ -4016,7 +4294,7 @@
     },
     {
       "scan_date": "2026-10-28",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 94,
@@ -4290,7 +4568,7 @@
     },
     {
       "scan_date": "2026-10-27",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 93,
@@ -4565,7 +4843,7 @@
     },
     {
       "scan_date": "2026-10-26",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 92,
@@ -4809,7 +5087,7 @@
     },
     {
       "scan_date": "2026-10-25",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 91,
@@ -5016,7 +5294,7 @@
     },
     {
       "scan_date": "2026-10-24",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 90,
@@ -5237,7 +5515,7 @@
     },
     {
       "scan_date": "2026-10-23",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 89,
@@ -5568,7 +5846,7 @@
     },
     {
       "scan_date": "2026-10-22",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 88,
@@ -5784,7 +6062,7 @@
     },
     {
       "scan_date": "2026-10-21",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 87,
@@ -6087,7 +6365,7 @@
     },
     {
       "scan_date": "2026-10-20",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 86,
@@ -6314,7 +6592,7 @@
     },
     {
       "scan_date": "2026-10-19",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 85,
@@ -6530,7 +6808,7 @@
     },
     {
       "scan_date": "2026-10-18",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 84,
@@ -6744,7 +7022,7 @@
     },
     {
       "scan_date": "2026-10-17",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 83,
@@ -7012,7 +7290,7 @@
     },
     {
       "scan_date": "2026-10-16",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 82,
@@ -7318,7 +7596,7 @@
     },
     {
       "scan_date": "2026-10-15",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 81,
@@ -7529,7 +7807,7 @@
     },
     {
       "scan_date": "2026-10-14",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 80,
@@ -7812,7 +8090,7 @@
     },
     {
       "scan_date": "2026-10-13",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 79,
@@ -8028,7 +8306,7 @@
     },
     {
       "scan_date": "2026-10-12",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 78,
@@ -8300,7 +8578,7 @@
     },
     {
       "scan_date": "2026-10-11",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 77,
@@ -8561,7 +8839,7 @@
     },
     {
       "scan_date": "2026-10-10",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 76,
@@ -8818,7 +9096,7 @@
     },
     {
       "scan_date": "2026-10-09",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 75,
@@ -9029,7 +9307,7 @@
     },
     {
       "scan_date": "2026-10-08",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 74,
@@ -9216,7 +9494,7 @@
     },
     {
       "scan_date": "2026-10-07",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 73,
@@ -9380,7 +9658,7 @@
     },
     {
       "scan_date": "2026-10-06",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 72,
@@ -9543,7 +9821,7 @@
     },
     {
       "scan_date": "2026-10-05",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 71,
@@ -9810,7 +10088,7 @@
     },
     {
       "scan_date": "2026-10-04",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 70,
@@ -10036,7 +10314,7 @@
     },
     {
       "scan_date": "2026-10-03",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 69,
@@ -10259,7 +10537,7 @@
     },
     {
       "scan_date": "2026-10-02",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 68,
@@ -10542,7 +10820,7 @@
     },
     {
       "scan_date": "2026-10-01",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 67,
@@ -10821,7 +11099,7 @@
     },
     {
       "scan_date": "2026-09-30",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 66,
@@ -11231,7 +11509,7 @@
     },
     {
       "scan_date": "2026-09-29",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 65,
@@ -11555,7 +11833,7 @@
     },
     {
       "scan_date": "2026-09-28",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 64,
@@ -11840,7 +12118,7 @@
     },
     {
       "scan_date": "2026-09-27",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 63,
@@ -12190,7 +12468,7 @@
     },
     {
       "scan_date": "2026-09-26",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 62,
@@ -12399,7 +12677,7 @@
     },
     {
       "scan_date": "2026-09-25",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 61,
@@ -12679,7 +12957,7 @@
     },
     {
       "scan_date": "2026-09-24",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 60,
@@ -12959,7 +13237,7 @@
     },
     {
       "scan_date": "2026-09-23",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 59,
@@ -13197,7 +13475,7 @@
     },
     {
       "scan_date": "2026-09-22",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 58,
@@ -13486,7 +13764,7 @@
     },
     {
       "scan_date": "2026-09-21",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 57,
@@ -13708,7 +13986,7 @@
     },
     {
       "scan_date": "2026-09-20",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 56,
@@ -13993,7 +14271,7 @@
     },
     {
       "scan_date": "2026-09-19",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 55,
@@ -14268,7 +14546,7 @@
     },
     {
       "scan_date": "2026-09-18",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 54,
@@ -14550,7 +14828,7 @@
     },
     {
       "scan_date": "2026-09-17",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 53,
@@ -14895,7 +15173,7 @@
     },
     {
       "scan_date": "2026-09-16",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 52,
@@ -15185,7 +15463,7 @@
     },
     {
       "scan_date": "2026-09-15",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 51,
@@ -15399,7 +15677,7 @@
     },
     {
       "scan_date": "2026-09-14",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 50,
@@ -15603,7 +15881,7 @@
     },
     {
       "scan_date": "2026-09-13",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 49,
@@ -15808,7 +16086,7 @@
     },
     {
       "scan_date": "2026-09-12",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 48,
@@ -15994,7 +16272,7 @@
     },
     {
       "scan_date": "2026-09-11",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 47,
@@ -16211,7 +16489,7 @@
     },
     {
       "scan_date": "2026-09-10",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 46,
@@ -16497,7 +16775,7 @@
     },
     {
       "scan_date": "2026-09-09",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 45,
@@ -16777,7 +17055,7 @@
     },
     {
       "scan_date": "2026-09-08",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 44,
@@ -17106,7 +17384,7 @@
     },
     {
       "scan_date": "2026-09-07",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 43,
@@ -17408,7 +17686,7 @@
     },
     {
       "scan_date": "2026-09-06",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 42,
@@ -17724,7 +18002,7 @@
     },
     {
       "scan_date": "2026-09-05",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 41,
@@ -18046,7 +18324,7 @@
     },
     {
       "scan_date": "2026-09-03",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 40,
@@ -18359,7 +18637,7 @@
     },
     {
       "scan_date": "2026-09-02",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 39,
@@ -18670,7 +18948,7 @@
     },
     {
       "scan_date": "2026-08-31",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 38,
@@ -19001,7 +19279,7 @@
     },
     {
       "scan_date": "2026-08-30",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 37,
@@ -19339,7 +19617,7 @@
     },
     {
       "scan_date": "2026-08-29",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 36,
@@ -19732,7 +20010,7 @@
     },
     {
       "scan_date": "2026-08-28",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 35,
@@ -20142,7 +20420,7 @@
     },
     {
       "scan_date": "2026-08-27",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 34,
@@ -20614,7 +20892,7 @@
     },
     {
       "scan_date": "2026-08-26",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 33,
@@ -20959,7 +21237,7 @@
     },
     {
       "scan_date": "2026-08-25",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 32,
@@ -21304,7 +21582,7 @@
     },
     {
       "scan_date": "2026-08-24",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 31,
@@ -21756,7 +22034,7 @@
     },
     {
       "scan_date": "2026-08-23",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 30,
@@ -22169,7 +22447,7 @@
     },
     {
       "scan_date": "2026-08-21",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 29,
@@ -22401,7 +22679,7 @@
     },
     {
       "scan_date": "2026-08-20",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 28,
@@ -22846,7 +23124,7 @@
     },
     {
       "scan_date": "2026-08-19",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 27,
@@ -23221,7 +23499,7 @@
     },
     {
       "scan_date": "2026-08-18",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 26,
@@ -23613,7 +23891,7 @@
     },
     {
       "scan_date": "2026-08-17",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 25,
@@ -23989,7 +24267,7 @@
     },
     {
       "scan_date": "2026-08-11",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 24,
@@ -24313,7 +24591,7 @@
     },
     {
       "scan_date": "2026-08-10",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 23,
@@ -24696,7 +24974,7 @@
     },
     {
       "scan_date": "2026-08-09",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 22,
@@ -25037,7 +25315,7 @@
     },
     {
       "scan_date": "2026-08-08",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 21,
@@ -25412,7 +25690,7 @@
     },
     {
       "scan_date": "2026-08-07",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 20,
@@ -25800,7 +26078,7 @@
     },
     {
       "scan_date": "2026-08-06",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 19,
@@ -26145,7 +26423,7 @@
     },
     {
       "scan_date": "2026-08-05",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 18,
@@ -26473,7 +26751,7 @@
     },
     {
       "scan_date": "2026-08-04",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 17,
@@ -26785,7 +27063,7 @@
     },
     {
       "scan_date": "2026-08-03",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 16,
@@ -27106,7 +27384,7 @@
     },
     {
       "scan_date": "2026-08-02",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 15,
@@ -27467,7 +27745,7 @@
     },
     {
       "scan_date": "2026-08-01",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 14,
@@ -27820,7 +28098,7 @@
     },
     {
       "scan_date": "2026-07-31",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 13,
@@ -28264,7 +28542,7 @@
     },
     {
       "scan_date": "2026-07-30",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 12,
@@ -28773,7 +29051,7 @@
     },
     {
       "scan_date": "2026-07-29",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 11,
@@ -29243,7 +29521,7 @@
     },
     {
       "scan_date": "2026-07-28",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v2-audited",
       "pilot": {
         "day": 10,
@@ -29786,7 +30064,7 @@
     },
     {
       "scan_date": "2026-07-27",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 9,
@@ -30058,7 +30336,7 @@
     },
     {
       "scan_date": "2026-07-26",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 8,
@@ -30371,7 +30649,7 @@
     },
     {
       "scan_date": "2026-07-25",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 7,
@@ -30806,7 +31084,7 @@
     },
     {
       "scan_date": "2026-07-24",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 6,
@@ -31320,7 +31598,7 @@
     },
     {
       "scan_date": "2026-07-23",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 5,
@@ -31829,7 +32107,7 @@
     },
     {
       "scan_date": "2026-07-22",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 4,
@@ -32297,7 +32575,7 @@
     },
     {
       "scan_date": "2026-07-21",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 3,
@@ -32711,7 +32989,7 @@
     },
     {
       "scan_date": "2026-07-20",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 2,
@@ -33110,7 +33388,7 @@
     },
     {
       "scan_date": "2026-07-19",
-      "generated_at": "2026-11-11T22:09:53+08:00",
+      "generated_at": "2026-11-12T22:07:07+08:00",
       "scoring_version": "v1-legacy",
       "pilot": {
         "day": 1,
@@ -33549,10 +33827,10 @@
       }
     }
   ],
-  "scan_date": "2026-11-11",
+  "scan_date": "2026-11-12",
   "scoring_version": "v2-audited",
   "pilot": {
-    "day": 108,
+    "day": 109,
     "total_days": 7,
     "schedule": "22:00",
     "timezone": "Asia/Shanghai",
@@ -33560,139 +33838,96 @@
     "mode": "topic_traffic_playbooks_and_content_drafts"
   },
   "stats": {
-    "selected": 1,
-    "observation": 2,
+    "selected": 0,
+    "observation": 3,
     "discarded": 1,
     "total": 4,
-    "selected_average": 99.0,
+    "selected_average": 0,
     "all_selected_pass_gate": true,
-    "content_ready": 1,
-    "playbook_ready": 1
+    "content_ready": 0,
+    "playbook_ready": 0
   },
   "candidates": [
     {
-      "scan_date": "2026-11-11",
-      "candidate_id": "HR-20261111-01",
-      "status": "selected",
-      "topic": "Goat Funded Trader’s 3% News-Profit Cap: Check the Purchase-Date Cohort Before You Count a News Trade",
+      "scan_date": "2026-11-12",
+      "candidate_id": "HR-20261112-03",
+      "status": "observation",
+      "topic": "U.S. October PPI Is Due 13 November but Has Only a Calendar Window",
       "primary_site": "PipGauge",
-      "freshness": 25,
-      "traffic_potential": 24,
-      "calculator_fit": 25,
+      "freshness": 24,
+      "traffic_potential": 21,
+      "calculator_fit": 20,
       "evidence_quality": 15,
-      "actionability": 10,
-      "total_score": 99,
+      "actionability": 5,
+      "total_score": 85,
       "hard_gate": true,
       "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
-        "Risk/Reward",
+        "Pip Value",
         "Position Size",
-        "Challenge Simulator",
-        "Prop Firm Simulator"
+        "Daily Loss Limit",
+        "Spread Cost"
       ],
-      "reason": "Goat Funded Trader’s 10 November dated help-centre rule changes the high-impact-news-window per-trade retained-profit cap to 3% of initial balance for accounts purchased on or after that date while older accounts retain 1%; BestProps independently records the change and its account-cohort impact. The current search question is the purchase-date cohort and balance-percentage arithmetic, not a market call. PipGauge separates reader-entered planned risk/reward and account constraints after the official rule explanation; it does not validate Goat terms, eligibility, execution or payout.",
-      "content_status": "review_ready",
-      "content_label": "Goat Funded Trader 3%新闻利润上限购买日期分层审核包待人工审核",
-      "content_url": "../内容生产/2026-11-11/HR-20261111-01/index.html",
-      "content_format": "Medium / Reddit / X",
-      "deadline": "2026-11-13T17:00:00-05:00",
-      "review_state": "awaiting_human_review",
-      "refresh_target": null,
-      "traffic_playbook": {
-        "playbook_status": "ready",
-        "execution_mode": "new",
-        "urgency": "high",
-        "publish_deadline": "2026-11-13T17:00:00-05:00",
-        "traffic_hook": "Goat Funded Trader’s 10 November rule update changes the high-impact-news-window retained-profit cap per qualifying trade to 3% of initial balance for accounts purchased on or after 10 November 2026, while earlier purchases retain 1%. BestProps independently records the change. The hook is the purchase-date cohort and what a 3% versus 1% cap means in dollars—not whether to trade news or where a market will go.",
-        "traffic_window": "Publish only after a human rechecks the current Goat official help article, the original purchase date, model and phase scope. Use the rule-change title through 13 November 17:00 ET; stop earlier on an official correction, a changed percentage/window/cohort/scope, an inaccessible source, or loss of the reader’s calculation path.",
-        "search_intents": [
-          "Goat Funded Trader 3% news profit cap",
-          "Goat Funded Trader 1% vs 3% news trading",
-          "Goat Funded Trader news trading purchase date",
-          "Goat Funded Trader 100k news profit limit",
-          "news trade profit cap per trade prop firm"
-        ],
-        "traffic_angle": "Borrow the newly dated 3%-versus-1% wording to answer the exact account-cohort arithmetic: on the official USD 100,000 example, 3% is USD 3,000 and 1% is USD 1,000 per qualifying trade. A USD 4,500 qualifying profit leaves USD 1,500 or USD 3,500 above the applicable ceiling. State that the purchase date, initial balance, one-trade scope and news-window timing control; the figures are rule math, not a price target, risk budget, payout or expected result.",
-        "calculator_bridge": "First establish the official cohort and retained-profit-cap arithmetic. Then PipGauge Risk/Reward and Position Size distinguish the reader’s own planned price risk and planned reward from the firm’s profit ceiling; Challenge Simulator organises reader-entered account constraints. PositionMath Prop Firm Simulator is a secondary cross-check. Neither site validates Goat’s terms, purchase date, event classification, eligibility, execution, profit deduction or payout.",
-        "example_scenario": "Teaching only, using Goat’s published example: USD 100,000 initial balance. Accounts purchased on or after 10 November: 3% × USD 100,000 = USD 3,000; earlier accounts: 1% = USD 1,000. For a USD 4,500 qualifying-news-window trade, the official example says USD 1,500 / USD 3,500 is above the respective ceiling. Separately, a reader may model USD 500 planned price risk and USD 500 / USD 1,000 / USD 1,500 at 1R/2R/3R; this does not forecast price, recommend a ratio or guarantee fills.",
-        "distribution_order": [
-          "new PipGauge purchase-date cohort rule explainer",
-          "Medium dated rule-reading draft",
-          "X self-contained 3%-versus-1% calculation thread",
-          "Reddit native rule-verification question without a first-round link"
-        ],
-        "link_placement": "Give the effective date, original-purchase-date test, one-trade scope, 3%/1% arithmetic and plan-versus-rule distinction before one natural PipGauge link. Do not put a link, tracking parameter, affiliate language or purchase pitch in the initial Reddit post; the X thread remains independently readable.",
-        "expiry_condition": "Stop using this new-rule frame at 13 November 17:00 ET, upon any official change to the cohort, percentage, event window, account phase or deduction treatment, if the official page becomes unverifiable, or if only generic news-trading commentary remains. Do not recycle the USD 3,000 / USD 1,000 figures as an evergreen profit target, payout cap, loss limit or trade recommendation.",
-        "editorial_boundary": "Do not recommend buying or trading a Goat account, trading news, evading a rule, or using any particular risk/reward ratio. Do not predict FX, CFD, metals, indices, crypto, rates or volatility; do not promise a stop fill, profit, account compliance or payout. State that the current official agreement and dashboard control and keep retained-profit cap, planned risk, daily loss and payout rules separate.",
-        "refresh_target": null,
-        "refresh_signals": {
-          "fact_delta": true,
-          "search_delta": true,
-          "example_delta": true,
-          "window_delta": true
-        },
-        "refresh_updates": [],
-        "content_mainline": "Create one dated Goat news-window rule note that distinguishes new-account 3% from earlier-account 1% retained-profit caps using the official USD 100,000 example, then separates that cap from reader-entered position risk. Do not create a firm comparison, purchase guide, market call or generic news-trading article.",
-        "body_material": [
-          "Goat Funded Trader official help article updated 10 November 2026",
-          "BestProps independent current patch-note confirmation",
-          "purchase-date cohort and five-minute high-impact-news window",
-          "USD 100,000 × 3% = USD 3,000; USD 100,000 × 1% = USD 1,000",
-          "official USD 4,500 example and excess-profit treatment",
-          "13 November 17:00 ET expiry and official-change stop gate"
-        ],
-        "product_bridge": "PipGauge separates reader-entered planned risk/reward, position size and challenge constraints after the official Goat cohort rule is explained; PositionMath supplies a secondary prop-risk cross-check. Neither calculator replaces the current official rulebook or makes an account, trade, eligibility or payout decision.",
-        "product_bridge_type": "existing"
-      },
+      "reason": "BLS and AP confirm the 13 November PPI release window, but no result or distinct non-directional public calculator demand exists; only window_delta is present and the generic pre-release risk path overlaps the 10 November CPI refresh.",
       "scan_audit": {
         "sources": [
           {
-            "publisher": "Goat Funded Trader",
-            "url": "https://help.goatfundedtrader.com/en/articles/10742084-is-news-trading-allowed",
-            "source_type": "official_dated_product_rule",
-            "published_at": "2026-11-10",
-            "freshness_role": "Official help centre updated 10 November: high-impact-news-window profit cap is 3% of initial balance per trade for accounts purchased on or after 10 November 2026 and 1% for earlier purchases; scope and treatment are stated on the page.",
+            "publisher": "Bureau of Labor Statistics",
+            "url": "https://www.bls.gov/web/ppi/ppi_dr.pdf",
+            "source_type": "official_future_release_schedule",
+            "published_at": "2026-10-15",
+            "freshness_role": "Official schedule says October 2026 PPI will be released 13 November 2026 at 08:30 ET; it is a clock, not a result.",
             "reliable": true
           },
           {
-            "publisher": "BestProps",
-            "url": "https://bestprops.com/rules/patch-notes/",
-            "source_type": "independent_dated_product_impact_and_discovery",
-            "published_at": "2026-11-11",
-            "freshness_role": "Independent current patch board records the effective 10 November Goat change, purchase-date cohort, 3%/1% caps, five-minute window and two-phase scope; it is impact/discovery confirmation and does not replace the official rule.",
+            "publisher": "Associated Press",
+            "url": "https://apnews.com/article/40dba34b39bf5bc08c71547e538e3355",
+            "source_type": "independent_reliable_english_week_ahead",
+            "published_at": "2026-11-06",
+            "freshness_role": "AP identifies Friday's October PPI as the week's upcoming producer-inflation report.",
             "reliable": true
+          },
+          {
+            "publisher": "ForexFactory",
+            "url": "https://www.forexfactory.com/calendar/86-us-ppi-mm",
+            "source_type": "public_calendar_discovery_only",
+            "published_at": "2026-11-11",
+            "freshness_role": "Public calendar supports event discovery only; it is not used for the release fact, forecast, direction or a calculation-demand claim.",
+            "reliable": false
           }
         ],
         "decision": {
-          "novelty_gate": "pass",
-          "decision_gate": "selected_new_dated_product_rule_with_purchase_date_calculation_path",
-          "duplicate_of": [],
+          "novelty_gate": "fail",
+          "decision_gate": "observation_calendar_only_single_refresh_signal_overlaps_cpi",
+          "duplicate_of": [
+            "HR-20261110-01"
+          ],
           "refresh_signals": {
-            "fact_delta": true,
-            "search_delta": true,
-            "example_delta": true,
+            "fact_delta": false,
+            "search_delta": false,
+            "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "Reopen only on an official correction or a later dated change to the purchase-date cohort, percentage, event window, phase scope or excess-profit treatment. Refresh this package rather than create a second generic Goat news-trading article.",
-          "rationale": "The official product rule is dated and specific; an independent current rule tracker confirms its reader-facing impact. The 3% versus 1% purchase-date distinction turns an immediate search question into transparent balance-percentage arithmetic. PipGauge is used only after the rule explanation to separate reader-entered planned risk/reward from a retained-profit cap."
+          "reopen_trigger": "Wait for the published PPI result, an independent same-day fact cross-check, and an attributable non-directional reader calculation question; then evaluate whether the 10 November CPI fixed-risk item can be refreshed rather than creating a second generic inflation article.",
+          "rationale": "Two independent sources confirm the release clock, but there is no result and no specific public demand for pip-value, sizing, margin, spread-cost or daily-loss arithmetic. The sole window signal cannot justify a duplicate pre-inflation package."
         }
       }
     },
     {
-      "scan_date": "2026-11-11",
-      "candidate_id": "HR-20261111-02",
+      "scan_date": "2026-11-12",
+      "candidate_id": "HR-20261112-01",
       "status": "observation",
-      "topic": "Germany October Final CPI Has No Verified EUR Calculator Journey",
+      "topic": "UK Q3 GDP Grows 0.7% but Has No Verified GBP Calculator Journey",
       "primary_site": "PipGauge",
       "freshness": 25,
-      "traffic_potential": 18,
-      "calculator_fit": 17,
-      "evidence_quality": 9,
-      "actionability": 10,
-      "total_score": 79,
-      "hard_gate": false,
-      "reliable_sources": 1,
+      "traffic_potential": 20,
+      "calculator_fit": 16,
+      "evidence_quality": 15,
+      "actionability": 4,
+      "total_score": 80,
+      "hard_gate": true,
+      "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
         "Pip Value",
@@ -33700,29 +33935,37 @@
         "Margin",
         "Spread Cost"
       ],
-      "reason": "Destatis published the October final result at 2.8% year over year and -0.2% month over month, confirming the preliminary result. A public FX calendar is discovery only, not a second reliable English result source or proof of an event-specific non-directional EUR calculation question. Do not turn a final-CPI headline into a generic EUR/USD sizing table; reopen only with independent result coverage and attributable calculator demand.",
+      "reason": "ONS and Reuters independently confirm the fresh 0.7% Q3 result, but the retained public discussion is macro interpretation and direction-first rather than a distinct GBP calculation request; do not turn the result into a generic GBP/USD sizing table.",
       "scan_audit": {
         "sources": [
           {
-            "publisher": "Federal Statistical Office of Germany (Destatis)",
-            "url": "https://www.destatis.de/EN/Press/2026/11/PE26_392_611.html",
-            "source_type": "official_dated_final_economic_release",
-            "published_at": "2026-11-11",
-            "freshness_role": "Official final October CPI confirms 2.8% year over year and -0.2% month over month; it confirms the previously released preliminary result.",
+            "publisher": "Office for National Statistics",
+            "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/julytoseptember2026",
+            "source_type": "official_dated_economic_release",
+            "published_at": "2026-11-12",
+            "freshness_role": "Official release says UK real GDP increased 0.7% in Q3 2026 and 0.2% in September.",
             "reliable": true
           },
           {
-            "publisher": "ForexFactory",
-            "url": "https://www.forexfactory.com/calendar?range=nov11.2026-nov13.2026",
-            "source_type": "public_calendar_discovery_only",
-            "published_at": "2026-11-11",
-            "freshness_role": "Public FX calendar is discovery context only and is not counted as an independent reliable final-result source or evidence of a specific calculation query.",
+            "publisher": "Reuters",
+            "url": "https://www.investing.com/news/economy-news/uk-economy-grows-07-in-q3-ons-data-shows-5020475",
+            "source_type": "independent_reliable_english_news",
+            "published_at": "2026-11-12",
+            "freshness_role": "Reuters independently reports 0.7% Q3 growth from the ONS release.",
+            "reliable": true
+          },
+          {
+            "publisher": "Reddit",
+            "url": "https://www.reddit.com/r/ukpolitics/comments/1xu6z5l/uk_economy_grows_at_fastest_pace_for_more_than/",
+            "source_type": "public_discussion_discovery_only",
+            "published_at": "2026-11-12",
+            "freshness_role": "Public discussion signals broad GDP interest, not a GBP/USD position-size, pip-value, margin or cost calculation query.",
             "reliable": false
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_single_reliable_final_fact_without_non_directional_calculator_demand",
+          "decision_gate": "observation_no_attributable_non_directional_calculator_demand",
           "duplicate_of": [],
           "refresh_signals": {
             "fact_delta": true,
@@ -33730,138 +33973,133 @@
             "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "Require a second independent reliable English report plus a current attributable EUR fixed-risk, pip-value, margin, cost, quantity or portfolio-heat question; then assess any existing EUR macro item for refresh before writing.",
-          "rationale": "A final CPI confirmation is fresh, but one official result and a calendar do not satisfy the macro double-source gate. No distinct non-directional reader calculation journey was verified, so a generic EUR/USD sizing table would fabricate demand."
+          "reopen_trigger": "Require a current attributable GBP fixed-risk, pip-value, margin, cost, quantity or portfolio-heat question that is not market-direction content; then assess existing GBP macro items for refresh before writing.",
+          "rationale": "The result is fresh and independently confirmed, but public discussion is about macro interpretation and direction. A generic GBP/USD sizing table would invent a calculator journey rather than serve a demonstrated reader need."
         }
       }
     },
     {
-      "scan_date": "2026-11-11",
-      "candidate_id": "HR-20261111-03",
+      "scan_date": "2026-11-12",
+      "candidate_id": "HR-20261112-02",
       "status": "observation",
-      "topic": "BOJ October CGPI Due November 12 Has Only a Release Clock",
-      "primary_site": "PipGauge",
+      "topic": "TopstepX Dashboard Login Alignment Has No Calculation Bridge",
+      "primary_site": "PositionMath",
       "freshness": 25,
-      "traffic_potential": 18,
-      "calculator_fit": 22,
-      "evidence_quality": 8,
-      "actionability": 5,
-      "total_score": 78,
-      "hard_gate": false,
-      "reliable_sources": 1,
+      "traffic_potential": 17,
+      "calculator_fit": 6,
+      "evidence_quality": 15,
+      "actionability": 2,
+      "total_score": 65,
+      "hard_gate": true,
+      "reliable_sources": 2,
       "fresh_signal": true,
       "calculator_mapping": [
-        "Pip Value",
-        "Position Size",
-        "Margin",
-        "P&L"
+        "Daily Loss Limit",
+        "Trailing Drawdown",
+        "Prop Firm Simulator"
       ],
-      "reason": "BOJ’s schedule confirms the October Corporate Goods Price Index release on 12 November, but the second retained link is the same publisher and there is no published result or distinct current public non-directional USD/JPY calculation question. Only window_delta exists; do not prebuild another calendar-only USD/JPY risk package.",
+      "reason": "Topstep's dated help-centre change and PropBench independently confirm the 12 November credential alignment, but a login migration does not create a reader-entered risk, loss-limit, margin, or sizing calculation; no calculator-led content is justified.",
       "scan_audit": {
         "sources": [
           {
-            "publisher": "Bank of Japan",
-            "url": "https://www.boj.or.jp/en/about/calendar/index.htm",
-            "source_type": "official_future_release_schedule",
-            "published_at": "2026-11-06",
-            "freshness_role": "Official schedule lists the October Corporate Goods Price Index for 12 November 2026 at 08:50 JST; this is a release clock, not a result.",
+            "publisher": "Topstep",
+            "url": "https://help.topstep.com/en/articles/14434175-topstepx",
+            "source_type": "official_dated_product_update",
+            "published_at": "2026-11-11",
+            "freshness_role": "Official help centre says TopstepX and Dashboard credentials become the same on 12 November 2026.",
             "reliable": true
           },
           {
-            "publisher": "Bank of Japan",
-            "url": "https://www.boj.or.jp/en/statistics/pi/cgpi_release/cgpi2609.pdf",
-            "source_type": "official_prior_release_schedule_reference",
-            "published_at": "2026-10-13",
-            "freshness_role": "The September report also names 12 November as the next monthly report; same publisher does not count as an independent second source.",
+            "publisher": "PropBench",
+            "url": "https://propbench.co/changes/1069",
+            "source_type": "independent_dated_product_impact_and_discovery",
+            "published_at": "2026-11-10",
+            "freshness_role": "Independent product tracker records the same 12 November credential alignment.",
             "reliable": true
           }
         ],
         "decision": {
           "novelty_gate": "fail",
-          "decision_gate": "observation_future_schedule_without_independent_result_or_calculation_demand",
-          "duplicate_of": [
-            "HR-20260916-03",
-            "HR-20260917-04"
-          ],
+          "decision_gate": "observation_operational_access_change_without_calculation_bridge",
+          "duplicate_of": [],
           "refresh_signals": {
             "fact_delta": true,
-            "search_delta": true,
-            "example_delta": true,
+            "search_delta": false,
+            "example_delta": false,
             "window_delta": true
           },
-          "reopen_trigger": "Require a published BOJ result, independently reliable English cross-check and attributable non-directional USD/JPY calculator question. If passed, refresh a relevant existing USD/JPY event-risk item rather than create a calendar-only duplicate.",
-          "rationale": "Both retained sources are the same publisher and only establish timing. The scan found no result or distinct reader calculation task, so the future release cannot support a prebuilt USD/JPY risk article."
+          "reopen_trigger": "Reopen only if Topstep publishes a dated and independently corroborated change to a concrete loss-limit, margin, contract, drawdown or risk rule that creates a reader-entered calculation question.",
+          "rationale": "This is a verifiable fresh product access update, not a risk or contract-math change. It cannot naturally hand off to PipGauge or PositionMath without fabricating a feature gap or unrelated calculator use."
         }
       }
     },
     {
-      "scan_date": "2026-11-11",
-      "candidate_id": "HR-20261111-04",
+      "scan_date": "2026-11-12",
+      "candidate_id": "HR-20261112-04",
       "status": "discarded",
-      "topic": "Veterans Day Generic Prop Discussion and Directional Market Material",
+      "topic": "Directional Macro Commentary and Generic Prop-Firm Discussion",
       "primary_site": "PipGauge",
       "freshness": 24,
-      "traffic_potential": 18,
+      "traffic_potential": 20,
       "calculator_fit": 4,
       "evidence_quality": 5,
       "actionability": 2,
-      "total_score": 48,
+      "total_score": 55,
       "hard_gate": false,
       "reliable_sources": 0,
-      "fresh_signal": false,
+      "fresh_signal": true,
       "calculator_mapping": [
         "P&L",
         "Daily Loss Limit"
       ],
-      "reason": "Veterans Day session notes, generic risk-reward or daily-loss threads, directional FX/stock/commodity/crypto calls, price targets, politics, sports, entertainment, login-wall pages, screenshots and unverifiable social material lack a candidate-specific dual-source calculation path and are excluded."
+      "reason": "Directional FX, stock, commodity and crypto calls; price targets; political material; generic prop-firm comparisons; login-wall pages; screenshots; and unverifiable social posts lack a candidate-specific, dual-source, calculator-led path and are excluded."
     }
   ],
   "coverage": [
     {
       "channel": "官方与一手来源",
       "status": "complete",
-      "checked_at": "2026-11-11T22:15:00+08:00",
+      "checked_at": "2026-11-12T22:02:13+08:00",
       "source_count": 3,
-      "note": "覆盖 Goat Funded Trader 10 November dated news-trading rule, Destatis 11 November final CPI result, and BOJ 12 November CGPI schedule. Official pages establish only their stated rules, dates and figures; they are not used for market direction, purchase, execution or payout claims."
+      "note": "Checked ONS's 12 November UK GDP result, Topstep's dated TopstepX help-centre update, and BLS's 13 November October-PPI release schedule. These sources establish only their stated figures, access change, dates and times; they are not used for price direction, trading, execution or payout claims."
     },
     {
       "channel": "独立可靠英文来源",
       "status": "complete",
-      "checked_at": "2026-11-11T22:15:00+08:00",
-      "source_count": 1,
-      "note": "BestProps independently records the Goat Funded Trader 10 November purchase-date cohort and profit-cap change. It supplies the independent impact/discovery side permitted for a dated official product rule, but does not replace the official rulebook. No second reliable English final-Germany-CPI report was retained."
+      "checked_at": "2026-11-12T22:02:13+08:00",
+      "source_count": 3,
+      "note": "Reuters (via Investing.com) independently reports UK Q3 GDP at 0.7%; AP independently identifies the October PPI release this Friday; PropBench independently tracks the TopstepX credential change. The product tracker serves only the permitted independent-impact role and does not replace Topstep's official help centre."
     },
     {
       "channel": "Reddit / ForexFactory / BabyPips",
       "status": "partial",
-      "checked_at": "2026-11-11T22:15:00+08:00",
+      "checked_at": "2026-11-12T22:02:13+08:00",
       "source_count": 2,
-      "note": "Checked public prop-firm / risk discussion and ForexFactory calendar. The calendar confirms public event visibility only; generic risk, R:R and direction discussion is not elevated into a candidate-specific Goat, EUR or JPY calculation-demand fact."
+      "note": "Checked public Reddit indexing and ForexFactory's PPI calendar. The retained material establishes event visibility or generic prop discussion only; it does not demonstrate an attributable, non-directional calculation demand for UK GDP, Topstep credentials or PPI."
     },
     {
       "channel": "X / Quora",
       "status": "limited",
-      "checked_at": "2026-11-11T22:15:00+08:00",
+      "checked_at": "2026-11-12T22:02:13+08:00",
       "source_count": 0,
-      "note": "No stable, public, attributable non-directional candidate signal was retained. Dynamic feeds, login walls, screenshots and unverified claims are not counted."
+      "note": "No stable public and attributable candidate-level signal was retained. Dynamic feeds, login walls, screenshots and unverified claims are not counted."
     },
     {
       "channel": "公开产品规则追踪",
       "status": "complete",
-      "checked_at": "2026-11-11T22:15:00+08:00",
-      "source_count": 2,
-      "note": "Rechecked current dated industry trackers. Goat’s 10 November official change has an independent dated record; other surfaced trackers were stale, generic, unsupported by an official dated change, or lacked a natural reader calculation path."
+      "checked_at": "2026-11-12T22:02:13+08:00",
+      "source_count": 1,
+      "note": "PropBench's 10 November record independently exposes TopstepX's 12 November credential alignment. The change is operational access rather than a dated risk-rule, contract-specification or loss-limit calculation event."
     }
   ],
   "audit_status": "audited",
   "links": {
-    "daily_report": "../每日报告/2026-11-11_热点雷达.md",
-    "raw_scan": "../原始扫描/2026-11-11_官方来源扫描.md",
+    "daily_report": "../每日报告/2026-11-12_热点雷达.md",
+    "raw_scan": "../原始扫描/2026-11-12_官方来源扫描.md",
     "rules": "../雷达规则.md",
     "capability_map": "../两站计算器能力地图.md",
     "ledger": "../热点候选总表.csv",
-    "traffic_playbooks": "../热点流量打法.json",
-    "content_root": "../内容生产/2026-11-11"
+    "traffic_playbooks": "../热点流量打法.json"
   },
   "radar_model": "v3-calculator-bridge",
   "editorial_policy": {

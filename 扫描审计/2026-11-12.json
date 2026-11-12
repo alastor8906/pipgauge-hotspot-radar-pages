@@ -1,0 +1,36 @@
+{
+  "scan_date": "2026-11-12",
+  "generated_at": "2026-11-12T22:02:13+08:00",
+  "coverage": [
+    {"channel": "官方与一手来源", "status": "complete", "checked_at": "2026-11-12T22:02:13+08:00", "source_count": 3, "note": "Checked ONS's 12 November UK GDP result, Topstep's dated TopstepX help-centre update, and BLS's 13 November October-PPI release schedule. These sources establish only their stated figures, access change, dates and times; they are not used for price direction, trading, execution or payout claims."},
+    {"channel": "独立可靠英文来源", "status": "complete", "checked_at": "2026-11-12T22:02:13+08:00", "source_count": 3, "note": "Reuters (via Investing.com) independently reports UK Q3 GDP at 0.7%; AP independently identifies the October PPI release this Friday; PropBench independently tracks the TopstepX credential change. The product tracker serves only the permitted independent-impact role and does not replace Topstep's official help centre."},
+    {"channel": "Reddit / ForexFactory / BabyPips", "status": "partial", "checked_at": "2026-11-12T22:02:13+08:00", "source_count": 2, "note": "Checked public Reddit indexing and ForexFactory's PPI calendar. The retained material establishes event visibility or generic prop discussion only; it does not demonstrate an attributable, non-directional calculation demand for UK GDP, Topstep credentials or PPI."},
+    {"channel": "X / Quora", "status": "limited", "checked_at": "2026-11-12T22:02:13+08:00", "source_count": 0, "note": "No stable public and attributable candidate-level signal was retained. Dynamic feeds, login walls, screenshots and unverified claims are not counted."},
+    {"channel": "公开产品规则追踪", "status": "complete", "checked_at": "2026-11-12T22:02:13+08:00", "source_count": 1, "note": "PropBench's 10 November record independently exposes TopstepX's 12 November credential alignment. The change is operational access rather than a dated risk-rule, contract-specification or loss-limit calculation event."}
+  ],
+  "candidates": {
+    "HR-20261112-01": {
+      "sources": [
+        {"publisher": "Office for National Statistics", "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/julytoseptember2026", "source_type": "official_dated_economic_release", "published_at": "2026-11-12", "freshness_role": "Official release says UK real GDP increased 0.7% in Q3 2026 and 0.2% in September.", "reliable": true},
+        {"publisher": "Reuters", "url": "https://www.investing.com/news/economy-news/uk-economy-grows-07-in-q3-ons-data-shows-5020475", "source_type": "independent_reliable_english_news", "published_at": "2026-11-12", "freshness_role": "Reuters independently reports 0.7% Q3 growth from the ONS release.", "reliable": true},
+        {"publisher": "Reddit", "url": "https://www.reddit.com/r/ukpolitics/comments/1xu6z5l/uk_economy_grows_at_fastest_pace_for_more_than/", "source_type": "public_discussion_discovery_only", "published_at": "2026-11-12", "freshness_role": "Public discussion signals broad GDP interest, not a GBP/USD position-size, pip-value, margin or cost calculation query.", "reliable": false}
+      ],
+      "decision": {"novelty_gate": "fail", "decision_gate": "observation_no_attributable_non_directional_calculator_demand", "duplicate_of": [], "refresh_signals": {"fact_delta": true, "search_delta": false, "example_delta": false, "window_delta": true}, "reopen_trigger": "Require a current attributable GBP fixed-risk, pip-value, margin, cost, quantity or portfolio-heat question that is not market-direction content; then assess existing GBP macro items for refresh before writing.", "rationale": "The result is fresh and independently confirmed, but public discussion is about macro interpretation and direction. A generic GBP/USD sizing table would invent a calculator journey rather than serve a demonstrated reader need."}
+    },
+    "HR-20261112-02": {
+      "sources": [
+        {"publisher": "Topstep", "url": "https://help.topstep.com/en/articles/14434175-topstepx", "source_type": "official_dated_product_update", "published_at": "2026-11-11", "freshness_role": "Official help centre says TopstepX and Dashboard credentials become the same on 12 November 2026.", "reliable": true},
+        {"publisher": "PropBench", "url": "https://propbench.co/changes/1069", "source_type": "independent_dated_product_impact_and_discovery", "published_at": "2026-11-10", "freshness_role": "Independent product tracker records the same 12 November credential alignment.", "reliable": true}
+      ],
+      "decision": {"novelty_gate": "fail", "decision_gate": "observation_operational_access_change_without_calculation_bridge", "duplicate_of": [], "refresh_signals": {"fact_delta": true, "search_delta": false, "example_delta": false, "window_delta": true}, "reopen_trigger": "Reopen only if Topstep publishes a dated and independently corroborated change to a concrete loss-limit, margin, contract, drawdown or risk rule that creates a reader-entered calculation question.", "rationale": "This is a verifiable fresh product access update, not a risk or contract-math change. It cannot naturally hand off to PipGauge or PositionMath without fabricating a feature gap or unrelated calculator use."}
+    },
+    "HR-20261112-03": {
+      "sources": [
+        {"publisher": "Bureau of Labor Statistics", "url": "https://www.bls.gov/web/ppi/ppi_dr.pdf", "source_type": "official_future_release_schedule", "published_at": "2026-10-15", "freshness_role": "Official schedule says October 2026 PPI will be released 13 November 2026 at 08:30 ET; it is a clock, not a result.", "reliable": true},
+        {"publisher": "Associated Press", "url": "https://apnews.com/article/40dba34b39bf5bc08c71547e538e3355", "source_type": "independent_reliable_english_week_ahead", "published_at": "2026-11-06", "freshness_role": "AP identifies Friday's October PPI as the week's upcoming producer-inflation report.", "reliable": true},
+        {"publisher": "ForexFactory", "url": "https://www.forexfactory.com/calendar/86-us-ppi-mm", "source_type": "public_calendar_discovery_only", "published_at": "2026-11-11", "freshness_role": "Public calendar supports event discovery only; it is not used for the release fact, forecast, direction or a calculation-demand claim.", "reliable": false}
+      ],
+      "decision": {"novelty_gate": "fail", "decision_gate": "observation_calendar_only_single_refresh_signal_overlaps_cpi", "duplicate_of": ["HR-20261110-01"], "refresh_signals": {"fact_delta": false, "search_delta": false, "example_delta": false, "window_delta": true}, "reopen_trigger": "Wait for the published PPI result, an independent same-day fact cross-check, and an attributable non-directional reader calculation question; then evaluate whether the 10 November CPI fixed-risk item can be refreshed rather than creating a second generic inflation article.", "rationale": "Two independent sources confirm the release clock, but there is no result and no specific public demand for pip-value, sizing, margin, spread-cost or daily-loss arithmetic. The sole window signal cannot justify a duplicate pre-inflation package."}
+    }
+  }
+}
